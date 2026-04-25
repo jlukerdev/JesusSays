@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christ's Teachings — UI Proof of Concept</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* ═══ VARIABLES ═══════════════════════════════════════════════════════ */
+    :root {
+      --gold:       #9a7b34;
+      --gold-light: #f5eed8;
+      --gold-mid:   #d4a84b;
+      --navy:       #1b2a40;
+      --ink:        #1e1e1e;
+      --muted:      #6b7280;
+      --surface:    #faf9f6;
+      --white:      #ffffff;
+      --border:     #e5e0d5;
+    }
+
+    /* ═══ BASE ════════════════════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 15px;
+      background: var(--surface);
+      color: var(--ink);
+      margin: 0;
+    }
+    body.font-large { font-size: 17px; }
+
+    /* ═══ SITE HEADER ═════════════════════════════════════════════════════ */
+    .site-header {
+      background: var(--navy);
+      border-bottom: 4px solid var(--gold-mid);
+      padding: 1.4rem 2rem 1.2rem;
+      position: sticky;
+      top: 0;
+      z-index: 300;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .site-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--white);
+      margin: 0;
+      line-height: 1.15;
+    }
+    .header-eyebrow {
+      font-size: 0.68rem;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 0.2rem;
+    }
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .poc-badge {
+      background: var(--gold-mid);
+      color: var(--navy);
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 0.18rem 0.5rem;
+      border-radius: 100px;
+    }
+    .ctrl-divider {
+      width: 1px;
+      height: 18px;
+      background: rgba(255,255,255,0.15);
+      margin: 0 0.2rem;
+    }
+    .ctrl-label {
+      font-size: 0.65rem;
+      color: rgba(255,255,255,0.4);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .btn-ctrl {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.75);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.28rem 0.65rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.15s;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+    .btn-ctrl:hover { background: rgba(255,255,255,0.16); color: white; }
+    .btn-ctrl.active {
+      background: var(--gold-mid);
+      border-color: var(--gold-mid);
+      color: var(--navy);
+    }
+    .btn-font-group { display: flex; }
+    .btn-font-group .btn-ctrl:first-child { border-radius: 5px 0 0 5px; border-right: none; }
+    .btn-font-group .btn-ctrl:last-child  { border-radius: 0 5px 5px 0; }
+
+    /* ═══ BOOK FILTER BAR ════════════════════════════════════════════════ */
+    .filter-bar {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0.55rem 2rem 0.55rem calc(270px + 2rem);
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 79px;
+      z-index: 200;
+    }
+    .filter-bar-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-right: 0.25rem;
+      white-space: nowrap;
+    }
+    .book-pill {
+      background: transparent;
+      border: 1.5px solid var(--border);
+      color: var(--muted);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.18rem 0.6rem;
+      border-radius: 100px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .book-pill:hover { border-color: var(--gold-mid); color: var(--gold); }
+    .book-pill.active { background: var(--navy); border-color: var(--navy); color: var(--white); }
+    .filter-clear {
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 0.7rem;
+      cursor: pointer;
+      padding: 0.18rem 0.35rem;
+      text-decoration: underline;
+      display: none;
+      margin-left: 0.2rem;
+    }
+    .filter-clear.visible { display: inline; }
+
+    /* ═══ LAYOUT ══════════════════════════════════════════════════════════ */
+    .layout-wrap { display: flex; align-items: flex-start; }
+
+    /* ═══ SIDEBAR ═════════════════════════════════════════════════════════ */
+    .sidebar {
+      width: 270px;
+      flex-shrink: 0;
+      position: sticky;
+      top: 79px;
+      height: calc(100vh - 79px);
+      overflow-y: auto;
+      background: var(--white);
+      border-right: 1px solid var(--border);
+      padding: 1.25rem 1.1rem 2rem;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
+    }
+    .sidebar::-webkit-scrollbar { width: 4px; }
+    .sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+    .sidebar-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.7rem;
+    }
+    .toc-cat {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      font-size: 0.83rem;
+      font-weight: 600;
+      color: var(--ink);
+      padding: 0.28rem 0.5rem;
+      border-radius: 5px;
+      transition: background 0.15s, color 0.15s;
+      gap: 0.4rem;
+    }
+    .toc-cat:hover, .toc-cat.active { background: var(--gold-light); color: var(--gold); }
+    .toc-cat-title { flex: 1; min-width: 0; }
+    .toc-count {
+      background: var(--gold-light);
+      color: var(--gold);
+      font-size: 0.62rem;
+      font-weight: 700;
+      padding: 0.08rem 0.38rem;
+      border-radius: 100px;
+      min-width: 1.3rem;
+      text-align: center;
+      flex-shrink: 0;
+      transition: background 0.15s;
+    }
+    .toc-cat.active .toc-count { background: rgba(154,123,52,0.2); }
+    .toc-sub {
+      display: block;
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 400;
+      color: var(--muted);
+      padding: 0.18rem 0.5rem 0.18rem 1.1rem;
+      border-radius: 4px;
+      transition: background 0.15s, color 0.15s;
+    }
+    .toc-sub:hover, .toc-sub.active { background: var(--gold-light); color: var(--gold); }
+    .toc-divider { border: none; border-top: 1px solid var(--border); margin: 0.7rem 0; }
+    .toc-hidden { display: none !important; }
+
+    /* ═══ MAIN CONTENT ════════════════════════════════════════════════════ */
+    .main-content { flex: 1; min-width: 0; padding: 2rem 2.5rem 4rem; }
+
+    /* ═══ BANNERS ═════════════════════════════════════════════════════════ */
+    .filter-banner {
+      display: none;
+      background: var(--gold-light);
+      border-left: 3px solid var(--gold-mid);
+      padding: 0.5rem 1rem;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 1.5rem;
+      font-size: 0.82rem;
+      color: #5a4a1e;
+    }
+    .filter-banner.visible { display: block; }
+    .focus-banner {
+      display: none;
+      background: var(--navy);
+      color: rgba(255,255,255,0.8);
+      font-size: 0.78rem;
+      padding: 0.45rem 0.85rem 0.45rem 1rem;
+      border-radius: 6px;
+      margin-bottom: 1.5rem;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .focus-banner.visible { display: flex; }
+    .focus-banner em { color: rgba(255,255,255,0.5); font-style: italic; }
+    .btn-show-all {
+      background: var(--gold-mid);
+      border: none;
+      color: var(--navy);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.2rem 0.65rem;
+      border-radius: 4px;
+      cursor: pointer;
+      white-space: nowrap;
+      letter-spacing: 0.03em;
+    }
+
+    /* ═══ CATEGORY SECTION ════════════════════════════════════════════════ */
+    .section-rule { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+    .category-section[data-collapsed="true"] .subcat-block,
+    .category-section[data-collapsed="true"] .application-box,
+    .category-section[data-collapsed="true"] .cat-tags { display: none; }
+    .cat-hidden { display: none !important; }
+
+    .category-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      border-bottom: 2px solid var(--gold-mid);
+      padding-bottom: 1rem;
+      margin-bottom: 1.25rem;
+      cursor: pointer;
+      user-select: none;
+    }
+    .cat-number {
+      width: 48px; height: 48px; flex-shrink: 0;
+      background: var(--navy); color: var(--gold-mid);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem; font-weight: 700;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .cat-title { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--navy); margin: 0; }
+    .cat-subtitle { font-size: 0.82rem; font-style: italic; color: var(--muted); margin: 0.1rem 0 0; }
+    .cat-focus-hint {
+      font-size: 0.62rem;
+      color: transparent;
+      background: transparent;
+      border: 1px solid transparent;
+      padding: 0.15rem 0.4rem;
+      border-radius: 3px;
+      margin-left: auto;
+      align-self: center;
+      transition: all 0.2s;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .category-header:hover .cat-focus-hint {
+      color: rgba(255,255,255,0.6);
+      background: var(--navy);
+      border-color: rgba(255,255,255,0.15);
+    }
+
+    /* ═══ APPLICATION BOX ════════════════════════════════════════════════ */
+    .application-box {
+      background: var(--gold-light);
+      border-left: 3px solid var(--gold-mid);
+      padding: 0.7rem 1rem;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 1rem;
+    }
+    .application-box strong {
+      display: block;
+      color: var(--gold);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      margin-bottom: 0.25rem;
+    }
+    .application-box p { color: #5a4a1e; margin: 0; font-size: 0.875rem; line-height: 1.55; }
+
+    /* ═══ TAGS ════════════════════════════════════════════════════════════ */
+    .cat-tags { margin-bottom: 1.5rem; }
+    .tag { display: inline-block; font-size: 0.7rem; font-weight: 600; padding: 0.18rem 0.5rem; border-radius: 100px; margin: 0.12rem 0.08rem; }
+    .tag-blue   { background: #dbeafe; color: #1e40af; }
+    .tag-green  { background: #d1fae5; color: #065f46; }
+    .tag-amber  { background: #fef3c7; color: #92400e; }
+    .tag-purple { background: #ede9fe; color: #5b21b6; }
+    .tag-rose   { background: #ffe4e6; color: #9f1239; }
+
+    /* ═══ SUBCATEGORY ═════════════════════════════════════════════════════ */
+    .subcat-block { margin-bottom: 1.75rem; }
+    .subcat-block.subcat-hidden { display: none; }
+    .subcat-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.7rem; }
+    .subcat-num {
+      font-size: 0.68rem; font-weight: 600;
+      color: var(--gold); background: var(--gold-light);
+      padding: 0.12rem 0.42rem; border-radius: 4px;
+    }
+    .subcat-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--navy); margin: 0; }
+
+    /* ═══ TEACHINGS TABLE ════════════════════════════════════════════════ */
+    .teachings-table { width: 100%; border-collapse: collapse; font-size: 0.865rem; margin-bottom: 0.5rem; }
+    .teachings-table thead tr { background: var(--navy); color: #fff; }
+    .teachings-table thead th {
+      padding: 0.52rem 0.85rem;
+      font-weight: 600; font-size: 0.7rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    .teachings-table thead th:first-child { border-radius: 6px 0 0 0; }
+    .teachings-table thead th:last-child  { border-radius: 0 6px 0 0; }
+    .teachings-table tbody tr { border-bottom: 1px solid var(--border); transition: background 0.12s; }
+    .teachings-table tbody tr:hover { background: #fdf8ee; }
+    .teachings-table tbody tr.teaching-hidden { display: none; }
+    .teachings-table td { padding: 0.6rem 0.85rem; vertical-align: top; }
+    .teaching-text { color: var(--ink); line-height: 1.55; }
+    .parable-badge {
+      display: inline-block; background: #f3e8ff; color: #7e22ce;
+      font-size: 0.63rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.07em; padding: 0.08rem 0.38rem;
+      border-radius: 3px; margin-left: 0.3rem; vertical-align: middle;
+    }
+    .ref-cell { font-size: 0.82rem; line-height: 1.85; }
+    .sep { color: #bbb; margin: 0 0.2rem; font-size: 0.73rem; }
+
+    /* ═══ SCRIPTURE LINKS ════════════════════════════════════════════════ */
+    a.scripture-ref {
+      color: var(--gold); text-decoration: none; font-weight: 400;
+      font-size: 0.82rem; border-bottom: 1px dashed var(--gold-mid);
+      margin-right: 0.1rem; transition: color 0.15s, border-color 0.15s;
+    }
+    a.scripture-ref.primary-ref { font-weight: 700; font-size: 0.85rem; }
+    a.scripture-ref:hover { color: #6b5020; border-bottom-style: solid; }
+
+    /* ═══ PERMALINK ══════════════════════════════════════════════════════ */
+    .permalink-cell { width: 26px; padding: 0.6rem 0.35rem 0.6rem 0 !important; vertical-align: middle; }
+    .permalink-btn {
+      background: none; border: none; color: transparent;
+      cursor: pointer; padding: 0; font-size: 0.82rem;
+      transition: color 0.15s; line-height: 1; display: block;
+    }
+    .teachings-table tbody tr:hover .permalink-btn { color: var(--muted); }
+    .permalink-btn:hover { color: var(--gold) !important; }
+    .permalink-toast {
+      position: fixed; bottom: 1.75rem; right: 1.75rem;
+      background: var(--navy); color: white;
+      font-size: 0.76rem; font-weight: 400;
+      padding: 0.45rem 1rem; border-radius: 6px;
+      opacity: 0; transform: translateY(6px);
+      transition: all 0.2s; pointer-events: none; z-index: 9999;
+      border-left: 3px solid var(--gold-mid);
+    }
+    .permalink-toast.show { opacity: 1; transform: translateY(0); }
+
+    /* ═══ SCRIPTURE TOOLTIP ══════════════════════════════════════════════ */
+    #scripture-tooltip {
+      position: fixed; z-index: 9999;
+      background: var(--white); border: 1px solid var(--gold-mid);
+      border-radius: 10px; padding: 0.9rem 1.1rem; max-width: 340px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.13);
+      pointer-events: none; opacity: 0; transition: opacity 0.18s;
+      font-size: 0.82rem; line-height: 1.6;
+    }
+    #scripture-tooltip.visible { opacity: 1; }
+    .tip-ref { font-weight: 700; color: var(--navy); font-family: 'Playfair Display', serif; font-size: 0.95rem; margin-bottom: 0.35rem; display: block; }
+    .tip-version { font-size: 0.65rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.35rem; display: block; }
+    .tip-text { color: var(--ink); font-style: italic; }
+    .tip-loading { color: var(--muted); font-style: italic; }
+    .tip-blb { display: block; margin-top: 0.55rem; font-size: 0.68rem; color: var(--gold); text-transform: uppercase; letter-spacing: 0.07em; font-weight: 600; }
+
+    /* ═══ RESPONSIVE ══════════════════════════════════════════════════════ */
+    @media (max-width: 768px) {
+      .sidebar { display: none; }
+      .main-content { padding: 1.5rem 1rem 3rem; }
+      .site-header h1 { font-size: 1.5rem; }
+      .filter-bar { padding-left: 1rem; top: 70px; }
+    }
+
+    /* ═══ PRINT ═══════════════════════════════════════════════════════════ */
+    @media print {
+      .sidebar, .filter-bar, .header-controls, .poc-badge,
+      .permalink-btn, .permalink-cell, .cat-focus-hint,
+      .focus-banner, .filter-banner, .permalink-toast,
+      #scripture-tooltip { display: none !important; }
+      .site-header { position: static; padding: 1rem 1.5rem; }
+      .main-content { padding: 0; }
+      .layout-wrap { display: block; }
+      .category-section { page-break-before: always; }
+      .category-section:first-child { page-break-before: avoid; }
+      a.scripture-ref { border-bottom: none; color: var(--ink); }
+      a[href]::after { content: ""; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════ SITE HEADER ═══════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <div>
+      <div class="header-eyebrow">New Testament · All Four Gospels</div>
+      <h1>Christ's Teachings</h1>
+    </div>
+    <div class="header-controls">
+      <span class="poc-badge">Proof of Concept</span>
+      <div class="ctrl-divider"></div>
+      <span class="ctrl-label">Size</span>
+      <div class="btn-font-group">
+        <button class="btn-ctrl active" id="btn-font-normal" onclick="setFontSize('normal')">A</button>
+        <button class="btn-ctrl" id="btn-font-large" onclick="setFontSize('large')">A+</button>
+      </div>
+      <div class="ctrl-divider"></div>
+      <button class="btn-ctrl" id="btn-parables" onclick="toggleParables()">&#9997; Parables Only</button>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════ BOOK FILTER BAR ═══════════════════════════════════ -->
+<div class="filter-bar">
+  <span class="filter-bar-label">Filter by Book</span>
+  <button class="book-pill" data-book="Matt"  onclick="toggleBook(this)">Matt</button>
+  <button class="book-pill" data-book="Mark"  onclick="toggleBook(this)">Mark</button>
+  <button class="book-pill" data-book="Luke"  onclick="toggleBook(this)">Luke</button>
+  <button class="book-pill" data-book="John"  onclick="toggleBook(this)">John</button>
+  <button class="book-pill" data-book="Acts"  onclick="toggleBook(this)">Acts</button>
+  <button class="book-pill" data-book="Rev"   onclick="toggleBook(this)">Rev</button>
+  <button class="filter-clear" id="filter-clear" onclick="clearBookFilters()">Clear filters</button>
+</div>
+
+<!-- ═══════════════════ LAYOUT ════════════════════════════════════════════ -->
+<div class="layout-wrap">
+
+  <!-- SIDEBAR ──────────────────────────────────────────────────────────── -->
+  <nav class="sidebar" id="toc-sidebar">
+    <div class="sidebar-label">Table of Contents</div>
+
+    <a href="#cat-4" class="toc-cat" data-cat="cat-4">
+      <span class="toc-cat-title">4. The Kingdom of God</span>
+      <span class="toc-count" id="count-cat-4">9</span>
+    </a>
+    <a href="#cat-4-1" class="toc-sub" data-sub="cat-4-1">4.1 Nature of the Kingdom</a>
+    <a href="#cat-4-3" class="toc-sub" data-sub="cat-4-3">4.3 Entering the Kingdom</a>
+
+    <hr class="toc-divider">
+
+    <a href="#cat-10" class="toc-cat" data-cat="cat-10">
+      <span class="toc-cat-title">10. Prayer and Communion</span>
+      <span class="toc-count" id="count-cat-10">8</span>
+    </a>
+    <a href="#cat-10-1" class="toc-sub" data-sub="cat-10-1">10.1 The Lord's Prayer</a>
+    <a href="#cat-10-3" class="toc-sub" data-sub="cat-10-3">10.3 Persistence in Prayer</a>
+
+    <hr class="toc-divider">
+
+    <a href="#cat-13" class="toc-cat" data-cat="cat-13">
+      <span class="toc-cat-title">13. Love</span>
+      <span class="toc-count" id="count-cat-13">7</span>
+    </a>
+    <a href="#cat-13-1" class="toc-sub" data-sub="cat-13-1">13.1 Love for God</a>
+    <a href="#cat-13-3" class="toc-sub" data-sub="cat-13-3">13.3 Love for Enemies</a>
+    <a href="#cat-13-4" class="toc-sub" data-sub="cat-13-4">13.4 The New Commandment</a>
+
+    <hr class="toc-divider">
+
+    <a href="#cat-22" class="toc-cat" data-cat="cat-22">
+      <span class="toc-cat-title">22. Discipleship</span>
+      <span class="toc-count" id="count-cat-22">7</span>
+    </a>
+    <a href="#cat-22-1" class="toc-sub" data-sub="cat-22-1">22.1 The Call to Follow</a>
+    <a href="#cat-22-2" class="toc-sub" data-sub="cat-22-2">22.2 Counting the Cost</a>
+  </nav>
+
+  <!-- MAIN ─────────────────────────────────────────────────────────────── -->
+  <main class="main-content">
+
+    <div class="focus-banner" id="focus-banner">
+      <span>Focus mode active. <em>Double-click any header to switch, or</em></span>
+      <button class="btn-show-all" onclick="clearFocus()">Show All Categories</button>
+    </div>
+
+    <div class="filter-banner" id="filter-banner"></div>
+
+    <!-- ═══ CAT 4: The Kingdom of God ════════════════════════════════════ -->
+    <section class="category-section" id="cat-4" data-sources="Matt Mark Luke John">
+      <div class="category-header" ondblclick="focusCategory('cat-4')">
+        <div class="cat-number">4</div>
+        <div style="flex:1">
+          <h2 class="cat-title">The Kingdom of God</h2>
+          <p class="cat-subtitle">Matt · Mark · Luke · John</p>
+        </div>
+        <span class="cat-focus-hint">⊞ double-click to focus</span>
+      </div>
+      <div class="application-box">
+        <strong>Daily Life Application</strong>
+        <p>The Kingdom of God is not a future abstraction but a present reality to be sought, entered, and lived. It reorders priorities, challenges self-sufficiency, and calls for a childlike trust that places God's reign above every other pursuit.</p>
+      </div>
+      <div class="cat-tags">
+        <span class="tag tag-blue">Identity &amp; Worldview</span>
+        <span class="tag tag-green">Values &amp; Priorities</span>
+        <span class="tag tag-purple">Dependence &amp; Trust</span>
+      </div>
+
+      <div class="subcat-block" id="cat-4-1">
+        <div class="subcat-header">
+          <span class="subcat-num">4.1</span>
+          <h3 class="subcat-title">Nature and Character of the Kingdom</h3>
+        </div>
+        <table class="teachings-table">
+          <thead><tr><th style="width:55%">Teaching</th><th style="width:42%">Scriptures</th><th style="width:3%"></th></tr></thead>
+          <tbody>
+            <tr id="t-4-1-1">
+              <td class="teaching-text">Kingdom of heaven compared to a mustard seed — smallest of seeds grows into a large tree sheltering birds <span class="parable-badge">Parable</span></td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 13:31-32" href="https://www.blueletterbible.org/nkjv/mat/13/31/" target="_blank">Matt 13:31–32</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Mark 4:30-32" href="https://www.blueletterbible.org/nkjv/mar/4/30/" target="_blank">Mark 4:30–32</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 13:18-19" href="https://www.blueletterbible.org/nkjv/luk/13/18/" target="_blank">Luke 13:18–19</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-4-1-1')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-4-1-2">
+              <td class="teaching-text">Kingdom of heaven compared to leaven hidden in three measures of flour — permeates the whole <span class="parable-badge">Parable</span></td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 13:33" href="https://www.blueletterbible.org/nkjv/mat/13/33/" target="_blank">Matt 13:33</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 13:20-21" href="https://www.blueletterbible.org/nkjv/luk/13/20/" target="_blank">Luke 13:20–21</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-4-1-2')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-4-1-3">
+              <td class="teaching-text">Kingdom compared to treasure hidden in a field, and to a merchant who sells everything for one pearl of great value <span class="parable-badge">Parable</span></td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 13:44-46" href="https://www.blueletterbible.org/nkjv/mat/13/44/" target="_blank">Matt 13:44–46</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-4-1-3')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-4-1-4">
+              <td class="teaching-text">The kingdom does not come with outward observation — it is in your midst / among you</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Luke 17:20-21" href="https://www.blueletterbible.org/nkjv/luk/17/20/" target="_blank">Luke 17:20–21</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-4-1-4')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-4-1-5">
+              <td class="teaching-text">The kingdom of God is at hand — the time is fulfilled; repent and believe</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Mark 1:15" href="https://www.blueletterbible.org/nkjv/mar/1/15/" target="_blank">Mark 1:15</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Matthew 4:17" href="https://www.blueletterbible.org/nkjv/mat/4/17/" target="_blank">Matt 4:17</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-4-1-5')" title="Copy link">¶</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subcat-block" id="cat-4-3">
+        <div class="subcat-header">
+          <span class="subcat-num">4.3</span>
+          <h3 class="subcat-title">Entering the Kingdom</h3>
+        </div>
+        <table class="teachings-table">
+          <thead><tr><th style="width:55%">Teaching</th><th style="width:42%">Scriptures</th><th style="width:3%"></th></tr></thead>
+          <tbody>
+            <tr id="t-4-3-1">
+              <td class="teaching-text">Entry requires being born again — of water and Spirit; what is born of flesh is flesh; the Spirit moves like the wind</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="John 3:3-8" href="https://www.blueletterbible.org/nkjv/jhn/3/3/" target="_blank">John 3:3–8</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-4-3-1')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-4-3-2">
+              <td class="teaching-text">Unless one becomes like a child, he cannot enter the kingdom</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 18:3" href="https://www.blueletterbible.org/nkjv/mat/18/3/" target="_blank">Matt 18:3</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Mark 10:15" href="https://www.blueletterbible.org/nkjv/mar/10/15/" target="_blank">Mark 10:15</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 18:17" href="https://www.blueletterbible.org/nkjv/luk/18/17/" target="_blank">Luke 18:17</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-4-3-2')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-4-3-3">
+              <td class="teaching-text">Enter by the narrow gate — broad and easy is the way to destruction; few find the narrow way</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 7:13-14" href="https://www.blueletterbible.org/nkjv/mat/7/13/" target="_blank">Matt 7:13–14</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 13:23-24" href="https://www.blueletterbible.org/nkjv/luk/13/23/" target="_blank">Luke 13:23–24</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-4-3-3')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-4-3-4">
+              <td class="teaching-text">Seek first the kingdom and his righteousness — all else will be added; many are called but few are chosen</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 6:33" href="https://www.blueletterbible.org/nkjv/mat/6/33/" target="_blank">Matt 6:33</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Matthew 22:14" href="https://www.blueletterbible.org/nkjv/mat/22/14/" target="_blank">Matt 22:14</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 12:31" href="https://www.blueletterbible.org/nkjv/luk/12/31/" target="_blank">Luke 12:31</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-4-3-4')" title="Copy link">¶</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr class="section-rule">
+
+    <!-- ═══ CAT 10: Prayer and Communion ═════════════════════════════════ -->
+    <section class="category-section" id="cat-10" data-sources="Matt Mark Luke John">
+      <div class="category-header" ondblclick="focusCategory('cat-10')">
+        <div class="cat-number">10</div>
+        <div style="flex:1">
+          <h2 class="cat-title">Prayer and Communion</h2>
+          <p class="cat-subtitle">Matt · Mark · Luke · John</p>
+        </div>
+        <span class="cat-focus-hint">⊞ double-click to focus</span>
+      </div>
+      <div class="application-box">
+        <strong>Daily Life Application</strong>
+        <p>Prayer is not a religious duty performed for an audience but a direct and personal communion with the Father. Jesus models both its form and its spirit: honest, persistent, forgiving, and rooted in trust rather than technique.</p>
+      </div>
+      <div class="cat-tags">
+        <span class="tag tag-purple">Spiritual Disciplines</span>
+        <span class="tag tag-purple">Dependence &amp; Trust</span>
+        <span class="tag tag-blue">Inner Life &amp; Character</span>
+      </div>
+
+      <div class="subcat-block" id="cat-10-1">
+        <div class="subcat-header">
+          <span class="subcat-num">10.1</span>
+          <h3 class="subcat-title">The Lord's Prayer — Pattern for Prayer</h3>
+        </div>
+        <table class="teachings-table">
+          <thead><tr><th style="width:55%">Element</th><th style="width:42%">Scriptures</th><th style="width:3%"></th></tr></thead>
+          <tbody>
+            <tr id="t-10-1-1">
+              <td class="teaching-text">Our Father in heaven, hallowed be your name</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 6:9" href="https://www.blueletterbible.org/nkjv/mat/6/9/" target="_blank">Matt 6:9</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 11:2" href="https://www.blueletterbible.org/nkjv/luk/11/2/" target="_blank">Luke 11:2</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-10-1-1')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-10-1-2">
+              <td class="teaching-text">Your kingdom come, your will be done, on earth as it is in heaven</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 6:10" href="https://www.blueletterbible.org/nkjv/mat/6/10/" target="_blank">Matt 6:10</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 11:2" href="https://www.blueletterbible.org/nkjv/luk/11/2/" target="_blank">Luke 11:2</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-10-1-2')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-10-1-3">
+              <td class="teaching-text">Give us this day our daily bread</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 6:11" href="https://www.blueletterbible.org/nkjv/mat/6/11/" target="_blank">Matt 6:11</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 11:3" href="https://www.blueletterbible.org/nkjv/luk/11/3/" target="_blank">Luke 11:3</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-10-1-3')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-10-1-4">
+              <td class="teaching-text">Forgive us our debts / sins as we also forgive our debtors</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 6:12" href="https://www.blueletterbible.org/nkjv/mat/6/12/" target="_blank">Matt 6:12</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 11:4" href="https://www.blueletterbible.org/nkjv/luk/11/4/" target="_blank">Luke 11:4</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-10-1-4')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-10-1-5">
+              <td class="teaching-text">Lead us not into temptation, but deliver us from evil</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 6:13" href="https://www.blueletterbible.org/nkjv/mat/6/13/" target="_blank">Matt 6:13</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 11:4" href="https://www.blueletterbible.org/nkjv/luk/11/4/" target="_blank">Luke 11:4</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-10-1-5')" title="Copy link">¶</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subcat-block" id="cat-10-3">
+        <div class="subcat-header">
+          <span class="subcat-num">10.3</span>
+          <h3 class="subcat-title">Persistence in Prayer</h3>
+        </div>
+        <table class="teachings-table">
+          <thead><tr><th style="width:55%">Teaching</th><th style="width:42%">Scriptures</th><th style="width:3%"></th></tr></thead>
+          <tbody>
+            <tr id="t-10-3-1">
+              <td class="teaching-text">Ask and it will be given; seek and you will find; knock and the door will be opened — everyone who asks receives</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 7:7-8" href="https://www.blueletterbible.org/nkjv/mat/7/7/" target="_blank">Matt 7:7–8</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 11:9-10" href="https://www.blueletterbible.org/nkjv/luk/11/9/" target="_blank">Luke 11:9–10</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-10-3-1')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-10-3-2">
+              <td class="teaching-text">The persistent friend at midnight — a man gives bread not out of friendship but because of shameless persistence <span class="parable-badge">Parable</span></td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Luke 11:5-8" href="https://www.blueletterbible.org/nkjv/luk/11/5/" target="_blank">Luke 11:5–8</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-10-3-2')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-10-3-3">
+              <td class="teaching-text">The persistent widow and the unjust judge — men ought always to pray and not lose heart; God will give justice to his elect <span class="parable-badge">Parable</span></td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Luke 18:1-8" href="https://www.blueletterbible.org/nkjv/luk/18/1/" target="_blank">Luke 18:1–8</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-10-3-3')" title="Copy link">¶</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr class="section-rule">
+
+    <!-- ═══ CAT 13: Love ═════════════════════════════════════════════════ -->
+    <section class="category-section" id="cat-13" data-sources="Matt Mark Luke John">
+      <div class="category-header" ondblclick="focusCategory('cat-13')">
+        <div class="cat-number">13</div>
+        <div style="flex:1">
+          <h2 class="cat-title">Love</h2>
+          <p class="cat-subtitle">Matt · Mark · Luke · John</p>
+        </div>
+        <span class="cat-focus-hint">⊞ double-click to focus</span>
+      </div>
+      <div class="application-box">
+        <strong>Daily Life Application</strong>
+        <p>Love is not an emotion but a practice — directed first toward God with the whole person, then outward to neighbor, enemy, and fellow disciple alike. The new commandment raises the standard from reciprocity to self-giving sacrifice.</p>
+      </div>
+      <div class="cat-tags">
+        <span class="tag tag-rose">Relationships</span>
+        <span class="tag tag-green">Community &amp; Mission</span>
+        <span class="tag tag-blue">Identity &amp; Worldview</span>
+      </div>
+
+      <div class="subcat-block" id="cat-13-1">
+        <div class="subcat-header">
+          <span class="subcat-num">13.1</span>
+          <h3 class="subcat-title">Love for God</h3>
+        </div>
+        <table class="teachings-table">
+          <thead><tr><th style="width:55%">Teaching</th><th style="width:42%">Scriptures</th><th style="width:3%"></th></tr></thead>
+          <tbody>
+            <tr id="t-13-1-1">
+              <td class="teaching-text">Love the Lord your God with all your heart, soul, mind, and strength — this is the great and first commandment; all the Law and the Prophets hang on this and love of neighbor</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 22:37-40" href="https://www.blueletterbible.org/nkjv/mat/22/37/" target="_blank">Matt 22:37–40</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Mark 12:30" href="https://www.blueletterbible.org/nkjv/mar/12/30/" target="_blank">Mark 12:30</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 10:27" href="https://www.blueletterbible.org/nkjv/luk/10/27/" target="_blank">Luke 10:27</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-13-1-1')" title="Copy link">¶</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subcat-block" id="cat-13-3">
+        <div class="subcat-header">
+          <span class="subcat-num">13.3</span>
+          <h3 class="subcat-title">Love for Enemies</h3>
+        </div>
+        <table class="teachings-table">
+          <thead><tr><th style="width:55%">Teaching</th><th style="width:42%">Scriptures</th><th style="width:3%"></th></tr></thead>
+          <tbody>
+            <tr id="t-13-3-1">
+              <td class="teaching-text">Love your enemies, do good to those who hate you, pray for those who persecute you — be merciful as the Father is merciful</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 5:44" href="https://www.blueletterbible.org/nkjv/mat/5/44/" target="_blank">Matt 5:44</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 6:27-28" href="https://www.blueletterbible.org/nkjv/luk/6/27/" target="_blank">Luke 6:27–28</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-13-3-1')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-13-3-2">
+              <td class="teaching-text">If you love only those who love you, what reward do you have? Even tax collectors do the same; lend expecting nothing in return</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 5:46-47" href="https://www.blueletterbible.org/nkjv/mat/5/46/" target="_blank">Matt 5:46–47</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 6:32-35" href="https://www.blueletterbible.org/nkjv/luk/6/32/" target="_blank">Luke 6:32–35</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-13-3-2')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-13-3-3">
+              <td class="teaching-text">Do to others as you would have them do to you — this sums up the Law and the Prophets</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 7:12" href="https://www.blueletterbible.org/nkjv/mat/7/12/" target="_blank">Matt 7:12</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 6:31" href="https://www.blueletterbible.org/nkjv/luk/6/31/" target="_blank">Luke 6:31</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-13-3-3')" title="Copy link">¶</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subcat-block" id="cat-13-4">
+        <div class="subcat-header">
+          <span class="subcat-num">13.4</span>
+          <h3 class="subcat-title">The New Commandment</h3>
+        </div>
+        <table class="teachings-table">
+          <thead><tr><th style="width:55%">Teaching</th><th style="width:42%">Scriptures</th><th style="width:3%"></th></tr></thead>
+          <tbody>
+            <tr id="t-13-4-1">
+              <td class="teaching-text">A new commandment: love one another as I have loved you — by this all will know you are his disciples</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="John 13:34-35" href="https://www.blueletterbible.org/nkjv/jhn/13/34/" target="_blank">John 13:34–35</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="John 15:12" href="https://www.blueletterbible.org/nkjv/jhn/15/12/" target="_blank">John 15:12</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-13-4-1')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-13-4-2">
+              <td class="teaching-text">Greater love has no one than this: to lay down his life for his friends; you are his friends if you do what he commands</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="John 15:13-14" href="https://www.blueletterbible.org/nkjv/jhn/15/13/" target="_blank">John 15:13–14</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-13-4-2')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-13-4-3">
+              <td class="teaching-text">He no longer calls them servants but friends — he has made known everything he heard from the Father</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="John 15:15" href="https://www.blueletterbible.org/nkjv/jhn/15/15/" target="_blank">John 15:15</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-13-4-3')" title="Copy link">¶</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr class="section-rule">
+
+    <!-- ═══ CAT 22: Discipleship ══════════════════════════════════════════ -->
+    <section class="category-section" id="cat-22" data-sources="Matt Mark Luke John Rev">
+      <div class="category-header" ondblclick="focusCategory('cat-22')">
+        <div class="cat-number">22</div>
+        <div style="flex:1">
+          <h2 class="cat-title">Discipleship</h2>
+          <p class="cat-subtitle">Matt · Mark · Luke · John · Rev</p>
+        </div>
+        <span class="cat-focus-hint">⊞ double-click to focus</span>
+      </div>
+      <div class="application-box">
+        <strong>Daily Life Application</strong>
+        <p>Discipleship is not a program but a person — Jesus himself — to be followed at total cost. It demands self-denial, cross-bearing, and the willingness to lose everything the world considers gain. The fruit it produces is the evidence that it is real.</p>
+      </div>
+      <div class="cat-tags">
+        <span class="tag tag-green">Values &amp; Priorities</span>
+        <span class="tag tag-blue">Identity &amp; Worldview</span>
+        <span class="tag tag-rose">Suffering &amp; Resilience</span>
+      </div>
+
+      <div class="subcat-block" id="cat-22-1">
+        <div class="subcat-header">
+          <span class="subcat-num">22.1</span>
+          <h3 class="subcat-title">The Call to Follow</h3>
+        </div>
+        <table class="teachings-table">
+          <thead><tr><th style="width:55%">Teaching</th><th style="width:42%">Scriptures</th><th style="width:3%"></th></tr></thead>
+          <tbody>
+            <tr id="t-22-1-1">
+              <td class="teaching-text">Follow me, and I will make you fishers of men — come, follow me</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 4:19" href="https://www.blueletterbible.org/nkjv/mat/4/19/" target="_blank">Matt 4:19</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Mark 1:17" href="https://www.blueletterbible.org/nkjv/mar/1/17/" target="_blank">Mark 1:17</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="John 1:43" href="https://www.blueletterbible.org/nkjv/jhn/1/43/" target="_blank">John 1:43</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-22-1-1')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-22-1-2">
+              <td class="teaching-text">Foxes have holes and birds have nests — the Son of Man has no place to lay his head; let the dead bury their own dead</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 8:20-22" href="https://www.blueletterbible.org/nkjv/mat/8/20/" target="_blank">Matt 8:20–22</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 9:58-60" href="https://www.blueletterbible.org/nkjv/luk/9/58/" target="_blank">Luke 9:58–60</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-22-1-2')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-22-1-3">
+              <td class="teaching-text">No one who puts his hand to the plow and looks back is fit for the kingdom</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Luke 9:62" href="https://www.blueletterbible.org/nkjv/luk/9/62/" target="_blank">Luke 9:62</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-22-1-3')" title="Copy link">¶</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="subcat-block" id="cat-22-2">
+        <div class="subcat-header">
+          <span class="subcat-num">22.2</span>
+          <h3 class="subcat-title">Counting the Cost</h3>
+        </div>
+        <table class="teachings-table">
+          <thead><tr><th style="width:55%">Teaching</th><th style="width:42%">Scriptures</th><th style="width:3%"></th></tr></thead>
+          <tbody>
+            <tr id="t-22-2-1">
+              <td class="teaching-text">Anyone who would follow must deny himself, take up his cross daily, and follow — the cost is total self-surrender</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 16:24" href="https://www.blueletterbible.org/nkjv/mat/16/24/" target="_blank">Matt 16:24</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Mark 8:34" href="https://www.blueletterbible.org/nkjv/mar/8/34/" target="_blank">Mark 8:34</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 9:23" href="https://www.blueletterbible.org/nkjv/luk/9/23/" target="_blank">Luke 9:23</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-22-2-1')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-22-2-2">
+              <td class="teaching-text">Whoever saves his life will lose it — whoever loses it for his sake will find it; what profits a man to gain the world and forfeit his soul?</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Matthew 16:25-26" href="https://www.blueletterbible.org/nkjv/mat/16/25/" target="_blank">Matt 16:25–26</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Mark 8:35-36" href="https://www.blueletterbible.org/nkjv/mar/8/35/" target="_blank">Mark 8:35–36</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 9:24-25" href="https://www.blueletterbible.org/nkjv/luk/9/24/" target="_blank">Luke 9:24–25</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-22-2-2')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-22-2-3">
+              <td class="teaching-text">Anyone who does not renounce family, possessions, and even his own life cannot be a disciple</td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Luke 14:26" href="https://www.blueletterbible.org/nkjv/luk/14/26/" target="_blank">Luke 14:26</a>
+                <span class="sep">·</span><a class="scripture-ref" data-ref="Luke 14:33" href="https://www.blueletterbible.org/nkjv/luk/14/33/" target="_blank">Luke 14:33</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-22-2-3')" title="Copy link">¶</button></td>
+            </tr>
+            <tr id="t-22-2-4">
+              <td class="teaching-text">The tower builder and the king going to war — count the cost before you begin <span class="parable-badge">Parable</span></td>
+              <td class="ref-cell">
+                <a class="scripture-ref primary-ref" data-ref="Luke 14:28-33" href="https://www.blueletterbible.org/nkjv/luk/14/28/" target="_blank">Luke 14:28–33</a>
+              </td>
+              <td class="permalink-cell"><button class="permalink-btn" onclick="copyPermalink('t-22-2-4')" title="Copy link">¶</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+</div><!-- /.layout-wrap -->
+
+<!-- Scripture Tooltip -->
+<div id="scripture-tooltip">
+  <span class="tip-ref"></span>
+  <span class="tip-version">New King James Version</span>
+  <span class="tip-text"></span>
+  <span class="tip-blb">↗ Click to open Blue Letter Bible</span>
+</div>
+
+<!-- Permalink toast -->
+<div class="permalink-toast" id="permalink-toast">Link copied to clipboard</div>
+
+<!-- ═══════════════════ JAVASCRIPT ════════════════════════════════════════ -->
+<script>
+// ── F-08: FONT SIZE ────────────────────────────────────────────────────────
+function setFontSize(size) {
+  document.body.classList.toggle('font-large', size === 'large');
+  document.getElementById('btn-font-normal').classList.toggle('active', size === 'normal');
+  document.getElementById('btn-font-large').classList.toggle('active', size === 'large');
+}
+
+// ── F-02: PARABLE TOGGLE ───────────────────────────────────────────────────
+let parablesOnly = false;
+function toggleParables() {
+  parablesOnly = !parablesOnly;
+  document.getElementById('btn-parables').classList.toggle('active', parablesOnly);
+  applyFilters();
+}
+
+// ── F-03: BOOK FILTER ──────────────────────────────────────────────────────
+let activeBooks = new Set();
+function toggleBook(pill) {
+  const book = pill.dataset.book;
+  activeBooks.has(book) ? activeBooks.delete(book) : activeBooks.add(book);
+  pill.classList.toggle('active', activeBooks.has(book));
+  document.getElementById('filter-clear').classList.toggle('visible', activeBooks.size > 0);
+  applyFilters();
+}
+function clearBookFilters() {
+  activeBooks.clear();
+  document.querySelectorAll('.book-pill').forEach(p => p.classList.remove('active'));
+  document.getElementById('filter-clear').classList.remove('visible');
+  applyFilters();
+}
+
+// ── APPLY STACKED FILTERS ──────────────────────────────────────────────────
+function applyFilters() {
+  document.querySelectorAll('.category-section').forEach(section => {
+    const sources = (section.dataset.sources || '').split(' ');
+    const bookMatch = activeBooks.size === 0 || sources.some(s => activeBooks.has(s));
+
+    section.querySelectorAll('tbody tr').forEach(row => {
+      const hasParable = !!row.querySelector('.parable-badge');
+      row.classList.toggle('teaching-hidden', parablesOnly && !hasParable);
+    });
+
+    section.querySelectorAll('.subcat-block').forEach(sb => {
+      const visible = sb.querySelectorAll('tbody tr:not(.teaching-hidden)').length;
+      sb.classList.toggle('subcat-hidden', visible === 0);
+    });
+
+    const visibleSubs = section.querySelectorAll('.subcat-block:not(.subcat-hidden)').length;
+    section.classList.toggle('cat-hidden', !bookMatch || visibleSubs === 0);
+  });
+
+  updateCounts();
+  updateBanner();
+  updateSidebarVisibility();
+}
+
+// ── F-04: TEACHING COUNTS ─────────────────────────────────────────────────
+function updateCounts() {
+  ['cat-4','cat-10','cat-13','cat-22'].forEach(id => {
+    const section = document.getElementById(id);
+    const badge   = document.getElementById('count-' + id);
+    if (!section || !badge) return;
+    badge.textContent = section.querySelectorAll('tbody tr:not(.teaching-hidden)').length;
+  });
+}
+
+// ── FILTER BANNER ──────────────────────────────────────────────────────────
+function updateBanner() {
+  const banner = document.getElementById('filter-banner');
+  const parts  = [];
+  if (parablesOnly) parts.push('<strong>Parables Only</strong>');
+  if (activeBooks.size > 0) parts.push('Book: <strong>' + [...activeBooks].join(', ') + '</strong>');
+  const visT = document.querySelectorAll('tbody tr:not(.teaching-hidden)').length;
+  const visC = document.querySelectorAll('.category-section:not(.cat-hidden)').length;
+  if (parts.length) {
+    banner.innerHTML = '&#8984; Filtering by ' + parts.join(' · ') +
+      ' &mdash; ' + visT + ' teaching' + (visT !== 1 ? 's' : '') +
+      ' across ' + visC + ' categor' + (visC !== 1 ? 'ies' : 'y');
+    banner.classList.add('visible');
+  } else {
+    banner.classList.remove('visible');
+  }
+}
+
+// ── F-01: SIDEBAR VISIBILITY ───────────────────────────────────────────────
+function updateSidebarVisibility() {
+  ['cat-4','cat-10','cat-13','cat-22'].forEach(id => {
+    const hidden = document.getElementById(id)?.classList.contains('cat-hidden');
+    document.querySelector(`.toc-cat[data-cat="${id}"]`)?.classList.toggle('toc-hidden', hidden);
+    document.querySelectorAll(`.toc-sub[data-sub^="${id}-"]`).forEach(s => s.classList.toggle('toc-hidden', hidden));
+  });
+}
+
+// ── F-01: SCROLL SPY (cat + subcat) ───────────────────────────────────────
+const scrollTargets = [
+  ...document.querySelectorAll('section.category-section[id]'),
+  ...document.querySelectorAll('div.subcat-block[id]')
+];
+window.addEventListener('scroll', () => {
+  let curCat = '', curSub = '';
+  scrollTargets.forEach(el => {
+    if (window.scrollY >= el.offsetTop - 110) {
+      if (el.tagName === 'SECTION') curCat = el.id;
+      if (el.tagName === 'DIV')     curSub = el.id;
+    }
+  });
+  document.querySelectorAll('.toc-cat').forEach(a => a.classList.toggle('active', a.dataset.cat === curCat));
+  document.querySelectorAll('.toc-sub').forEach(a => a.classList.toggle('active', a.dataset.sub === curSub));
+}, { passive: true });
+
+// ── F-05: PERMALINK ────────────────────────────────────────────────────────
+function copyPermalink(id) {
+  const url   = window.location.href.split('#')[0] + '#' + id;
+  const toast = document.getElementById('permalink-toast');
+  navigator.clipboard.writeText(url).then(() => {
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 1800);
+  });
+}
+
+// ── F-07: FOCUS MODE ───────────────────────────────────────────────────────
+let focusedCat = null;
+function focusCategory(id) {
+  if (focusedCat === id) { clearFocus(); return; }
+  focusedCat = id;
+  document.querySelectorAll('.category-section').forEach(s => {
+    s.dataset.collapsed = s.id !== id ? 'true' : 'false';
+  });
+  document.getElementById('focus-banner').classList.add('visible');
+}
+function clearFocus() {
+  focusedCat = null;
+  document.querySelectorAll('.category-section').forEach(s => delete s.dataset.collapsed);
+  document.getElementById('focus-banner').classList.remove('visible');
+}
+
+// ── SCRIPTURE TOOLTIP ──────────────────────────────────────────────────────
+const tooltip = document.getElementById('scripture-tooltip');
+const tipRef  = tooltip.querySelector('.tip-ref');
+const tipText = tooltip.querySelector('.tip-text');
+const cache   = {};
+
+function parseRef(ref) {
+  const map = {
+    'matthew':'matthew','mark':'mark','luke':'luke','john':'john',
+    'acts':'acts','revelation':'revelation','1 corinthians':'1+corinthians'
+  };
+  const m = ref.match(/^([1-3]?\s?[a-zA-Z]+(?:\s[a-zA-Z]+)?)\s+(\d+:\d+(?:-\d+)?)$/);
+  if (!m) return null;
+  const bk = map[m[1].trim().toLowerCase()] || m[1].trim().toLowerCase().replace(/\s/g,'+');
+  return bk + '+' + m[2];
+}
+async function fetchVerse(ref) {
+  if (cache[ref]) return cache[ref];
+  const q = parseRef(ref);
+  if (!q) return 'Reference not found.';
+  try {
+    const r    = await fetch(`https://bible-api.com/${q}?translation=nkjv`);
+    const data = await r.json();
+    if (data.error) return 'Unable to retrieve verse.';
+    const txt  = data.verses.map(v => `${v.verse}. ${v.text.trim()}`).join(' ');
+    cache[ref] = txt;
+    return txt;
+  } catch { return 'Could not load scripture.'; }
+}
+
+let hideTimer;
+document.querySelectorAll('a.scripture-ref').forEach(link => {
+  link.addEventListener('mouseenter', async e => {
+    clearTimeout(hideTimer);
+    const ref = link.dataset.ref;
+    tipRef.textContent  = ref;
+    tipText.textContent = 'Loading…';
+    tipText.className   = 'tip-text tip-loading';
+    tooltip.classList.add('visible');
+    positionTooltip(e);
+    const text = await fetchVerse(ref);
+    tipText.className   = 'tip-text';
+    tipText.textContent = text;
+    positionTooltip(e);
+  });
+  link.addEventListener('mousemove',  positionTooltip);
+  link.addEventListener('mouseleave', () => {
+    hideTimer = setTimeout(() => tooltip.classList.remove('visible'), 200);
+  });
+});
+function positionTooltip(e) {
+  const pad = 16, tw = tooltip.offsetWidth || 340, th = tooltip.offsetHeight || 100;
+  let x = e.clientX + pad, y = e.clientY + pad;
+  if (x + tw > window.innerWidth  - pad) x = e.clientX - tw - pad;
+  if (y + th > window.innerHeight - pad) y = e.clientY - th - pad;
+  tooltip.style.left = x + 'px';
+  tooltip.style.top  = y + 'px';
+}
+
+// ── INIT ───────────────────────────────────────────────────────────────────
+updateCounts();
+</script>
+</body>
+</html>
