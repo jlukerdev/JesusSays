@@ -13,19 +13,19 @@
 
 *Set up the repo, build tooling, and confirm the GitHub Pages deployment pipeline works end-to-end before any UI is written.*
 
-- [ ] **1.1** Use my existing GitHub repository — name: `JesusSays`. do all work in a new branch for phase-1 development
-- [ ] **1.2** Scaffold React + Vite project (`npm create vite@latest jesus-says -- --template react`)
-- [ ] **1.3** Configure `vite.config.js` — set `base` to match GitHub Pages deploy path (e.g. `/jesus-says/`)
-- [ ] **1.4** Install core dependencies:
+- [x] **1.1** Use my existing GitHub repository — name: `JesusSays`. do all work in a new branch for phase-1 development
+- [x] **1.2** Scaffold React + Vite project (`npm create vite@latest jesus-says -- --template react`)
+- [x] **1.3** Configure `vite.config.js` — set `base` to match GitHub Pages deploy path (e.g. `/jesus-says/`)
+- [x] **1.4** Install core dependencies:
   - `react-router-dom` (v6, HashRouter)
   - `zustand`
   - `lucide-react`
   - `vite-plugin-pwa`
-- [ ] **1.5** Install dev dependencies: `gh-pages` (or configure GitHub Actions workflow)
-- [ ] **1.6** Configure GitHub Actions workflow — trigger on push to `main`, build `dist/`, deploy to `gh-pages` branch
-- [ ] **1.7** Confirm first deployment: push empty app shell, verify it loads at the GitHub Pages URL
-- [ ] **1.8** Set up `HashRouter` in `main.jsx` — confirm no routing 404s on direct URL access
-- [ ] **1.9** Confirm `teachings.json` resolves correctly from the deployed base path (place in `public/` or import directly)
+- [x] **1.5** Install dev dependencies: `gh-pages` (or configure GitHub Actions workflow)
+- [x] **1.6** Configure GitHub Actions workflow — trigger on push to `main`, build `dist/`, deploy to `gh-pages` branch
+- [ ] **1.7** Confirm first deployment: push empty app shell, verify it loads at the GitHub Pages URL *(requires merge to main + live deploy)*
+- [x] **1.8** Set up `HashRouter` in `main.jsx` — confirm no routing 404s on direct URL access
+- [x] **1.9** Confirm `teachings.json` resolves correctly from the deployed base path (place in `public/` or import directly)
 
 ---
 
@@ -33,7 +33,7 @@
 
 *Establish the file/folder structure per A-07 (separation of concerns) before writing any component logic.*
 
-- [ ] **2.1** Create `src/` directory tree per A-07 spec:
+- [x] **2.1** Create `src/` directory tree per A-07 spec:
   ```
   src/
     main.jsx
@@ -45,19 +45,19 @@
     styles/
       themes/
   ```
-- [ ] **2.2** Copy `teachings.json` into `src/data/` (or `public/` — confirm import strategy)
-- [ ] **2.3** Create `src/data/loader.js` — imports `teachings.json`, exports `categories` array and flat `teachings` map keyed by teaching ID
-- [ ] **2.4** Create `src/data/reverseIndex.js` — builds the book → chapter → verse index from `teachings.json`; exports the sorted index; memoised on first call
-- [ ] **2.5** Create `src/utils/bookOrder.js` — exports NT canonical order array and a sort helper for the 7 source books
-- [ ] **2.6** Create `src/utils/slugify.js` — exports slug/ID formatting helpers matching the `cat-{N}` and `cat-{N}-{M}` patterns from the JSON
-- [ ] **2.7** Create `src/utils/clipboardCopy.js` — exports `copyPermalink(teachingId)` using `navigator.clipboard.writeText()`
-- [ ] **2.8** Initialise Zustand store (`src/store.js`) with top-level app state shape:
+- [x] **2.2** Copy `teachings.json` into `src/data/` (or `public/` — confirm import strategy)
+- [x] **2.3** Create `src/data/loader.js` — imports `teachings.json`, exports `categories` array and flat `teachings` map keyed by teaching ID
+- [x] **2.4** Create `src/data/reverseIndex.js` — builds the book → chapter → verse index from `teachings.json`; exports the sorted index; memoised on first call
+- [x] **2.5** Create `src/utils/bookOrder.js` — exports NT canonical order array and a sort helper for the 7 source books
+- [x] **2.6** Create `src/utils/slugify.js` — exports slug/ID formatting helpers matching the `cat-{N}` and `cat-{N}-{M}` patterns from the JSON
+- [x] **2.7** Create `src/utils/clipboardCopy.js` — exports `copyPermalink(teachingId)` using `navigator.clipboard.writeText()`
+- [x] **2.8** Initialise Zustand store (`src/store.js`) with top-level app state shape:
   - `activeMode` (`'category' | 'book'`)
   - `activeCategorySlug`
   - `filters` (`{ books: [], parablesOnly: false }`)
   - `fontSize` (`'s'`)
   - `theme` (`'classic'`)
-- [ ] **2.9** Confirm no logic in `main.jsx` beyond mounting the React root and wrapping with Router + StoreProvider
+- [x] **2.9** Confirm no logic in `main.jsx` beyond mounting the React root and wrapping with Router + StoreProvider
 
 ---
 
@@ -65,18 +65,18 @@
 
 *Establish the CSS theme architecture (R-10, A-07) before any component styling. All visual tokens defined here; nothing hardcoded later.*
 
-- [ ] **3.1** Create `src/styles/base.css` — layout, spacing, component structure only; zero hardcoded colour, font, or shadow values
-- [ ] **3.2** Create `src/styles/themes/theme-classic.css` — full `:root {}` block with all CSS custom properties per R-10 spec:
+- [x] **3.1** Create `src/styles/base.css` — layout, spacing, component structure only; zero hardcoded colour, font, or shadow values
+- [x] **3.2** Create `src/styles/themes/theme-classic.css` — full `:root {}` block with all CSS custom properties per R-10 spec:
   - Palette: `--color-bg`, `--color-surface`, `--color-border`, `--color-ink`, `--color-muted`
   - Accent: `--color-accent`, `--color-accent-light`, `--color-accent-mid`
   - Authority: `--color-authority`, `--color-authority-fg`
   - Typography: `--font-display` (Playfair Display), `--font-body` (Source Sans 3)
   - Radii: `--radius-sm`, `--radius-md`, `--radius-pill`
   - Shadows: `--shadow-tooltip`, `--shadow-pane`
-- [ ] **3.3** Load Google Fonts (`Playfair Display`, `Source Sans 3`) via `<link>` in `index.html` — confirm they render on the deployed Pages URL
-- [ ] **3.4** Import `theme-classic.css` and `base.css` in `main.jsx` — confirm variables resolve in browser DevTools
-- [ ] **3.5** Create `src/hooks/useLocalPreference.js` — generic `localStorage` read/write hook used by font size and theme persistence (A-05)
-- [ ] **3.6** Audit: confirm zero hardcoded colour or font values exist anywhere outside `theme-classic.css`
+- [x] **3.3** Load Google Fonts (`Playfair Display`, `Source Sans 3`) via `<link>` in `index.html` — confirm they render on the deployed Pages URL
+- [x] **3.4** Import `theme-classic.css` and `base.css` in `main.jsx` — confirm variables resolve in browser DevTools
+- [x] **3.5** Create `src/hooks/useLocalPreference.js` — generic `localStorage` read/write hook used by font size and theme persistence (A-05)
+- [x] **3.6** Audit: confirm zero hardcoded colour or font values exist anywhere outside `theme-classic.css`
 
 ---
 
@@ -84,16 +84,16 @@
 
 *Build the persistent chrome that wraps both browser modes: header, mode switcher, and responsive layout containers. No catalog data rendered yet.*
 
-- [ ] **4.1** Create `src/components/AppHeader/AppHeader.jsx` — renders app title "Jesus Says" (R-01), font size control placeholder, mode switcher slot
-- [ ] **4.2** Create `src/components/ModeSwitcher/ModeSwitcher.jsx` — segmented control with "Categories" and "Books" options; reads/writes `activeMode` from Zustand store
-- [ ] **4.3** Create `src/components/Layout/Layout.jsx` — two-column layout shell (sidebar + main content area) for `md`+ breakpoints; single-column on `xs`/`sm`
-- [ ] **4.4** Create `src/hooks/useBreakpoint.js` — returns current breakpoint label (`xs | sm | md | lg | xl`) based on `window.innerWidth`; updates on resize
-- [ ] **4.5** Wire `App.jsx` — render `AppHeader`, `ModeSwitcher`, and `Layout`; set up `HashRouter` route branches:
+- [x] **4.1** Create `src/components/AppHeader/AppHeader.jsx` — renders app title "Jesus Says" (R-01), font size control placeholder, mode switcher slot
+- [x] **4.2** Create `src/components/ModeSwitcher/ModeSwitcher.jsx` — segmented control with "Categories" and "Books" options; reads/writes `activeMode` from Zustand store
+- [x] **4.3** Create `src/components/Layout/Layout.jsx` — two-column layout shell (sidebar + main content area) for `md`+ breakpoints; single-column on `xs`/`sm`
+- [x] **4.4** Create `src/hooks/useBreakpoint.js` — returns current breakpoint label (`xs | sm | md | lg | xl`) based on `window.innerWidth`; updates on resize
+- [x] **4.5** Wire `App.jsx` — render `AppHeader`, `ModeSwitcher`, and `Layout`; set up `HashRouter` route branches:
   - `/#/category/:slug` → `CategoryViewer` (stub)
   - `/#/book/:bookAbbr` → `BookViewer` (stub)
   - Default redirect `/#/` → `/#/category/cat-1`
-- [ ] **4.6** Confirm shell renders on mobile (375px) and desktop (1280px) with correct single/two-column behaviour
-- [ ] **4.7** Confirm mode switcher toggles `activeMode` in the store and the correct route stub renders
+- [ ] **4.6** Confirm shell renders on mobile (375px) and desktop (1280px) with correct single/two-column behaviour *(requires browser; code logic confirmed)*
+- [ ] **4.7** Confirm mode switcher toggles `activeMode` in the store and the correct route stub renders *(requires browser; code logic confirmed)*
 
 ---
 

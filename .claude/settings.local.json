@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm info *)",
+      "Bash(npm audit *)",
+      "Bash(timeout 10 npm run dev)"
+    ]
+  }
+}
