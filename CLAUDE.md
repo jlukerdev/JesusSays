@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Status
 
-**Phase 1, Stages 1–4 complete.** React/Vite scaffold is live. Stage 5 (CategoryViewer, Sidebar TOC, BookViewer) is next.
+**Phase 1, Stages 1–4 complete.** React/Vite scaffold is live. Stages 5 and 6 (CategoryViewer, Sidebar TOC, BookViewer) is next.
 
 ## Project Overview
 
@@ -27,14 +27,10 @@ npm run build     # Production build
 npm run preview   # Preview production build
 ```
 
-## Design Reference
-
-`docs/arch_plan/app_planning_v1/poc.html` is a 65KB static HTML/vanilla-JS proof-of-concept. **Design spec only — do not port.** Use for visual reference when implementing components.
-
 ## Data Architecture
 
 **Served from:** `public/teachings.json` (fetched at `/JesusSays/teachings.json`)
-**Planning copy:** `docs/arch_plan/catalog_planning/teachings.json`
+**Planning copy:** `docs/dev_plan/teachings.json`
 
 ```
 {
@@ -61,7 +57,6 @@ npm run preview   # Preview production build
 - 30 categories ordered theologically (God the Father → Seven Churches of Revelation)
 - 33 parables tagged `"parable"` — they span all categories
 - 7 NT books: Matt, Mark, Luke, John, Acts, 1Cor, Rev
-- **Data fixes pending:** `docs/arch_plan/catalog_planning/fixes.md` — 25 missing teachings to add
 
 ## Implemented Source Files
 
@@ -127,10 +122,11 @@ DOM IDs follow JSON slugs: `cat-1`, `cat-1-1`. Teaching anchors: `t-1-2-5` (dots
 
 ## Key Planning Documents
 
-- `docs/arch_plan/app_planning_v1/HTML-STANDARDS.md` — HTML structure spec, component patterns, breakpoints, print styles
-- `docs/arch_plan/app_planning_v1/feature-hitlist.md` — Full feature spec, architecture decisions (A-01–A-05), review notes (R-01–R-11)
-- `docs/arch_plan/catalog_planning/overview.md` — Data catalog scope, JSON schema examples, BLB URL patterns
-- `docs/arch_plan/catalog_planning/fixes.md` — 25 missing teachings to add
+- `docs/dev_plan/HTML-STANDARDS.md` — HTML structure spec, component patterns, breakpoints, print styles
+- `docs/dev_plan/feature-hitlist.md` — Full feature spec, architecture decisions (A-01–A-05), review notes (R-01–R-11)
+- `docs/dev_plan/overview.md` — Data catalog scope, JSON schema examples, BLB URL patterns
+- `docs/dev_plan/phase-1-dev.md` — Phase 1 development plan
+- `docs/dev_plan/ph1-progress.md` — Phase 1 progress tracking
 
 ## Unresolved Decisions
 
