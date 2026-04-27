@@ -9,12 +9,13 @@ export default function CategoryViewer() {
   const { slug } = useParams()
   const categories = useStore((s) => s.categories)
   const setActiveCategorySlug = useStore((s) => s.setActiveCategorySlug)
+  const setActiveMode = useStore((s) => s.setActiveMode)
 
   useEffect(() => {
+    setActiveMode('category')
     if (slug) setActiveCategorySlug(slug)
-    // Scroll to top of main content area on category change
     document.querySelector('.main-content')?.scrollTo({ top: 0, behavior: 'instant' })
-  }, [slug, setActiveCategorySlug])
+  }, [slug, setActiveCategorySlug, setActiveMode])
 
   const category = categories.find((c) => c.slug === slug)
 

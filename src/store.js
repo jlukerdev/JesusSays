@@ -3,6 +3,7 @@ import { create } from 'zustand'
 const useStore = create((set) => ({
   activeMode: 'category',
   activeCategorySlug: 'cat-1',
+  activeBookAbbr: 'Matt',
   filters: {
     books: [],
     parablesOnly: false
@@ -12,6 +13,7 @@ const useStore = create((set) => ({
 
   setActiveMode: (mode) => set({ activeMode: mode }),
   setActiveCategorySlug: (slug) => set({ activeCategorySlug: slug }),
+  setActiveBookAbbr: (abbr) => set({ activeBookAbbr: abbr }),
   setFilters: (filters) => set({ filters }),
   setFontSize: (fontSize) => set({ fontSize }),
   setTheme: (theme) => set({ theme }),
