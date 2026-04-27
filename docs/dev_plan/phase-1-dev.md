@@ -11,8 +11,6 @@
 
 ## Stage 1 — Project Scaffolding
 
-*Set up the repo, build tooling, and confirm the GitHub Pages deployment pipeline works end-to-end before any UI is written.*
-
 - [x] **1.1** Use my existing GitHub repository — name: `JesusSays`. do all work in a new branch for phase-1 development
 - [x] **1.2** Scaffold React + Vite project (`npm create vite@latest jesus-says -- --template react`)
 - [x] **1.3** Configure `vite.config.js` — set `base` to match GitHub Pages deploy path (e.g. `/jesus-says/`)
@@ -30,8 +28,6 @@
 ---
 
 ## Stage 2 — Project Structure & Architecture
-
-*Establish the file/folder structure per A-07 (separation of concerns) before writing any component logic.*
 
 - [x] **2.1** Create `src/` directory tree per A-07 spec:
   ```
@@ -63,8 +59,6 @@
 
 ## Stage 3 — Theme System
 
-*Establish the CSS theme architecture (R-10, A-07) before any component styling. All visual tokens defined here; nothing hardcoded later.*
-
 - [x] **3.1** Create `src/styles/base.css` — layout, spacing, component structure only; zero hardcoded colour, font, or shadow values
 - [x] **3.2** Create `src/styles/themes/theme-classic.css` — full `:root {}` block with all CSS custom properties per R-10 spec:
   - Palette: `--color-bg`, `--color-surface`, `--color-border`, `--color-ink`, `--color-muted`
@@ -82,8 +76,6 @@
 
 ## Stage 4 — App Shell Layout
 
-*Build the persistent chrome that wraps both browser modes: header, mode switcher, and responsive layout containers. No catalog data rendered yet.*
-
 - [x] **4.1** Create `src/components/AppHeader/AppHeader.jsx` — renders app title "Jesus Says" (R-01), font size control placeholder, mode switcher slot
 - [x] **4.2** Create `src/components/ModeSwitcher/ModeSwitcher.jsx` — segmented control with "Categories" and "Books" options; reads/writes `activeMode` from Zustand store
 - [x] **4.3** Create `src/components/Layout/Layout.jsx` — two-column layout shell (sidebar + main content area) for `md`+ breakpoints; single-column on `xs`/`sm`
@@ -98,8 +90,6 @@
 ---
 
 ## Stage 5 — Data Loading & Category Mode Navigation
-
-*Load `teachings.json` into the app and render the Category Mode TOC sidebar. The viewer renders real data.*
 
 - [x] **5.1** Call `loader.js` once in `App.jsx` (or a top-level data context); make `categories` available app-wide via Zustand or React context — not prop-drilled
 - [x] **5.2** Create `src/components/Sidebar/Sidebar.jsx` — accordion TOC listing all 30 categories; each category expandable to show its subcategories
@@ -135,8 +125,6 @@
 
 ## Stage 6 — Scroll-Spy (F-01)
 
-*Active state tracking in the sidebar as the user scrolls through category content.*
-
 - [x] **6.1** Create `src/hooks/useScrollSpy.js` — observes category and subcategory section elements via `IntersectionObserver`; returns the currently-in-view category slug and subcategory slug
 - [x] **6.2** Wire `useScrollSpy` into `Sidebar` — active category link and active subcategory link receive `.active` class; parent category remains active while any child is active
 - [x] **6.3** Account for mobile browser chrome variable height — use `dvh` units or JS-calculated root offset for intersection thresholds
@@ -150,30 +138,30 @@
 
 ### Stage 7A — Bible Book Browser (F-09 Mode 2)
 
-- [ ] **7A.1** Create `src/components/BookNav/BookNav.jsx` — sidebar TOC listing the 7 source books in NT canonical order (via `NT_BOOK_ABBR_ORDER` from `bookOrder.js`); each book expandable to show chapters that contain teachings; each chapter expandable to show verse-range anchors; accordion behaviour (one book open at a time)
-- [ ] **7A.2** Create `src/components/BookViewer/BookViewer.jsx` — renders all teachings organised by book → chapter → verse using the reverse index from `getReverseIndex()`; reads `:bookAbbr` route param; syncs active book to Zustand store
-- [ ] **7A.3** Book viewer structure:
+- [x] **7A.1** Create `src/components/BookNav/BookNav.jsx` — sidebar TOC listing the 7 source books in NT canonical order (via `NT_BOOK_ABBR_ORDER` from `bookOrder.js`); each book expandable to show chapters that contain teachings; each chapter expandable to show verse-range anchors; accordion behaviour (one book open at a time)
+- [x] **7A.2** Create `src/components/BookViewer/BookViewer.jsx` — renders all teachings organised by book → chapter → verse using the reverse index from `getReverseIndex()`; reads `:bookAbbr` route param; syncs active book to Zustand store
+- [x] **7A.3** Book viewer structure:
   - Book header block: full book name, ruled divider
   - Chapter sub-headers: `Chapter {N}` in muted typographic style
   - Teaching rows within each chapter: teaching text, parable badge if applicable, scripture refs (BLB links), and a category label chip showing which category the teaching belongs to
   - Teachings sorted ascending by first verse of primary reference within each chapter
-- [ ] **7A.4** Wire `useScrollSpy` (or a new `useBookScrollSpy` variant) into `BookNav` — active book, chapter, and verse anchor highlighted as user scrolls
-- [ ] **7A.5** Replace `BookViewerStub` in `App.jsx` with `<BookViewer />` and wire `<BookNav />` into the sidebar slot; `ModeSwitcher` "Books" selection navigates to `/#/book/Matt` (first book) by default
-- [ ] **7A.6** On `xs`/`sm`: `BookNav` renders as drawer (same drawer used by `Sidebar`); "Books" header button opens it; link tap closes drawer
-- [ ] **7A.7** Confirm reverse index drives correct output: 7 books, chapters match NT source, teachings in verse order
+- [x] **7A.4** Wire `useScrollSpy` (or a new `useBookScrollSpy` variant) into `BookNav` — active book, chapter, and verse anchor highlighted as user scrolls
+- [x] **7A.5** Replace `BookViewerStub` in `App.jsx` with `<BookViewer />` and wire `<BookNav />` into the sidebar slot; `ModeSwitcher` "Books" selection navigates to `/#/book/Matt` (first book) by default
+- [x] **7A.6** On `xs`/`sm`: `BookNav` renders as drawer (same drawer used by `Sidebar`); "Books" header button opens it; link tap closes drawer
+- [ ] **7A.7** Confirm reverse index drives correct output: 7 books, chapters match NT source, teachings in verse order *(requires browser; code logic confirmed)*
 
 ### Stage 7B — NT Book Filter Bar (F-03)
 
-- [ ] **7B.1** Create `src/components/FilterBar/FilterBar.jsx` — horizontal bar with one toggle pill per source book (`Matt · Mark · Luke · John · Acts · 1 Cor · Rev`) and a `Clear` button; reads/writes `filters.books` in Zustand store
-- [ ] **7B.2** Filter behaviour in Category Mode:
+- [x] **7B.1** Create `src/components/FilterBar/FilterBar.jsx` — horizontal bar with one toggle pill per source book (`Matt · Mark · Luke · John · Acts · 1 Cor · Rev`) and a `Clear` button; reads/writes `filters.books` in Zustand store
+- [x] **7B.2** Filter behaviour in Category Mode:
   - Default: all books active (all categories visible)
   - Toggling a pill deactivates that book; categories whose `data-sources` does not include any active book are hidden
   - Multiple pills can be active simultaneously (OR logic: category shown if it matches *any* active book)
   - If all pills deactivated: show "Select a book to filter" message; all categories hidden
-- [ ] **7B.3** Sidebar TOC updates in real time — categories hidden by the filter do not appear in the TOC (or are visually suppressed)
-- [ ] **7B.4** `Clear` button resets `filters.books` to all books active
-- [ ] **7B.5** Render `FilterBar` below `AppHeader` in `App.jsx`; visible in both Category Mode and Book Mode
-- [ ] **7B.6** On `xs`/`sm`: filter bar wraps naturally; pills remain tappable at ≥44px touch target
+- [x] **7B.3** Sidebar TOC updates in real time — categories hidden by the filter do not appear in the TOC (or are visually suppressed)
+- [x] **7B.4** `Clear` button resets `filters.books` to all books active
+- [x] **7B.5** Render `FilterBar` below `AppHeader` in `App.jsx`; visible in both Category Mode and Book Mode
+- [x] **7B.6** On `xs`/`sm`: filter bar wraps naturally; pills remain tappable at ≥44px touch target
 
 ---
 
@@ -200,8 +188,6 @@
 ---
 
 ## What Is Explicitly Deferred to Later Phases
-
-The following are **not** in Phase 1. Do not begin implementation until Phase 1 QA is signed off.
 
 | Item | Phase | Reason deferred |
 |---|---|---|
