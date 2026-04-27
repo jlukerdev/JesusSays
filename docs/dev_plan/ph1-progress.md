@@ -2,7 +2,7 @@
 
 **Branch:** `ph1-stg5` (current — see Push Status below)
 **Date started:** 2026-04-26
-**Scope:** Stages 1–6 of `phase-1-dev.md`
+**Scope:** Stages 1–8 of `phase-1-dev.md` (Stages 1–6 complete; Stage 7 and Stage 8 pending)
 
 ---
 
@@ -128,7 +128,7 @@ All rendering components implemented in branch `ph1-stg5`:
 
 1. **`teachings.json` base path** — The loader uses `/JesusSays/teachings.json`. If the GitHub Pages repo slug changes, `vite.config.js` `base` and `loader.js` fetch URL must be updated together.
 
-2. **Live deployment not verified** — Stages 1.7 and 1.9 (confirming the app loads and `teachings.json` resolves on the live GitHub Pages URL) require merging this branch to `main` to trigger the GitHub Actions workflow. Deferred until PR is merged.
+2. **Live deployment not verified** — Stages 1.7 and 1.9 (confirming the app loads and `teachings.json` resolves on the live GitHub Pages URL) require merging this branch to `main` to trigger the GitHub Actions workflow. Moved to Phase 3 alongside PWA finalisation.
 
 3. **`dataLoaded` gate on routes** — The `Routes` component in `App.jsx` is gated behind `dataLoaded`. This means during the ~200ms fetch of `teachings.json`, the user sees "Loading teachings…" before any route renders. This is acceptable for Phase 1; in Phase 2, the loading state can be improved with a skeleton screen or optimistic routing.
 
@@ -148,10 +148,19 @@ All rendering components implemented in branch `ph1-stg5`:
 
 ---
 
-## Stages Deferred to Later Sessions
+## Stages Remaining
 
-- **Stage 7** — PWA finalization and live deployment verification
-- **Stage 8** — Phase 1 QA & Sign-Off
+### Stage 7 — Bible Book Browser & NT Book Filter Bar · Not started
+- **Stage 7A** — Bible Book Browser (F-09 Mode 2): `BookViewer` + `BookNav` components; reverse index (`reverseIndex.js`) already built in Stage 2
+- **Stage 7B** — NT Book Filter Bar (F-03): `FilterBar` component; `data-sources` attributes already on category sections from Stage 5
+
+### Stage 8 — Phase 1 QA & Sign-Off · Not started
+- Full catalog and navigation verification across all breakpoints
+- Note: PWA install (8.13) and Lighthouse score (8.15) are deferred to Phase 3
+
+### Deferred to Phase 3
+- **PWA finalisation** (was Stage 7): `vite-plugin-pwa` is wired and builds a service worker; live install verification on iOS/Android and Lighthouse PWA score deferred
+- **Live deployment verification** (items 1.7, 1.9): confirms `teachings.json` resolves and app loads on GitHub Pages URL — requires merge to `main`
 
 ---
 

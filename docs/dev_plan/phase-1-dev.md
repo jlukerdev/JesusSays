@@ -144,24 +144,36 @@
 
 ---
 
-## Stage 7 — PWA Setup (A-02)
+## Stage 7 — Bible Book Browser & NT Book Filter Bar
 
-*Register the service worker and manifest. Must be done before launch — included in Phase 1 because it affects the build pipeline.*
+*Implement the two remaining Phase 1 browsing features: the Bible Book Mode viewer (F-09 Mode 2) and the NT Book filter bar (F-03). The reverse index (`reverseIndex.js`) and `data-sources` attributes were scaffolded in earlier stages — this stage wires the UI.*
 
-- [ ] **7.1** Configure `vite-plugin-pwa` in `vite.config.js`:
-  - App name: "Jesus Says"
-  - `display: 'standalone'`
-  - `start_url` matched to deploy base path
-  - Theme colour: `#1b2a40` (navy, from `--color-authority`)
-- [ ] **7.2** Add PWA icons (192px and 512px) — placeholder icons acceptable for Phase 1; final design in a later phase
-- [ ] **7.3** Configure Workbox precache manifest to explicitly include `teachings.json`
-- [ ] **7.4** Set caching strategies:
-  - `teachings.json` — cache-first
-  - App shell (HTML, CSS, JS) — cache-first with version invalidation
-  - Google Fonts — stale-while-revalidate
-- [ ] **7.5** Confirm service worker registers on the live GitHub Pages HTTPS origin (not just localhost)
-- [ ] **7.6** Confirm app is installable on iOS Safari (Add to Home Screen) and Android Chrome (install prompt)
-- [ ] **7.7** Confirm full catalog is browsable offline after first load
+### Stage 7A — Bible Book Browser (F-09 Mode 2)
+
+- [ ] **7A.1** Create `src/components/BookNav/BookNav.jsx` — sidebar TOC listing the 7 source books in NT canonical order (via `NT_BOOK_ABBR_ORDER` from `bookOrder.js`); each book expandable to show chapters that contain teachings; each chapter expandable to show verse-range anchors; accordion behaviour (one book open at a time)
+- [ ] **7A.2** Create `src/components/BookViewer/BookViewer.jsx` — renders all teachings organised by book → chapter → verse using the reverse index from `getReverseIndex()`; reads `:bookAbbr` route param; syncs active book to Zustand store
+- [ ] **7A.3** Book viewer structure:
+  - Book header block: full book name, ruled divider
+  - Chapter sub-headers: `Chapter {N}` in muted typographic style
+  - Teaching rows within each chapter: teaching text, parable badge if applicable, scripture refs (BLB links), and a category label chip showing which category the teaching belongs to
+  - Teachings sorted ascending by first verse of primary reference within each chapter
+- [ ] **7A.4** Wire `useScrollSpy` (or a new `useBookScrollSpy` variant) into `BookNav` — active book, chapter, and verse anchor highlighted as user scrolls
+- [ ] **7A.5** Replace `BookViewerStub` in `App.jsx` with `<BookViewer />` and wire `<BookNav />` into the sidebar slot; `ModeSwitcher` "Books" selection navigates to `/#/book/Matt` (first book) by default
+- [ ] **7A.6** On `xs`/`sm`: `BookNav` renders as drawer (same drawer used by `Sidebar`); "Books" header button opens it; link tap closes drawer
+- [ ] **7A.7** Confirm reverse index drives correct output: 7 books, chapters match NT source, teachings in verse order
+
+### Stage 7B — NT Book Filter Bar (F-03)
+
+- [ ] **7B.1** Create `src/components/FilterBar/FilterBar.jsx` — horizontal bar with one toggle pill per source book (`Matt · Mark · Luke · John · Acts · 1 Cor · Rev`) and a `Clear` button; reads/writes `filters.books` in Zustand store
+- [ ] **7B.2** Filter behaviour in Category Mode:
+  - Default: all books active (all categories visible)
+  - Toggling a pill deactivates that book; categories whose `data-sources` does not include any active book are hidden
+  - Multiple pills can be active simultaneously (OR logic: category shown if it matches *any* active book)
+  - If all pills deactivated: show "Select a book to filter" message; all categories hidden
+- [ ] **7B.3** Sidebar TOC updates in real time — categories hidden by the filter do not appear in the TOC (or are visually suppressed)
+- [ ] **7B.4** `Clear` button resets `filters.books` to all books active
+- [ ] **7B.5** Render `FilterBar` below `AppHeader` in `App.jsx`; visible in both Category Mode and Book Mode
+- [ ] **7B.6** On `xs`/`sm`: filter bar wraps naturally; pills remain tappable at ≥44px touch target
 
 ---
 
@@ -181,9 +193,9 @@
 - [ ] **8.10** No inline `<script>` logic in `index.html`; all JS in module files
 - [ ] **8.11** GitHub Actions deploys successfully on push to `main`
 - [ ] **8.12** App loads and is fully functional on deployed GitHub Pages URL
-- [ ] **8.13** PWA installs on iOS and Android; full offline browsing confirmed
+- [ ] **8.13** *(Deferred to Phase 3)* PWA installs on iOS and Android; full offline browsing confirmed
 - [ ] **8.14** `HashRouter` deep links work on direct URL access (no 404s)
-- [ ] **8.15** Lighthouse PWA score ≥ 90 on deployed URL
+- [ ] **8.15** *(Deferred to Phase 3)* Lighthouse PWA score ≥ 90 on deployed URL
 
 ---
 
@@ -193,10 +205,9 @@ The following are **not** in Phase 1. Do not begin implementation until Phase 1 
 
 | Item | Phase | Reason deferred |
 |---|---|---|
-| Filter bar — Book pills + Parables toggle (F-02, F-03, R-06) | 2 | Requires working catalog first |
+| Filter bar — Parables toggle + consolidation (F-02, R-06) | 2 | Requires working catalog first |
 | Teaching count badges in sidebar (F-04) | 2 | Depends on filter system |
 | Teaching permalink copy anchors (F-05) | 2 | IDs scaffolded in Ph 1; copy UI deferred |
-| Bible Book Browser — Mode 2 (F-09) | 2 | Reverse index built in Ph 1; viewer deferred |
 | Scripture tooltips (R-03) | 2 | Unresolved dependency; decision needed |
 | Scripture click navigation (R-02) | 2 | Unresolved — pending R-03 decision |
 | Category focus mode (F-07) | 3 | Enhancement; catalog must be stable first |
@@ -204,3 +215,5 @@ The following are **not** in Phase 1. Do not begin implementation until Phase 1 
 | Print stylesheet (F-06) | 3 | Non-interactive; low blocking risk |
 | Translation selector (R-04) | 3+ | Blocked on R-02/R-03 resolution |
 | Additional themes beyond Classic (R-10) | 3+ | Theme system in place in Ph 1; alternate themes later |
+| PWA service worker + manifest (A-02) | 3 | Deferred from Ph 1 Stage 7; vite-plugin-pwa wired; live install + Lighthouse deferred |
+| Live deployment verification (1.7, 1.9) | 3 | Requires merge to main; deferred with PWA stage |

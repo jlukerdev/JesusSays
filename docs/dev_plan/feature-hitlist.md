@@ -4,7 +4,7 @@
 **Data source:** `teachings.json` → React application
 **Standards ref:** `HTML-STANDARDS.md` (POC only — superseded for production by A-01, A-04, A-07)
 **Phase plan:** `phase-1-dev.md`
-**Status:** Spec complete · Development not started
+**Status:** Phase 1 (Stages 1–6) complete · Stage 7 (F-09 Mode 2 + F-03) and Stage 8 (QA) pending · PWA/deployment deferred to Phase 3
 
 ---
 
@@ -24,7 +24,7 @@ The following are fully defined in the standards doc and should be treated as ba
 
 ---
 
-### F-01 · Subcategory Active State in Sidebar
+### F-01 · Subcategory Active State in Sidebar ✅ Done (Phase 1 — Stage 6)
 
 **Priority:** High
 **Complexity:** Low
@@ -39,9 +39,10 @@ Extend the existing scroll-spy to highlight the active *subcategory* link in the
 - Both deactivate when scrolling past
 
 **Implementation notes:**
-- Extend existing scroll-spy JS to also query `div.subcat-block[id]`
-- Active subcategory link: `background: var(--gold-light)`, `color: var(--gold)`
-- Parent category link stays active while any of its children are active
+- Implemented as `useScrollSpy` hook using `IntersectionObserver` targeting `.subcategory-section[id]` elements
+- `rootMargin: '-10% 0px -75% 0px'` keeps active detection in the upper viewport
+- Active subcategory link receives `.sidebar-nav__subcat-link--active`; parent category active state driven by `activeCategorySlug` in Zustand store
+- `dvh`-aware: layout uses `calc(100dvh - var(--header-height))` for correct mobile chrome handling
 
 ---
 
@@ -228,7 +229,7 @@ The catalog can be browsed in two fundamentally different modes, selectable from
 
 ---
 
-#### Mode 1 — Category Browser
+#### Mode 1 — Category Browser ✅ Done (Phase 1 — Stage 5)
 
 The primary mode. Navigate the catalog by theological category.
 
@@ -258,7 +259,7 @@ The primary mode. Navigate the catalog by theological category.
 
 ---
 
-#### Mode 2 — Bible Book Browser
+#### Mode 2 — Bible Book Browser ⬜ Not started (Phase 1 — Stage 7)
 
 An alternative mode that reorganises the same teaching data by book of the Bible, in canonical NT order, then by chapter and verse.
 
@@ -307,6 +308,48 @@ An alternative mode that reorganises the same teaching data by book of the Bible
 
 ---
 
+### F-10 · Teaching Selection & Print Builder
+
+**Priority:** Medium
+**Complexity:** Medium
+**Data used:** Teaching IDs, teaching text, tags, references
+**Phase:** 3 (extends F-06; requires stable catalog)
+
+**Description:**
+A "build your own" print mode that lets the user hand-pick individual teachings from anywhere in the catalog — across categories, while navigating freely — and generate a clean printable page containing only the selected items. Useful for study sheets, sermon prep, or topical reference cards.
+
+**Behaviour:**
+- A "Select Teachings" toggle button in `AppHeader` activates selection mode
+- When selection mode is active:
+  - Each teaching row shows a checkbox on the left edge of the row
+  - A persistent floating bar appears (sticky bottom bar on mobile) showing `{N} teachings selected` with **Print** and **Clear** buttons
+  - Selections persist as the user navigates between categories — checking a teaching in Category 3, navigating to Category 7, and checking more is fully supported
+  - A **"Select all in this category"** shortcut appears at the top of each category section when selection mode is on
+- **Print** button triggers `window.print()`; print CSS (extending F-06) renders only selected rows:
+  - Selected teachings grouped by category, with the category title rendered as a heading before each group
+  - Subcategory headings included only if they contain at least one selected teaching
+  - Parable badges retained
+  - Scripture references rendered as plain text (no links, no tooltips)
+  - Page header: "Jesus Says — Selected Teachings"
+  - Category chip omitted (grouping by category already provides context)
+- **Clear** button deselects all; selection mode can be toggled off without clearing the selection
+- Selection state is session-only — not persisted to `localStorage`
+- When selection mode is inactive: checkboxes hidden, floating bar hidden, all teachings visible normally
+
+**Mobile behaviour:**
+- Floating selection bar is a full-width fixed bottom strip (same pattern as Category Prev/Next nav)
+- Checkboxes are 44px min touch targets
+- "Select all in category" button is full-width, easy to tap
+
+**Implementation notes:**
+- Selection state: `Set<teachingId>` stored in Zustand (`filters.selectedTeachings` or a dedicated slice)
+- Print CSS extension of F-06: add a `.print-selection-active` class to `<body>` before print; CSS rule `body.print-selection-active tr:not(.teaching-selected) { display: none; }` hides unselected rows
+- Floating bar uses `aria-live="polite"` so screen readers announce count changes
+- The floating bar `z-index` must sit above the fixed mobile bottom nav; coordinate with existing `cat-nav--bottom` stacking context
+- Depends on F-06 (print stylesheet) being in place; implement after F-06
+
+---
+
 ## Summary Table
 
 | ID | Feature | Priority | Complexity | Data Dependency |
@@ -320,6 +363,7 @@ An alternative mode that reorganises the same teaching data by book of the Bible
 | F-07 | Category focus mode | Low–Med | Low | Category section IDs |
 | F-08 | Font size control | Low | Low | None |
 | F-09 | Dual catalog browser (Category Mode + Bible Book Mode) | High | High | Full JSON + derived reverse index |
+| F-10 | Teaching selection & print builder | Medium | Medium | Teaching IDs, text, references |
 
 ---
 
@@ -629,46 +673,48 @@ A theme selector may be added to the header controls in a future iteration, dyna
 
 ### Phase 1 — App Shell & Category Browser
 
-| ID | Item | Type | Priority | Notes |
-|---|---|---|---|---|
-| A-01 | Target platform — React + Vite | Architecture | Foundational | |
-| A-02 | PWA — service worker + manifest | Architecture | High | vite-plugin-pwa; install on iOS + Android |
-| A-03 | Mobile-first design | Architecture | High | Base styles target xs; breakpoints layer up |
-| A-04 | External dependencies — no restrictions | Architecture | Foundational | Vanilla-only constraint lifted |
-| A-05 | localStorage / sessionStorage permitted | Architecture | Medium | Wrap in useLocalPreference hook |
-| A-06 | Hosting — GitHub Pages | Architecture | Foundational | HashRouter; Vite base; GH Actions deploy |
-| A-07 | JS separation of concerns | Architecture | High | No inline logic; ES modules; one concern per file |
-| R-01 | App title → "Jesus Says" | Design | High | Set in Stage 4 |
-| R-07 | Remove application tag pills | Removal | High | Never implement in production build |
-| R-08 | Category number — minimal typographic style | Design | Medium | Inline number, no navy box |
-| R-10 | CSS theme system — Classic theme | Architecture | High | Full CSS variable system; Classic theme only in Ph 1 |
-| F-01 | Subcategory active state in sidebar (scroll-spy) | Feature | High | Stage 6 of Ph 1 |
-| F-09 (partial) | Category Browser — Mode 1 | Feature | High | Core of Ph 1; Prev/Next nav included |
+| ID | Item | Type | Priority | Status | Notes |
+|---|---|---|---|---|---|
+| A-01 | Target platform — React + Vite | Architecture | Foundational | ✅ Done | React 18 + Vite 5 scaffolded (Stage 1) |
+| A-03 | Mobile-first design | Architecture | High | ✅ Done | Mobile-first CSS; drawer on mobile, fixed panel on desktop (Stage 4) |
+| A-04 | External dependencies — no restrictions | Architecture | Foundational | ✅ Done | Vanilla-only constraint lifted; all approved deps installed |
+| A-05 | localStorage / sessionStorage permitted | Architecture | Medium | ✅ Done | `useLocalPreference` hook implemented (Stage 3) |
+| A-06 | Hosting — GitHub Pages | Architecture | Foundational | ⚠️ Partial | HashRouter + Vite base + GH Actions done; live deployment unverified (pending merge to main) |
+| A-07 | JS separation of concerns | Architecture | High | ✅ Done | Full src/ tree per spec; no inline logic (Stage 2) |
+| R-01 | App title → "Jesus Says" | Design | High | ✅ Done | `<h1>` and `<title>` set (Stage 4) |
+| R-07 | Remove application tag pills | Removal | High | ✅ Done | Not implemented; tag pills absent from all components |
+| R-08 | Category number — minimal typographic style | Design | Medium | ✅ Done | `<span class="cat-num-inline">` inline before title; no navy box (Stage 5) |
+| R-09 | Source books — full names | Display | Low | ✅ Done | Abbr → full name via `ABBR_TO_FULL` map at render time (Stage 5) |
+| R-10 | CSS theme system — Classic theme | Architecture | High | ✅ Done | Full CSS variable system in `theme-classic.css`; zero hardcoded values (Stage 3) |
+| F-01 | Subcategory active state in sidebar (scroll-spy) | Feature | High | ✅ Done | `useScrollSpy` hook + IntersectionObserver wired to Sidebar (Stage 6) |
+| F-09 (partial) | Category Browser — Mode 1 | Feature | High | ✅ Done | Mode 1 (Category Browser): CategoryViewer, Sidebar TOC, CategoryNav, TeachingsTable implemented (Stage 5) |
+| F-03 | NT Book filter bar | Feature | High | ⬜ Stage 7 | `data-sources` attr already on category sections (Stage 5.11); filter UI + Zustand wiring here |
+| F-09 (complete) | Bible Book Browser — Mode 2 | Feature | High | ⬜ Stage 7 | `reverseIndex.js` built (Stage 2.4); BookViewer + BookNav components here |
 
 ### Phase 2 — Filters, Bible Book Mode & Scripture Integration
 
-| ID | Item | Type | Priority | Notes |
-|---|---|---|---|---|
-| F-02 | Parable-only toggle | Feature | High | Moved to filter bar per R-06 |
-| F-03 | NT Book filter bar | Feature | High | |
-| F-04 | Teaching count badges (filter-aware) | Feature | Medium | Depends on F-02/F-03 being in place |
-| F-05 | Teaching permalink anchors | Feature | Medium | IDs scaffolded in Ph 1; copy UI here |
-| F-09 (complete) | Bible Book Browser — Mode 2 | Feature | High | Reverse index built in Ph 1; viewer + nav here |
-| R-02 | Scripture link click navigation | Decision/Feature | High | ⚠️ Decision must be made before Ph 2 starts |
-| R-03 | Scripture tooltips — Bible Gateway | Decision/Feature | High | ⚠️ Under evaluation; must be resolved for Ph 2 |
-| R-06 | Consolidate filter bar (parables into filter bar) | Layout | High | Implement alongside F-02/F-03 |
-| R-09 | Source books — full names | Display | Low | Can land in Ph 1 or Ph 2 |
-| R-11 | Bible API wrapper/adapter class | Architecture | TBD | Depends on R-03 resolution |
+| ID | Item | Type | Priority | Status | Notes |
+|---|---|---|---|---|---|
+| F-02 | Parable-only toggle | Feature | High | ⬜ Not started | Moved to filter bar per R-06 |
+| F-04 | Teaching count badges (filter-aware) | Feature | Medium | ⬜ Not started | Depends on F-02/F-03 being in place |
+| F-05 | Teaching permalink anchors | Feature | Medium | ⬜ Not started | `id="t-{teaching-id}"` on all rows scaffolded in Ph 1 (Stage 5.7); copy UI here |
+| R-02 | Scripture link click navigation | Decision/Feature | High | ⚠️ Unresolved | Decision must be made before Ph 2 starts |
+| R-03 | Scripture tooltips — Bible Gateway | Decision/Feature | High | ⚠️ Under evaluation | Must be resolved for Ph 2 |
+| R-06 | Consolidate filter bar (parables into filter bar) | Layout | High | ⬜ Not started | Implement alongside F-02/F-03 |
+| R-09 | Source books — full names | Display | Low | ✅ Done in Ph 1 | Landed in Stage 5 — moved up from Ph 2 |
+| R-11 | Bible API wrapper/adapter class | Architecture | TBD | ⬜ Not started | Depends on R-03 resolution |
 
 ### Phase 3 — Enhancements, Polish & Extended Features
 
-| ID | Item | Type | Priority | Notes |
-|---|---|---|---|---|
-| F-06 | Print stylesheet | Feature | Medium | Pure CSS; low risk; no blockers |
-| F-07 | Category focus mode | Feature | Low–Med | Enhancement; catalog must be stable |
-| F-08 / R-05 | Font size control — 4 steps | Feature | Low | Hook scaffolded in Ph 1; UI here |
-| R-04 | Translation selector in UI | Feature | Low | ⚠️ Blocked on R-02/R-03 resolution |
-| R-10 (extended) | Additional themes (Minimal, Dark) | Architecture | Low | Theme system in place in Ph 1; new themes here |
+| ID | Item | Type | Priority | Status | Notes |
+|---|---|---|---|---|---|
+| A-02 | PWA — service worker + manifest | Architecture | High | ⬜ Not started | Moved from Ph 1; vite-plugin-pwa wired + placeholder icons exist; live install + Lighthouse verification deferred |
+| F-06 | Print stylesheet | Feature | Medium | ⬜ Not started | Pure CSS; low risk; no blockers |
+| F-10 | Teaching selection & print builder | Feature | Medium | ⬜ Not started | Extends F-06; implement after print stylesheet is in place |
+| F-07 | Category focus mode | Feature | Low–Med | ⬜ Not started | Enhancement; catalog must be stable |
+| F-08 / R-05 | Font size control — 4 steps | Feature | Low | ⬜ Not started | `useLocalPreference` hook scaffolded in Ph 1; UI here |
+| R-04 | Translation selector in UI | Feature | Low | ⚠️ Blocked | Blocked on R-02/R-03 resolution |
+| R-10 (extended) | Additional themes (Minimal, Dark) | Architecture | Low | ⬜ Not started | Theme system in place in Ph 1; new themes here |
 
 ---
 
@@ -852,12 +898,12 @@ The application must be deployable and fully functional when hosted on **GitHub 
 | `localStorage` / `sessionStorage` (A-05) | Fully supported in GitHub Pages context | No blocker |
 
 **Deployment checklist (to be completed before launch):**
-- [ ] `vite.config.js` has correct `base` setting for deploy path
-- [ ] `HashRouter` in use (or 404 redirect workaround confirmed working)
-- [ ] `manifest.json` `start_url` matches live URL
-- [ ] Service worker registers correctly on the live HTTPS origin
-- [ ] `teachings.json` resolves correctly from the deployed base path
-- [ ] GitHub Actions workflow pushes `dist/` to `gh-pages` branch on merge to `main`
+- [x] `vite.config.js` has correct `base` setting for deploy path (`/JesusSays/`)
+- [x] `HashRouter` in use (or 404 redirect workaround confirmed working)
+- [ ] `manifest.json` `start_url` matches live URL *(requires live deploy verification)*
+- [ ] Service worker registers correctly on the live HTTPS origin *(requires live deploy)*
+- [ ] `teachings.json` resolves correctly from the deployed base path *(requires merge to main)*
+- [x] GitHub Actions workflow pushes `dist/` to `gh-pages` branch on merge to `main`
 
 ---
 
