@@ -8,6 +8,51 @@ A comprehensive reference web application cataloging all recorded words of Jesus
 
 This repository contains planning documents, design specifications, and the canonical data catalog. The production React/Vite application is not yet implemented. See the [Planning Documents](#planning-documents) section below to learn about the design and architecture.
 
+## Quick Start: Deployment to GitHub Pages
+
+Got a React + Vite app ready to deploy? Here's the 5-minute setup:
+
+### 1. Configure Base Path (vite.config.js)
+```js
+export default {
+  base: '/your-repo-name/',  // Match your GitHub repo name
+  plugins: [react()],
+}
+```
+
+### 2. Create GitHub Actions Workflow
+Create `.github/workflows/deploy.yml`:
+```yaml
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci && npm run build
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+```
+
+### 3. Enable Pages
+Go to repo **Settings** → **Pages** → Select source: **GitHub Actions**
+
+### 4. Push to Main
+```bash
+git push origin main
+```
+
+**Done!** Your site deploys automatically. Check the **Actions** tab to monitor.
+
+👉 **For comprehensive guide** (multi-environment, troubleshooting, etc.): See [DEPLOYMENT-GUIDE.md](./docs/DEPLOYMENT-GUIDE.md)
+
 ## About Jesus Says
 
 Jesus Says is a research and reference tool designed to help readers study Jesus's teachings in context. Every recorded utterance of Jesus in the New Testament—from parables to prayers to his post-resurrection appearances—is cataloged, categorized, and cross-referenced with the scripture locations where each teaching appears.
