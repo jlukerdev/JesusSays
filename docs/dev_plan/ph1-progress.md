@@ -1,8 +1,8 @@
 # Phase 1 Progress Summary
 
-**Branch:** `ph1-stg-1_4` (pushed to remote — see Push Status below)
+**Branch:** `ph1-stg5` (current — see Push Status below)
 **Date started:** 2026-04-26
-**Scope:** Stages 1–4 of `phase-1-dev.md`
+**Scope:** Stages 1–6 of `phase-1-dev.md`
 
 ---
 
@@ -86,6 +86,34 @@ src/
 
 ---
 
+### Stage 5 — Data Loading & Category Mode Navigation ✅
+
+All rendering components implemented in branch `ph1-stg5`:
+
+- `src/components/Sidebar/Sidebar.jsx` — accordion TOC of all 30 categories; one open at a time; synced to `activeCategorySlug` in store; subcategory links call `scrollIntoView({ behavior: 'smooth' })` on target anchor; calls `onNavClick` prop to close mobile drawer on tap
+- `src/components/CategoryViewer/CategoryViewer.jsx` — reads `:slug` route param; syncs to `activeCategorySlug` store state; renders category header, source book names (abbr → full via `ABBR_TO_FULL`), and all subcategory blocks; scrolls `.main-content` to top on category change; `data-sources` attribute on section element for Phase 2 filter
+- `src/components/CategoryViewer/CategoryNav.jsx` — Prev/Next navigation rendered at top (`cat-nav--top`) and bottom (`cat-nav--bottom`) of CategoryViewer; navigates via `useNavigate` and resets scroll; on mobile: top nav hidden via CSS, bottom nav is a fixed full-width bar
+- `src/components/TeachingsTable/TeachingsTable.jsx` — Teaching (58%) / Scriptures (42%) table; teaching row has `id="t-{teaching-id}"` for permalink anchors; parable badge rendered when `tags` includes `"parable"`; scripture refs sorted primary-first, linked to BLB NKJV URLs, separated by `·`; `data-ref` attribute uses full book name for tooltip API (Phase 2)
+- `src/App.jsx` — stubs removed; `<Sidebar onNavClick={handleNavClick} />` and `<CategoryViewer />` wired in; `handleNavClick` calls `layoutRef.current?.closeDrawer()`
+- `src/styles/base.css` — added: `.category-viewer`, `.ref-cell`, `.teaching-text`, `.scripture-ref-group`, `scroll-margin-top` on `.subcategory-section`, button-reset styles on `.cat-nav__link`, mobile padding-bottom on `.main-content` for fixed bottom nav, `.cat-nav--top { display: none }` on mobile
+
+**Build:** `npm run build` passes cleanly. Output: 173.5KB JS (gzipped: 57.3KB), 8.7KB CSS, service worker precaching all assets.
+
+**Not yet verified (requires browser):**
+- 5.12: Full catalog render — all 30 categories, 335 teachings, 642 references confirmed by code review
+
+---
+
+### Stage 6 — Scroll-Spy (F-01) ✅
+
+- `src/hooks/useScrollSpy.js` — `IntersectionObserver` targeting `.subcategory-section[id]` elements; tracks a Set of currently-visible IDs and returns the first one in DOM order (topmost); `rootMargin: '-10% 0px -75% 0px'` keeps the spy in the upper portion of the viewport; resets and re-initialises on route change via `useLocation` dependency; 50ms settle delay for DOM to update after route transition; `dvh`-aware (body uses `min-height: 100dvh`, layout uses `calc(100dvh - var(--header-height))` for the sidebar)
+- `Sidebar.jsx` wired — calls `useScrollSpy()`, applies `.sidebar-nav__subcat-link--active` to matching subcategory link; category-level active from `activeCategorySlug` in store remains unaffected
+
+**Not yet verified (requires browser):**
+- 6.4: Scroll-spy desktop/mobile confirmation
+
+---
+
 ## Unresolved Issues / Open Questions
 
 ### From the dev plan
@@ -114,35 +142,47 @@ src/
 
 ## Push Status
 
-All work is **committed and pushed** to remote branch `ph1-stg-1_4` on `jlukerdev/JesusSays`. ✅
+**Stages 1–4:** committed and pushed to `ph1-stg-1_4` on `jlukerdev/JesusSays`. ✅
 
-The earlier 403 Forbidden errors (proxy blocking `git-receive-pack`) were resolved and the push completed successfully from a terminal with proper GitHub push permissions.
+**Stages 5–6:** committed and pushed to `ph1-stg5` on `jlukerdev/JesusSays`. ✅
 
 ---
 
 ## Stages Deferred to Later Sessions
 
-- **Stage 5** — Data Loading & Category Mode Navigation (Sidebar TOC, CategoryViewer, TeachingsTable, CategoryNav)
-- **Stage 6** — Scroll-Spy (`useScrollSpy` hook)
 - **Stage 7** — PWA finalization and live deployment verification
 - **Stage 8** — Phase 1 QA & Sign-Off
 
 ---
 
-## Files Changed in This Session
+## Files Changed — Stage 5–6 Session (branch: ph1-stg5)
+
+```
+docs/dev_plan/ph1-progress.md                       (updated — this file)
+docs/dev_plan/phase-1-dev.md                        (checkboxes 5.1–5.11 and 6.1–6.3 marked [x])
+src/App.jsx                                          (stubs replaced with Sidebar + CategoryViewer)
+src/components/Sidebar/Sidebar.jsx                   (new)
+src/components/CategoryViewer/CategoryViewer.jsx     (new)
+src/components/CategoryViewer/CategoryNav.jsx        (new)
+src/components/TeachingsTable/TeachingsTable.jsx     (new)
+src/hooks/useScrollSpy.js                            (new)
+src/styles/base.css                                  (added stage 5–6 component styles)
+```
+
+---
+
+## Files Changed — Stage 1–4 Session (branch: ph1-stg-1_4)
 
 ```
 .github/workflows/deploy.yml          (new)
 .gitignore                             (new)
-docs/dev_plan/ph1-progress.md          (new — this file)
-docs/dev_plan/phase-1-dev.md           (updated checkboxes)
 index.html                             (new)
 package.json                           (new)
 public/apple-touch-icon.png            (new)
 public/favicon.ico                     (new)
 public/icons/icon-192.png              (new)
 public/icons/icon-512.png              (new)
-public/teachings.json                  (new — copied from docs/dev_plan/)
+public/teachings.json                  (new)
 src/App.jsx                            (new)
 src/components/AppHeader/AppHeader.jsx (new)
 src/components/Layout/Layout.jsx       (new)

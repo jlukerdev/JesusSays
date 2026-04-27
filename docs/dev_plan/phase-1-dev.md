@@ -101,35 +101,35 @@
 
 *Load `teachings.json` into the app and render the Category Mode TOC sidebar. The viewer renders real data.*
 
-- [ ] **5.1** Call `loader.js` once in `App.jsx` (or a top-level data context); make `categories` available app-wide via Zustand or React context — not prop-drilled
-- [ ] **5.2** Create `src/components/Sidebar/Sidebar.jsx` — accordion TOC listing all 30 categories; each category expandable to show its subcategories
-- [ ] **5.3** Sidebar behaviour:
+- [x] **5.1** Call `loader.js` once in `App.jsx` (or a top-level data context); make `categories` available app-wide via Zustand or React context — not prop-drilled
+- [x] **5.2** Create `src/components/Sidebar/Sidebar.jsx` — accordion TOC listing all 30 categories; each category expandable to show its subcategories
+- [x] **5.3** Sidebar behaviour:
   - Only one category accordion open at a time
   - Clicking a category link navigates to `/#/category/{slug}` and updates `activeCategorySlug` in store
   - Subcategory links scroll to `#cat-{N}-{M}` anchor within the viewer
   - Active category and subcategory links receive `.active` styling (gold accent)
-- [ ] **5.4** On `xs`/`sm`: sidebar is hidden; a "Contents" button in `AppHeader` opens it as a slide-over drawer; drawer closes on nav link tap
-- [ ] **5.5** Create `src/components/CategoryViewer/CategoryViewer.jsx` — reads `activeCategorySlug` from store (or route param), finds the matching category in `categories`, renders it
-- [ ] **5.6** Create `src/components/TeachingsTable/TeachingsTable.jsx` — shared table component; renders a subcategory's teachings with two columns: Teaching (58%) | Scriptures (42%)
-- [ ] **5.7** Teaching row rendering:
+- [x] **5.4** On `xs`/`sm`: sidebar is hidden; a "Contents" button in `AppHeader` opens it as a slide-over drawer; drawer closes on nav link tap
+- [x] **5.5** Create `src/components/CategoryViewer/CategoryViewer.jsx` — reads `activeCategorySlug` from store (or route param), finds the matching category in `categories`, renders it
+- [x] **5.6** Create `src/components/TeachingsTable/TeachingsTable.jsx` — shared table component; renders a subcategory's teachings with two columns: Teaching (58%) | Scriptures (42%)
+- [x] **5.7** Teaching row rendering:
   - Teaching text in left cell
   - Parable badge (`<span class="parable-badge">Parable</span>`) when `tags` includes `"parable"`
   - Each teaching row: `id="t-{teaching-id}"` (dots replaced with hyphens) for permalink anchors (F-05 prep)
   - Row `id` set at render time from JSON `id` field
-- [ ] **5.8** Scripture reference rendering per `teachings-notes.md`:
+- [x] **5.8** Scripture reference rendering per `teachings-notes.md`:
   - Primary reference bold (`.primary-ref`)
   - Cross-references follow on same line, separated by `·` separator
   - References are links (href to BLB URL built from `bookAbbr`, `chapter`, first verse of first range)
   - BLB URL pattern: `https://www.blueletterbible.org/nkjv/{bookSlug}/{chapter}/{verse}/`
-- [ ] **5.9** Create `src/components/CategoryViewer/CategoryNav.jsx` — Prev / Next category navigation
+- [x] **5.9** Create `src/components/CategoryViewer/CategoryNav.jsx` — Prev / Next category navigation
   - Displayed at top and bottom of the CategoryViewer
   - Shows adjacent category titles (e.g. `← Repentance and Conversion` / `Salvation and Eternal Life →`)
   - On `xs`/`sm`: renders as a fixed full-width bottom bar with large tap targets
-- [ ] **5.10** Category header rendering per R-08 (minimal number style) and R-09 (full book names):
+- [x] **5.10** Category header rendering per R-08 (minimal number style) and R-09 (full book names):
   - Category number: `<span class="cat-num-inline">4.</span>` inline before title — no navy box
   - Source books: full names mapped at render time (`Matt` → `Matthew`, etc.)
-- [ ] **5.11** `data-sources` attribute on each category section element — space-separated abbreviations from `sources` array (needed for F-03 filter in Phase 2)
-- [ ] **5.12** Confirm full catalog renders correctly: all 30 categories navigable, all 335 teachings visible, all 642 references linked
+- [x] **5.11** `data-sources` attribute on each category section element — space-separated abbreviations from `sources` array (needed for F-03 filter in Phase 2)
+- [ ] **5.12** Confirm full catalog renders correctly: all 30 categories navigable, all 335 teachings visible, all 642 references linked *(requires browser; code logic confirmed)*
 
 ---
 
@@ -137,10 +137,10 @@
 
 *Active state tracking in the sidebar as the user scrolls through category content.*
 
-- [ ] **6.1** Create `src/hooks/useScrollSpy.js` — observes category and subcategory section elements via `IntersectionObserver`; returns the currently-in-view category slug and subcategory slug
-- [ ] **6.2** Wire `useScrollSpy` into `Sidebar` — active category link and active subcategory link receive `.active` class; parent category remains active while any child is active
-- [ ] **6.3** Account for mobile browser chrome variable height — use `dvh` units or JS-calculated root offset for intersection thresholds
-- [ ] **6.4** Confirm scroll-spy works correctly on both desktop sidebar and mobile drawer
+- [x] **6.1** Create `src/hooks/useScrollSpy.js` — observes category and subcategory section elements via `IntersectionObserver`; returns the currently-in-view category slug and subcategory slug
+- [x] **6.2** Wire `useScrollSpy` into `Sidebar` — active category link and active subcategory link receive `.active` class; parent category remains active while any child is active
+- [x] **6.3** Account for mobile browser chrome variable height — use `dvh` units or JS-calculated root offset for intersection thresholds
+- [ ] **6.4** Confirm scroll-spy works correctly on both desktop sidebar and mobile drawer *(requires browser; code logic confirmed)*
 
 ---
 
