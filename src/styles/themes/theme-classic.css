@@ -66,5 +66,6 @@
   /* Layout */
   --sidebar-width: 270px;
   --header-height: 56px;
+  --filter-bar-height: 52px;
   --content-max-width: 860px;
 }
