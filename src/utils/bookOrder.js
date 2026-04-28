@@ -5,10 +5,11 @@ export const NT_BOOK_ORDER = [
   'John',
   'Acts',
   '1 Corinthians',
+  '2 Corinthians',
   'Revelation'
 ]
 
-export const NT_BOOK_ABBR_ORDER = ['Matt', 'Mark', 'Luke', 'John', 'Acts', '1Cor', 'Rev']
+export const NT_BOOK_ABBR_ORDER = ['Matt', 'Mark', 'Luke', 'John', 'Acts', '1Cor', '2Cor', 'Rev']
 
 export const ABBR_TO_FULL = {
   Matt: 'Matthew',
@@ -17,6 +18,7 @@ export const ABBR_TO_FULL = {
   John: 'John',
   Acts: 'Acts',
   '1Cor': '1 Corinthians',
+  '2Cor': '2 Corinthians',
   Rev: 'Revelation'
 }
 
@@ -31,6 +33,7 @@ export const BLB_BOOK_SLUG = {
   John: 'jhn',
   Acts: 'act',
   '1Cor': '1co',
+  '2Cor': '2co',
   Rev: 'rev'
 }
 
