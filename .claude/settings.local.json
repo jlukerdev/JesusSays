@@ -8,7 +8,8 @@
       "Bash(node catalog/scripts/parse-usfm.js \"catalog/bibles/eng-kjv2006_usfm/70-MATeng-kjv2006.usfm\")",
       "Bash(node -e ' *)",
       "Bash(node --input-type=module)",
-      "Bash(node catalog/scripts/parse-usfm-nt.js)"
+      "Bash(node catalog/scripts/parse-usfm-nt.js)",
+      "Bash(python3 -c ' *)"
     ]
   }
 }
