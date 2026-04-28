@@ -152,6 +152,14 @@ a:hover {
   padding: var(--space-6) var(--space-8);
 }
 
+.layout__main--full {
+  margin-left: 0 !important;
+  width: 100% !important;
+  padding: 0 !important;
+  height: calc(100dvh - var(--header-height));
+  overflow-y: hidden;
+}
+
 /* ── Mode Switcher ── */
 
 .mode-switcher {
@@ -703,4 +711,22 @@ a:hover {
   .sidebar-drawer {
     display: none !important;
   }
+}
+
+.btn-optimizer {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: var(--color-authority-fg);
+  border-radius: var(--radius-md);
+  padding: var(--space-1) var(--space-2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s ease;
+  min-height: 32px;
+  min-width: 32px;
+}
+.btn-optimizer:hover {
+  background-color: rgba(255, 255, 255, 0.15);
 }
