@@ -4008,6 +4008,152 @@
               ]
             }
           ]
+        },
+        {
+          "id": "2.7",
+          "slug": "cat-2-7",
+          "title": "Words from the Cross",
+          "teachings": [
+            {
+              "id": "2.7.1",
+              "text": "Jesus assures the repentant criminal crucified beside him that on that very day he will be with him in paradise, offering immediate salvation to one who turns to him in his final moments.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Luke 23:43",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 23,
+                  "ranges": [
+                    [
+                      43,
+                      43
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ],
+              "quote": "Verily I say unto thee, To day shalt thou be with me in paradise."
+            },
+            {
+              "id": "2.7.2",
+              "text": "From the cross Jesus entrusts his mother to the care of the beloved disciple, saying to her 'Woman, behold your son' and to the disciple 'Behold your mother,' establishing a new family bond at the moment of his death.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 19:26-27",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 19,
+                  "ranges": [
+                    [
+                      26,
+                      27
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ],
+              "quote": "Woman, behold thy son! Behold thy mother!"
+            },
+            {
+              "id": "2.7.3",
+              "text": "At the ninth hour Jesus cries out with a loud voice the opening words of Psalm 22 — 'My God, my God, why have you forsaken me?' — giving voice to the full weight of divine abandonment he bears as the sin-bearer on the cross.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 27:46",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 27,
+                  "ranges": [
+                    [
+                      46,
+                      46
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Mark 15:34",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 15,
+                  "ranges": [
+                    [
+                      34,
+                      34
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ],
+              "quote": "Eli, Eli, lama sabachthani?"
+            },
+            {
+              "id": "2.7.4",
+              "text": "Jesus declares 'I thirst' from the cross, fulfilling Scripture and expressing the full physical humanity of the Son of God in his atoning suffering.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 19:28",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 19,
+                  "ranges": [
+                    [
+                      28,
+                      28
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ],
+              "quote": "I thirst."
+            },
+            {
+              "id": "2.7.5",
+              "text": "Jesus cries out 'It is finished' (tetelestai) as his final public word before death, declaring the complete accomplishment of his atoning work and the full discharge of every obligation his mission required.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 19:30",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 19,
+                  "ranges": [
+                    [
+                      30,
+                      30
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ],
+              "quote": "It is finished:"
+            },
+            {
+              "id": "2.7.6",
+              "text": "With a loud voice Jesus entrusts his spirit to the Father in the words of Psalm 31:5, committing himself to God's care as he breathes his last and demonstrating that his death is a voluntary, trusting surrender into the Father's hands.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Luke 23:46",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 23,
+                  "ranges": [
+                    [
+                      46,
+                      46
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ],
+              "quote": "Father, into thy hands I commend my spirit:"
+            }
+          ]
         }
       ]
     },
@@ -18335,100 +18481,6 @@
                   "isPrimary": false
                 }
               ]
-            },
-            {
-              "id": "27.1.9",
-              "text": "At the Last Supper Jesus institutes the bread and the cup — this is my body, this is my blood of the new testament shed for many; he will not drink of the vine again until that day in the kingdom of God.",
-              "quote": "Take, eat: this is my body. This is my blood of the new testament, which is shed for many. Verily I say unto you, I will drink no more of the fruit of the vine, until that day that I drink it new in the kingdom of God.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 14:22–25",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 14,
-                  "ranges": [
-                    [
-                      22,
-                      25
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Matt 26:26–29",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 26,
-                  "ranges": [
-                    [
-                      26,
-                      29
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 22:17–20",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 22,
-                  "ranges": [
-                    [
-                      17,
-                      20
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ]
-            },
-            {
-              "id": "27.1.10",
-              "text": "At the Last Supper Jesus takes the cup, gives thanks, and says he will not drink of the fruit of the vine until the kingdom of God comes; then he gives the bread — this is my body given for you — and the cup, the new testament in his blood shed for them.",
-              "quote": "Take this, and divide it among yourselves: For I say unto you, I will not drink of the fruit of the vine, until the kingdom of God shall come. This is my body which is given for you: this do in remembrance of me. This cup is the new testament in my blood, which is shed for you.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 22:17–20",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 22,
-                  "ranges": [
-                    [
-                      17,
-                      20
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Matt 26:26–29",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 26,
-                  "ranges": [
-                    [
-                      26,
-                      29
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Mark 14:22–25",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 14,
-                  "ranges": [
-                    [
-                      22,
-                      25
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ]
             }
           ]
         },
@@ -18726,199 +18778,6 @@
                   "isPrimary": true
                 }
               ]
-            }
-          ]
-        },
-        {
-          "id": "27.4",
-          "slug": "cat-27-4",
-          "title": "Words from the Cross",
-          "teachings": [
-            {
-              "id": "27.4.1",
-              "text": "From the cross Jesus prays for those who are crucifying him, asking the Father to forgive them on the ground that they do not understand what they are doing — extending mercy to his executioners at the very moment of his suffering.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 23:34",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 23,
-                  "ranges": [
-                    [
-                      34,
-                      34
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "Father, forgive them; for they know not what they do."
-            },
-            {
-              "id": "27.4.2",
-              "text": "Jesus assures the repentant criminal crucified beside him that on that very day he will be with him in paradise, offering immediate salvation to one who turns to him in his final moments.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 23:43",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 23,
-                  "ranges": [
-                    [
-                      43,
-                      43
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "Verily I say unto thee, To day shalt thou be with me in paradise."
-            },
-            {
-              "id": "27.4.3",
-              "text": "From the cross Jesus entrusts his mother to the care of the beloved disciple, saying to her 'Woman, behold your son' and to the disciple 'Behold your mother,' establishing a new family bond at the moment of his death.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 19:26-27",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 19,
-                  "ranges": [
-                    [
-                      26,
-                      27
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "Woman, behold thy son! Behold thy mother!"
-            },
-            {
-              "id": "27.4.4",
-              "text": "At the ninth hour Jesus cries out with a loud voice the opening words of Psalm 22 — 'My God, my God, why have you forsaken me?' — giving voice to the full weight of divine abandonment he bears as the sin-bearer on the cross.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 27:46",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 27,
-                  "ranges": [
-                    [
-                      46,
-                      46
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Mark 15:34",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 15,
-                  "ranges": [
-                    [
-                      34,
-                      34
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ],
-              "quote": "Eli, Eli, lama sabachthani?"
-            },
-            {
-              "id": "27.4.5",
-              "text": "Jesus declares 'I thirst' from the cross, fulfilling Scripture and expressing the full physical humanity of the Son of God in his atoning suffering.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 19:28",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 19,
-                  "ranges": [
-                    [
-                      28,
-                      28
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "I thirst."
-            },
-            {
-              "id": "27.4.6",
-              "text": "Jesus cries out 'It is finished' (tetelestai) as his final public word before death, declaring the complete accomplishment of his atoning work and the full discharge of every obligation his mission required.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 19:30",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 19,
-                  "ranges": [
-                    [
-                      30,
-                      30
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "It is finished:"
-            },
-            {
-              "id": "27.4.7",
-              "text": "With a loud voice Jesus entrusts his spirit to the Father in the words of Psalm 31:5, committing himself to God's care as he breathes his last and demonstrating that his death is a voluntary, trusting surrender into the Father's hands.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 23:46",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 23,
-                  "ranges": [
-                    [
-                      46,
-                      46
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Matt 27:50",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 27,
-                  "ranges": [
-                    [
-                      50,
-                      50
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Mark 15:37",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 15,
-                  "ranges": [
-                    [
-                      37,
-                      37
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ],
-              "quote": "Father, into thy hands I commend my spirit:"
             }
           ]
         }

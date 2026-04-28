@@ -18736,27 +18736,6 @@
           "teachings": [
             {
               "id": "27.4.1",
-              "text": "From the cross Jesus prays for those who are crucifying him, asking the Father to forgive them on the ground that they do not understand what they are doing — extending mercy to his executioners at the very moment of his suffering.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 23:34",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 23,
-                  "ranges": [
-                    [
-                      34,
-                      34
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "Father, forgive them; for they know not what they do."
-            },
-            {
-              "id": "27.4.2",
               "text": "Jesus assures the repentant criminal crucified beside him that on that very day he will be with him in paradise, offering immediate salvation to one who turns to him in his final moments.",
               "tags": [],
               "references": [
@@ -18777,7 +18756,7 @@
               "quote": "Verily I say unto thee, To day shalt thou be with me in paradise."
             },
             {
-              "id": "27.4.3",
+              "id": "27.4.2",
               "text": "From the cross Jesus entrusts his mother to the care of the beloved disciple, saying to her 'Woman, behold your son' and to the disciple 'Behold your mother,' establishing a new family bond at the moment of his death.",
               "tags": [],
               "references": [
@@ -18798,7 +18777,7 @@
               "quote": "Woman, behold thy son! Behold thy mother!"
             },
             {
-              "id": "27.4.4",
+              "id": "27.4.3",
               "text": "At the ninth hour Jesus cries out with a loud voice the opening words of Psalm 22 — 'My God, my God, why have you forsaken me?' — giving voice to the full weight of divine abandonment he bears as the sin-bearer on the cross.",
               "tags": [],
               "references": [
@@ -18832,7 +18811,7 @@
               "quote": "Eli, Eli, lama sabachthani?"
             },
             {
-              "id": "27.4.5",
+              "id": "27.4.4",
               "text": "Jesus declares 'I thirst' from the cross, fulfilling Scripture and expressing the full physical humanity of the Son of God in his atoning suffering.",
               "tags": [],
               "references": [
@@ -18853,7 +18832,7 @@
               "quote": "I thirst."
             },
             {
-              "id": "27.4.6",
+              "id": "27.4.5",
               "text": "Jesus cries out 'It is finished' (tetelestai) as his final public word before death, declaring the complete accomplishment of his atoning work and the full discharge of every obligation his mission required.",
               "tags": [],
               "references": [
@@ -18874,7 +18853,7 @@
               "quote": "It is finished:"
             },
             {
-              "id": "27.4.7",
+              "id": "27.4.6",
               "text": "With a loud voice Jesus entrusts his spirit to the Father in the words of Psalm 31:5, committing himself to God's care as he breathes his last and demonstrating that his death is a voluntary, trusting surrender into the Father's hands.",
               "tags": [],
               "references": [
@@ -18890,32 +18869,6 @@
                     ]
                   ],
                   "isPrimary": true
-                },
-                {
-                  "label": "Matt 27:50",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 27,
-                  "ranges": [
-                    [
-                      50,
-                      50
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Mark 15:37",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 15,
-                  "ranges": [
-                    [
-                      37,
-                      37
-                    ]
-                  ],
-                  "isPrimary": false
                 }
               ],
               "quote": "Father, into thy hands I commend my spirit:"

@@ -1,0 +1,428 @@
+{
+  "generatedAt": "2026-04-28T15:24:08.611Z",
+  "checks": [
+    {
+      "eventKey": "passion-foretold-passover",
+      "passage": "Matt 26:2",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "anointing-bethany",
+      "passage": "Matt 26:10–13",
+      "totalVerses": 4,
+      "jesusVerses": 4,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "anointing-bethany",
+      "passage": "Mark 14:6–9",
+      "totalVerses": 4,
+      "jesusVerses": 4,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "prepare-passover",
+      "passage": "Matt 26:18",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "prepare-passover",
+      "passage": "Mark 14:13–15",
+      "totalVerses": 3,
+      "jesusVerses": 3,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "prepare-passover",
+      "passage": "Luke 22:8, 10–12",
+      "totalVerses": 4,
+      "jesusVerses": 4,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "institution-bread-and-cup",
+      "passage": "Matt 26:26–29",
+      "totalVerses": 4,
+      "jesusVerses": 4,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "institution-bread-and-cup",
+      "passage": "Mark 14:22–25",
+      "totalVerses": 4,
+      "jesusVerses": 3,
+      "narrationVerses": 1,
+      "missing": [],
+      "status": "partial"
+    },
+    {
+      "eventKey": "institution-bread-and-cup",
+      "passage": "Luke 22:17–20",
+      "totalVerses": 4,
+      "jesusVerses": 4,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "betrayal-foretold",
+      "passage": "Matt 26:21",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "betrayal-foretold",
+      "passage": "Mark 14:18",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "betrayal-foretold",
+      "passage": "Luke 22:21–22",
+      "totalVerses": 2,
+      "jesusVerses": 2,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "betrayer-identified",
+      "passage": "Matt 26:23–25",
+      "totalVerses": 3,
+      "jesusVerses": 3,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "betrayer-identified",
+      "passage": "Mark 14:20–21",
+      "totalVerses": 2,
+      "jesusVerses": 2,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "shepherd-smitten",
+      "passage": "Matt 26:31–32",
+      "totalVerses": 2,
+      "jesusVerses": 2,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "shepherd-smitten",
+      "passage": "Mark 14:27–28",
+      "totalVerses": 2,
+      "jesusVerses": 2,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "peter-denial-warning",
+      "passage": "Matt 26:34",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "peter-denial-warning",
+      "passage": "Mark 14:30",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "peter-denial-warning",
+      "passage": "Mark 14:72",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "peter-denial-warning",
+      "passage": "Luke 22:34–38",
+      "totalVerses": 5,
+      "jesusVerses": 5,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "judas-greeting",
+      "passage": "Matt 26:50",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "judas-kiss",
+      "passage": "Luke 22:48",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "whom-seek-ye",
+      "passage": "John 18:4",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "sword-saying",
+      "passage": "Matt 26:52–56",
+      "totalVerses": 5,
+      "jesusVerses": 5,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "sword-saying",
+      "passage": "John 18:11",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "arrest-confront-mob",
+      "passage": "Mark 14:48–49",
+      "totalVerses": 2,
+      "jesusVerses": 2,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "arrest-confront-mob",
+      "passage": "Luke 22:51–53",
+      "totalVerses": 3,
+      "jesusVerses": 3,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "caiaphas-spoke-openly",
+      "passage": "John 18:20–21",
+      "totalVerses": 2,
+      "jesusVerses": 2,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "caiaphas-why-smitest",
+      "passage": "John 18:23",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "caiaphas-i-am",
+      "passage": "Matt 26:64",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "caiaphas-i-am",
+      "passage": "Mark 14:62",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "caiaphas-i-am",
+      "passage": "Luke 22:67–70",
+      "totalVerses": 4,
+      "jesusVerses": 4,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "pilate-king-jews",
+      "passage": "Matt 27:11",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "pilate-king-jews",
+      "passage": "Mark 15:2",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "pilate-king-jews",
+      "passage": "Luke 23:3",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "pilate-of-thyself",
+      "passage": "John 18:34",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "pilate-kingdom-not-of-this-world",
+      "passage": "John 18:36–37",
+      "totalVerses": 2,
+      "jesusVerses": 2,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "pilate-no-power",
+      "passage": "John 19:11",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "daughters-jerusalem",
+      "passage": "Luke 23:28–31",
+      "totalVerses": 4,
+      "jesusVerses": 4,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "cross-father-forgive",
+      "passage": "Luke 23:34",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "cross-paradise",
+      "passage": "Luke 23:43",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "cross-behold-thy-mother",
+      "passage": "John 19:26–27",
+      "totalVerses": 2,
+      "jesusVerses": 2,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "cross-my-god-my-god",
+      "passage": "Matt 27:46",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "cross-my-god-my-god",
+      "passage": "Mark 15:34",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "cross-i-thirst",
+      "passage": "John 19:28",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "cross-it-is-finished",
+      "passage": "John 19:30",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    },
+    {
+      "eventKey": "cross-into-thy-hands",
+      "passage": "Luke 23:46",
+      "totalVerses": 1,
+      "jesusVerses": 1,
+      "narrationVerses": 0,
+      "missing": [],
+      "status": "ok"
+    }
+  ]
+}

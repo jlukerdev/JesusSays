@@ -1,0 +1,82 @@
+[
+  {
+    "id": "gap-440",
+    "text": "Peter recalls the word of the Lord: John baptized with water, but you shall be baptized with the Holy Spirit",
+    "suggestedCategory": 3,
+    "suggestedSubcategory": "3.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-441",
+    "text": "To the angel of the church in Ephesus: these things saith he that holdeth the seven stars in his right hand and walketh in the midst of the seven golden candlesticks",
+    "suggestedCategory": 30,
+    "suggestedSubcategory": "30.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-442",
+    "text": "Yet this you have to your credit: you hate the deeds of the Nicolaitans, which I also hate",
+    "suggestedCategory": 30,
+    "suggestedSubcategory": "30.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-443",
+    "text": "To the angel of the church in Smyrna: these things saith the first and the last, who was dead and is alive",
+    "suggestedCategory": 30,
+    "suggestedSubcategory": "30.2",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-444",
+    "text": "To the angel of the church in Pergamos: these things saith he which hath the sharp two-edged sword",
+    "suggestedCategory": 30,
+    "suggestedSubcategory": "30.3",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-445",
+    "text": "To the angel of the church in Thyatira: these things saith the Son of God, whose eyes are like a flame of fire and whose feet are like fine brass",
+    "suggestedCategory": 30,
+    "suggestedSubcategory": "30.4",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-446",
+    "text": "To the rest in Thyatira who do not hold this teaching and have not known the depths of Satan: I will lay on you no other burden",
+    "suggestedCategory": 30,
+    "suggestedSubcategory": "30.4",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-447",
+    "text": "A few in Sardis have not defiled their garments — they shall walk with me in white, for they are worthy",
+    "suggestedCategory": 30,
+    "suggestedSubcategory": "30.5",
+    "tags": ["blessing"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-448",
+    "text": "To the angel of the church in Philadelphia: these things saith he that is holy and true, who hath the key of David — he opens and no one shuts, he shuts and no one opens",
+    "suggestedCategory": 30,
+    "suggestedSubcategory": "30.6",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-449",
+    "text": "To the angel of the church of the Laodiceans: these things saith the Amen, the faithful and true witness, the beginning of the creation of God",
+    "suggestedCategory": 30,
+    "suggestedSubcategory": "30.7",
+    "tags": [],
+    "groupWithGapId": null
+  }
+]

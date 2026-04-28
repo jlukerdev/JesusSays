@@ -1,0 +1,30 @@
+{
+  "generatedAt": "2026-04-28T16:03:55.116Z",
+  "description": "Maps every cat-27.4 teaching id that shifted during the v2.2.2 cleanup. New 27.4.1 (Luke 23:34) has no predecessor.",
+  "redirects": [
+    {
+      "from": "27.4.1",
+      "to": "27.4.2"
+    },
+    {
+      "from": "27.4.2",
+      "to": "27.4.3"
+    },
+    {
+      "from": "27.4.3",
+      "to": "27.4.4"
+    },
+    {
+      "from": "27.4.4",
+      "to": "27.4.5"
+    },
+    {
+      "from": "27.4.5",
+      "to": "27.4.6"
+    },
+    {
+      "from": "27.4.6",
+      "to": "27.4.7"
+    }
+  ]
+}

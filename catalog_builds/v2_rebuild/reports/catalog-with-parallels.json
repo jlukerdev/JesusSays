@@ -1367,13 +1367,13 @@
                   "isPrimary": false
                 },
                 {
-                  "label": "Luke 22:70",
+                  "label": "Luke 22:67–70",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 22,
                   "ranges": [
                     [
-                      70,
+                      67,
                       70
                     ]
                   ],
@@ -1444,14 +1444,14 @@
                   "isPrimary": true
                 },
                 {
-                  "label": "Luke 7:22–23",
+                  "label": "Luke 7:22–28",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 7,
                   "ranges": [
                     [
                       22,
-                      23
+                      28
                     ]
                   ],
                   "isPrimary": false
@@ -2950,14 +2950,14 @@
               ],
               "references": [
                 {
-                  "label": "Matt 21:33–43",
+                  "label": "Matt 21:33–44",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 21,
                   "ranges": [
                     [
                       33,
-                      43
+                      44
                     ]
                   ],
                   "isPrimary": true
@@ -3050,13 +3050,13 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 9:13",
+                  "label": "Matt 9:12–13",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 9,
                   "ranges": [
                     [
-                      13,
+                      12,
                       13
                     ]
                   ],
@@ -3689,14 +3689,14 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 17:20",
+                  "label": "Matt 17:20–21",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 17,
                   "ranges": [
                     [
                       20,
-                      20
+                      21
                     ]
                   ],
                   "isPrimary": true
@@ -4340,14 +4340,14 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 26:26",
+                  "label": "Matt 26:26–27",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 26,
                   "ranges": [
                     [
                       26,
-                      26
+                      27
                     ]
                   ],
                   "isPrimary": true
@@ -4366,11 +4366,15 @@
                   "isPrimary": false
                 },
                 {
-                  "label": "Luke 22:19",
+                  "label": "Luke 22:17, 19",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 22,
                   "ranges": [
+                    [
+                      17,
+                      17
+                    ],
                     [
                       19,
                       19
@@ -4584,39 +4588,39 @@
               ],
               "references": [
                 {
-                  "label": "Matt 9:17",
+                  "label": "Matt 9:15–17",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 9,
                   "ranges": [
                     [
-                      17,
+                      15,
                       17
                     ]
                   ],
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 2:22",
+                  "label": "Mark 2:19–22",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 2,
                   "ranges": [
                     [
-                      22,
+                      19,
                       22
                     ]
                   ],
                   "isPrimary": false
                 },
                 {
-                  "label": "Luke 5:37-39",
+                  "label": "Luke 5:34–39",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 5,
                   "ranges": [
                     [
-                      37,
+                      34,
                       39
                     ]
                   ],
@@ -4890,27 +4894,27 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 7:7–8",
+                  "label": "Matt 7:7–10",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 7,
                   "ranges": [
                     [
                       7,
-                      8
+                      10
                     ]
                   ],
                   "isPrimary": true
                 },
                 {
-                  "label": "Luke 11:9–10",
+                  "label": "Luke 11:9–12",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 11,
                   "ranges": [
                     [
                       9,
-                      10
+                      12
                     ]
                   ],
                   "isPrimary": false
@@ -5054,33 +5058,53 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 26:41",
+                  "label": "Matt 26:36, 38–42, 45–46",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 26,
                   "ranges": [
                     [
-                      41,
-                      41
+                      36,
+                      36
+                    ],
+                    [
+                      38,
+                      42
+                    ],
+                    [
+                      45,
+                      46
                     ]
                   ],
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 14:38",
+                  "label": "Mark 14:32, 34, 36–38, 41–42",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 14,
                   "ranges": [
                     [
-                      38,
+                      32,
+                      32
+                    ],
+                    [
+                      34,
+                      34
+                    ],
+                    [
+                      36,
                       38
+                    ],
+                    [
+                      41,
+                      42
                     ]
                   ],
                   "isPrimary": false
                 },
                 {
-                  "label": "Luke 22:40",
+                  "label": "Luke 22:40, 42, 46",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 22,
@@ -5088,6 +5112,14 @@
                     [
                       40,
                       40
+                    ],
+                    [
+                      42,
+                      42
+                    ],
+                    [
+                      46,
+                      46
                     ]
                   ],
                   "isPrimary": false
@@ -5435,13 +5467,13 @@
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 12:30",
+                  "label": "Mark 12:29–30",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 12,
                   "ranges": [
                     [
-                      30,
+                      29,
                       30
                     ]
                   ],
@@ -5768,6 +5800,32 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Mark 9:49–50",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      49,
+                      50
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 14:34",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 14,
+                  "ranges": [
+                    [
+                      34,
+                      34
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
@@ -5788,6 +5846,19 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Luke 11:28–33",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 11,
+                  "ranges": [
+                    [
+                      28,
+                      33
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             }
@@ -6103,17 +6174,17 @@
                   "isPrimary": true
                 },
                 {
-                  "label": "Luke 6:37, 41–42",
+                  "label": "Luke 6:37–38, 40–42",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 6,
                   "ranges": [
                     [
                       37,
-                      37
+                      38
                     ],
                     [
-                      41,
+                      40,
                       42
                     ]
                   ],
@@ -6256,26 +6327,34 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 20:26–27",
+                  "label": "Matt 20:21–23, 25–27",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 20,
                   "ranges": [
                     [
-                      26,
+                      21,
+                      23
+                    ],
+                    [
+                      25,
                       27
                     ]
                   ],
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 10:43–44",
+                  "label": "Mark 10:38–40, 42–44",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 10,
                   "ranges": [
                     [
-                      43,
+                      38,
+                      40
+                    ],
+                    [
+                      42,
                       44
                     ]
                   ],
@@ -6316,6 +6395,19 @@
                     [
                       30,
                       30
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 22:25–26",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 22,
+                  "ranges": [
+                    [
+                      25,
+                      26
                     ]
                   ],
                   "isPrimary": false
@@ -6932,7 +7024,7 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 13:11–13, 16",
+                  "label": "Matt 13:11–13, 16–17",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 13,
@@ -6943,7 +7035,7 @@
                     ],
                     [
                       16,
-                      16
+                      17
                     ]
                   ],
                   "isPrimary": true
@@ -6975,14 +7067,14 @@
                   "isPrimary": false
                 },
                 {
-                  "label": "Luke 10:23",
+                  "label": "Luke 10:23–24",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 10,
                   "ranges": [
                     [
                       23,
-                      23
+                      24
                     ]
                   ],
                   "isPrimary": false
@@ -7193,14 +7285,14 @@
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 13:21–22",
+                  "label": "Mark 13:21–23",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 13,
                   "ranges": [
                     [
                       21,
-                      22
+                      23
                     ]
                   ],
                   "isPrimary": false
@@ -7377,7 +7469,7 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 9:2, 6",
+                  "label": "Matt 9:2, 4–6",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 9,
@@ -7387,14 +7479,14 @@
                       2
                     ],
                     [
-                      6,
+                      4,
                       6
                     ]
                   ],
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 2:5, 10",
+                  "label": "Mark 2:5, 8–11",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 2,
@@ -7404,14 +7496,14 @@
                       5
                     ],
                     [
-                      10,
-                      10
+                      8,
+                      11
                     ]
                   ],
                   "isPrimary": false
                 },
                 {
-                  "label": "Luke 5:20, 24",
+                  "label": "Luke 5:20, 22–24",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 5,
@@ -7421,7 +7513,7 @@
                       20
                     ],
                     [
-                      24,
+                      22,
                       24
                     ]
                   ],
@@ -7775,40 +7867,40 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 22:30",
+                  "label": "Matt 22:29–32",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 22,
                   "ranges": [
                     [
-                      30,
-                      30
+                      29,
+                      32
                     ]
                   ],
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 12:25",
+                  "label": "Mark 12:24–27",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 12,
                   "ranges": [
                     [
-                      25,
-                      25
+                      24,
+                      27
                     ]
                   ],
                   "isPrimary": false
                 },
                 {
-                  "label": "Luke 20:35–36",
+                  "label": "Luke 20:34–38",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 20,
                   "ranges": [
                     [
-                      35,
-                      36
+                      34,
+                      38
                     ]
                   ],
                   "isPrimary": false
@@ -7971,6 +8063,19 @@
                     ]
                   ],
                   "isPrimary": false
+                },
+                {
+                  "label": "Matt 19:17–19",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 19,
+                  "ranges": [
+                    [
+                      17,
+                      19
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
@@ -8076,6 +8181,19 @@
                     ]
                   ],
                   "isPrimary": false
+                },
+                {
+                  "label": "Luke 22:28–32",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 22,
+                  "ranges": [
+                    [
+                      28,
+                      32
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             }
@@ -8138,14 +8256,14 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 18:6, 10",
+                  "label": "Matt 18:6–7, 10",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 18,
                   "ranges": [
                     [
                       6,
-                      6
+                      7
                     ],
                     [
                       10,
@@ -8168,13 +8286,13 @@
                   "isPrimary": false
                 },
                 {
-                  "label": "Luke 17:2",
+                  "label": "Luke 17:1–2",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 17,
                   "ranges": [
                     [
-                      2,
+                      1,
                       2
                     ]
                   ],
@@ -8677,7 +8795,7 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Luke 6:20–21",
+                  "label": "Luke 6:20–21, 26",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 6,
@@ -8685,6 +8803,10 @@
                     [
                       20,
                       21
+                    ],
+                    [
+                      26,
+                      26
                     ]
                   ],
                   "isPrimary": true
@@ -8703,7 +8825,7 @@
                   "isPrimary": false
                 },
                 {
-                  "label": "Matt 11:5",
+                  "label": "Matt 11:5, 7–11",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 11,
@@ -8711,6 +8833,10 @@
                     [
                       5,
                       5
+                    ],
+                    [
+                      7,
+                      11
                     ]
                   ],
                   "isPrimary": false
@@ -8850,6 +8976,19 @@
                     [
                       7,
                       7
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 5:31",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 5,
+                  "ranges": [
+                    [
+                      31,
+                      31
                     ]
                   ],
                   "isPrimary": false
@@ -9032,6 +9171,32 @@
                     [
                       43,
                       43
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Mark 10:18",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 10,
+                  "ranges": [
+                    [
+                      18,
+                      18
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 18:19",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 18,
+                  "ranges": [
+                    [
+                      19,
+                      19
                     ]
                   ],
                   "isPrimary": false
@@ -9843,7 +10008,7 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 16:24–25",
+                  "label": "Matt 16:24–25, 28",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 16,
@@ -9851,12 +10016,16 @@
                     [
                       24,
                       25
+                    ],
+                    [
+                      28,
+                      28
                     ]
                   ],
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 8:34–35",
+                  "label": "Mark 8:34–35, 37–38",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 8,
@@ -9864,12 +10033,16 @@
                     [
                       34,
                       35
+                    ],
+                    [
+                      37,
+                      38
                     ]
                   ],
                   "isPrimary": false
                 },
                 {
-                  "label": "Luke 9:23–24",
+                  "label": "Luke 9:23–24, 26–27",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 9,
@@ -9877,6 +10050,23 @@
                     [
                       23,
                       24
+                    ],
+                    [
+                      26,
+                      27
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Mark 9:1",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      1,
+                      1
                     ]
                   ],
                   "isPrimary": false
@@ -10486,6 +10676,19 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Mark 12:39",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 12,
+                  "ranges": [
+                    [
+                      39,
+                      39
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
@@ -10495,14 +10698,22 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 23:5–7",
+                  "label": "Matt 23:5–8, 10, 34–39",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 23,
                   "ranges": [
                     [
                       5,
-                      7
+                      8
+                    ],
+                    [
+                      10,
+                      10
+                    ],
+                    [
+                      34,
+                      39
                     ]
                   ],
                   "isPrimary": true
@@ -10571,6 +10782,32 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Mark 8:29",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 8,
+                  "ranges": [
+                    [
+                      29,
+                      29
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 9:20",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      20,
+                      20
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
@@ -10694,40 +10931,40 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 12:25",
+                  "label": "Matt 12:25–30",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 12,
                   "ranges": [
                     [
                       25,
-                      25
+                      30
                     ]
                   ],
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 3:24",
+                  "label": "Mark 3:23–27",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 3,
                   "ranges": [
                     [
-                      24,
-                      24
+                      23,
+                      27
                     ]
                   ],
                   "isPrimary": false
                 },
                 {
-                  "label": "Luke 11:17",
+                  "label": "Luke 11:17–23",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 11,
                   "ranges": [
                     [
                       17,
-                      17
+                      23
                     ]
                   ],
                   "isPrimary": false
@@ -10815,14 +11052,48 @@
                   "isPrimary": true
                 },
                 {
-                  "label": "Luke 10:9",
+                  "label": "Luke 10:3, 9, 15–16",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 10,
                   "ranges": [
                     [
+                      3,
+                      3
+                    ],
+                    [
                       9,
                       9
+                    ],
+                    [
+                      15,
+                      16
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Mark 6:10",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 6,
+                  "ranges": [
+                    [
+                      10,
+                      10
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 9:3–5",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      3,
+                      5
                     ]
                   ],
                   "isPrimary": false
@@ -10835,14 +11106,30 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 10:9–14",
+                  "label": "Matt 10:5–6, 9–14, 17, 25, 39–42",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 10,
                   "ranges": [
                     [
+                      5,
+                      6
+                    ],
+                    [
                       9,
                       14
+                    ],
+                    [
+                      17,
+                      17
+                    ],
+                    [
+                      25,
+                      25
+                    ],
+                    [
+                      39,
+                      42
                     ]
                   ],
                   "isPrimary": true
@@ -11279,17 +11566,34 @@
               "tags": [],
               "references": [
                 {
-                  "label": "John 20:19–23",
+                  "label": "John 20:15–17, 19–23",
                   "book": "John",
                   "bookAbbr": "John",
                   "chapter": 20,
                   "ranges": [
+                    [
+                      15,
+                      17
+                    ],
                     [
                       19,
                       23
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Matt 28:9–10",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 28,
+                  "ranges": [
+                    [
+                      9,
+                      10
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
@@ -11443,14 +11747,27 @@
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 16:15",
+                  "label": "Mark 16:15–18",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 16,
                   "ranges": [
                     [
                       15,
-                      15
+                      18
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 24:49",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 24,
+                  "ranges": [
+                    [
+                      49,
+                      49
                     ]
                   ],
                   "isPrimary": false
@@ -11504,7 +11821,7 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 24:4–5",
+                  "label": "Matt 24:4–5, 10–12",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 24,
@@ -11512,6 +11829,10 @@
                     [
                       4,
                       5
+                    ],
+                    [
+                      10,
+                      12
                     ]
                   ],
                   "isPrimary": true
@@ -11530,7 +11851,7 @@
                   "isPrimary": false
                 },
                 {
-                  "label": "Luke 21:8",
+                  "label": "Luke 21:8, 14–15",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 21,
@@ -11538,6 +11859,10 @@
                     [
                       8,
                       8
+                    ],
+                    [
+                      14,
+                      15
                     ]
                   ],
                   "isPrimary": false
@@ -11620,40 +11945,40 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 24:15–21",
+                  "label": "Matt 24:15–22",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 24,
                   "ranges": [
                     [
                       15,
-                      21
+                      22
                     ]
                   ],
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 13:14–19",
+                  "label": "Mark 13:14–20",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 13,
                   "ranges": [
                     [
                       14,
-                      19
+                      20
                     ]
                   ],
                   "isPrimary": false
                 },
                 {
-                  "label": "Luke 21:20–21",
+                  "label": "Luke 21:20–24",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 21,
                   "ranges": [
                     [
                       20,
-                      21
+                      24
                     ]
                   ],
                   "isPrimary": false
@@ -11811,14 +12136,31 @@
                   "isPrimary": true
                 },
                 {
-                  "label": "Luke 17:24–30",
+                  "label": "Luke 17:24–33, 37",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 17,
                   "ranges": [
                     [
                       24,
-                      30
+                      33
+                    ],
+                    [
+                      37,
+                      37
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 21:28",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 21,
+                  "ranges": [
+                    [
+                      28,
+                      28
                     ]
                   ],
                   "isPrimary": false
@@ -12064,27 +12406,27 @@
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 13:28–29",
+                  "label": "Mark 13:28–30",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 13,
                   "ranges": [
                     [
                       28,
-                      29
+                      30
                     ]
                   ],
                   "isPrimary": false
                 },
                 {
-                  "label": "Luke 21:29–31",
+                  "label": "Luke 21:29–32",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 21,
                   "ranges": [
                     [
                       29,
-                      31
+                      32
                     ]
                   ],
                   "isPrimary": false
@@ -12097,7 +12439,7 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 24:35–36",
+                  "label": "Matt 24:35–36, 43–44",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 24,
@@ -12105,12 +12447,16 @@
                     [
                       35,
                       36
+                    ],
+                    [
+                      43,
+                      44
                     ]
                   ],
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 13:31–32",
+                  "label": "Mark 13:31–32, 34–37",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 13,
@@ -12118,6 +12464,10 @@
                     [
                       31,
                       32
+                    ],
+                    [
+                      34,
+                      37
                     ]
                   ],
                   "isPrimary": false

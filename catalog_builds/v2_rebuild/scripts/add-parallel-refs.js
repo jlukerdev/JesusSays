@@ -51,14 +51,43 @@ function makeLabel(abbr, chapter, startVerse, endVerse) {
   return `${abbr} ${chapter}:${startVerse}–${endVerse}`;
 }
 
-// Check if a reference already exists for a given book+chapter on a teaching
-function refExists(teaching, abbr, chapter) {
-  return teaching.references.some(
+// Find an existing reference for a given book+chapter on a teaching
+function findRef(teaching, abbr, chapter) {
+  return teaching.references.find(
     r => normalizeAbbr(r.bookAbbr) === abbr && r.chapter === chapter
   );
 }
 
+// Merge [start,end] into a sorted, non-overlapping ranges array
+function mergeRange(ranges, start, end) {
+  const merged = [...ranges, [start, end]].sort((a, b) => a[0] - b[0]);
+  const result = [];
+  for (const [s, e] of merged) {
+    if (result.length && s <= result[result.length - 1][1] + 1) {
+      result[result.length - 1][1] = Math.max(result[result.length - 1][1], e);
+    } else {
+      result.push([s, e]);
+    }
+  }
+  return result;
+}
+
+// Build label from a ranges array
+function labelFromRanges(abbr, chapter, ranges) {
+  const parts = ranges.map(([s, e]) => (s === e ? `${s}` : `${s}–${e}`));
+  return `${abbr} ${chapter}:${parts.join(', ')}`;
+}
+
+// True if [start,end] is fully contained within ranges
+function rangeCovered(ranges, start, end) {
+  for (let v = start; v <= end; v++) {
+    if (!ranges.some(([s, e]) => v >= s && v <= e)) return false;
+  }
+  return true;
+}
+
 let added = 0;
+let extended = 0;
 let skipped = 0;
 let notFound = 0;
 
@@ -86,8 +115,15 @@ for (const gap of typeA) {
   // Consolidate: the gap already has chapter/start/end
   const ch = gap.chapter;
 
-  if (refExists(teaching, abbr, ch)) {
-    skipped++;
+  const existing = findRef(teaching, abbr, ch);
+  if (existing) {
+    if (rangeCovered(existing.ranges, gap.startVerse, gap.endVerse)) {
+      skipped++;
+      continue;
+    }
+    existing.ranges = mergeRange(existing.ranges, gap.startVerse, gap.endVerse);
+    existing.label = labelFromRanges(abbr, ch, existing.ranges);
+    extended++;
     continue;
   }
 
@@ -104,7 +140,7 @@ for (const gap of typeA) {
   added++;
 }
 
-console.log(`Done: ${added} refs added, ${skipped} already existed, ${notFound} teaching IDs not found`);
+console.log(`Done: ${added} refs added, ${extended} refs extended, ${skipped} already covered, ${notFound} teaching IDs not found`);
 
 fs.writeFileSync(outPath, JSON.stringify(catalog, null, 2), 'utf8');
 console.log(`Output: ${outPath}`);

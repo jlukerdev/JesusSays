@@ -1,0 +1,594 @@
+[
+  {
+    "id": "gap-001",
+    "text": "Submits to John's baptism — suffer it to be so now, for thus it becometh us to fulfil all righteousness",
+    "suggestedCategory": 14,
+    "suggestedSubcategory": "14.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-002",
+    "text": "Rebuffs Satan with Scripture — man shall not live by bread alone, but by every word that proceedeth out of the mouth of God",
+    "suggestedCategory": 8,
+    "suggestedSubcategory": "8.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-003",
+    "text": "Refuses to test God — it is written again, thou shalt not tempt the Lord thy God",
+    "suggestedCategory": 8,
+    "suggestedSubcategory": "8.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-004",
+    "text": "Commands Satan to depart — thou shalt worship the Lord thy God, and him only shalt thou serve",
+    "suggestedCategory": 8,
+    "suggestedSubcategory": "8.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-006",
+    "text": "Cleanses the leper with a touch — I will, be thou clean — then charges him to show himself to the priest as a testimony",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.3",
+    "tags": ["healing"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-007",
+    "text": "Responds to the centurion's request for his servant — I will come and heal him",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.3",
+    "tags": ["healing"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-008",
+    "text": "Marvels at the centurion's faith — I have not found so great faith, no, not in Israel",
+    "suggestedCategory": 7,
+    "suggestedSubcategory": "7.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-009",
+    "text": "Heals the centurion's servant by his word — go thy way, and as thou hast believed, so be it done unto thee",
+    "suggestedCategory": 7,
+    "suggestedSubcategory": "7.1",
+    "tags": ["healing"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-010",
+    "text": "Authorizes demons to enter the herd of swine with a single word — Go",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.3",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-012",
+    "text": "Calls Matthew the tax collector from his booth — Follow me",
+    "suggestedCategory": 22,
+    "suggestedSubcategory": "22.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-015",
+    "text": "Quiets the mourners at Jairus's house — give place, the maid is not dead, but sleepeth",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.3",
+    "tags": ["healing"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-016",
+    "text": "Tests the blind men's faith — believe ye that I am able to do this?",
+    "suggestedCategory": 7,
+    "suggestedSubcategory": "7.1",
+    "tags": ["healing"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-017",
+    "text": "Charges the healed blind men to silence — see that no man know it",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.3",
+    "tags": ["healing"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-023",
+    "text": "Identifies John the Baptist as the prophesied Elijah — if ye will receive it, this is Elias, which was for to come",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.6",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-024",
+    "text": "Likens this generation to children in the markets — they reject both John's fasting and the Son of Man's eating, but wisdom is justified of her children",
+    "suggestedCategory": 24,
+    "suggestedSubcategory": "24.2",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-025",
+    "text": "Pronounces woe on Chorazin and Bethsaida — Tyre and Sidon would have repented in sackcloth and ashes had they seen such mighty works",
+    "suggestedCategory": 5,
+    "suggestedSubcategory": "5.1",
+    "tags": ["woe"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-026",
+    "text": "Thanks the Father for hiding these things from the wise and revealing them unto babes — for so it seemed good in thy sight",
+    "suggestedCategory": 1,
+    "suggestedSubcategory": "1.1",
+    "tags": ["prayer"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-027",
+    "text": "Defends his disciples on the Sabbath — David ate the shewbread, priests profane the sabbath blameless, and one greater than the temple is here",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.3",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-028",
+    "text": "Heals the man with the withered hand on the Sabbath — stretch forth thine hand",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.3",
+    "tags": ["healing"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-030",
+    "text": "The tree is known by its fruit — out of the abundance of the heart the mouth speaketh, and a good man brings forth good treasure",
+    "suggestedCategory": 14,
+    "suggestedSubcategory": "14.3",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-031",
+    "text": "Rebukes the sign-seekers — an evil and adulterous generation seeketh after a sign, and none shall be given but the sign of the prophet Jonas",
+    "suggestedCategory": 24,
+    "suggestedSubcategory": "24.2",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-032",
+    "text": "Nineveh and the Queen of the South will rise in judgment against this generation — for a greater than Jonas and Solomon is here",
+    "suggestedCategory": 29,
+    "suggestedSubcategory": "29.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-033",
+    "text": "Redefines family — who is my mother and brethren? Behold my mother and my brethren — those who do God's will",
+    "suggestedCategory": 22,
+    "suggestedSubcategory": "22.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-034",
+    "text": "Quotes Isaiah's prophecy fulfilled in dull-hearted hearers — they hear but understand not, see but perceive not, lest they be converted",
+    "suggestedCategory": 4,
+    "suggestedSubcategory": "4.3",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-036",
+    "text": "Every scribe instructed in the kingdom is like a householder bringing forth from his treasure things new and old",
+    "suggestedCategory": 4,
+    "suggestedSubcategory": "4.1",
+    "tags": ["parable"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-037",
+    "text": "Notes the rejection at Nazareth — a prophet is not without honour, save in his own country and in his own house",
+    "suggestedCategory": 23,
+    "suggestedSubcategory": "23.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-038",
+    "text": "Tells the disciples to feed the multitude — they need not depart, give ye them to eat",
+    "suggestedCategory": 22,
+    "suggestedSubcategory": "22.2",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-039",
+    "text": "Calls for the loaves and fishes before feeding the five thousand — bring them hither to me",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.3",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-040",
+    "text": "Reassures the disciples on the storm-tossed sea — be of good cheer, it is I, be not afraid",
+    "suggestedCategory": 7,
+    "suggestedSubcategory": "7.2",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-041",
+    "text": "Bids Peter walk on the water — Come",
+    "suggestedCategory": 7,
+    "suggestedSubcategory": "7.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-042",
+    "text": "Summons the multitude to attend his teaching on defilement — hear, and understand",
+    "suggestedCategory": 17,
+    "suggestedSubcategory": "17.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-043",
+    "text": "Every plant which my heavenly Father hath not planted shall be rooted up",
+    "suggestedCategory": 24,
+    "suggestedSubcategory": "24.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-044",
+    "text": "Rebukes the disciples' dullness — are ye also yet without understanding that what enters the mouth goes into the belly?",
+    "suggestedCategory": 17,
+    "suggestedSubcategory": "17.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-045",
+    "text": "Concludes the teaching on defilement — these are the things that defile a man, but eating with unwashen hands does not",
+    "suggestedCategory": 24,
+    "suggestedSubcategory": "24.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-046",
+    "text": "Defines his earthly mission — I am not sent but unto the lost sheep of the house of Israel",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.6",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-047",
+    "text": "Tests the Canaanite woman — it is not meet to take the children's bread, and to cast it to dogs",
+    "suggestedCategory": 7,
+    "suggestedSubcategory": "7.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-048",
+    "text": "Praises the Canaanite woman's faith — O woman, great is thy faith, be it unto thee even as thou wilt",
+    "suggestedCategory": 7,
+    "suggestedSubcategory": "7.1",
+    "tags": ["healing"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-049",
+    "text": "Expresses compassion on the multitude — they have continued with me three days and have nothing to eat, I will not send them away fasting",
+    "suggestedCategory": 21,
+    "suggestedSubcategory": "21.3",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-050",
+    "text": "Inquires before the feeding of the four thousand — how many loaves have ye?",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.3",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-051",
+    "text": "Begins his rebuke about discerning signs — when it is evening, ye say, it will be fair weather, for the sky is red",
+    "suggestedCategory": 17,
+    "suggestedSubcategory": "17.2",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-052",
+    "text": "Repeats the rebuke to sign-seekers — a wicked and adulterous generation seeketh after a sign, and none shall be given but the sign of Jonas",
+    "suggestedCategory": 24,
+    "suggestedSubcategory": "24.2",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-053",
+    "text": "Rebukes the disciples for missing the point — O ye of little faith, do ye not remember the loaves of the five thousand and the four thousand?",
+    "suggestedCategory": 7,
+    "suggestedSubcategory": "7.2",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-054",
+    "text": "Asks the disciples at Caesarea Philippi — whom do men say that I the Son of man am?",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.6",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-055",
+    "text": "Presses the disciples for their own confession — but whom say ye that I am?",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.6",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-056",
+    "text": "Blesses Peter for his confession — flesh and blood hath not revealed it unto thee, but my Father which is in heaven",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.6",
+    "tags": ["blessing"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-057",
+    "text": "Rebukes Peter for opposing the cross — get thee behind me, Satan, thou savourest not the things of God but the things of men",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.5",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-059",
+    "text": "Reassures the disciples after the Transfiguration — arise, and be not afraid",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.6",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-060",
+    "text": "Charges them to keep the vision secret — tell no man until the Son of man be risen again from the dead",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.5",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-061",
+    "text": "Affirms Elijah has already come — they knew him not but did unto him whatsoever they listed; likewise shall the Son of man suffer",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.5",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-062",
+    "text": "Laments the unbelief around him — O faithless and perverse generation, how long shall I suffer you? Bring the boy hither to me",
+    "suggestedCategory": 7,
+    "suggestedSubcategory": "7.2",
+    "tags": ["healing"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-064",
+    "text": "Teaches Peter about the temple tax — kings take tribute from strangers, not their own children, yet to avoid offense, take a coin from a fish's mouth",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.6",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-066",
+    "text": "Declares his mission to seek the lost — for the Son of man is come to save that which was lost",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.6",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-068",
+    "text": "Promises the twelve will sit on twelve thrones in the regeneration — when the Son of man sits in the throne of his glory, judging the twelve tribes of Israel",
+    "suggestedCategory": 28,
+    "suggestedSubcategory": "28.4",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-069",
+    "text": "Reverses worldly ranks in the kingdom — but many that are first shall be last, and the last shall be first",
+    "suggestedCategory": 15,
+    "suggestedSubcategory": "15.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-070",
+    "text": "Predicts his passion for the third time — the Son of man shall be betrayed, condemned, mocked, scourged, crucified, and the third day rise again",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.5",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-073",
+    "text": "Stops for the two blind men outside Jericho — what will ye that I shall do unto you?",
+    "suggestedCategory": 21,
+    "suggestedSubcategory": "21.3",
+    "tags": ["healing"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-074",
+    "text": "Sends two disciples for the colt before the triumphal entry — say the Lord hath need of them, and straightway he will send them",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.6",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-075",
+    "text": "Cleanses the temple — my house shall be called the house of prayer, but ye have made it a den of thieves",
+    "suggestedCategory": 24,
+    "suggestedSubcategory": "24.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-076",
+    "text": "Defends the children's praise — have ye never read, out of the mouth of babes and sucklings thou hast perfected praise?",
+    "suggestedCategory": 15,
+    "suggestedSubcategory": "15.4",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-077",
+    "text": "Curses the fruitless fig tree — let no fruit grow on thee henceforward for ever",
+    "suggestedCategory": 24,
+    "suggestedSubcategory": "24.2",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-078",
+    "text": "Counters the chief priests' challenge with a question — the baptism of John, whence was it, from heaven or of men?",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.3",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-079",
+    "text": "Refuses to answer when they would not commit — neither tell I you by what authority I do these things",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.3",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-083",
+    "text": "Silences the Pharisees with a question about Christ — whose son is he? If David in spirit calls him Lord, how is he his son?",
+    "suggestedCategory": 2,
+    "suggestedSubcategory": "2.6",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-087",
+    "text": "Foretells the destruction of the temple — there shall not be left here one stone upon another that shall not be thrown down",
+    "suggestedCategory": 28,
+    "suggestedSubcategory": "28.1",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-091",
+    "text": "Foretells his crucifixion at Passover — after two days is the feast, and the Son of man is betrayed to be crucified",
+    "suggestedCategory": 31,
+    "suggestedSubcategory": "31.1",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-092",
+    "text": "Defends the woman who anointed him — she has done a good work, pouring ointment for my burial, and shall be remembered wherever the gospel is preached",
+    "suggestedCategory": 31,
+    "suggestedSubcategory": "31.1",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-093",
+    "text": "Sends disciples to prepare the Passover — say the Master saith, my time is at hand, I will keep the passover at thy house with my disciples",
+    "suggestedCategory": 31,
+    "suggestedSubcategory": "31.1",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-094",
+    "text": "Announces the betrayer at the Last Supper — verily I say unto you, that one of you shall betray me",
+    "suggestedCategory": 31,
+    "suggestedSubcategory": "31.1",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-095",
+    "text": "Identifies Judas as the betrayer — he that dippeth his hand with me in the dish; woe to that man, it had been good for him not to have been born",
+    "suggestedCategory": 31,
+    "suggestedSubcategory": "31.1",
+    "tags": ["woe", "prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-097",
+    "text": "Foretells the disciples' scattering — I will smite the shepherd and the sheep shall be scattered, but after I am risen I will go before you into Galilee",
+    "suggestedCategory": 31,
+    "suggestedSubcategory": "31.2",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-098",
+    "text": "Foretells Peter's three denials — this night, before the cock crow, thou shalt deny me thrice",
+    "suggestedCategory": 31,
+    "suggestedSubcategory": "31.2",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-103",
+    "text": "Greets Judas at the betrayal — friend, wherefore art thou come?",
+    "suggestedCategory": 31,
+    "suggestedSubcategory": "31.2",
+    "tags": [],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-104",
+    "text": "Rebukes the use of the sword — all that take the sword shall perish; I could call legions of angels, but the scriptures must be fulfilled",
+    "suggestedCategory": 31,
+    "suggestedSubcategory": "31.2",
+    "tags": ["prophecy"],
+    "groupWithGapId": null
+  },
+  {
+    "id": "gap-105",
+    "text": "Answers Pilate concerning kingship — Thou sayest",
+    "suggestedCategory": 31,
+    "suggestedSubcategory": "31.3",
+    "tags": [],
+    "groupWithGapId": null
+  }
+]

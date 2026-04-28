@@ -12,22 +12,22 @@
 - [x] Script 1: `audit-coverage.js` — baseline coverage report
 - [x] Script 2: `export-gaps.js` — editorial gap worksheet
 - [x] Script 3: `synoptic-matcher.js` — annotate gaps as Type A / Type B
-- [ ] Script 4: `add-parallel-refs.js` — add Type A refs to existing teachings
-- [ ] Script 5: `generate-stubs.js` — create stub teachings for Type B gaps
-- [ ] Script 6: `assemble-v2.js` — assemble final teachings_v2.json
-- [ ] Script 7: `validate-v2.js` — validate coverage and schema
+- [x] Script 4: `add-parallel-refs.js` — add Type A refs to existing teachings (now extends ranges on same-chapter refs)
+- [x] Script 5: `generate-stubs.js` — create stub teachings for Type B gaps
+- [x] Script 6: `assemble-v2.js` — assemble final teachings_v2.json
+- [x] Script 7: `validate-v2.js` — validate coverage and schema
 
 ### Phase 1 — Editorial
 - [x] Run scripts 1–3, review `gaps-annotated.json`
-- [ ] AI editorial pass on Type B stubs (batch Claude API call)
+- [x] AI editorial pass on Type B stubs (replaced with `rule-based-editorial-pass.js` driven by 6 hand-authored chunk files in `bible_datasets/reports/chunks/`)
 - [ ] Human review: approve/edit text summaries, assign categories
-- [ ] Confirm new categories needed (Passion Narrative confirmed; others TBD from gaps)
+- [x] Confirm new categories needed (Passion Narrative confirmed; cat-31 created with subcats 31.1/31.2/31.3)
 
 ### Phase 2 — Assembly
-- [ ] Run scripts 4–7
+- [x] Run scripts 4–7 (100% coverage; 716 teachings; 31 categories; 0 errors)
 - [ ] Final human review of `teachings_v2.json`
 - [ ] Copy to `public/teachings.json`
-- [ ] Update `src/utils/bookOrder.js` (add `2Cor` to all three maps)
+- [x] Update `src/utils/bookOrder.js` (add `2Cor` to all three maps)
 - [ ] Smoke-test app
 
 ---
@@ -371,3 +371,23 @@ Return a JSON array where each element is: { "id": "gap-xxx", "text": "...", "su
 7. Do **NOT** alter existing teaching `id` values. Only append new teachings with new IDs.
 8. If a script fails, check that the previous script's output file exists in `bible_datasets/reports/` before debugging further.
 9. The `quote` field backfill in script 6 requires the source files at `bible_datasets/output/`. Do not delete those files.
+
+---
+
+## Post-pipeline reorder — Passion Narrative (2026-04-28)
+
+After the v2 pipeline completed, **Cat 31 "The Passion Narrative" was moved to Cat 27** so it sits chronologically before the Resurrection block instead of trailing the Seven Churches. Old → new top-level mapping:
+
+| Old | New | Title |
+|---|---|---|
+| 27 | 28 | Post-Resurrection Appearances |
+| 28 | 29 | Eschatology and the End Times |
+| 29 | 30 | Judgment and Hell |
+| 30 | 31 | The Seven Churches |
+| 31 | 27 | The Passion Narrative |
+
+**Scope of change:** `bible_datasets/jesussays_datasets/teachings_v2.json` only. All `category.id`, `subcategory.id`, and `teaching.id` values for the affected cats were rewritten in place; the categories array was re-sorted by id. Transform performed by `bible_datasets/scripts/renumber-passion-cat.js`.
+
+**Out of scope (intentionally not updated):** `gaps-annotated.json`, the `reports/chunks/annotations_*.json` chunks, `rule-based-editorial-pass.js` `VALID_SUBS`, and the inline cat-number references earlier in this plan. Those artifacts still reference the pre-reorder numbering and will be inconsistent with the v2 output. Re-running scripts 4–7 after this reorder would regenerate stale numbering — **don't re-run them** without first updating those upstream artifacts.
+
+**Known cosmetic carryover:** Cat 31 (Seven Churches) still has its preamble subcat numbered `31.8` (Vision of Christ) while displaying first in the list. Pre-existing oddity from the live catalog; not addressed here.

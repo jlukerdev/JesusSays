@@ -1,0 +1,109 @@
+{
+  "generatedAt": "2026-04-28T16:03:55.116Z",
+  "inputPath": "catalog_builds/teachings_v2.json",
+  "outputPath": "catalog_builds/v2.2.2/output/teachings_v2_2_2.json",
+  "decisions": {
+    "placement": "Option B — insert Luke 23:34 as new 27.4.1; renumber existing 27.4.1–27.4.6 to 27.4.2–27.4.7",
+    "primaryFor_27_4_7": "Luke 23:46 (content-quoting exception — Luke is the only gospel quoting the words). Matt 27:50 and Mark 15:37 added as non-primary parallels.",
+    "duplicationOfLuke23_34": "Intentional: Luke 23:34 also lives at 18.2.4; left alone.",
+    "tagsForNewEntry": "[] (empty, consistent with other 27.4 entries)"
+  },
+  "newTeaching": {
+    "id": "27.4.1",
+    "text": "From the cross Jesus prays for those who are crucifying him, asking the Father to forgive them on the ground that they do not understand what they are doing — extending mercy to his executioners at the very moment of his suffering.",
+    "tags": [],
+    "references": [
+      {
+        "label": "Luke 23:34",
+        "book": "Luke",
+        "bookAbbr": "Luke",
+        "chapter": 23,
+        "ranges": [
+          [
+            34,
+            34
+          ]
+        ],
+        "isPrimary": true
+      }
+    ],
+    "quote": "Father, forgive them; for they know not what they do."
+  },
+  "renumberMap": {
+    "27.4.1": "27.4.2",
+    "27.4.2": "27.4.3",
+    "27.4.3": "27.4.4",
+    "27.4.4": "27.4.5",
+    "27.4.5": "27.4.6",
+    "27.4.6": "27.4.7"
+  },
+  "refsAddedTo_27_4_7": [
+    {
+      "label": "Matt 27:50",
+      "book": "Matthew",
+      "bookAbbr": "Matt",
+      "chapter": 27,
+      "ranges": [
+        [
+          50,
+          50
+        ]
+      ],
+      "isPrimary": false
+    },
+    {
+      "label": "Mark 15:37",
+      "book": "Mark",
+      "bookAbbr": "Mark",
+      "chapter": 15,
+      "ranges": [
+        [
+          37,
+          37
+        ]
+      ],
+      "isPrimary": false
+    }
+  ],
+  "counts": {
+    "cat274_before": 6,
+    "cat274_after": 7
+  },
+  "unchangedCategoryIds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    30,
+    31
+  ],
+  "unchangedCat27Subcats": [
+    "27.1",
+    "27.2",
+    "27.3"
+  ]
+}

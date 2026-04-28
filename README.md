@@ -59,25 +59,27 @@ Jesus Says is a research and reference tool designed to help readers study Jesus
 
 ### Key Stats
 
-- **30 thematic categories** spanning God the Father through the Seven Churches of Revelation
-- **118 subcategories** providing more specific topical focus
-- **361 teachings** representing all recorded spoken words of Jesus
-- **~700 scripture references** including primary sources and parallel Gospel accounts
-- **35 parables** tagged and findable across all categories
+- **31 thematic categories** spanning God the Father through the Seven Churches of Revelation, including The Passion Narrative
+- **124 subcategories** providing more specific topical focus
+- **716 teachings** representing all recorded spoken words of Jesus
+- **~1,050 scripture references** including primary sources and parallel Gospel accounts
+- **42 parables** tagged and findable across all categories
+- **100% coverage** of red-letter (Words of Christ) verses across the New Testament
 
 ## Scope
 
 The catalog includes all spoken words of Jesus Christ found in:
 
 - **The Four Gospels** (Matthew, Mark, Luke, John) — parables, discourses, and dialogue
-- **The Seven Words from the Cross** (Matthew 27, Mark 15, Luke 23, John 19)
+- **The Passion Narrative** — the Last Supper, Gethsemane, the trial, and the Seven Words from the Cross
 - **Post-Resurrection Appearances** (Matthew 28, Luke 24, John 20–21, Acts 1)
 - **Other New Testament Passages**
   - The High Priestly Prayer (John 17)
   - Paul's direct quotations of Jesus (Acts 20:35)
   - The institution of the Lord's Supper (1 Corinthians 11:23–25)
+  - "My grace is sufficient for you" (2 Corinthians 12:9)
   - The Damascus road encounter (Acts 9:4–6, 22:7–10, 26:14–18)
-  - Visions and revelations (Acts 9, 10, 18, 22–23; 2 Corinthians 12)
+  - Visions and revelations (Acts 9, 10, 18, 22–23)
   - The letters to the Seven Churches and direct speech in Revelation (Revelation 1–3, 16:15, 21:5–8, 22)
 
 Where a teaching appears in multiple Gospels, it is recorded once with complete parallel cross-references.
@@ -89,9 +91,9 @@ The canonical data source is **`teachings.json`**, containing:
 ```json
 {
   "meta": {
-    "title": "Jesus Says",
-    "totalCategories": 30,
-    "sources": ["Matthew", "Mark", "Luke", "John", ...],
+    "title": "The Teachings of Jesus Christ",
+    "totalCategories": 31,
+    "sources": ["Matthew", "Mark", "Luke", "John", "Acts", "1 Corinthians", "2 Corinthians", "Revelation"],
     "scope": [...]
   },
   "categories": [
@@ -107,14 +109,16 @@ The canonical data source is **`teachings.json`**, containing:
           "teachings": [
             {
               "id": "1.1.1",
-              "text": "...",
-              "tags": ["parable"],
+              "text": "If earthly fathers give good gifts, how much more will the heavenly Father give good things to those who ask",
+              "quote": "If ye then, being evil, know how to give good gifts unto your children, how much more shall your Father which is in heaven give good things to them that ask him?",
+              "tags": [],
               "references": [
                 {
-                  "label": "Matt 13:31–32",
+                  "label": "Matt 7:11",
                   "book": "Matthew",
-                  "chapter": 13,
-                  "ranges": [[31, 32]],
+                  "bookAbbr": "Matt",
+                  "chapter": 7,
+                  "ranges": [[11, 11]],
                   "isPrimary": true
                 }
               ]
@@ -127,7 +131,9 @@ The canonical data source is **`teachings.json`**, containing:
 }
 ```
 
-The data is organized hierarchically: categories → subcategories → individual teachings, each with full scripture citations and cross-references.
+The data is organized hierarchically: categories → subcategories → individual teachings. Each teaching pairs an editorial `text` summary with the raw KJV `quote`, plus full scripture citations and parallel cross-references.
+
+The full catalog rebuild pipeline — parsed USFM source, gap reports, and assembly scripts — lives under [bible_datasets/](./bible_datasets/) with details in [catalog-rebuild-plan.md](./bible_datasets/catalog-rebuild-plan.md).
 
 ---
 

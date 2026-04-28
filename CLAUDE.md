@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Jesus Says** is a reference web application cataloging all recorded words of Jesus Christ from the New Testament — 335+ teachings across 30 thematic categories, 117 subcategories, and ~700 scripture cross-references. The dataset is the primary artifact; the UI exists to browse, filter, and permalink to teachings.
+**Jesus Says** is a reference web application cataloging all recorded words of Jesus Christ from the New Testament — 716 teachings across 31 thematic categories, 124 subcategories, and ~1,050 scripture cross-references with 100% coverage of red-letter (Words of Christ) NT verses. The dataset is the primary artifact; the UI exists to browse, filter, and permalink to teachings.
 
 ## Tech Stack
 
@@ -30,7 +30,6 @@ npm run preview   # Preview production build
 ## Data Architecture
 
 **Served from:** `public/teachings.json` (fetched at `/JesusSays/teachings.json`)
-**Planning copy:** `docs/dev_plan/teachings.json`
 
 ```
 {
@@ -41,7 +40,8 @@ npm run preview   # Preview production build
       id, slug, title,
       teachings: [{
         id,          // hierarchical: "1.2.5" = cat 1, subcat 2, teaching 5
-        text,
+        text,        // editorial summary (1 sentence)
+        quote,       // raw KJV text of Jesus's words (v2)
         tags[],      // e.g. ["parable"]
         references: [{
           label, book, bookAbbr, chapter,
@@ -54,9 +54,9 @@ npm run preview   # Preview production build
 }
 ```
 
-- 30 categories ordered theologically (God the Father → Seven Churches of Revelation)
-- 33 parables tagged `"parable"` — they span all categories
-- 7 NT books: Matt, Mark, Luke, John, Acts, 1Cor, Rev
+- 31 categories ordered theologically (God the Father → Seven Churches of Revelation), with The Passion Narrative inserted at cat-27 before the Resurrection block
+- 42 parables tagged `"parable"` — they span all categories
+- 8 NT books: Matt, Mark, Luke, John, Acts, 1Cor, 2Cor, Rev (`bookAbbr` normalized — no spaces)
 
 ## Implemented Source Files
 

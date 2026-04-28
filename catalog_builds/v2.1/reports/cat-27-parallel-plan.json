@@ -1,0 +1,1016 @@
+{
+  "generatedAt": "2026-04-28T15:24:08.724Z",
+  "decisions": {
+    "canonicalRule": "Matthew > Mark > Luke > John (decision 1)",
+    "subcat27_2_rename": "Gethsemane -> Gethsemane and Arrest (decision 3)",
+    "farewellExclusion": "John 13–17 fragments removed from cat-27; thematic homes (cat-11/12/13) untouched (decision 5)",
+    "institutionGapFillers": "cat-9 stays canonical; 3 narrative copies surfaced in 27.1 (decision 4)"
+  },
+  "merges": [
+    {
+      "survivor": "27.1.2",
+      "absorbed": [
+        "27.1.6"
+      ]
+    },
+    {
+      "survivor": "27.1.3",
+      "absorbed": [
+        "27.1.7",
+        "27.1.12",
+        "27.1.13"
+      ]
+    },
+    {
+      "survivor": "27.1.4",
+      "absorbed": [
+        "27.1.8",
+        "27.1.14"
+      ]
+    },
+    {
+      "survivor": "27.1.5",
+      "absorbed": [
+        "27.1.9"
+      ]
+    },
+    {
+      "survivor": "27.2.1",
+      "absorbed": [
+        "27.1.10"
+      ]
+    },
+    {
+      "survivor": "27.2.2",
+      "absorbed": [
+        "27.1.11",
+        "27.1.15",
+        "27.3.3"
+      ]
+    },
+    {
+      "survivor": "27.2.4",
+      "absorbed": [
+        "27.3.10"
+      ]
+    },
+    {
+      "survivor": "27.3.1",
+      "absorbed": [
+        "27.3.4",
+        "27.3.7"
+      ]
+    },
+    {
+      "survivor": "27.3.2",
+      "absorbed": [
+        "27.3.6"
+      ]
+    }
+  ],
+  "moves": [
+    {
+      "id": "27.2.1",
+      "fromSubcat": 2,
+      "toSubcat": 1
+    },
+    {
+      "id": "27.2.2",
+      "fromSubcat": 2,
+      "toSubcat": 1
+    },
+    {
+      "id": "27.3.2",
+      "fromSubcat": 3,
+      "toSubcat": 2
+    },
+    {
+      "id": "27.3.3",
+      "fromSubcat": 3,
+      "toSubcat": 1
+    },
+    {
+      "id": "27.3.5",
+      "fromSubcat": 3,
+      "toSubcat": 2
+    },
+    {
+      "id": "27.3.6",
+      "fromSubcat": 3,
+      "toSubcat": 2
+    },
+    {
+      "id": "27.3.9",
+      "fromSubcat": 3,
+      "toSubcat": 2
+    },
+    {
+      "id": "27.3.10",
+      "fromSubcat": 3,
+      "toSubcat": 2
+    }
+  ],
+  "removes": [
+    "27.2.5",
+    "27.2.6",
+    "27.2.7"
+  ],
+  "adds": [
+    {
+      "targetSubcat": 1,
+      "eventKey": "institution-bread-and-cup",
+      "primaryRef": "Matt 26:26–29",
+      "text": "At the Last Supper Jesus institutes the bread and the cup — this is my body, this is my blood of the new testament shed for many for the remission of sins; he will not drink of the vine again until the kingdom of his Father.",
+      "quote": "Take, eat; this is my body. Drink ye all of it; For this is my blood of the new testament, which is shed for many for the remission of sins. But I say unto you, I will not drink henceforth of this fruit of the vine, until that day when I drink it new with you in my Father’s kingdom.",
+      "references": [
+        {
+          "label": "Matt 26:26–29",
+          "book": "Matthew",
+          "bookAbbr": "Matt",
+          "chapter": 26,
+          "ranges": [
+            [
+              26,
+              29
+            ]
+          ],
+          "isPrimary": true
+        },
+        {
+          "label": "Mark 14:22–25",
+          "book": "Mark",
+          "bookAbbr": "Mark",
+          "chapter": 14,
+          "ranges": [
+            [
+              22,
+              25
+            ]
+          ],
+          "isPrimary": false
+        },
+        {
+          "label": "Luke 22:17–20",
+          "book": "Luke",
+          "bookAbbr": "Luke",
+          "chapter": 22,
+          "ranges": [
+            [
+              17,
+              20
+            ]
+          ],
+          "isPrimary": false
+        }
+      ],
+      "sourcedFromCat9": "9.1.2",
+      "note": "Decision 4: institution-of-Lords-Supper teaching for Matthew (cat-9 stays canonical).",
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Take, eat; this is my body. Drink ye all of it; For this is my blood of the new testament, which is shed for many for the remission of sins. But I say unto you, I will not drink henceforth of this fruit of the vine, until that day when I drink it new with you in my Father’s kingdom."
+      }
+    },
+    {
+      "targetSubcat": 1,
+      "eventKey": "institution-bread-and-cup",
+      "primaryRef": "Mark 14:22–25",
+      "text": "At the Last Supper Jesus institutes the bread and the cup — this is my body, this is my blood of the new testament shed for many; he will not drink of the vine again until that day in the kingdom of God.",
+      "quote": "Take, eat: this is my body. This is my blood of the new testament, which is shed for many. Verily I say unto you, I will drink no more of the fruit of the vine, until that day that I drink it new in the kingdom of God.",
+      "references": [
+        {
+          "label": "Mark 14:22–25",
+          "book": "Mark",
+          "bookAbbr": "Mark",
+          "chapter": 14,
+          "ranges": [
+            [
+              22,
+              25
+            ]
+          ],
+          "isPrimary": true
+        },
+        {
+          "label": "Matt 26:26–29",
+          "book": "Matthew",
+          "bookAbbr": "Matt",
+          "chapter": 26,
+          "ranges": [
+            [
+              26,
+              29
+            ]
+          ],
+          "isPrimary": false
+        },
+        {
+          "label": "Luke 22:17–20",
+          "book": "Luke",
+          "bookAbbr": "Luke",
+          "chapter": 22,
+          "ranges": [
+            [
+              17,
+              20
+            ]
+          ],
+          "isPrimary": false
+        }
+      ],
+      "sourcedFromCat9": "9.1.2",
+      "note": "Decision 4: institution words — Mark parallel.",
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Take, eat: this is my body. This is my blood of the new testament, which is shed for many. Verily I say unto you, I will drink no more of the fruit of the vine, until that day that I drink it new in the kingdom of God."
+      }
+    },
+    {
+      "targetSubcat": 1,
+      "eventKey": "institution-bread-and-cup",
+      "primaryRef": "Luke 22:17–20",
+      "text": "At the Last Supper Jesus takes the cup, gives thanks, and says he will not drink of the fruit of the vine until the kingdom of God comes; then he gives the bread — this is my body given for you — and the cup, the new testament in his blood shed for them.",
+      "quote": "Take this, and divide it among yourselves: For I say unto you, I will not drink of the fruit of the vine, until the kingdom of God shall come. This is my body which is given for you: this do in remembrance of me. This cup is the new testament in my blood, which is shed for you.",
+      "references": [
+        {
+          "label": "Luke 22:17–20",
+          "book": "Luke",
+          "bookAbbr": "Luke",
+          "chapter": 22,
+          "ranges": [
+            [
+              17,
+              20
+            ]
+          ],
+          "isPrimary": true
+        },
+        {
+          "label": "Matt 26:26–29",
+          "book": "Matthew",
+          "bookAbbr": "Matt",
+          "chapter": 26,
+          "ranges": [
+            [
+              26,
+              29
+            ]
+          ],
+          "isPrimary": false
+        },
+        {
+          "label": "Mark 14:22–25",
+          "book": "Mark",
+          "bookAbbr": "Mark",
+          "chapter": 14,
+          "ranges": [
+            [
+              22,
+              25
+            ]
+          ],
+          "isPrimary": false
+        }
+      ],
+      "sourcedFromCat9": "9.1.1",
+      "note": "Decision 4: institution words — Luke parallel (covers cup-before, bread, cup-after).",
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Take this, and divide it among yourselves: For I say unto you, I will not drink of the fruit of the vine, until the kingdom of God shall come. This is my body which is given for you: this do in remembrance of me. This cup is the new testament in my blood, which is shed for you."
+      }
+    }
+  ],
+  "teachings": [
+    {
+      "canonicalId": "27.1.1",
+      "eventKey": "passion-foretold-passover",
+      "targetSubcat": 1,
+      "text": "Foretells his crucifixion at Passover — after two days is the feast, and the Son of man is betrayed to be crucified",
+      "quote": "Ye know that after two days is the feast of the passover, and the Son of man is betrayed to be crucified.",
+      "bookAbbr": "Matt",
+      "primaryRef": "Matt 26:2",
+      "absorbed": [],
+      "references": [
+        {
+          "label": "Matt 26:2",
+          "book": "Matthew",
+          "bookAbbr": "Matt",
+          "chapter": 26,
+          "ranges": [
+            [
+              2,
+              2
+            ]
+          ],
+          "isPrimary": true
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Ye know that after two days is the feast of the passover, and the Son of man is betrayed to be crucified."
+      }
+    },
+    {
+      "canonicalId": "27.1.2",
+      "eventKey": "anointing-bethany",
+      "targetSubcat": 1,
+      "text": "Defends the woman who anointed him — she has done a good work, pouring ointment for my burial, and shall be remembered wherever the gospel is preached",
+      "quote": "Why trouble ye the woman? for she hath wrought a good work upon me. For ye have the poor always with you; but me ye have not always. For in that she hath poured this ointment on my body, she did it for my burial. Verily I say unto you, Wheresoever this gospel shall be preached in the whole world, there shall also this, that this woman hath done, be told for a memorial of her.",
+      "bookAbbr": "Matt",
+      "primaryRef": "Matt 26:10–13",
+      "absorbed": [
+        "27.1.6"
+      ],
+      "references": [
+        {
+          "label": "Matt 26:10–13",
+          "book": "Matthew",
+          "bookAbbr": "Matt",
+          "chapter": 26,
+          "ranges": [
+            [
+              10,
+              13
+            ]
+          ],
+          "isPrimary": true
+        },
+        {
+          "label": "Mark 14:6–9",
+          "book": "Mark",
+          "bookAbbr": "Mark",
+          "chapter": 14,
+          "ranges": [
+            [
+              6,
+              9
+            ]
+          ],
+          "isPrimary": false
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Why trouble ye the woman? for she hath wrought a good work upon me. For ye have the poor always with you; but me ye have not always. For in that she hath poured this ointment on my body, she did it for my burial. Verily I say unto you, Wheresoever this gospel shall be preached in the whole world, there shall also this, that this woman hath done, be told for a memorial of her."
+      }
+    },
+    {
+      "canonicalId": "27.1.3",
+      "eventKey": "prepare-passover",
+      "targetSubcat": 1,
+      "text": "Sends two disciples to prepare the Passover meal at the appointed house",
+      "quote": "Go into the city to such a man, and say unto him, The Master saith, My time is at hand; I will keep the passover at thy house with my disciples.",
+      "bookAbbr": "Matt",
+      "primaryRef": "Matt 26:18",
+      "absorbed": [
+        "27.1.7",
+        "27.1.12",
+        "27.1.13"
+      ],
+      "references": [
+        {
+          "label": "Matt 26:18",
+          "book": "Matthew",
+          "bookAbbr": "Matt",
+          "chapter": 26,
+          "ranges": [
+            [
+              18,
+              18
+            ]
+          ],
+          "isPrimary": true
+        },
+        {
+          "label": "Mark 14:13–15",
+          "book": "Mark",
+          "bookAbbr": "Mark",
+          "chapter": 14,
+          "ranges": [
+            [
+              13,
+              15
+            ]
+          ],
+          "isPrimary": false
+        },
+        {
+          "label": "Luke 22:8, 10–12",
+          "book": "Luke",
+          "bookAbbr": "Luke",
+          "chapter": 22,
+          "ranges": [
+            [
+              8,
+              8
+            ],
+            [
+              10,
+              12
+            ]
+          ],
+          "isPrimary": false
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Go into the city to such a man, and say unto him, The Master saith, My time is at hand; I will keep the passover at thy house with my disciples."
+      }
+    },
+    {
+      "canonicalId": "27.1.4",
+      "eventKey": "betrayal-foretold",
+      "targetSubcat": 1,
+      "text": "Announces at the Last Supper that one of the Twelve will betray him",
+      "quote": "Verily I say unto you, that one of you shall betray me.",
+      "bookAbbr": "Matt",
+      "primaryRef": "Matt 26:21",
+      "absorbed": [
+        "27.1.8",
+        "27.1.14"
+      ],
+      "references": [
+        {
+          "label": "Matt 26:21",
+          "book": "Matthew",
+          "bookAbbr": "Matt",
+          "chapter": 26,
+          "ranges": [
+            [
+              21,
+              21
+            ]
+          ],
+          "isPrimary": true
+        },
+        {
+          "label": "Mark 14:18",
+          "book": "Mark",
+          "bookAbbr": "Mark",
+          "chapter": 14,
+          "ranges": [
+            [
+              18,
+              18
+            ]
+          ],
+          "isPrimary": false
+        },
+        {
+          "label": "Luke 22:21–22",
+          "book": "Luke",
+          "bookAbbr": "Luke",
+          "chapter": 22,
+          "ranges": [
+            [
+              21,
+              22
+            ]
+          ],
+          "isPrimary": false
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Verily I say unto you, that one of you shall betray me."
+      }
+    },
+    {
+      "canonicalId": "27.1.5",
+      "eventKey": "betrayer-identified",
+      "targetSubcat": 1,
+      "text": "Identifies the betrayer as the one who dips with him — better for that man if he had never been born",
+      "quote": "He that dippeth his hand with me in the dish, the same shall betray me. The Son of man goeth as it is written of him: but woe unto that man by whom the Son of man is betrayed! it had been good for that man if he had not been born. Thou hast said.",
+      "bookAbbr": "Matt",
+      "primaryRef": "Matt 26:23–25",
+      "absorbed": [
+        "27.1.9"
+      ],
+      "references": [
+        {
+          "label": "Matt 26:23–25",
+          "book": "Matthew",
+          "bookAbbr": "Matt",
+          "chapter": 26,
+          "ranges": [
+            [
+              23,
+              25
+            ]
+          ],
+          "isPrimary": true
+        },
+        {
+          "label": "Mark 14:20–21",
+          "book": "Mark",
+          "bookAbbr": "Mark",
+          "chapter": 14,
+          "ranges": [
+            [
+              20,
+              21
+            ]
+          ],
+          "isPrimary": false
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "He that dippeth his hand with me in the dish, the same shall betray me. The Son of man goeth as it is written of him: but woe unto that man by whom the Son of man is betrayed! it had been good for that man if he had not been born. Thou hast said."
+      }
+    },
+    {
+      "canonicalId": "27.2.1",
+      "eventKey": "shepherd-smitten",
+      "targetSubcat": 1,
+      "text": "Foretells the disciples' scattering, citing Zechariah — but pledges to meet them in Galilee after he rises",
+      "quote": "All ye shall be offended because of me this night: for it is written, I will smite the shepherd, and the sheep of the flock shall be scattered abroad. But after I am risen again, I will go before you into Galilee.",
+      "bookAbbr": "Matt",
+      "primaryRef": "Matt 26:31–32",
+      "absorbed": [
+        "27.1.10"
+      ],
+      "references": [
+        {
+          "label": "Matt 26:31–32",
+          "book": "Matthew",
+          "bookAbbr": "Matt",
+          "chapter": 26,
+          "ranges": [
+            [
+              31,
+              32
+            ]
+          ],
+          "isPrimary": true
+        },
+        {
+          "label": "Mark 14:27–28",
+          "book": "Mark",
+          "bookAbbr": "Mark",
+          "chapter": 14,
+          "ranges": [
+            [
+              27,
+              28
+            ]
+          ],
+          "isPrimary": false
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "All ye shall be offended because of me this night: for it is written, I will smite the shepherd, and the sheep of the flock shall be scattered abroad. But after I am risen again, I will go before you into Galilee."
+      }
+    },
+    {
+      "canonicalId": "27.2.2",
+      "eventKey": "peter-denial-warning",
+      "targetSubcat": 1,
+      "text": "Foretells Peter's three denials before the rooster crows that very night",
+      "quote": "Verily I say unto thee, That this night, before the cock crow, thou shalt deny me thrice.",
+      "bookAbbr": "Matt",
+      "primaryRef": "Matt 26:34",
+      "absorbed": [
+        "27.1.11",
+        "27.1.15",
+        "27.3.3"
+      ],
+      "references": [
+        {
+          "label": "Matt 26:34",
+          "book": "Matthew",
+          "bookAbbr": "Matt",
+          "chapter": 26,
+          "ranges": [
+            [
+              34,
+              34
+            ]
+          ],
+          "isPrimary": true
+        },
+        {
+          "label": "Mark 14:30",
+          "book": "Mark",
+          "bookAbbr": "Mark",
+          "chapter": 14,
+          "ranges": [
+            [
+              30,
+              30
+            ]
+          ],
+          "isPrimary": false
+        },
+        {
+          "label": "Mark 14:72",
+          "book": "Mark",
+          "bookAbbr": "Mark",
+          "chapter": 14,
+          "ranges": [
+            [
+              72,
+              72
+            ]
+          ],
+          "isPrimary": false
+        },
+        {
+          "label": "Luke 22:34–38",
+          "book": "Luke",
+          "bookAbbr": "Luke",
+          "chapter": 22,
+          "ranges": [
+            [
+              34,
+              38
+            ]
+          ],
+          "isPrimary": false
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Verily I say unto thee, That this night, before the cock crow, thou shalt deny me thrice."
+      }
+    },
+    {
+      "canonicalId": "27.2.3",
+      "eventKey": "judas-greeting",
+      "targetSubcat": 2,
+      "text": "Greets Judas at the betrayal — friend, do what you came for",
+      "quote": "Friend, wherefore art thou come?",
+      "bookAbbr": "Matt",
+      "primaryRef": "Matt 26:50",
+      "absorbed": [],
+      "references": [
+        {
+          "label": "Matt 26:50",
+          "book": "Matthew",
+          "bookAbbr": "Matt",
+          "chapter": 26,
+          "ranges": [
+            [
+              50,
+              50
+            ]
+          ],
+          "isPrimary": true
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Friend, wherefore art thou come?"
+      }
+    },
+    {
+      "canonicalId": "27.2.4",
+      "eventKey": "sword-saying",
+      "targetSubcat": 2,
+      "text": "Stops Peter's sword at his arrest — those who live by the sword die by it; the Scriptures must be fulfilled",
+      "quote": "Put up again thy sword into his place: for all they that take the sword shall perish with the sword. Thinkest thou that I cannot now pray to my Father, and he shall presently give me more than twelve legions of angels? But how then shall the scriptures be fulfilled, that thus it must be? Are ye come out as against a thief with swords and staves for to take me? I sat daily with you teaching in the temple, and ye laid no hold on me. But all this was done, that the scriptures of the prophets might be fulfilled.",
+      "bookAbbr": "Matt",
+      "primaryRef": "Matt 26:52–56",
+      "absorbed": [
+        "27.3.10"
+      ],
+      "references": [
+        {
+          "label": "Matt 26:52–56",
+          "book": "Matthew",
+          "bookAbbr": "Matt",
+          "chapter": 26,
+          "ranges": [
+            [
+              52,
+              56
+            ]
+          ],
+          "isPrimary": true
+        },
+        {
+          "label": "John 18:11",
+          "book": "John",
+          "bookAbbr": "John",
+          "chapter": 18,
+          "ranges": [
+            [
+              11,
+              11
+            ]
+          ],
+          "isPrimary": false
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Put up again thy sword into his place: for all they that take the sword shall perish with the sword. Thinkest thou that I cannot now pray to my Father, and he shall presently give me more than twelve legions of angels? But how then shall the scriptures be fulfilled, that thus it must be? Are ye come out as against a thief with swords and staves for to take me? I sat daily with you teaching in the temple, and ye laid no hold on me. But all this was done, that the scriptures of the prophets might be fulfilled."
+      }
+    },
+    {
+      "canonicalId": "27.3.1",
+      "eventKey": "pilate-king-jews",
+      "targetSubcat": 3,
+      "text": "Affirms before Pilate that he is the King of the Jews",
+      "quote": "Thou sayest.",
+      "bookAbbr": "Matt",
+      "primaryRef": "Matt 27:11",
+      "absorbed": [
+        "27.3.4",
+        "27.3.7"
+      ],
+      "references": [
+        {
+          "label": "Matt 27:11",
+          "book": "Matthew",
+          "bookAbbr": "Matt",
+          "chapter": 27,
+          "ranges": [
+            [
+              11,
+              11
+            ]
+          ],
+          "isPrimary": true
+        },
+        {
+          "label": "Mark 15:2",
+          "book": "Mark",
+          "bookAbbr": "Mark",
+          "chapter": 15,
+          "ranges": [
+            [
+              2,
+              2
+            ]
+          ],
+          "isPrimary": false
+        },
+        {
+          "label": "Luke 23:3",
+          "book": "Luke",
+          "bookAbbr": "Luke",
+          "chapter": 23,
+          "ranges": [
+            [
+              3,
+              3
+            ]
+          ],
+          "isPrimary": false
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Thou sayest."
+      }
+    },
+    {
+      "canonicalId": "27.3.2",
+      "eventKey": "arrest-confront-mob",
+      "targetSubcat": 2,
+      "text": "Confronts the arresting party — they come with swords as for a robber, though he taught openly daily in the temple",
+      "quote": "Are ye come out, as against a thief, with swords and with staves to take me? I was daily with you in the temple teaching, and ye took me not: but the scriptures must be fulfilled.",
+      "bookAbbr": "Mark",
+      "primaryRef": "Mark 14:48–49",
+      "absorbed": [
+        "27.3.6"
+      ],
+      "references": [
+        {
+          "label": "Mark 14:48–49",
+          "book": "Mark",
+          "bookAbbr": "Mark",
+          "chapter": 14,
+          "ranges": [
+            [
+              48,
+              49
+            ]
+          ],
+          "isPrimary": true
+        },
+        {
+          "label": "Luke 22:51–53",
+          "book": "Luke",
+          "bookAbbr": "Luke",
+          "chapter": 22,
+          "ranges": [
+            [
+              51,
+              53
+            ]
+          ],
+          "isPrimary": false
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Are ye come out, as against a thief, with swords and with staves to take me? I was daily with you in the temple teaching, and ye took me not: but the scriptures must be fulfilled."
+      }
+    },
+    {
+      "canonicalId": "27.3.5",
+      "eventKey": "judas-kiss",
+      "targetSubcat": 2,
+      "text": "Confronts Judas at his arrest — does he betray the Son of Man with a kiss?",
+      "quote": "Judas, betrayest thou the Son of man with a kiss?",
+      "bookAbbr": "Luke",
+      "primaryRef": "Luke 22:48",
+      "absorbed": [],
+      "references": [
+        {
+          "label": "Luke 22:48",
+          "book": "Luke",
+          "bookAbbr": "Luke",
+          "chapter": 22,
+          "ranges": [
+            [
+              48,
+              48
+            ]
+          ],
+          "isPrimary": true
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Judas, betrayest thou the Son of man with a kiss?"
+      }
+    },
+    {
+      "canonicalId": "27.3.8",
+      "eventKey": "daughters-jerusalem",
+      "targetSubcat": 3,
+      "text": "Tells the weeping women on the way to the cross to weep for themselves and their children, not for him",
+      "quote": "Daughters of Jerusalem, weep not for me, but weep for yourselves, and for your children. For, behold, the days are coming, in the which they shall say, Blessed are the barren, and the wombs that never bare, and the paps which never gave suck. Then shall they begin to say to the mountains, Fall on us; and to the hills, Cover us. For if they do these things in a green tree, what shall be done in the dry?",
+      "bookAbbr": "Luke",
+      "primaryRef": "Luke 23:28–31",
+      "absorbed": [],
+      "references": [
+        {
+          "label": "Luke 23:28–31",
+          "book": "Luke",
+          "bookAbbr": "Luke",
+          "chapter": 23,
+          "ranges": [
+            [
+              28,
+              31
+            ]
+          ],
+          "isPrimary": true
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Daughters of Jerusalem, weep not for me, but weep for yourselves, and for your children. For, behold, the days are coming, in the which they shall say, Blessed are the barren, and the wombs that never bare, and the paps which never gave suck. Then shall they begin to say to the mountains, Fall on us; and to the hills, Cover us. For if they do these things in a green tree, what shall be done in the dry?"
+      }
+    },
+    {
+      "canonicalId": "27.3.9",
+      "eventKey": "whom-seek-ye",
+      "targetSubcat": 2,
+      "text": "Going forth to those who came to arrest him, he asks, Whom do you seek?",
+      "quote": "Whom seek ye?",
+      "bookAbbr": "John",
+      "primaryRef": "John 18:4",
+      "absorbed": [],
+      "references": [
+        {
+          "label": "John 18:4",
+          "book": "John",
+          "bookAbbr": "John",
+          "chapter": 18,
+          "ranges": [
+            [
+              4,
+              4
+            ]
+          ],
+          "isPrimary": true
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Whom seek ye?"
+      }
+    },
+    {
+      "canonicalId": "27.3.11",
+      "eventKey": "caiaphas-spoke-openly",
+      "targetSubcat": 3,
+      "text": "Tells the high priest he taught openly in synagogue and temple — those who heard him should be questioned",
+      "quote": "I spake openly to the world; I ever taught in the synagogue, and in the temple, whither the Jews always resort; and in secret have I said nothing. Why askest thou me? ask them which heard me, what I have said unto them: behold, they know what I said.",
+      "bookAbbr": "John",
+      "primaryRef": "John 18:20–21",
+      "absorbed": [],
+      "references": [
+        {
+          "label": "John 18:20–21",
+          "book": "John",
+          "bookAbbr": "John",
+          "chapter": 18,
+          "ranges": [
+            [
+              20,
+              21
+            ]
+          ],
+          "isPrimary": true
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "I spake openly to the world; I ever taught in the synagogue, and in the temple, whither the Jews always resort; and in secret have I said nothing. Why askest thou me? ask them which heard me, what I have said unto them: behold, they know what I said."
+      }
+    },
+    {
+      "canonicalId": "27.3.12",
+      "eventKey": "caiaphas-why-smitest",
+      "targetSubcat": 3,
+      "text": "If he has spoken evil, let the officer bear witness of the evil; but if he has spoken well, why is he struck?",
+      "quote": "If I have spoken evil, bear witness of the evil: but if well, why smitest thou me?",
+      "bookAbbr": "John",
+      "primaryRef": "John 18:23",
+      "absorbed": [],
+      "references": [
+        {
+          "label": "John 18:23",
+          "book": "John",
+          "bookAbbr": "John",
+          "chapter": 18,
+          "ranges": [
+            [
+              23,
+              23
+            ]
+          ],
+          "isPrimary": true
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "If I have spoken evil, bear witness of the evil: but if well, why smitest thou me?"
+      }
+    },
+    {
+      "canonicalId": "27.3.13",
+      "eventKey": "pilate-of-thyself",
+      "targetSubcat": 3,
+      "text": "He asks Pilate whether he says this of himself, or whether others have told him concerning Jesus.",
+      "quote": "Sayest thou this thing of thyself, or did others tell it thee of me?",
+      "bookAbbr": "John",
+      "primaryRef": "John 18:34",
+      "absorbed": [],
+      "references": [
+        {
+          "label": "John 18:34",
+          "book": "John",
+          "bookAbbr": "John",
+          "chapter": 18,
+          "ranges": [
+            [
+              34,
+              34
+            ]
+          ],
+          "isPrimary": true
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Sayest thou this thing of thyself, or did others tell it thee of me?"
+      }
+    },
+    {
+      "canonicalId": "27.3.14",
+      "eventKey": "pilate-no-power",
+      "targetSubcat": 3,
+      "text": "Pilate would have no power against him at all unless it were given from above; therefore the one who delivered him to Pilate has the greater sin.",
+      "quote": "Thou couldest have no power at all against me, except it were given thee from above: therefore he that delivered me unto thee hath the greater sin.",
+      "bookAbbr": "John",
+      "primaryRef": "John 19:11",
+      "absorbed": [],
+      "references": [
+        {
+          "label": "John 19:11",
+          "book": "John",
+          "bookAbbr": "John",
+          "chapter": 19,
+          "ranges": [
+            [
+              11,
+              11
+            ]
+          ],
+          "isPrimary": true
+        }
+      ],
+      "quoteVerification": {
+        "ok": true,
+        "sourceJoined": "Thou couldest have no power at all against me, except it were given thee from above: therefore he that delivered me unto thee hath the greater sin."
+      }
+    }
+  ]
+}
