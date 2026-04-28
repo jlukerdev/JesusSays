@@ -8,6 +8,7 @@ const PILL_LABELS = {
   John: 'John',
   Acts: 'Acts',
   '1Cor': '1 Cor',
+  '2Cor': '2 Cor',
   Rev: 'Rev'
 }
 
