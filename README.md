@@ -135,7 +135,19 @@ The data is organized hierarchically: categories → subcategories → individua
 
 The full catalog rebuild pipeline — parsed USFM source, gap reports, and assembly scripts — lives under [bible_datasets/](./bible_datasets/) with details in [catalog-rebuild-plan.md](./bible_datasets/catalog-rebuild-plan.md).
 
+## Catalog Engine
+
+A deterministic ruleset engine governs all reads, writes, and structural changes to `teachings.json`. It lives at `catalog_builds/engine/` and consists of three layers:
+
+| Layer | Files |
+|---|---|
+| **Rules** | `CLASSIFICATION_RULES.md`, `TAXONOMY_STANDARDS.md`, `TAG_RULES.md` |
+| **Scripts** | `scripts/parse-catalog.js`, `validate-catalog.js`, `audit-catalog.js`, `classify.js`, `renumber.js` |
+| **Skill** | `skills/SKILL.md` — Claude Code skill with 5 complete agent workflows |
+
+The engine enforces consistent classification, prevents structural drift, and provides a validated write path for any catalog change. See [`catalog_builds/engine/skills/SKILL.md`](./catalog_builds/engine/skills/SKILL.md) for full usage.
+
 ---
 
 **Last updated:** April 2026  
-**Status:** Planning Phase — Ready for implementation
+**Status:** Phase 1 complete (Stage 8 QA pending) — Catalog Engine live

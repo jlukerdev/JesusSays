@@ -130,6 +130,34 @@ All values from CSS custom properties — never hardcode colors, sizes, or spaci
 
 DOM IDs follow JSON slugs: `cat-1`, `cat-1-1`. Teaching anchors: `t-1-2-5` (dots → dashes, prefixed `t-`).
 
+## Catalog Engine
+
+All interaction with `public/teachings.json` — classification, validation, auditing, adding teachings, and restructuring — is governed by the **Catalog Engine** at `catalog_builds/engine/`.
+
+**Load the skill before any catalog operation:**
+`catalog_builds/engine/skills/SKILL.md`
+
+| File | Purpose |
+|---|---|
+| `catalog_builds/engine/CLASSIFICATION_RULES.md` | Thematic rules for all 31 categories and 125 subcategories |
+| `catalog_builds/engine/TAXONOMY_STANDARDS.md` | Standards for creating new cats/subcats; required fields; validation gate |
+| `catalog_builds/engine/TAG_RULES.md` | Parable tag definition + canonical 42-parable reference list |
+| `catalog_builds/engine/BASELINE.md` | Initial catalog state; known issues (41 Cat-31 ID errors, accepted findings) |
+| `catalog_builds/engine/scripts/README.md` | Script usage, options, and sample output |
+
+**CLI scripts** (run from project root):
+```bash
+node catalog_builds/engine/scripts/parse-catalog.js --stats      # totals
+node catalog_builds/engine/scripts/validate-catalog.js           # lint
+node catalog_builds/engine/scripts/audit-catalog.js              # quality audit
+node catalog_builds/engine/scripts/classify.js --ref "Matt 13:31" # placement check
+node catalog_builds/engine/scripts/renumber.js                   # fix IDs and write
+```
+
+**Current catalog stats:** 31 categories · 125 subcategories · 700 teachings · 42 parables
+
+> Note: The overview count of 716 teachings in this file predates the engine baseline. The live count is 702 per `parse-catalog.js --stats`.
+
 ## Key Planning Documents
 
 - `docs/dev_plan/feature-hitlist.md` — Full feature spec, architecture decisions (A-01–A-07), review notes (R-01–R-11), phase status tables
