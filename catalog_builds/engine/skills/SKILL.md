@@ -1,3 +1,11 @@
+---
+name: catalog-engine
+description: >
+  This skill governs all interaction with the Jesus Says data catalog. Load this skill before any catalog read, audit, classification, or write operation.
+  It provides capabilities for validating, auditing, classifying, adding, and restructuring teachings within the catalog.
+  Use this skill to ensure data integrity, maintain thematic consistency, and manage the catalog effectively.
+---
+
 # Catalog Engine Skill
 
 **Skill name:** `catalog-engine`  

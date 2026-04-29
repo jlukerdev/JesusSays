@@ -15,7 +15,7 @@ This ruleset governs every classification decision in the Jesus Says catalog. Wh
 3. **Check the Explicit Exclusions.** If the teaching's primary thrust matches an exclusion, use the target category named there.
 4. **Apply the Tie-Breaker Rule** when a teaching legitimately overlaps two categories. The tie-breaker is binding — it is not a suggestion.
 5. **Assign to the most specific subcategory** whose description matches. If no subcategory fits, escalate for review rather than forcing a fit.
-6. **Consult the Global Overrides** (below) before finalizing any assignment in categories 12, 27, 28, or 31. These categories have hard capture rules that override topical logic.
+6. **Consult the Global Overrides** (below) before finalizing any assignment in categories 12, 27, or 31. These categories have hard capture rules that override topical logic. Cat 28 (Post-Resurrection) is a standard topical category, not an override rule — post-resurrection utterances that are topically self-contained classify to their topical category.
 
 ---
 
@@ -26,8 +26,7 @@ These rules take unconditional precedence over all category-level logic:
 | Rule | Override |
 |---|---|
 | **G-1: John 17** | ALL verses from John 17 belong to **Cat 12 (High Priestly Prayer)**. No John 17 verse belongs in any other category, regardless of topic. |
-| **G-2: Passion Narrative** | ALL teachings spoken from the Last Supper through the Crucifixion (Matt 26–27 / Mark 14–15 / Luke 22–23 / John 13–19) belong to **Cat 27 (Passion Narrative)**. A teaching in this block that touches forgiveness, love, or prayer stays in Cat 27. |
-| **G-3: Post-Resurrection** | ALL teachings spoken after the Resurrection (Matt 28 / Mark 16 / Luke 24 / John 20–21 / Acts resurrection appearances) belong to **Cat 28 (Post-Resurrection)**. Exception: the Great Commission is intentionally cross-listed in both Cat 26.5 and Cat 28.4. |
+| **G-2: Passion Narrative** | Utterances spoken during the active events of the Passion — the institution of the Lord's Supper, betrayal and denial predictions at table, Gethsemane, the arrest, the trials, and the Crucifixion — belong to **Cat 27 (Passion Narrative)**. Scope: synoptic Passion (Matt 26–27 / Mark 14–15 / Luke 22–23) + John 18–19. The Farewell Discourse (John 13:31–16:33) is classified by primary topical content. John 17 remains under G-1. |
 | **G-4: Revelation 1–3** | ALL direct speech of Christ in Rev 1–3 belongs to **Cat 31 (Seven Churches)**. No verse from Rev 1:10–3:22 belongs in any other category. |
 
 ---
@@ -87,7 +86,7 @@ Teachings that assert God's supreme authority over creation, history, or human a
 
 **Explicit exclusions:**
 - Vine/branches teachings → Cat 11 (Abiding in Christ) because the emphasis is on the disciple's relationship, not on Jesus's identity alone
-- "I am with you always" (Great Commission context) → Cat 28 (Post-Resurrection) per G-3
+- "I am with you always" (Great Commission context) → Cat 26.5 (Great Commission) or Cat 28 (Post-Resurrection) if the appearance context is primary
 - Instructions to pray in his name → Cat 10.4 (Praying in His Name)
 - The Father's greatness compared to the Son → classify by whether the passage is about Jesus's identity (Cat 2) or the Father's nature (Cat 1)
 
@@ -97,8 +96,6 @@ Teachings that assert God's supreme authority over creation, history, or human a
 
 #### 2.1 The "I AM" Declarations
 The seven formal "I AM + predicate" statements in John and their parallels, plus extended teaching passages directly attached to those declarations (e.g., the John 10 shepherd discourse). Distinguishable from 2.2 by being metaphorical self-descriptions rather than relational assertions about the Father. Narrative passages that accompany an I AM context but are not themselves declarations (e.g., the Lazarus narrative, John 11) belong in 2.3.
-
-> **G-2 Exception (deliberate):** The seven canonical I AM + predicate declarations are retained in 2.1 even when their narrative context falls within the Upper Room Discourse (John 13–17), which would otherwise be captured by G-2. Rationale: the primary theological force of these verses is identity disclosure, not Passion narrative. This exception does not apply to supporting or contextual verses from John 13–19 (those belong in Cat 27 per G-2).
 
 #### 2.2 His Relationship with the Father
 Teachings asserting unity, mutual knowledge, and mutual indwelling between Father and Son. Distinguishable from 2.1 by the explicitly relational rather than metaphorical framing.
@@ -144,7 +141,7 @@ Healing commands, exorcisms, nature miracles, and feeding miracle logistics — 
 ### Subcategories
 
 #### 3.1 The Promise and Coming of the Spirit
-Forward-looking statements about the Spirit who will be sent. Predominantly from the Upper Room Discourse (John 14–16), pre-Passion context only; the Passion block belongs to Cat 27 per G-2.
+Forward-looking statements about the Spirit who will be sent. Predominantly from the Farewell Discourse (John 14–16), which classifies topically.
 
 #### 3.2 The Spirit's Work in the World
 Teachings about what the Spirit accomplishes — conviction, revelation, glorification of Christ. Distinguishable from 3.1 by describing ongoing work rather than the event of coming.
@@ -937,7 +934,7 @@ Teachings on leaders who seek prestige, exploit the vulnerable, or fail to do wh
 
 **Explicit exclusions:**
 - Corporate prayer → Cat 10.5 if the focus is prayer practice
-- The Great Commission → Cat 26.5 / Cat 28.4
+- The Great Commission → Cat 26.5
 - Instructions to the Twelve on mission → Cat 26 (Mission and Witness)
 - Unity prayed for in John 17 → Cat 12.3
 
@@ -968,7 +965,7 @@ Teachings explicitly calling for or describing the unity of believers as a commu
 **Inclusion themes:**
 - "The harvest is plentiful, but the laborers are few"
 - Instructions to the Twelve (Matt 10) and the Seventy (Luke 10)
-- "Go and make disciples of all nations" (Great Commission; also cross-listed in Cat 28.4)
+- "Go and make disciples of all nations" (Great Commission; also cross-listed in Cat 28.1 as an appearance-narrative event)
 - Shaking the dust off feet
 - Being wise as serpents and harmless as doves
 - Visions and commissions in Acts (Paul on the road to Damascus, Peter's Cornelius vision)
@@ -977,7 +974,7 @@ Teachings explicitly calling for or describing the unity of believers as a commu
 **Explicit exclusions:**
 - Courage under persecution (with no mission context) → Cat 23
 - The Spirit speaking in court → Cat 3.3
-- Post-resurrection appearances' commission → Cat 28 per G-3, with the exception of the Great Commission, which is intentionally held in both Cat 26.5 and Cat 28.4
+- Post-resurrection commissions that are topically self-contained (Great Commission, Spirit/witness) → Cat 26.5 or Cat 26.6; appearance-narrative utterances → Cat 28
 
 **Tie-breaker rule:** Instructions that occur in the Passion narrative context → Cat 27 per G-2, even if they include mission elements. Instructions given in ministry or post-resurrection → classify normally.
 
@@ -996,7 +993,7 @@ Teachings calling missionaries and witnesses to fearlessness.
 Teachings describing the hostile reception witnesses will face — specifically in the context of active witness and proclamation.
 
 #### 26.5 The Great Commission
-The post-resurrection mandate to make disciples of all nations (Matt 28:18–20; John 20:21–23; Acts 1:8 and parallels). Cross-listed in Cat 28.4.
+The post-resurrection mandate to make disciples of all nations (Matt 28:18–20; John 20:21–23; Acts 1:8 and parallels).
 
 #### 26.6 Visions and Commissions to the Apostles
 Post-ascension appearances and commissions recorded in Acts — the road to Damascus, the Cornelius vision, and similar — where the risen Christ speaks directly.
@@ -1005,25 +1002,22 @@ Post-ascension appearances and commissions recorded in Acts — the road to Dama
 
 ## 27. The Passion Narrative
 
-**Theological scope:** ALL teachings spoken by Jesus from the Last Supper through the Crucifixion and his death. Temporal boundaries: from Jesus's words at the Passover meal (Matt 26:20 / Mark 14:17 / Luke 22:14 / John 13:1) through "It is finished" and the final cry from the cross.
+**Theological scope:** Utterances spoken by Jesus during the active events of the Passion — from the institution of the Lord's Supper through the Crucifixion. Scope: synoptic Passion (Matt 26–27 / Mark 14–15 / Luke 22–23) + John 18–19.
 
-**Guiding principle:** This category is governed by **Global Override G-2**. Temporal context, not topic, determines classification. A teaching in this block that touches forgiveness, prayer, love, or the Spirit stays in Cat 27. No teaching in this window is re-assigned to another category based on topic.
+**Guiding principle:** Event-bound, not topically governed. The Farewell Discourse (John 13:31–16:33) is classified by primary topical content under the standard category rules. Theological teaching in John 13–16 (Spirit promises, abiding, love commands, prayer instructions) belongs in its respective topical category. John 17 belongs to Cat 12 per G-1.
 
 **Inclusion themes:**
 - Institution of the Lord's Supper
-- Foot washing and servant leadership (John 13)
-- Upper Room Discourse (John 13–16, minus John 17 which is Cat 12)
+- Betrayal and denial predictions at table
 - Prediction of Peter's denial
 - Gethsemane — the prayer and the arrest dialogue
 - Statements at trial (before Pilate, before Caiaphas)
 - The Seven Last Words from the Cross
 
-**Note on Upper Room Discourse:** John 13–16 falls within the G-2 window. All teachings in these chapters (except John 17 which is G-1) belong in Cat 27, even though many would topically fit Cat 3 (Spirit), Cat 10 (Prayer), Cat 11 (Abiding), or Cat 13 (Love).
-
 ### Subcategories
 
 #### 27.1 The Last Supper
-Words spoken during the Passover meal — institution of the Lord's Supper, foot washing, the Upper Room Discourse through John 16.
+Words spoken during the Passover meal — institution of the Lord's Supper, betrayal and denial predictions at table.
 
 #### 27.2 Gethsemane and Arrest
 Gethsemane prayer (as narrative event, not instruction), the arrest dialogue.
@@ -1038,32 +1032,33 @@ The seven sayings from the cross: Father forgive them; today in paradise; woman 
 
 ## 28. Post-Resurrection Appearances
 
-**Theological scope:** ALL teachings spoken by Jesus after the Resurrection (per **Global Override G-3**). Temporal boundary begins at the empty tomb morning and extends through the Ascension.
+**Theological scope:** Words of the risen Christ whose primary meaning is tied to the resurrection appearance context — greetings, proofs of bodily resurrection, and appearance-bound interactions.
 
-**Guiding principle:** Temporal context, not topic, determines classification. Post-resurrection words are assigned here. The Great Commission is intentionally cross-listed in Cat 26.5 because it also functions as the culminating mission sending.
+**Guiding principle:** Cat 28 is not a temporal capture rule. Teachings that happen to occur post-resurrection but are topically self-contained (faith, discipleship, mission) classify to their topical category. Only utterances whose primary meaning depends on the resurrection appearance context belong here.
 
 **Inclusion themes:**
-- Words to Mary Magdalene and the women
-- Words to disciples on Emmaus road
-- Words to gathered disciples ("Peace be with you," show of wounds)
-- "Do not be afraid; I am the first and the last" (Rev 1 context is Cat 31)
-- Words to Thomas
-- Words to Peter by the sea (restoration and commission)
-- The Great Commission (Matt 28:18–20; Mark 16:15–18; Luke 24:46–49; Acts 1:4–8)
+- Words to Mary Magdalene and the women at the tomb
+- Words to disciples on Emmaus road (appearance-bound dialogue)
+- Words to gathered disciples — proofs of bodily resurrection, "Peace be with you," show of wounds
+- Appearance-narrative interactions (eating fish, John 21 fishing scene)
+
+**Routing notes for topically self-contained post-resurrection teachings:**
+- Thomas encounter (John 20:27–29) → Cat 7 (Faith and Trust)
+- "Feed my sheep" / "Follow me" (John 21:15–19) → Cat 22.1 / Cat 26
+- The Great Commission (Matt 28:18–20 and parallels) → Cat 26.5
+- Acts 1:4–8 (Spirit and witness commission) → Cat 26.6
+- Damascus road and post-ascension appearances in Acts → Cat 26.6
 
 ### Subcategories
 
 #### 28.1 Resurrection Appearances — Words Spoken
-General resurrection appearance words — to the women, on the road to Emmaus, to the gathered disciples. All post-resurrection speech not covered by a more specific subcategory.
+Appearance-narrative words — to the women at the tomb, on the road to Emmaus, to the gathered disciples. Utterances whose meaning is inseparable from the appearance context.
 
 #### 28.2 Thomas — Doubt Confronted by Evidence
-John 20:26–29. The specific Thomas encounter.
+John 20:26–29. The specific Thomas encounter. Note: this teaching's topical home is Cat 7 (Faith and Trust); it is cross-listed here as an appearance narrative.
 
 #### 28.3 The Restoration of Peter
-John 21:15–23. The threefold restoration and commission of Peter.
-
-#### 28.4 The Final Commission and Ascension
-The Great Commission in all its forms and the words spoken at the Ascension. Cross-listed with Cat 26.5.
+John 21:15–23. The appearance-narrative fishing scene and Peter's restoration. Note: the "Feed my sheep" / "Follow me" commissions (John 21:15–19) classify topically to Cat 22.1 / Cat 26.
 
 ---
 
@@ -1200,10 +1195,11 @@ Rev 3:14–22. Rebuked for lukewarmness; the famous invitation: "I stand at the 
 | Oath/truthfulness — within the Antitheses block | Cat 14.3 |
 | Oath/truthfulness — standalone | Cat 16.2 |
 | Any teaching in John 17 | Cat 12 (G-1) |
-| Any teaching in John 13–16 | Cat 27 (G-2, Passion) |
+| Farewell Discourse teaching (John 13:31–16:33) | Topical category — not Cat 27 |
 | Any teaching in Matt 26–27 / Mark 14–15 / Luke 22–23 | Cat 27 (G-2, Passion) |
-| Any teaching in Matt 28 / Mark 16 / Luke 24 / John 20–21 | Cat 28 (G-3, Resurrection) |
-| The Great Commission | Cat 26.5 AND Cat 28.4 (intentional cross-list) |
+| Post-resurrection utterance — appearance-narrative bound | Cat 28 |
+| Post-resurrection utterance — topically self-contained | Topical category (not Cat 28) |
+| The Great Commission | Cat 26.5 only |
 | Any teaching in Rev 1–3 | Cat 31 (G-4) |
 | Sheep and Goats (Matt 25) | Cat 21.2 (mercy-criterion primary), not Cat 29 or Cat 30 |
 | Rich Man and Lazarus | Cat 20.4, not Cat 21 or Cat 30 |

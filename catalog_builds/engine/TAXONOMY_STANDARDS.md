@@ -150,6 +150,31 @@ When moving a whole subcategory:
 3. Run `renumber.js`
 4. Run `validate-catalog.js`
 
+### Resolving Duplicate Teachings
+
+A **duplicate teaching** exists when two separate teaching objects reference the same scripture passage (same book, chapter, and overlapping or identical verse ranges) and convey the same theological point. This is distinct from intentional cross-listing, where the same passage legitimately serves two categories.
+
+#### Identifying duplicates
+
+A pair of teachings is a candidate duplicate when:
+- They share the same `bookAbbr`, `chapter`, and overlapping `ranges` in any of their references, AND
+- Their `text` summaries describe the same point (even if worded differently)
+
+A pair is **not** a duplicate if:
+- One teaching treats a passage's primary meaning and the other treats a secondary or complementary aspect
+- The two teachings are in different subcategories because the passage genuinely serves both thematic scopes (e.g., a verse legitimately cross-listed per CLASSIFICATION_RULES.md tie-breaker logic)
+
+#### Resolution rule
+
+1. **Identify the keeper** — the teaching whose parent subcategory has the stronger scope fit for the passage per `CLASSIFICATION_RULES.md`. When uncertain, prefer the teaching with the more complete `text` summary or fuller verse range.
+2. **Merge any unique references** — if the teaching being removed has secondary references (`isPrimary: false`) not present on the keeper, add them to the keeper's `references` array before deleting.
+3. **Delete the duplicate** — remove the weaker teaching object from `teachings.json`.
+4. Run `renumber.js`, then `validate-catalog.js`. Both must exit `0` before the change is complete.
+
+#### Cross-listing vs. duplication
+
+If a passage is genuinely appropriate in two categories (the classification rules explicitly permit this, or a tie-breaker resolves to cross-listing), the correct resolution is **not** to delete one — it is to ensure each teaching's `text` reflects the distinct angle of its subcategory. Two teachings are only duplicates if they are making the *same point* in *different locations*.
+
 ---
 
 ## Part 4 — Required Fields Checklist for a New Teaching
@@ -174,6 +199,39 @@ Before adding a new teaching to `teachings.json`, verify all fields are present 
 | `chapter` | Yes | Integer | Chapter number |
 | `ranges` | Yes | Array of `[start, end]` pairs | `[[31, 32]]` for single range; `[[1, 9], [18, 23]]` for discontinuous |
 | `isPrimary` | Yes | Boolean | Exactly one reference per teaching must be `true` |
+
+### Grouping Non-Consecutive Verses into a Single Teaching
+
+The `ranges` field supports discontinuous verse spans (e.g., `[[1, 3], [6, 8]]`). Use this when non-adjacent verses belong to the same teaching unit. The following rules govern when to group rather than split:
+
+#### Rule G-A: Interleaved Narrative
+
+When a narrator's description interrupts Jesus's speech within a single pericope, group all red-letter verses into one teaching using a discontinuous range. The narrative interruption does not break the speech unit.
+
+> *Example: Jesus speaks in vv. 1–3, the narrator describes a reaction in v. 4, Jesus resumes in vv. 5–6 → one teaching with `ranges: [[1, 3], [5, 6]]`.*
+
+#### Rule G-B: Question-and-Answer Exchange
+
+When a questioner's words interrupt Jesus's response within a continuous exchange, group the entire exchange into one teaching provided:
+1. The exchange concerns a single theological question or situation, and
+2. Jesus's answer is thematically unified (he does not pivot to a second topic mid-exchange)
+
+If Jesus pivots to a clearly distinct subject mid-exchange, split at the pivot point.
+
+> *Example: A disciple asks in v. 10, Jesus answers in vv. 11–13, the disciple asks a follow-up in v. 14, Jesus continues in vv. 15–17 — all one exchange on the same subject → one teaching with `ranges: [[11, 13], [15, 17]]`.*
+
+#### Rule G-C: Parallel Repetitions Within the Same Chapter
+
+When the same saying appears in two or more verses of the same chapter (e.g., a refrain repeated at the close of successive sub-sections), represent it as a **single teaching** whose primary reference covers the first occurrence. Add a secondary reference object (with `isPrimary: false`) pointing to the subsequent occurrence(s).
+
+Do **not** use discontinuous ranges for this case — the repeated occurrences are not part of one speech unit; they are parallel restatements.
+
+#### When to Split Instead
+
+Split into separate teachings when:
+- The verses address **different theological points**, even if they are adjacent or in the same passage
+- An interleaved passage contains a **clear scene break** that resets the context (change of audience, location, or day)
+- A Q&A exchange pivots to a **second distinct topic** before Jesus concludes the first
 
 ### `bookAbbr` canonical values
 
