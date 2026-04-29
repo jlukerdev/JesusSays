@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Status
 
-**Phase 1, Stages 1–4 complete.** React/Vite scaffold is live. Stages 5 and 6 (CategoryViewer, Sidebar TOC, BookViewer) is next.
+**Phase 1, Stages 1–7 complete.** Full Category Mode and Bible Book Mode are live. Stage 8 (QA sign-off) and live deployment to GitHub Pages are pending. Phase 2 (Parables toggle, permalink anchors, font size control) is next.
 
 ## Project Overview
 
@@ -62,29 +62,35 @@ npm run preview   # Preview production build
 
 ```
 src/
-  main.jsx                          # Entry; imports theme-classic.css then base.css
-  App.jsx                           # HashRouter, data load on mount, Layout wiring
-  store.js                          # Zustand store
+  main.jsx                              # Entry; imports theme-classic.css then base.css
+  App.jsx                               # HashRouter, data load on mount, Layout + route wiring
+  store.js                              # Zustand store
   components/
-    AppHeader/AppHeader.jsx         # Sticky header; hamburger (mobile) + ModeSwitcher
-    Layout/Layout.jsx               # forwardRef; sidebar drawer (mobile) / fixed panel (desktop)
-    ModeSwitcher/ModeSwitcher.jsx   # Categories / Books tab switcher
+    AppHeader/AppHeader.jsx             # Sticky header; hamburger (mobile) + ModeSwitcher
+    BookNav/BookNav.jsx                 # Book Mode sidebar TOC; book/chapter accordion
+    BookViewer/BookViewer.jsx           # Book→chapter→verse teaching view; category chip labels
+    CategoryViewer/CategoryViewer.jsx   # Category teaching view; category header, subcategory blocks
+    CategoryViewer/CategoryNav.jsx      # Prev/Next category navigation; fixed bottom bar on mobile
+    FilterBar/FilterBar.jsx             # NT Book filter pills bar (Matt · Mark · Luke · John · Acts · 1Cor · Rev)
+    Layout/Layout.jsx                   # forwardRef; sidebar drawer (mobile) / fixed panel (desktop)
+    ModeSwitcher/ModeSwitcher.jsx       # Categories / Books tab switcher
+    Sidebar/Sidebar.jsx                 # Category Mode accordion TOC; book-filter aware
+    TeachingsTable/TeachingsTable.jsx   # Subcategory teachings table (Teaching 58% | Scriptures 42%)
   data/
-    loader.js                       # Singleton fetch; exposes loadTeachings(), getTeachingById()
-    reverseIndex.js                 # Builds book→chapter→verse index; buildReverseIndex(), getReverseIndex()
+    loader.js                           # Singleton fetch; exposes loadTeachings(), getTeachingById()
+    reverseIndex.js                     # Builds book→chapter→verse index; getReverseIndex()
   hooks/
-    useBreakpoint.js                # useBreakpoint() (xs/sm/md/lg/xl), useIsMobile() (<768px)
-    useLocalPreference.js           # localStorage wrapper hook
+    useBreakpoint.js                    # useBreakpoint() (xs/sm/md/lg/xl), useIsMobile() (<768px)
+    useLocalPreference.js               # localStorage wrapper hook
+    useScrollSpy.js                     # IntersectionObserver scroll-spy; useScrollSpy(), useBookScrollSpy()
   styles/
-    base.css                        # Full app CSS — layout, components, responsive
-    themes/theme-classic.css        # All CSS custom properties (colors, typography, spacing, layout)
+    base.css                            # Full app CSS — layout, components, responsive
+    themes/theme-classic.css            # All CSS custom properties (colors, typography, spacing, layout)
   utils/
-    bookOrder.js                    # NT_BOOK_ABBR_ORDER, ABBR_TO_FULL, BLB_BOOK_SLUG, sortByBookOrder()
-    slugify.js                      # catId(), subcatId(), teachingAnchorId(), parseTeachingId()
-    clipboardCopy.js                # copyPermalink(teachingId) — writes hash URL to clipboard
+    bookOrder.js                        # NT_BOOK_ABBR_ORDER, ABBR_TO_FULL, BLB_BOOK_SLUG, sortByBookOrder()
+    clipboardCopy.js                    # copyPermalink(teachingId) — writes hash URL to clipboard
+    slugify.js                          # catId(), subcatId(), teachingAnchorId(), parseTeachingId()
 ```
-
-**CSS classes already defined** (in base.css, ready for components): `.sidebar-nav`, `.sidebar-nav__cat-btn`, `.sidebar-nav__subcat-link`, `.teachings-table`, `.scripture-refs`, `.scripture-ref`, `.scripture-ref--primary`, `.category-section`, `.category-header`, `.subcategory-section`, `.cat-nav`, `.parable-badge`
 
 ## Architecture Decisions
 
@@ -98,16 +104,20 @@ src/
 
 ## Feature Priorities
 
-**Stage 5 — next up:**
-- CategoryViewer component (renders teachings table for active category)
-- Sidebar TOC component (accordion, scroll-spy active state, teaching count badges)
-- BookViewer component (book→chapter→verse reverse index view)
+**Phase 1 — complete (Stage 8 QA pending):**
+- All browsing modes implemented: Category Mode and Bible Book Mode
+- NT Book filter bar (FilterBar) wired to sidebar TOC
+- Scroll-spy active state in both sidebar views
+- Prev/Next category nav
+- Mobile drawer layout
 
-**Phase 1 remaining:** Parable-only toggle, NT Book multi-select filter bar
+**Phase 2 — next:**
+- F-02: Parable-only toggle (in filter bar per R-06)
+- F-05: Teaching permalink anchors (copy-to-clipboard, IDs already in DOM)
+- R-05/F-08: Font size control (4-step: XS/S/M/L)
+- R-06: Consolidate filter bar (books + parables on one bar)
 
-**Phase 2:** Teaching permalink anchors, print stylesheet, category focus mode, font-size control
-
-**Phase 3 (blocked):** Scripture tooltips (R-03 unresolved), translation selector (blocked on tooltips)
+**Phase 3 (deferred):** Print stylesheet, PWA install verification, additional themes, translation selector (blocked on R-03)
 
 ## Styling Conventions
 
@@ -122,15 +132,6 @@ DOM IDs follow JSON slugs: `cat-1`, `cat-1-1`. Teaching anchors: `t-1-2-5` (dots
 
 ## Key Planning Documents
 
-- `docs/dev_plan/HTML-STANDARDS.md` — HTML structure spec, component patterns, breakpoints, print styles
-- `docs/dev_plan/feature-hitlist.md` — Full feature spec, architecture decisions (A-01–A-05), review notes (R-01–R-11)
-- `docs/dev_plan/overview.md` — Data catalog scope, JSON schema examples, BLB URL patterns
-- `docs/dev_plan/phase-1-dev.md` — Phase 1 development plan
-- `docs/dev_plan/ph1-progress.md` — Phase 1 progress tracking
-
-## Unresolved Decisions
-
-- **R-02:** Scripture reference click behavior (modal, new tab, side panel, or static link)
-- **R-03:** Scripture tooltips — Bible Gateway widgets vs REST API (Bible-api.com ruled out)
-- **R-04:** Translation selector — blocked until R-03 resolved
-- JavaScript (current) vs TypeScript for production build
+- `docs/dev_plan/feature-hitlist.md` — Full feature spec, architecture decisions (A-01–A-07), review notes (R-01–R-11), phase status tables
+- `docs/dev_plan/phase-1-dev.md` — Phase 1 development plan (Stages 1–8)
+- `docs/dev_plan/ph1-progress.md` — Phase 1 progress tracking (Stages 1–7 detailed)

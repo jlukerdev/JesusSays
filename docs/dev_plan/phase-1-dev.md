@@ -3,7 +3,7 @@
 **Project:** Jesus Says (React PWA)
 **Phase:** 1 — App Shell + Foundational Features
 **Data source:** `teachings.json`
-**Spec refs:** `feature-hitlist.md`, `html-standards.md`
+**Spec refs:** `feature-hitlist.md`
 
 > Phase 1 establishes everything that must exist before feature work begins: the scaffolded project, the data pipeline, the routing skeleton, the core layout components, the theme system, and Category Mode browsing in its functional (not final) state. Nothing in a later phase should require rearchitecting what is built here.
 

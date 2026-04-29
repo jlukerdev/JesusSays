@@ -2,9 +2,8 @@
 
 **Project:** Jesus Says (React PWA)
 **Data source:** `teachings.json` → React application
-**Standards ref:** `HTML-STANDARDS.md` (POC only — superseded for production by A-01, A-04, A-07)
 **Phase plan:** `phase-1-dev.md`
-**Status:** Phase 1 complete (Category Mode + foundational browse). Phase 2 (Filters, Bible Book Mode) in progress. Phase 3 (Polish, PWA) deferred.
+**Status:** Phase 1 complete (Stages 1–7 done; Stage 8 QA pending). Phase 2 (Parables toggle, permalink anchors, font size control) not started. Phase 3 (PWA, print styles) deferred.
 
 ---
 
@@ -145,7 +144,7 @@ The primary mode. Navigate the catalog by theological category.
 
 ---
 
-#### Mode 2 — Bible Book Browser ⬜ Not started (Phase 1 — Stage 7)
+#### Mode 2 — Bible Book Browser ✅ Done (Phase 1 — Stage 7A)
 
 An alternative mode that reorganises the same teaching data by book of the Bible, in canonical NT order, then by chapter and verse.
 
@@ -259,14 +258,13 @@ A "build your own" print mode that lets the user hand-pick individual teachings 
 ### R-01 · App Title Change
 
 **Type:** Design decision
-**Affects:** `<title>`, `<h1>`, HTML-STANDARDS.md
+**Affects:** `<title>`, `<h1>`
 
 The main page/app title is **"Jesus Says"** — not "Christ's Teachings" or "The Teachings of Jesus Christ."
 
 - `<h1>` in the site header: `Jesus Says`
 - `<title>` tag: `Jesus Says`
 - Remove the eyebrow/subtitle line above the `<h1>` entirely (the small uppercase line that reads "New Testament · All Four Gospels" or similar)
-- Update HTML-STANDARDS.md to reflect the new title before the full build
 
 ---
 
@@ -332,7 +330,6 @@ Remove the coloured tag pills displayed under each category's application box (e
 **Affects:**
 - Remove all `.cat-tags` / `.tag` HTML from each category section
 - Remove `.tag`, `.tag-blue`, `.tag-green`, `.tag-amber`, `.tag-purple`, `.tag-rose` CSS classes
-- Remove the Application Tag Taxonomy section from HTML-STANDARDS.md (Section 11)
 - Do **not** remove the `tags` array from `teachings.json` — the `"parable"` tag on individual teaching rows is separate and must be kept
 
 ---
@@ -486,17 +483,17 @@ A theme selector may be added to the header controls in a future iteration, dyna
 | R-09 | Source books — full names | Display | Low | ✅ Done | Full book names displayed |
 | R-10 | CSS theme system — Classic theme | Architecture | High | ✅ Done | Full CSS variable system in place |
 | F-09 (partial) | Category Browser — Mode 1 | Feature | High | ✅ Done | Category Mode fully implemented |
-| F-03 | NT Book filter bar | Feature | High | ⬜ Phase 2 | Filter UI + Zustand wiring |
-| F-09 (complete) | Bible Book Browser — Mode 2 | Feature | High | ⬜ Phase 2 | Book Mode implementation |
+| F-03 | NT Book filter bar | Feature | High | ✅ Done | Implemented in Stage 7B |
+| F-09 (complete) | Bible Book Browser — Mode 2 | Feature | High | ✅ Done | Implemented in Stage 7A |
 
 ### Phase 2 — Filters & Bible Book Mode
 
 | ID | Item | Type | Priority | Status | Notes |
 |---|---|---|---|---|---|
 | F-02 | Parable-only toggle | Feature | High | ⬜ Not started | In filter bar per R-06 |
-| F-03 | NT Book filter bar | Feature | High | ⬜ Not started | Multi-select book filters |
+| F-03 | NT Book filter bar | Feature | High | ✅ Done (Phase 1) | Implemented in Stage 7B |
 | F-05 | Teaching permalink anchors | Feature | Medium | ⬜ Not started | Copy-to-clipboard deep links |
-| F-09 (Mode 2) | Bible Book Browser | Feature | High | ⬜ Not started | Book/chapter/verse view |
+| F-09 (Mode 2) | Bible Book Browser | Feature | High | ✅ Done (Phase 1) | Implemented in Stage 7A |
 | R-05 | Font size control — 4 steps | Feature | Low | ⬜ Not started | Multi-step size selector |
 | R-06 | Consolidate filter bar | Layout | High | ⬜ Not started | All filters in one bar |
 
@@ -513,7 +510,7 @@ A theme selector may be added to the header controls in a future iteration, dyna
 
 ## Platform & Architecture Decisions
 
-*These decisions supersede or amend constraints in HTML-STANDARDS.md and apply to the full production build. The POC is exempt — these govern the React/PWA app.*
+*These decisions apply to the full production React/PWA build. The HTML/CSS POC is a design artifact only.*
 
 ---
 
@@ -530,7 +527,7 @@ The final application will be built in **React**. The HTML/CSS POC is a design a
 - The `teachings.json` file is the data source — it will be imported directly as a static asset or fetched at runtime; no backend is required
 - Teaching IDs, category slugs, and subcategory slugs from the JSON become React component keys and routing anchors
 - The scroll-spy, filter logic, and all interactive behaviour become React hooks or components
-- HTML-STANDARDS.md constraints around "vanilla JS only" and "no frameworks" are **superseded** for the production build
+- The POC constraint of "vanilla JS only, no frameworks" is **superseded** for the production build
 
 **Recommended stack:**
 - React 18+
@@ -609,7 +606,7 @@ All UI components must be designed mobile-first — the base stylesheet targets 
 **Type:** Constraint removal
 **Priority:** Foundational
 
-The HTML-STANDARDS.md restriction to "vanilla JS only, no external frameworks" is **fully lifted** for the production React build. Any library, framework, or dependency that genuinely enhances the application is permitted and encouraged.
+The POC restriction to "vanilla JS only, no external frameworks" is **fully lifted** for the production React build. Any library, framework, or dependency that genuinely enhances the application is permitted and encouraged.
 
 **Recommended / approved dependencies (non-exhaustive):**
 
@@ -744,7 +741,7 @@ src/
 ```
 
 **Implementation notes:**
-- This structure supersedes the HTML-STANDARDS.md directive for "all JS inline at the bottom of `<body>`" — that constraint applied to the POC only and is fully lifted for the React build (per A-01, A-04)
+- This structure supersedes the POC directive for "all JS inline at the bottom of `<body>`" — that constraint applied to the POC only and is fully lifted for the React build (per A-01, A-04)
 - Each hook and utility should be independently testable — pure functions where possible
 - `loader.js` and `reverseIndex.js` run once on app initialisation; their outputs are passed down via React context or Zustand store, not recomputed per render
 - Avoid barrel `index.js` files that re-export everything — import directly from the source module to keep dependency graphs legible
