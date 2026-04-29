@@ -4,19 +4,7 @@
 **Data source:** `teachings.json` → React application
 **Standards ref:** `HTML-STANDARDS.md` (POC only — superseded for production by A-01, A-04, A-07)
 **Phase plan:** `phase-1-dev.md`
-**Status:** Phase 1 (Stages 1–6) complete · Stage 7 (F-09 Mode 2 + F-03) and Stage 8 (QA) pending · PWA/deployment deferred to Phase 3
-
----
-
-## Already Specced in HTML-STANDARDS.md (Do Not Re-implement)
-
-The following are fully defined in the standards doc and should be treated as baseline, not features:
-
-- Sidebar scroll-spy (category-level active state)
-- Scripture hover tooltips — see R-03 for current approach
-- Scripture reference link behaviour — see R-02 (TBD)
-- Parable badge rendering from `tags` array
-- Responsive breakpoint at 768px
+**Status:** Phase 1 complete (Category Mode + foundational browse). Phase 2 (Filters, Bible Book Mode) in progress. Phase 3 (Polish, PWA) deferred.
 
 ---
 
@@ -34,15 +22,9 @@ The following are fully defined in the standards doc and should be treated as ba
 Extend the existing scroll-spy to highlight the active *subcategory* link in the sidebar, not just the parent category. Currently the standards doc only tracks `section[id]` at the category level. The subcategory blocks (`cat-{N}-{M}`) also have IDs and sidebar links.
 
 **Behaviour:**
-- When a subcategory block scrolls into view, its sidebar link receives `.active` styling
-- The parent category link remains `.active` simultaneously
+- When a subcategory block scrolls into view, its sidebar link receives active styling
+- The parent category link remains active simultaneously
 - Both deactivate when scrolling past
-
-**Implementation notes:**
-- Implemented as `useScrollSpy` hook using `IntersectionObserver` targeting `.subcategory-section[id]` elements
-- `rootMargin: '-10% 0px -75% 0px'` keeps active detection in the upper viewport
-- Active subcategory link receives `.sidebar-nav__subcat-link--active`; parent category active state driven by `activeCategorySlug` in Zustand store
-- `dvh`-aware: layout uses `calc(100dvh - var(--header-height))` for correct mobile chrome handling
 
 ---
 
@@ -56,20 +38,11 @@ Extend the existing scroll-spy to highlight the active *subcategory* link in the
 A toggle button in the page header that filters the entire document to show only parable teachings. All 33 parables are tagged in the JSON and render with a `.parable-badge` span. This is a genuinely unique feature — no other reference tool organises Jesus's parables across all categories with full cross-references.
 
 **Behaviour:**
-- Toggle button in the site header, right-aligned: label "Parables Only"
-- When active:
-  - All `<tr>` rows without a `.parable-badge` are hidden (`display: none`)
-  - All subcategory blocks with no visible rows are hidden
-  - All category sections with no visible subcategory blocks are hidden
-  - A banner appears below the header: "Showing 33 parables across [N] categories"
-  - Sidebar TOC collapses to show only categories with visible content
+- Toggle button in the site header
+- When active: displays only teachings tagged as parables; shows count banner "Showing N parables across M categories"
 - When inactive: all content restored, banner hidden
-- Button active state: gold background, white text
-
-**Implementation notes:**
-- Use vanilla JS — no framework needed
-- Drive visibility off `.parable-badge` presence within each `<tr>`
-- Button state persists only for the session (no localStorage required)
+- Button shows active state visually
+- State does not persist between sessions
 
 ---
 
@@ -83,18 +56,13 @@ A toggle button in the page header that filters the entire document to show only
 A horizontal filter bar below the site header with one toggle button per NT book represented in the data: `Matt · Mark · Luke · John · Acts · 1 Cor · Rev`. Selecting a book shows only categories that draw from that book. Multiple books can be selected simultaneously.
 
 **Behaviour:**
-- Filter bar sits between site header and main content, full width
-- Default state: all books active (all content visible)
-- Clicking a book pill toggles it — when a book is deactivated, categories whose `sources` array does not include it are hidden
-- When multiple books are selected, a category is visible if it matches *any* selected book (OR logic)
-- If all books are deactivated, show a message: "Select a book to filter"
-- Sidebar TOC updates to reflect visible categories only
-- Active pill: gold fill; inactive pill: outline style
-
-**Implementation notes:**
-- Each category `<section>` should carry a `data-sources` attribute populated from the `sources` array at render time (e.g. `data-sources="Matt Mark Luke John"`)
-- Filter reads these attributes to show/hide sections
-- Works in combination with F-02 (Parable toggle) — filters stack
+- Filter bar sits between site header and main content
+- Default state: all books active
+- Clicking a book pill toggles it; categories with that book source are shown/hidden
+- Multiple books can be selected simultaneously (OR logic)
+- If all books are deactivated, show message: "Select a book to filter"
+- Sidebar TOC updates to reflect visible categories
+- Works in combination with F-02 (Parables) — filters stack
 
 ---
 
@@ -108,14 +76,9 @@ A horizontal filter bar below the site header with one toggle button per NT book
 Small numeric badges next to each category name in the sidebar TOC showing the number of teachings in that category.
 
 **Behaviour:**
-- Badge appears inline after the category title text: e.g. "The Kingdom of God `43`"
-- Badge updates dynamically when F-02 or F-03 filters are active, reflecting the count of currently *visible* teachings
-- Subcategory links do not show counts (too granular)
-
-**Implementation notes:**
-- Render badge as `<span class="toc-count">{N}</span>` inside each `.toc-cat` anchor
-- Style: `background: var(--gold-light)`, `color: var(--gold)`, `font-size: 0.68rem`, `border-radius: 100px`, `padding: 0.1rem 0.45rem`
-- On filter change, recount visible `<tr>` rows within each category section and update badge text
+- Badge appears inline after each category title in the sidebar, showing teaching count
+- Badge updates dynamically when F-02 or F-03 filters are active
+- Subcategory links do not show counts
 
 ---
 
@@ -129,16 +92,11 @@ Small numeric badges next to each category name in the sidebar TOC showing the n
 Each teaching row gets a unique anchor ID and a small copy-link icon that copies a deep-link URL to that exact teaching to the clipboard. Makes individual teachings shareable and citeable.
 
 **Behaviour:**
-- Each `<tr>` in the teachings tables receives `id="t-{teaching-id}"` (e.g. `id="t-4-3-1"`)
-- A small link icon (`⚓` or `#`) appears on row hover in the teaching text cell, far right
-- Clicking the icon copies `{page-url}#t-4-3-1` to the clipboard
-- Brief "Copied" confirmation tooltip appears for 1.5 seconds then fades
-- Icon is not visible unless the row is hovered (keeps the table clean)
-
-**Implementation notes:**
-- Use `navigator.clipboard.writeText()` — no fallback needed for modern browsers
-- Icon: inline SVG or unicode `#`, styled `color: var(--muted)`, hover `color: var(--gold)`
-- Add `id` attributes at HTML render time using the `id` field from the JSON
+- Each teaching row has a unique anchor ID
+- A small link icon appears on row hover in the teaching text cell
+- Clicking the icon copies a deep-link URL (with hash anchor) to the clipboard
+- Brief "Copied" confirmation appears briefly
+- Icon is not visible unless the row is hovered
 
 ---
 
@@ -153,21 +111,13 @@ A `@media print` stylesheet that produces a clean, paginated, print-ready versio
 
 **Behaviour:**
 - Sidebar hidden
-- Site header simplified: title only, no buttons or filter bar
-- All categories and subcategories expanded and visible (no collapsed state)
-- Parable badges retained (visually meaningful on paper)
-- Scripture links rendered as plain text with URL stripped (text content only)
+- Site header simplified to title only
+- All categories and subcategories expanded and visible
+- Parable badges retained
+- Scripture links rendered as plain text (no URLs printed)
 - Hover tooltips suppressed
-- Page breaks inserted before each new category section
-- Font sizes slightly reduced for print density
-- Gold and navy colours preserved (print-friendly versions acceptable)
-
-**Implementation notes:**
-- Implement as `@media print { }` block in the main stylesheet — no separate file needed
-- `a[href]::after { content: ""; }` to suppress URL printing
-- `.sidebar, .filter-bar, .toc-count, .permalink-icon { display: none; }`
-- `.main-content { width: 100%; padding: 0; }`
-- `section.category-section { page-break-before: always; }`
+- Page breaks inserted before each category section
+- Clean, readable print layout
 
 ---
 
@@ -181,17 +131,11 @@ A `@media print` stylesheet that produces a clean, paginated, print-ready versio
 Clicking a category header collapses all other category sections, leaving only the selected one expanded. Reduces visual noise when studying a single topic.
 
 **Behaviour:**
-- Double-clicking a `.category-header` (or clicking a dedicated expand/focus icon) collapses all other `<section class="category-section">` elements
-- Collapsed sections show only the category header bar — subcategory blocks and tables are hidden
-- A "Show All" button appears in the header when focus mode is active
-- Clicking the same header again, or "Show All", restores all sections
-- Single click on a header does nothing extra (preserves normal anchor behaviour)
-- Sidebar TOC remains fully visible in focus mode
-
-**Implementation notes:**
-- Toggle `data-collapsed="true"` attribute on non-focused sections
-- CSS: `section[data-collapsed="true"] .subcat-block, section[data-collapsed="true"] .application-box, section[data-collapsed="true"] .tag { display: none; }`
-- Animate height collapse with `max-height` transition for smoothness
+- Clicking a category header collapses all other categories, leaving only the selected one expanded
+- Collapsed sections show only the header bar
+- A "Show All" button appears when focus mode is active
+- Clicking the same header or "Show All" restores all sections
+- Sidebar TOC remains fully visible
 
 ---
 
@@ -205,16 +149,10 @@ Clicking a category header collapses all other category sections, leaving only t
 A small A / A⁺ toggle in the site header that cycles through two font size states. The teaching tables are dense enough that reading comfort varies significantly by screen and user.
 
 **Behaviour:**
-- Two states: Normal (default, 15px base) and Large (17px base)
-- Toggle button in site header, right-aligned alongside the Parables toggle (F-02)
-- Label: "A" (smaller) and "A+" (larger) as two adjacent buttons
-- Font size change applies to `body` font-size, which cascades through all `rem`-based sizing
+- Multiple font size options in site header (specific steps defined in R-05)
+- Default is a comfortable reading size for tables
+- Font size change applies to all text
 - State does not persist between sessions
-
-**Implementation notes:**
-- Toggle a `.font-large` class on `<body>`
-- CSS: `body.font-large { font-size: 17px; }`
-- All other sizing is already in `rem` units per HTML-STANDARDS.md, so cascade is automatic
 
 ---
 
@@ -234,28 +172,26 @@ The catalog can be browsed in two fundamentally different modes, selectable from
 The primary mode. Navigate the catalog by theological category.
 
 **Navigation panel (sidebar / drawer):**
-- Lists all 30 categories with their subcategories nested beneath each
-- Only one category is expanded in the TOC at a time (accordion behaviour)
+- Lists all categories with their subcategories nested beneath
 - Clicking a category expands it and scrolls the viewer to that category
 - Subcategory links scroll to the relevant block within the viewer
-- Active category and active subcategory are highlighted per F-01
+- Active category and subcategory are highlighted
 
 **Viewer:**
-- Displays **one category at a time** — not the full catalog
-- Shows the selected category's title, description (if present), source books, and all its subcategory blocks with their teaching tables
-- Prev / Next category nav links are displayed at the top and bottom of the viewer, allowing linear pagination through all 30 categories without returning to the TOC
-- Prev/Next labels show the adjacent category title for orientation (e.g. `← Repentance and Conversion` / `Salvation and Eternal Life →`)
-- URL updates on category change to support deep linking (e.g. `/#/category/cat-4`)
+- Displays one category at a time
+- Shows the selected category's title, description, source books, and teaching tables
+- Prev/Next nav allows linear pagination through categories
+- URL updates to support deep linking and back-button navigation
 
 **Filters in Category Mode:**
-- The filter bar (F-02, F-03, R-06) operates within the current category view — it filters the visible teaching rows and updates count badges (F-04) in real time
-- Book filter pills reflect only the books represented in the currently visible category (not all 7 books globally)
+- Filter bar (F-02, F-03) operates within the current category view
+- Teaching counts update dynamically as filters change
 
 **Mobile behaviour:**
-- TOC panel is a slide-over drawer, opened via a "Contents" button in the header
-- Drawer closes automatically when a category or subcategory link is tapped
-- Prev/Next nav is a full-width fixed bottom bar on `xs`/`sm` screens — large tap targets
-- Filter bar collapses to a "Filters" toggle button that opens a bottom sheet on mobile
+- TOC panel is a drawer, accessed via header button
+- Drawer closes when a link is tapped
+- Prev/Next nav adapted for mobile touch targets
+- Filter bar adapted for mobile screens
 
 ---
 
@@ -264,47 +200,37 @@ The primary mode. Navigate the catalog by theological category.
 An alternative mode that reorganises the same teaching data by book of the Bible, in canonical NT order, then by chapter and verse.
 
 **Navigation panel (sidebar / drawer):**
-- Lists the 7 source books in NT canonical order: Matthew · Mark · Luke · John · Acts · 1 Corinthians · Revelation
-- Expanding a book shows its chapters that contain teachings (not every chapter — only those with at least one teaching entry)
-- Expanding a chapter shows individual verse range anchors (one per teaching reference that falls in that chapter)
+- Lists the 7 source books in NT canonical order
+- Expanding a book shows its chapters that contain teachings
+- Expanding a chapter shows individual verse ranges
 - Clicking any nav item scrolls the viewer to that location
-- Active book, chapter, and verse anchor are highlighted in the TOC
+- Active book, chapter, and verse are highlighted
 
 **Viewer:**
-- Displays the full vertical scroll of all teachings, organised by book → chapter → verse
-- **Book headers** — prominent section dividers (e.g. a ruled header block with the book name and a brief description)
-- **Chapter headers** — lighter delineation within each book section (e.g. `Chapter 5` in a muted typographic style)
-- **Teaching rows** — within each chapter, teachings are listed in verse order (ascending by first verse of the primary reference)
-- Each teaching row in this mode includes a **category label** — a minimal chip or tag showing which category the teaching belongs to (e.g. `Righteousness & Ethics`). This is the inverse of the category badge in Mode 1; it provides context since teachings are now divorced from their categorical grouping
-- Cross-references (non-primary) are shown but do not drive the sort order — only the primary reference determines placement
-- A teaching whose primary reference is in Matthew 5 appears under Matthew → Chapter 5, even if it has cross-references in Mark and Luke
-- Parallel passages (single entry with multiple cross-refs) appear once, under the primary reference location
+- Displays all teachings organised by book → chapter → verse
+- Book headers provide prominent section dividers
+- Chapter headers provide lighter delineation within each book
+- Teaching rows are listed in verse order within each chapter
+- Each teaching row includes a category label for context
+- Teachings are sorted by their primary reference; cross-references do not drive placement
+- Parallel passages appear once, under their primary reference location
 
 **Category filter in Book Mode:**
-- A filter panel (separate from the book TOC) allows filtering by category — showing only teachings that belong to the selected category(s) within the book/chapter structure
-- When a category filter is active, chapters and books with no remaining visible teachings are collapsed or visually suppressed
-- The TOC updates to reflect only books and chapters containing visible content
-- Filter state is independent between modes (switching modes does not carry filters across)
+- Filter panel allows filtering by category within the book/chapter structure
+- Chapters and books with no visible content are suppressed
+- TOC updates to reflect only visible content
+- Filter state is independent between modes
 
 **Mobile behaviour:**
-- TOC panel is a slide-over drawer with accordion book → chapter → verse nav, opened via a "Books" button in the header
-- Chapter and verse nav items are large enough to tap comfortably (44px min height)
-- Category filter is a separate "Categories" bottom sheet, accessible from the header or filter bar
-- Book and chapter header dividers are sticky on scroll within their parent section so the user always knows where they are in the book
+- TOC panel is a drawer, accessed via header button
+- Nav items have comfortable touch targets
+- Category filter is accessible separately
+- Sticky book and chapter headers aid navigation
 
 **Data requirements:**
-- At render/build time, construct a reverse index from `teachings.json`: for each teaching, extract its primary reference and map it to `{ book, chapter, verseStart, teachingId, categoryId, categoryTitle }`
-- Sort this index by: book (NT canonical order) → chapter → verseStart
-- This index drives the Book Browser viewer and TOC — it is derived data, not stored in `teachings.json`
-- The canonical NT order for the 7 source books: Matthew (1), Mark (2), Luke (3), John (4), Acts (5), 1 Corinthians (6), Revelation (7)
-
-**Implementation notes:**
-- Mode state (Category / Book) is stored in `sessionStorage` — persists within the session, resets on new visit
-- Selected category in Mode 1 and scroll position in Mode 2 are also stored in `sessionStorage` for back-navigation
-- In React, the two modes are separate route branches: `/#/category/:slug` and `/#/book/:bookAbbr` (with optional `/:chapter` and `/:verseAnchor` segments)
-- The mode switcher component is always rendered, outside both route branches, so it persists across navigation
-- The reverse index (book → chapter → teaching) should be computed once on app load (or at build time as a derived JSON file) and memoised — do not recompute on every render
-- Parable toggle (F-02) applies in both modes — in Book Mode it filters teaching rows regardless of which book/chapter they fall in
+- A reverse index is derived at app load time: teaches → book/chapter/verse mapping
+- This index drives the Book Browser and is computed once, not on every render
+- Parable toggle (F-02) applies in both modes
 
 ---
 
@@ -319,34 +245,28 @@ An alternative mode that reorganises the same teaching data by book of the Bible
 A "build your own" print mode that lets the user hand-pick individual teachings from anywhere in the catalog — across categories, while navigating freely — and generate a clean printable page containing only the selected items. Useful for study sheets, sermon prep, or topical reference cards.
 
 **Behaviour:**
-- A "Select Teachings" toggle button in `AppHeader` activates selection mode
+- A "Select Teachings" toggle button activates selection mode
 - When selection mode is active:
-  - Each teaching row shows a checkbox on the left edge of the row
-  - A persistent floating bar appears (sticky bottom bar on mobile) showing `{N} teachings selected` with **Print** and **Clear** buttons
-  - Selections persist as the user navigates between categories — checking a teaching in Category 3, navigating to Category 7, and checking more is fully supported
-  - A **"Select all in this category"** shortcut appears at the top of each category section when selection mode is on
-- **Print** button triggers `window.print()`; print CSS (extending F-06) renders only selected rows:
-  - Selected teachings grouped by category, with the category title rendered as a heading before each group
-  - Subcategory headings included only if they contain at least one selected teaching
+  - Each teaching row shows a checkbox
+  - A floating bar appears showing count with **Print** and **Clear** buttons
+  - Selections persist as the user navigates between categories
+  - "Select all in this category" shortcut available
+- **Print** button triggers print preview; print CSS renders only selected teachings:
+  - Selected teachings grouped by category
   - Parable badges retained
-  - Scripture references rendered as plain text (no links, no tooltips)
-  - Page header: "Jesus Says — Selected Teachings"
-  - Category chip omitted (grouping by category already provides context)
-- **Clear** button deselects all; selection mode can be toggled off without clearing the selection
-- Selection state is session-only — not persisted to `localStorage`
-- When selection mode is inactive: checkboxes hidden, floating bar hidden, all teachings visible normally
+  - Scripture references as plain text
+  - Clean, readable layout suitable for study materials
+- **Clear** button deselects all
+- Selection state is session-only
+- When selection mode is inactive: all UI hidden, all teachings visible
 
 **Mobile behaviour:**
-- Floating selection bar is a full-width fixed bottom strip (same pattern as Category Prev/Next nav)
-- Checkboxes are 44px min touch targets
-- "Select all in category" button is full-width, easy to tap
+- Floating bar is full-width fixed bottom strip
+- Touch targets meet 44px minimum size
+- Easy tap targets for all controls
 
 **Implementation notes:**
-- Selection state: `Set<teachingId>` stored in Zustand (`filters.selectedTeachings` or a dedicated slice)
-- Print CSS extension of F-06: add a `.print-selection-active` class to `<body>` before print; CSS rule `body.print-selection-active tr:not(.teaching-selected) { display: none; }` hides unselected rows
-- Floating bar uses `aria-live="polite"` so screen readers announce count changes
-- The floating bar `z-index` must sit above the fixed mobile bottom nav; coordinate with existing `cat-nav--bottom` stacking context
-- Depends on F-06 (print stylesheet) being in place; implement after F-06
+- Depends on F-06 (print stylesheet) being in place
 
 ---
 
@@ -369,14 +289,14 @@ A "build your own" print mode that lets the user hand-pick individual teachings 
 
 ## Implementation Notes for Developer
 
-- All JS must be **vanilla** — no jQuery, no frameworks. Per HTML-STANDARDS.md.
-- All JS is **inline at the bottom of `<body>`**.
-- No `localStorage` or `sessionStorage` — state is session-only.
-- F-02, F-03, and F-04 interact: when either filter changes, teaching counts (F-04) must recalculate.
-- F-02 and F-03 filters **stack** — both can be active simultaneously.
-- The `data-sources` attribute on each category `<section>` (needed for F-03) should be written at HTML render time from the JSON, not computed in the browser.
-- Teaching `id` attributes (needed for F-05) should be written at HTML render time using the `id` field from `teachings.json`.
-- The existing scroll-spy in HTML-STANDARDS.md targets `section[id]` — F-01 extends this to also target `div.subcat-block[id]`.
+- **Architecture:** React with component-based composition. See A-01 and A-07 for full guidance.
+- **State management:** Zustand for global app state (filters, font size, selected mode, active category, etc.).
+- **Hooks:** Custom hooks for scroll-spy (F-01), filters (F-02, F-03, F-04), local preferences (R-05), and breakpoint detection.
+- **Filter interaction:** F-02 (Parables), F-03 (Books), and F-04 (Count badges) interact; recompute visible teaching counts when either filter changes.
+- **Filters stack:** F-02 and F-03 can both be active simultaneously; AND logic applies across both.
+- **Reverse index:** Build once at app load for F-09 Mode 2 (Book Browser); memoize and do not recompute per render.
+- **localStorage / sessionStorage:** Permitted per A-05 for user preferences (font size, translation, theme, last category) and session state (active filters, scroll position).
+- **Routing:** React Router with HashRouter (A-06). Mode 1 routes: `/#/category/:slug`. Mode 2 routes: `/#/book/:bookAbbr[/:chapter][/:verse]`.
 
 ---
 
