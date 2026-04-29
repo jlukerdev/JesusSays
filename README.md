@@ -142,9 +142,9 @@ A deterministic ruleset engine governs all reads, writes, and structural changes
 |---|---|
 | **Rules** | `CLASSIFICATION_RULES.md`, `TAXONOMY_STANDARDS.md`, `TAG_RULES.md` |
 | **Scripts** | `scripts/parse-catalog.js`, `validate-catalog.js`, `audit-catalog.js`, `classify.js`, `renumber.js` |
-| **Skill** | `skills/SKILL.md` — Claude Code skill with 5 complete agent workflows |
+| **Skill** | `skills/catalog-engine/SKILL.md` — Claude Code skill with 5 complete agent workflows |
 
-The engine enforces consistent classification, prevents structural drift, and provides a validated write path for any catalog change. See [`catalog_builds/engine/skills/SKILL.md`](./catalog_builds/engine/skills/SKILL.md) for full usage.
+The engine enforces consistent classification, prevents structural drift, and provides a validated write path for any catalog change. See [`catalog_builds/engine/skills/catalog-engine/SKILL.md`](./catalog_builds/engine/skills/catalog-engine/SKILL.md) for full usage.
 
 ---
 

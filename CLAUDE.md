@@ -135,7 +135,7 @@ DOM IDs follow JSON slugs: `cat-1`, `cat-1-1`. Teaching anchors: `t-1-2-5` (dots
 All interaction with `public/teachings.json` — classification, validation, auditing, adding teachings, and restructuring — is governed by the **Catalog Engine** at `catalog_builds/engine/`.
 
 **Load the skill before any catalog operation:**
-`catalog_builds/engine/skills/SKILL.md`
+`catalog_builds/engine/skills/catalog-engine/SKILL.md`
 
 | File | Purpose |
 |---|---|
