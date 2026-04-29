@@ -2,7 +2,7 @@
 ## Jesus Says Catalog — AI Classification Ruleset
 
 **Version:** 1.0  
-**Applies to:** `teachings.json` — 31 categories, 125 subcategories, 700 teachings
+**Applies to:** `teachings.json` — for current counts, see [`catalog_stats.md`](catalog_stats.md)
 
 ---
 
@@ -98,11 +98,13 @@ Teachings that assert God's supreme authority over creation, history, or human a
 #### 2.1 The "I AM" Declarations
 The seven formal "I AM + predicate" statements in John and their parallels, plus extended teaching passages directly attached to those declarations (e.g., the John 10 shepherd discourse). Distinguishable from 2.2 by being metaphorical self-descriptions rather than relational assertions about the Father. Narrative passages that accompany an I AM context but are not themselves declarations (e.g., the Lazarus narrative, John 11) belong in 2.3.
 
+> **G-2 Exception (deliberate):** The seven canonical I AM + predicate declarations are retained in 2.1 even when their narrative context falls within the Upper Room Discourse (John 13–17), which would otherwise be captured by G-2. Rationale: the primary theological force of these verses is identity disclosure, not Passion narrative. This exception does not apply to supporting or contextual verses from John 13–19 (those belong in Cat 27 per G-2).
+
 #### 2.2 His Relationship with the Father
 Teachings asserting unity, mutual knowledge, and mutual indwelling between Father and Son. Distinguishable from 2.1 by the explicitly relational rather than metaphorical framing.
 
 #### 2.3 His Divine Authority and Mission
-Claims of authority to forgive, judge, give life, and fulfill the Father's assignment. Distinguishable from 2.2 by focusing on what Jesus *does* rather than what he *is* in relation to the Father.
+Verbal declarations of authority to forgive, judge, give life, define his mission, and defend Sabbath lordship. Distinguishable from 2.2 by focusing on what Jesus *does* rather than what he *is* in relation to the Father. Note: messianic fulfillment declarations (e.g., Luke 4:21) and Sabbath-authority defenses invoking OT typology belong in 2.6. Healing commands, exorcisms, nature miracles, and feeding miracle logistics belong in 2.7.
 
 #### 2.4 His Pre-existence and Divine Origin
 Teachings asserting existence before creation or before Abraham, and origin from above. Distinguishable from 2.2 by the temporal / cosmological rather than relational register.
@@ -112,6 +114,9 @@ Explicit passion predictions and statements about the Son of Man being delivered
 
 #### 2.6 His Messianic Identity
 Teachings affirming fulfillment of Old Testament messianic expectation — the Christ, the Son of David, the one to come. Distinguishable from 2.3 by the covenantal/OT-fulfillment frame rather than a claim of present authority.
+
+#### 2.7 His Miraculous Works
+Healing commands, exorcisms, nature miracles, and feeding miracle logistics — teachings where Jesus acts to demonstrate his divine authority rather than declaring it verbally. Distinguishable from 2.3 by being performative commands ("be thou clean," "Peace, be still," "Talitha cumi") rather than verbal authority claims or mission statements. Interpretive statements about the purpose of a miracle (e.g., John 9:3–4 — "that the works of God should be made manifest") remain in 2.3.
 
 ---
 

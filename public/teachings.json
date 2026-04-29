@@ -579,6 +579,19 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "John 14:4",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 14,
+                  "ranges": [
+                    [
+                      4,
+                      4
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ],
               "quote": "I am the way, the truth, and the life: no man cometh unto the Father, but by me."
@@ -677,27 +690,6 @@
             },
             {
               "id": "2.1.11",
-              "text": "At his arrest, twice declares 'I am he' — and the arresting party falls back to the ground at the words",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 18:5-8",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 18,
-                  "ranges": [
-                    [
-                      5,
-                      8
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "I am he. Whom seek ye? I have told you that I am he: if therefore ye seek me, let these go their way:"
-            },
-            {
-              "id": "2.1.12",
               "text": "Declares himself the Alpha and Omega, the Almighty Lord God who is and was and is to come",
               "tags": [],
               "references": [
@@ -718,7 +710,7 @@
               "quote": "I am Alpha and Omega, the beginning and the ending,"
             },
             {
-              "id": "2.1.13",
+              "id": "2.1.12",
               "text": "Warns that those who do not believe he is who he claims will die in their sins",
               "quote": "I said therefore unto you, that ye shall die in your sins: for if ye believe not that I am he, ye shall die in your sins. Even the same that I said unto you from the beginning. I have many things to say and to judge of you: but he that sent me is true; and I speak to the world those things which I have heard of him.",
               "tags": [
@@ -741,7 +733,7 @@
               ]
             },
             {
-              "id": "2.1.14",
+              "id": "2.1.13",
               "text": "Contrasts the true shepherd who enters by the door and is known by his sheep with the thief who climbs in another way",
               "quote": "Verily, verily, I say unto you, He that entereth not by the door into the sheepfold, but climbeth up some other way, the same is a thief and a robber. But he that entereth in by the door is the shepherd of the sheep. To him the porter openeth; and the sheep hear his voice: and he calleth his own sheep by name, and leadeth them out. And when he putteth forth his own sheep, he goeth before them, and the sheep follow him: for they know his voice. And a stranger will they not follow, but will flee from him: for they know not the voice of strangers.",
               "tags": [
@@ -765,7 +757,7 @@
               ]
             },
             {
-              "id": "2.1.15",
+              "id": "2.1.14",
               "text": "All who came before him are thieves and robbers, but the sheep did not hear them",
               "quote": "All that ever came before me are thieves and robbers: but the sheep did not hear them.",
               "tags": [
@@ -788,7 +780,7 @@
               ]
             },
             {
-              "id": "2.1.16",
+              "id": "2.1.15",
               "text": "The hireling, who is not the shepherd, sees the wolf coming and flees because he does not own the sheep, leaving them to be caught and scattered",
               "quote": "But he that is an hireling, and not the shepherd, whose own the sheep are not, seeth the wolf coming, and leaveth the sheep, and fleeth: and the wolf catcheth them, and scattereth the sheep. The hireling fleeth, because he is an hireling, and careth not for the sheep.",
               "tags": [
@@ -812,7 +804,7 @@
               ]
             },
             {
-              "id": "2.1.17",
+              "id": "2.1.16",
               "text": "Promises to lay down his life for the sheep and to gather other sheep not of this fold into one flock under one shepherd",
               "quote": "As the Father knoweth me, even so know I the Father: and I lay down my life for the sheep. And other sheep I have, which are not of this fold: them also I must bring, and they shall hear my voice; and there shall be one fold, and one shepherd.",
               "tags": [
@@ -1288,27 +1280,6 @@
                   "isPrimary": true
                 }
               ]
-            },
-            {
-              "id": "2.2.19",
-              "text": "Tells the disciples they already know the way to where he is going",
-              "quote": "And whither I go ye know, and the way ye know.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 14:4",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 14,
-                  "ranges": [
-                    [
-                      4,
-                      4
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
             }
           ]
         },
@@ -1537,205 +1508,6 @@
             },
             {
               "id": "2.3.5",
-              "text": "Cleanses a leper with a touch and tells him to show himself to the priest as testimony",
-              "quote": "I will; be thou clean. See thou tell no man; but go thy way, shew thyself to the priest, and offer the gift that Moses commanded, for a testimony unto them.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Matt 8:3–4",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      3,
-                      4
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.6",
-              "text": "Responds to the centurion's request for his servant — I will come and heal him",
-              "quote": "I will come and heal him.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Matt 8:7",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      7,
-                      7
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.7",
-              "text": "Authorizes demons to enter the herd of swine with a single word — Go",
-              "quote": "Go.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 8:32",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      32,
-                      32
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.8",
-              "text": "Quiets the mourners at Jairus's house — give place, the maid is not dead, but sleepeth",
-              "quote": "Give place: for the maid is not dead, but sleepeth.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Matt 9:24",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      24,
-                      24
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.9",
-              "text": "Charges the healed blind men to silence — see that no man know it",
-              "quote": "See that no man know it.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Matt 9:30",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      30,
-                      30
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.10",
-              "text": "Defends his disciples by citing David eating the showbread and priests working on the Sabbath — one greater than the temple is here",
-              "quote": "Have ye not read what David did, when he was an hungred, and they that were with him; How he entered into the house of God, and did eat the shewbread, which was not lawful for him to eat, neither for them which were with him, but only for the priests? Or have ye not read in the law, how that on the sabbath days the priests in the temple profane the sabbath, and are blameless? But I say unto you, That in this place is one greater than the temple.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 12:3–6",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 12,
-                  "ranges": [
-                    [
-                      3,
-                      6
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.11",
-              "text": "Heals a man's withered hand on the Sabbath",
-              "quote": "Stretch forth thine hand.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Matt 12:13",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 12,
-                  "ranges": [
-                    [
-                      13,
-                      13
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.12",
-              "text": "Calls for the loaves and fishes before feeding the five thousand — bring them hither to me",
-              "quote": "Bring them hither to me.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 14:18",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 14,
-                  "ranges": [
-                    [
-                      18,
-                      18
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.13",
-              "text": "Asks the disciples how many loaves they have before feeding the four thousand",
-              "quote": "How many loaves have ye?",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 15:34",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 15,
-                  "ranges": [
-                    [
-                      34,
-                      34
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.14",
               "text": "Counters the chief priests' challenge with a question — the baptism of John, whence was it, from heaven or of men?",
               "quote": "I also will ask you one thing, which if ye tell me, I in like wise will tell you by what authority I do these things. The baptism of John, whence was it? from heaven, or of men?",
               "tags": [],
@@ -1756,7 +1528,7 @@
               ]
             },
             {
-              "id": "2.3.15",
+              "id": "2.3.6",
               "text": "Refuses to answer when they would not commit — neither tell I you by what authority I do these things",
               "quote": "Neither tell I you by what authority I do these things.",
               "tags": [],
@@ -1777,76 +1549,7 @@
               ]
             },
             {
-              "id": "2.3.16",
-              "text": "Rebukes an unclean spirit in the Capernaum synagogue and casts it out with a word",
-              "quote": "Hold thy peace, and come out of him.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Mark 1:25",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 1,
-                  "ranges": [
-                    [
-                      25,
-                      25
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.17",
-              "text": "Heals a leper with a word of compassion",
-              "quote": "I will; be thou clean.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Mark 1:41",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 1,
-                  "ranges": [
-                    [
-                      41,
-                      41
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.18",
-              "text": "Tells the cleansed leper to keep silent and offer what Moses commanded as a testimony",
-              "quote": "See thou say nothing to any man: but go thy way, shew thyself to the priest, and offer for thy cleansing those things which Moses commanded, for a testimony unto them.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Mark 1:44",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 1,
-                  "ranges": [
-                    [
-                      44,
-                      44
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.19",
+              "id": "2.3.7",
               "text": "Reminds the Pharisees that hungry David ate the showbread reserved for priests",
               "quote": "Have ye never read what David did, when he had need, and was an hungred, he, and they that were with him? How he went into the house of God in the days of Abiathar the high priest, and did eat the shewbread, which is not lawful to eat but for the priests, and gave also to them which were with him?",
               "tags": [],
@@ -1867,7 +1570,7 @@
               ]
             },
             {
-              "id": "2.3.20",
+              "id": "2.3.8",
               "text": "Calls a man with a withered hand forward and asks whether it is lawful to do good or save life on the Sabbath",
               "quote": "Stand forth. Is it lawful to do good on the sabbath days, or to do evil? to save life, or to kill? Stretch forth thine hand.",
               "tags": [
@@ -1890,434 +1593,7 @@
               ]
             },
             {
-              "id": "2.3.21",
-              "text": "Peace, be still — Jesus rebukes the wind and commands the sea, and there was a great calm",
-              "quote": "Peace, be still.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 4:39",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 4,
-                  "ranges": [
-                    [
-                      39,
-                      39
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.22",
-              "text": "Confronts the Gerasene demoniac, asking the unclean spirit its name — Legion",
-              "quote": "Come out of the man, thou unclean spirit. What is thy name?",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Mark 5:8–9",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 5,
-                  "ranges": [
-                    [
-                      8,
-                      9
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.23",
-              "text": "Who touched my clothes — Jesus perceives that virtue had gone out of him to heal the woman in the press",
-              "quote": "Who touched my clothes?",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Mark 5:30",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 5,
-                  "ranges": [
-                    [
-                      30,
-                      30
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.24",
-              "text": "Rebukes the mourners' unbelief — the girl is not dead but sleeping",
-              "quote": "Why make ye this ado, and weep? the damsel is not dead, but sleepeth.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Mark 5:39",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 5,
-                  "ranges": [
-                    [
-                      39,
-                      39
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.25",
-              "text": "Raises Jairus's daughter by the hand with the Aramaic words 'Talitha cumi'",
-              "quote": "Talitha cumi;",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Mark 5:41",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 5,
-                  "ranges": [
-                    [
-                      41,
-                      41
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.26",
-              "text": "Tells the disciples to feed the crowd themselves and asks how many loaves they have — sets up the feeding of five thousand",
-              "quote": "Give ye them to eat. How many loaves have ye? go and see.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 6:37–38",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 6,
-                  "ranges": [
-                    [
-                      37,
-                      38
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.27",
-              "text": "Ephphatha — Be opened — Jesus heals the deaf man with an impeded speech impediment",
-              "quote": "Ephphatha,",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Mark 7:34",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 7,
-                  "ranges": [
-                    [
-                      34,
-                      34
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.28",
-              "text": "Has compassion on the crowd that has gone three days without food and resolves to feed them before sending them home",
-              "quote": "I have compassion on the multitude, because they have now been with me three days, and have nothing to eat: And if I send them away fasting to their own houses, they will faint by the way: for divers of them came from far.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 8:2–3",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      2,
-                      3
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.29",
-              "text": "Asks the disciples how many loaves they have before feeding the four thousand from seven",
-              "quote": "How many loaves have ye?",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 8:5",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      5,
-                      5
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.30",
-              "text": "Casts out a deaf and mute spirit from a boy and forbids it to return",
-              "quote": "Thou dumb and deaf spirit, I charge thee, come out of him, and enter no more into him.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Mark 9:25",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      25,
-                      25
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.31",
-              "text": "Asks blind Bartimaeus what he wants and restores his sight, declaring his faith has made him whole",
-              "quote": "What wilt thou that I should do unto thee? Go thy way; thy faith hath made thee whole.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Mark 10:51–52",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 10,
-                  "ranges": [
-                    [
-                      51,
-                      52
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.32",
-              "text": "This day is this scripture fulfilled in your ears",
-              "quote": "This day is this scripture fulfilled in your ears.",
-              "tags": [
-                "prophecy"
-              ],
-              "references": [
-                {
-                  "label": "Luke 4:21",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 4,
-                  "ranges": [
-                    [
-                      21,
-                      21
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.33",
-              "text": "Rebukes an unclean spirit and commands it to be silent and come out",
-              "quote": "Hold thy peace, and come out of him.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Luke 4:35",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 4,
-                  "ranges": [
-                    [
-                      35,
-                      35
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.34",
-              "text": "Cleanses a leper and instructs him to offer the priestly sacrifice Moses commanded as a testimony",
-              "quote": "I will: be thou clean. but go, and shew thyself to the priest, and offer for thy cleansing, according as Moses commanded, for a testimony unto them.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Luke 5:13–14",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 5,
-                  "ranges": [
-                    [
-                      13,
-                      14
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.35",
-              "text": "Raises the widow's son at Nain from his bier with a word",
-              "quote": "Weep not. Young man, I say unto thee, Arise.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Luke 7:13–14",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 7,
-                  "ranges": [
-                    [
-                      13,
-                      14
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.36",
-              "text": "Asks who touched him — power has gone out from him to heal the bleeding woman",
-              "quote": "Who touched me? Who touched me? Somebody hath touched me: for I perceive that virtue is gone out of me.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Luke 8:45–46",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      45,
-                      46
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.37",
-              "text": "Comforts the mourners — Jairus's daughter is not dead but sleeping",
-              "quote": "Weep not; she is not dead, but sleepeth.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 8:52",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      52,
-                      52
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.38",
-              "text": "Maid, arise — Jesus raises Jairus' daughter",
-              "quote": "Maid, arise.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Luke 8:54",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      54,
-                      54
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.39",
-              "text": "Asks the blind man what he wants and restores his sight — his faith has saved him",
-              "quote": "What wilt thou that I shall do unto thee? Receive thy sight: thy faith hath saved thee.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Luke 18:41–42",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 18,
-                  "ranges": [
-                    [
-                      41,
-                      42
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.40",
+              "id": "2.3.9",
               "text": "He tells his mother at Cana that his hour has not yet come",
               "quote": "Woman, what have I to do with thee? mine hour is not yet come.",
               "tags": [],
@@ -2338,28 +1614,7 @@
               ]
             },
             {
-              "id": "2.3.41",
-              "text": "Turns water into wine at Cana — instructs the servants to fill the jars and serve the master of the feast",
-              "quote": "Fill the waterpots with water. Draw out now, and bear unto the governor of the feast.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 2:7–8",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 2,
-                  "ranges": [
-                    [
-                      7,
-                      8
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.42",
+              "id": "2.3.10",
               "text": "He tells the disciples he has meat to eat that they know nothing of",
               "quote": "I have meat to eat that ye know not of.",
               "tags": [],
@@ -2380,139 +1635,7 @@
               ]
             },
             {
-              "id": "2.3.43",
-              "text": "He sends the nobleman home with the word that his son lives, healing the boy at a distance",
-              "quote": "Go thy way; thy son liveth.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "John 4:50",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 4,
-                  "ranges": [
-                    [
-                      50,
-                      50
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.44",
-              "text": "He asks the lame man at the pool of Bethesda whether he wants to be made whole",
-              "quote": "Wilt thou be made whole?",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "John 5:6",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 5,
-                  "ranges": [
-                    [
-                      6,
-                      6
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.45",
-              "text": "He commands the lame man to rise, take up his bed, and walk",
-              "quote": "Rise, take up thy bed, and walk.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "John 5:8",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 5,
-                  "ranges": [
-                    [
-                      8,
-                      8
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.46",
-              "text": "He asks Philip where they shall buy bread to feed the great multitude that has come to him",
-              "quote": "Whence shall we buy bread, that these may eat?",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 6:5",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 6,
-                  "ranges": [
-                    [
-                      5,
-                      5
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.47",
-              "text": "He instructs the disciples to make the men sit down before the feeding of the five thousand",
-              "quote": "Make the men sit down.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 6:10",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 6,
-                  "ranges": [
-                    [
-                      10,
-                      10
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.48",
-              "text": "He tells the disciples to gather up the leftover fragments so that nothing be lost",
-              "quote": "Gather up the fragments that remain, that nothing be lost.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 6:12",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 6,
-                  "ranges": [
-                    [
-                      12,
-                      12
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.49",
+              "id": "2.3.11",
               "text": "Tells the disciples the man's blindness is not from sin but exists so God's works can be revealed in him",
               "quote": "Neither hath this man sinned, nor his parents: but that the works of God should be made manifest in him. I must work the works of him that sent me, while it is day: the night cometh, when no man can work.",
               "tags": [],
@@ -2533,30 +1656,7 @@
               ]
             },
             {
-              "id": "2.3.50",
-              "text": "He sends the man born blind to wash in the pool of Siloam, and the man returns seeing",
-              "quote": "Go, wash in the pool of Siloam,",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "John 9:7",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      7,
-                      7
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.51",
+              "id": "2.3.12",
               "text": "Tells the disciples Lazarus's sickness will not end in death but will glorify God and the Son of God",
               "quote": "This sickness is not unto death, but for the glory of God, that the Son of God might be glorified thereby.",
               "tags": [],
@@ -2577,7 +1677,7 @@
               ]
             },
             {
-              "id": "2.3.52",
+              "id": "2.3.13",
               "text": "Tells the disciples Lazarus has fallen asleep and he is going to wake him — those who walk by day do not stumble",
               "quote": "Are there not twelve hours in the day? If any man walk in the day, he stumbleth not, because he seeth the light of this world. But if a man walk in the night, he stumbleth, because there is no light in him. Our friend Lazarus sleepeth; but I go, that I may awake him out of sleep.",
               "tags": [],
@@ -2598,7 +1698,7 @@
               ]
             },
             {
-              "id": "2.3.53",
+              "id": "2.3.14",
               "text": "He assures Martha that her brother shall rise again.",
               "quote": "Thy brother shall rise again.",
               "tags": [],
@@ -2612,48 +1712,6 @@
                     [
                       23,
                       23
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.54",
-              "text": "He asks the mourners where they have laid Lazarus.",
-              "quote": "Where have ye laid him?",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 11:34",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 11,
-                  "ranges": [
-                    [
-                      34,
-                      34
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.3.55",
-              "text": "At Lazarus's tomb, commands the stone removed, thanks the Father, and calls Lazarus out",
-              "quote": "Take ye away the stone. Said I not unto thee, that, if thou wouldest believe, thou shouldest see the glory of God? Father, I thank thee that thou hast heard me. And I knew that thou hearest me always: but because of the people which stand by I said it, that they may believe that thou hast sent me. Lazarus, come forth. Loose him, and let him go.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 11:39–44",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 11,
-                  "ranges": [
-                    [
-                      39,
-                      44
                     ]
                   ],
                   "isPrimary": true
@@ -3067,14 +2125,14 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Luke 18:31",
+                  "label": "Luke 18:31–33",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 18,
                   "ranges": [
                     [
                       31,
-                      31
+                      33
                     ]
                   ],
                   "isPrimary": true
@@ -3091,9 +2149,35 @@
                     ]
                   ],
                   "isPrimary": false
+                },
+                {
+                  "label": "Matt 20:18–19",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 20,
+                  "ranges": [
+                    [
+                      18,
+                      19
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Mark 10:33–34",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 10,
+                  "ranges": [
+                    [
+                      33,
+                      34
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ],
-              "quote": "Behold, we go up to Jerusalem, and all things that are written by the prophets concerning the Son of man shall be accomplished."
+              "quote": "Behold, we go up to Jerusalem, and all things that are written by the prophets concerning the Son of man shall be accomplished. For he shall be delivered unto the Gentiles, and shall be mocked, and spitefully entreated, and spitted on: And they shall scourge him, and put him to death: and the third day he shall rise again."
             },
             {
               "id": "2.5.6",
@@ -3159,6 +2243,19 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Mark 9:12–13",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      12,
+                      13
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
@@ -3182,6 +2279,19 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Mark 10:33–34",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 10,
+                  "ranges": [
+                    [
+                      33,
+                      34
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
@@ -3530,6 +2640,32 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Mark 8:26–27",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 8,
+                  "ranges": [
+                    [
+                      26,
+                      27
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 9:18",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      18,
+                      18
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
@@ -3660,6 +2796,19 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Mark 11:2–3",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 11,
+                  "ranges": [
+                    [
+                      2,
+                      3
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
@@ -3681,32 +2830,37 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Mark 12:34–37",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 12,
+                  "ranges": [
+                    [
+                      34,
+                      37
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 20:41–44",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 20,
+                  "ranges": [
+                    [
+                      41,
+                      44
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
             {
               "id": "2.6.15",
-              "text": "Heals the blind man at Bethsaida and tells him not to enter the village — and asks who people say he is",
-              "quote": "Neither go into the town, nor tell it to any in the town. Whom do men say that I am?",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 8:26–27",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      26,
-                      27
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.6.16",
               "text": "Affirms that Elijah comes first to restore all things — and has already come and been mistreated",
               "quote": "Elias verily cometh first, and restoreth all things; and how it is written of the Son of man, that he must suffer many things, and be set at nought. But I say unto you, That Elias is indeed come, and they have done unto him whatsoever they listed, as it is written of him.",
               "tags": [
@@ -3725,11 +2879,24 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Matt 17:11–12",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 17,
+                  "ranges": [
+                    [
+                      11,
+                      12
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
             {
-              "id": "2.6.17",
+              "id": "2.6.16",
               "text": "Behold, we go up to Jerusalem — the Son of man shall be delivered, condemned, mocked, scourged, killed, and rise the third day",
               "quote": "Behold, we go up to Jerusalem; and the Son of man shall be delivered unto the chief priests, and unto the scribes; and they shall condemn him to death, and shall deliver him to the Gentiles: And they shall mock him, and shall scourge him, and shall spit upon him, and shall kill him: and the third day he shall rise again.",
               "tags": [
@@ -3748,55 +2915,37 @@
                     ]
                   ],
                   "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.6.18",
-              "text": "Sends disciples to untie a colt — if questioned, say the Lord has need of him",
-              "quote": "Go your way into the village over against you: and as soon as ye be entered into it, ye shall find a colt tied, whereon never man sat; loose him, and bring him. And if any man say unto you, Why do ye this? say ye that the Lord hath need of him; and straightway he will send him hither.",
-              "tags": [
-                "prophecy"
-              ],
-              "references": [
+                },
                 {
-                  "label": "Mark 11:2–3",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 11,
+                  "label": "Matt 20:18–19",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 20,
                   "ranges": [
                     [
-                      2,
-                      3
+                      18,
+                      19
                     ]
                   ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.6.19",
-              "text": "Tells the wise scribe he is not far from the kingdom, then asks how the Christ can be David's son when David calls him Lord",
-              "quote": "Thou art not far from the kingdom of God. How say the scribes that Christ is the Son of David? For David himself said by the Holy Ghost, The LORD said to my Lord, Sit thou on my right hand, till I make thine enemies thy footstool. David therefore himself calleth him Lord; and whence is he then his son? And the common people heard him gladly.",
-              "tags": [],
-              "references": [
+                  "isPrimary": false
+                },
                 {
-                  "label": "Mark 12:34–37",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 12,
+                  "label": "Luke 18:31–33",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 18,
                   "ranges": [
                     [
-                      34,
-                      37
+                      31,
+                      33
                     ]
                   ],
-                  "isPrimary": true
+                  "isPrimary": false
                 }
               ]
             },
             {
-              "id": "2.6.20",
+              "id": "2.6.17",
               "text": "Tells the disciples to feed the crowd themselves and seat them in groups of fifty",
               "quote": "Give ye them to eat. Make them sit down by fifties in a company.",
               "tags": [],
@@ -3817,7 +2966,7 @@
               ]
             },
             {
-              "id": "2.6.21",
+              "id": "2.6.18",
               "text": "Defends the disciples' praise at the triumphal entry — if they were silent, even the stones would cry out",
               "quote": "I tell you that, if these should hold their peace, the stones would immediately cry out.",
               "tags": [],
@@ -3838,28 +2987,7 @@
               ]
             },
             {
-              "id": "2.6.22",
-              "text": "Asks how the Christ can be David's son when David himself calls him Lord in Psalm 110",
-              "quote": "How say they that Christ is David’s son? And David himself saith in the book of Psalms, The LORD said unto my Lord, Sit thou on my right hand, Till I make thine enemies thy footstool. David therefore calleth him Lord, how is he then his son?",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 20:41–44",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 20,
-                  "ranges": [
-                    [
-                      41,
-                      44
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.6.23",
+              "id": "2.6.19",
               "text": "He greets Nathanael as a true Israelite without guile and reveals he saw him under the fig tree before Philip called",
               "quote": "Behold an Israelite indeed, in whom is no guile! Before that Philip called thee, when thou wast under the fig tree, I saw thee.",
               "tags": [],
@@ -3880,7 +3008,7 @@
               ]
             },
             {
-              "id": "2.6.24",
+              "id": "2.6.20",
               "text": "Promises Nathanael will see greater things — heaven open and angels ascending and descending on the Son of Man",
               "quote": "Because I said unto thee, I saw thee under the fig tree, believest thou? thou shalt see greater things than these. Verily, verily, I say unto you, Hereafter ye shall see heaven open, and the angels of God ascending and descending upon the Son of man.",
               "tags": [
@@ -3903,7 +3031,7 @@
               ]
             },
             {
-              "id": "2.6.25",
+              "id": "2.6.21",
               "text": "He asks the Samaritan woman at the well to give him a drink",
               "quote": "Give me to drink.",
               "tags": [],
@@ -3924,7 +3052,7 @@
               ]
             },
             {
-              "id": "2.6.26",
+              "id": "2.6.22",
               "text": "He tells the woman to call her husband and reveals he knows she has had five husbands and the man she now has is not her husband",
               "quote": "Go, call thy husband, and come hither. Thou hast well said, I have no husband: For thou hast had five husbands; and he whom thou now hast is not thy husband: in that saidst thou truly.",
               "tags": [],
@@ -3945,7 +3073,7 @@
               ]
             },
             {
-              "id": "2.6.27",
+              "id": "2.6.23",
               "text": "He reveals himself to the healed man, declaring that the one who talks with him is the Son of God",
               "quote": "Thou hast both seen him, and it is he that talketh with thee.",
               "tags": [],
@@ -3966,7 +3094,7 @@
               ]
             },
             {
-              "id": "2.6.28",
+              "id": "2.6.24",
               "text": "Announces the Son of Man is now glorified and warns the disciples he will be with them only a little while longer",
               "quote": "Now is the Son of man glorified, and God is glorified in him. If God be glorified in him, God shall also glorify him in himself, and shall straightway glorify him. Little children, yet a little while I am with you. Ye shall seek me: and as I said unto the Jews, Whither I go, ye cannot come; so now I say to you.",
               "tags": [],
@@ -3980,6 +3108,765 @@
                     [
                       31,
                       33
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.6.25",
+              "text": "Defends his disciples by citing David eating the showbread and priests working on the Sabbath — one greater than the temple is here",
+              "quote": "Have ye not read what David did, when he was an hungred, and they that were with him; How he entered into the house of God, and did eat the shewbread, which was not lawful for him to eat, neither for them which were with him, but only for the priests? Or have ye not read in the law, how that on the sabbath days the priests in the temple profane the sabbath, and are blameless? But I say unto you, That in this place is one greater than the temple.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 12:3–6",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 12,
+                  "ranges": [
+                    [
+                      3,
+                      6
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.6.26",
+              "text": "This day is this scripture fulfilled in your ears",
+              "quote": "This day is this scripture fulfilled in your ears.",
+              "tags": [
+                "prophecy"
+              ],
+              "references": [
+                {
+                  "label": "Luke 4:21",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 4,
+                  "ranges": [
+                    [
+                      21,
+                      21
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2.7",
+          "slug": "cat-2-7",
+          "title": "His Miraculous Works",
+          "teachings": [
+            {
+              "id": "2.7.1",
+              "text": "Cleanses a leper with a touch and instructs him to show himself to the priest and offer the gift Moses commanded as a testimony",
+              "quote": "I will; be thou clean. See thou tell no man; but go thy way, shew thyself to the priest, and offer the gift that Moses commanded, for a testimony unto them.",
+              "tags": [
+                "healing"
+              ],
+              "references": [
+                {
+                  "label": "Matt 8:3–4",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 8,
+                  "ranges": [
+                    [
+                      3,
+                      4
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Mark 1:41–44",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 1,
+                  "ranges": [
+                    [
+                      41,
+                      41
+                    ],
+                    [
+                      44,
+                      44
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 5:13–14",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 5,
+                  "ranges": [
+                    [
+                      13,
+                      14
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ]
+            },
+            {
+              "id": "2.7.2",
+              "text": "Responds to the centurion's request for his servant — I will come and heal him",
+              "quote": "I will come and heal him.",
+              "tags": [
+                "healing"
+              ],
+              "references": [
+                {
+                  "label": "Matt 8:7",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 8,
+                  "ranges": [
+                    [
+                      7,
+                      7
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.3",
+              "text": "Authorizes demons to enter the herd of swine with a single word — Go",
+              "quote": "Go.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 8:32",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 8,
+                  "ranges": [
+                    [
+                      32,
+                      32
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.4",
+              "text": "Silences the mourners at Jairus's house declaring the girl is not dead but sleeping, then raises her with the words 'Talitha cumi'",
+              "quote": "Why make ye this ado, and weep? the damsel is not dead, but sleepeth. ... Talitha cumi;",
+              "tags": [
+                "healing"
+              ],
+              "references": [
+                {
+                  "label": "Mark 5:39–41",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 5,
+                  "ranges": [
+                    [
+                      39,
+                      41
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Matt 9:24–25",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      24,
+                      25
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 8:52–54",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 8,
+                  "ranges": [
+                    [
+                      52,
+                      54
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ]
+            },
+            {
+              "id": "2.7.5",
+              "text": "Charges the healed blind men to silence — see that no man know it",
+              "quote": "See that no man know it.",
+              "tags": [
+                "healing"
+              ],
+              "references": [
+                {
+                  "label": "Matt 9:30",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      30,
+                      30
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.6",
+              "text": "Heals a man's withered hand on the Sabbath",
+              "quote": "Stretch forth thine hand.",
+              "tags": [
+                "healing"
+              ],
+              "references": [
+                {
+                  "label": "Matt 12:13",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 12,
+                  "ranges": [
+                    [
+                      13,
+                      13
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.7",
+              "text": "Calls for the loaves and fishes before feeding the five thousand — bring them hither to me",
+              "quote": "Bring them hither to me.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 14:18",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 14,
+                  "ranges": [
+                    [
+                      18,
+                      18
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.8",
+              "text": "Asks the disciples how many loaves they have before feeding the four thousand",
+              "quote": "How many loaves have ye?",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 15:34",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 15,
+                  "ranges": [
+                    [
+                      34,
+                      34
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Mark 8:5",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 8,
+                  "ranges": [
+                    [
+                      5,
+                      5
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ]
+            },
+            {
+              "id": "2.7.9",
+              "text": "Rebukes an unclean spirit in the Capernaum synagogue, commanding it to be silent and come out",
+              "quote": "Hold thy peace, and come out of him.",
+              "tags": [
+                "healing"
+              ],
+              "references": [
+                {
+                  "label": "Mark 1:25",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 1,
+                  "ranges": [
+                    [
+                      25,
+                      25
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Luke 4:35",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 4,
+                  "ranges": [
+                    [
+                      35,
+                      35
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ]
+            },
+            {
+              "id": "2.7.10",
+              "text": "Peace, be still — Jesus rebukes the wind and commands the sea, and there was a great calm",
+              "quote": "Peace, be still.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Mark 4:39",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 4,
+                  "ranges": [
+                    [
+                      39,
+                      39
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.11",
+              "text": "Confronts the Gerasene demoniac, asking the unclean spirit its name — Legion",
+              "quote": "Come out of the man, thou unclean spirit. What is thy name?",
+              "tags": [
+                "healing"
+              ],
+              "references": [
+                {
+                  "label": "Mark 5:8–9",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 5,
+                  "ranges": [
+                    [
+                      8,
+                      9
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Luke 8:30",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 8,
+                  "ranges": [
+                    [
+                      30,
+                      30
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ]
+            },
+            {
+              "id": "2.7.12",
+              "text": "Perceives that virtue has gone out of him and asks who touched him in the crowd",
+              "quote": "Who touched my clothes?",
+              "tags": [
+                "healing"
+              ],
+              "references": [
+                {
+                  "label": "Mark 5:30",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 5,
+                  "ranges": [
+                    [
+                      30,
+                      30
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Luke 8:45–46",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 8,
+                  "ranges": [
+                    [
+                      45,
+                      46
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ]
+            },
+            {
+              "id": "2.7.13",
+              "text": "Tells the disciples to feed the crowd themselves and asks how many loaves they have — sets up the feeding of five thousand",
+              "quote": "Give ye them to eat. How many loaves have ye? go and see.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Mark 6:37–38",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 6,
+                  "ranges": [
+                    [
+                      37,
+                      38
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.14",
+              "text": "Ephphatha — Be opened — Jesus heals the deaf man with an impeded speech impediment",
+              "quote": "Ephphatha,",
+              "tags": [
+                "healing"
+              ],
+              "references": [
+                {
+                  "label": "Mark 7:34",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 7,
+                  "ranges": [
+                    [
+                      34,
+                      34
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.15",
+              "text": "Has compassion on the crowd that has gone three days without food and resolves to feed them before sending them home",
+              "quote": "I have compassion on the multitude, because they have now been with me three days, and have nothing to eat: And if I send them away fasting to their own houses, they will faint by the way: for divers of them came from far.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Mark 8:2–3",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 8,
+                  "ranges": [
+                    [
+                      2,
+                      3
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Matt 15:32",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 15,
+                  "ranges": [
+                    [
+                      32,
+                      32
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ]
+            },
+            {
+              "id": "2.7.16",
+              "text": "Casts out a deaf and mute spirit from a boy and forbids it to return",
+              "quote": "Thou dumb and deaf spirit, I charge thee, come out of him, and enter no more into him.",
+              "tags": [
+                "healing"
+              ],
+              "references": [
+                {
+                  "label": "Mark 9:25",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      25,
+                      25
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.17",
+              "text": "Asks blind Bartimaeus what he wants and restores his sight, declaring his faith has made him whole",
+              "quote": "What wilt thou that I should do unto thee? Go thy way; thy faith hath made thee whole.",
+              "tags": [
+                "healing"
+              ],
+              "references": [
+                {
+                  "label": "Mark 10:51–52",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 10,
+                  "ranges": [
+                    [
+                      51,
+                      52
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Luke 18:41–42",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 18,
+                  "ranges": [
+                    [
+                      41,
+                      42
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ]
+            },
+            {
+              "id": "2.7.18",
+              "text": "Raises the widow's son at Nain from his bier with a word",
+              "quote": "Weep not. Young man, I say unto thee, Arise.",
+              "tags": [
+                "healing"
+              ],
+              "references": [
+                {
+                  "label": "Luke 7:13–14",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 7,
+                  "ranges": [
+                    [
+                      13,
+                      14
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.19",
+              "text": "Turns water into wine at Cana — instructs the servants to fill the jars and serve the master of the feast",
+              "quote": "Fill the waterpots with water. Draw out now, and bear unto the governor of the feast.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 2:7–8",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 2,
+                  "ranges": [
+                    [
+                      7,
+                      8
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.20",
+              "text": "He sends the nobleman home with the word that his son lives, healing the boy at a distance",
+              "quote": "Go thy way; thy son liveth.",
+              "tags": [
+                "healing"
+              ],
+              "references": [
+                {
+                  "label": "John 4:50",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 4,
+                  "ranges": [
+                    [
+                      50,
+                      50
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.21",
+              "text": "He commands the lame man to rise, take up his bed, and walk",
+              "quote": "Rise, take up thy bed, and walk.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 5:6-8",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 5,
+                  "ranges": [
+                    [
+                      6,
+                      8
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.22",
+              "text": "He asks Philip where they shall buy bread to feed the great multitude that has come to him",
+              "quote": "Whence shall we buy bread, that these may eat?",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 6:5",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 6,
+                  "ranges": [
+                    [
+                      5,
+                      5
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.23",
+              "text": "He instructs the disciples to make the men sit down before the feeding of the five thousand",
+              "quote": "Make the men sit down.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 6:10",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 6,
+                  "ranges": [
+                    [
+                      10,
+                      10
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.24",
+              "text": "He tells the disciples to gather up the leftover fragments so that nothing be lost",
+              "quote": "Gather up the fragments that remain, that nothing be lost.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 6:12",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 6,
+                  "ranges": [
+                    [
+                      12,
+                      12
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.25",
+              "text": "He sends the man born blind to wash in the pool of Siloam, and the man returns seeing",
+              "quote": "Go, wash in the pool of Siloam,",
+              "tags": [
+                "healing"
+              ],
+              "references": [
+                {
+                  "label": "John 9:7",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      7,
+                      7
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "2.7.26",
+              "text": "At Lazarus's tomb, commands the stone removed, thanks the Father, and calls Lazarus out",
+              "quote": "Take ye away the stone. Said I not unto thee, that, if thou wouldest believe, thou shouldest see the glory of God? Father, I thank thee that thou hast heard me. And I knew that thou hearest me always: but because of the people which stand by I said it, that they may believe that thou hast sent me. Lazarus, come forth. Loose him, and let him go.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 11:34–44",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 11,
+                  "ranges": [
+                    [
+                      34,
+                      44
                     ]
                   ],
                   "isPrimary": true
@@ -18532,6 +18419,27 @@
                   "isPrimary": true
                 }
               ]
+            },
+            {
+              "id": "27.2.6",
+              "text": "At his arrest, twice declares 'I am he' — and the arresting party falls back to the ground at the words",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 18:5-8",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 18,
+                  "ranges": [
+                    [
+                      5,
+                      8
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ],
+              "quote": "I am he. Whom seek ye? I have told you that I am he: if therefore ye seek me, let these go their way:"
             }
           ]
         },
@@ -20778,6 +20686,27 @@
             },
             {
               "id": "31.1.2",
+              "text": "I AM the First and the Last, the Living One — dead, and behold alive forevermore; I hold the keys of death and Hades",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Rev 1:17–18",
+                  "book": "Revelation",
+                  "bookAbbr": "Rev",
+                  "chapter": 1,
+                  "ranges": [
+                    [
+                      17,
+                      18
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ],
+              "quote": "Fear not; I am the first and the last: I am he that liveth, and was dead; and, behold, I am alive for evermore, Amen; and have the keys of hell and of death."
+            },
+            {
+              "id": "31.1.3",
               "text": "Tells John to write what he has seen, what is, and what is to come — and reveals the meaning of the stars and lampstands",
               "tags": [],
               "references": [

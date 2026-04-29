@@ -59,12 +59,11 @@ Jesus Says is a research and reference tool designed to help readers study Jesus
 
 ### Key Stats
 
-- **31 thematic categories** spanning God the Father through the Seven Churches of Revelation, including The Passion Narrative
-- **124 subcategories** providing more specific topical focus
-- **716 teachings** representing all recorded spoken words of Jesus
-- **~1,050 scripture references** including primary sources and parallel Gospel accounts
-- **42 parables** tagged and findable across all categories
+For current catalog counts, see [`catalog_builds/engine/catalog_stats.md`](catalog_builds/engine/catalog_stats.md).
+
 - **100% coverage** of red-letter (Words of Christ) verses across the New Testament
+- **42 parables** tagged and findable across all categories
+- Scripture cross-references include primary sources and parallel Gospel accounts
 
 ## Scope
 

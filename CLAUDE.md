@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Jesus Says** is a reference web application cataloging all recorded words of Jesus Christ from the New Testament — 716 teachings across 31 thematic categories, 124 subcategories, and ~1,050 scripture cross-references with 100% coverage of red-letter (Words of Christ) NT verses. The dataset is the primary artifact; the UI exists to browse, filter, and permalink to teachings.
+**Jesus Says** is a reference web application cataloging all recorded words of Jesus Christ from the New Testament — organized across 31 thematic categories with full scripture cross-references and 100% coverage of red-letter (Words of Christ) NT verses. The dataset is the primary artifact; the UI exists to browse, filter, and permalink to teachings. For current catalog counts, see [`catalog_builds/engine/catalog_stats.md`](catalog_builds/engine/catalog_stats.md).
 
 ## Tech Stack
 
@@ -139,7 +139,7 @@ All interaction with `public/teachings.json` — classification, validation, aud
 
 | File | Purpose |
 |---|---|
-| `catalog_builds/engine/CLASSIFICATION_RULES.md` | Thematic rules for all 31 categories and 125 subcategories |
+| `catalog_builds/engine/CLASSIFICATION_RULES.md` | Thematic rules for all categories and subcategories |
 | `catalog_builds/engine/TAXONOMY_STANDARDS.md` | Standards for creating new cats/subcats; required fields; validation gate |
 | `catalog_builds/engine/TAG_RULES.md` | Parable tag definition + canonical 42-parable reference list |
 | `catalog_builds/engine/BASELINE.md` | Initial catalog state; known issues (41 Cat-31 ID errors, accepted findings) |
@@ -154,9 +154,7 @@ node catalog_builds/engine/scripts/classify.js --ref "Matt 13:31" # placement ch
 node catalog_builds/engine/scripts/renumber.js                   # fix IDs and write
 ```
 
-**Current catalog stats:** 31 categories · 125 subcategories · 700 teachings · 42 parables
-
-> Note: The overview count of 716 teachings in this file predates the engine baseline. The live count is 702 per `parse-catalog.js --stats`.
+For current catalog stats, see [`catalog_builds/engine/catalog_stats.md`](catalog_builds/engine/catalog_stats.md).
 
 ## Key Planning Documents
 

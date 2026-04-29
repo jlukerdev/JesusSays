@@ -24,7 +24,7 @@ This skill governs all interaction with the Jesus Says data catalog. Load this s
 
 | File | Purpose |
 |---|---|
-| `catalog_builds/engine/CLASSIFICATION_RULES.md` | Thematic rules for all 31 categories and 125 subcategories |
+| `catalog_builds/engine/CLASSIFICATION_RULES.md` | Thematic rules for all categories and subcategories |
 | `catalog_builds/engine/TAXONOMY_STANDARDS.md` | Standards for creating new categories/subcategories; required fields; validation gate |
 | `catalog_builds/engine/TAG_RULES.md` | Parable tag definition + canonical reference list of all 42 parables |
 | `catalog_builds/engine/REVISION.md` | Version history of all structural catalog changes, newest version first |
@@ -217,27 +217,18 @@ This skill governs all interaction with the Jesus Says data catalog. Load this s
       throughout the file if subcategory numbering shifted (e.g., 23.1 → 23.2)
    c. Update any Global Override cross-list references (G-1 through G-4) if a
       referenced subcategory ID changed
-   d. Update the version header stats line:
-      "**Applies to:** `teachings.json` — 31 categories, [N] subcategories, [N] teachings"
 
-3. Update catalog_builds/engine/skills/SKILL.md (this file):
-   a. Engine Files table: update the CLASSIFICATION_RULES.md row description if the
-      subcategory count changed (e.g., "124 subcategories" → "125 subcategories")
-   b. Quick Reference table: update Subcategories and Teachings counts
-   c. renumber.js JSON sample: update the subcategories and teachings values in the
-      stats object
+3. Update `catalog_builds/engine/catalog_stats.md`:
+   a. Run `node catalog_builds/engine/scripts/parse-catalog.js --stats` to get live counts
+   b. Update the "Current Live Stats" table with the new values
+   c. Update the "Last verified" date and version label
+   **Note: catalog_stats.md is the ONLY file where counts should be updated.**
+      Do NOT update counts in CLASSIFICATION_RULES.md, SKILL.md, CLAUDE.md, or scripts/README.md.
 
-4. Update CLAUDE.md (root):
-   a. Find the "Current catalog stats:" line and update subcategory and teaching counts
+4. Verify: run `node catalog_builds/engine/scripts/parse-catalog.js --stats` and confirm
+   the live counts match the values recorded in `catalog_stats.md`
 
-5. Update catalog_builds/engine/scripts/README.md:
-   a. Find any sample output blocks that show subcategory or teaching counts and
-      update them to match live values
-
-6. Verify: run `node catalog_builds/engine/scripts/parse-catalog.js --stats` and confirm
-   the live counts match every document updated in steps 2–5
-
-7. Update catalog_builds/engine/REVISION.md:
+5. Update catalog_builds/engine/REVISION.md:
    a. Determine if a version bump is warranted:
       - ANY add, delete, move, rename, split, or merge of a category or subcategory = YES
       - Text/quote wording edits on individual teachings = NO
@@ -257,15 +248,16 @@ This skill governs all interaction with the Jesus Says data catalog. Load this s
 
 ---
 
-## Universal Rules for All Write Operations
+## Universal Rules for All Operations
 
-1. **Never write without classifying first.** Run Workflow 3 before any add operation.
-2. **Always renumber after any structural edit.** Run `renumber.js` after every insertion, deletion, or move.
-3. **Always validate after renumber.** Run `validate-catalog.js` after every renumber. Exit code `1` = operation is not complete.
-4. **Never manually assign IDs or slugs.** These are managed exclusively by `renumber.js`.
-5. **One `isPrimary: true` per teaching.** Validate this before inserting a new teaching.
-6. **`bookAbbr` must use canonical values.** See TAXONOMY_STANDARDS.md Part 4.
-7. **After any structural change, run Workflow 6.** Update CLASSIFICATION_RULES.md, SKILL.md, CLAUDE.md, and REVISION.md to reflect the new structure before reporting completion.
+1. **Never read `public/teachings.json` directly.** Always use `node catalog_builds/engine/scripts/parse-catalog.js` (with `--json` or `--stats` as needed) to read catalog data. Reading the raw file bypasses ID validation, normalization, and live count tracking.
+2. **Never write without classifying first.** Run Workflow 3 before any add operation.
+3. **Always renumber after any structural edit.** Run `renumber.js` after every insertion, deletion, or move.
+4. **Always validate after renumber.** Run `validate-catalog.js` after every renumber. Exit code `1` = operation is not complete.
+5. **Never manually assign IDs or slugs.** These are managed exclusively by `renumber.js`.
+6. **One `isPrimary: true` per teaching.** Validate this before inserting a new teaching.
+7. **`bookAbbr` must use canonical values.** See TAXONOMY_STANDARDS.md Part 4.
+8. **After any structural change, run Workflow 6.** Update `catalog_builds/engine/catalog_stats.md` with live counts, and update `CLASSIFICATION_RULES.md` and `REVISION.md` to reflect the new structure before reporting completion.
 
 ---
 
@@ -307,7 +299,7 @@ This skill governs all interaction with the Jesus Says data catalog. Load this s
 ### renumber.js `--json`
 
 ```json
-{ "success": true, "dryRun": false, "written": true, "stats": { "categories": 31, "subcategories": 125, "teachings": 700 }, "warnings": 0 }
+{ "success": true, "dryRun": false, "written": true, "stats": { "categories": 31, "subcategories": 126, "teachings": 685 }, "warnings": 0 }
 ```
 → `success: false` means the write was aborted. Read the `errors` array in the output.
 
@@ -315,12 +307,10 @@ This skill governs all interaction with the Jesus Says data catalog. Load this s
 
 ## Quick Reference: Catalog Dimensions
 
-| Dimension | Current value |
+For current catalog counts, see [`catalog_builds/engine/catalog_stats.md`](../catalog_stats.md).
+
+| Dimension | Value |
 |---|---|
-| Categories | 31 |
-| Subcategories | 125 |
-| Teachings | 700 |
-| Tagged parables | 42 |
 | NT books covered | Matt, Mark, Luke, John, Acts, 1Cor, 2Cor, Rev |
 
 *Run `node catalog_builds/engine/scripts/parse-catalog.js --stats` for live values.*

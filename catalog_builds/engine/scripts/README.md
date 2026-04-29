@@ -32,7 +32,7 @@ All scripts use **ESM** (`import`/`export`) and require Node.js 18+. No external
   [1.3] God's Sovereignty and Love (4 teachings)
 ...
 ─────────────────────────────────────
-Total: 31 categories · 125 subcategories · 700 teachings · 42 parables
+Total: 31 categories · 126 subcategories · 685 teachings · 42 parables
 ```
 
 ### JSON output (`--stats --json`)
@@ -40,11 +40,13 @@ Total: 31 categories · 125 subcategories · 700 teachings · 42 parables
 ```json
 {
   "totalCategories": 31,
-  "totalSubcategories": 125,
-  "totalTeachings": 700,
+  "totalSubcategories": 126,
+  "totalTeachings": 685,
   "totalParables": 42
 }
 ```
+
+*Values shown reflect the catalog state at last update. Run the script for live values; for canonical current counts see [`catalog_builds/engine/catalog_stats.md`](../catalog_stats.md).*
 
 ### Imported functions
 
@@ -236,7 +238,7 @@ Input: ref="Matt 13:31-32" text="mustard seed parable kingdom"
 ```
 ✓ Catalog renumbered and written to .../public/teachings.json
   Categories:    31
-  Subcategories: 125
+  Subcategories: 126
   Teachings:     700
   ✓ Validation passed
 ```
@@ -248,7 +250,7 @@ Input: ref="Matt 13:31-32" text="mustard seed parable kingdom"
   "success": true,
   "dryRun": false,
   "written": true,
-  "stats": { "categories": 31, "subcategories": 125, "teachings": 700 },
+  "stats": { "categories": 31, "subcategories": 126, "teachings": 685 },
   "warnings": 0
 }
 ```
