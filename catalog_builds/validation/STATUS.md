@@ -9,8 +9,8 @@
 
 | Batch | Name | Status | Findings | Open | Resolved | Accepted |
 |---|---|---|---|---|---|---|
-| B0 | Baseline Snapshot | NOT STARTED | — | — | — | — |
-| B1 | Global Override Compliance | NOT STARTED | — | — | — | — |
+| B0 | Baseline Snapshot | DONE | 3 | 0 | 0 | 3 |
+| B1 | Global Override Compliance | COMPLETE — PENDING RESOLUTION | 24 | 24 | 0 | 0 |
 | B2 | Categories 1–10 | NOT STARTED | — | — | — | — |
 | B3 | Categories 11–20 | NOT STARTED | — | — | — | — |
 | B4 | Categories 21–31 | NOT STARTED | — | — | — | — |
@@ -41,11 +41,11 @@ B0 (Baseline) ──► must pass validate-catalog.js before proceeding
 
 | Severity | Open | In Review | Resolved | Accepted | Total |
 |---|---|---|---|---|---|
-| ERROR | 0 | 0 | 0 | 0 | 0 |
+| ERROR | 16 | 0 | 0 | 0 | 16 |
 | WARNING | 0 | 0 | 0 | 0 | 0 |
-| REVIEW | 0 | 0 | 0 | 0 | 0 |
-| INFO | 0 | 0 | 0 | 0 | 0 |
-| **All** | **0** | **0** | **0** | **0** | **0** |
+| REVIEW | 8 | 0 | 0 | 0 | 8 |
+| INFO | 0 | 0 | 0 | 3 | 3 |
+| **All** | **24** | **0** | **0** | **3** | **27** |
 
 *Update this table after each batch is completed.*
 
@@ -71,7 +71,8 @@ Record each work session so progress can be resumed.
 
 | Date | Batches Worked | Findings Added | Actions Taken |
 |---|---|---|---|
-| 04/29/2026 | — | — | Plan and STATUS created |
+| 04/29/2026 | B0 | 3 (2 dup-text INFO, 1 parable-candidate FALSE POSITIVE) | B0-BASELINE.md created; validate-catalog passed clean; B1 unblocked |
+| 04/29/2026 | B1 | 24 (16 ERROR, 8 REVIEW) | B1-OVERRIDES.md created; G-1/G-2/G-4 checks run; 16 hard violations + 8 composite-teaching reviews; B1 COMPLETE — PENDING RESOLUTION |
 
 ---
 
