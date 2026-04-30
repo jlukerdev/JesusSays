@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jesus Says</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --gold: #B87217;
+  --gold-light: #FAEEDA;
+  --gold-mid: #E8C97A;
+  --navy: #1A2340;
+  --navy-mid: #2C3B5E;
+  --cream: #F9F6F0;
+  --warm-white: #FDFCFA;
+  --text-primary: #1C1C1E;
+  --text-secondary: #4A4A4F;
+  --text-muted: #8E8E93;
+  --border: rgba(0,0,0,0.08);
+  --border-mid: rgba(0,0,0,0.14);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.06);
+  --blue-tag: #185FA5;
+  --blue-tag-bg: #E6F1FB;
+  --transition: 0.2s ease;
+  --panel-width: 380px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: var(--cream);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ─── LAYOUT SHELL ─── */
+.app-shell { display: flex; flex-direction: column; min-height: 100vh; }
+.app-body { display: flex; flex: 1; position: relative; overflow: hidden; }
+.main-content {
+  flex: 1; min-width: 0; overflow-y: auto;
+  transition: margin-right 0.3s cubic-bezier(0.32,0.72,0,1);
+}
+/* Pinned panel shares real estate; floating panel overlays */
+.main-content.panel-pinned { margin-right: var(--panel-width); }
+
+/* content-frame kept as structural wrapper */
+
+/* ─── TOP NAV ─── */
+.top-nav {
+  background: var(--navy);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  height: 56px;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.nav-back {
+  color: var(--gold-mid);
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  transition: background var(--transition);
+  flex-shrink: 0;
+}
+.nav-back:hover { background: rgba(255,255,255,0.1); }
+.nav-back.visible { display: flex; }
+.nav-history-btn {
+  width: 30px; height: 30px;
+  display: flex; align-items: center; justify-content: center;
+  padding: 0 !important;
+  border-radius: 6px;
+}
+.nav-history-btn:disabled, .nav-history-btn.disabled { opacity: 0.35; pointer-events: none; }
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  flex: 1;
+  line-height: 1;
+}
+.nav-logo span { color: var(--gold-mid); }
+.nav-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.nav-actions { display: flex; gap: 4px; }
+.nav-btn {
+  color: rgba(255,255,255,0.7);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.02em;
+  transition: background var(--transition), color var(--transition);
+}
+.nav-btn:hover { background: rgba(255,255,255,0.1); color: white; }
+
+/* ─── SCREENS ─── */
+.screen { display: none; animation: fadeIn 0.22s ease; }
+.screen.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ─── HOME ─── */
+.home-header {
+  padding: 20px 16px 12px;
+  background: white;
+  border-bottom: 1px solid var(--border);
+}
+.home-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.home-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+.count-badge {
+  font-size: 12px;
+  color: var(--text-muted);
+  background: var(--cream);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.search-wrap { position: relative; }
+.search-input {
+  width: 100%;
+  padding: 10px 14px 10px 38px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--border-mid);
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: var(--text-primary);
+  background: var(--cream);
+  transition: border-color var(--transition);
+  outline: none;
+}
+
+.search-input:focus { border-color: var(--gold); }
+.search-icon {
+  position: absolute;
+  left: 12px; top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-size: 15px;
+  pointer-events: none;
+}
+.cat-grid {
+  padding: 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+}
+.cat-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  cursor: pointer;
+  border: 1.5px solid var(--border);
+  transition: all var(--transition);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+.cat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+.cat-card:hover { border-color: var(--gold); box-shadow: var(--shadow-md); transform: translateY(-1px); }
+.cat-card:hover::before { transform: scaleX(1); }
+.cat-card:active { transform: scale(0.98); }
+.cat-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px; font-weight: 500;
+  line-height: 1.35; color: var(--text-primary); margin-bottom: 8px;
+}
+.cat-bar-wrap { height: 3px; background: var(--border); border-radius: 2px; margin-bottom: 8px; overflow: hidden; }
+.cat-bar-fill { height: 100%; border-radius: 2px; background: linear-gradient(90deg, var(--gold), var(--gold-mid)); }
+.cat-meta { font-size: 11px; color: var(--text-muted); }
+
+/* ─── CATEGORY BROWSER ─── */
+.cat-browser { min-height: calc(100vh - 100px); }
+.cat-hero { background: var(--navy); padding: 20px 16px 0; color: white; }
+.cat-hero-num { display: none; }
+.cat-hero-title { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 500; margin-bottom: 4px; }
+.cat-hero-books { margin-bottom: 0; }
+.book-filter-row { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px 0 16px; }
+.book-filter-chip {
+  font-size: 11px; font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: all var(--transition);
+  letter-spacing: 0.04em;
+}
+.book-filter-chip:hover { border-color: rgba(255,255,255,0.5); color: rgba(255,255,255,0.85); }
+.book-filter-chip.active { background: var(--gold); border-color: var(--gold); color: var(--navy); }
+/* Desktop tabs */
+.tabs-scroll { overflow-x: auto; scrollbar-width: none; display: flex; background: var(--navy); }
+.tabs-scroll::-webkit-scrollbar { display: none; }
+.tab-btn {
+  flex-shrink: 0; padding: 12px 16px;
+  font-size: 13px; font-weight: 700;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all var(--transition); white-space: nowrap;
+}
+.tab-btn:hover { color: rgba(255,255,255,0.8); }
+.tab-btn.active { color: var(--gold-mid); border-bottom-color: var(--gold); }
+
+/* Mobile subcat dropdown */
+.subcat-dropdown-wrap {
+  padding: 10px 16px 14px;
+  background: var(--navy);
+}
+.subcat-select {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  background: rgba(255,255,255,0.1) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%23E8C97A' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 12px center;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  border-radius: var(--radius-md);
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 36px 10px 14px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color var(--transition);
+}
+.subcat-select:focus { border-color: var(--gold); }
+.subcat-select option { background: var(--navy); color: white; }
+
+/* ─── TEACHINGS LIST ─── */
+.teachings-list { padding: 14px; display: flex; flex-direction: column; gap: 8px; }
+.teaching-card {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  border: 1.5px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: all var(--transition);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.teaching-card:hover { border-color: var(--gold); box-shadow: var(--shadow-md); }
+.teaching-card:active { transform: scale(0.99); }
+.teaching-card-body { flex: 1; min-width: 0; }
+.teaching-card-arrow {
+  flex-shrink: 0;
+  font-size: 16px;
+  color: var(--gold);
+  opacity: 0.5;
+  margin-top: 1px;
+  transition: opacity var(--transition), transform var(--transition);
+}
+.teaching-card:hover .teaching-card-arrow { opacity: 1; transform: translateX(2px); }
+.teaching-text { font-size: 14px; line-height: 1.55; color: var(--text-primary); margin-bottom: 10px; }
+.chips-row { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+.scripture-chip {
+  font-size: 11px; font-weight: 700;
+  color: var(--gold); background: var(--gold-light);
+  padding: 3px 9px; border-radius: 20px;
+  cursor: pointer;
+  transition: all var(--transition);
+  border: 1px solid rgba(184,114,23,0.2);
+}
+.scripture-chip:hover { background: var(--gold); color: white; transform: scale(1.03); }
+.tag { font-size: 11px; font-weight: 700; padding: 3px 9px; border-radius: 20px; }
+.tag-parable { color: var(--blue-tag); background: var(--blue-tag-bg); }
+.tag-woe { color: #7B3F00; background: #FFF0E0; }
+.tag-promise { color: #1A5C30; background: #E8F5EE; }
+
+/* ─── TEACHING DETAIL SCREEN ─── */
+.teaching-detail {
+  background: var(--warm-white);
+  min-height: calc(100vh - 110px);
+}
+.teaching-detail-hero {
+  background: var(--navy);
+  padding: 20px 16px 24px;
+  color: white;
+}
+.teaching-detail-cat {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-mid);
+  margin-bottom: 8px;
+}
+.teaching-detail-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+}
+.teaching-detail-body { padding: 16px; display: flex; flex-direction: column; gap: 14px; }
+.detail-section {
+  background: white;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--border);
+  overflow: hidden;
+}
+.detail-section-head {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: var(--cream);
+}
+.detail-section-body { padding: 14px; }
+.quote-block {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-primary);
+  border-left: 3px solid var(--gold);
+  padding-left: 14px;
+  margin: 0;
+}
+.ref-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+}
+.ref-row:last-child { border-bottom: none; }
+.ref-row:hover .ref-label { color: var(--gold); }
+.ref-primary-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.ref-primary-dot.primary { background: var(--gold); }
+.ref-primary-dot.secondary { background: var(--border-mid); }
+.ref-info { flex: 1; }
+.ref-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gold);
+  transition: color var(--transition);
+}
+.ref-book { font-size: 12px; color: var(--text-muted); margin-top: 1px; }
+.ref-ranges { font-size: 11px; color: var(--text-muted); }
+.ref-open-btn {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--gold);
+  background: var(--gold-light);
+  padding: 4px 10px;
+  border-radius: 20px;
+  flex-shrink: 0;
+  border: 1px solid rgba(184,114,23,0.2);
+}
+.ref-row:hover .ref-open-btn { background: var(--gold); color: white; }
+
+/* ─── BIBLE SIDE PANEL (desktop) ─── */
+.bible-panel {
+  position: fixed;
+  top: 0; right: 0; bottom: 0;
+  width: var(--panel-width);
+  background: var(--warm-white);
+  border-left: 1px solid var(--border-mid);
+  display: flex;
+  flex-direction: column;
+  z-index: 150;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.32,0.72,0,1);
+  box-shadow: -6px 0 28px rgba(0,0,0,0.13);
+}
+.bible-panel.open { transform: translateX(0); }
+/* When pinned, no shadow — it sits flush sharing layout space */
+.bible-panel.pinned { box-shadow: none; border-left-color: var(--border-mid); }
+
+.panel-header {
+  padding: 14px 14px 12px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+  background: white;
+}
+.panel-ref-block { flex: 1; min-width: 0; }
+.panel-ref {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+.panel-context { font-size: 12px; color: var(--text-muted); }
+.panel-actions { display: flex; gap: 4px; flex-shrink: 0; align-items: center; }
+
+/* Single pin/close combo button */
+.panel-pin-btn {
+  width: 28px; height: 28px;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid transparent;
+  transition: all var(--transition);
+  flex-shrink: 0;
+}
+.panel-pin-btn:hover { background: var(--cream); color: var(--text-secondary); border-color: var(--border); }
+.panel-pin-btn.pinned { color: var(--gold); background: var(--gold-light); border-color: rgba(184,114,23,0.3); }
+
+.panel-body { overflow-y: auto; padding: 14px; flex: 1; }
+
+/* ─── BIBLE DRAWER (mobile) ─── */
+.bible-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 148;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.bible-overlay.open { opacity: 1; pointer-events: all; }
+
+.bible-drawer {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  background: var(--warm-white);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  z-index: 149;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(100%);
+  transition: transform 0.3s cubic-bezier(0.32,0.72,0,1);
+  overflow: hidden;
+  /* height set by JS */
+  max-height: 90vh;
+  min-height: 48px;
+  touch-action: none;
+}
+.bible-drawer.open { transform: translateY(0); }
+
+.drawer-handle-zone {
+  padding: 10px 0 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  cursor: ns-resize;
+  flex-shrink: 0;
+  background: var(--warm-white);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+.drawer-handle {
+  width: 36px; height: 4px;
+  border-radius: 2px;
+  background: var(--border-mid);
+}
+.drawer-handle-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  display: none;
+}
+.bible-drawer.peeking .drawer-handle-label { display: block; }
+.bible-drawer.peeking .drawer-contents { display: none; }
+
+.drawer-contents {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+.drawer-header {
+  padding: 0 14px 12px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.drawer-ref-block { flex: 1; }
+.drawer-ref {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+.drawer-context { font-size: 12px; color: var(--text-muted); }
+.drawer-close {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  background: var(--cream);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+.drawer-body { overflow-y: auto; padding: 14px; flex: 1; }
+
+/* ─── SHARED BIBLE CONTENT ─── */
+.bible-context-lbl {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--text-muted); margin-bottom: 10px;
+}
+.verse-row {
+  display: flex; gap: 10px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--border);
+}
+.verse-row:last-child { border-bottom: none; }
+.verse-row.highlighted {
+  background: var(--gold-light);
+  margin: 0 -14px;
+  padding: 8px 14px;
+  border-bottom-color: rgba(184,114,23,0.15);
+}
+.verse-num {
+  font-size: 11px; font-weight: 700;
+  color: var(--gold);
+  min-width: 22px;
+  padding-top: 3px;
+  flex-shrink: 0;
+}
+.verse-text { font-size: 14px; line-height: 1.65; color: var(--text-primary); }
+.verse-text.hl { font-weight: 700; }
+.cross-refs {
+  margin-top: 14px; padding: 12px 14px;
+  background: var(--cream); border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+.cross-ref-title {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--text-muted); margin-bottom: 6px;
+}
+.cross-ref-chip {
+  display: inline-block;
+  font-size: 12px; font-weight: 700;
+  color: var(--gold); background: white;
+  padding: 4px 10px; border-radius: 20px;
+  border: 1px solid rgba(184,114,23,0.25);
+  margin: 3px 3px 0 0;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.cross-ref-chip:hover { background: var(--gold); color: white; }
+
+/* ─── NAV PREV/NEXT ─── */
+.pn-bar {
+  background: white; border-top: 1px solid var(--border);
+  display: flex; position: sticky; bottom: 0;
+}
+.pn-btn {
+  flex: 1; display: flex; align-items: center; gap: 6px;
+  padding: 14px 16px; font-size: 13px; font-weight: 700;
+  color: var(--text-secondary); cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+.pn-btn:first-child { border-right: 1px solid var(--border); }
+.pn-btn:hover { background: var(--cream); color: var(--text-primary); }
+.pn-btn.right { justify-content: flex-end; }
+.pn-arrow { font-size: 18px; color: var(--gold); }
+.pn-label { font-size: 11px; color: var(--text-muted); display: block; font-weight: 400; }
+
+/* ─── SEARCH ─── */
+.search-results { padding: 14px; display: flex; flex-direction: column; gap: 6px; }
+.search-section-label {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--text-muted);
+  padding: 10px 4px 4px;
+}
+.search-result-row {
+  background: white; border: 1.5px solid var(--border);
+  border-radius: var(--radius-md); padding: 12px 14px;
+  cursor: pointer; transition: all var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+.search-result-row:hover { border-color: var(--gold); box-shadow: var(--shadow-md); }
+.search-result-row:active { transform: scale(0.99); }
+.search-result-type {
+  font-size: 10px; font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; margin-bottom: 3px;
+}
+.search-result-type.cat { color: var(--gold); }
+.search-result-type.sub { color: var(--blue-tag); }
+.search-result-type.teaching { color: #1A5C30; }
+.search-result-title { font-size: 14px; color: var(--text-primary); line-height: 1.45; }
+.search-result-crumb { font-size: 11px; color: var(--text-muted); margin-top: 3px; }
+mark { background: var(--gold-light); color: var(--gold); border-radius: 2px; padding: 0 1px; font-weight: 700; }
+
+/* ─── BIBLE PEEK PILL (mobile) ─── */
+.bible-peek-pill {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+  background: var(--navy);
+  color: var(--gold-mid);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 18px 8px 14px;
+  border-radius: 24px;
+  display: none;
+  align-items: center;
+  gap: 7px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+  cursor: pointer;
+  z-index: 147;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+.bible-peek-pill:hover { transform: translateX(-50%) translateY(-2px); }
+.bible-peek-pill:active { transform: translateX(-50%) scale(0.97); }
+.bible-peek-pill-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .bible-peek-pill { display: flex; }
+}
+
+/* ─── EMPTY STATE ─── */
+.empty-state { text-align: center; padding: 60px 20px; color: var(--text-muted); }
+.empty-state-icon { font-size: 40px; margin-bottom: 12px; opacity: 0.4; }
+.empty-state p { font-size: 14px; }
+
+/* ─── DESKTOP ─── */
+@media (min-width: 768px) {
+  .top-nav { padding: 0 24px; height: 60px; }
+  .cat-grid { padding: 20px; gap: 12px; }
+  .cat-card { padding: 18px; }
+  .cat-name { font-size: 15px; }
+  .teachings-list { padding: 20px; gap: 10px; }
+  .teaching-card { padding: 16px 20px; }
+  .teaching-text { font-size: 15px; }
+  .cat-hero { padding: 24px 24px 0; }
+  .cat-hero-title { font-size: 28px; }
+  .tab-btn { padding: 14px 20px; font-size: 14px; }
+  .subcat-dropdown-wrap { display: none; }
+  .bible-drawer { display: none !important; }
+  .bible-overlay { display: none !important; }
+}
+@media (max-width: 767px) {
+  .tabs-scroll { display: none; }
+  .bible-panel { display: none !important; }
+  .main-content.panel-pinned { margin-right: 0 !important; }
+  /* Mobile: push content up above drawer when open */
+  .main-content.drawer-open-shift { padding-bottom: 52px; }
+}
+</style>
+</head>
+<body>
+
+<div class="app-shell">
+
+<!-- TOP NAV -->
+<nav class="top-nav" id="topNav">
+  <div class="nav-back" id="navBack" onclick="goBack()" title="Back">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M11 4L6 9l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="nav-logo" id="navLogo">Jesus <span>Says</span></div>
+  <div class="nav-title" id="navTitle" style="display:none"></div>
+  <div class="nav-actions" id="navActions">
+    <div class="nav-btn nav-history-btn" id="navHistBack" onclick="historyNav(-1)" title="Back" style="display:none">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="nav-btn nav-history-btn" id="navHistFwd" onclick="historyNav(1)" title="Forward" style="display:none">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div class="nav-btn" id="navToCat" onclick="goToCategory()" style="display:none;font-size:12px;">↑ Category</div>
+    <div class="nav-btn" onclick="showScreen('home')" style="font-size:12px;">Topical Subjects</div>
+  </div>
+</nav>
+
+<!-- PERSISTENT SEARCH BAR -->
+<div id="searchBar" style="background:white;border-bottom:1px solid rgba(0,0,0,0.08);padding:10px 16px;flex-shrink:0;">
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input class="search-input" type="search" id="searchInput" placeholder="Search categories, topics, teachings…" oninput="handleSearch(this.value)" />
+
+  </div>
+</div>
+
+<div class="app-body">
+  <div class="main-content" id="mainContent">
+
+    <!-- HOME -->
+    <div class="screen active" id="screen-home">
+      <div class="content-frame">
+        <div class="home-header">
+          <div class="home-header-top">
+            <h2>Topical Subjects</h2>
+            <div class="count-badge" id="catCount">12 categories</div>
+          </div>
+        </div>
+        <div class="cat-grid" id="catGrid"></div>
+        <div id="searchResults" style="display:none"></div>
+      </div>
+    </div>
+
+    <!-- CATEGORY BROWSER -->
+    <div class="screen" id="screen-category">
+      <div class="content-frame">
+        <div class="cat-browser">
+          <div class="cat-hero">
+            <div class="cat-hero-num" id="heroNum"></div>
+            <div class="cat-hero-title" id="heroTitle"></div>
+            <div class="cat-hero-books" id="heroBooks"><div class="book-filter-row" id="bookFilterRow"></div></div>
+            <!-- Desktop: horizontal tabs -->
+            <div class="tabs-scroll" id="tabsScroll"></div>
+            <!-- Mobile: dropdown picker -->
+            <div class="subcat-dropdown-wrap">
+              <select class="subcat-select" id="subcatSelect" onchange="switchTab(parseInt(this.value))"></select>
+            </div>
+          </div>
+          <div class="teachings-list" id="teachingsList"></div>
+          <div id="catSearchResults" style="display:none;padding:14px;flex-direction:column;gap:6px;"></div>
+          <div class="pn-bar" id="catPnBar">
+            <div class="pn-btn" id="pnPrev" onclick="catPnNav(-1)">
+              <span class="pn-arrow">‹</span>
+              <div><span class="pn-label" id="pnPrevLabel">Previous category</span></div>
+            </div>
+            <div class="pn-btn right" id="pnNext" onclick="catPnNav(1)">
+              <div style="text-align:right"><span class="pn-label" id="pnNextLabel">Next category</span></div>
+              <span class="pn-arrow">›</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEACHING DETAIL -->
+    <div class="screen" id="screen-teaching">
+      <div class="content-frame">
+        <div class="teaching-detail" id="teachingDetailContent"></div>
+      </div>
+    </div>
+
+  </div><!-- /main-content -->
+
+  <!-- BIBLE SIDE PANEL (desktop) -->
+  <div class="bible-panel" id="biblePanel" onmouseenter="onPanelMouseEnter()" onmouseleave="onPanelMouseLeave()">
+    <div class="panel-header">
+      <div class="panel-ref-block">
+        <div class="panel-ref" id="panelRef">—</div>
+        <div class="panel-context" id="panelContext"></div>
+      </div>
+      <div class="panel-actions">
+        <div class="panel-pin-btn" id="panelPinBtn" title="Pin panel" onclick="togglePin()">
+          <!-- Minimal vertical pushpin: shaft + flat head -->
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="7" y1="8" x2="7" y2="13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="M4 7.5C4 5.5 3.5 3.5 5 2.5H9C10.5 3.5 10 5.5 10 7.5H4Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" fill="none"/>
+            <line x1="3" y1="7.5" x2="11" y2="7.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="panel-body" id="panelBody"></div>
+  </div>
+
+</div><!-- /app-body -->
+</div><!-- /app-shell -->
+
+<!-- BIBLE DRAWER OVERLAY (mobile - tap outside handle zone won't close) -->
+<div class="bible-overlay" id="bibleOverlay"></div>
+
+<!-- BIBLE DRAWER (mobile) -->
+<div class="bible-drawer" id="bibleDrawer">
+  <div class="drawer-handle-zone" id="drawerHandleZone">
+    <div class="drawer-handle"></div>
+    <div class="drawer-handle-label" id="drawerHandleLabel">Scripture</div>
+  </div>
+  <div class="drawer-contents" id="drawerContents">
+    <div class="drawer-header">
+      <div class="drawer-ref-block">
+        <div class="drawer-ref" id="drawerRef">—</div>
+        <div class="drawer-context" id="drawerContext"></div>
+      </div>
+      <div class="drawer-close" onclick="closeBibleDrawer()">✕</div>
+    </div>
+    <div class="drawer-body" id="drawerBody"></div>
+  </div>
+</div>
+
+<!-- BIBLE PEEK PILL (mobile - visible when drawer has a ref but is closed/peeking) -->
+<div class="bible-peek-pill" id="biblePeekPill" onclick="reopenDrawer()">
+  <div class="bible-peek-pill-dot"></div>
+  <span id="biblePeekLabel">Open Scripture</span>
+  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 8L6 4l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════
+   DATA
+═══════════════════════════════════════════ */
+const CATEGORIES = [
+  {
+    id: 1, num: '01', name: 'God the Father', books: ['Matt', 'John', 'Luke'],
+    sections: [
+      { title: 'The Nature of God', teachings: [
+        { id:'1.1.1', text: 'God is spirit — those who worship him must worship in spirit and truth', tags: [], references: [{label:'John 4:24',book:'John',bookAbbr:'John',chapter:4,ranges:[[24,24]],isPrimary:true}], quote: 'God is a Spirit: and they that worship him must worship him in spirit and in truth.' },
+        { id:'1.1.2', text: 'God is good — no one is good except God alone', tags: [], references: [{label:'Mark 10:18',book:'Mark',bookAbbr:'Mark',chapter:10,ranges:[[18,18]],isPrimary:true},{label:'Luke 18:19',book:'Luke',bookAbbr:'Luke',chapter:18,ranges:[[19,19]],isPrimary:false}], quote: 'Why callest thou me good? there is none good but one, that is, God.' },
+        { id:'1.1.3', text: 'Your heavenly Father knows what you need before you ask him', tags: ['promise'], references: [{label:'Matt 6:8',book:'Matthew',bookAbbr:'Matt',chapter:6,ranges:[[8,8]],isPrimary:true}], quote: 'Be not ye therefore like unto them: for your Father knoweth what things ye have need of, before ye ask him.' },
+      ]},
+      { title: "The Father's Love", teachings: [
+        { id:'1.2.1', text: 'If earthly fathers give good gifts, how much more will the heavenly Father give good things to those who ask', tags: ['promise'], references: [{label:'Matt 7:11',book:'Matthew',bookAbbr:'Matt',chapter:7,ranges:[[11,11]],isPrimary:true},{label:'Luke 11:13',book:'Luke',bookAbbr:'Luke',chapter:11,ranges:[[13,13]],isPrimary:false}], quote: 'If ye then, being evil, know how to give good gifts unto your children, how much more shall your Father which is in heaven give good things to them that ask him?' },
+        { id:'1.2.2', text: 'Not even a sparrow falls to the ground outside the Father\'s care', tags: [], references: [{label:'Matt 10:29',book:'Matthew',bookAbbr:'Matt',chapter:10,ranges:[[29,31]],isPrimary:true}], quote: 'Are not two sparrows sold for a farthing? and one of them shall not fall on the ground without your Father.' },
+        { id:'1.2.3', text: 'The Father himself loves you because you have loved me and believed that I came from God', tags: ['promise'], references: [{label:'John 16:27',book:'John',bookAbbr:'John',chapter:16,ranges:[[27,27]],isPrimary:true}], quote: 'For the Father himself loveth you, because ye have loved me, and have believed that I came out from God.' },
+      ]},
+    ]
+  },
+  {
+    id: 2, num: '02', name: 'The Identity of Jesus Christ', books: ['Matt','Mark','Luke','John'],
+    sections: [
+      { title: 'His Divine Claims', teachings: [
+        { id:'2.1.1', text: 'Before Abraham was born, I am', tags: [], references: [{label:'John 8:58',book:'John',bookAbbr:'John',chapter:8,ranges:[[58,58]],isPrimary:true}], quote: 'Verily, verily, I say unto you, Before Abraham was, I am.' },
+        { id:'2.1.2', text: 'I and the Father are one', tags: [], references: [{label:'John 10:30',book:'John',bookAbbr:'John',chapter:10,ranges:[[30,30]],isPrimary:true}], quote: 'I and my Father are one.' },
+        { id:'2.1.3', text: 'Anyone who has seen me has seen the Father', tags: [], references: [{label:'John 14:9',book:'John',bookAbbr:'John',chapter:14,ranges:[[9,9]],isPrimary:true}], quote: 'Have I been so long time with you, and yet hast thou not known me, Philip? he that hath seen me hath seen the Father.' },
+        { id:'2.1.4', text: 'I am the way, the truth, and the life — no one comes to the Father except through me', tags: ['promise'], references: [{label:'John 14:6',book:'John',bookAbbr:'John',chapter:14,ranges:[[6,6]],isPrimary:true}], quote: 'Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me.' },
+      ]},
+      { title: 'Son of Man', teachings: [
+        { id:'2.2.1', text: 'The Son of Man came not to be served but to serve, and to give his life as a ransom for many', tags: [], references: [{label:'Mark 10:45',book:'Mark',bookAbbr:'Mark',chapter:10,ranges:[[45,45]],isPrimary:true},{label:'Matt 20:28',book:'Matthew',bookAbbr:'Matt',chapter:20,ranges:[[28,28]],isPrimary:false}], quote: 'For even the Son of man came not to be ministered unto, but to minister, and to give his life a ransom for many.' },
+        { id:'2.2.2', text: 'Foxes have dens and birds have nests, but the Son of Man has no place to lay his head', tags: [], references: [{label:'Luke 9:58',book:'Luke',bookAbbr:'Luke',chapter:9,ranges:[[58,58]],isPrimary:true},{label:'Matt 8:20',book:'Matthew',bookAbbr:'Matt',chapter:8,ranges:[[20,20]],isPrimary:false}], quote: 'And Jesus said unto him, Foxes have holes, and birds of the air have nests; but the Son of man hath not where to lay his head.' },
+      ]},
+    ]
+  },
+  {
+    id: 3, num: '03', name: 'The Holy Spirit', books: ['John', 'Luke', 'Acts'],
+    sections: [
+      { title: 'His Person and Work', teachings: [
+        { id:'3.1.1', text: 'The Advocate, the Holy Spirit, whom the Father will send in my name, will teach you all things', tags: ['promise'], references: [{label:'John 14:26',book:'John',bookAbbr:'John',chapter:14,ranges:[[26,26]],isPrimary:true}], quote: 'But the Comforter, which is the Holy Ghost, whom the Father will send in my name, he shall teach you all things.' },
+        { id:'3.1.2', text: 'When the Spirit of truth comes, he will guide you into all truth', tags: ['promise'], references: [{label:'John 16:13',book:'John',bookAbbr:'John',chapter:16,ranges:[[13,13]],isPrimary:true}], quote: 'Howbeit when he, the Spirit of truth, is come, he will guide you into all truth.' },
+        { id:'3.1.3', text: 'You will receive power when the Holy Spirit comes on you', tags: ['promise'], references: [{label:'Acts 1:8',book:'Acts',bookAbbr:'Acts',chapter:1,ranges:[[8,8]],isPrimary:true}], quote: 'But ye shall receive power, after that the Holy Ghost is come upon you.' },
+      ]},
+    ]
+  },
+  {
+    id: 4, num: '04', name: 'The Kingdom of God', books: ['Matt','Mark','Luke'],
+    sections: [
+      { title: 'Its Nature', teachings: [
+        { id:'4.1.1', text: 'The kingdom of God is like a mustard seed — the smallest of all seeds yet grows into a great tree', tags: ['parable'], references: [{label:'Matt 13:31',book:'Matthew',bookAbbr:'Matt',chapter:13,ranges:[[31,32]],isPrimary:true},{label:'Mark 4:31',book:'Mark',bookAbbr:'Mark',chapter:4,ranges:[[31,32]],isPrimary:false}], quote: 'The kingdom of heaven is like to a grain of mustard seed, which a man took, and sowed in his field: Which indeed is the least of all seeds: but when it is grown, it is the greatest among herbs.' },
+        { id:'4.1.2', text: 'The kingdom of heaven is like leaven hidden in three measures of flour until all is leavened', tags: ['parable'], references: [{label:'Matt 13:33',book:'Matthew',bookAbbr:'Matt',chapter:13,ranges:[[33,33]],isPrimary:true},{label:'Luke 13:21',book:'Luke',bookAbbr:'Luke',chapter:13,ranges:[[21,21]],isPrimary:false}], quote: 'The kingdom of heaven is like unto leaven, which a woman took, and hid in three measures of meal, till the whole was leavened.' },
+        { id:'4.1.3', text: 'Truly I tell you, unless you change and become like children you will never enter the kingdom', tags: [], references: [{label:'Matt 18:3',book:'Matthew',bookAbbr:'Matt',chapter:18,ranges:[[3,3]],isPrimary:true},{label:'Mark 10:15',book:'Mark',bookAbbr:'Mark',chapter:10,ranges:[[15,15]],isPrimary:false}], quote: 'Verily I say unto you, Except ye be converted, and become as little children, ye shall not enter into the kingdom of heaven.' },
+      ]},
+      { title: 'Its Urgency', teachings: [
+        { id:'4.2.1', text: 'Seek first the kingdom of God and his righteousness, and all these things will be added to you', tags: ['promise'], references: [{label:'Matt 6:33',book:'Matthew',bookAbbr:'Matt',chapter:6,ranges:[[33,33]],isPrimary:true},{label:'Luke 12:31',book:'Luke',bookAbbr:'Luke',chapter:12,ranges:[[31,31]],isPrimary:false}], quote: 'But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.' },
+        { id:'4.2.2', text: 'No one who puts a hand to the plow and looks back is fit for service in the kingdom', tags: [], references: [{label:'Luke 9:62',book:'Luke',bookAbbr:'Luke',chapter:9,ranges:[[62,62]],isPrimary:true}], quote: 'And Jesus said unto him, No man, having put his hand to the plough, and looking back, is fit for the kingdom of God.' },
+      ]},
+    ]
+  },
+  {
+    id: 5, num: '05', name: 'Repentance and Conversion', books: ['Matt','Mark','Luke','Rev'],
+    sections: [
+      { title: 'The Call to Repentance', teachings: [
+        { id:'5.1.1', text: 'Repent, for the kingdom of heaven is at hand — the time is fulfilled', tags: [], references: [{label:'Matt 4:17',book:'Matthew',bookAbbr:'Matt',chapter:4,ranges:[[17,17]],isPrimary:true},{label:'Mark 1:15',book:'Mark',bookAbbr:'Mark',chapter:1,ranges:[[15,15]],isPrimary:false}], quote: 'Repent: for the kingdom of heaven is at hand.' },
+        { id:'5.1.2', text: 'He has come to call sinners to repentance, not the righteous — unless you repent you will all likewise perish', tags: [], references: [{label:'Matt 9:12',book:'Matthew',bookAbbr:'Matt',chapter:9,ranges:[[12,13]],isPrimary:true},{label:'Mark 2:17',book:'Mark',bookAbbr:'Mark',chapter:2,ranges:[[17,17]],isPrimary:false},{label:'Luke 5:32',book:'Luke',bookAbbr:'Luke',chapter:5,ranges:[[32,32]],isPrimary:false}], quote: 'I came not to call the righteous, but sinners to repentance.' },
+        { id:'5.1.3', text: 'There is more joy in heaven over one sinner who repents than ninety-nine who need no repentance', tags: [], references: [{label:'Luke 15:7',book:'Luke',bookAbbr:'Luke',chapter:15,ranges:[[7,7]],isPrimary:true}], quote: 'I say unto you, that likewise joy shall be in heaven over one sinner that repenteth, more than over ninety and nine just persons, which need no repentance.' },
+        { id:'5.1.4', text: 'Parable of the barren fig tree — owner gives one final year to bear fruit before judgment falls', tags: ['parable'], references: [{label:'Luke 13:6',book:'Luke',bookAbbr:'Luke',chapter:13,ranges:[[6,9]],isPrimary:true}], quote: 'A certain man had a fig tree planted in his vineyard; and he came and sought fruit thereon, and found none.' },
+        { id:'5.1.5', text: 'Pronounces woe on Chorazin and Bethsaida — Tyre and Sidon would have repented in sackcloth and ashes', tags: ['woe'], references: [{label:'Matt 11:21',book:'Matthew',bookAbbr:'Matt',chapter:11,ranges:[[21,22]],isPrimary:true},{label:'Luke 10:13',book:'Luke',bookAbbr:'Luke',chapter:10,ranges:[[13,14]],isPrimary:false}], quote: 'Woe unto thee, Chorazin! woe unto thee, Bethsaida! for if the mighty works, which were done in you, had been done in Tyre and Sidon, they would have repented long ago in sackcloth and ashes.' },
+      ]},
+      { title: 'Parables of the Lost', teachings: [
+        { id:'5.2.1', text: 'Lost sheep — a shepherd leaves ninety-nine to search for the one; rejoices when found', tags: ['parable'], references: [{label:'Luke 15:4',book:'Luke',bookAbbr:'Luke',chapter:15,ranges:[[4,7]],isPrimary:true},{label:'Matt 18:12',book:'Matthew',bookAbbr:'Matt',chapter:18,ranges:[[12,14]],isPrimary:false}], quote: 'What man of you, having an hundred sheep, if he lose one of them, doth not leave the ninety and nine in the wilderness, and go after that which is lost, until he find it?' },
+        { id:'5.2.2', text: 'Lost coin — a woman sweeps her whole house to find the one lost coin; calls friends to rejoice', tags: ['parable'], references: [{label:'Luke 15:8',book:'Luke',bookAbbr:'Luke',chapter:15,ranges:[[8,10]],isPrimary:true}], quote: 'Either what woman having ten pieces of silver, if she lose one piece, doth not light a candle, and sweep the house, and seek diligently till she find it?' },
+        { id:'5.2.3', text: 'Prodigal son — younger son squanders inheritance, returns in repentance and is met by the running father', tags: ['parable'], references: [{label:'Luke 15:11',book:'Luke',bookAbbr:'Luke',chapter:15,ranges:[[11,24]],isPrimary:true}], quote: 'And he arose, and came to his father. But when he was yet a great way off, his father saw him, and had compassion, and ran, and fell on his neck, and kissed him.' },
+      ]},
+      { title: 'The Invitation to Come', teachings: [
+        { id:'5.3.1', text: 'Come to me, all who are weary and burdened, and I will give you rest', tags: ['promise'], references: [{label:'Matt 11:28',book:'Matthew',bookAbbr:'Matt',chapter:11,ranges:[[28,30]],isPrimary:true}], quote: 'Come unto me, all ye that labour and are heavy laden, and I will give you rest.' },
+        { id:'5.3.2', text: 'If anyone is thirsty, let him come to me and drink — rivers of living water will flow', tags: ['promise'], references: [{label:'John 7:37',book:'John',bookAbbr:'John',chapter:7,ranges:[[37,38]],isPrimary:true}], quote: 'If any man thirst, let him come unto me, and drink.' },
+        { id:'5.3.3', text: 'Behold, I stand at the door and knock — if anyone opens I will come in and eat with him', tags: ['promise'], references: [{label:'Rev 3:20',book:'Revelation',bookAbbr:'Rev',chapter:3,ranges:[[20,20]],isPrimary:true}], quote: 'Behold, I stand at the door, and knock: if any man hear my voice, and open the door, I will come in to him, and will sup with him, and he with me.' },
+      ]},
+    ]
+  },
+  {
+    id: 6, num: '06', name: 'Salvation and Eternal Life', books: ['Matt','Luke','John'],
+    sections: [
+      { title: 'The Gift of Life', teachings: [
+        { id:'6.1.1', text: 'For God so loved the world that he gave his only Son — that whoever believes should not perish but have eternal life', tags: ['promise'], references: [{label:'John 3:16',book:'John',bookAbbr:'John',chapter:3,ranges:[[16,16]],isPrimary:true}], quote: 'For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.' },
+        { id:'6.1.2', text: 'I am the resurrection and the life — whoever believes in me will live, even if he dies', tags: ['promise'], references: [{label:'John 11:25',book:'John',bookAbbr:'John',chapter:11,ranges:[[25,26]],isPrimary:true}], quote: 'Jesus said unto her, I am the resurrection, and the life: he that believeth in me, though he were dead, yet shall he live.' },
+      ]},
+      { title: 'Entering the Kingdom', teachings: [
+        { id:'6.2.1', text: 'Truly, unless one is born again he cannot see the kingdom of God', tags: [], references: [{label:'John 3:3',book:'John',bookAbbr:'John',chapter:3,ranges:[[3,5]],isPrimary:true}], quote: 'Verily, verily, I say unto thee, Except a man be born again, he cannot see the kingdom of God.' },
+        { id:'6.2.2', text: 'What profit is it if a man gains the whole world but forfeits his soul?', tags: [], references: [{label:'Matt 16:26',book:'Matthew',bookAbbr:'Matt',chapter:16,ranges:[[26,26]],isPrimary:true},{label:'Mark 8:36',book:'Mark',bookAbbr:'Mark',chapter:8,ranges:[[36,36]],isPrimary:false}], quote: 'For what is a man profited, if he shall gain the whole world, and lose his own soul?' },
+        { id:'6.2.3', text: 'Enter through the narrow gate — the road leading to life is narrow, and few find it', tags: [], references: [{label:'Matt 7:13',book:'Matthew',bookAbbr:'Matt',chapter:7,ranges:[[13,14]],isPrimary:true},{label:'Luke 13:24',book:'Luke',bookAbbr:'Luke',chapter:13,ranges:[[24,24]],isPrimary:false}], quote: 'Enter ye in at the strait gate: for wide is the gate, and broad is the way, that leadeth to destruction, and many there be which go in thereat.' },
+      ]},
+    ]
+  },
+  {
+    id: 7, num: '07', name: 'Faith and Trust', books: ['Matt','Mark','Luke','John'],
+    sections: [
+      { title: 'The Power of Faith', teachings: [
+        { id:'7.1.1', text: 'If you have faith as small as a mustard seed you can say to this mountain: move, and it will move', tags: [], references: [{label:'Matt 17:20',book:'Matthew',bookAbbr:'Matt',chapter:17,ranges:[[20,20]],isPrimary:true},{label:'Luke 17:6',book:'Luke',bookAbbr:'Luke',chapter:17,ranges:[[6,6]],isPrimary:false}], quote: 'If ye have faith as a grain of mustard seed, ye shall say unto this mountain, Remove hence to yonder place; and it shall remove; and nothing shall be impossible unto you.' },
+        { id:'7.1.2', text: 'Everything is possible for one who believes', tags: ['promise'], references: [{label:'Mark 9:23',book:'Mark',bookAbbr:'Mark',chapter:9,ranges:[[23,23]],isPrimary:true}], quote: 'If thou canst believe, all things are possible to him that believeth.' },
+        { id:'7.1.3', text: 'Ask and it will be given to you; seek and you will find; knock and the door will be opened', tags: ['promise'], references: [{label:'Matt 7:7',book:'Matthew',bookAbbr:'Matt',chapter:7,ranges:[[7,8]],isPrimary:true},{label:'Luke 11:9',book:'Luke',bookAbbr:'Luke',chapter:11,ranges:[[9,10]],isPrimary:false}], quote: 'Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you.' },
+      ]},
+      { title: 'Trust, Not Anxiety', teachings: [
+        { id:'7.2.1', text: 'Do not worry about your life — look at the birds of the air, your heavenly Father feeds them', tags: [], references: [{label:'Matt 6:25',book:'Matthew',bookAbbr:'Matt',chapter:6,ranges:[[25,26]],isPrimary:true},{label:'Luke 12:22',book:'Luke',bookAbbr:'Luke',chapter:12,ranges:[[22,24]],isPrimary:false}], quote: 'Therefore I say unto you, Take no thought for your life, what ye shall eat, or what ye shall drink; nor yet for your body, what ye shall put on.' },
+        { id:'7.2.2', text: 'Do not let your heart be troubled — trust in God, trust also in me', tags: ['promise'], references: [{label:'John 14:1',book:'John',bookAbbr:'John',chapter:14,ranges:[[1,3]],isPrimary:true}], quote: 'Let not your heart be troubled: ye believe in God, believe also in me.' },
+      ]},
+    ]
+  },
+  {
+    id: 8, num: '08', name: 'Love', books: ['Matt','Mark','Luke','John'],
+    sections: [
+      { title: 'The Greatest Commandment', teachings: [
+        { id:'8.1.1', text: 'Love the Lord your God with all your heart, soul, mind, and strength — this is the first and greatest commandment', tags: [], references: [{label:'Matt 22:37',book:'Matthew',bookAbbr:'Matt',chapter:22,ranges:[[37,38]],isPrimary:true},{label:'Mark 12:30',book:'Mark',bookAbbr:'Mark',chapter:12,ranges:[[30,30]],isPrimary:false}], quote: 'Thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind.' },
+        { id:'8.1.2', text: 'Love your neighbor as yourself — all the Law and Prophets hang on these two commandments', tags: [], references: [{label:'Matt 22:39',book:'Matthew',bookAbbr:'Matt',chapter:22,ranges:[[39,40]],isPrimary:true},{label:'Mark 12:31',book:'Mark',bookAbbr:'Mark',chapter:12,ranges:[[31,31]],isPrimary:false}], quote: 'And the second is like unto it, Thou shalt love thy neighbour as thyself.' },
+        { id:'8.1.3', text: 'A new command I give you: love one another as I have loved you', tags: [], references: [{label:'John 13:34',book:'John',bookAbbr:'John',chapter:13,ranges:[[34,35]],isPrimary:true}], quote: 'A new commandment I give unto you, That ye love one another; as I have loved you, that ye also love one another.' },
+      ]},
+      { title: 'Love for Enemies', teachings: [
+        { id:'8.2.1', text: 'Love your enemies and pray for those who persecute you — so that you may be sons of your Father', tags: [], references: [{label:'Matt 5:44',book:'Matthew',bookAbbr:'Matt',chapter:5,ranges:[[44,45]],isPrimary:true},{label:'Luke 6:27',book:'Luke',bookAbbr:'Luke',chapter:6,ranges:[[27,28]],isPrimary:false}], quote: 'But I say unto you, Love your enemies, bless them that curse you, do good to them that hate you.' },
+      ]},
+    ]
+  },
+  {
+    id: 9, num: '09', name: 'Prayer and Communion', books: ['Matt','Luke','John'],
+    sections: [
+      { title: 'How to Pray', teachings: [
+        { id:'9.1.1', text: 'When you pray, go into your room, close the door and pray to your Father who is unseen', tags: [], references: [{label:'Matt 6:6',book:'Matthew',bookAbbr:'Matt',chapter:6,ranges:[[6,6]],isPrimary:true}], quote: 'But thou, when thou prayest, enter into thy closet, and when thou hast shut thy door, pray to thy Father which is in secret.' },
+        { id:'9.1.2', text: 'The Lord\'s Prayer — Our Father in heaven, hallowed be your name, your kingdom come…', tags: [], references: [{label:'Matt 6:9',book:'Matthew',bookAbbr:'Matt',chapter:6,ranges:[[9,13]],isPrimary:true},{label:'Luke 11:2',book:'Luke',bookAbbr:'Luke',chapter:11,ranges:[[2,4]],isPrimary:false}], quote: 'After this manner therefore pray ye: Our Father which art in heaven, Hallowed be thy name. Thy kingdom come, Thy will be done in earth, as it is in heaven.' },
+      ]},
+      { title: 'Persistence in Prayer', teachings: [
+        { id:'9.2.1', text: 'Parable of the persistent widow — she kept coming to the judge until he granted her request', tags: ['parable'], references: [{label:'Luke 18:2',book:'Luke',bookAbbr:'Luke',chapter:18,ranges:[[2,8]],isPrimary:true}], quote: 'There was in a city a judge, which feared not God, neither regarded man: And there was a widow in that city; and she came unto him, saying, Avenge me of mine adversary.' },
+        { id:'9.2.2', text: 'If two of you on earth agree about anything you ask for, it will be done by the Father', tags: ['promise'], references: [{label:'Matt 18:19',book:'Matthew',bookAbbr:'Matt',chapter:18,ranges:[[19,20]],isPrimary:true}], quote: 'Again I say unto you, That if two of you shall agree on earth as touching any thing that they shall ask, it shall be done for them of my Father which is in heaven.' },
+      ]},
+    ]
+  },
+  {
+    id: 10, num: '10', name: 'Humility and Servanthood', books: ['Matt','Mark','Luke'],
+    sections: [
+      { title: 'The Way of Humility', teachings: [
+        { id:'10.1.1', text: 'Blessed are the meek, for they shall inherit the earth', tags: ['promise'], references: [{label:'Matt 5:5',book:'Matthew',bookAbbr:'Matt',chapter:5,ranges:[[5,5]],isPrimary:true}], quote: 'Blessed are the meek: for they shall inherit the earth.' },
+        { id:'10.1.2', text: 'Whoever exalts himself will be humbled, and whoever humbles himself will be exalted', tags: [], references: [{label:'Matt 23:12',book:'Matthew',bookAbbr:'Matt',chapter:23,ranges:[[12,12]],isPrimary:true},{label:'Luke 14:11',book:'Luke',bookAbbr:'Luke',chapter:14,ranges:[[11,11]],isPrimary:false}], quote: 'And whosoever shall exalt himself shall be abased; and he that shall humble himself shall be exalted.' },
+        { id:'10.1.3', text: 'The greatest among you shall be your servant', tags: [], references: [{label:'Matt 23:11',book:'Matthew',bookAbbr:'Matt',chapter:23,ranges:[[11,11]],isPrimary:true},{label:'Mark 10:43',book:'Mark',bookAbbr:'Mark',chapter:10,ranges:[[43,44]],isPrimary:false}], quote: 'But he that is greatest among you shall be your servant.' },
+      ]},
+    ]
+  },
+  {
+    id: 11, num: '11', name: 'Forgiveness and Reconciliation', books: ['Matt','Mark','Luke'],
+    sections: [
+      { title: 'Forgiving Others', teachings: [
+        { id:'11.1.1', text: 'If you forgive others their trespasses, your heavenly Father will also forgive you', tags: ['promise'], references: [{label:'Matt 6:14',book:'Matthew',bookAbbr:'Matt',chapter:6,ranges:[[14,15]],isPrimary:true},{label:'Mark 11:25',book:'Mark',bookAbbr:'Mark',chapter:11,ranges:[[25,25]],isPrimary:false}], quote: 'For if ye forgive men their trespasses, your heavenly Father will also forgive you.' },
+        { id:'11.1.2', text: 'If your brother sins seven times in a day and returns saying "I repent," you shall forgive him', tags: [], references: [{label:'Luke 17:4',book:'Luke',bookAbbr:'Luke',chapter:17,ranges:[[4,4]],isPrimary:true},{label:'Matt 18:22',book:'Matthew',bookAbbr:'Matt',chapter:18,ranges:[[22,22]],isPrimary:false}], quote: 'And if he trespass against thee seven times in a day, and seven times in a day turn again to thee, saying, I repent; thou shalt forgive him.' },
+        { id:'11.1.3', text: 'Parable of the unmerciful servant — forgiven much yet refusing to forgive', tags: ['parable'], references: [{label:'Matt 18:23',book:'Matthew',bookAbbr:'Matt',chapter:18,ranges:[[23,35]],isPrimary:true}], quote: 'Therefore is the kingdom of heaven likened unto a certain king, which would take account of his servants.' },
+      ]},
+    ]
+  },
+  {
+    id: 12, num: '12', name: 'Righteousness and Ethics', books: ['Matt','Luke'],
+    sections: [
+      { title: 'Kingdom Ethics', teachings: [
+        { id:'12.1.1', text: 'Blessed are those who hunger and thirst for righteousness, for they will be filled', tags: ['promise'], references: [{label:'Matt 5:6',book:'Matthew',bookAbbr:'Matt',chapter:5,ranges:[[6,6]],isPrimary:true}], quote: 'Blessed are they which do hunger and thirst after righteousness: for they shall be filled.' },
+        { id:'12.1.2', text: 'Do to others as you would have them do to you — this is the Law and the Prophets', tags: [], references: [{label:'Matt 7:12',book:'Matthew',bookAbbr:'Matt',chapter:7,ranges:[[12,12]],isPrimary:true},{label:'Luke 6:31',book:'Luke',bookAbbr:'Luke',chapter:6,ranges:[[31,31]],isPrimary:false}], quote: 'Therefore all things whatsoever ye would that men should do to you, do ye even so to them: for this is the law and the prophets.' },
+      ]},
+      { title: 'Inner Purity', teachings: [
+        { id:'12.2.1', text: 'Blessed are the pure in heart, for they shall see God', tags: ['promise'], references: [{label:'Matt 5:8',book:'Matthew',bookAbbr:'Matt',chapter:5,ranges:[[8,8]],isPrimary:true}], quote: 'Blessed are the pure in heart: for they shall see God.' },
+        { id:'12.2.2', text: 'What comes out of a man is what makes him unclean — evil thoughts come from within', tags: [], references: [{label:'Mark 7:20',book:'Mark',bookAbbr:'Mark',chapter:7,ranges:[[20,23]],isPrimary:true},{label:'Matt 15:19',book:'Matthew',bookAbbr:'Matt',chapter:15,ranges:[[19,20]],isPrimary:false}], quote: 'That which cometh out of the man, that defileth the man. For from within, out of the heart of men, proceed evil thoughts.' },
+      ]},
+    ]
+  },
+];
+
+/* simulated verse data */
+const VERSE_DATA = {
+  'John 3:16': { full:'John 3:16', context:'Jesus speaking with Nicodemus at night', verses:[{v:14,t:'Just as Moses lifted up the snake in the wilderness, so the Son of Man must be lifted up,',hi:false},{v:15,t:'that everyone who believes may have eternal life in him.',hi:false},{v:16,t:'For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.',hi:true},{v:17,t:'For God did not send his Son into the world to condemn the world, but to save the world through him.',hi:false}], crossRefs:['John 3:17','John 10:28'] },
+  'Matt 4:17': { full:'Matthew 4:17', context:'The beginning of Jesus\' ministry in Galilee', verses:[{v:15,t:'Land of Zebulun and land of Naphtali, the Way of the Sea, beyond the Jordan, Galilee of the Gentiles—',hi:false},{v:16,t:'the people living in darkness have seen a great light; on those living in the land of the shadow of death a light has dawned.',hi:false},{v:17,t:'From that time on Jesus began to preach, "Repent, for the kingdom of heaven has come near."',hi:true},{v:18,t:'As Jesus was walking beside the Sea of Galilee, he saw two brothers, Simon called Peter and his brother Andrew.',hi:false}], crossRefs:['Mark 1:15'] },
+  'Mark 1:15': { full:'Mark 1:15', context:'The beginning of the good news about Jesus', verses:[{v:14,t:'After John was put in prison, Jesus went into Galilee, proclaiming the good news of God.',hi:false},{v:15,t:'"The time has come," he said. "The kingdom of God has come near. Repent and believe the good news!"',hi:true},{v:16,t:'As Jesus walked beside the Sea of Galilee, he saw Simon and his brother Andrew casting a net.',hi:false}], crossRefs:['Matt 4:17'] },
+  'John 14:6': { full:'John 14:6', context:'The farewell discourse — answering Thomas\'s question', verses:[{v:5,t:'Thomas said to him, "Lord, we don\'t know where you are going, so how can we know the way?"',hi:false},{v:6,t:'Jesus answered, "I am the way and the truth and the life. No one comes to the Father except through me."',hi:true},{v:7,t:'"If you really know me, you will know my Father as well. From now on, you do know him and have seen him."',hi:false}], crossRefs:['John 10:9','John 11:25'] },
+  'Matt 11:28': { full:'Matthew 11:28–30', context:'Jesus\' invitation to rest', verses:[{v:27,t:'"All things have been committed to me by my Father. No one knows the Son except the Father, and no one knows the Father except the Son."',hi:false},{v:28,t:'"Come to me, all you who are weary and burdened, and I will give you rest."',hi:true},{v:29,t:'"Take my yoke upon you and learn from me, for I am gentle and humble in heart, and you will find rest for your souls."',hi:true},{v:30,t:'"For my yoke is easy and my burden is light."',hi:true}], crossRefs:['Matt 11:29','Rev 22:17'] },
+  'Rev 3:20': { full:'Revelation 3:20', context:'Letter to the church in Laodicea', verses:[{v:19,t:'"Those whom I love I rebuke and discipline. So be earnest and repent."',hi:false},{v:20,t:'"Here I am! I stand at the door and knock. If anyone hears my voice and opens the door, I will come in and eat with that person, and they with me."',hi:true},{v:21,t:'"To the one who is victorious, I will give the right to sit with me on my throne."',hi:false}], crossRefs:['John 14:23','Matt 11:28'] },
+  'Luke 15:7': { full:'Luke 15:7', context:'The parable of the lost sheep', verses:[{v:5,t:'And when he finds it, he joyfully puts it on his shoulders',hi:false},{v:6,t:'and goes home. Then he calls his friends and neighbors together and says, "Rejoice with me; I have found my lost sheep."',hi:false},{v:7,t:'"I tell you that in the same way there will be more rejoicing in heaven over one sinner who repents than over ninety-nine righteous persons who do not need to repent."',hi:true}], crossRefs:['Luke 15:10','Matt 18:13'] },
+};
+
+/* ═══════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════ */
+let currentCatId = null;
+let currentTabIndex = 0;
+let currentTeaching = null;
+let panelPinned = false;
+let activeBookFilter = null;
+
+/* ═══════════════════════════════════════════
+   RENDER HOME
+═══════════════════════════════════════════ */
+function renderHome() {
+  const grid = document.getElementById('catGrid');
+  grid.innerHTML = '';
+  CATEGORIES.forEach(cat => {
+    const total = cat.sections.reduce((s,sec) => s + sec.teachings.length, 0);
+    const pct = Math.min(100, Math.round(total / 35 * 100));
+    const books = ['Matt','Mark','Luke','John','Acts','Rev'];
+    const dots = books.map(b => `<div class="cat-book-dot${cat.books.includes(b)?' on':''}"></div>`).join('');
+    const card = document.createElement('div');
+    card.className = 'cat-card';
+    card.innerHTML = `<div class="cat-name">${cat.name}</div><div class="cat-bar-wrap"><div class="cat-bar-fill" style="width:${pct}%"></div></div><div class="cat-meta">${cat.sections.length} sections · ${total} teachings</div>`;
+    card.onclick = () => openCategory(cat.id);
+    grid.appendChild(card);
+  });
+  document.getElementById('catCount').textContent = CATEGORIES.length + ' categories';
+}
+
+/* ═══════════════════════════════════════════
+   SEARCH
+═══════════════════════════════════════════ */
+function handleSearch(q) {
+  const onHome = document.getElementById('screen-home').classList.contains('active');
+  if (onHome) filterCategories(q); else filterWithinCategory(q);
+}
+
+function highlight(text, q) {
+  if (!q) return text;
+  return text.replace(new RegExp(`(${q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi'), '<mark>$1</mark>');
+}
+
+function filterCategories(q) {
+  const query = q.trim();
+  const grid = document.getElementById('catGrid');
+  const resultsEl = document.getElementById('searchResults');
+  if (!query) { grid.style.display=''; resultsEl.style.display='none'; document.getElementById('catCount').textContent=CATEGORIES.length+' categories'; return; }
+  const ql = query.toLowerCase();
+  const catHits=[], subHits=[], teachingHits=[];
+  CATEGORIES.forEach(cat => {
+    const cm = cat.name.toLowerCase().includes(ql);
+    if (cm) catHits.push({cat});
+    cat.sections.forEach((sec,si) => {
+      if (sec.title.toLowerCase().includes(ql) && !cm) subHits.push({cat,sec,si});
+      sec.teachings.forEach(t => { if (t.text.toLowerCase().includes(ql)) teachingHits.push({cat,sec,si,teaching:t}); });
+    });
+  });
+  grid.style.display='none'; resultsEl.style.display='flex'; resultsEl.style.flexDirection='column'; resultsEl.innerHTML='';
+  const total = catHits.length+subHits.length+teachingHits.length;
+  document.getElementById('catCount').textContent = total+' result'+(total!==1?'s':'');
+  if (!total) { resultsEl.innerHTML=`<div class="empty-state"><div class="empty-state-icon">✦</div><p>No results for "<strong>${query}</strong>"</p></div>`; return; }
+  if (catHits.length) { appendLabel(resultsEl,'Categories'); catHits.forEach(({cat}) => resultsEl.appendChild(makeRow('cat','Category',highlight(cat.name,query),cat.sections.length+' sections',()=>openCategory(cat.id)))); }
+  if (subHits.length) { appendLabel(resultsEl,'Subcategories'); subHits.forEach(({cat,sec,si}) => resultsEl.appendChild(makeRow('sub','Subcategory',highlight(sec.title,query),cat.name,()=>openCategory(cat.id,si)))); }
+  if (teachingHits.length) { appendLabel(resultsEl,'Teachings'); teachingHits.forEach(({cat,sec,si,teaching}) => resultsEl.appendChild(makeRow('teaching','Teaching',highlight(teaching.text,query),cat.name+' › '+sec.title,()=>openCategory(cat.id,si)))); }
+}
+
+function filterWithinCategory(q) {
+  const query = q.trim();
+  const cat = CATEGORIES.find(c => c.id === currentCatId);
+  if (!cat) return;
+  const list = document.getElementById('teachingsList');
+  const resultsEl = document.getElementById('catSearchResults');
+  if (!query) {
+    list.style.display=''; resultsEl.style.display='none';
+    document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',i===currentTabIndex));
+    renderTeachings(cat,currentTabIndex); return;
+  }
+  const ql = query.toLowerCase();
+  const subHits=[], teachingHits=[];
+  cat.sections.forEach((sec,si) => {
+    if (sec.title.toLowerCase().includes(ql)) subHits.push({sec,si});
+    sec.teachings.forEach(t => { if (t.text.toLowerCase().includes(ql)) teachingHits.push({sec,si,teaching:t}); });
+  });
+  list.style.display='none'; resultsEl.style.display='flex'; resultsEl.style.flexDirection='column'; resultsEl.style.gap='6px'; resultsEl.style.padding='14px'; resultsEl.innerHTML='';
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  const total = subHits.length+teachingHits.length;
+  if (!total) { resultsEl.innerHTML=`<div class="empty-state"><div class="empty-state-icon">✦</div><p>No results in this category for "<strong>${query}</strong>"</p></div>`; return; }
+  if (subHits.length) { appendLabel(resultsEl,'Subcategories'); subHits.forEach(({sec,si})=>resultsEl.appendChild(makeRow('sub','Subcategory',highlight(sec.title,query),sec.teachings.length+' teachings',()=>{clearCatSearch();switchTab(si);}))); }
+  if (teachingHits.length) { appendLabel(resultsEl,'Teachings'); teachingHits.forEach(({sec,si,teaching})=>resultsEl.appendChild(makeRow('teaching','Teaching',highlight(teaching.text,query),sec.title,()=>{clearCatSearch();switchTab(si);}))); }
+}
+
+function clearCatSearch() {
+  document.getElementById('searchInput').value='';
+  const cat = CATEGORIES.find(c=>c.id===currentCatId);
+  document.getElementById('teachingsList').style.display='';
+  document.getElementById('catSearchResults').style.display='none';
+  document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',i===currentTabIndex));
+  if (cat) renderTeachings(cat,currentTabIndex);
+}
+
+function appendLabel(parent,text) {
+  const l=document.createElement('div'); l.className='search-section-label'; l.textContent=text; parent.appendChild(l);
+}
+
+function makeRow(typeClass,typeLabel,title,crumb,onclick) {
+  const row=document.createElement('div'); row.className='search-result-row';
+  row.innerHTML=`<div class="search-result-type ${typeClass}">${typeLabel}</div><div class="search-result-title">${title}</div>${crumb?`<div class="search-result-crumb">${crumb}</div>`:''}`;
+  row.onclick=onclick; return row;
+}
+
+/* ═══════════════════════════════════════════
+   CATEGORY BROWSER
+═══════════════════════════════════════════ */
+function openCategory(id, tabIndex=0) {
+  currentCatId=id; currentTabIndex=tabIndex;
+  const cat=CATEGORIES.find(c=>c.id===id); if (!cat) return;
+  document.getElementById('heroNum').textContent='';
+  document.getElementById('heroTitle').textContent=cat.name;
+  // Render tappable book filter chips
+  const bfRow = document.getElementById('bookFilterRow');
+  bfRow.innerHTML = '';
+  activeBookFilter = null;
+  cat.books.forEach(book => {
+    const chip = document.createElement('div');
+    chip.className = 'book-filter-chip';
+    chip.textContent = book;
+    chip.onclick = () => toggleBookFilter(book, chip, cat);
+    bfRow.appendChild(chip);
+  });
+
+  // Desktop tabs
+  const tabs=document.getElementById('tabsScroll'); tabs.innerHTML='';
+  cat.sections.forEach((sec,i)=>{
+    const btn=document.createElement('div'); btn.className='tab-btn'+(i===tabIndex?' active':'');
+    btn.textContent=sec.title; btn.onclick=()=>switchTab(i); tabs.appendChild(btn);
+  });
+
+  // Mobile dropdown
+  const sel=document.getElementById('subcatSelect'); sel.innerHTML='';
+  cat.sections.forEach((sec,i)=>{
+    const opt=document.createElement('option'); opt.value=i; opt.textContent=sec.title;
+    if(i===tabIndex) opt.selected=true;
+    sel.appendChild(opt);
+  });
+
+  renderTeachings(cat,tabIndex); updatePrevNext(id); showScreen('category',{catId:id,tabIndex});
+  document.getElementById('navTitle').textContent=cat.name;
+  document.getElementById('navLogo').style.display='none';
+  document.getElementById('navTitle').style.display='block';
+  document.getElementById('navBack').classList.add('visible');
+  document.getElementById('navToCat').style.display='none';
+  const si=document.getElementById('searchInput');
+  si.value=''; si.placeholder=`Search in ${cat.name}…`;
+  document.getElementById('catSearchResults').style.display='none';
+  document.getElementById('teachingsList').style.display='';
+  updateHistoryNav();
+}
+
+function switchTab(idx) {
+  currentTabIndex=idx;
+  const cat=CATEGORIES.find(c=>c.id===currentCatId);
+  document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',i===idx));
+  const sel=document.getElementById('subcatSelect');
+  if(sel) sel.value=idx;
+  renderTeachings(cat,idx);
+  refreshCatPnBar();
+  // clear search when manually switching tab
+  const si=document.getElementById('searchInput');
+  if(si && si.value) { si.value=''; clearCatSearch(); }
+}
+
+function toggleBookFilter(book, chipEl, cat) {
+  const wasActive = chipEl.classList.contains('active');
+  document.querySelectorAll('.book-filter-chip').forEach(c => c.classList.remove('active'));
+  if (wasActive) {
+    activeBookFilter = null;
+  } else {
+    activeBookFilter = book;
+    chipEl.classList.add('active');
+  }
+  renderTeachings(cat, currentTabIndex);
+}
+
+function renderTeachings(cat, tabIndex) {
+  const list=document.getElementById('teachingsList'); list.innerHTML='';
+  const sec=cat.sections[tabIndex]; if (!sec) return;
+  sec.teachings.forEach(t=>{
+    const card=document.createElement('div'); card.className='teaching-card';
+    const tags=(t.tags||[]).map(tag=>`<span class="tag tag-${tag}">${tag.charAt(0).toUpperCase()+tag.slice(1)}</span>`).join('');
+    const chips=t.references.map(r=>`<span class="scripture-chip" onclick="openBible('${r.label}',event)">${r.label}</span>`).join('');
+    card.innerHTML=`<div class="teaching-card-body"><div class="teaching-text">${t.text}</div><div class="chips-row">${tags}${chips}</div></div><div class="teaching-card-arrow">›</div>`;
+    card.onclick=(e)=>{ if(e.target.classList.contains('scripture-chip')) return; openTeaching(t); };
+    list.appendChild(card);
+  });
+}
+
+function updatePrevNext(id) {
+  refreshCatPnBar();
+}
+
+/* catPnNav: within a tab navigate teachings; at boundary switch tab or category */
+function catPnNav(dir) {
+  const cat = CATEGORIES.find(c => c.id === currentCatId);
+  if (!cat) return;
+  const sec = cat.sections[currentTabIndex];
+  const teachings = activeBookFilter
+    ? sec.teachings.filter(t => t.references.some(r => r.bookAbbr === activeBookFilter))
+    : sec.teachings;
+
+  // Try to navigate within teachings in current tab
+  // We use a "current position" tracked by last opened teaching or first/last
+  if (currentTeaching && sec.teachings.includes(currentTeaching)) {
+    const tIdx = teachings.indexOf(currentTeaching);
+    const nextT = teachings[tIdx + dir];
+    if (nextT) { openTeaching(nextT); return; }
+  }
+
+  // At boundary: try next/prev tab
+  const nextTabIdx = currentTabIndex + dir;
+  if (nextTabIdx >= 0 && nextTabIdx < cat.sections.length) {
+    switchTab(nextTabIdx);
+    return;
+  }
+
+  // At category boundary: switch category
+  const catIdx = CATEGORIES.findIndex(c => c.id === currentCatId);
+  const nextCat = CATEGORIES[catIdx + dir];
+  if (nextCat) openCategory(nextCat.id, dir > 0 ? 0 : nextCat.sections.length - 1);
+}
+
+function refreshCatPnBar() {
+  const cat = CATEGORIES.find(c => c.id === currentCatId);
+  if (!cat) return;
+  const catIdx = CATEGORIES.findIndex(c => c.id === currentCatId);
+  const sec = cat.sections[currentTabIndex];
+  const teachings = sec ? (activeBookFilter
+    ? sec.teachings.filter(t => t.references.some(r => r.bookAbbr === activeBookFilter))
+    : sec.teachings) : [];
+
+  let prevLabel = '', nextLabel = '';
+  let hasPrev = false, hasNext = false;
+
+  if (currentTeaching && sec && sec.teachings.includes(currentTeaching)) {
+    const tIdx = teachings.indexOf(currentTeaching);
+    if (tIdx > 0) { hasPrev = true; prevLabel = teachings[tIdx-1].text.substring(0,32)+'…'; }
+    else if (currentTabIndex > 0) { hasPrev = true; prevLabel = cat.sections[currentTabIndex-1].title; }
+    else if (catIdx > 0) { hasPrev = true; prevLabel = CATEGORIES[catIdx-1].name; }
+
+    if (tIdx < teachings.length-1) { hasNext = true; nextLabel = teachings[tIdx+1].text.substring(0,32)+'…'; }
+    else if (currentTabIndex < cat.sections.length-1) { hasNext = true; nextLabel = cat.sections[currentTabIndex+1].title; }
+    else if (catIdx < CATEGORIES.length-1) { hasNext = true; nextLabel = CATEGORIES[catIdx+1].name; }
+  } else {
+    if (currentTabIndex > 0) { hasPrev = true; prevLabel = cat.sections[currentTabIndex-1].title; }
+    else if (catIdx > 0) { hasPrev = true; prevLabel = CATEGORIES[catIdx-1].name; }
+    if (currentTabIndex < cat.sections.length-1) { hasNext = true; nextLabel = cat.sections[currentTabIndex+1].title; }
+    else if (catIdx < CATEGORIES.length-1) { hasNext = true; nextLabel = CATEGORIES[catIdx+1].name; }
+  }
+
+  const prev = document.getElementById('pnPrev');
+  const next = document.getElementById('pnNext');
+  const prevLbl = document.getElementById('pnPrevLabel');
+  const nextLbl = document.getElementById('pnNextLabel');
+  if (prev) { prev.style.opacity = hasPrev ? '1' : '0.3'; prev.style.pointerEvents = hasPrev ? '' : 'none'; }
+  if (next) { next.style.opacity = hasNext ? '1' : '0.3'; next.style.pointerEvents = hasNext ? '' : 'none'; }
+  if (prevLbl) prevLbl.textContent = prevLabel || 'Previous';
+  if (nextLbl) nextLbl.textContent = nextLabel || 'Next';
+}
+
+function navigateCat(dir) {
+  const idx=CATEGORIES.findIndex(c=>c.id===currentCatId);
+  const next=CATEGORIES[idx+dir]; if(next) openCategory(next.id,0);
+}
+
+/* ═══════════════════════════════════════════
+   TEACHING DETAIL
+═══════════════════════════════════════════ */
+function openTeaching(t) {
+  currentTeaching = t;
+  const cat = CATEGORIES.find(c => c.sections.some(s => s.teachings.includes(t)));
+  const sec = cat?.sections.find(s => s.teachings.includes(t));
+
+  const container = document.getElementById('teachingDetailContent');
+  container.innerHTML = '';
+
+  // Hero
+  const hero = document.createElement('div');
+  hero.className = 'teaching-detail-hero';
+  hero.innerHTML = `
+    <div class="teaching-detail-cat">${cat ? cat.name : ''} ${sec ? '› '+sec.title : ''}</div>
+    <div class="teaching-detail-text">${t.text}</div>
+  `;
+  container.appendChild(hero);
+
+  const body = document.createElement('div');
+  body.className = 'teaching-detail-body';
+
+  // Quote
+  if (t.quote) {
+    const sec1 = document.createElement('div'); sec1.className = 'detail-section';
+    sec1.innerHTML = `<div class="detail-section-head">Quote (KJV)</div><div class="detail-section-body"><blockquote class="quote-block">${t.quote}</blockquote></div>`;
+    body.appendChild(sec1);
+  }
+
+  // Tags
+  if (t.tags && t.tags.length) {
+    const sec2 = document.createElement('div'); sec2.className = 'detail-section';
+    const tagHtml = t.tags.map(tag=>`<span class="tag tag-${tag}" style="font-size:13px;padding:5px 12px;">${tag.charAt(0).toUpperCase()+tag.slice(1)}</span>`).join(' ');
+    sec2.innerHTML = `<div class="detail-section-head">Classification</div><div class="detail-section-body" style="display:flex;flex-wrap:wrap;gap:6px;">${tagHtml}</div>`;
+    body.appendChild(sec2);
+  }
+
+  // References
+  if (t.references && t.references.length) {
+    const sec3 = document.createElement('div'); sec3.className = 'detail-section';
+    const refsHtml = t.references.map(r => {
+      const rangeStr = r.ranges.map(([a,b])=>a===b?`v.${a}`:`vv.${a}–${b}`).join(', ');
+      return `<div class="ref-row" onclick="openBible('${r.label}',event)">
+        <div class="ref-primary-dot ${r.isPrimary?'primary':'secondary'}"></div>
+        <div class="ref-info">
+          <div class="ref-label">${r.label}</div>
+          <div class="ref-book">${r.book} ${r.chapter} · ${rangeStr}</div>
+        </div>
+        <div class="ref-open-btn">Open ›</div>
+      </div>`;
+    }).join('');
+    sec3.innerHTML = `<div class="detail-section-head">Scripture References</div><div class="detail-section-body" style="padding:0 14px;">${refsHtml}</div>`;
+    body.appendChild(sec3);
+  }
+
+  // Placeholder verse snippets section
+  const sec4 = document.createElement('div'); sec4.className = 'detail-section';
+  sec4.innerHTML = `<div class="detail-section-head">Verse Snippets</div><div class="detail-section-body">
+    <div style="font-size:13px;color:var(--text-muted);line-height:1.6;">Connect a Bible API to display verse text for each reference inline here. References with simulated data will show a preview below.</div>
+    ${t.references.filter(r=>getVerseData(r.label)).map(r=>{
+      const d=getVerseData(r.label);
+      const hv=d.verses.find(v=>v.hi);
+      return hv?`<div style="margin-top:12px;"><div style="font-size:11px;font-weight:700;color:var(--gold);margin-bottom:4px;">${r.label}</div><div style="font-size:14px;line-height:1.65;color:var(--text-primary);padding:10px;background:var(--gold-light);border-radius:8px;border-left:3px solid var(--gold);">"${hv.t}"</div></div>`:'';
+    }).join('')}
+  </div>`;
+  body.appendChild(sec4);
+
+  container.appendChild(body);
+
+  // Prev/next within section
+  const pnBar = document.createElement('div'); pnBar.className = 'pn-bar';
+  if (sec) {
+    const tIdx = sec.teachings.indexOf(t);
+    const prevT = sec.teachings[tIdx-1];
+    const nextT = sec.teachings[tIdx+1];
+    pnBar.innerHTML = `
+      <div class="pn-btn" style="opacity:${prevT?1:0.3};pointer-events:${prevT?'all':'none'}" onclick="openTeaching(getPrevTeaching())">
+        <span class="pn-arrow">‹</span><div><span class="pn-label">Previous</span><span style="font-size:12px;">${prevT?prevT.text.substring(0,30)+'…':'—'}</span></div>
+      </div>
+      <div class="pn-btn right" style="opacity:${nextT?1:0.3};pointer-events:${nextT?'all':'none'}" onclick="openTeaching(getNextTeaching())">
+        <div style="text-align:right"><span class="pn-label">Next</span><span style="font-size:12px;">${nextT?nextT.text.substring(0,30)+'…':'—'}</span></div><span class="pn-arrow">›</span>
+      </div>`;
+  }
+  container.appendChild(pnBar);
+
+  showScreen('teaching',{teachingId:t.id});
+  const _tCat = CATEGORIES.find(cc=>cc.sections.some(ss=>ss.teachings.includes(t)));
+  const _tSec = _tCat?.sections.find(ss=>ss.teachings.includes(t));
+  const _crumb = _tCat && _tSec ? `${_tCat.name} › ${_tSec.title}` : 'Teaching';
+  document.getElementById('navTitle').textContent = _crumb;
+  document.getElementById('navTitle').title = _crumb;
+  document.getElementById('navLogo').style.display = 'none';
+  document.getElementById('navTitle').style.display = 'block';
+  document.getElementById('navBack').classList.add('visible');
+  document.getElementById('navToCat').style.display = 'block';
+  refreshCatPnBar();
+}
+
+function getPrevTeaching() {
+  if (!currentTeaching) return null;
+  const cat = CATEGORIES.find(c=>c.sections.some(s=>s.teachings.includes(currentTeaching)));
+  const sec = cat?.sections.find(s=>s.teachings.includes(currentTeaching));
+  const idx = sec?.teachings.indexOf(currentTeaching) ?? -1;
+  return idx > 0 ? sec.teachings[idx-1] : null;
+}
+
+function getNextTeaching() {
+  if (!currentTeaching) return null;
+  const cat = CATEGORIES.find(c=>c.sections.some(s=>s.teachings.includes(currentTeaching)));
+  const sec = cat?.sections.find(s=>s.teachings.includes(currentTeaching));
+  const idx = sec?.teachings.indexOf(currentTeaching) ?? -1;
+  return idx >= 0 && idx < sec.teachings.length-1 ? sec.teachings[idx+1] : null;
+}
+
+function getVerseData(ref) {
+  if (VERSE_DATA[ref]) return VERSE_DATA[ref];
+  const key = Object.keys(VERSE_DATA).find(k => ref.startsWith(k));
+  return key ? VERSE_DATA[key] : null;
+}
+
+/* ═══════════════════════════════════════════
+   BIBLE VIEWER — SHARED CONTENT BUILDER
+═══════════════════════════════════════════ */
+function buildBibleContent(ref, container) {
+  const data = getVerseData(ref) || { full:ref, context:'Scripture passage', verses:[{v:'–',t:'Full text of '+ref+' — connect a Bible API for live rendering.',hi:true}], crossRefs:[] };
+  container.innerHTML = '';
+  if (data.context) {
+    const c=document.createElement('div'); c.className='bible-context-lbl'; c.textContent=data.context; container.appendChild(c);
+  }
+  data.verses.forEach(v=>{
+    const row=document.createElement('div'); row.className='verse-row'+(v.hi?' highlighted':'');
+    row.innerHTML=`<span class="verse-num">${v.v}</span><span class="verse-text${v.hi?' hl':''}">${v.t}</span>`;
+    container.appendChild(row);
+  });
+  if (data.crossRefs?.length) {
+    const cr=document.createElement('div'); cr.className='cross-refs';
+    cr.innerHTML=`<div class="cross-ref-title">Parallel passages</div>`+data.crossRefs.map(r=>`<span class="cross-ref-chip" onclick="openBible('${r}')">${r}</span>`).join('');
+    container.appendChild(cr);
+  }
+}
+
+/* ═══════════════════════════════════════════
+   BIBLE PANEL (desktop)
+═══════════════════════════════════════════ */
+function openBiblePanel(ref) {
+  const data = getVerseData(ref) || { full:ref, context:'Scripture passage' };
+  document.getElementById('panelRef').textContent = data.full || ref;
+  document.getElementById('panelContext').textContent = data.context || '';
+  buildBibleContent(ref, document.getElementById('panelBody'));
+  document.getElementById('biblePanel').classList.add('open');
+  if (panelPinned) document.getElementById('mainContent').classList.add('panel-pinned');
+}
+
+let _panelLeaveTimer = null;
+
+function onPanelMouseEnter() {
+  if (_panelLeaveTimer) { clearTimeout(_panelLeaveTimer); _panelLeaveTimer = null; }
+}
+
+function onPanelMouseLeave() {
+  if (panelPinned) return;
+  _panelLeaveTimer = setTimeout(() => {
+    closeBiblePanel();
+    _panelLeaveTimer = null;
+  }, 600);
+}
+
+function closeBiblePanel() {
+  if (panelPinned) { panelPinned=false; document.getElementById('panelPinBtn').classList.remove('pinned'); document.getElementById('biblePanel').classList.remove('pinned'); }
+  document.getElementById('biblePanel').classList.remove('open');
+  document.getElementById('mainContent').classList.remove('panel-pinned');
+}
+
+function togglePin() {
+  panelPinned = !panelPinned;
+  const btn = document.getElementById('panelPinBtn');
+  btn.classList.toggle('pinned', panelPinned);
+  btn.title = panelPinned ? 'Unpin panel' : 'Pin panel';
+  const panel = document.getElementById('biblePanel');
+  panel.classList.toggle('pinned', panelPinned);
+  if (panelPinned) document.getElementById('mainContent').classList.add('panel-pinned');
+  else document.getElementById('mainContent').classList.remove('panel-pinned');
+}
+
+/* ═══════════════════════════════════════════
+   BIBLE DRAWER (mobile)
+═══════════════════════════════════════════ */
+const DRAWER_DEFAULT_VH = 0.55;
+const DRAWER_PEEK_H = 48;
+let drawerH = 0;
+let drawerOpen = false;
+let drawerCurrentRef = null;
+
+function openBibleDrawer(ref) {
+  drawerCurrentRef = ref;
+  const data = getVerseData(ref) || { full:ref, context:'Scripture passage' };
+  document.getElementById('drawerRef').textContent = data.full || ref;
+  document.getElementById('drawerContext').textContent = data.context || '';
+  document.getElementById('drawerHandleLabel').textContent = data.full || ref;
+  buildBibleContent(ref, document.getElementById('drawerBody'));
+  drawerH = Math.round(window.innerHeight * DRAWER_DEFAULT_VH);
+  setDrawerHeight(drawerH);
+  const drawer = document.getElementById('bibleDrawer');
+  drawer.classList.remove('peeking');
+  drawer.classList.add('open');
+  drawerOpen = true;
+  document.getElementById('mainContent').classList.add('drawer-open-shift');
+  document.getElementById('biblePeekPill').style.display = 'none';
+}
+
+function closeBibleDrawer() {
+  const drawer = document.getElementById('bibleDrawer');
+  drawer.classList.remove('open','peeking');
+  drawerOpen = false;
+  drawer.style.height = '';
+  document.getElementById('mainContent').classList.remove('drawer-open-shift');
+  // show peek pill if we have a last ref
+  if (drawerCurrentRef) {
+    const data = getVerseData(drawerCurrentRef) || { full: drawerCurrentRef };
+    document.getElementById('biblePeekLabel').textContent = data.full || drawerCurrentRef;
+    document.getElementById('biblePeekPill').style.display = 'flex';
+  }
+}
+
+function setDrawerHeight(h) {
+  const maxH = window.innerHeight * 0.9;
+  h = Math.max(DRAWER_PEEK_H, Math.min(maxH, h));
+  drawerH = h;
+  const drawer = document.getElementById('bibleDrawer');
+  drawer.style.height = h + 'px';
+  drawer.classList.toggle('peeking', h <= DRAWER_PEEK_H + 10);
+}
+
+/* Drag logic */
+(function() {
+  const handleZone = document.getElementById('drawerHandleZone');
+  let startY = 0, startH = 0, dragging = false;
+
+  function onStart(e) {
+    const drawer = document.getElementById('bibleDrawer');
+    if (!drawer.classList.contains('open')) return;
+    dragging = true;
+    startY = e.type === 'touchstart' ? e.touches[0].clientY : e.clientY;
+    startH = drawer.offsetHeight;
+    drawer.style.transition = 'none';
+    e.preventDefault();
+  }
+  function onMove(e) {
+    if (!dragging) return;
+    const y = e.type === 'touchmove' ? e.touches[0].clientY : e.clientY;
+    const delta = startY - y;
+    setDrawerHeight(startH + delta);
+    e.preventDefault();
+  }
+  function onEnd() {
+    if (!dragging) return;
+    dragging = false;
+    const drawer = document.getElementById('bibleDrawer');
+    drawer.style.transition = '';
+    if (drawerH <= DRAWER_PEEK_H + 20) {
+      // snap to peek or close
+      if (drawerH <= DRAWER_PEEK_H - 10) closeBibleDrawer();
+      else setDrawerHeight(DRAWER_PEEK_H);
+    }
+  }
+  handleZone.addEventListener('touchstart', onStart, {passive:false});
+  handleZone.addEventListener('mousedown', onStart);
+  document.addEventListener('touchmove', onMove, {passive:false});
+  document.addEventListener('mousemove', onMove);
+  document.addEventListener('touchend', onEnd);
+  document.addEventListener('mouseup', onEnd);
+})();
+
+/* ═══════════════════════════════════════════
+   OPEN BIBLE — ROUTER
+═══════════════════════════════════════════ */
+function reopenDrawer() {
+  if (drawerCurrentRef) openBibleDrawer(drawerCurrentRef);
+}
+
+function openBible(ref, event) {
+  if (event) event.stopPropagation();
+  const isDesktop = window.innerWidth >= 768;
+  if (isDesktop) {
+    openBiblePanel(ref);
+  } else {
+    if (drawerOpen && drawerCurrentRef === ref) {
+      closeBibleDrawer(); // toggle
+    } else {
+      openBibleDrawer(ref);
+    }
+  }
+}
+
+/* ═══════════════════════════════════════════
+   SCREEN / NAV
+═══════════════════════════════════════════ */
+/* ─── HISTORY STACK ─── */
+const navStack = [];
+let navPos = -1;
+
+function pushNav(name) {
+  // truncate forward history
+  navStack.splice(navPos+1);
+  navStack.push(name);
+  navPos = navStack.length-1;
+  updateHistoryNav();
+}
+
+function updateHistoryNav() {
+  const hb=document.getElementById('navHistBack'), hf=document.getElementById('navHistFwd');
+  const onHome=document.getElementById('screen-home').classList.contains('active');
+  const onTeaching=document.getElementById('screen-teaching').classList.contains('active');
+  if(hb){ hb.style.display=(navPos>0)?'flex':'none'; hb.classList.toggle('disabled',navPos<=0); }
+  if(hf){ hf.style.display=(navPos<navStack.length-1)?'flex':'none'; hf.classList.toggle('disabled',navPos>=navStack.length-1); }
+  const toCat=document.getElementById('navToCat');
+  if(toCat) toCat.style.display=onTeaching?'block':'none';
+}
+
+function historyNav(dir) {
+  const newPos=navPos+dir;
+  if(newPos<0||newPos>=navStack.length) return;
+  navPos=newPos;
+  const entry=navStack[navPos];
+  _doShowScreen(entry.screen, entry);
+  updateHistoryNav();
+}
+
+function goToCategory() {
+  showScreen('category');
+  document.getElementById('navTitle').textContent=CATEGORIES.find(c=>c.id===currentCatId)?.name||'';
+}
+
+function showScreen(name, opts={}) {
+  pushNav({screen:name,...opts});
+  _doShowScreen(name, opts);
+  updateHistoryNav();
+}
+
+function _doShowScreen(name, opts={}) {
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
+  document.getElementById('screen-'+name).classList.add('active');
+  if (name === 'home') {
+    document.getElementById('navLogo').style.display='';
+    document.getElementById('navTitle').style.display='none';
+    document.getElementById('navBack').classList.remove('visible');
+    document.getElementById('navToCat').style.display='none';
+    const si=document.getElementById('searchInput');
+    if (si) { si.value=''; si.placeholder='Search categories, topics, teachings…'; }
+    document.getElementById('catGrid').style.display='';
+    document.getElementById('searchResults').style.display='none';
+    document.getElementById('catCount').textContent=CATEGORIES.length+' categories';
+    renderHome();
+  } else if (name === 'category') {
+    // Restore category view if navigating via history
+    if (opts.catId && opts.catId !== currentCatId) {
+      openCategory(opts.catId, opts.tabIndex||0);
+    } else {
+      // Just re-show the screen
+      document.getElementById('navLogo').style.display='none';
+      document.getElementById('navTitle').style.display='block';
+      document.getElementById('navBack').classList.add('visible');
+      document.getElementById('navToCat').style.display='none';
+      const cat=CATEGORIES.find(c=>c.id===currentCatId);
+      if(cat) document.getElementById('navTitle').textContent=cat.name;
+    }
+  } else if (name === 'teaching') {
+    document.getElementById('navLogo').style.display='none';
+    document.getElementById('navTitle').style.display='block';
+    const _reCat=CATEGORIES.find(cc=>cc.sections.some(ss=>ss.teachings.includes(currentTeaching)));
+    const _reSec=_reCat?.sections.find(ss=>ss.teachings.includes(currentTeaching));
+    document.getElementById('navTitle').textContent=(_reCat&&_reSec)?`${_reCat.name} › ${_reSec.title}`:'Teaching';
+    document.getElementById('navBack').classList.add('visible');
+    document.getElementById('navToCat').style.display='block';
+  }
+}
+
+function goBack() {
+  historyNav(-1);
+}
+
+/* ═══════════════════════════════════════════
+   INIT
+═══════════════════════════════════════════ */
+renderHome();
+</script>
+</body>
+</html>
