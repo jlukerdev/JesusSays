@@ -2907,6 +2907,27 @@
                   "isPrimary": true
                 }
               ]
+            },
+            {
+              "id": "2.6.24",
+              "text": "Submits to John's baptism — it is fitting to fulfill all righteousness",
+              "quote": "Suffer it to be so now: for thus it becometh us to fulfil all righteousness.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 3:15",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 3,
+                  "ranges": [
+                    [
+                      15,
+                      15
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
             }
           ]
         },
@@ -5533,6 +5554,61 @@
                     [
                       14,
                       14
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "5.1.11",
+              "text": "Warns that an unclean spirit returning with seven worse spirits leaves the person's final state worse than the first",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 12:43-45",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 12,
+                  "ranges": [
+                    [
+                      43,
+                      45
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Luke 11:24-26",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 11,
+                  "ranges": [
+                    [
+                      24,
+                      26
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ],
+              "quote": "When the unclean spirit is gone out of a man, he walketh through dry places, seeking rest, and findeth none. Then he saith, I will return into my house from whence I came out; and when he is come, he findeth it empty, swept, and garnished. Then goeth he, and taketh with himself seven other spirits more wicked than himself, and they enter in and dwell there: and the last state of that man is worse than the first. Even so shall it be also unto this wicked generation."
+            },
+            {
+              "id": "5.1.12",
+              "text": "He asks the woman where her accusers are and tells her that neither does he condemn her — go and sin no more",
+              "quote": "Woman, where are those thine accusers? hath no man condemned thee? Neither do I condemn thee: go, and sin no more.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 8:10–11",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 8,
+                  "ranges": [
+                    [
+                      10,
+                      11
                     ]
                   ],
                   "isPrimary": true
@@ -8500,6 +8576,27 @@
                   "isPrimary": true
                 }
               ]
+            },
+            {
+              "id": "11.2.5",
+              "text": "If you love me, keep my commandments.",
+              "quote": "¶ If ye love me, keep my commandments.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 14:15",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 14,
+                  "ranges": [
+                    [
+                      15,
+                      15
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
             }
           ]
         }
@@ -8546,13 +8643,13 @@
               "tags": [],
               "references": [
                 {
-                  "label": "John 17:3–5",
+                  "label": "John 17:4–5",
                   "book": "John",
                   "bookAbbr": "John",
                   "chapter": 17,
                   "ranges": [
                     [
-                      3,
+                      4,
                       5
                     ]
                   ],
@@ -8563,27 +8660,6 @@
             },
             {
               "id": "12.1.3",
-              "text": "He asks the Father to restore the glory they shared before the world existed",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 17:5",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 17,
-                  "ranges": [
-                    [
-                      5,
-                      5
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "And now, O Father, glorify thou me with thine own self with the glory which I had with thee before the world was."
-            },
-            {
-              "id": "12.1.4",
               "text": "Defines eternal life — knowing the only true God and Jesus Christ whom he sent",
               "tags": [],
               "references": [
@@ -8769,17 +8845,13 @@
               "tags": [],
               "references": [
                 {
-                  "label": "John 17:20–21, 23",
+                  "label": "John 17:20–23",
                   "book": "John",
                   "bookAbbr": "John",
                   "chapter": 17,
                   "ranges": [
                     [
                       20,
-                      21
-                    ],
-                    [
-                      23,
                       23
                     ]
                   ],
@@ -8839,27 +8911,6 @@
                   "isPrimary": true
                 }
               ]
-            },
-            {
-              "id": "12.3.4",
-              "text": "He prays that they all may be one as the Father and Son are one — that the world may believe that the Father sent him",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 17:21–23",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 17,
-                  "ranges": [
-                    [
-                      21,
-                      23
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "That they all may be one; as thou, Father, art in me, and I in thee, that they also may be one in us: that the world may believe that thou hast sent me. And the glory which thou gavest me I have given them; that they may be one, even as we are one: I in them, and thou in me, that they may be made perfect in one; and that the world may know that thou hast sent me, and hast loved them, as thou hast loved me."
             }
           ]
         }
@@ -8880,7 +8931,7 @@
         {
           "id": "13.1",
           "slug": "cat-13-1",
-          "title": "Love for God",
+          "title": "Love for God and Neighbor",
           "teachings": [
             {
               "id": "13.1.1",
@@ -8928,63 +8979,9 @@
                 }
               ],
               "quote": "Thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind. This is the first and great commandment. And the second is like unto it, Thou shalt love thy neighbour as thyself. On these two commandments hang all the law and the prophets."
-            }
-          ]
-        },
-        {
-          "id": "13.2",
-          "slug": "cat-13-2",
-          "title": "Love for Neighbor",
-          "teachings": [
-            {
-              "id": "13.2.1",
-              "text": "Love your neighbor as yourself — the second commandment, like the first",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 22:39",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 22,
-                  "ranges": [
-                    [
-                      39,
-                      39
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Mark 12:31",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 12,
-                  "ranges": [
-                    [
-                      31,
-                      31
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 10:27",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 10,
-                  "ranges": [
-                    [
-                      27,
-                      27
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ],
-              "quote": "And the second is like unto it, Thou shalt love thy neighbour as thyself."
             },
             {
-              "id": "13.2.2",
+              "id": "13.1.2",
               "text": "The Good Samaritan — a despised outsider shows mercy to the man left for dead; go and do likewise",
               "tags": [
                 "parable"
@@ -9009,12 +9006,12 @@
           ]
         },
         {
-          "id": "13.3",
-          "slug": "cat-13-3",
+          "id": "13.2",
+          "slug": "cat-13-2",
           "title": "Love for Enemies",
           "teachings": [
             {
-              "id": "13.3.1",
+              "id": "13.2.1",
               "text": "Love your enemies, do good to those who hate you, pray for those who persecute you — be merciful as the Father is merciful",
               "tags": [],
               "references": [
@@ -9052,7 +9049,7 @@
               "quote": "But I say unto you, Love your enemies, bless them that curse you, do good to them that hate you, and pray for them which despitefully use you, and persecute you;"
             },
             {
-              "id": "13.3.2",
+              "id": "13.2.2",
               "text": "If you love only those who love you, what reward do you have? Even tax collectors do the same; lend expecting nothing in return",
               "tags": [],
               "references": [
@@ -9084,50 +9081,16 @@
                 }
               ],
               "quote": "For if ye love them which love you, what reward have ye? do not even the publicans the same? And if ye salute your brethren only, what do ye more than others? do not even the publicans so?"
-            },
-            {
-              "id": "13.3.3",
-              "text": "Do to others as you would have them do to you — this sums up the Law and the Prophets",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 7:12",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 7,
-                  "ranges": [
-                    [
-                      12,
-                      12
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Luke 6:31",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 6,
-                  "ranges": [
-                    [
-                      31,
-                      31
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ],
-              "quote": "Therefore all things whatsoever ye would that men should do to you, do ye even so to them: for this is the law and the prophets."
             }
           ]
         },
         {
-          "id": "13.4",
-          "slug": "cat-13-4",
+          "id": "13.3",
+          "slug": "cat-13-3",
           "title": "The New Commandment",
           "teachings": [
             {
-              "id": "13.4.1",
+              "id": "13.3.1",
               "text": "A new commandment: love one another as I have loved you — by this all will know you are his disciples",
               "tags": [],
               "references": [
@@ -9165,7 +9128,7 @@
               "quote": "A new commandment I give unto you, That ye love one another; as I have loved you, that ye also love one another. By this shall all men know that ye are my disciples, if ye have love one to another."
             },
             {
-              "id": "13.4.2",
+              "id": "13.3.2",
               "text": "Greater love has no one than this: to lay down his life for his friends; you are his friends if you do what he commands",
               "tags": [],
               "references": [
@@ -9186,7 +9149,7 @@
               "quote": "Greater love hath no man than this, that a man lay down his life for his friends. Ye are my friends, if ye do whatsoever I command you."
             },
             {
-              "id": "13.4.3",
+              "id": "13.3.3",
               "text": "He no longer calls them servants but friends — he has made known everything he heard from the Father",
               "tags": [],
               "references": [
@@ -9205,27 +9168,6 @@
                 }
               ],
               "quote": "Henceforth I call you not servants; for the servant knoweth not what his lord doeth: but I have called you friends; for all things that I have heard of my Father I have made known unto you."
-            },
-            {
-              "id": "13.4.4",
-              "text": "If you love me, keep my commandments.",
-              "quote": "¶ If ye love me, keep my commandments.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 14:15",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 14,
-                  "ranges": [
-                    [
-                      15,
-                      15
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
             }
           ]
         }
@@ -9327,27 +9269,6 @@
                 }
               ],
               "quote": "Ye are the light of the world. A city that is set on an hill cannot be hid. Neither do men light a candle, and put it under a bushel, but on a candlestick; and it giveth light unto all that are in the house. Let your light so shine before men, that they may see your good works, and glorify your Father which is in heaven."
-            },
-            {
-              "id": "14.1.3",
-              "text": "Submits to John's baptism — it is fitting to fulfill all righteousness",
-              "quote": "Suffer it to be so now: for thus it becometh us to fulfil all righteousness.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 3:15",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 3,
-                  "ranges": [
-                    [
-                      15,
-                      15
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
             }
           ]
         },
@@ -9561,61 +9482,6 @@
                 }
               ],
               "quote": "¶ Ye have heard that it hath been said, An eye for an eye, and a tooth for a tooth: But I say unto you, That ye resist not evil: but whosoever shall smite thee on thy right cheek, turn to him the other also. And if any man will sue thee at the law, and take away thy coat, let him have thy cloke also. And whosoever shall compel thee to go a mile, go with him twain. Give to him that asketh thee, and from him that would borrow of thee turn not thou away."
-            },
-            {
-              "id": "14.3.6",
-              "text": "Enemies: love, pray for, and do good to enemies — be perfect as the Father is perfect",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 5:43–48",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 5,
-                  "ranges": [
-                    [
-                      43,
-                      48
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Luke 6:27–36",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 6,
-                  "ranges": [
-                    [
-                      27,
-                      36
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ],
-              "quote": "¶ Ye have heard that it hath been said, Thou shalt love thy neighbour, and hate thine enemy. But I say unto you, Love your enemies, bless them that curse you, do good to them that hate you, and pray for them which despitefully use you, and persecute you; That ye may be the children of your Father which is in heaven: for he maketh his sun to rise on the evil and on the good, and sendeth rain on the just and on the unjust. For if ye love them which love you, what reward have ye? do not even the publicans the same? And if ye salute your brethren only, what do ye more than others? do not even the publicans so? Be ye therefore perfect, even as your Father which is in heaven is perfect."
-            },
-            {
-              "id": "14.3.7",
-              "text": "Teaches the tree is known by its fruit — the mouth speaks from the abundance of the heart",
-              "quote": "Either make the tree good, and his fruit good; or else make the tree corrupt, and his fruit corrupt: for the tree is known by his fruit. O generation of vipers, how can ye, being evil, speak good things? for out of the abundance of the heart the mouth speaketh. A good man out of the good treasure of the heart bringeth forth good things: and an evil man out of the evil treasure bringeth forth evil things.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 12:33–35",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 12,
-                  "ranges": [
-                    [
-                      33,
-                      35
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
             }
           ]
         },
@@ -9744,6 +9610,27 @@
                 }
               ],
               "quote": "¶ Give not that which is holy unto the dogs, neither cast ye your pearls before swine, lest they trample them under their feet, and turn again and rend you."
+            },
+            {
+              "id": "14.5.3",
+              "text": "He tells the accusers of the woman caught in adultery that he who is without sin among them should cast the first stone",
+              "quote": "He that is without sin among you, let him first cast a stone at her.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 8:7",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 8,
+                  "ranges": [
+                    [
+                      7,
+                      7
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
             }
           ]
         },
@@ -9866,11 +9753,19 @@
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 10:38–40, 42–44",
+                  "label": "Mark 10:31, 36, 38–40, 42–44",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 10,
                   "ranges": [
+                    [
+                      31,
+                      31
+                    ],
+                    [
+                      36,
+                      36
+                    ],
                     [
                       38,
                       40
@@ -9896,19 +9791,6 @@
                   "isPrimary": false
                 },
                 {
-                  "label": "Mark 10:31",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 10,
-                  "ranges": [
-                    [
-                      31,
-                      31
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
                   "label": "Luke 13:30",
                   "book": "Luke",
                   "bookAbbr": "Luke",
@@ -9917,6 +9799,19 @@
                     [
                       30,
                       30
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Mark 9:33",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      33,
+                      33
                     ]
                   ],
                   "isPrimary": false
@@ -10046,48 +9941,6 @@
                     [
                       30,
                       30
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "15.1.5",
-              "text": "Exposes the disciples' road argument over which of them is greatest",
-              "quote": "What was it that ye disputed among yourselves by the way?",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 9:33",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      33,
-                      33
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "15.1.6",
-              "text": "Asks James and John what they want before answering their request for the seats of honor",
-              "quote": "What would ye that I should do for you?",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 10:36",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 10,
-                  "ranges": [
-                    [
-                      36,
-                      36
                     ]
                   ],
                   "isPrimary": true
@@ -10437,29 +10290,7 @@
           "id": "16.2",
           "slug": "cat-16-2",
           "title": "Truthfulness and Oaths",
-          "teachings": [
-            {
-              "id": "16.2.1",
-              "text": "Do not take oaths at all — not by heaven, earth, Jerusalem, or your own head; let your yes be yes and your no be no",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 5:33–37",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 5,
-                  "ranges": [
-                    [
-                      33,
-                      37
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "¶ Again, ye have heard that it hath been said by them of old time, Thou shalt not forswear thyself, but shalt perform unto the Lord thine oaths: But I say unto you, Swear not at all; neither by heaven; for it is God’s throne: Nor by the earth; for it is his footstool: neither by Jerusalem; for it is the city of the great King. Neither shalt thou swear by thy head, because thou canst not make one hair white or black. But let your communication be, Yea, yea; Nay, nay: for whatsoever is more than these cometh of evil."
-            }
-          ]
+          "teachings": []
         },
         {
           "id": "16.3",
@@ -11037,9 +10868,7 @@
               "id": "17.2.8",
               "text": "Declares his coming inverts sight — the unseeing receive sight, the self-confident are made blind",
               "quote": "For judgment I am come into this world, that they which see not might see; and that they which see might be made blind.",
-              "tags": [
-                "i-am"
-              ],
+              "tags": [],
               "references": [
                 {
                   "label": "John 9:39",
@@ -11158,40 +10987,6 @@
             },
             {
               "id": "17.3.4",
-              "text": "Warns that an unclean spirit returning with seven worse spirits leaves the person's final state worse than the first",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 12:43-45",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 12,
-                  "ranges": [
-                    [
-                      43,
-                      45
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Luke 11:24-26",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 11,
-                  "ranges": [
-                    [
-                      24,
-                      26
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ],
-              "quote": "When the unclean spirit is gone out of a man, he walketh through dry places, seeking rest, and findeth none. Then he saith, I will return into my house from whence I came out; and when he is come, he findeth it empty, swept, and garnished. Then goeth he, and taketh with himself seven other spirits more wicked than himself, and they enter in and dwell there: and the last state of that man is worse than the first. Even so shall it be also unto this wicked generation."
-            },
-            {
-              "id": "17.3.5",
               "text": "Names the verdict — light came into the world but people loved darkness because their deeds were evil",
               "quote": "And this is the condemnation, that light is come into the world, and men loved darkness rather than light, because their deeds were evil. For every one that doeth evil hateth the light, neither cometh to the light, lest his deeds should be reproved. But he that doeth truth cometh to the light, that his deeds may be made manifest, that they are wrought in God.",
               "tags": [],
@@ -11205,6 +11000,27 @@
                     [
                       19,
                       21
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "17.3.5",
+              "text": "Teaches the tree is known by its fruit — the mouth speaks from the abundance of the heart",
+              "quote": "Either make the tree good, and his fruit good; or else make the tree corrupt, and his fruit corrupt: for the tree is known by his fruit. O generation of vipers, how can ye, being evil, speak good things? for out of the abundance of the heart the mouth speaketh. A good man out of the good treasure of the heart bringeth forth good things: and an evil man out of the evil treasure bringeth forth evil things.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 12:33–35",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 12,
+                  "ranges": [
+                    [
+                      33,
+                      35
                     ]
                   ],
                   "isPrimary": true
@@ -11402,27 +11218,6 @@
             },
             {
               "id": "18.1.3",
-              "text": "Warns that those who refuse to forgive will not be forgiven by the Father",
-              "quote": "But if ye do not forgive, neither will your Father which is in heaven forgive your trespasses.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 11:26",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 11,
-                  "ranges": [
-                    [
-                      26,
-                      26
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "18.1.4",
               "text": "Two debtors forgiven by a creditor — the one forgiven most loves most; this woman has loved much, while Simon offered no water, kiss, or oil",
               "quote": "Simon, I have somewhat to say unto thee. There was a certain creditor which had two debtors: the one owed five hundred pence, and the other fifty. And when they had nothing to pay, he frankly forgave them both. Tell me therefore, which of them will love him most? Thou hast rightly judged. Seest thou this woman? I entered into thine house, thou gavest me no water for my feet: but she hath washed my feet with tears, and wiped them with the hairs of her head. Thou gavest me no kiss: but this woman since the time I came in hath not ceased to kiss my feet. My head with oil thou didst not anoint: but this woman hath anointed my feet with ointment.",
               "tags": [
@@ -11541,6 +11336,27 @@
                 }
               ],
               "quote": "¶ Therefore is the kingdom of heaven likened unto a certain king, which would take account of his servants. And when he had begun to reckon, one was brought unto him, which owed him ten thousand talents. But forasmuch as he had not to pay, his lord commanded him to be sold, and his wife, and children, and all that he had, and payment to be made. The servant therefore fell down, and worshipped him, saying, Lord, have patience with me, and I will pay thee all. Then the lord of that servant was moved with compassion, and loosed him, and forgave him the debt. But the same servant went out, and found one of his fellowservants, which owed him an hundred pence: and he laid hands on him, and took him by the throat, saying, Pay me that thou owest. And his fellowservant fell down at his feet, and besought him, saying, Have patience with me, and I will pay thee all. And he would not: but went and cast him into prison, till he should pay the debt. So when his fellowservants saw what was done, they were very sorry, and came and told unto their lord all that was done. Then his lord, after that he had called him, said unto him, O thou wicked servant, I forgave thee all that debt, because thou desiredst me: Shouldest not thou also have had compassion on thy fellowservant, even as I had pity on thee? And his lord was wroth, and delivered him to the tormentors, till he should pay all that was due unto him. So likewise shall my heavenly Father do also unto you, if ye from your hearts forgive not every one his brother their trespasses."
+            },
+            {
+              "id": "18.2.4",
+              "text": "Warns that those who refuse to forgive will not be forgiven by the Father",
+              "quote": "But if ye do not forgive, neither will your Father which is in heaven forgive your trespasses.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Mark 11:26",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 11,
+                  "ranges": [
+                    [
+                      26,
+                      26
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
             }
           ]
         },
@@ -11624,48 +11440,6 @@
                 }
               ],
               "quote": "Agree with thine adversary quickly, whiles thou art in the way with him; lest at any time the adversary deliver thee to the judge, and the judge deliver thee to the officer, and thou be cast into prison. Verily I say unto thee, Thou shalt by no means come out thence, till thou hast paid the uttermost farthing."
-            },
-            {
-              "id": "18.3.4",
-              "text": "He tells the accusers of the woman caught in adultery that he who is without sin among them should cast the first stone",
-              "quote": "He that is without sin among you, let him first cast a stone at her.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 8:7",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      7,
-                      7
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "18.3.5",
-              "text": "He asks the woman where her accusers are and tells her that neither does he condemn her — go and sin no more",
-              "quote": "Woman, where are those thine accusers? hath no man condemned thee? Neither do I condemn thee: go, and sin no more.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 8:10–11",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      10,
-                      11
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
             }
           ]
         }
@@ -11858,27 +11632,6 @@
           "teachings": [
             {
               "id": "19.2.1",
-              "text": "Whoever looks with lustful intent has already committed adultery in his heart; if eye or hand causes sin, remove it",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 5:27–30",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 5,
-                  "ranges": [
-                    [
-                      27,
-                      30
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "¶ Ye have heard that it was said by them of old time, Thou shalt not commit adultery: But I say unto you, That whosoever looketh on a woman to lust after her hath committed adultery with her already in his heart. And if thy right eye offend thee, pluck it out, and cast it from thee: for it is profitable for thee that one of thy members should perish, and not that thy whole body should be cast into hell. And if thy right hand offend thee, cut it off, and cast it from thee: for it is profitable for thee that one of thy members should perish, and not that thy whole body should be cast into hell."
-            },
-            {
-              "id": "19.2.2",
               "text": "What comes out of a person defiles him — from within come sexual immorality, adultery, and licentiousness",
               "tags": [],
               "references": [
@@ -12066,53 +11819,6 @@
             },
             {
               "id": "19.3.3",
-              "text": "Those who leave family or possessions for the kingdom will receive many times more, with eternal life",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 19:29",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 19,
-                  "ranges": [
-                    [
-                      29,
-                      29
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Mark 10:29–30",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 10,
-                  "ranges": [
-                    [
-                      29,
-                      30
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 18:29–30",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 18,
-                  "ranges": [
-                    [
-                      29,
-                      30
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ],
-              "quote": "And every one that hath forsaken houses, or brethren, or sisters, or father, or mother, or wife, or children, or lands, for my name’s sake, shall receive an hundredfold, and shall inherit everlasting life."
-            },
-            {
-              "id": "19.3.4",
               "text": "Who is my mother, or my brethren? Behold my mother and my brethren — those who do God's will are my true family",
               "quote": "Who is my mother, or my brethren? Behold my mother and my brethren!",
               "tags": [],
@@ -12133,7 +11839,7 @@
               ]
             },
             {
-              "id": "19.3.5",
+              "id": "19.3.4",
               "text": "Identifies his true family as those who hear and obey the word of God",
               "quote": "My mother and my brethren are these which hear the word of God, and do it. Let us go over unto the other side of the lake.",
               "tags": [],
@@ -12257,27 +11963,6 @@
                 }
               ],
               "quote": "But whoso shall offend one of these little ones which believe in me, it were better for him that a millstone were hanged about his neck, and that he were drowned in the depth of the sea. ¶ Woe unto the world because of offences! for it must needs be that offences come; but woe to that man by whom the offence cometh! Take heed that ye despise not one of these little ones; for I say unto you, That in heaven their angels do always behold the face of my Father which is in heaven."
-            },
-            {
-              "id": "19.4.3",
-              "text": "Tells the disciples not to stop the unknown exorcist — whoever is not against them is for them",
-              "quote": "Forbid him not: for there is no man which shall do a miracle in my name, that can lightly speak evil of me. For he that is not against us is on our part. For whosoever shall give you a cup of water to drink in my name, because ye belong to Christ, verily I say unto you, he shall not lose his reward.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 9:39–41",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      39,
-                      41
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
             }
           ]
         }
@@ -13966,6 +13651,53 @@
                   "isPrimary": true
                 }
               ]
+            },
+            {
+              "id": "22.2.11",
+              "text": "Those who leave family or possessions for the kingdom will receive many times more, with eternal life",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 19:29",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 19,
+                  "ranges": [
+                    [
+                      29,
+                      29
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Mark 10:29–30",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 10,
+                  "ranges": [
+                    [
+                      29,
+                      30
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 18:29–30",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 18,
+                  "ranges": [
+                    [
+                      29,
+                      30
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ],
+              "quote": "And every one that hath forsaken houses, or brethren, or sisters, or father, or mother, or wife, or children, or lands, for my name’s sake, shall receive an hundredfold, and shall inherit everlasting life."
             }
           ]
         },
@@ -16251,6 +15983,27 @@
                 }
               ],
               "quote": "Again I say unto you, That if two of you shall agree on earth as touching any thing that they shall ask, it shall be done for them of my Father which is in heaven. For where two or three are gathered together in my name, there am I in the midst of them."
+            },
+            {
+              "id": "25.3.2",
+              "text": "Tells the disciples not to stop the unknown exorcist — whoever is not against them is for them",
+              "quote": "Forbid him not: for there is no man which shall do a miracle in my name, that can lightly speak evil of me. For he that is not against us is on our part. For whosoever shall give you a cup of water to drink in my name, because ye belong to Christ, verily I say unto you, he shall not lose his reward.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Mark 9:39–41",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      39,
+                      41
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
             }
           ]
         },
