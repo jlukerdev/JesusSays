@@ -1,0 +1,732 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  line-height: 1.6;
+  min-height: 100dvh;
+}
+
+/* ── Typography ── */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: 1.3;
+  color: var(--color-authority);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--color-accent-mid);
+}
+
+/* ── App Layout ── */
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-height);
+  background-color: var(--color-authority);
+  color: var(--color-authority-fg);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-4);
+  gap: var(--space-4);
+  box-shadow: var(--shadow-pane);
+}
+
+.app-layout {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+/* ── Filter Bar ── */
+
+.filter-bar {
+  position: sticky;
+  top: var(--header-height);
+  z-index: 90;
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 0 var(--space-4);
+  height: var(--filter-bar-height);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.filter-bar__pills {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+.filter-bar__pill {
+  background: none;
+  border: 1px solid var(--color-border);
+  color: var(--color-muted);
+  border-radius: var(--radius-pill);
+  padding: var(--space-1) var(--space-3);
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  min-height: 36px;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.filter-bar__pill--active {
+  background-color: var(--color-accent-light);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.filter-bar__pill:hover {
+  border-color: var(--color-accent-mid);
+  color: var(--color-ink);
+}
+
+.filter-bar__clear {
+  background: none;
+  border: none;
+  color: var(--color-muted);
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  cursor: pointer;
+  padding: var(--space-1) var(--space-2);
+  margin-left: auto;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.filter-bar__clear:hover {
+  color: var(--color-ink);
+}
+
+/* ── Sidebar ── */
+
+.sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  background-color: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  overflow-y: auto;
+  position: sticky;
+  top: calc(var(--header-height) + var(--filter-bar-height));
+  height: calc(100dvh - var(--header-height) - var(--filter-bar-height));
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+  padding: var(--space-6) var(--space-8);
+}
+
+.layout__main--full {
+  margin-left: 0 !important;
+  width: 100% !important;
+  padding: 0 !important;
+  height: calc(100dvh - var(--header-height));
+  overflow-y: hidden;
+}
+
+/* ── Mode Switcher ── */
+
+.mode-switcher {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  padding: 2px;
+  gap: 2px;
+}
+
+.mode-switcher__btn {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+
+.mode-switcher__btn:hover {
+  color: var(--color-authority-fg);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.mode-switcher__btn--active {
+  background-color: var(--color-accent);
+  color: var(--color-authority-fg);
+}
+
+/* ── App Header Title ── */
+
+.app-header__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-authority-fg);
+  letter-spacing: 0.01em;
+  flex: 1;
+  white-space: nowrap;
+}
+
+.app-header__title span {
+  color: var(--color-accent-mid);
+}
+
+.app-header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* ── Sidebar Contents Button (mobile) ── */
+
+.btn-contents {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: var(--color-authority-fg);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+/* ── Drawer Overlay (mobile) ── */
+
+.drawer-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 200;
+}
+
+.drawer-overlay--open {
+  display: block;
+}
+
+.sidebar-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: min(var(--sidebar-width), 85vw);
+  background-color: var(--color-surface);
+  z-index: 201;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease;
+  box-shadow: var(--shadow-pane);
+}
+
+.sidebar-drawer--open {
+  transform: translateX(0);
+}
+
+/* ── Parable badge ── */
+
+.parable-badge {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-tag-parable);
+  background-color: var(--color-tag-parable-bg);
+  border-radius: var(--radius-pill);
+  padding: 1px var(--space-2);
+  margin-left: var(--space-2);
+  vertical-align: middle;
+  letter-spacing: 0.02em;
+}
+
+/* ── Teaching table ── */
+
+.teachings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.teachings-table th {
+  text-align: left;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-muted);
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 2px solid var(--color-border);
+}
+
+.teachings-table td {
+  padding: var(--space-3);
+  vertical-align: top;
+  border-bottom: 1px solid var(--color-border);
+  line-height: 1.55;
+}
+
+.teachings-table tr:last-child td {
+  border-bottom: none;
+}
+
+.teachings-table .col-teaching {
+  width: 58%;
+}
+
+.teachings-table .col-scriptures {
+  width: 42%;
+}
+
+.scripture-refs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-2);
+  align-items: baseline;
+}
+
+.scripture-ref {
+  color: var(--color-accent);
+  font-size: var(--text-xs);
+}
+
+.scripture-ref--primary {
+  font-weight: 700;
+  font-size: var(--text-sm);
+}
+
+.scripture-ref-sep {
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+}
+
+/* ── Category section ── */
+
+.category-section {
+  margin-bottom: var(--space-12);
+}
+
+.category-header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  padding: var(--space-4) 0 var(--space-3);
+  border-bottom: 2px solid var(--color-accent);
+  margin-bottom: var(--space-6);
+}
+
+.cat-num-inline {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-authority);
+}
+
+.category-title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-authority);
+}
+
+.category-sources {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  margin-left: auto;
+}
+
+.subcategory-section {
+  margin-bottom: var(--space-8);
+  scroll-margin-top: var(--space-4);
+}
+
+.subcategory-title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-authority);
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* ── Sidebar TOC ── */
+
+.sidebar-nav {
+  padding: var(--space-4) 0;
+}
+
+.sidebar-nav__category {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sidebar-nav__cat-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-ink);
+  cursor: pointer;
+  gap: var(--space-2);
+  line-height: 1.4;
+}
+
+.sidebar-nav__cat-btn:hover,
+.sidebar-nav__cat-btn--active {
+  color: var(--color-accent);
+  background-color: var(--color-accent-light);
+}
+
+.sidebar-nav__cat-num {
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  min-width: 1.4rem;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.sidebar-nav__subcats {
+  list-style: none;
+  padding: 0;
+  background-color: var(--color-surface-raised);
+}
+
+.sidebar-nav__subcat-link {
+  display: block;
+  padding: var(--space-2) var(--space-4) var(--space-2) var(--space-8);
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.sidebar-nav__subcat-link:hover,
+.sidebar-nav__subcat-link--active {
+  color: var(--color-accent);
+  background-color: var(--color-accent-light);
+  text-decoration: none;
+}
+
+/* ── Sidebar empty state (all books deactivated) ── */
+
+.sidebar-nav--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) var(--space-4);
+}
+
+.sidebar-nav__empty-msg {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  text-align: center;
+  font-style: italic;
+}
+
+/* ── Category Prev/Next nav ── */
+
+.cat-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4) 0;
+  border-top: 1px solid var(--color-border);
+  gap: var(--space-4);
+}
+
+.cat-nav__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-accent);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+  max-width: 45%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+}
+
+.cat-nav__link:hover {
+  color: var(--color-accent-mid);
+  text-decoration: none;
+}
+
+.cat-nav__label {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  display: block;
+}
+
+.cat-nav__title {
+  display: block;
+  line-height: 1.3;
+}
+
+/* ── Category viewer container ── */
+
+.category-viewer {
+  padding-bottom: var(--space-8);
+}
+
+/* ── Scripture ref group (sep + link wrapper) ── */
+
+.scripture-ref-group {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-1);
+}
+
+.ref-cell {
+  line-height: 1.8;
+}
+
+.teaching-text {
+  color: var(--color-ink);
+}
+
+/* ── Book Viewer ── */
+
+.book-viewer {
+  padding-bottom: var(--space-8);
+}
+
+.book-viewer__header {
+  padding-top: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.book-viewer__title {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--color-authority);
+}
+
+.book-viewer__divider {
+  border: none;
+  border-top: 2px solid var(--color-accent);
+  margin-top: var(--space-3);
+}
+
+.book-chapter {
+  margin-bottom: var(--space-10);
+  scroll-margin-top: var(--space-4);
+}
+
+.book-chapter__title {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* ── Book viewer 3-column table ── */
+
+.book-viewer__table .col-teaching {
+  width: 45%;
+}
+
+.book-viewer__table .col-category {
+  width: 22%;
+}
+
+.book-viewer__table .col-scriptures {
+  width: 33%;
+}
+
+/* ── Category chip (Book Mode teaching rows) ── */
+
+.category-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-1);
+  background-color: var(--color-accent-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 2px var(--space-2);
+  font-size: var(--text-xs);
+  line-height: 1.4;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.category-chip__num {
+  font-weight: 700;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.category-chip__title {
+  color: var(--color-ink);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.category-chip-cell {
+  vertical-align: top;
+  padding: var(--space-3);
+}
+
+/* ── Stub views ── */
+
+.stub-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  color: var(--color-muted);
+  gap: var(--space-4);
+  text-align: center;
+}
+
+.stub-view h2 {
+  font-size: var(--text-2xl);
+  color: var(--color-authority);
+}
+
+/* ── Loading / Error states ── */
+
+.data-loading,
+.data-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  font-size: var(--text-lg);
+  color: var(--color-muted);
+}
+
+.data-error {
+  color: #c0392b;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+
+  .btn-contents {
+    display: flex;
+  }
+
+  .main-content {
+    padding: var(--space-4);
+    padding-bottom: 80px;
+  }
+
+  /* Only the bottom nav is shown on mobile as a fixed bar */
+  .cat-nav--top {
+    display: none;
+  }
+
+  .cat-nav--bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    padding: var(--space-3) var(--space-4);
+    z-index: 50;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Hide category column in book viewer table on mobile */
+  .book-viewer__table th.col-category,
+  .book-viewer__table .category-chip-cell {
+    display: none;
+  }
+
+  .book-viewer__table .col-teaching {
+    width: 58%;
+  }
+
+  .book-viewer__table .col-scriptures {
+    width: 42%;
+  }
+}
+
+@media (min-width: 768px) {
+  .drawer-overlay,
+  .sidebar-drawer {
+    display: none !important;
+  }
+}
+
+.btn-optimizer {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: var(--color-authority-fg);
+  border-radius: var(--radius-md);
+  padding: var(--space-1) var(--space-2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.15s ease;
+  min-height: 32px;
+  min-width: 32px;
+}
+.btn-optimizer:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
