@@ -182,29 +182,6 @@
                 }
               ],
               "quote": "And call no man your father upon the earth: for one is your Father, which is in heaven."
-            },
-            {
-              "id": "1.1.5",
-              "text": "Thanks the Father for hiding these things from the wise and revealing them to little children",
-              "quote": "I thank thee, O Father, Lord of heaven and earth, because thou hast hid these things from the wise and prudent, and hast revealed them unto babes. Even so, Father: for so it seemed good in thy sight.",
-              "tags": [
-                "prayer"
-              ],
-              "references": [
-                {
-                  "label": "Matt 11:25–26",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 11,
-                  "ranges": [
-                    [
-                      25,
-                      26
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
             }
           ]
         },
@@ -405,6 +382,29 @@
                 }
               ],
               "quote": "For the Father himself loveth you, because ye have loved me, and have believed that I came out from God."
+            },
+            {
+              "id": "1.3.5",
+              "text": "Thanks the Father for hiding these things from the wise and revealing them to little children",
+              "quote": "I thank thee, O Father, Lord of heaven and earth, because thou hast hid these things from the wise and prudent, and hast revealed them unto babes. Even so, Father: for so it seemed good in thy sight.",
+              "tags": [
+                "prayer"
+              ],
+              "references": [
+                {
+                  "label": "Matt 11:25–26",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 11,
+                  "ranges": [
+                    [
+                      25,
+                      26
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
             }
           ]
         }
@@ -968,27 +968,6 @@
             },
             {
               "id": "2.2.6",
-              "text": "Whom say the people that I am? — Jesus questions his disciples while praying alone",
-              "quote": "Whom say the people that I am?",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 9:18",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      18,
-                      18
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.2.7",
               "text": "He defends his Sabbath healing by declaring that his Father works until now and he himself works",
               "quote": "My Father worketh hitherto, and I work.",
               "tags": [],
@@ -1009,7 +988,7 @@
               ]
             },
             {
-              "id": "2.2.8",
+              "id": "2.2.7",
               "text": "Teaches that the Son acts only in concert with the Father, who loves the Son and shows him all his works",
               "quote": "Verily, verily, I say unto you, The Son can do nothing of himself, but what he seeth the Father do: for what things soever he doeth, these also doeth the Son likewise. For the Father loveth the Son, and sheweth him all things that himself doeth: and he will shew him greater works than these, that ye may marvel.",
               "tags": [],
@@ -1030,7 +1009,7 @@
               ]
             },
             {
-              "id": "2.2.9",
+              "id": "2.2.8",
               "text": "Names his witnesses — John the Baptist, his own works, and the Father — to confirm his judgment is just",
               "quote": "I can of mine own self do nothing: as I hear, I judge: and my judgment is just; because I seek not mine own will, but the will of the Father which hath sent me. If I bear witness of myself, my witness is not true. ¶ There is another that beareth witness of me; and I know that the witness which he witnesseth of me is true. Ye sent unto John, and he bare witness unto the truth. But I receive not testimony from man: but these things I say, that ye might be saved. He was a burning and a shining light: and ye were willing for a season to rejoice in his light. ¶ But I have greater witness than that of John: for the works which the Father hath given me to finish, the same works that I do, bear witness of me, that the Father hath sent me. And the Father himself, which hath sent me, hath borne witness of me. Ye have neither heard his voice at any time, nor seen his shape. And ye have not his word abiding in you: for whom he hath sent, him ye believe not.",
               "tags": [],
@@ -1051,7 +1030,7 @@
               ]
             },
             {
-              "id": "2.2.10",
+              "id": "2.2.9",
               "text": "His teaching is not his own but the Father's — anyone willing to do God's will can recognize it as divine",
               "quote": "My doctrine is not mine, but his that sent me. If any man will do his will, he shall know of the doctrine, whether it be of God, or whether I speak of myself. He that speaketh of himself seeketh his own glory: but he that seeketh his glory that sent him, the same is true, and no unrighteousness is in him. Did not Moses give you the law, and yet none of you keepeth the law? Why go ye about to kill me?",
               "tags": [],
@@ -1072,7 +1051,7 @@
               ]
             },
             {
-              "id": "2.2.11",
+              "id": "2.2.10",
               "text": "Tells them they judge by the flesh while he judges no one — yet his judgment is true because the Father is with him",
               "quote": "Ye judge after the flesh; I judge no man. And yet if I judge, my judgment is true: for I am not alone, but I and the Father that sent me.",
               "tags": [],
@@ -1093,7 +1072,7 @@
               ]
             },
             {
-              "id": "2.2.12",
+              "id": "2.2.11",
               "text": "He tells them they neither know him nor his Father; if they had known him, they would have known the Father also",
               "quote": "Ye neither know me, nor my Father: if ye had known me, ye should have known my Father also.",
               "tags": [],
@@ -1114,7 +1093,7 @@
               ]
             },
             {
-              "id": "2.2.13",
+              "id": "2.2.12",
               "text": "His honor comes from the Father — they claim God but do not know him, while the Son knows him and keeps his word",
               "quote": "If I honour myself, my honour is nothing: it is my Father that honoureth me; of whom ye say, that he is your God: Yet ye have not known him; but I know him: and if I should say, I know him not, I shall be a liar like unto you: but I know him, and keep his saying.",
               "tags": [],
@@ -1135,7 +1114,7 @@
               ]
             },
             {
-              "id": "2.2.14",
+              "id": "2.2.13",
               "text": "He asks for which of the many good works shown them from the Father do they seek to stone him",
               "quote": "Many good works have I shewed you from my Father; for which of those works do ye stone me?",
               "tags": [],
@@ -1156,7 +1135,7 @@
               ]
             },
             {
-              "id": "2.2.15",
+              "id": "2.2.14",
               "text": "Cites Psalm 82 to defend his claim — if Scripture calls others 'gods,' why call it blasphemy when the Son of God claims it?",
               "quote": "Is it not written in your law, I said, Ye are gods? If he called them gods, unto whom the word of God came, and the scripture cannot be broken; Say ye of him, whom the Father hath sanctified, and sent into the world, Thou blasphemest; because I said, I am the Son of God?",
               "tags": [],
@@ -1177,7 +1156,7 @@
               ]
             },
             {
-              "id": "2.2.16",
+              "id": "2.2.15",
               "text": "To see and believe in the Son is to see and believe in the Father who sent him — he came as light to save, not to judge",
               "quote": "He that believeth on me, believeth not on me, but on him that sent me. And he that seeth me seeth him that sent me. I am come a light into the world, that whosoever believeth on me should not abide in darkness. And if any man hear my words, and believe not, I judge him not: for I came not to judge the world, but to save the world.",
               "tags": [],
@@ -1198,7 +1177,7 @@
               ]
             },
             {
-              "id": "2.2.17",
+              "id": "2.2.16",
               "text": "Affirms his words come from the Father, whose commandment is everlasting life",
               "quote": "For I have not spoken of myself; but the Father which sent me, he gave me a commandment, what I should say, and what I should speak. And I know that his commandment is life everlasting: whatsoever I speak therefore, even as the Father said unto me, so I speak.",
               "tags": [],
@@ -1219,7 +1198,7 @@
               ]
             },
             {
-              "id": "2.2.18",
+              "id": "2.2.17",
               "text": "Tells the disciples that to know him is to know the Father — and from now on they have seen the Father",
               "quote": "If ye had known me, ye should have known my Father also: and from henceforth ye know him, and have seen him.",
               "tags": [],
@@ -2185,42 +2164,6 @@
             },
             {
               "id": "2.5.9",
-              "text": "Predicts his passion for the third time — the Son of man shall be betrayed, condemned, mocked, scourged, crucified, and the third day rise again",
-              "quote": "Behold, we go up to Jerusalem; and the Son of man shall be betrayed unto the chief priests and unto the scribes, and they shall condemn him to death, And shall deliver him to the Gentiles to mock, and to scourge, and to crucify him: and the third day he shall rise again.",
-              "tags": [
-                "prophecy"
-              ],
-              "references": [
-                {
-                  "label": "Matt 20:18–19",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 20,
-                  "ranges": [
-                    [
-                      18,
-                      19
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Mark 10:33–34",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 10,
-                  "ranges": [
-                    [
-                      33,
-                      34
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ]
-            },
-            {
-              "id": "2.5.10",
               "text": "Rebukes Peter for opposing his foretold suffering — 'Get behind me, Satan'",
               "quote": "Get thee behind me, Satan: for thou savourest not the things that be of God, but the things that be of men.",
               "tags": [],
@@ -2241,7 +2184,7 @@
               ]
             },
             {
-              "id": "2.5.11",
+              "id": "2.5.10",
               "text": "Speaks of the baptism of suffering ahead and how distressed he is until it is accomplished",
               "quote": "But I have a baptism to be baptized with; and how am I straitened till it be accomplished!",
               "tags": [],
@@ -2262,7 +2205,7 @@
               ]
             },
             {
-              "id": "2.5.12",
+              "id": "2.5.11",
               "text": "Foretells he will be handed to the Gentiles, mocked, scourged, killed — and rise on the third day",
               "quote": "For he shall be delivered unto the Gentiles, and shall be mocked, and spitefully entreated, and spitted on: And they shall scourge him, and put him to death: and the third day he shall rise again.",
               "tags": [
@@ -2285,7 +2228,7 @@
               ]
             },
             {
-              "id": "2.5.13",
+              "id": "2.5.12",
               "text": "He drives out the dove sellers from the temple, declaring that his Father's house must not be made a house of merchandise",
               "quote": "Take these things hence; make not my Father’s house an house of merchandise.",
               "tags": [],
@@ -2306,7 +2249,7 @@
               ]
             },
             {
-              "id": "2.5.14",
+              "id": "2.5.13",
               "text": "He defends Mary's anointing — she has kept this for the day of his burying; the poor are always with you, but he will not always be present.",
               "quote": "Let her alone: against the day of my burying hath she kept this. For the poor always ye have with you; but me ye have not always.",
               "tags": [],
@@ -2327,7 +2270,7 @@
               ]
             },
             {
-              "id": "2.5.15",
+              "id": "2.5.14",
               "text": "Announces that the hour for the Son of Man to be glorified has come",
               "quote": "The hour is come, that the Son of man should be glorified.",
               "tags": [],
@@ -2348,7 +2291,7 @@
               ]
             },
             {
-              "id": "2.5.16",
+              "id": "2.5.15",
               "text": "Warns them in advance so they will believe — the prince of this world comes but has no claim on him",
               "quote": "And now I have told you before it come to pass, that, when it is come to pass, ye might believe. Hereafter I will not talk much with you: for the prince of this world cometh, and hath nothing in me. But that the world may know that I love the Father; and as the Father gave me commandment, even so I do. Arise, let us go hence.",
               "tags": [],
@@ -2774,76 +2717,6 @@
             },
             {
               "id": "2.6.15",
-              "text": "Behold, we go up to Jerusalem — the Son of man shall be delivered, condemned, mocked, scourged, killed, and rise the third day",
-              "quote": "Behold, we go up to Jerusalem; and the Son of man shall be delivered unto the chief priests, and unto the scribes; and they shall condemn him to death, and shall deliver him to the Gentiles: And they shall mock him, and shall scourge him, and shall spit upon him, and shall kill him: and the third day he shall rise again.",
-              "tags": [
-                "prophecy"
-              ],
-              "references": [
-                {
-                  "label": "Mark 10:33–34",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 10,
-                  "ranges": [
-                    [
-                      33,
-                      34
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Matt 20:18–19",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 20,
-                  "ranges": [
-                    [
-                      18,
-                      19
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 18:31–33",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 18,
-                  "ranges": [
-                    [
-                      31,
-                      33
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ]
-            },
-            {
-              "id": "2.6.16",
-              "text": "Tells the disciples to feed the crowd themselves and seat them in groups of fifty",
-              "quote": "Give ye them to eat. Make them sit down by fifties in a company.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 9:13–14",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      13,
-                      14
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.6.17",
               "text": "Defends the disciples' praise at the triumphal entry — if they were silent, even the stones would cry out",
               "quote": "I tell you that, if these should hold their peace, the stones would immediately cry out.",
               "tags": [],
@@ -2864,7 +2737,7 @@
               ]
             },
             {
-              "id": "2.6.18",
+              "id": "2.6.16",
               "text": "He greets Nathanael as a true Israelite without guile and reveals he saw him under the fig tree before Philip called",
               "quote": "Behold an Israelite indeed, in whom is no guile! Before that Philip called thee, when thou wast under the fig tree, I saw thee.",
               "tags": [],
@@ -2885,7 +2758,7 @@
               ]
             },
             {
-              "id": "2.6.19",
+              "id": "2.6.17",
               "text": "Promises Nathanael will see greater things — heaven open and angels ascending and descending on the Son of Man",
               "quote": "Because I said unto thee, I saw thee under the fig tree, believest thou? thou shalt see greater things than these. Verily, verily, I say unto you, Hereafter ye shall see heaven open, and the angels of God ascending and descending upon the Son of man.",
               "tags": [
@@ -2908,7 +2781,7 @@
               ]
             },
             {
-              "id": "2.6.20",
+              "id": "2.6.18",
               "text": "He asks the Samaritan woman at the well to give him a drink",
               "quote": "Give me to drink.",
               "tags": [],
@@ -2929,7 +2802,7 @@
               ]
             },
             {
-              "id": "2.6.21",
+              "id": "2.6.19",
               "text": "He tells the woman to call her husband and reveals he knows she has had five husbands and the man she now has is not her husband",
               "quote": "Go, call thy husband, and come hither. Thou hast well said, I have no husband: For thou hast had five husbands; and he whom thou now hast is not thy husband: in that saidst thou truly.",
               "tags": [],
@@ -2950,7 +2823,7 @@
               ]
             },
             {
-              "id": "2.6.22",
+              "id": "2.6.20",
               "text": "He reveals himself to the healed man, declaring that the one who talks with him is the Son of God",
               "quote": "Thou hast both seen him, and it is he that talketh with thee.",
               "tags": [],
@@ -2971,7 +2844,7 @@
               ]
             },
             {
-              "id": "2.6.23",
+              "id": "2.6.21",
               "text": "Announces the Son of Man is now glorified and warns the disciples he will be with them only a little while longer",
               "quote": "Now is the Son of man glorified, and God is glorified in him. If God be glorified in him, God shall also glorify him in himself, and shall straightway glorify him. Little children, yet a little while I am with you. Ye shall seek me: and as I said unto the Jews, Whither I go, ye cannot come; so now I say to you.",
               "tags": [],
@@ -2992,7 +2865,7 @@
               ]
             },
             {
-              "id": "2.6.24",
+              "id": "2.6.22",
               "text": "Defends his disciples by citing David eating the showbread and priests working on the Sabbath — one greater than the temple is here",
               "quote": "Have ye not read what David did, when he was an hungred, and they that were with him; How he entered into the house of God, and did eat the shewbread, which was not lawful for him to eat, neither for them which were with him, but only for the priests? Or have ye not read in the law, how that on the sabbath days the priests in the temple profane the sabbath, and are blameless? But I say unto you, That in this place is one greater than the temple.",
               "tags": [],
@@ -3013,7 +2886,7 @@
               ]
             },
             {
-              "id": "2.6.25",
+              "id": "2.6.23",
               "text": "This day is this scripture fulfilled in your ears",
               "quote": "This day is this scripture fulfilled in your ears.",
               "tags": [
@@ -3436,6 +3309,19 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Luke 9:13–14",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      13,
+                      14
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
@@ -5631,6 +5517,27 @@
                   "isPrimary": true
                 }
               ]
+            },
+            {
+              "id": "5.1.10",
+              "text": "He finds the healed man in the temple and warns him to sin no more lest a worse thing come upon him",
+              "quote": "Behold, thou art made whole: sin no more, lest a worse thing come unto thee.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 5:14",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 5,
+                  "ranges": [
+                    [
+                      14,
+                      14
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
             }
           ]
         },
@@ -5720,27 +5627,6 @@
                 }
               ],
               "quote": "A certain man had two sons: And the younger of them said to his father, Father, give me the portion of goods that falleth to me. And he divided unto them his living. And not many days after the younger son gathered all together, and took his journey into a far country, and there wasted his substance with riotous living. And when he had spent all, there arose a mighty famine in that land; and he began to be in want. And he went and joined himself to a citizen of that country; and he sent him into his fields to feed swine. And he would fain have filled his belly with the husks that the swine did eat: and no man gave unto him. And when he came to himself, he said, How many hired servants of my father’s have bread enough and to spare, and I perish with hunger! I will arise and go to my father, and will say unto him, Father, I have sinned against heaven, and before thee, And am no more worthy to be called thy son: make me as one of thy hired servants. And he arose, and came to his father. But when he was yet a great way off, his father saw him, and had compassion, and ran, and fell on his neck, and kissed him. And the son said unto him, Father, I have sinned against heaven, and in thy sight, and am no more worthy to be called thy son. But the father said to his servants, Bring forth the best robe, and put it on him; and put a ring on his hand, and shoes on his feet: And bring hither the fatted calf, and kill it; and let us eat, and be merry: For this my son was dead, and is alive again; he was lost, and is found. And they began to be merry. Now his elder son was in the field: and as he came and drew nigh to the house, he heard musick and dancing. And he called one of the servants, and asked what these things meant. And he said unto him, Thy brother is come; and thy father hath killed the fatted calf, because he hath received him safe and sound. And he was angry, and would not go in: therefore came his father out, and intreated him. And he answering said to his father, Lo, these many years do I serve thee, neither transgressed I at any time thy commandment: and yet thou never gavest me a kid, that I might make merry with my friends: But as soon as this thy son was come, which hath devoured thy living with harlots, thou hast killed for him the fatted calf. And he said unto him, Son, thou art ever with me, and all that I have is thine. It was meet that we should make merry, and be glad: for this thy brother was dead, and is alive again; and was lost, and is found."
-            },
-            {
-              "id": "5.2.4",
-              "text": "He finds the healed man in the temple and warns him to sin no more lest a worse thing come upon him",
-              "quote": "Behold, thou art made whole: sin no more, lest a worse thing come unto thee.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 5:14",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 5,
-                  "ranges": [
-                    [
-                      14,
-                      14
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
             }
           ]
         },
@@ -6034,22 +5920,9 @@
             },
             {
               "id": "6.3.2",
-              "text": "Promises eternal life and resurrection on the last day to those who feed on him — and never-ending thirst quenched in the water he gives",
+              "text": "Promises that the water he gives will become a spring of water welling up to eternal life — those who drink it will never thirst again",
               "tags": [],
               "references": [
-                {
-                  "label": "John 6:54",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 6,
-                  "ranges": [
-                    [
-                      54,
-                      54
-                    ]
-                  ],
-                  "isPrimary": true
-                },
                 {
                   "label": "John 4:14",
                   "book": "John",
@@ -6061,10 +5934,10 @@
                       14
                     ]
                   ],
-                  "isPrimary": false
+                  "isPrimary": true
                 }
               ],
-              "quote": "Whoso eateth my flesh, and drinketh my blood, hath eternal life; and I will raise him up at the last day."
+              "quote": "But whosoever drinketh of the water that I shall give him shall never thirst; but the water that I shall give him shall be in him a well of water springing up into everlasting life."
             },
             {
               "id": "6.3.3",
@@ -6131,29 +6004,6 @@
             },
             {
               "id": "6.3.6",
-              "text": "He says he goes his way and they shall seek him and die in their sins, for where he goes they cannot come",
-              "quote": "I go my way, and ye shall seek me, and shall die in your sins: whither I go, ye cannot come.",
-              "tags": [
-                "prophecy"
-              ],
-              "references": [
-                {
-                  "label": "John 8:21",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      21,
-                      21
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "6.3.7",
               "text": "Whoever commits sin is the servant of sin, and the servant does not abide in the house forever, but the Son abides forever",
               "quote": "Verily, verily, I say unto you, Whosoever committeth sin is the servant of sin. And the servant abideth not in the house for ever: but the Son abideth ever.",
               "tags": [],
@@ -6174,7 +6024,7 @@
               ]
             },
             {
-              "id": "6.3.8",
+              "id": "6.3.7",
               "text": "He has no devil but honors his Father; he seeks not his own glory, and if any man keeps his saying, he shall never see death",
               "quote": "I have not a devil; but I honour my Father, and ye do dishonour me. And I seek not mine own glory: there is one that seeketh and judgeth. Verily, verily, I say unto you, If a man keep my saying, he shall never see death.",
               "tags": [],
@@ -6195,7 +6045,7 @@
               ]
             },
             {
-              "id": "6.3.9",
+              "id": "6.3.8",
               "text": "Contrasts the thief who comes to destroy with himself — he came so they may have life abundantly",
               "quote": "The thief cometh not, but for to steal, and to kill, and to destroy: I am come that they might have life, and that they might have it more abundantly.",
               "tags": [
@@ -6681,85 +6531,20 @@
             },
             {
               "id": "7.1.11",
-              "text": "Asks the scribes what they were arguing about with his disciples",
-              "quote": "What question ye with them?",
-              "tags": [],
+              "text": "Rebukes a faithless generation, questions the scribes and the boy\\u2019s father, and declares that all things are possible to the one who believes",
+              "quote": "O faithless generation, how long shall I be with you? how long shall I suffer you? bring him unto me. \\u2026 If thou canst believe, all things are possible to him that believeth.",
+              "tags": [
+                "healing"
+              ],
               "references": [
                 {
-                  "label": "Mark 9:16",
+                  "label": "Mark 9:16–23",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 9,
                   "ranges": [
                     [
                       16,
-                      16
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "7.1.12",
-              "text": "Laments a faithless generation and calls the demon-possessed boy to be brought to him",
-              "quote": "O faithless generation, how long shall I be with you? how long shall I suffer you? bring him unto me.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 9:19",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      19,
-                      19
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "7.1.13",
-              "text": "Asks the father how long the boy has been afflicted by the demon",
-              "quote": "How long is it ago since this came unto him?",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Mark 9:21",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      21,
-                      21
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "7.1.14",
-              "text": "Tells the boy's father that all things are possible to the one who believes",
-              "quote": "If thou canst believe, all things are possible to him that believeth.",
-              "tags": [
-                "healing"
-              ],
-              "references": [
-                {
-                  "label": "Mark 9:23",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      23,
                       23
                     ]
                   ],
@@ -6768,7 +6553,7 @@
               ]
             },
             {
-              "id": "7.1.15",
+              "id": "7.1.12",
               "text": "I have not found so great faith — no, not in Israel — Jesus marvels at the centurion",
               "quote": "I say unto you, I have not found so great faith, no, not in Israel.",
               "tags": [],
@@ -6789,7 +6574,7 @@
               ]
             },
             {
-              "id": "7.1.16",
+              "id": "7.1.13",
               "text": "Tells the bleeding woman her faith has made her whole — go in peace",
               "quote": "Daughter, be of good comfort: thy faith hath made thee whole; go in peace.",
               "tags": [
@@ -6812,7 +6597,7 @@
               ]
             },
             {
-              "id": "7.1.17",
+              "id": "7.1.14",
               "text": "Calls a faithless and perverse generation to bring the demon-tormented son to him",
               "quote": "O faithless and perverse generation, how long shall I be with you, and suffer you? Bring thy son hither.",
               "tags": [],
@@ -6833,7 +6618,7 @@
               ]
             },
             {
-              "id": "7.1.18",
+              "id": "7.1.15",
               "text": "He declares that the work of God is to believe on the one whom God has sent",
               "quote": "This is the work of God, that ye believe on him whom he hath sent.",
               "tags": [],
@@ -6854,7 +6639,7 @@
               ]
             },
             {
-              "id": "7.1.19",
+              "id": "7.1.16",
               "text": "He tells the crowd that even though they have seen him, they do not believe",
               "quote": "But I said unto you, That ye also have seen me, and believe not.",
               "tags": [],
@@ -6875,7 +6660,7 @@
               ]
             },
             {
-              "id": "7.1.20",
+              "id": "7.1.17",
               "text": "He finds the cast-out man and asks him whether he believes on the Son of God",
               "quote": "Dost thou believe on the Son of God?",
               "tags": [],
@@ -6896,7 +6681,7 @@
               ]
             },
             {
-              "id": "7.1.21",
+              "id": "7.1.18",
               "text": "Tells the unbelieving Jews they do not believe because they are not among his sheep",
               "quote": "But ye believe not, because ye are not of my sheep, as I said unto you.",
               "tags": [],
@@ -6917,7 +6702,7 @@
               ]
             },
             {
-              "id": "7.1.22",
+              "id": "7.1.19",
               "text": "Tells the disciples plainly that Lazarus is dead — and is glad for their sakes, that they may believe",
               "quote": "Lazarus is dead. And I am glad for your sakes that I was not there, to the intent ye may believe; nevertheless let us go unto him.",
               "tags": [],
@@ -6938,7 +6723,7 @@
               ]
             },
             {
-              "id": "7.1.23",
+              "id": "7.1.20",
               "text": "He who believes in Jesus shall do the works he does, and greater works, because he goes to the Father.",
               "quote": "Verily, verily, I say unto you, He that believeth on me, the works that I do shall he do also; and greater works than these shall he do; because I go unto my Father.",
               "tags": [],
@@ -7604,27 +7389,6 @@
                 }
               ],
               "quote": "Your father Abraham rejoiced to see my day: and he saw it, and was glad."
-            },
-            {
-              "id": "8.3.3",
-              "text": "He defends his Sabbath healing by appealing to the lawful practice of circumcision on the Sabbath, asking why they are angry that he made a man whole",
-              "quote": "I have done one work, and ye all marvel. Moses therefore gave unto you circumcision; (not because it is of Moses, but of the fathers;) and ye on the sabbath day circumcise a man. If a man on the sabbath day receive circumcision, that the law of Moses should not be broken; are ye angry at me, because I have made a man every whit whole on the sabbath day?",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 7:21–23",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 7,
-                  "ranges": [
-                    [
-                      21,
-                      23
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
             }
           ]
         }
@@ -8273,29 +8037,6 @@
                 }
               ],
               "quote": "And lead us not into temptation, but deliver us from evil: For thine is the kingdom, and the power, and the glory, for ever. Amen."
-            },
-            {
-              "id": "10.1.6",
-              "text": "This kind can come forth by nothing, but by prayer and fasting — some deliverance requires deeper communion with God",
-              "quote": "This kind can come forth by nothing, but by prayer and fasting.",
-              "tags": [
-                "prayer"
-              ],
-              "references": [
-                {
-                  "label": "Mark 9:29",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      29,
-                      29
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
             }
           ]
         },
@@ -8453,6 +8194,29 @@
                 }
               ],
               "quote": "There was in a city a judge, which feared not God, neither regarded man: And there was a widow in that city; and she came unto him, saying, Avenge me of mine adversary. And he would not for a while: but afterward he said within himself, Though I fear not God, nor regard man; Yet because this widow troubleth me, I will avenge her, lest by her continual coming she weary me. Hear what the unjust judge saith. And shall not God avenge his own elect, which cry day and night unto him, though he bear long with them? I tell you that he will avenge them speedily. Nevertheless when the Son of man cometh, shall he find faith on the earth?"
+            },
+            {
+              "id": "10.3.4",
+              "text": "This kind can come forth by nothing, but by prayer and fasting — some deliverance requires deeper communion with God",
+              "quote": "This kind can come forth by nothing, but by prayer and fasting.",
+              "tags": [
+                "prayer"
+              ],
+              "references": [
+                {
+                  "label": "Mark 9:29",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      29,
+                      29
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
             }
           ]
         },
@@ -16214,6 +15978,27 @@
                   "isPrimary": true
                 }
               ]
+            },
+            {
+              "id": "24.4.8",
+              "text": "He defends his Sabbath healing by appealing to the lawful practice of circumcision on the Sabbath, asking why they are angry that he made a man whole",
+              "quote": "I have done one work, and ye all marvel. Moses therefore gave unto you circumcision; (not because it is of Moses, but of the fathers;) and ye on the sabbath day circumcise a man. If a man on the sabbath day receive circumcision, that the law of Moses should not be broken; are ye angry at me, because I have made a man every whit whole on the sabbath day?",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 7:21–23",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 7,
+                  "ranges": [
+                    [
+                      21,
+                      23
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
             }
           ]
         },
@@ -20102,6 +19887,29 @@
                     [
                       30,
                       31
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "30.1.6",
+              "text": "He says he goes his way and they shall seek him and die in their sins, for where he goes they cannot come",
+              "quote": "I go my way, and ye shall seek me, and shall die in your sins: whither I go, ye cannot come.",
+              "tags": [
+                "prophecy"
+              ],
+              "references": [
+                {
+                  "label": "John 8:21",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 8,
+                  "ranges": [
+                    [
+                      21,
+                      21
                     ]
                   ],
                   "isPrimary": true

@@ -1,0 +1,1012 @@
+﻿{
+  "meta": {
+    "title": "The Teachings of Jesus Christ",
+    "subtitle": "A Comprehensive Categorization of His Words as Recorded in the New Testament",
+    "totalCategories": 31,
+    "sources": [
+      "Matthew",
+      "Mark",
+      "Luke",
+      "John",
+      "Acts",
+      "1 Corinthians",
+      "2 Corinthians",
+      "Revelation"
+    ],
+    "scope": [
+      "The four Gospels (Matthew, Mark, Luke, John) ΓÇö including parables, discourses, and dialogue",
+      "Post-resurrection appearances (Matthew 28, Luke 24, John 20ΓÇô21, Acts 1)",
+      "The High Priestly Prayer (John 17)",
+      "Paul's direct quotation of Jesus (Acts 20:35)",
+      "The institution of the Lord's Supper as quoted by Paul (1 Corinthians 11:23ΓÇô25)",
+      "The letters to the seven churches and other direct speech in Revelation (Revelation 1ΓÇô3, 22)",
+      "Damascus road appearance of Jesus to Saul (Acts 9:4ΓÇô6; 22:7ΓÇô10; 26:14ΓÇô18)",
+      "Vision to Ananias commissioning Paul's mission (Acts 9:10ΓÇô16)",
+      "Vision to Paul in Corinth (Acts 18:9ΓÇô10)",
+      "Vision to Paul in the Temple (Acts 22:18ΓÇô21)",
+      "Vision to Paul in Jerusalem custody (Acts 23:11)",
+      "Jesus speaks to Paul: 'My grace is sufficient for you' (2 Cor 12:9)",
+      "Heavenly voice to Peter on clean and unclean (Acts 10:13ΓÇô15; 11:7ΓÇô9)",
+      "Commission to write to the seven churches (Rev 1:11)",
+      "Jesus explains the vision of stars and lampstands (Rev 1:19ΓÇô20)",
+      "Eschatological warning: 'I am coming like a thief' (Rev 16:15)",
+      "'Behold, I am making all things new' ΓÇö new creation declaration (Rev 21:5ΓÇô8)",
+      "Alpha and Omega self-declaration: 'I am the Alpha and the Omega... who is to come, the Almighty' (Rev 1:8)"
+    ]
+  },
+  "categories": [
+    {
+      "id": 1,
+      "slug": "cat-1",
+      "title": "God the Father",
+      "subcategories": [
+        {
+          "id": "1.1",
+          "slug": "cat-1-1",
+          "title": "God's Fatherhood and Care",
+          "count": 5
+        },
+        {
+          "id": "1.2",
+          "slug": "cat-1-2",
+          "title": "True Worship of God",
+          "count": 2
+        },
+        {
+          "id": "1.3",
+          "slug": "cat-1-3",
+          "title": "God's Sovereignty and Love",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "cat-2",
+      "title": "The Identity of Jesus Christ",
+      "subcategories": [
+        {
+          "id": "2.1",
+          "slug": "cat-2-1",
+          "title": "The ΓÇ£I AMΓÇ¥ Declarations",
+          "count": 14
+        },
+        {
+          "id": "2.2",
+          "slug": "cat-2-2",
+          "title": "His Relationship with the Father",
+          "count": 18
+        },
+        {
+          "id": "2.3",
+          "slug": "cat-2-3",
+          "title": "His Divine Authority and Mission",
+          "count": 14
+        },
+        {
+          "id": "2.4",
+          "slug": "cat-2-4",
+          "title": "His Pre-existence and Divine Origin",
+          "count": 8
+        },
+        {
+          "id": "2.5",
+          "slug": "cat-2-5",
+          "title": "Predictions of His Suffering, Death, and Resurrection",
+          "count": 16
+        },
+        {
+          "id": "2.6",
+          "slug": "cat-2-6",
+          "title": "His Messianic Identity",
+          "count": 25
+        },
+        {
+          "id": "2.7",
+          "slug": "cat-2-7",
+          "title": "His Miraculous Works",
+          "count": 26
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "cat-3",
+      "title": "The Holy Spirit",
+      "subcategories": [
+        {
+          "id": "3.1",
+          "slug": "cat-3-1",
+          "title": "The Promise and Coming of the Spirit",
+          "count": 7
+        },
+        {
+          "id": "3.2",
+          "slug": "cat-3-2",
+          "title": "The Spirit's Work in the World",
+          "count": 5
+        },
+        {
+          "id": "3.3",
+          "slug": "cat-3-3",
+          "title": "The Spirit in Witness and Trial",
+          "count": 1
+        },
+        {
+          "id": "3.4",
+          "slug": "cat-3-4",
+          "title": "Blasphemy Against the Spirit",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "cat-4",
+      "title": "The Kingdom of God",
+      "subcategories": [
+        {
+          "id": "4.1",
+          "slug": "cat-4-1",
+          "title": "Nature and Character of the Kingdom",
+          "count": 11
+        },
+        {
+          "id": "4.2",
+          "slug": "cat-4-2",
+          "title": "Growth and Presence of the Kingdom",
+          "count": 5
+        },
+        {
+          "id": "4.3",
+          "slug": "cat-4-3",
+          "title": "Entering the Kingdom",
+          "count": 9
+        },
+        {
+          "id": "4.4",
+          "slug": "cat-4-4",
+          "title": "Citizens of the Kingdom ΓÇö The Beatitudes",
+          "count": 8
+        },
+        {
+          "id": "4.5",
+          "slug": "cat-4-5",
+          "title": "Parables of the Kingdom's People",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "cat-5",
+      "title": "Repentance and Conversion",
+      "subcategories": [
+        {
+          "id": "5.1",
+          "slug": "cat-5-1",
+          "title": "The Call to Repentance",
+          "count": 9
+        },
+        {
+          "id": "5.2",
+          "slug": "cat-5-2",
+          "title": "Parables of the Lost",
+          "count": 4
+        },
+        {
+          "id": "5.3",
+          "slug": "cat-5-3",
+          "title": "The Invitation to Come",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "cat-6",
+      "title": "Salvation and Eternal Life",
+      "subcategories": [
+        {
+          "id": "6.1",
+          "slug": "cat-6-1",
+          "title": "The New Birth",
+          "count": 4
+        },
+        {
+          "id": "6.2",
+          "slug": "cat-6-2",
+          "title": "Faith as the Condition of Salvation",
+          "count": 4
+        },
+        {
+          "id": "6.3",
+          "slug": "cat-6-3",
+          "title": "Eternal Life ΓÇö Its Nature and Assurance",
+          "count": 9
+        },
+        {
+          "id": "6.4",
+          "slug": "cat-6-4",
+          "title": "The Narrow Way",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "cat-7",
+      "title": "Faith and Trust",
+      "subcategories": [
+        {
+          "id": "7.1",
+          "slug": "cat-7-1",
+          "title": "The Nature and Power of Faith",
+          "count": 23
+        },
+        {
+          "id": "7.2",
+          "slug": "cat-7-2",
+          "title": "Overcoming Fear and Doubt",
+          "count": 9
+        },
+        {
+          "id": "7.3",
+          "slug": "cat-7-3",
+          "title": "Trust Over Anxiety",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "cat-8",
+      "title": "The Old Covenant",
+      "subcategories": [
+        {
+          "id": "8.1",
+          "slug": "cat-8-1",
+          "title": "Jesus and the Law",
+          "count": 4
+        },
+        {
+          "id": "8.2",
+          "slug": "cat-8-2",
+          "title": "The Law's Fulfillment in Love",
+          "count": 1
+        },
+        {
+          "id": "8.3",
+          "slug": "cat-8-3",
+          "title": "Moses and the Scriptures Pointing to Jesus",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "slug": "cat-9",
+      "title": "The New Covenant",
+      "subcategories": [
+        {
+          "id": "9.1",
+          "slug": "cat-9-1",
+          "title": "Institution of the Lord's Supper",
+          "count": 3
+        },
+        {
+          "id": "9.2",
+          "slug": "cat-9-2",
+          "title": "The Bread of Life ΓÇö A Connected Teaching",
+          "count": 9
+        },
+        {
+          "id": "9.3",
+          "slug": "cat-9-3",
+          "title": "New and Old ΓÇö The Covenant Transition",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "slug": "cat-10",
+      "title": "Prayer and Communion",
+      "subcategories": [
+        {
+          "id": "10.1",
+          "slug": "cat-10-1",
+          "title": "The Lord's Prayer ΓÇö Pattern for Prayer",
+          "count": 6
+        },
+        {
+          "id": "10.2",
+          "slug": "cat-10-2",
+          "title": "How to Pray",
+          "count": 3
+        },
+        {
+          "id": "10.3",
+          "slug": "cat-10-3",
+          "title": "Persistence in Prayer",
+          "count": 3
+        },
+        {
+          "id": "10.4",
+          "slug": "cat-10-4",
+          "title": "Praying in Jesus's Name",
+          "count": 3
+        },
+        {
+          "id": "10.5",
+          "slug": "cat-10-5",
+          "title": "Corporate Prayer and Watchfulness",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "slug": "cat-11",
+      "title": "Abiding in Christ",
+      "subcategories": [
+        {
+          "id": "11.1",
+          "slug": "cat-11-1",
+          "title": "The Vine and the Branches",
+          "count": 3
+        },
+        {
+          "id": "11.2",
+          "slug": "cat-11-2",
+          "title": "Abiding in Love",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "slug": "cat-12",
+      "title": "The High Priestly Prayer",
+      "subcategories": [
+        {
+          "id": "12.1",
+          "slug": "cat-12-1",
+          "title": "Prayer for Himself ΓÇö The Hour Has Come",
+          "count": 4
+        },
+        {
+          "id": "12.2",
+          "slug": "cat-12-2",
+          "title": "Prayer for the Disciples",
+          "count": 6
+        },
+        {
+          "id": "12.3",
+          "slug": "cat-12-3",
+          "title": "Prayer for All Believers",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "slug": "cat-13",
+      "title": "Love",
+      "subcategories": [
+        {
+          "id": "13.1",
+          "slug": "cat-13-1",
+          "title": "Love for God",
+          "count": 1
+        },
+        {
+          "id": "13.2",
+          "slug": "cat-13-2",
+          "title": "Love for Neighbor",
+          "count": 2
+        },
+        {
+          "id": "13.3",
+          "slug": "cat-13-3",
+          "title": "Love for Enemies",
+          "count": 3
+        },
+        {
+          "id": "13.4",
+          "slug": "cat-13-4",
+          "title": "The New Commandment",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "slug": "cat-14",
+      "title": "Righteousness and Ethics",
+      "subcategories": [
+        {
+          "id": "14.1",
+          "slug": "cat-14-1",
+          "title": "Salt and Light",
+          "count": 3
+        },
+        {
+          "id": "14.2",
+          "slug": "cat-14-2",
+          "title": "The Law and Righteousness",
+          "count": 2
+        },
+        {
+          "id": "14.3",
+          "slug": "cat-14-3",
+          "title": "The Antitheses ΓÇö ΓÇ£You Have HeardΓÇª But I Say to YouΓÇ¥",
+          "count": 7
+        },
+        {
+          "id": "14.4",
+          "slug": "cat-14-4",
+          "title": "Authentic Piety ΓÇö Giving, Prayer, Fasting",
+          "count": 2
+        },
+        {
+          "id": "14.5",
+          "slug": "cat-14-5",
+          "title": "Judging and Discernment",
+          "count": 2
+        },
+        {
+          "id": "14.6",
+          "slug": "cat-14-6",
+          "title": "The Golden Rule and Two Ways",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "slug": "cat-15",
+      "title": "Humility and Servanthood",
+      "subcategories": [
+        {
+          "id": "15.1",
+          "slug": "cat-15-1",
+          "title": "The Nature of Greatness in the Kingdom",
+          "count": 6
+        },
+        {
+          "id": "15.2",
+          "slug": "cat-15-2",
+          "title": "Jesus as the Servant Model",
+          "count": 5
+        },
+        {
+          "id": "15.3",
+          "slug": "cat-15-3",
+          "title": "Parables of Humility",
+          "count": 3
+        },
+        {
+          "id": "15.4",
+          "slug": "cat-15-4",
+          "title": "Childlikeness as a Kingdom Virtue",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "slug": "cat-16",
+      "title": "Truth and Integrity",
+      "subcategories": [
+        {
+          "id": "16.1",
+          "slug": "cat-16-1",
+          "title": "The Power and Accountability of Words",
+          "count": 2
+        },
+        {
+          "id": "16.2",
+          "slug": "cat-16-2",
+          "title": "Truthfulness and Oaths",
+          "count": 1
+        },
+        {
+          "id": "16.3",
+          "slug": "cat-16-3",
+          "title": "Jesus as Truth",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "slug": "cat-17",
+      "title": "Wisdom and Discernment",
+      "subcategories": [
+        {
+          "id": "17.1",
+          "slug": "cat-17-1",
+          "title": "Hearing and Perceiving Spiritually",
+          "count": 6
+        },
+        {
+          "id": "17.2",
+          "slug": "cat-17-2",
+          "title": "Spiritual Blindness Rebuked",
+          "count": 8
+        },
+        {
+          "id": "17.3",
+          "slug": "cat-17-3",
+          "title": "Recognizing True from False",
+          "count": 5
+        },
+        {
+          "id": "17.4",
+          "slug": "cat-17-4",
+          "title": "Hidden Things Revealed",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "slug": "cat-18",
+      "title": "Forgiveness and Reconciliation",
+      "subcategories": [
+        {
+          "id": "18.1",
+          "slug": "cat-18-1",
+          "title": "God's Forgiveness of Sin",
+          "count": 4
+        },
+        {
+          "id": "18.2",
+          "slug": "cat-18-2",
+          "title": "Forgiving Others",
+          "count": 3
+        },
+        {
+          "id": "18.3",
+          "slug": "cat-18-3",
+          "title": "Reconciliation with Others",
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "slug": "cat-19",
+      "title": "Marriage and Family",
+      "subcategories": [
+        {
+          "id": "19.1",
+          "slug": "cat-19-1",
+          "title": "Marriage and Divorce",
+          "count": 4
+        },
+        {
+          "id": "19.2",
+          "slug": "cat-19-2",
+          "title": "Sexual Purity",
+          "count": 2
+        },
+        {
+          "id": "19.3",
+          "slug": "cat-19-3",
+          "title": "Family Relationships and Kingdom Priority",
+          "count": 5
+        },
+        {
+          "id": "19.4",
+          "slug": "cat-19-4",
+          "title": "Care for Children",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "slug": "cat-20",
+      "title": "Wealth and Generosity",
+      "subcategories": [
+        {
+          "id": "20.1",
+          "slug": "cat-20-1",
+          "title": "Treasure and the Heart",
+          "count": 4
+        },
+        {
+          "id": "20.2",
+          "slug": "cat-20-2",
+          "title": "The Danger of Riches",
+          "count": 3
+        },
+        {
+          "id": "20.3",
+          "slug": "cat-20-3",
+          "title": "Generosity and Stewardship",
+          "count": 5
+        },
+        {
+          "id": "20.4",
+          "slug": "cat-20-4",
+          "title": "The Rich Man and Lazarus",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "slug": "cat-21",
+      "title": "Justice and Mercy",
+      "subcategories": [
+        {
+          "id": "21.1",
+          "slug": "cat-21-1",
+          "title": "The Blessing on the Poor and Woe to the Rich",
+          "count": 2
+        },
+        {
+          "id": "21.2",
+          "slug": "cat-21-2",
+          "title": "The Judgment of the Nations ΓÇö Sheep and Goats",
+          "count": 2
+        },
+        {
+          "id": "21.3",
+          "slug": "cat-21-3",
+          "title": "Mercy and Compassion",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "slug": "cat-22",
+      "title": "Discipleship",
+      "subcategories": [
+        {
+          "id": "22.1",
+          "slug": "cat-22-1",
+          "title": "The Call to Follow",
+          "count": 17
+        },
+        {
+          "id": "22.2",
+          "slug": "cat-22-2",
+          "title": "Counting the Cost",
+          "count": 10
+        },
+        {
+          "id": "22.3",
+          "slug": "cat-22-3",
+          "title": "Fruit-Bearing",
+          "count": 5
+        },
+        {
+          "id": "22.4",
+          "slug": "cat-22-4",
+          "title": "Remaining Faithful to the End",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "slug": "cat-23",
+      "title": "Suffering and Persecution",
+      "subcategories": [
+        {
+          "id": "23.1",
+          "slug": "cat-23-1",
+          "title": "The Temptation of Jesus",
+          "count": 6
+        },
+        {
+          "id": "23.2",
+          "slug": "cat-23-2",
+          "title": "The Promise of Persecution",
+          "count": 7
+        },
+        {
+          "id": "23.3",
+          "slug": "cat-23-3",
+          "title": "Courage in Suffering",
+          "count": 7
+        },
+        {
+          "id": "23.4",
+          "slug": "cat-23-4",
+          "title": "Taking Up the Cross",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "slug": "cat-24",
+      "title": "Religious Hypocrisy",
+      "subcategories": [
+        {
+          "id": "24.1",
+          "slug": "cat-24-1",
+          "title": "The Seven Woes to Scribes and Pharisees (Matthew 23)",
+          "count": 22
+        },
+        {
+          "id": "24.2",
+          "slug": "cat-24-2",
+          "title": "Outward Versus Inward Religion",
+          "count": 8
+        },
+        {
+          "id": "24.3",
+          "slug": "cat-24-3",
+          "title": "Traditions of Men Versus God's Commands",
+          "count": 6
+        },
+        {
+          "id": "24.4",
+          "slug": "cat-24-4",
+          "title": "The Sabbath in Right Perspective",
+          "count": 7
+        },
+        {
+          "id": "24.5",
+          "slug": "cat-24-5",
+          "title": "Hypocrisy in Leadership",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "slug": "cat-25",
+      "title": "The Church",
+      "subcategories": [
+        {
+          "id": "25.1",
+          "slug": "cat-25-1",
+          "title": "The Foundation of the Church",
+          "count": 2
+        },
+        {
+          "id": "25.2",
+          "slug": "cat-25-2",
+          "title": "Church Discipline",
+          "count": 1
+        },
+        {
+          "id": "25.3",
+          "slug": "cat-25-3",
+          "title": "Corporate Prayer and Presence",
+          "count": 1
+        },
+        {
+          "id": "25.4",
+          "slug": "cat-25-4",
+          "title": "Unity Among Believers",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "slug": "cat-26",
+      "title": "Mission and Witness",
+      "subcategories": [
+        {
+          "id": "26.1",
+          "slug": "cat-26-1",
+          "title": "The Great Commission",
+          "count": 2
+        },
+        {
+          "id": "26.2",
+          "slug": "cat-26-2",
+          "title": "Instructions for the Twelve and the Seventy",
+          "count": 5
+        },
+        {
+          "id": "26.3",
+          "slug": "cat-26-3",
+          "title": "Visions and Commissions to the Apostles",
+          "count": 5
+        },
+        {
+          "id": "26.4",
+          "slug": "cat-26-4",
+          "title": "The Harvest and the Workers",
+          "count": 7
+        },
+        {
+          "id": "26.5",
+          "slug": "cat-26-5",
+          "title": "Fear and Courage in Witness",
+          "count": 4
+        },
+        {
+          "id": "26.6",
+          "slug": "cat-26-6",
+          "title": "Persecution of Witnesses",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "slug": "cat-27",
+      "title": "The Passion Narrative",
+      "subcategories": [
+        {
+          "id": "27.1",
+          "slug": "cat-27-1",
+          "title": "The Last Supper",
+          "count": 14
+        },
+        {
+          "id": "27.2",
+          "slug": "cat-27-2",
+          "title": "Gethsemane and Arrest",
+          "count": 7
+        },
+        {
+          "id": "27.3",
+          "slug": "cat-27-3",
+          "title": "The Trial and Crucifixion",
+          "count": 9
+        },
+        {
+          "id": "27.4",
+          "slug": "cat-27-4",
+          "title": "Words from the Cross",
+          "count": 7
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "slug": "cat-28",
+      "title": "Post-Resurrection Appearances",
+      "subcategories": [
+        {
+          "id": "28.1",
+          "slug": "cat-28-1",
+          "title": "Resurrection Appearances ΓÇö Words Spoken",
+          "count": 9
+        },
+        {
+          "id": "28.2",
+          "slug": "cat-28-2",
+          "title": "Thomas ΓÇö Doubt Confronted by Evidence",
+          "count": 2
+        },
+        {
+          "id": "28.3",
+          "slug": "cat-28-3",
+          "title": "The Restoration of Peter",
+          "count": 5
+        },
+        {
+          "id": "28.4",
+          "slug": "cat-28-4",
+          "title": "The Final Commission and Ascension",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "slug": "cat-29",
+      "title": "Eschatology and the End Times",
+      "subcategories": [
+        {
+          "id": "29.1",
+          "slug": "cat-29-1",
+          "title": "Signs of the End",
+          "count": 10
+        },
+        {
+          "id": "29.2",
+          "slug": "cat-29-2",
+          "title": "The Return of the Son of Man",
+          "count": 5
+        },
+        {
+          "id": "29.3",
+          "slug": "cat-29-3",
+          "title": "Readiness and Watchfulness",
+          "count": 6
+        },
+        {
+          "id": "29.4",
+          "slug": "cat-29-4",
+          "title": "The Fig Tree and the Unknown Hour",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "slug": "cat-30",
+      "title": "Judgment and Hell",
+      "subcategories": [
+        {
+          "id": "30.1",
+          "slug": "cat-30-1",
+          "title": "The Certainty and Scope of Judgment",
+          "count": 5
+        },
+        {
+          "id": "30.2",
+          "slug": "cat-30-2",
+          "title": "Hell and Its Reality",
+          "count": 3
+        },
+        {
+          "id": "30.3",
+          "slug": "cat-30-3",
+          "title": "The Resurrection and Final Destiny",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "slug": "cat-31",
+      "title": "The Seven Churches",
+      "subcategories": [
+        {
+          "id": "31.1",
+          "slug": "cat-31-1",
+          "title": "Introduction to the Seven Churches ΓÇö The Vision of Christ",
+          "count": 5
+        },
+        {
+          "id": "31.2",
+          "slug": "cat-31-2",
+          "title": "Ephesus ΓÇö The Church That Left Its First Love",
+          "count": 4
+        },
+        {
+          "id": "31.3",
+          "slug": "cat-31-3",
+          "title": "Smyrna ΓÇö The Suffering Church",
+          "count": 3
+        },
+        {
+          "id": "31.4",
+          "slug": "cat-31-4",
+          "title": "Pergamum ΓÇö The Compromised Church",
+          "count": 3
+        },
+        {
+          "id": "31.5",
+          "slug": "cat-31-5",
+          "title": "Thyatira ΓÇö The Church Tolerating False Teaching",
+          "count": 4
+        },
+        {
+          "id": "31.6",
+          "slug": "cat-31-6",
+          "title": "Sardis ΓÇö The Dead Church",
+          "count": 3
+        },
+        {
+          "id": "31.7",
+          "slug": "cat-31-7",
+          "title": "Philadelphia ΓÇö The Faithful Church",
+          "count": 3
+        },
+        {
+          "id": "31.8",
+          "slug": "cat-31-8",
+          "title": "Laodicea ΓÇö The Lukewarm Church",
+          "count": 3
+        }
+      ]
+    }
+  ]
+}
