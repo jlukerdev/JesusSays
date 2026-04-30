@@ -29,7 +29,9 @@
 - **Description:** Teaching references John 17:5 ("Father, glorify me with the glory I had with you before the world began") but is classified in Cat 2, not Cat 12. John 17 is a hard-capture rule with no exceptions.
 - **Rule citation:** G-1: Every teaching that references John 17 in any verse must be in Cat 12 (High Priestly Prayer).
 - **Proposed action:** Move to Cat 12 (appropriate subcategory: 12.1 — Personal Petitions, vv. 1–5).
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** Moved teaching from Cat 2.4.3 to Cat 12.1. New ID: **12.1.3**.
 
 ---
 
@@ -42,7 +44,9 @@
 - **Description:** Teaching references John 17:3 ("This is eternal life, that they know you, the only true God…") but is classified in Cat 6, not Cat 12. The eternal-life content of John 17:3 is incidental — the verse is part of the High Priestly Prayer and covered by G-1.
 - **Rule citation:** G-1: Every teaching that references John 17 in any verse must be in Cat 12.
 - **Proposed action:** Move to Cat 12 (appropriate subcategory: 12.1 — Personal Petitions, vv. 1–5).
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** Moved teaching from Cat 6.3.1 to Cat 12.1. New ID: **12.1.4**.
 
 ---
 
@@ -55,7 +59,9 @@
 - **Description:** Teaching references John 17:21–23 ("That they may all be one, as you, Father, are in me…") but is classified in Cat 25, not Cat 12. Unity among believers is a significant theme in this verse, but G-1 is a hard override with no topical exceptions.
 - **Rule citation:** G-1: Every teaching that references John 17 in any verse must be in Cat 12.
 - **Proposed action:** Move to Cat 12 (appropriate subcategory: 12.3 — Intercession for All Believers, vv. 20–26).
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** Moved teaching from Cat 25.4.1 to Cat 12.3. New ID: **12.3.4**.
 
 ---
 
@@ -81,7 +87,9 @@
 - **Description:** Teaching is Jesus's declaration to the high priest at trial — "I AM the Christ, the Son of God, coming on the clouds in power." These references are squarely within the trial Passion event (Matt 26 / Mark 14 / Luke 22). Must be in Cat 27.
 - **Rule citation:** G-2: Utterances spoken during the active events of the Passion (trials) belong to Cat 27.
 - **Proposed action:** Move to Cat 27 (appropriate subcategory: 27.3 — The Trials).
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** Moved teaching from Cat 2.6.1 to Cat 27.3. New ID: **27.3.7**.
 
 ---
 
@@ -94,7 +102,9 @@
 - **Description:** Teaching is Jesus's statement to Pilate: "My kingdom is not of this world — otherwise my servants would fight." John 18:36 is a direct trial utterance (Passion event). Must be in Cat 27.
 - **Rule citation:** G-2: Utterances spoken during the active events of the Passion (trials) belong to Cat 27.
 - **Proposed action:** Move to Cat 27 (appropriate subcategory: 27.3 — The Trials).
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** Moved teaching from Cat 4.1.12 to Cat 27.3. New ID: **27.3.8**.
 
 ---
 
@@ -107,7 +117,9 @@
 - **Description:** Teaching is Jesus's opening words at the Last Supper ("I longed to share this Passover before my suffering…"). Luke 22:15–16 is the institution of the Lord's Supper, which G-2 explicitly names as a Passion event.
 - **Rule citation:** G-2: The institution of the Lord's Supper belongs to Cat 27.
 - **Proposed action:** Move to Cat 27 (appropriate subcategory: 27.1 — The Last Supper).
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** Moved teaching from Cat 9.1.1 to Cat 27.1. New ID: **27.1.11**.
 
 ---
 
@@ -120,7 +132,9 @@
 - **Description:** "Take and eat — this is my body given for you." The bread-breaking words of institution. Matt 26:26–27 / Mark 14:22 / Luke 22:17, 19 are Passion scope references. G-2 explicitly names the institution of the Lord's Supper.
 - **Rule citation:** G-2: The institution of the Lord's Supper belongs to Cat 27.
 - **Proposed action:** Move to Cat 27 (appropriate subcategory: 27.1 — The Last Supper).
-- **Status:** OPEN
+- **Status:** ACCEPTED (NO) 2026-04-29
+
+> **Resolution 2026-04-29:** Approver elected to keep 9.1.2 in Cat 9 (New Covenant). The Eucharistic institution words are retained in Cat 9 for theological coherence. G-2 violation accepted by catalog owner.
 
 ---
 
@@ -133,7 +147,9 @@
 - **Description:** "This cup is my blood of the covenant — the new covenant in my blood." The cup-blessing words of institution. Matt 26:28 / Mark 14:24 / Luke 22:20 are Passion scope. G-2 explicitly names the Lord's Supper institution.
 - **Rule citation:** G-2: The institution of the Lord's Supper belongs to Cat 27.
 - **Proposed action:** Move to Cat 27 (appropriate subcategory: 27.1 — The Last Supper).
-- **Status:** OPEN
+- **Status:** ACCEPTED (NO) 2026-04-29
+
+> **Resolution 2026-04-29:** Approver elected to keep 9.1.3 in Cat 9 (New Covenant). G-2 violation accepted by catalog owner.
 
 ---
 
@@ -146,7 +162,9 @@
 - **Description:** "I will not drink of the fruit of the vine again until I drink it new in the Father's kingdom." Matt 26:29 / Mark 14:25 / Luke 22:18 are Passion scope references at the Last Supper.
 - **Rule citation:** G-2: The institution of the Lord's Supper belongs to Cat 27.
 - **Proposed action:** Move to Cat 27 (appropriate subcategory: 27.1 — The Last Supper).
-- **Status:** OPEN
+- **Status:** ACCEPTED (NO) 2026-04-29
+
+> **Resolution 2026-04-29:** Approver elected to keep 9.1.4 in Cat 9 (New Covenant). G-2 violation accepted by catalog owner.
 
 ---
 
@@ -159,7 +177,9 @@
 - **Description:** Gethsemane prayer scene ("Watch and pray… the spirit is willing but the flesh is weak"). All references are Matt 26 / Mark 14 / Luke 22 — the Gethsemane event, which G-2 explicitly names as a Passion event.
 - **Rule citation:** G-2: Gethsemane belongs to Cat 27.
 - **Proposed action:** Move to Cat 27 (appropriate subcategory: 27.2 — Gethsemane).
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** Moved teaching from Cat 10.5.2 to Cat 27.2. New ID: **27.2.7**.
 
 ---
 
@@ -172,7 +192,9 @@
 - **Description:** Composite teaching on kingdom greatness. Primary refs (Matt 20 / Mark 10) are from pre-Passion ministry. Luke 22:25–26 (Last Supper dispute about greatness) is a Passion scope ref but is a synoptic parallel to the same teaching already captured from Matthew and Mark. Primary theological frame is topical (kingdom humility), not Passion event.
 - **Rule citation:** G-2 (event-bound): primary frame determines classification when a composite spans both ministry and Passion contexts.
 - **Proposed action:** REVIEW — determine if Luke 22:25–26 is the primary ref or a parallel citation to an earlier teaching. If Luke 22:25–26 can be considered a cross-reference to the ministry teaching (Matt 20 / Mark 10) rather than a distinct Last Supper event, classification in Cat 15 may be acceptable. If Luke 22:25–26 is treated as a distinct Passion event utterance, split into separate teachings.
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** SPLIT. Removed Luke 22:25–26 from 15.1.1 refs. Created new teaching **27.1.12** in Cat 27.1 for the Last Supper dispute over greatness (Luke 22:25–26).
 
 ---
 
@@ -185,7 +207,9 @@
 - **Description:** Composite servant-model teaching. Matt 20:28 / Mark 10:45 are pre-Passion ministry refs ("Son of Man came to serve and give his life as a ransom"). Luke 22:27 ("I am among you as one who serves") is a Last Supper utterance (Passion scope) that parallels the same theme. Cross-period composite.
 - **Rule citation:** G-2 (event-bound): primary frame is topical servanthood (ministry context); Luke 22:27 is a supporting parallel.
 - **Proposed action:** REVIEW — if Luke 22:27 is treated as a cross-reference parallel to Matt 20:28 / Mark 10:45, classification in Cat 15 is defensible. If treated as a distinct Passion event utterance, remove Luke 22:27 and create a separate teaching in Cat 27.
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** SPLIT. Removed Luke 22:27 from 15.2.1 refs; updated text to "The Son of Man came not to be served but to serve and give his life as a ransom for many." Created new teaching **27.1.13** in Cat 27.1 for the Last Supper servant declaration (Luke 22:27).
 
 ---
 
@@ -198,7 +222,9 @@
 - **Description:** "Father, forgive them, for they know not what they do." Luke 23:34 is the crucifixion — an active Passion event. CLASSIFICATION_RULES.md explicitly directs this to Cat 27.4.
 - **Rule citation:** G-2 + explicit CLASSIFICATION_RULES.md routing note: "Forgiveness from the cross ('Father, forgive them') → Cat 27 per G-2."
 - **Proposed action:** Move to Cat 27.4 (Words from the Cross).
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** Teaching 18.2.4 was already present in Cat 27 as 27.4.1 (pre-existing, richer description). The Cat 18 duplicate was removed. Authoritative location: **27.4.1**.
 
 ---
 
@@ -211,7 +237,9 @@
 - **Description:** Cross-period composite: John 14:6 ("I am the way, the truth, and the life") is Farewell Discourse (pre-Passion), John 18:37 ("I came to bear witness to the truth") is from Jesus's trial before Pilate (Passion scope). Primary theological frame is "Jesus as truth" — a topical identity claim that spans both contexts.
 - **Rule citation:** G-2 (event-bound): the Farewell Discourse is explicitly exempt; John 18:37 alone might not define the primary frame if it functions as a supporting parallel.
 - **Proposed action:** REVIEW — determine whether John 18:37 is the primary frame (→ split and move Passion part to Cat 27.3) or a supporting ref that elaborates the John 14:6 truth claim (→ Cat 16 acceptable). Note that John 14:6 is already cross-listed in Cat 2 and Cat 6 (see DUP-001 from B0).
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** SPLIT. Removed John 18:37 from 16.3.1 refs; updated text to "Declares himself the way, the truth, and the life — no one comes to the Father except through him." Created new teaching **27.3.9** in Cat 27.3 for the truth-witness declaration before Pilate (John 18:37).
 
 ---
 
@@ -224,7 +252,9 @@
 - **Description:** Composite family/kingdom teaching. Primary refs (Matt 19:29 / Mark 10:29–30 / Luke 18:29–30) are pre-Passion ministry. Luke 22:28–32 ("You are those who have stayed with me in my trials…") is a Last Supper utterance (Passion scope) but constitutes a distinct saying (the apostle-commission/throne promise) rather than a parallel to the Matt 19 / Mark 10 / Luke 18 content.
 - **Rule citation:** G-2 (event-bound): Luke 22:28–32 may be a distinct Passion event utterance bundled into this composite.
 - **Proposed action:** REVIEW — Luke 22:28–32 appears to be a distinct saying about apostolic thrones (not a parallel to Matt 19:29 / Mark 10:29–30). Consider splitting Luke 22:28–32 into a separate teaching in Cat 27. The remainder (Matt 19:29 / Mark 10 / Luke 18) stays in Cat 19.
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** SPLIT. Removed Luke 22:28–32 from 19.3.3 refs. Created new teaching **27.1.14** in Cat 27.1 for the apostolic throne promise and Peter warning (Luke 22:28–32).
 
 ---
 
@@ -249,7 +279,9 @@
 - **Description:** "I AM the First and the Last, the Living One — dead, and behold alive forevermore." Rev 1:17–18 is a Rev 1–3 reference. Teaching is in Cat 2, not Cat 31. Note: B0-BASELINE.md (DUP-002) identified this as a cross-listing with 31.1.2 — that cross-listing itself may be the issue. The teaching exists in both Cat 2 and Cat 31; G-4 means Cat 31 is the authoritative location.
 - **Rule citation:** G-4: Every teaching referencing Rev 1–3 must be in Cat 31.
 - **Proposed action:** Resolve DUP-002: Cat 31 (31.1.2) is the authoritative location per G-4. Cat 2 (2.1.9) should be removed or converted to a cross-reference note, not a full duplicate teaching.
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** Deleted teaching 2.1.9 from Cat 2. DUP-002 resolved. Authoritative location: **31.1.2** (unchanged).
 
 ---
 
@@ -262,7 +294,9 @@
 - **Description:** "I AM the Alpha and the Omega, the beginning and the end." Rev 1:8 is a Rev 1 reference. Teaching is in Cat 2, not Cat 31. G-4 applies.
 - **Rule citation:** G-4: Every teaching referencing Rev 1–3 must be in Cat 31.
 - **Proposed action:** Move to Cat 31 (appropriate subcategory: 31.1 — Introduction / Vision of Christ). Remove from Cat 2.
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** Moved teaching from Cat 2.1.11 to Cat 31.1. New ID: **31.1.4**.
 
 ---
 
@@ -275,7 +309,9 @@
 - **Description:** Composite teaching on Jesus's mission ("I came to bring fire/division"). Primary refs are Luke 12:49 and Matt 10:34 (pre-Passion ministry). Rev 2:23 ("I am he who searches minds and hearts and will give to each according to deeds") is a Seven Churches letter verse included as a supporting cross-reference to divine judgment authority. Rev 2:23 is a distinct saying rather than a parallel to Luke 12:49 / Matt 10:34.
 - **Rule citation:** G-4: Every teaching referencing Rev 1–3 must be in Cat 31. However, composite teachings including incidental Rev cross-references need judgment.
 - **Proposed action:** REVIEW — determine if Rev 2:23 is included as a genuine parallel (unlikely — it's a distinct saying) or as a cross-reference annotation. If a distinct saying, split it out into Cat 31. If incidental cross-reference annotation, remove from references array and the G-4 finding resolves without a teaching move.
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** SPLIT. Removed Rev 2:23 from 2.3.4 refs; updated text to "He came to cast fire on the earth — not peace but a sword." Rev 2:23 content is already covered by 31.5.1 (Thyatira letter, Rev 2:19–23 range); no new teaching needed in Cat 31.
 
 ---
 
@@ -288,7 +324,9 @@
 - **Description:** Teaching on the call to repent. Rev 2–3 calls to repentance (to the churches at Ephesus, Pergamon, Thyatira, Sardis, Laodicea) are listed as references alongside each other — but there is no primary ministry-era reference. All refs are from Rev 2–3. This teaching may belong entirely in Cat 31, not Cat 5.
 - **Rule citation:** G-4: Every teaching referencing Rev 1–3 must be in Cat 31.
 - **Proposed action:** REVIEW — if all refs are Rev 2–3 calls to repentance, this teaching should be in Cat 31 (31.x — Calls to Repentance within the Seven Letters). The Cat 5 classification may be incorrect.
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** Deleted teaching 5.1.4. Repentance calls from Rev 2–3 are already individually covered in Cat 31 letter subcategories (31.2.1 Ephesus, 31.4.1 Pergamum, 31.5.1 Thyatira, 31.6.1 Sardis, 31.8.1 Laodicea). No net loss of content.
 
 ---
 
@@ -301,7 +339,9 @@
 - **Description:** "Whoever comes to me I will not cast out" (John 6:37) + "Behold, I stand at the door and knock" (Rev 3:20). Cross-period composite. John 6:37 is a ministry-era invitation teaching; Rev 3:20 is the Seven Churches letter to Laodicea — an invitation saying that parallels the ministry theme.
 - **Rule citation:** G-4: Every teaching referencing Rev 1–3 must be in Cat 31. However, Rev 3:20 also has strong parallels to pre-ministry invitation themes.
 - **Proposed action:** REVIEW — Rev 3:20 ("behold I stand at the door and knock") is a Seven Churches utterance that parallels the invitation theme of Cat 5. Determine whether to: (a) remove Rev 3:20 from this teaching and add a separate Cat 31 teaching for it, or (b) keep as a composite cross-listing. G-4 technically requires it to be in Cat 31; verify if Rev 3:20 already appears in Cat 31.
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** Removed Rev 3:20 from 5.3.2 refs; updated text to "Promises that all whom the Father gives him will come to him, and whoever comes he will never cast out." Rev 3:20 is already covered by **31.8.2** (Laodicea letter). No new teaching needed in Cat 31.
 
 ---
 
@@ -314,7 +354,9 @@
 - **Description:** Teaching on the "he who has ears to hear, let him hear" formula. Ministry-era refs (Matt/Mark/Luke) are the primary occurrences; Rev 2–3 occurrences are the same formula repeated in each of the Seven Letters. The Rev 2–3 references are not incidental — they constitute half the references and represent a distinct body of utterances in Rev 1–3.
 - **Rule citation:** G-4: Every teaching referencing Rev 1–3 must be in Cat 31.
 - **Proposed action:** ERROR — the "ears to hear" formula in Rev 2–3 is a significant body of Rev 1–3 content. Consider splitting: (a) ministry-era "ears to hear" stays in Cat 17.1.1, (b) Seven Letters "ears to hear" repetitions go to Cat 31 as a separate teaching. If kept composite, must move to Cat 31 per G-4.
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** SPLIT. Removed all Rev 2–3 refs from 17.1.1; updated text to "He who has ears to hear, let him hear — a call to spiritual attention repeated throughout his ministry." Created new teaching **31.1.5** in Cat 31.1 for the Seven Letters formula (Rev 2:7, 11, 17, 29; Rev 3:6, 13, 22).
 
 ---
 
@@ -327,7 +369,9 @@
 - **Description:** Teaching on perseverance/faithfulness. Primary refs (Matt 10:22, Matt 24:13, Mark 13:13) are ministry-era. Rev 2:10 ("Be faithful unto death and I will give you the crown of life") is the Smyrna letter — a Passion-scope promise that functionally parallels but is a distinct utterance.
 - **Rule citation:** G-4: Every teaching referencing Rev 1–3 must be in Cat 31.
 - **Proposed action:** ERROR — Rev 2:10 is a distinct promise from the Seven Churches letters. Split: remove Rev 2:10 from 22.4.1 and ensure it exists as a teaching in Cat 31. If it is already there, just remove the Rev 2:10 cross-reference from 22.4.1.
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** SPLIT. Removed Rev 2:10 from 22.4.1 refs; updated text to "Promises that those who endure to the end will be saved." Rev 2:10 ("Be faithful unto death and I will give you the crown of life") is already covered by **31.3.1** (Smyrna letter, Rev 2:9–10). No new teaching needed in Cat 31.
 
 ---
 
@@ -340,7 +384,9 @@
 - **Description:** Teaching refs are entirely Rev 2:25 and Rev 3:11 — no ministry-era refs. This teaching is entirely sourced from Rev 1–3 (Thyatira letter: "hold fast until I come"; Philadelphia letter: "hold fast what you have"). Must be in Cat 31.
 - **Rule citation:** G-4: Every teaching referencing Rev 1–3 must be in Cat 31.
 - **Proposed action:** Move entirely to Cat 31 (appropriate subcategory matching Thyatira/Philadelphia letters).
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** Deleted teaching 22.4.2. Content (Rev 2:25 + Rev 3:11 "hold fast" directives) is already individually covered in Cat 31: **31.5.2** (Thyatira, Rev 2:25–28) and **31.7.2** (Philadelphia, Rev 3:11–12). No net loss of content.
 
 ---
 
@@ -353,7 +399,9 @@
 - **Description:** Teaching refs are entirely Rev 2–3 overcomers' promises — all seven letters' "to him who overcomes" promises. No ministry-era refs. Must be in Cat 31.
 - **Rule citation:** G-4: Every teaching referencing Rev 1–3 must be in Cat 31.
 - **Proposed action:** Move entirely to Cat 31 (appropriate subcategory for the Seven Letters overcomers' promises).
-- **Status:** OPEN
+- **Status:** RESOLVED 2026-04-29
+
+> **Resolution 2026-04-29:** Deleted teaching 22.4.3. All overcomer promises (Rev 2:7, 17, 26; Rev 3:5, 12, 21) are already individually covered across Cat 31 letter subcategories: **31.2.2**, **31.4.2**, **31.5.2**, **31.6.2**, **31.7.2**, **31.8.2**. No net loss of content.
 
 ---
 
@@ -369,8 +417,8 @@
 | G-4 Reverse | PASS | 0 | 0 | 0 | 0 |
 | **Total** | | **16** | **8** | **0** | **0** |
 
-**B1 status:** COMPLETE — PENDING RESOLUTION  
-**Pass criterion not met:** 16 open ERRORs must be resolved before B2/B3/B4 are meaningful.
+**B1 status:** DONE — all findings resolved or accepted (2026-04-29)  
+**validate-catalog.js:** ✓ PASSED — 683 teachings, 126 subcategories, 31 categories
 
 ### Open ERROR findings requiring catalog changes:
 

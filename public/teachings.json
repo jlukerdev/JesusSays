@@ -644,27 +644,6 @@
             },
             {
               "id": "2.1.9",
-              "text": "I AM the First and the Last, the Living One — dead, and behold alive forevermore; I hold the keys of death and Hades",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Rev 1:17–18",
-                  "book": "Revelation",
-                  "bookAbbr": "Rev",
-                  "chapter": 1,
-                  "ranges": [
-                    [
-                      17,
-                      18
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "Fear not; I am the first and the last: I am he that liveth, and was dead; and, behold, I am alive for evermore, Amen; and have the keys of hell and of death."
-            },
-            {
-              "id": "2.1.10",
               "text": "I AM the Alpha and the Omega, the root and offspring of David, the bright morning star",
               "tags": [],
               "references": [
@@ -689,28 +668,7 @@
               "quote": "I am Alpha and Omega, the beginning and the end, the first and the last. I Jesus have sent mine angel to testify unto you these things in the churches. I am the root and the offspring of David, and the bright and morning star."
             },
             {
-              "id": "2.1.11",
-              "text": "Declares himself the Alpha and Omega, the Almighty Lord God who is and was and is to come",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Rev 1:8",
-                  "book": "Revelation",
-                  "bookAbbr": "Rev",
-                  "chapter": 1,
-                  "ranges": [
-                    [
-                      8,
-                      8
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "I am Alpha and Omega, the beginning and the ending,"
-            },
-            {
-              "id": "2.1.12",
+              "id": "2.1.10",
               "text": "Warns that those who do not believe he is who he claims will die in their sins",
               "quote": "I said therefore unto you, that ye shall die in your sins: for if ye believe not that I am he, ye shall die in your sins. Even the same that I said unto you from the beginning. I have many things to say and to judge of you: but he that sent me is true; and I speak to the world those things which I have heard of him.",
               "tags": [
@@ -733,7 +691,7 @@
               ]
             },
             {
-              "id": "2.1.13",
+              "id": "2.1.11",
               "text": "Contrasts the true shepherd who enters by the door and is known by his sheep with the thief who climbs in another way",
               "quote": "Verily, verily, I say unto you, He that entereth not by the door into the sheepfold, but climbeth up some other way, the same is a thief and a robber. But he that entereth in by the door is the shepherd of the sheep. To him the porter openeth; and the sheep hear his voice: and he calleth his own sheep by name, and leadeth them out. And when he putteth forth his own sheep, he goeth before them, and the sheep follow him: for they know his voice. And a stranger will they not follow, but will flee from him: for they know not the voice of strangers.",
               "tags": [
@@ -757,7 +715,7 @@
               ]
             },
             {
-              "id": "2.1.14",
+              "id": "2.1.12",
               "text": "All who came before him are thieves and robbers, but the sheep did not hear them",
               "quote": "All that ever came before me are thieves and robbers: but the sheep did not hear them.",
               "tags": [
@@ -780,7 +738,7 @@
               ]
             },
             {
-              "id": "2.1.15",
+              "id": "2.1.13",
               "text": "The hireling, who is not the shepherd, sees the wolf coming and flees because he does not own the sheep, leaving them to be caught and scattered",
               "quote": "But he that is an hireling, and not the shepherd, whose own the sheep are not, seeth the wolf coming, and leaveth the sheep, and fleeth: and the wolf catcheth them, and scattereth the sheep. The hireling fleeth, because he is an hireling, and careth not for the sheep.",
               "tags": [
@@ -804,7 +762,7 @@
               ]
             },
             {
-              "id": "2.1.16",
+              "id": "2.1.14",
               "text": "Promises to lay down his life for the sheep and to gather other sheep not of this fold into one flock under one shepherd",
               "quote": "As the Father knoweth me, even so know I the Father: and I lay down my life for the sheep. And other sheep I have, which are not of this fold: them also I must bring, and they shall hear my voice; and there shall be one fold, and one shepherd.",
               "tags": [
@@ -1461,7 +1419,7 @@
             },
             {
               "id": "2.3.4",
-              "text": "He came to cast fire on the earth — not peace but a sword; he is the one who searches mind and heart",
+              "text": "He came to cast fire on the earth — not peace but a sword",
               "tags": [],
               "references": [
                 {
@@ -1486,19 +1444,6 @@
                     [
                       34,
                       34
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Rev 2:23",
-                  "book": "Revelation",
-                  "bookAbbr": "Rev",
-                  "chapter": 2,
-                  "ranges": [
-                    [
-                      23,
-                      23
                     ]
                   ],
                   "isPrimary": false
@@ -1786,27 +1731,6 @@
             },
             {
               "id": "2.4.3",
-              "text": "He asks the Father to restore the glory they shared before the world existed",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 17:5",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 17,
-                  "ranges": [
-                    [
-                      5,
-                      5
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "And now, O Father, glorify thou me with thine own self with the glory which I had with thee before the world was."
-            },
-            {
-              "id": "2.4.4",
               "text": "Came from heaven to do the Father's will — to lose none given to him but raise them up at the last day",
               "quote": "For I came down from heaven, not to do mine own will, but the will of him that sent me. And this is the Father’s will which hath sent me, that of all which he hath given me I should lose nothing, but should raise it up again at the last day.",
               "tags": [],
@@ -1827,7 +1751,7 @@
               ]
             },
             {
-              "id": "2.4.5",
+              "id": "2.4.4",
               "text": "He tells the crowd not to murmur among themselves",
               "quote": "Murmur not among yourselves.",
               "tags": [],
@@ -1848,7 +1772,7 @@
               ]
             },
             {
-              "id": "2.4.6",
+              "id": "2.4.5",
               "text": "He asks the murmuring disciples whether his teaching offends them, and what if they should see the Son of Man ascend up where he was before",
               "quote": "Doth this offend you? What and if ye shall see the Son of man ascend up where he was before?",
               "tags": [],
@@ -1869,7 +1793,7 @@
               ]
             },
             {
-              "id": "2.4.7",
+              "id": "2.4.6",
               "text": "Tells his brothers his time has not come — the world hates him because he testifies its works are evil",
               "quote": "My time is not yet come: but your time is alway ready. The world cannot hate you; but me it hateth, because I testify of it, that the works thereof are evil. Go ye up unto this feast: I go not up yet unto this feast; for my time is not yet full come.",
               "tags": [],
@@ -1890,7 +1814,7 @@
               ]
             },
             {
-              "id": "2.4.8",
+              "id": "2.4.7",
               "text": "He cries in the temple that he is not come of himself but is from him who sent him; he knows the Father, but they do not",
               "quote": "Ye both know me, and ye know whence I am: and I am not come of myself, but he that sent me is true, whom ye know not. But I know him: for I am from him, and he hath sent me.",
               "tags": [],
@@ -1911,7 +1835,7 @@
               ]
             },
             {
-              "id": "2.4.9",
+              "id": "2.4.8",
               "text": "Foretells he will soon return to the Father — and they cannot follow where he goes",
               "quote": "Yet a little while am I with you, and then I go unto him that sent me. Ye shall seek me, and shall not find me: and where I am, thither ye cannot come.",
               "tags": [
@@ -2453,53 +2377,6 @@
           "teachings": [
             {
               "id": "2.6.1",
-              "text": "He confirms to the high priest: I AM the Christ, the Son of God, coming on the clouds in power",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 26:64",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 26,
-                  "ranges": [
-                    [
-                      64,
-                      64
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Mark 14:62",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 14,
-                  "ranges": [
-                    [
-                      62,
-                      62
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 22:67–70",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 22,
-                  "ranges": [
-                    [
-                      67,
-                      70
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ],
-              "quote": "Thou hast said: nevertheless I say unto you, Hereafter shall ye see the Son of man sitting on the right hand of power, and coming in the clouds of heaven."
-            },
-            {
-              "id": "2.6.2",
               "text": "He declares to the Samaritan woman: I who speak to you am the Messiah",
               "tags": [],
               "references": [
@@ -2520,7 +2397,7 @@
               "quote": "I that speak unto thee am he."
             },
             {
-              "id": "2.6.3",
+              "id": "2.6.2",
               "text": "The works done in the Father's name bear witness — if not doing the Father's works, do not believe",
               "tags": [],
               "references": [
@@ -2545,7 +2422,7 @@
               "quote": "I told you, and ye believed not: the works that I do in my Father’s name, they bear witness of me. If I do not the works of my Father, believe me not. But if I do, though ye believe not me, believe the works: that ye may know, and believe, that the Father is in me, and I in him."
             },
             {
-              "id": "2.6.4",
+              "id": "2.6.3",
               "text": "The blind receive sight, the lame walk, the dead are raised, the poor have good news — blessed is he who does not stumble over me",
               "tags": [],
               "references": [
@@ -2579,7 +2456,7 @@
               "quote": "Go and shew John again those things which ye do hear and see: The blind receive their sight, and the lame walk, the lepers are cleansed, and the deaf hear, the dead are raised up, and the poor have the gospel preached to them. And blessed is he, whosoever shall not be offended in me."
             },
             {
-              "id": "2.6.5",
+              "id": "2.6.4",
               "text": "Identifies John the Baptist as the prophesied Elijah for those willing to accept it",
               "quote": "And if ye will receive it, this is Elias, which was for to come.",
               "tags": [
@@ -2602,7 +2479,7 @@
               ]
             },
             {
-              "id": "2.6.6",
+              "id": "2.6.5",
               "text": "Defines his earthly mission — sent only to the lost sheep of the house of Israel",
               "quote": "I am not sent but unto the lost sheep of the house of Israel.",
               "tags": [],
@@ -2623,7 +2500,7 @@
               ]
             },
             {
-              "id": "2.6.7",
+              "id": "2.6.6",
               "text": "Asks the disciples at Caesarea Philippi — whom do men say that I the Son of man am?",
               "quote": "Whom do men say that I the Son of man am?",
               "tags": [],
@@ -2670,7 +2547,7 @@
               ]
             },
             {
-              "id": "2.6.8",
+              "id": "2.6.7",
               "text": "Presses the disciples to confess for themselves who they say he is",
               "quote": "But whom say ye that I am?",
               "tags": [],
@@ -2691,7 +2568,7 @@
               ]
             },
             {
-              "id": "2.6.9",
+              "id": "2.6.8",
               "text": "Blesses Peter for his confession — flesh and blood did not reveal it to him, but the Father in heaven",
               "quote": "Blessed art thou, Simon Bar-jona: for flesh and blood hath not revealed it unto thee, but my Father which is in heaven.",
               "tags": [
@@ -2714,7 +2591,7 @@
               ]
             },
             {
-              "id": "2.6.10",
+              "id": "2.6.9",
               "text": "Reassures the disciples after the Transfiguration — arise, and be not afraid",
               "quote": "Arise, and be not afraid.",
               "tags": [],
@@ -2735,7 +2612,7 @@
               ]
             },
             {
-              "id": "2.6.11",
+              "id": "2.6.10",
               "text": "Teaches Peter that the sons are free from the temple tax, but provides it from a coin in a fish's mouth to avoid offense",
               "quote": "What thinkest thou, Simon? of whom do the kings of the earth take custom or tribute? of their own children, or of strangers? Then are the children free. Notwithstanding, lest we should offend them, go thou to the sea, and cast an hook, and take up the fish that first cometh up; and when thou hast opened his mouth, thou shalt find a piece of money: that take, and give unto them for me and thee.",
               "tags": [],
@@ -2756,7 +2633,7 @@
               ]
             },
             {
-              "id": "2.6.12",
+              "id": "2.6.11",
               "text": "Declares his mission to seek the lost — for the Son of man is come to save that which was lost",
               "quote": "For the Son of man is come to save that which was lost.",
               "tags": [],
@@ -2777,7 +2654,7 @@
               ]
             },
             {
-              "id": "2.6.13",
+              "id": "2.6.12",
               "text": "Sends two disciples to fetch the colt for the triumphal entry — tell the owner the Lord has need of it",
               "quote": "Go into the village over against you, and straightway ye shall find an ass tied, and a colt with her: loose them, and bring them unto me. And if any man say ought unto you, ye shall say, The Lord hath need of them; and straightway he will send them.",
               "tags": [
@@ -2813,7 +2690,7 @@
               ]
             },
             {
-              "id": "2.6.14",
+              "id": "2.6.13",
               "text": "Silences the Pharisees with a question about Christ — whose son is he? If David in spirit calls him Lord, how is he his son?",
               "quote": "What think ye of Christ? whose son is he? How then doth David in spirit call him Lord, saying, The LORD said unto my Lord, Sit thou on my right hand, till I make thine enemies thy footstool? If David then call him Lord, how is he his son?",
               "tags": [],
@@ -2860,7 +2737,7 @@
               ]
             },
             {
-              "id": "2.6.15",
+              "id": "2.6.14",
               "text": "Affirms that Elijah comes first to restore all things — and has already come and been mistreated",
               "quote": "Elias verily cometh first, and restoreth all things; and how it is written of the Son of man, that he must suffer many things, and be set at nought. But I say unto you, That Elias is indeed come, and they have done unto him whatsoever they listed, as it is written of him.",
               "tags": [
@@ -2896,7 +2773,7 @@
               ]
             },
             {
-              "id": "2.6.16",
+              "id": "2.6.15",
               "text": "Behold, we go up to Jerusalem — the Son of man shall be delivered, condemned, mocked, scourged, killed, and rise the third day",
               "quote": "Behold, we go up to Jerusalem; and the Son of man shall be delivered unto the chief priests, and unto the scribes; and they shall condemn him to death, and shall deliver him to the Gentiles: And they shall mock him, and shall scourge him, and shall spit upon him, and shall kill him: and the third day he shall rise again.",
               "tags": [
@@ -2945,7 +2822,7 @@
               ]
             },
             {
-              "id": "2.6.17",
+              "id": "2.6.16",
               "text": "Tells the disciples to feed the crowd themselves and seat them in groups of fifty",
               "quote": "Give ye them to eat. Make them sit down by fifties in a company.",
               "tags": [],
@@ -2966,7 +2843,7 @@
               ]
             },
             {
-              "id": "2.6.18",
+              "id": "2.6.17",
               "text": "Defends the disciples' praise at the triumphal entry — if they were silent, even the stones would cry out",
               "quote": "I tell you that, if these should hold their peace, the stones would immediately cry out.",
               "tags": [],
@@ -2987,7 +2864,7 @@
               ]
             },
             {
-              "id": "2.6.19",
+              "id": "2.6.18",
               "text": "He greets Nathanael as a true Israelite without guile and reveals he saw him under the fig tree before Philip called",
               "quote": "Behold an Israelite indeed, in whom is no guile! Before that Philip called thee, when thou wast under the fig tree, I saw thee.",
               "tags": [],
@@ -3008,7 +2885,7 @@
               ]
             },
             {
-              "id": "2.6.20",
+              "id": "2.6.19",
               "text": "Promises Nathanael will see greater things — heaven open and angels ascending and descending on the Son of Man",
               "quote": "Because I said unto thee, I saw thee under the fig tree, believest thou? thou shalt see greater things than these. Verily, verily, I say unto you, Hereafter ye shall see heaven open, and the angels of God ascending and descending upon the Son of man.",
               "tags": [
@@ -3031,7 +2908,7 @@
               ]
             },
             {
-              "id": "2.6.21",
+              "id": "2.6.20",
               "text": "He asks the Samaritan woman at the well to give him a drink",
               "quote": "Give me to drink.",
               "tags": [],
@@ -3052,7 +2929,7 @@
               ]
             },
             {
-              "id": "2.6.22",
+              "id": "2.6.21",
               "text": "He tells the woman to call her husband and reveals he knows she has had five husbands and the man she now has is not her husband",
               "quote": "Go, call thy husband, and come hither. Thou hast well said, I have no husband: For thou hast had five husbands; and he whom thou now hast is not thy husband: in that saidst thou truly.",
               "tags": [],
@@ -3073,7 +2950,7 @@
               ]
             },
             {
-              "id": "2.6.23",
+              "id": "2.6.22",
               "text": "He reveals himself to the healed man, declaring that the one who talks with him is the Son of God",
               "quote": "Thou hast both seen him, and it is he that talketh with thee.",
               "tags": [],
@@ -3094,7 +2971,7 @@
               ]
             },
             {
-              "id": "2.6.24",
+              "id": "2.6.23",
               "text": "Announces the Son of Man is now glorified and warns the disciples he will be with them only a little while longer",
               "quote": "Now is the Son of man glorified, and God is glorified in him. If God be glorified in him, God shall also glorify him in himself, and shall straightway glorify him. Little children, yet a little while I am with you. Ye shall seek me: and as I said unto the Jews, Whither I go, ye cannot come; so now I say to you.",
               "tags": [],
@@ -3115,7 +2992,7 @@
               ]
             },
             {
-              "id": "2.6.25",
+              "id": "2.6.24",
               "text": "Defends his disciples by citing David eating the showbread and priests working on the Sabbath — one greater than the temple is here",
               "quote": "Have ye not read what David did, when he was an hungred, and they that were with him; How he entered into the house of God, and did eat the shewbread, which was not lawful for him to eat, neither for them which were with him, but only for the priests? Or have ye not read in the law, how that on the sabbath days the priests in the temple profane the sabbath, and are blameless? But I say unto you, That in this place is one greater than the temple.",
               "tags": [],
@@ -3136,7 +3013,7 @@
               ]
             },
             {
-              "id": "2.6.26",
+              "id": "2.6.25",
               "text": "This day is this scripture fulfilled in your ears",
               "quote": "This day is this scripture fulfilled in your ears.",
               "tags": [
@@ -4687,27 +4564,6 @@
                   "isPrimary": true
                 }
               ]
-            },
-            {
-              "id": "4.1.12",
-              "text": "Tells Pilate his kingdom is not of this world — otherwise his servants would fight to prevent his arrest",
-              "quote": "My kingdom is not of this world: if my kingdom were of this world, then would my servants fight, that I should not be delivered to the Jews: but now is my kingdom not from hence.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 18:36",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 18,
-                  "ranges": [
-                    [
-                      36,
-                      36
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
             }
           ]
         },
@@ -5648,52 +5504,6 @@
             },
             {
               "id": "5.1.4",
-              "text": "Across the letters to the churches: remember, be zealous, repent — or judgment will come",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Rev 2:5, 16, 21",
-                  "book": "Revelation",
-                  "bookAbbr": "Rev",
-                  "chapter": 2,
-                  "ranges": [
-                    [
-                      5,
-                      5
-                    ],
-                    [
-                      16,
-                      16
-                    ],
-                    [
-                      21,
-                      21
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Rev 3:3, 19",
-                  "book": "Revelation",
-                  "bookAbbr": "Rev",
-                  "chapter": 3,
-                  "ranges": [
-                    [
-                      3,
-                      3
-                    ],
-                    [
-                      19,
-                      19
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ],
-              "quote": "Remember therefore from whence thou art fallen, and repent, and do the first works; or else I will come unto thee quickly, and will remove thy candlestick out of his place, except thou repent. Repent; or else I will come unto thee quickly, and will fight against them with the sword of my mouth. And I gave her space to repent of her fornication; and she repented not."
-            },
-            {
-              "id": "5.1.5",
               "text": "Parable of the barren fig tree — the owner gives one final year to bear fruit before judgment falls",
               "tags": [
                 "parable"
@@ -5716,7 +5526,7 @@
               "quote": "A certain man had a fig tree planted in his vineyard; and he came and sought fruit thereon, and found none. Then said he unto the dresser of his vineyard, Behold, these three years I come seeking fruit on this fig tree, and find none: cut it down; why cumbereth it the ground? And he answering said unto him, Lord, let it alone this year also, till I shall dig about it, and dung it: And if it bear fruit, well: and if not, then after that thou shalt cut it down."
             },
             {
-              "id": "5.1.6",
+              "id": "5.1.5",
               "text": "Pronounces woe on Chorazin and Bethsaida — Tyre and Sidon would have repented in sackcloth and ashes had they seen such mighty works",
               "quote": "Woe unto thee, Chorazin! woe unto thee, Bethsaida! for if the mighty works, which were done in you, had been done in Tyre and Sidon, they would have repented long ago in sackcloth and ashes.",
               "tags": [
@@ -5739,7 +5549,7 @@
               ]
             },
             {
-              "id": "5.1.7",
+              "id": "5.1.6",
               "text": "Asks whether the Galileans Pilate killed were greater sinners — calls all to repent or likewise perish",
               "quote": "Suppose ye that these Galilæans were sinners above all the Galilæans, because they suffered such things?",
               "tags": [],
@@ -5760,7 +5570,7 @@
               ]
             },
             {
-              "id": "5.1.8",
+              "id": "5.1.7",
               "text": "Asks whether the eighteen killed when the tower in Siloam fell were greater sinners than other Jerusalemites",
               "quote": "Or those eighteen, upon whom the tower in Siloam fell, and slew them, think ye that they were sinners above all men that dwelt in Jerusalem?",
               "tags": [],
@@ -5781,7 +5591,7 @@
               ]
             },
             {
-              "id": "5.1.9",
+              "id": "5.1.8",
               "text": "Calls Zacchaeus down from the sycamore tree — he must stay at his house today",
               "quote": "Zacchæus, make haste, and come down; for to day I must abide at thy house.",
               "tags": [],
@@ -5802,7 +5612,7 @@
               ]
             },
             {
-              "id": "5.1.10",
+              "id": "5.1.9",
               "text": "Declares salvation has come to Zacchaeus's house — he too is a son of Abraham",
               "quote": "This day is salvation come to this house, forsomuch as he also is a son of Abraham.",
               "tags": [],
@@ -5962,7 +5772,7 @@
             },
             {
               "id": "5.3.2",
-              "text": "Whoever comes to me I will never cast out; behold, I stand at the door and knock — if anyone opens, I will come in",
+              "text": "Promises that all whom the Father gives him will come to him, and whoever comes he will never cast out",
               "tags": [],
               "references": [
                 {
@@ -5977,19 +5787,6 @@
                     ]
                   ],
                   "isPrimary": true
-                },
-                {
-                  "label": "Rev 3:20",
-                  "book": "Revelation",
-                  "bookAbbr": "Rev",
-                  "chapter": 3,
-                  "ranges": [
-                    [
-                      20,
-                      20
-                    ]
-                  ],
-                  "isPrimary": false
                 }
               ],
               "quote": "All that the Father giveth me shall come to me; and him that cometh to me I will in no wise cast out."
@@ -6216,27 +6013,6 @@
           "teachings": [
             {
               "id": "6.3.1",
-              "text": "Defines eternal life — knowing the only true God and Jesus Christ whom he sent",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 17:3",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 17,
-                  "ranges": [
-                    [
-                      3,
-                      3
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "And this is life eternal, that they might know thee the only true God, and Jesus Christ, whom thou hast sent."
-            },
-            {
-              "id": "6.3.2",
               "text": "My sheep hear my voice — I know them, they follow me, I give them eternal life; no one can snatch them from my hand",
               "tags": [],
               "references": [
@@ -6257,7 +6033,7 @@
               "quote": "My sheep hear my voice, and I know them, and they follow me: And I give unto them eternal life; and they shall never perish, neither shall any man pluck them out of my hand."
             },
             {
-              "id": "6.3.3",
+              "id": "6.3.2",
               "text": "Promises eternal life and resurrection on the last day to those who feed on him — and never-ending thirst quenched in the water he gives",
               "tags": [],
               "references": [
@@ -6291,7 +6067,7 @@
               "quote": "Whoso eateth my flesh, and drinketh my blood, hath eternal life; and I will raise him up at the last day."
             },
             {
-              "id": "6.3.4",
+              "id": "6.3.3",
               "text": "In my Father's house are many rooms — he goes to prepare a place and will come again to receive his own",
               "tags": [],
               "references": [
@@ -6312,7 +6088,7 @@
               "quote": "In my Father’s house are many mansions: if it were not so, I would have told you. I go to prepare a place for you. And if I go and prepare a place for you, I will come again, and receive you unto myself; that where I am, there ye may be also."
             },
             {
-              "id": "6.3.5",
+              "id": "6.3.4",
               "text": "Rebukes the crowd for chasing him after the loaves — work not for perishable food but for food that lasts to eternal life",
               "quote": "Verily, verily, I say unto you, Ye seek me, not because ye saw the miracles, but because ye did eat of the loaves, and were filled. Labour not for the meat which perisheth, but for that meat which endureth unto everlasting life, which the Son of man shall give unto you: for him hath God the Father sealed.",
               "tags": [],
@@ -6333,7 +6109,7 @@
               ]
             },
             {
-              "id": "6.3.6",
+              "id": "6.3.5",
               "text": "All taught by the Father come to him — only the one from God has seen the Father, and whoever believes has eternal life",
               "quote": "It is written in the prophets, And they shall be all taught of God. Every man therefore that hath heard, and hath learned of the Father, cometh unto me. Not that any man hath seen the Father, save he which is of God, he hath seen the Father. Verily, verily, I say unto you, He that believeth on me hath everlasting life.",
               "tags": [],
@@ -6354,7 +6130,7 @@
               ]
             },
             {
-              "id": "6.3.7",
+              "id": "6.3.6",
               "text": "He says he goes his way and they shall seek him and die in their sins, for where he goes they cannot come",
               "quote": "I go my way, and ye shall seek me, and shall die in your sins: whither I go, ye cannot come.",
               "tags": [
@@ -6377,7 +6153,7 @@
               ]
             },
             {
-              "id": "6.3.8",
+              "id": "6.3.7",
               "text": "Whoever commits sin is the servant of sin, and the servant does not abide in the house forever, but the Son abides forever",
               "quote": "Verily, verily, I say unto you, Whosoever committeth sin is the servant of sin. And the servant abideth not in the house for ever: but the Son abideth ever.",
               "tags": [],
@@ -6398,7 +6174,7 @@
               ]
             },
             {
-              "id": "6.3.9",
+              "id": "6.3.8",
               "text": "He has no devil but honors his Father; he seeks not his own glory, and if any man keeps his saying, he shall never see death",
               "quote": "I have not a devil; but I honour my Father, and ye do dishonour me. And I seek not mine own glory: there is one that seeketh and judgeth. Verily, verily, I say unto you, If a man keep my saying, he shall never see death.",
               "tags": [],
@@ -6419,7 +6195,7 @@
               ]
             },
             {
-              "id": "6.3.10",
+              "id": "6.3.9",
               "text": "Contrasts the thief who comes to destroy with himself — he came so they may have life abundantly",
               "quote": "The thief cometh not, but for to steal, and to kill, and to destroy: I am come that they might have life, and that they might have it more abundantly.",
               "tags": [
@@ -7874,27 +7650,6 @@
           "teachings": [
             {
               "id": "9.1.1",
-              "text": "Tells the disciples he longed to share this Passover before his suffering — and will not eat it again until the kingdom comes",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 22:15–16",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 22,
-                  "ranges": [
-                    [
-                      15,
-                      16
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "With desire I have desired to eat this passover with you before I suffer: For I say unto you, I will not any more eat thereof, until it be fulfilled in the kingdom of God."
-            },
-            {
-              "id": "9.1.2",
               "text": "Take and eat — this is my body given for you; do this in remembrance of me",
               "tags": [],
               "references": [
@@ -7958,7 +7713,7 @@
               "quote": "Take, eat; this is my body. Drink ye all of it;"
             },
             {
-              "id": "9.1.3",
+              "id": "9.1.2",
               "text": "This cup is my blood of the covenant — the new covenant in my blood, poured out for many for the forgiveness of sins; do this in remembrance of me",
               "tags": [],
               "references": [
@@ -8018,7 +7773,7 @@
               "quote": "For this is my blood of the new testament, which is shed for many for the remission of sins."
             },
             {
-              "id": "9.1.4",
+              "id": "9.1.3",
               "text": "Pledges he will not drink the cup again until he drinks it new in the Father's kingdom",
               "tags": [],
               "references": [
@@ -8809,81 +8564,6 @@
                 }
               ],
               "quote": "Again I say unto you, That if two of you shall agree on earth as touching any thing that they shall ask, it shall be done for them of my Father which is in heaven. For where two or three are gathered together in my name, there am I in the midst of them."
-            },
-            {
-              "id": "10.5.2",
-              "text": "Calls the disciples in Gethsemane to stay alert and pray — the spirit is willing but the flesh is weak",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 26:36, 38–42, 45–46",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 26,
-                  "ranges": [
-                    [
-                      36,
-                      36
-                    ],
-                    [
-                      38,
-                      42
-                    ],
-                    [
-                      45,
-                      46
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Mark 14:32, 34, 36–38, 41–42",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 14,
-                  "ranges": [
-                    [
-                      32,
-                      32
-                    ],
-                    [
-                      34,
-                      34
-                    ],
-                    [
-                      36,
-                      38
-                    ],
-                    [
-                      41,
-                      42
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 22:40, 42, 46",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 22,
-                  "ranges": [
-                    [
-                      40,
-                      40
-                    ],
-                    [
-                      42,
-                      42
-                    ],
-                    [
-                      46,
-                      46
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ],
-              "quote": "Sit ye here, while I go and pray yonder. My soul is exceeding sorrowful, even unto death: tarry ye here, and watch with me. O my Father, if it be possible, let this cup pass from me: nevertheless not as I will, but as thou wilt. What, could ye not watch with me one hour? Watch and pray, that ye enter not into temptation: the spirit indeed is willing, but the flesh is weak. O my Father, if this cup may not pass away from me, except I drink it, thy will be done. Sleep on now, and take your rest: behold, the hour is at hand, and the Son of man is betrayed into the hands of sinners. Rise, let us be going: behold, he is at hand that doth betray me."
             }
           ]
         }
@@ -9116,6 +8796,48 @@
                 }
               ],
               "quote": "And this is life eternal, that they might know thee the only true God, and Jesus Christ, whom thou hast sent. I have glorified thee on the earth: I have finished the work which thou gavest me to do. And now, O Father, glorify thou me with thine own self with the glory which I had with thee before the world was."
+            },
+            {
+              "id": "12.1.3",
+              "text": "He asks the Father to restore the glory they shared before the world existed",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 17:5",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 17,
+                  "ranges": [
+                    [
+                      5,
+                      5
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ],
+              "quote": "And now, O Father, glorify thou me with thine own self with the glory which I had with thee before the world was."
+            },
+            {
+              "id": "12.1.4",
+              "text": "Defines eternal life — knowing the only true God and Jesus Christ whom he sent",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 17:3",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 17,
+                  "ranges": [
+                    [
+                      3,
+                      3
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ],
+              "quote": "And this is life eternal, that they might know thee the only true God, and Jesus Christ, whom thou hast sent."
             }
           ]
         },
@@ -9353,6 +9075,27 @@
                   "isPrimary": true
                 }
               ]
+            },
+            {
+              "id": "12.3.4",
+              "text": "He prays that they all may be one as the Father and Son are one — that the world may believe that the Father sent him",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 17:21–23",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 17,
+                  "ranges": [
+                    [
+                      21,
+                      23
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ],
+              "quote": "That they all may be one; as thou, Father, art in me, and I in thee, that they also may be one in us: that the world may believe that thou hast sent me. And the glory which thou gavest me I have given them; that they may be one, even as we are one: I in them, and thou in me, that they may be made perfect in one; and that the world may know that thou hast sent me, and hast loved them, as thou hast loved me."
             }
           ]
         }
@@ -10413,19 +10156,6 @@
                     ]
                   ],
                   "isPrimary": false
-                },
-                {
-                  "label": "Luke 22:25–26",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 22,
-                  "ranges": [
-                    [
-                      25,
-                      26
-                    ]
-                  ],
-                  "isPrimary": false
                 }
               ],
               "quote": "What wilt thou? Ye know not what ye ask. Are ye able to drink of the cup that I shall drink of, and to be baptized with the baptism that I am baptized with? Ye shall drink indeed of my cup, and be baptized with the baptism that I am baptized with: but to sit on my right hand, and on my left, is not mine to give, but it shall be given to them for whom it is prepared of my Father. Ye know that the princes of the Gentiles exercise dominion over them, and they that are great exercise authority upon them. But it shall not be so among you: but whosoever will be great among you, let him be your minister; And whosoever will be chief among you, let him be your servant:"
@@ -10609,7 +10339,7 @@
           "teachings": [
             {
               "id": "15.2.1",
-              "text": "The Son of Man came not to be served but to serve and give his life as a ransom — he is among them as one who serves",
+              "text": "The Son of Man came not to be served but to serve and give his life as a ransom for many",
               "tags": [],
               "references": [
                 {
@@ -10634,19 +10364,6 @@
                     [
                       45,
                       45
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 22:27",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 22,
-                  "ranges": [
-                    [
-                      27,
-                      27
                     ]
                   ],
                   "isPrimary": false
@@ -10987,7 +10704,7 @@
           "teachings": [
             {
               "id": "16.3.1",
-              "text": "I am the way, the truth, and the life — he was born and came into the world to bear witness to the truth; everyone on the side of truth listens to him",
+              "text": "Declares himself the way, the truth, and the life — no one comes to the Father except through him",
               "tags": [],
               "references": [
                 {
@@ -11002,19 +10719,6 @@
                     ]
                   ],
                   "isPrimary": true
-                },
-                {
-                  "label": "John 18:37",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 18,
-                  "ranges": [
-                    [
-                      37,
-                      37
-                    ]
-                  ],
-                  "isPrimary": false
                 }
               ],
               "quote": "I am the way, the truth, and the life: no man cometh unto the Father, but by me."
@@ -11093,7 +10797,7 @@
           "teachings": [
             {
               "id": "17.1.1",
-              "text": "He who has ears to hear, let him hear — a repeated call to spiritual attention throughout his ministry",
+              "text": "He who has ears to hear, let him hear — a call to spiritual attention repeated throughout his ministry",
               "tags": [],
               "references": [
                 {
@@ -11165,52 +10869,6 @@
                     [
                       35,
                       35
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Rev 2:7, 11, 17, 29",
-                  "book": "Revelation",
-                  "bookAbbr": "Rev",
-                  "chapter": 2,
-                  "ranges": [
-                    [
-                      7,
-                      7
-                    ],
-                    [
-                      11,
-                      11
-                    ],
-                    [
-                      17,
-                      17
-                    ],
-                    [
-                      29,
-                      29
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Rev 3:6, 13, 22",
-                  "book": "Revelation",
-                  "bookAbbr": "Rev",
-                  "chapter": 3,
-                  "ranges": [
-                    [
-                      6,
-                      6
-                    ],
-                    [
-                      13,
-                      13
-                    ],
-                    [
-                      22,
-                      22
                     ]
                   ],
                   "isPrimary": false
@@ -12119,27 +11777,6 @@
                 }
               ],
               "quote": "¶ Therefore is the kingdom of heaven likened unto a certain king, which would take account of his servants. And when he had begun to reckon, one was brought unto him, which owed him ten thousand talents. But forasmuch as he had not to pay, his lord commanded him to be sold, and his wife, and children, and all that he had, and payment to be made. The servant therefore fell down, and worshipped him, saying, Lord, have patience with me, and I will pay thee all. Then the lord of that servant was moved with compassion, and loosed him, and forgave him the debt. But the same servant went out, and found one of his fellowservants, which owed him an hundred pence: and he laid hands on him, and took him by the throat, saying, Pay me that thou owest. And his fellowservant fell down at his feet, and besought him, saying, Have patience with me, and I will pay thee all. And he would not: but went and cast him into prison, till he should pay the debt. So when his fellowservants saw what was done, they were very sorry, and came and told unto their lord all that was done. Then his lord, after that he had called him, said unto him, O thou wicked servant, I forgave thee all that debt, because thou desiredst me: Shouldest not thou also have had compassion on thy fellowservant, even as I had pity on thee? And his lord was wroth, and delivered him to the tormentors, till he should pay all that was due unto him. So likewise shall my heavenly Father do also unto you, if ye from your hearts forgive not every one his brother their trespasses."
-            },
-            {
-              "id": "18.2.4",
-              "text": "Father, forgive them, for they know not what they do",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 23:34",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 23,
-                  "ranges": [
-                    [
-                      34,
-                      34
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "Father, forgive them; for they know not what they do."
             }
           ]
         },
@@ -12703,19 +12340,6 @@
                     [
                       29,
                       30
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 22:28–32",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 22,
-                  "ranges": [
-                    [
-                      28,
-                      32
                     ]
                   ],
                   "isPrimary": false
@@ -14734,7 +14358,7 @@
           "teachings": [
             {
               "id": "22.4.1",
-              "text": "Promises that those who endure to the end will be saved — and the faithful unto death receive the crown of life",
+              "text": "Promises that those who endure to the end will be saved",
               "tags": [],
               "references": [
                 {
@@ -14775,106 +14399,9 @@
                     ]
                   ],
                   "isPrimary": false
-                },
-                {
-                  "label": "Rev 2:10",
-                  "book": "Revelation",
-                  "bookAbbr": "Rev",
-                  "chapter": 2,
-                  "ranges": [
-                    [
-                      10,
-                      10
-                    ]
-                  ],
-                  "isPrimary": false
                 }
               ],
               "quote": "And ye shall be hated of all men for my name’s sake: but he that endureth to the end shall be saved."
-            },
-            {
-              "id": "22.4.2",
-              "text": "Hold fast what you have until he comes — I am coming soon; let no one seize your crown",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Rev 2:25",
-                  "book": "Revelation",
-                  "bookAbbr": "Rev",
-                  "chapter": 2,
-                  "ranges": [
-                    [
-                      25,
-                      25
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Rev 3:11",
-                  "book": "Revelation",
-                  "bookAbbr": "Rev",
-                  "chapter": 3,
-                  "ranges": [
-                    [
-                      11,
-                      11
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ],
-              "quote": "But that which ye have already hold fast till I come."
-            },
-            {
-              "id": "22.4.3",
-              "text": "Promises the overcomers in each church: tree of life, hidden manna, authority, white robes, a place on his throne",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Rev 2:7, 17, 26",
-                  "book": "Revelation",
-                  "bookAbbr": "Rev",
-                  "chapter": 2,
-                  "ranges": [
-                    [
-                      7,
-                      7
-                    ],
-                    [
-                      17,
-                      17
-                    ],
-                    [
-                      26,
-                      26
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Rev 3:5, 12, 21",
-                  "book": "Revelation",
-                  "bookAbbr": "Rev",
-                  "chapter": 3,
-                  "ranges": [
-                    [
-                      5,
-                      5
-                    ],
-                    [
-                      12,
-                      12
-                    ],
-                    [
-                      21,
-                      21
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ],
-              "quote": "He that hath an ear, let him hear what the Spirit saith unto the churches; To him that overcometh will I give to eat of the tree of life, which is in the midst of the paradise of God. He that hath an ear, let him hear what the Spirit saith unto the churches; To him that overcometh will I give to eat of the hidden manna, and will give him a white stone, and in the stone a new name written, which no man knoweth saving he that receiveth it. And he that overcometh, and keepeth my works unto the end, to him will I give power over the nations:"
             }
           ]
         }
@@ -16949,27 +16476,6 @@
           "teachings": [
             {
               "id": "25.4.1",
-              "text": "He prays that they all may be one as the Father and Son are one — that the world may believe that the Father sent him",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 17:21–23",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 17,
-                  "ranges": [
-                    [
-                      21,
-                      23
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "That they all may be one; as thou, Father, art in me, and I in thee, that they also may be one in us: that the world may believe that thou hast sent me. And the glory which thou gavest me I have given them; that they may be one, even as we are one: I in them, and thou in me, that they may be made perfect in one; and that the world may know that thou hast sent me, and hast loved them, as thou hast loved me."
-            },
-            {
-              "id": "25.4.2",
               "text": "A kingdom divided against itself cannot stand",
               "tags": [],
               "references": [
@@ -18281,6 +17787,90 @@
                   "isPrimary": false
                 }
               ]
+            },
+            {
+              "id": "27.1.11",
+              "text": "Tells the disciples he longed to share this Passover before his suffering — and will not eat it again until the kingdom comes",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Luke 22:15–16",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 22,
+                  "ranges": [
+                    [
+                      15,
+                      16
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ],
+              "quote": "With desire I have desired to eat this passover with you before I suffer: For I say unto you, I will not any more eat thereof, until it be fulfilled in the kingdom of God."
+            },
+            {
+              "id": "27.1.12",
+              "text": "At the Last Supper dispute over greatness, tells the disciples that gentile rulers lord over their subjects but among them the greatest must be as the youngest and the leader as one who serves",
+              "quote": "And he said unto them, The kings of the Gentiles exercise lordship over them; and they that exercise authority upon them are called benefactors. But ye shall not be so: but he that is greatest among you, let him be as the younger; and he that is chief, as he that doth serve.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Luke 22:25–26",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 22,
+                  "ranges": [
+                    [
+                      25,
+                      26
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "27.1.13",
+              "text": "At table, asks who is greater — the one who reclines or the one who serves — and declares himself to be among them as one who serves",
+              "quote": "For whether is greater, he that sitteth at meat, or he that serveth? is not he that sitteth at meat? but I am among you as he that serveth.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Luke 22:27",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 22,
+                  "ranges": [
+                    [
+                      27,
+                      27
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "27.1.14",
+              "text": "At the Last Supper, commends the disciples for remaining with him through his trials and promises them thrones to judge the twelve tribes; warns Peter that Satan has asked to sift him but that he has prayed for Peter's faith to hold",
+              "quote": "Ye are they which have continued with me in my temptations. And I appoint unto you a kingdom, as my Father hath appointed unto me; That ye may eat and drink at my table in my kingdom, and sit on thrones judging the twelve tribes of Israel. And the Lord said, Simon, Simon, behold, Satan hath desired to have you, that he may sift you as wheat: But I have prayed for thee, that thy faith fail not: and when thou art converted, strengthen thy brethren.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Luke 22:28–32",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 22,
+                  "ranges": [
+                    [
+                      28,
+                      32
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
             }
           ]
         },
@@ -18440,6 +18030,81 @@
                 }
               ],
               "quote": "I am he. Whom seek ye? I have told you that I am he: if therefore ye seek me, let these go their way:"
+            },
+            {
+              "id": "27.2.7",
+              "text": "Calls the disciples in Gethsemane to stay alert and pray — the spirit is willing but the flesh is weak",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 26:36, 38–42, 45–46",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 26,
+                  "ranges": [
+                    [
+                      36,
+                      36
+                    ],
+                    [
+                      38,
+                      42
+                    ],
+                    [
+                      45,
+                      46
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Mark 14:32, 34, 36–38, 41–42",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 14,
+                  "ranges": [
+                    [
+                      32,
+                      32
+                    ],
+                    [
+                      34,
+                      34
+                    ],
+                    [
+                      36,
+                      38
+                    ],
+                    [
+                      41,
+                      42
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 22:40, 42, 46",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 22,
+                  "ranges": [
+                    [
+                      40,
+                      40
+                    ],
+                    [
+                      42,
+                      42
+                    ],
+                    [
+                      46,
+                      46
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ],
+              "quote": "Sit ye here, while I go and pray yonder. My soul is exceeding sorrowful, even unto death: tarry ye here, and watch with me. O my Father, if it be possible, let this cup pass from me: nevertheless not as I will, but as thou wilt. What, could ye not watch with me one hour? Watch and pray, that ye enter not into temptation: the spirit indeed is willing, but the flesh is weak. O my Father, if this cup may not pass away from me, except I drink it, thy will be done. Sleep on now, and take your rest: behold, the hour is at hand, and the Son of man is betrayed into the hands of sinners. Rise, let us be going: behold, he is at hand that doth betray me."
             }
           ]
         },
@@ -18594,6 +18259,95 @@
                     [
                       11,
                       11
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "27.3.7",
+              "text": "He confirms to the high priest: I AM the Christ, the Son of God, coming on the clouds in power",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 26:64",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 26,
+                  "ranges": [
+                    [
+                      64,
+                      64
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Mark 14:62",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 14,
+                  "ranges": [
+                    [
+                      62,
+                      62
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 22:67–70",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 22,
+                  "ranges": [
+                    [
+                      67,
+                      70
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ],
+              "quote": "Thou hast said: nevertheless I say unto you, Hereafter shall ye see the Son of man sitting on the right hand of power, and coming in the clouds of heaven."
+            },
+            {
+              "id": "27.3.8",
+              "text": "Tells Pilate his kingdom is not of this world — otherwise his servants would fight to prevent his arrest",
+              "quote": "My kingdom is not of this world: if my kingdom were of this world, then would my servants fight, that I should not be delivered to the Jews: but now is my kingdom not from hence.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 18:36",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 18,
+                  "ranges": [
+                    [
+                      36,
+                      36
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "27.3.9",
+              "text": "Before Pilate, declares he was born and came into the world to bear witness to the truth — everyone on the side of truth listens to him",
+              "quote": "Thou sayest that I am a king. To this end was I born, and for this cause came I into the world, that I should bear witness unto the truth. Every one that is of the truth heareth my voice.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 18:37",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 18,
+                  "ranges": [
+                    [
+                      37,
+                      37
                     ]
                   ],
                   "isPrimary": true
@@ -20725,6 +20479,81 @@
                 }
               ],
               "quote": "Write the things which thou hast seen, and the things which are, and the things which shall be hereafter; The mystery of the seven stars which thou sawest in my right hand, and the seven golden candlesticks. The seven stars are the angels of the seven churches: and the seven candlesticks which thou sawest are the seven churches."
+            },
+            {
+              "id": "31.1.4",
+              "text": "Declares himself the Alpha and Omega, the Almighty Lord God who is and was and is to come",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Rev 1:8",
+                  "book": "Revelation",
+                  "bookAbbr": "Rev",
+                  "chapter": 1,
+                  "ranges": [
+                    [
+                      8,
+                      8
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ],
+              "quote": "I am Alpha and Omega, the beginning and the ending,"
+            },
+            {
+              "id": "31.1.5",
+              "text": "Closes each of the seven letters with the same summons to spiritual attention — he who has an ear, let him hear what the Spirit says to the churches",
+              "quote": "He that hath an ear, let him hear what the Spirit saith unto the churches.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Rev 2:7, 11, 17, 29",
+                  "book": "Revelation",
+                  "bookAbbr": "Rev",
+                  "chapter": 2,
+                  "ranges": [
+                    [
+                      7,
+                      7
+                    ],
+                    [
+                      11,
+                      11
+                    ],
+                    [
+                      17,
+                      17
+                    ],
+                    [
+                      29,
+                      29
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Rev 3:6, 13, 22",
+                  "book": "Revelation",
+                  "bookAbbr": "Rev",
+                  "chapter": 3,
+                  "ranges": [
+                    [
+                      6,
+                      6
+                    ],
+                    [
+                      13,
+                      13
+                    ],
+                    [
+                      22,
+                      22
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ]
             }
           ]
         },
