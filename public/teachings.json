@@ -1641,6 +1641,53 @@
                   "isPrimary": true
                 }
               ]
+            },
+            {
+              "id": "2.3.15",
+              "text": "A kingdom divided against itself cannot stand",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 12:25–30",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 12,
+                  "ranges": [
+                    [
+                      25,
+                      30
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Mark 3:23–27",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 3,
+                  "ranges": [
+                    [
+                      23,
+                      27
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 11:17–23",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 11,
+                  "ranges": [
+                    [
+                      17,
+                      23
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ],
+              "quote": "Every kingdom divided against itself is brought to desolation; and every city or house divided against itself shall not stand: And if Satan cast out Satan, he is divided against himself; how shall then his kingdom stand? And if I by Beelzebub cast out devils, by whom do your children cast them out? therefore they shall be your judges. But if I cast out devils by the Spirit of God, then the kingdom of God is come unto you. Or else how can one enter into a strong man’s house, and spoil his goods, except he first bind the strong man? and then he will spoil his house. He that is not with me is against me; and he that gathereth not with me scattereth abroad."
             }
           ]
         },
@@ -2629,6 +2676,19 @@
                     ]
                   ],
                   "isPrimary": false
+                },
+                {
+                  "label": "Luke 19:30–31",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 19,
+                  "ranges": [
+                    [
+                      30,
+                      31
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
@@ -2887,18 +2947,22 @@
             },
             {
               "id": "2.6.23",
-              "text": "This day is this scripture fulfilled in your ears",
+              "text": "Reads Isaiah 61 in the Nazareth synagogue and declares the scripture fulfilled — the Spirit of the Lord has anointed him; today this is fulfilled in your ears",
               "quote": "This day is this scripture fulfilled in your ears.",
               "tags": [
                 "prophecy"
               ],
               "references": [
                 {
-                  "label": "Luke 4:21",
+                  "label": "Luke 4:18–19, 21",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 4,
                   "ranges": [
+                    [
+                      18,
+                      19
+                    ],
                     [
                       21,
                       21
@@ -3340,6 +3404,19 @@
                     [
                       13,
                       14
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Matt 14:16",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 14,
+                  "ranges": [
+                    [
+                      16,
+                      16
                     ]
                   ],
                   "isPrimary": false
@@ -3799,6 +3876,19 @@
                     [
                       22,
                       22
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 24:49",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 24,
+                  "ranges": [
+                    [
+                      49,
+                      49
                     ]
                   ],
                   "isPrimary": false
@@ -12415,6 +12505,53 @@
                 }
               ],
               "quote": "Verily I say unto you, That this poor widow hath cast more in, than all they which have cast into the treasury: For all they did cast in of their abundance; but she of her want did cast in all that she had, even all her living."
+            },
+            {
+              "id": "20.3.6",
+              "text": "Silences his opponents on the tax question — give to Caesar what bears his image, and to God what bears his",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 22:15-22",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 22,
+                  "ranges": [
+                    [
+                      15,
+                      22
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Mark 12:13-17",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 12,
+                  "ranges": [
+                    [
+                      13,
+                      17
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 20:20-26",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 20,
+                  "ranges": [
+                    [
+                      20,
+                      26
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ],
+              "quote": "Why tempt ye me, ye hypocrites? Shew me the tribute money. Whose is this image and superscription? Render therefore unto Cæsar the things which are Cæsar’s; and unto God the things that are God’s."
             }
           ]
         },
@@ -12518,36 +12655,6 @@
                     [
                       3,
                       3
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Matt 11:5, 7–11",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 11,
-                  "ranges": [
-                    [
-                      5,
-                      5
-                    ],
-                    [
-                      7,
-                      11
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 7:22",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 7,
-                  "ranges": [
-                    [
-                      22,
-                      22
                     ]
                   ],
                   "isPrimary": false
@@ -12757,53 +12864,6 @@
             },
             {
               "id": "21.3.4",
-              "text": "Silences his opponents on the tax question — give to Caesar what bears his image, and to God what bears his",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 22:15-22",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 22,
-                  "ranges": [
-                    [
-                      15,
-                      22
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Mark 12:13-17",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 12,
-                  "ranges": [
-                    [
-                      13,
-                      17
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 20:20-26",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 20,
-                  "ranges": [
-                    [
-                      20,
-                      26
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ],
-              "quote": "Why tempt ye me, ye hypocrites? Shew me the tribute money. Whose is this image and superscription? Render therefore unto Cæsar the things which are Cæsar’s; and unto God the things that are God’s."
-            },
-            {
-              "id": "21.3.5",
               "text": "Has compassion on the crowd that has gone three days without food and refuses to send them away hungry",
               "quote": "I have compassion on the multitude, because they continue with me now three days, and have nothing to eat: and I will not send them away fasting, lest they faint in the way.",
               "tags": [],
@@ -12824,7 +12884,7 @@
               ]
             },
             {
-              "id": "21.3.6",
+              "id": "21.3.5",
               "text": "Stops for the two blind men outside Jericho and asks what they want him to do",
               "quote": "What will ye that I shall do unto you?",
               "tags": [
@@ -12847,7 +12907,7 @@
               ]
             },
             {
-              "id": "21.3.7",
+              "id": "21.3.6",
               "text": "Sends ten lepers to show themselves to the priests — they are cleansed as they go",
               "quote": "Go shew yourselves unto the priests.",
               "tags": [
@@ -12870,7 +12930,7 @@
               ]
             },
             {
-              "id": "21.3.8",
+              "id": "21.3.7",
               "text": "Notes that only the Samaritan among the ten cleansed lepers returned to give glory to God",
               "quote": "Were there not ten cleansed? but where are the nine? There are not found that returned to give glory to God, save this stranger.",
               "tags": [],
@@ -13160,29 +13220,6 @@
             },
             {
               "id": "22.1.9",
-              "text": "Reads Isaiah 61 in the Nazareth synagogue — anointed to preach to the poor and proclaim the Lord's favor",
-              "quote": "The Spirit of the Lord is upon me, because he hath anointed me to preach the gospel to the poor; he hath sent me to heal the brokenhearted, to preach deliverance to the captives, and recovering of sight to the blind, to set at liberty them that are bruised, To preach the acceptable year of the Lord.",
-              "tags": [
-                "prophecy"
-              ],
-              "references": [
-                {
-                  "label": "Luke 4:18–19",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 4,
-                  "ranges": [
-                    [
-                      18,
-                      19
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "22.1.10",
               "text": "Tells Peter to put out into deep water and let down the nets for the miraculous catch",
               "quote": "Launch out into the deep, and let down your nets for a draught.",
               "tags": [],
@@ -13203,7 +13240,7 @@
               ]
             },
             {
-              "id": "22.1.11",
+              "id": "22.1.10",
               "text": "Calls Peter from his nets — from now on he will catch people",
               "quote": "Fear not; from henceforth thou shalt catch men.",
               "tags": [],
@@ -13224,7 +13261,7 @@
               ]
             },
             {
-              "id": "22.1.12",
+              "id": "22.1.11",
               "text": "Follow me — Jesus calls Levi the publican from the receipt of custom",
               "quote": "Follow me.",
               "tags": [],
@@ -13245,7 +13282,7 @@
               ]
             },
             {
-              "id": "22.1.13",
+              "id": "22.1.12",
               "text": "He asks the first disciples what they seek and invites them to come and see where he dwells",
               "quote": "What seek ye? Come and see.",
               "tags": [],
@@ -13266,7 +13303,7 @@
               ]
             },
             {
-              "id": "22.1.14",
+              "id": "22.1.13",
               "text": "He renames Simon son of Jonah as Cephas, meaning a stone, marking him with a new identity",
               "quote": "Thou art Simon the son of Jona: thou shalt be called Cephas,",
               "tags": [],
@@ -13287,7 +13324,7 @@
               ]
             },
             {
-              "id": "22.1.15",
+              "id": "22.1.14",
               "text": "He reminds the twelve that he has chosen them, yet one of them is a devil",
               "quote": "Have not I chosen you twelve, and one of you is a devil?",
               "tags": [
@@ -13310,7 +13347,7 @@
               ]
             },
             {
-              "id": "22.1.16",
+              "id": "22.1.15",
               "text": "He calls the disciples to go back into Judaea again despite the danger awaiting him there.",
               "quote": "Let us go into Judæa again.",
               "tags": [],
@@ -13331,7 +13368,7 @@
               ]
             },
             {
-              "id": "22.1.17",
+              "id": "22.1.16",
               "text": "Where he goes Peter cannot follow now, but shall follow afterwards.",
               "quote": "Whither I go, thou canst not follow me now; but thou shalt follow me afterwards.",
               "tags": [],
@@ -13345,6 +13382,31 @@
                     [
                       36,
                       36
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "22.1.17",
+              "text": "Three times asks Peter \"Do you love me?\" — feed my lambs, tend my sheep, feed my sheep; predicts his martyrdom and calls him to follow",
+              "quote": "Simon, son of Jonas, lovest thou me more than these? Feed my lambs... Feed my sheep. Verily, verily, I say unto thee, When thou wast young, thou girdedst thyself... but when thou shalt be old... another shall gird thee... Follow me.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 21:15–19, 22",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 21,
+                  "ranges": [
+                    [
+                      15,
+                      19
+                    ],
+                    [
+                      22,
+                      22
                     ]
                   ],
                   "isPrimary": true
@@ -13528,27 +13590,6 @@
             },
             {
               "id": "22.2.5",
-              "text": "Tells the disciples not to send the crowd away — they themselves should feed them",
-              "quote": "They need not depart; give ye them to eat.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 14:16",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 14,
-                  "ranges": [
-                    [
-                      16,
-                      16
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "22.2.6",
               "text": "Confronts shallow disciples — why call him Lord but ignore his commands?",
               "quote": "¶ And why call ye me, Lord, Lord, and do not the things which I say?",
               "tags": [],
@@ -13569,28 +13610,7 @@
               ]
             },
             {
-              "id": "22.2.7",
-              "text": "Stops the disciples from forbidding the unaffiliated exorcist working in his name",
-              "quote": "Forbid him not: for he that is not against us is for us.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 9:50",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      50,
-                      50
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "22.2.8",
+              "id": "22.2.6",
               "text": "Rebukes James and John for wanting to call fire on the Samaritans — he came to save lives, not destroy them",
               "quote": "Ye know not what manner of spirit ye are of. For the Son of man is not come to destroy men’s lives, but to save them.",
               "tags": [],
@@ -13611,7 +13631,7 @@
               ]
             },
             {
-              "id": "22.2.9",
+              "id": "22.2.7",
               "text": "He asks the twelve whether they also will go away",
               "quote": "Will ye also go away?",
               "tags": [],
@@ -13632,7 +13652,7 @@
               ]
             },
             {
-              "id": "22.2.10",
+              "id": "22.2.8",
               "text": "Defines true discipleship as continuing in his word",
               "quote": "If ye continue in my word, then are ye my disciples indeed;",
               "tags": [],
@@ -13653,7 +13673,7 @@
               ]
             },
             {
-              "id": "22.2.11",
+              "id": "22.2.9",
               "text": "Those who leave family or possessions for the kingdom will receive many times more, with eternal life",
               "tags": [],
               "references": [
@@ -13805,27 +13825,6 @@
             },
             {
               "id": "22.3.4",
-              "text": "Sends two disciples to fetch a never-ridden colt — say the Lord has need of him if questioned",
-              "quote": "Go ye into the village over against you; in the which at your entering ye shall find a colt tied, whereon yet never man sat: loose him, and bring him hither. And if any man ask you, Why do ye loose him? thus shall ye say unto him, Because the Lord hath need of him.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 19:30–31",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 19,
-                  "ranges": [
-                    [
-                      30,
-                      31
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "22.3.5",
               "text": "Teaches that those who lose their life for him keep it — and even with a troubled soul, he chose this hour to glorify the Father",
               "quote": "He that loveth his life shall lose it; and he that hateth his life in this world shall keep it unto life eternal. If any man serve me, let him follow me; and where I am, there shall also my servant be: if any man serve me, him will my Father honour. Now is my soul troubled; and what shall I say? Father, save me from this hour: but for this cause came I unto this hour. Father, glorify thy name.",
               "tags": [],
@@ -14826,153 +14825,6 @@
             },
             {
               "id": "24.1.9",
-              "text": "Warns the disciples that every plant the Father did not plant will be uprooted",
-              "quote": "Every plant, which my heavenly Father hath not planted, shall be rooted up.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 15:13",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 15,
-                  "ranges": [
-                    [
-                      13,
-                      13
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "24.1.10",
-              "text": "Concludes the teaching on defilement — these are the things that defile a man, but eating with unwashen hands does not",
-              "quote": "These are the things which defile a man: but to eat with unwashen hands defileth not a man.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 15:20",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 15,
-                  "ranges": [
-                    [
-                      20,
-                      20
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "24.1.11",
-              "text": "Cleanses the temple — declares it the house of prayer that they have made into a robbers' den",
-              "quote": "It is written, My house shall be called the house of prayer; but ye have made it a den of thieves.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 21:13",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 21,
-                  "ranges": [
-                    [
-                      13,
-                      13
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "24.1.12",
-              "text": "Curses the unfruitful fig tree as a sign against barren, pretentious religion",
-              "quote": "No man eat fruit of thee hereafter for ever.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 11:14",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 11,
-                  "ranges": [
-                    [
-                      14,
-                      14
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "24.1.13",
-              "text": "Cleanses the temple, citing Isaiah — God's house for all nations has been turned into a robbers' den",
-              "quote": "Is it not written, My house shall be called of all nations the house of prayer? but ye have made it a den of thieves.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 11:17",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 11,
-                  "ranges": [
-                    [
-                      17,
-                      17
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "24.1.14",
-              "text": "Counters the authority challenge with his own question — was John's baptism from heaven or from men?",
-              "quote": "I will also ask of you one question, and answer me, and I will tell you by what authority I do these things. The baptism of John, was it from heaven, or of men? answer me.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 11:29–30",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 11,
-                  "ranges": [
-                    [
-                      29,
-                      30
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "24.1.15",
-              "text": "Neither do I tell you by what authority I do these things — Jesus refuses the chief priests' challenge",
-              "quote": "Neither do I tell you by what authority I do these things.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 11:33",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 11,
-                  "ranges": [
-                    [
-                      33,
-                      33
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "24.1.16",
               "text": "Pronounces woe on the Pharisees who crave the best seats and respectful greetings in public",
               "quote": "Woe unto you, Pharisees! for ye love the uppermost seats in the synagogues, and greetings in the markets.",
               "tags": [
@@ -14995,7 +14847,7 @@
               ]
             },
             {
-              "id": "24.1.17",
+              "id": "24.1.10",
               "text": "Pronounces woe on the lawyers who pile heavy burdens on others but won't lift a finger to carry them",
               "quote": "Woe unto you also, ye lawyers! for ye lade men with burdens grievous to be borne, and ye yourselves touch not the burdens with one of your fingers.",
               "tags": [
@@ -15018,7 +14870,7 @@
               ]
             },
             {
-              "id": "24.1.18",
+              "id": "24.1.11",
               "text": "Pronounces woe on lawyers who take away the key of knowledge — blocking the way and refusing to enter themselves",
               "quote": "Therefore also said the wisdom of God, I will send them prophets and apostles, and some of them they shall slay and persecute: That the blood of all the prophets, which was shed from the foundation of the world, may be required of this generation; From the blood of Abel unto the blood of Zacharias, which perished between the altar and the temple: verily I say unto you, It shall be required of this generation. Woe unto you, lawyers! for ye have taken away the key of knowledge: ye entered not in yourselves, and them that were entering in ye hindered.",
               "tags": [
@@ -15035,90 +14887,6 @@
                     [
                       49,
                       52
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "24.1.19",
-              "text": "Exposes the Pharisees who justify themselves before men — what they prize, God despises",
-              "quote": "Ye are they which justify yourselves before men; but God knoweth your hearts: for that which is highly esteemed among men is abomination in the sight of God.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 16:15",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 16,
-                  "ranges": [
-                    [
-                      15,
-                      15
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "24.1.20",
-              "text": "Cleanses the temple in Luke's account — God's house of prayer turned into a robbers' den",
-              "quote": "It is written, My house is the house of prayer: but ye have made it a den of thieves.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 19:46",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 19,
-                  "ranges": [
-                    [
-                      46,
-                      46
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "24.1.21",
-              "text": "Exposes that they reject him while seeking human glory — and Moses, whom they trust, accuses them",
-              "quote": "I receive not honour from men. But I know you, that ye have not the love of God in you. I am come in my Father’s name, and ye receive me not: if another shall come in his own name, him ye will receive. How can ye believe, which receive honour one of another, and seek not the honour that cometh from God only? Do not think that I will accuse you to the Father: there is one that accuseth you, even Moses, in whom ye trust.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 5:41–45",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 5,
-                  "ranges": [
-                    [
-                      41,
-                      45
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "24.1.22",
-              "text": "Tells the religious leaders their father is the devil — a murderer and liar — not Abraham, since they reject his truth",
-              "quote": "I know that ye are Abraham’s seed; but ye seek to kill me, because my word hath no place in you. I speak that which I have seen with my Father: and ye do that which ye have seen with your father. If ye were Abraham’s children, ye would do the works of Abraham. But now ye seek to kill me, a man that hath told you the truth, which I have heard of God: this did not Abraham. Ye do the deeds of your father. If God were your Father, ye would love me: for I proceeded forth and came from God; neither came I of myself, but he sent me. Why do ye not understand my speech? even because ye cannot hear my word. Ye are of your father the devil, and the lusts of your father ye will do. He was a murderer from the beginning, and abode not in the truth, because there is no truth in him. When he speaketh a lie, he speaketh of his own: for he is a liar, and the father of it. And because I tell you the truth, ye believe me not. Which of you convinceth me of sin? And if I say the truth, why do ye not believe me? He that is of God heareth God’s words: ye therefore hear them not, because ye are not of God.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 8:37–47",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      37,
-                      47
                     ]
                   ],
                   "isPrimary": true
@@ -15779,7 +15547,7 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 23:5–8, 10, 34–39",
+                  "label": "Matt 23:5–8, 10",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 23,
@@ -15791,10 +15559,6 @@
                     [
                       10,
                       10
-                    ],
-                    [
-                      34,
-                      39
                     ]
                   ],
                   "isPrimary": true
@@ -15827,6 +15591,258 @@
                 }
               ],
               "quote": "But all their works they do for to be seen of men: they make broad their phylacteries, and enlarge the borders of their garments, And love the uppermost rooms at feasts, and the chief seats in the synagogues, And greetings in the markets, and to be called of men, Rabbi, Rabbi. But be not ye called Rabbi: for one is your Master, even Christ; and all ye are brethren. Neither be ye called masters: for one is your Master, even Christ. ¶ Wherefore, behold, I send unto you prophets, and wise men, and scribes: and some of them ye shall kill and crucify; and some of them shall ye scourge in your synagogues, and persecute them from city to city: That upon you may come all the righteous blood shed upon the earth, from the blood of righteous Abel unto the blood of Zacharias son of Barachias, whom ye slew between the temple and the altar. Verily I say unto you, All these things shall come upon this generation. O Jerusalem, Jerusalem, thou that killest the prophets, and stonest them which are sent unto thee, how often would I have gathered thy children together, even as a hen gathereth her chickens under her wings, and ye would not! Behold, your house is left unto you desolate. For I say unto you, Ye shall not see me henceforth, till ye shall say, Blessed is he that cometh in the name of the Lord."
+            },
+            {
+              "id": "24.5.3",
+              "text": "Warns the disciples that every plant the Father did not plant will be uprooted",
+              "quote": "Every plant, which my heavenly Father hath not planted, shall be rooted up.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 15:13",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 15,
+                  "ranges": [
+                    [
+                      13,
+                      13
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "24.5.4",
+              "text": "Concludes the teaching on defilement — these are the things that defile a man, but eating with unwashen hands does not",
+              "quote": "These are the things which defile a man: but to eat with unwashen hands defileth not a man.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 15:20",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 15,
+                  "ranges": [
+                    [
+                      20,
+                      20
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "24.5.5",
+              "text": "Cleanses the temple — declares it the house of prayer that they have made into a robbers' den",
+              "quote": "It is written, My house shall be called the house of prayer; but ye have made it a den of thieves.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 21:13",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 21,
+                  "ranges": [
+                    [
+                      13,
+                      13
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "24.5.6",
+              "text": "Curses the unfruitful fig tree as a sign against barren, pretentious religion",
+              "quote": "No man eat fruit of thee hereafter for ever.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Mark 11:14",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 11,
+                  "ranges": [
+                    [
+                      14,
+                      14
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "24.5.7",
+              "text": "Cleanses the temple, citing Isaiah — God's house for all nations has been turned into a robbers' den",
+              "quote": "Is it not written, My house shall be called of all nations the house of prayer? but ye have made it a den of thieves.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Mark 11:17",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 11,
+                  "ranges": [
+                    [
+                      17,
+                      17
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "24.5.8",
+              "text": "Counters the authority challenge with his own question — was John's baptism from heaven or from men?",
+              "quote": "I will also ask of you one question, and answer me, and I will tell you by what authority I do these things. The baptism of John, was it from heaven, or of men? answer me.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Mark 11:29–30",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 11,
+                  "ranges": [
+                    [
+                      29,
+                      30
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "24.5.9",
+              "text": "Neither do I tell you by what authority I do these things — Jesus refuses the chief priests' challenge",
+              "quote": "Neither do I tell you by what authority I do these things.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Mark 11:33",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 11,
+                  "ranges": [
+                    [
+                      33,
+                      33
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "24.5.10",
+              "text": "Exposes the Pharisees who justify themselves before men — what they prize, God despises",
+              "quote": "Ye are they which justify yourselves before men; but God knoweth your hearts: for that which is highly esteemed among men is abomination in the sight of God.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Luke 16:15",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 16,
+                  "ranges": [
+                    [
+                      15,
+                      15
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "24.5.11",
+              "text": "Cleanses the temple in Luke's account — God's house of prayer turned into a robbers' den",
+              "quote": "It is written, My house is the house of prayer: but ye have made it a den of thieves.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Luke 19:46",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 19,
+                  "ranges": [
+                    [
+                      46,
+                      46
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "24.5.12",
+              "text": "Exposes that they reject him while seeking human glory — and Moses, whom they trust, accuses them",
+              "quote": "I receive not honour from men. But I know you, that ye have not the love of God in you. I am come in my Father’s name, and ye receive me not: if another shall come in his own name, him ye will receive. How can ye believe, which receive honour one of another, and seek not the honour that cometh from God only? Do not think that I will accuse you to the Father: there is one that accuseth you, even Moses, in whom ye trust.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 5:41–45",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 5,
+                  "ranges": [
+                    [
+                      41,
+                      45
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "24.5.13",
+              "text": "Tells the religious leaders their father is the devil — a murderer and liar — not Abraham, since they reject his truth",
+              "quote": "I know that ye are Abraham’s seed; but ye seek to kill me, because my word hath no place in you. I speak that which I have seen with my Father: and ye do that which ye have seen with your father. If ye were Abraham’s children, ye would do the works of Abraham. But now ye seek to kill me, a man that hath told you the truth, which I have heard of God: this did not Abraham. Ye do the deeds of your father. If God were your Father, ye would love me: for I proceeded forth and came from God; neither came I of myself, but he sent me. Why do ye not understand my speech? even because ye cannot hear my word. Ye are of your father the devil, and the lusts of your father ye will do. He was a murderer from the beginning, and abode not in the truth, because there is no truth in him. When he speaketh a lie, he speaketh of his own: for he is a liar, and the father of it. And because I tell you the truth, ye believe me not. Which of you convinceth me of sin? And if I say the truth, why do ye not believe me? He that is of God heareth God’s words: ye therefore hear them not, because ye are not of God.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 8:37–47",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 8,
+                  "ranges": [
+                    [
+                      37,
+                      47
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "24.5.14",
+              "text": "Declares he sends prophets and wise men whom they will kill — pronounces the Jerusalem lament: how often would he have gathered her children, but they were not willing",
+              "quote": "Wherefore, behold, I send unto you prophets, and wise men, and scribes: and some of them ye shall kill and crucify... O Jerusalem, Jerusalem, thou that killest the prophets, and stonest them which are sent unto thee, how often would I have gathered thy children together, even as a hen gathereth her chickens under her wings, and ye would not!",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Matt 23:34–39",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 23,
+                  "ranges": [
+                    [
+                      34,
+                      39
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
             }
           ]
         }
@@ -15983,11 +15999,18 @@
                 }
               ],
               "quote": "Again I say unto you, That if two of you shall agree on earth as touching any thing that they shall ask, it shall be done for them of my Father which is in heaven. For where two or three are gathered together in my name, there am I in the midst of them."
-            },
+            }
+          ]
+        },
+        {
+          "id": "25.4",
+          "slug": "cat-25-4",
+          "title": "Unity Among Believers",
+          "teachings": [
             {
-              "id": "25.3.2",
-              "text": "Tells the disciples not to stop the unknown exorcist — whoever is not against them is for them",
-              "quote": "Forbid him not: for there is no man which shall do a miracle in my name, that can lightly speak evil of me. For he that is not against us is on our part. For whosoever shall give you a cup of water to drink in my name, because ye belong to Christ, verily I say unto you, he shall not lose his reward.",
+              "id": "25.4.1",
+              "text": "Tells the disciples not to stop the unknown exorcist working in his name — whoever is not against us is for us",
+              "quote": "Forbid him not: for there is no man which shall do a miracle in my name, that can lightly speak evil of me. For he that is not against us is on our part.",
               "tags": [],
               "references": [
                 {
@@ -16002,62 +16025,21 @@
                     ]
                   ],
                   "isPrimary": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "25.4",
-          "slug": "cat-25-4",
-          "title": "Unity Among Believers",
-          "teachings": [
-            {
-              "id": "25.4.1",
-              "text": "A kingdom divided against itself cannot stand",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 12:25–30",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 12,
-                  "ranges": [
-                    [
-                      25,
-                      30
-                    ]
-                  ],
-                  "isPrimary": true
                 },
                 {
-                  "label": "Mark 3:23–27",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 3,
-                  "ranges": [
-                    [
-                      23,
-                      27
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 11:17–23",
+                  "label": "Luke 9:50",
                   "book": "Luke",
                   "bookAbbr": "Luke",
-                  "chapter": 11,
+                  "chapter": 9,
                   "ranges": [
                     [
-                      17,
-                      23
+                      50,
+                      50
                     ]
                   ],
                   "isPrimary": false
                 }
-              ],
-              "quote": "Every kingdom divided against itself is brought to desolation; and every city or house divided against itself shall not stand: And if Satan cast out Satan, he is divided against himself; how shall then his kingdom stand? And if I by Beelzebub cast out devils, by whom do your children cast them out? therefore they shall be your judges. But if I cast out devils by the Spirit of God, then the kingdom of God is come unto you. Or else how can one enter into a strong man’s house, and spoil his goods, except he first bind the strong man? and then he will spoil his house. He that is not with me is against me; and he that gathereth not with me scattereth abroad."
+              ]
             }
           ]
         }
@@ -16117,22 +16099,9 @@
             },
             {
               "id": "26.1.2",
-              "text": "As the Father sent him, so he sends them — receive the Holy Spirit; you will be his witnesses to the ends of the earth",
+              "text": "You will receive power when the Holy Spirit comes upon you — be my witnesses in Jerusalem, Judaea, Samaria, and to the ends of the earth",
               "tags": [],
               "references": [
-                {
-                  "label": "John 20:21–22",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 20,
-                  "ranges": [
-                    [
-                      21,
-                      22
-                    ]
-                  ],
-                  "isPrimary": true
-                },
                 {
                   "label": "Acts 1:8",
                   "book": "Acts",
@@ -16144,10 +16113,10 @@
                       8
                     ]
                   ],
-                  "isPrimary": false
+                  "isPrimary": true
                 }
               ],
-              "quote": "Peace be unto you: as my Father hath sent me, even so send I you. Receive ye the Holy Ghost:"
+              "quote": "But ye shall receive power, after that the Holy Ghost is come upon you: and ye shall be witnesses unto me both in Jerusalem, and in all Judaea, and in Samaria, and unto the uttermost part of the earth."
             }
           ]
         },
@@ -16476,6 +16445,53 @@
                 }
               ],
               "quote": null
+            },
+            {
+              "id": "26.3.6",
+              "text": "Confronts Saul on the Damascus road — 'I am Jesus whom you persecute' — and sends him into the city for further instructions",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Acts 9:4-6",
+                  "book": "Acts",
+                  "bookAbbr": "Acts",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      4,
+                      6
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Acts 22:7-10",
+                  "book": "Acts",
+                  "bookAbbr": "Acts",
+                  "chapter": 22,
+                  "ranges": [
+                    [
+                      7,
+                      10
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Acts 26:14-18",
+                  "book": "Acts",
+                  "bookAbbr": "Acts",
+                  "chapter": 26,
+                  "ranges": [
+                    [
+                      14,
+                      18
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ],
+              "quote": "Saul, Saul, why persecutest thou me? I am Jesus whom thou persecutest: it is hard for thee to kick against the pricks. Arise, and go into the city, and it shall be told thee what thou must do."
             }
           ]
         },
@@ -16599,6 +16615,19 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Mark 5:19",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 5,
+                  "ranges": [
+                    [
+                      19,
+                      19
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
@@ -16718,48 +16747,6 @@
                 }
               ],
               "quote": "Whosoever therefore shall confess me before men, him will I confess also before my Father which is in heaven. But whosoever shall deny me before men, him will I also deny before my Father which is in heaven."
-            },
-            {
-              "id": "26.5.3",
-              "text": "Sends the healed Gerasene home to tell his friends what the Lord and his compassion have done",
-              "quote": "Go home to thy friends, and tell them how great things the Lord hath done for thee, and hath had compassion on thee.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 5:19",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 5,
-                  "ranges": [
-                    [
-                      19,
-                      19
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "26.5.4",
-              "text": "Asks the Gerasene demoniac his name before casting out the legion of demons",
-              "quote": "What is thy name?",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 8:30",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      30,
-                      30
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
             }
           ]
         },
@@ -18193,53 +18180,6 @@
             },
             {
               "id": "28.1.4",
-              "text": "Confronts Saul on the Damascus road — 'I am Jesus whom you persecute' — and sends him into the city for further instructions",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Acts 9:4-6",
-                  "book": "Acts",
-                  "bookAbbr": "Acts",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      4,
-                      6
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Acts 22:7-10",
-                  "book": "Acts",
-                  "bookAbbr": "Acts",
-                  "chapter": 22,
-                  "ranges": [
-                    [
-                      7,
-                      10
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Acts 26:14-18",
-                  "book": "Acts",
-                  "bookAbbr": "Acts",
-                  "chapter": 26,
-                  "ranges": [
-                    [
-                      14,
-                      18
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ],
-              "quote": "Saul, Saul, why persecutest thou me? I am Jesus whom thou persecutest: it is hard for thee to kick against the pricks. Arise, and go into the city, and it shall be told thee what thou must do."
-            },
-            {
-              "id": "28.1.5",
               "text": "Joins the two disciples on the Emmaus road and asks what they are discussing so sadly",
               "quote": "What manner of communications are these that ye have one to another, as ye walk, and are sad?",
               "tags": [],
@@ -18260,7 +18200,7 @@
               ]
             },
             {
-              "id": "28.1.6",
+              "id": "28.1.5",
               "text": "What things? — Jesus draws out the Emmaus disciples' account of Jesus of Nazareth",
               "quote": "What things?",
               "tags": [],
@@ -18281,7 +18221,7 @@
               ]
             },
             {
-              "id": "28.1.7",
+              "id": "28.1.6",
               "text": "Rebukes the Emmaus disciples for being slow to believe the prophets — the Christ had to suffer to enter glory",
               "quote": "O fools, and slow of heart to believe all that the prophets have spoken: Ought not Christ to have suffered these things, and to enter into his glory?",
               "tags": [],
@@ -18302,7 +18242,7 @@
               ]
             },
             {
-              "id": "28.1.8",
+              "id": "28.1.7",
               "text": "Greets the gathered disciples on resurrection evening — peace to you",
               "quote": "Peace be unto you.",
               "tags": [],
@@ -18323,7 +18263,7 @@
               ]
             },
             {
-              "id": "28.1.9",
+              "id": "28.1.8",
               "text": "Asks the disciples for food and eats fish to confirm his bodily resurrection",
               "quote": "Have ye here any meat?",
               "tags": [],
@@ -18337,6 +18277,69 @@
                     [
                       41,
                       41
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "28.1.9",
+              "text": "From the shore he asks the fishermen if they have any meat, and tells them to cast the net on the right side of the ship, where they will find a catch.",
+              "quote": "Children, have ye any meat? Cast the net on the right side of the ship, and ye shall find.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 21:5–6",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 21,
+                  "ranges": [
+                    [
+                      5,
+                      6
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "28.1.10",
+              "text": "He instructs them to bring of the fish which they have just caught.",
+              "quote": "Bring of the fish which ye have now caught.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 21:10",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 21,
+                  "ranges": [
+                    [
+                      10,
+                      10
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "28.1.11",
+              "text": "He invites the disciples, Come and dine.",
+              "quote": "Come and dine.",
+              "tags": [],
+              "references": [
+                {
+                  "label": "John 21:12",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 21,
+                  "ranges": [
+                    [
+                      12,
+                      12
                     ]
                   ],
                   "isPrimary": true
@@ -18397,173 +18400,10 @@
         {
           "id": "28.3",
           "slug": "cat-28-3",
-          "title": "The Restoration of Peter",
-          "teachings": [
-            {
-              "id": "28.3.1",
-              "text": "Three times: do you love me? — feed my lambs, tend my sheep, feed my sheep; love demonstrated through care of others",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 21:15–17",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 21,
-                  "ranges": [
-                    [
-                      15,
-                      17
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "Simon, son of Jonas, lovest thou me more than these? Feed my lambs. Simon, son of Jonas, lovest thou me? Feed my sheep. Simon, son of Jonas, lovest thou me? Feed my sheep."
-            },
-            {
-              "id": "28.3.2",
-              "text": "When you are old, another will lead you where you do not want to go — follow me; what is it to you if another remains? You follow me",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 21:18–19, 22",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 21,
-                  "ranges": [
-                    [
-                      18,
-                      19
-                    ],
-                    [
-                      22,
-                      22
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "Verily, verily, I say unto thee, When thou wast young, thou girdedst thyself, and walkedst whither thou wouldest: but when thou shalt be old, thou shalt stretch forth thy hands, and another shall gird thee, and carry thee whither thou wouldest not. Follow me. If I will that he tarry till I come, what is that to thee? follow thou me."
-            },
-            {
-              "id": "28.3.3",
-              "text": "From the shore he asks the fishermen if they have any meat, and tells them to cast the net on the right side of the ship, where they will find a catch.",
-              "quote": "Children, have ye any meat? Cast the net on the right side of the ship, and ye shall find.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 21:5–6",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 21,
-                  "ranges": [
-                    [
-                      5,
-                      6
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "28.3.4",
-              "text": "He instructs them to bring of the fish which they have just caught.",
-              "quote": "Bring of the fish which ye have now caught.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 21:10",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 21,
-                  "ranges": [
-                    [
-                      10,
-                      10
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "28.3.5",
-              "text": "He invites the disciples, Come and dine.",
-              "quote": "Come and dine.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 21:12",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 21,
-                  "ranges": [
-                    [
-                      12,
-                      12
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "28.4",
-          "slug": "cat-28-4",
           "title": "The Final Commission and Ascension",
           "teachings": [
             {
-              "id": "28.4.1",
-              "text": "All authority has been given — go and make disciples of all nations, baptizing and teaching them to observe all his commands; he is with them always, to the end of the age",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 28:18–20",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 28,
-                  "ranges": [
-                    [
-                      18,
-                      20
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Mark 16:15–18",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 16,
-                  "ranges": [
-                    [
-                      15,
-                      18
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 24:49",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 24,
-                  "ranges": [
-                    [
-                      49,
-                      49
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ],
-              "quote": "All power is given unto me in heaven and in earth. ¶ Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world."
-            },
-            {
-              "id": "28.4.2",
+              "id": "28.3.1",
               "text": "Wait in Jerusalem for the promised Spirit — not to know times and seasons, but to receive power and be his witnesses to the ends of the earth",
               "tags": [],
               "references": [
@@ -19133,6 +18973,29 @@
                   "isPrimary": true
                 }
               ]
+            },
+            {
+              "id": "29.2.6",
+              "text": "Promises the Twelve will sit on twelve thrones judging the tribes of Israel when the Son of Man reigns",
+              "quote": "Verily I say unto you, That ye which have followed me, in the regeneration when the Son of man shall sit in the throne of his glory, ye also shall sit upon twelve thrones, judging the twelve tribes of Israel.",
+              "tags": [
+                "prophecy"
+              ],
+              "references": [
+                {
+                  "label": "Matt 19:28",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 19,
+                  "ranges": [
+                    [
+                      28,
+                      28
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
             }
           ]
         },
@@ -19431,29 +19294,6 @@
                 }
               ],
               "quote": "Heaven and earth shall pass away, but my words shall not pass away. ¶ But of that day and hour knoweth no man, no, not the angels of heaven, but my Father only. But know this, that if the goodman of the house had known in what watch the thief would come, he would have watched, and would not have suffered his house to be broken up. Therefore be ye also ready: for in such an hour as ye think not the Son of man cometh."
-            },
-            {
-              "id": "29.4.3",
-              "text": "Promises the Twelve will sit on twelve thrones judging the tribes of Israel when the Son of Man reigns",
-              "quote": "Verily I say unto you, That ye which have followed me, in the regeneration when the Son of man shall sit in the throne of his glory, ye also shall sit upon twelve thrones, judging the twelve tribes of Israel.",
-              "tags": [
-                "prophecy"
-              ],
-              "references": [
-                {
-                  "label": "Matt 19:28",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 19,
-                  "ranges": [
-                    [
-                      28,
-                      28
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
             }
           ]
         }
@@ -19678,7 +19518,8 @@
           "teachings": [
             {
               "id": "30.2.1",
-              "text": "Fear him who can destroy both soul and body in hell — better to enter life maimed than go to hell with unquenchable fire",
+              "text": "Fear him who has authority to destroy both soul and body in hell — do not fear those who can only kill the body",
+              "quote": "And fear not them which kill the body, but are not able to kill the soul: but rather fear him which is able to destroy both soul and body in hell.",
               "tags": [],
               "references": [
                 {
@@ -19695,6 +19536,27 @@
                   "isPrimary": true
                 },
                 {
+                  "label": "Luke 12:5",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 12,
+                  "ranges": [
+                    [
+                      5,
+                      5
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ]
+            },
+            {
+              "id": "30.2.2",
+              "text": "If your right eye causes you to sin, tear it out — better to lose a member than have your whole body cast into Gehenna",
+              "quote": "And if thy right eye offend thee, pluck it out, and cast it from thee: for it is profitable for thee that one of thy members should perish, and not that thy whole body should be cast into hell.",
+              "tags": [],
+              "references": [
+                {
                   "label": "Matt 5:29–30",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
@@ -19705,8 +19567,16 @@
                       30
                     ]
                   ],
-                  "isPrimary": false
-                },
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "30.2.3",
+              "text": "Better to enter life maimed than be cast into Gehenna with unquenchable fire — where the worm does not die and the fire is not quenched",
+              "quote": "Wherefore if thy hand or thy foot offend thee, cut them off, and cast them from thee: it is better for thee to enter into life halt or maimed, rather than having two hands or two feet to be cast into everlasting fire.",
+              "tags": [],
+              "references": [
                 {
                   "label": "Matt 18:8–9",
                   "book": "Matthew",
@@ -19718,7 +19588,7 @@
                       9
                     ]
                   ],
-                  "isPrimary": false
+                  "isPrimary": true
                 },
                 {
                   "label": "Mark 9:43–48",
@@ -19732,26 +19602,13 @@
                     ]
                   ],
                   "isPrimary": false
-                },
-                {
-                  "label": "Luke 12:5",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 12,
-                  "ranges": [
-                    [
-                      5,
-                      5
-                    ]
-                  ],
-                  "isPrimary": false
                 }
-              ],
-              "quote": "And fear not them which kill the body, but are not able to kill the soul: but rather fear him which is able to destroy both soul and body in hell."
+              ]
             },
             {
-              "id": "30.2.2",
-              "text": "Outer darkness — weeping and gnashing of teeth; Gehenna of fire",
+              "id": "30.2.4",
+              "text": "The sons of the kingdom shall be cast into outer darkness — there shall be weeping and gnashing of teeth",
+              "quote": "But the children of the kingdom shall be cast out into outer darkness: there shall be weeping and gnashing of teeth.",
               "tags": [],
               "references": [
                 {
@@ -19766,9 +19623,17 @@
                     ]
                   ],
                   "isPrimary": true
-                },
+                }
+              ]
+            },
+            {
+              "id": "30.2.5",
+              "text": "At the end of the age the angels will cast the wicked into the furnace of fire — there shall be wailing and gnashing of teeth",
+              "quote": "And shall cast them into a furnace of fire: there shall be wailing and gnashing of teeth.",
+              "tags": [],
+              "references": [
                 {
-                  "label": "Matt 13:42, 50",
+                  "label": "Matt 13:42",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 13,
@@ -19776,14 +19641,31 @@
                     [
                       42,
                       42
-                    ],
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Matt 13:50",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 13,
+                  "ranges": [
                     [
                       50,
                       50
                     ]
                   ],
                   "isPrimary": false
-                },
+                }
+              ]
+            },
+            {
+              "id": "30.2.6",
+              "text": "Bind him and cast him into outer darkness — parabolic warnings of outer darkness at the judgment",
+              "quote": "Bind him hand and foot, and take him away, and cast him into outer darkness; there shall be weeping and gnashing of teeth.",
+              "tags": [],
+              "references": [
                 {
                   "label": "Matt 22:13",
                   "book": "Matthew",
@@ -19795,7 +19677,7 @@
                       13
                     ]
                   ],
-                  "isPrimary": false
+                  "isPrimary": true
                 },
                 {
                   "label": "Matt 25:30",
@@ -19809,7 +19691,15 @@
                     ]
                   ],
                   "isPrimary": false
-                },
+                }
+              ]
+            },
+            {
+              "id": "30.2.7",
+              "text": "Whoever calls his brother a fool is in danger of the fire of Gehenna — anger begins the progression toward judgment",
+              "quote": "But I say unto you, That whosoever is angry with his brother without a cause shall be in danger of the judgment... but whosoever shall say, Thou fool, shall be in danger of hell fire.",
+              "tags": [],
+              "references": [
                 {
                   "label": "Matt 5:22",
                   "book": "Matthew",
@@ -19821,8 +19711,16 @@
                       22
                     ]
                   ],
-                  "isPrimary": false
-                },
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "30.2.8",
+              "text": "How shall you escape the damnation of hell — serpents, brood of vipers",
+              "quote": "Ye serpents, ye generation of vipers, how can ye escape the damnation of hell?",
+              "tags": [],
+              "references": [
                 {
                   "label": "Matt 23:33",
                   "book": "Matthew",
@@ -19834,13 +19732,12 @@
                       33
                     ]
                   ],
-                  "isPrimary": false
+                  "isPrimary": true
                 }
-              ],
-              "quote": "But the children of the kingdom shall be cast out into outer darkness: there shall be weeping and gnashing of teeth."
+              ]
             },
             {
-              "id": "30.2.3",
+              "id": "30.2.9",
               "text": "Depart from me, you cursed, into the eternal fire prepared for the devil — eternal punishment versus eternal life",
               "tags": [],
               "references": [
