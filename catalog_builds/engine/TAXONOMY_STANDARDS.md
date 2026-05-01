@@ -30,6 +30,14 @@ Subcategories within a category follow this priority sequence:
 2. **Specific before general** — a subcategory about a specific event or pericope precedes a broad thematic grouping
 3. **Doctrinal logic** — if the subcategory content builds on a prior one (e.g., promise → fulfillment), honor that progression
 
+### Ordering Teachings Within a Subcategory
+
+Teachings within a subcategory are sorted using only the **primary reference** (`isPrimary: true`) of each teaching, in this priority sequence:
+
+1. **NT book order** — Matthew → Mark → Luke → John → Acts → 1Cor → 2Cor → Rev
+2. **Chapter** — ascending
+3. **First verse of the first range** — ascending (i.e., the first element of `ranges[0]`)
+
 ### Required Fields for a New Subcategory
 
 | Field | Format | Example |
