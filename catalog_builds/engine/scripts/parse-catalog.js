@@ -45,6 +45,7 @@ export function catalogStats(catalog) {
     }
   }
   return {
+    version: catalog.meta?.version ?? null,
     totalCategories: catalog.categories.length,
     totalSubcategories,
     totalTeachings,
@@ -66,6 +67,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     if (jsonMode) {
       console.log(JSON.stringify(stats, null, 2));
     } else {
+      console.log(`Version:       ${stats.version ?? '(none)'}`);
       console.log(`Categories:    ${stats.totalCategories}`);
       console.log(`Subcategories: ${stats.totalSubcategories}`);
       console.log(`Teachings:     ${stats.totalTeachings}`);

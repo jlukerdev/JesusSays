@@ -2,7 +2,7 @@
 name: catalog-engine
 description: >
   This skill governs all interaction with the Jesus Says data catalog. Load this skill before any catalog read, audit, classification, or write operation.
-  It provides capabilities for validating, auditing, classifying, adding, and restructuring teachings within the catalog.
+  It provides capabilities for validating, auditing, classifying, adding, restructuring, and schema-modifying teachings within the catalog.
   Use this skill to ensure data integrity, maintain thematic consistency, and manage the catalog effectively.
 ---
 
@@ -25,6 +25,7 @@ This skill governs all interaction with the Jesus Says data catalog. Load this s
 | Classify | Placement advisor — is a verse already present? Where should it go? |
 | Add teaching | Full workflow to add a new teaching to the correct location |
 | Restructure | Workflow to move, merge, split, or rename categories/subcategories |
+| Modify schema | Workflow to add, remove, rename, or retype fields on teaching objects |
 
 ---
 
@@ -253,6 +254,169 @@ This skill governs all interaction with the Jesus Says data catalog. Load this s
       (GitHub-style anchor: lowercase, spaces \u2192 hyphens, dots and em-dashes dropped)```
 
 **Output to user:** Confirmation that documentation is updated and consistent with the live catalog.
+```
+
+---
+
+## WORKFLOW 7: Modify the Catalog JSON Schema
+
+**Trigger:** "Add a new field" / "Remove the [field] field" / "Rename [field] to [newName]" / "Change the type of [field]"
+
+**Scope:** Covers field-level changes to meta, category, subcategory, and teaching objects
+
+### Step 0 — Design gate (always required)
+
+```
+Before touching any file, answer all of the following:
+  a. What is the exact field name being added / removed / renamed / retyped?
+  b. Which object level does it live on? (teaching | reference | top-level catalog)
+  c. What is the new type / allowed values / default value?
+  d. Is the change additive-only (new optional field), or does it break existing consumers?
+  e. Does validate-catalog.js enforce this field? (check the script source)
+  f. Does src/data/loader.js read or transform this field? (check the source)
+Do NOT proceed until all six questions are answered.
+```
+
+---
+
+### Sub-workflow A: Add a new field
+
+```
+1. Confirm the field does not already exist on any targeted object:
+   node catalog_builds/engine/scripts/parse-catalog.js --json
+   → Scan a sample of targeted objects to verify absence
+
+2. Choose migration strategy:
+   BULK (field must be present on every targeted object):
+     a. Write a one-off migration script at catalog_builds/validation/apply-schema-[fieldName].cjs
+        Pattern: read teachings.json → iterate all targeted objects → set field → write file
+     b. Run: node catalog_builds/validation/apply-schema-[fieldName].cjs
+   SMALL (field is top-level or structural, ≤5 affected objects):
+     a. Edit public/teachings.json directly, inserting the field at each affected location
+
+3. Set the initial schemaVersion bump in public/teachings.json:
+   → If a top-level "schemaVersion" field exists: increment it (e.g., "1.0" → "1.1")
+   → If it does not exist: add "schemaVersion": "1.1" as the first key after the opening brace
+
+4. Update validate-catalog.js:
+   → If the new field is required: add a check that errors when the field is missing or wrong type
+   → If the new field is optional: add a check that warns when the type is wrong if present
+
+5. Update src/data/loader.js:
+   → If the field needs to be read, normalized, or surfaced to the app: add handling
+   → If it is a backend-only metadata field: no change needed — document this decision
+
+6. Update TAXONOMY_STANDARDS.md:
+   → Add the new field to the "Required fields" or "Optional fields" table in Part 2
+   → Include: field name, type, allowed values, description, required/optional
+
+7. node catalog_builds/engine/scripts/validate-catalog.js
+   → If exit code 1: fix errors before proceeding
+
+8. Update catalog_builds/engine/CLAUDE.md:
+   → If the field is surfaced to the UI or affects data loading: note it under the Data Architecture section
+```
+
+---
+
+### Sub-workflow B: Remove a field
+
+```
+1. STOP — confirm with the user that removal is intentional and irreversible.
+   State exactly which field will be deleted from every targeted object.
+
+2. Check consumers before removing:
+   a. grep src/ for the field name — list every file that references it
+   b. Check validate-catalog.js for any check that references the field
+   → If any consumer reads the field: update or remove that code BEFORE deleting the field
+
+3. Write a migration script at catalog_builds/validation/apply-schema-remove-[fieldName].cjs
+   Pattern: read teachings.json → iterate all targeted objects → delete field → write file
+   Run: node catalog_builds/validation/apply-schema-remove-[fieldName].cjs
+
+4. Bump schemaVersion in public/teachings.json (same rule as Sub-workflow A, step 3)
+
+5. Remove the field's validation check from validate-catalog.js
+
+6. Remove the field's entry from TAXONOMY_STANDARDS.md Part 2 field tables
+
+7. node catalog_builds/engine/scripts/validate-catalog.js
+   → If exit code 1: fix errors before proceeding
+```
+
+---
+
+### Sub-workflow C: Rename a field
+
+```
+1. Treat a rename as: Sub-workflow A (add new field) + Sub-workflow B (remove old field), run in that order.
+   Do NOT skip the consumer audit in Sub-workflow B step 2 — both names must be grep'd.
+
+2. Migration script must:
+   a. Copy the value from oldField to newField on every targeted object
+   b. Delete oldField
+   Both operations in a single atomic pass — do NOT run separate add/remove scripts.
+
+3. Bump schemaVersion once (not twice) after the combined operation.
+
+4. Update validate-catalog.js: replace the old field check with a new one for the renamed field.
+
+5. Update TAXONOMY_STANDARDS.md: replace the old field row with the new name.
+
+6. node catalog_builds/engine/scripts/validate-catalog.js — must pass.
+```
+
+---
+
+### Sub-workflow D: Change a field's type or allowed values
+
+```
+1. Document the before/after contract:
+   OLD: fieldName — type: X, allowed: [...]
+   NEW: fieldName — type: Y, allowed: [...]
+
+2. Grep src/ and validate-catalog.js for the field name — list every location that
+   assumes the old type or performs type-specific operations (e.g., .length, parseInt).
+
+3. Write a migration script to coerce existing values to the new type/shape.
+   Run it. Spot-check 5 random teachings in the output to verify correctness.
+
+4. Update every consumer file identified in step 2.
+
+5. Update validate-catalog.js to enforce the new type.
+
+6. Bump schemaVersion in public/teachings.json.
+
+7. Update TAXONOMY_STANDARDS.md Part 2 to reflect the new type/allowed values.
+
+8. node catalog_builds/engine/scripts/validate-catalog.js — must pass.
+```
+
+---
+
+### Mandatory close-out for all schema sub-workflows
+
+```
+1. node catalog_builds/engine/scripts/validate-catalog.js --json
+   → summary.passed must be true before reporting completion
+
+2. Update catalog_builds/engine/REVISION.md:
+   → Schema field additions, removals, renames, and type changes always warrant a version entry
+   → Follow the same REVISION.md block format described in Workflow 6 step 5
+   → Label the section: "Schema: [Add|Remove|Rename|Retype] field '[fieldName]'"
+
+3. Update catalog_builds/engine/catalog_stats.md schema documentation:
+   a. Update the "meta.version" value in the schema block to match the new version
+   b. For Add: insert the new field in the correct object block with a // comment
+      describing its type, allowed values, and purpose
+   c. For Remove: delete the field line from the schema block
+   d. For Rename: update the field name in the schema block
+   e. For Retype: update the // comment to reflect the new type/allowed values
+
+4. Update catalog_builds/engine/CLAUDE.md if the change affects how data is loaded or displayed.
+```
+
+**Output to user:** Confirmation of the field change, the new schemaVersion value, which consumer files were updated, and that validation passed. If any consumer file was intentionally NOT updated (e.g., backend-only field), explain why.
 
 ---
 

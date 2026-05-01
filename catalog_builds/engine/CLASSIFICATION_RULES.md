@@ -86,7 +86,7 @@ Teachings that assert God's supreme authority over creation, history, or human a
 
 **Explicit exclusions:**
 - Vine/branches teachings → Cat 11 (Abiding in Christ) because the emphasis is on the disciple's relationship, not on Jesus's identity alone
-- "I am with you always" (Great Commission context) → Cat 26.5 (Great Commission) or Cat 28 (Post-Resurrection) if the appearance context is primary
+- "I am with you always" (Great Commission context) → Cat 26.1 (The Great Commission) or Cat 28 (Post-Resurrection) if the appearance context is primary
 - Instructions to pray in his name → Cat 10.4 (Praying in His Name)
 - The Father's greatness compared to the Son → classify by whether the passage is about Jesus's identity (Cat 2) or the Father's nature (Cat 1)
 
@@ -144,12 +144,9 @@ Healing commands, exorcisms, nature miracles, and feeding miracle logistics — 
 Forward-looking statements about the Spirit who will be sent. Predominantly from the Farewell Discourse (John 14–16), which classifies topically.
 
 #### 3.2 The Spirit's Work in the World
-Teachings about what the Spirit accomplishes — conviction, revelation, glorification of Christ. Distinguishable from 3.1 by describing ongoing work rather than the event of coming.
+Teachings about what the Spirit accomplishes — conviction, revelation, glorification of Christ, and speaking through disciples under persecution. Distinguishable from 3.1 by describing ongoing work rather than the event of coming.
 
-#### 3.3 The Spirit in Witness and Trial
-Teachings promising the Spirit will speak through disciples under persecution. Distinguishable from 3.2 by the persecution/courtroom setting.
-
-#### 3.4 Blasphemy Against the Spirit
+#### 3.3 Blasphemy Against the Spirit
 The one unforgivable sin teaching and its context. Stands alone; its legal/sin-classification content is not found in sibling subcategories.
 
 ---
@@ -326,10 +323,7 @@ Teachings about releasing anxiety and worry through trust in God's provision. Di
 #### 8.1 Jesus and the Law
 Jesus's stance toward the Law's authority, validity, and scope. Includes the fulfillment statement and teachings about which commandments matter most. Note: the Temptation of Jesus (Matt 4:1–11 / Luke 4:1–13) belongs in Cat 23.1 — Jesus cites Scripture in that episode in the context of spiritual combat, not as a teaching on the Law itself.
 
-#### 8.2 The Law's Fulfillment in Love
-Teachings that summarize the Law under the two great commandments or as pointing to love. Closely related to Cat 13; assign here when the frame is explicitly the Law's summary, not the command to love as a standalone.
-
-#### 8.3 Moses and the Scriptures Pointing to Jesus
+#### 8.2 Moses and the Scriptures Pointing to Jesus
 Teachings where Jesus interprets OT texts or persons as prophetic witnesses to himself (Moses wrote of me, Abraham saw my day, the sign of Jonah).
 
 ---
@@ -377,7 +371,6 @@ Teachings about the incompatibility or transition between old and new (new wine/
 - Secret prayer versus public performance
 - Persistence in asking (importunate widow, friend at midnight)
 - Praying in Jesus's name and its efficacy
-- Two or three gathered; corporate prayer
 - Watchfulness in prayer; praying in Gethsemane (as instruction, not the Passion event itself)
 - Asking, seeking, knocking
 
@@ -403,9 +396,6 @@ Parables and teachings emphasizing continued asking and not losing heart. The wi
 #### 10.4 Praying in Jesus's Name
 Teachings from the Upper Room Discourse about asking in Jesus's name and the Father's answer. Distinguishable from 11.2 (Abiding in Love) by the explicit name-prayer frame.
 
-#### 10.5 Corporate Prayer and Watchfulness
-"Where two or three are gathered" and Gethsemane's instruction to "watch and pray." Distinguishable from 10.2 by the communal or vigilance dimension.
-
 ---
 
 ## 11. Abiding in Christ
@@ -423,7 +413,7 @@ Teachings from the Upper Room Discourse about asking in Jesus's name and the Fat
 
 **Explicit exclusions:**
 - Praying in Jesus's name (John 15:16's "ask in my name") → Cat 10.4
-- "Love one another" as the New Commandment (John 15:12) → Cat 13.4 (New Commandment)
+- "Love one another" as the New Commandment (John 15:12) → Cat 13.3 (The New Commandment)
 - Mission to the world (John 15:18–27, the world's hatred and the Spirit's witness) → Cat 26 / Cat 3
 - The "I AM the vine" declaration as a self-identification → Cat 2.1 (I AM Declarations) if the emphasis is the title; Cat 11 if the emphasis is the disciple's relationship to it
 
@@ -479,24 +469,21 @@ John 17:20–26. Intercession for all who will believe through the disciples' wo
 - Self-sacrifice as the highest form of love ("greater love has no man")
 
 **Explicit exclusions:**
-- "Love your enemies" when the primary point is ethical nonretaliation → Cat 14.3 (Antitheses) if it appears in the Sermon context as an antithesis; Cat 13.3 if it stands as a standalone love teaching
+- "Love your enemies" when the primary point is ethical nonretaliation → Cat 14.3 (Antitheses) if it appears in the Sermon context as an antithesis; Cat 13.2 if it stands as a standalone love teaching
 - God's love for the world (as the basis of salvation) → Cat 6 when the point is the salvation act, Cat 1.3 when the point is God's character
 - Abiding in love as the mechanism of union with Christ → Cat 11.2
 
-**Tie-breaker rule:** "Love your enemies" appears both in the Sermon on the Mount Antitheses and as standalone teaching. When it occurs in the Antitheses block (Matt 5:43–48), classify under Cat 14.3. When it occurs independently or in Luke 6 outside the antithesis frame, classify under Cat 13.3.
+**Tie-breaker rule:** "Love your enemies" appears both in the Sermon on the Mount Antitheses and as standalone teaching. When it occurs in the Antitheses block (Matt 5:43–48), classify under Cat 14.3. When it occurs independently or in Luke 6 outside the antithesis frame, classify under Cat 13.2.
 
 ### Subcategories
 
-#### 13.1 Love for God
-The first and greatest commandment. Often occurs alongside 13.2; assign both here when they appear as the paired summary of the Law.
+#### 13.1 Love for God and Neighbor
+The first and greatest commandment and the second great commandment. Often occurs as a paired summary of the Law; the Good Samaritan parable illustrating neighbor-love belongs here.
 
-#### 13.2 Love for Neighbor
-The second great commandment and its illustration. The Good Samaritan parable belongs here.
-
-#### 13.3 Love for Enemies
+#### 13.2 Love for Enemies
 Teaching the radical extension of love beyond natural affection to opponents and persecutors. Outside the Antitheses block (see tie-breaker).
 
-#### 13.4 The New Commandment
+#### 13.3 The New Commandment
 "Love one another as I have loved you" — the distinctively Johannine command given in the Upper Room context (pre-Passion ministry; note G-2 applies to Last Supper context).
 
 ---
@@ -518,9 +505,9 @@ Teaching the radical extension of love beyond natural affection to opponents and
 - Oaths, truthfulness, and integrity of speech
 
 **Explicit exclusions:**
-- "You have heard…" blocks where love-of-enemies is the climax → Cat 13.3 if standalone; stays in Cat 14.3 if the full Antitheses block is the unit
+- "You have heard…" blocks where love-of-enemies is the climax → Cat 13.2 if standalone; stays in Cat 14.3 if the full Antitheses block is the unit
 - Sabbath teaching → Cat 24.4 when the Pharisaical conflict is the setting
-- Truthfulness and oath-taking that is its own teaching unit → Cat 16.2
+- Truthfulness and oath-taking that is its own teaching unit → Cat 16.1 (Power and Accountability of Words)
 - The Golden Rule applied to prayer → Cat 10 if prayer is the primary context
 
 **Tie-breaker rule:** When a teaching appears within the Sermon on the Mount's ethical blocks, classify it by its subcategory within Cat 14 unless a Global Override applies. Individual sayings from the Sermon that are repeated elsewhere may be cross-listed.
@@ -599,21 +586,18 @@ Teachings where children or childlike posture are commended as Kingdom-appropria
 - Honesty versus performance religion
 
 **Explicit exclusions:**
-- Blasphemy against the Spirit → Cat 3.4
+- Blasphemy against the Spirit → Cat 3.3 (Blasphemy Against the Spirit)
 - Oaths in the Antitheses block → Cat 14.3 when it is part of the formal Antitheses list
 - Witnessing truthfully under persecution → Cat 26 (Mission and Witness) or Cat 23
 
-**Tie-breaker rule:** The oath/truthfulness teaching in Matt 5:33–37 (one of the Antitheses) classifies under Cat 14.3 when treated as part of the Antitheses block, and under Cat 16.2 when treated as a standalone teaching on truthfulness.
+**Tie-breaker rule:** The oath/truthfulness teaching in Matt 5:33–37 (one of the Antitheses) classifies under Cat 14.3 when treated as part of the Antitheses block, and under Cat 16.1 (Power and Accountability of Words) when treated as a standalone teaching on truthfulness.
 
 ### Subcategories
 
 #### 16.1 The Power and Accountability of Words
-Teachings on the weight of spoken words — careless speech, words from the overflow of the heart, accountability for every idle word.
+Teachings on the weight of spoken words — careless speech, words from the overflow of the heart, accountability for every idle word. Includes the demand for plain yes/no speech and the critique of oath systems (see also Cat 14.3 for oaths within the Antitheses block).
 
-#### 16.2 Truthfulness and Oaths
-The demand for plain yes/no speech and the critique of oath systems. Related to Cat 14.3 (see tie-breaker).
-
-#### 16.3 Jesus as Truth
+#### 16.2 Jesus as Truth
 The "I am the truth" declaration and associated teachings on Jesus as the source and standard of truth. Often cross-listed with Cat 2.1.
 
 ---
@@ -674,7 +658,7 @@ Teachings about revelation of what was hidden — to the humble, to disciples, t
 - Forgiveness from the cross ("Father, forgive them") → Cat 27 per G-2
 - Mercy as social justice (caring for the poor) → Cat 21 (Justice and Mercy)
 - Repentance as the precondition of forgiveness → Cat 5 if the turning is primary
-- Binding and loosing → Cat 25.2 (Church Discipline) when it is about church authority
+- Binding and loosing → Cat 25 (The Church) when it is about church authority
 
 **Tie-breaker rule:** When a teaching involves both forgiveness and repentance, ask whether the *act of forgiving* or the *act of turning* is the punch line. "Go and sin no more" → the turn is primary → Cat 5. "Your sins are forgiven" → the grant is primary → Cat 18.1.
 
@@ -780,7 +764,7 @@ The parable of Lazarus and the rich man (Luke 16:19–31). Stands alone in this 
 - The Sheep and Goats judgment (Matt 25)
 - Caring for "the least of these"
 - Healing as mercy
-- The Good Samaritan (though cross-listed in Cat 13.2, assign here if the mercy-to-the-vulnerable is the primary frame)
+- The Good Samaritan (though cross-listed in Cat 13.1, assign here if the mercy-to-the-vulnerable is the primary frame)
 - Woe to those who exploit widows
 
 **Explicit exclusions:**
@@ -836,9 +820,6 @@ Teachings on the demanding, potentially costly nature of following Jesus. Buildi
 #### 22.3 Fruit-Bearing
 Teachings on the expectation and evidence of fruit in the disciple's life. The fruitless fig tree; "by their fruits you will know them."
 
-#### 22.4 Remaining Faithful to the End
-Teachings on perseverance — endurance through opposition, not looking back, the servant who remains at his post.
-
 ---
 
 ## 23. Suffering and Persecution
@@ -856,7 +837,7 @@ Teachings on perseverance — endurance through opposition, not looking back, th
 - Being dragged before governors and kings
 
 **Explicit exclusions:**
-- The Spirit speaking in trial → Cat 3.3 if the Spirit is the primary subject
+- The Spirit speaking in trial → Cat 3.2 (The Spirit’s Work in the World) if the Spirit is the primary subject
 - Persecution listed among end-times signs → Cat 29 when the eschatological context is primary
 - The Beatitude on the persecuted → Cat 4.4 (Beatitudes)
 
@@ -933,25 +914,22 @@ Teachings on leaders who seek prestige, exploit the vulnerable, or fail to do wh
 - The washing of feet as community ethic (cross-listed with Cat 15.2)
 
 **Explicit exclusions:**
-- Corporate prayer → Cat 10.5 if the focus is prayer practice
-- The Great Commission → Cat 26.5
+- Corporate prayer → Cat 10 (Prayer and Communion) if the focus is prayer practice
+- The Great Commission → Cat 26.1
 - Instructions to the Twelve on mission → Cat 26 (Mission and Witness)
 - Unity prayed for in John 17 → Cat 12.3
 
-**Tie-breaker rule:** "Where two or three are gathered" → Cat 10.5 if the teaching is primarily about the power of corporate prayer; Cat 25.3 if the teaching is primarily about Christ's presence in the gathered community.
+**Tie-breaker rule:** "Where two or three are gathered" → Cat 25.2 (Corporate Prayer and Presence). If the context is specifically about prayer persistence or manner of prayer, see also Cat 10.3 (Persistence in Prayer) or Cat 10.2 (How to Pray).
 
 ### Subcategories
 
 #### 25.1 The Foundation of the Church
 The Peter/rock saying and the promise that the gates of hell will not prevail.
 
-#### 25.2 Church Discipline
-The binding and loosing authority and the Matthew 18 process for addressing a sinning brother.
-
-#### 25.3 Corporate Prayer and Presence
+#### 25.2 Corporate Prayer and Presence
 "Where two or three are gathered" and the promise of Christ's presence in the community.
 
-#### 25.4 Unity Among Believers
+#### 25.3 Unity Among Believers
 Teachings explicitly calling for or describing the unity of believers as a community.
 
 ---
@@ -974,29 +952,29 @@ Teachings explicitly calling for or describing the unity of believers as a commu
 **Explicit exclusions:**
 - Courage under persecution (with no mission context) → Cat 23
 - The Spirit speaking in court → Cat 3.3
-- Post-resurrection commissions that are topically self-contained (Great Commission, Spirit/witness) → Cat 26.5 or Cat 26.6; appearance-narrative utterances → Cat 28
+- Post-resurrection commissions that are topically self-contained (Great Commission, Spirit/witness) → Cat 26.1 or Cat 26.3; appearance-narrative utterances → Cat 28
 
 **Tie-breaker rule:** Instructions that occur in the Passion narrative context → Cat 27 per G-2, even if they include mission elements. Instructions given in ministry or post-resurrection → classify normally.
 
 ### Subcategories
 
-#### 26.1 The Harvest and the Workers
-The harvest metaphor and its call to prayer for workers and active participation in the mission.
+#### 26.1 The Great Commission
+The post-resurrection mandate to make disciples of all nations (Matt 28:18–20; John 20:21–23; Acts 1:8 and parallels).
 
 #### 26.2 Instructions for the Twelve and the Seventy
 Practical and theological instructions for sent workers — what to take, how to greet, what to do with reception and rejection.
 
-#### 26.3 Fear and Courage in Witness
+#### 26.3 Visions and Commissions to the Apostles
+Post-ascension appearances and commissions recorded in Acts — the road to Damascus, the Cornelius vision, and similar — where the risen Christ speaks directly.
+
+#### 26.4 The Harvest and the Workers
+The harvest metaphor and its call to prayer for workers and active participation in the mission.
+
+#### 26.5 Fear and Courage in Witness
 Teachings calling missionaries and witnesses to fearlessness.
 
-#### 26.4 Persecution of Witnesses
+#### 26.6 Persecution of Witnesses
 Teachings describing the hostile reception witnesses will face — specifically in the context of active witness and proclamation.
-
-#### 26.5 The Great Commission
-The post-resurrection mandate to make disciples of all nations (Matt 28:18–20; John 20:21–23; Acts 1:8 and parallels).
-
-#### 26.6 Visions and Commissions to the Apostles
-Post-ascension appearances and commissions recorded in Acts — the road to Damascus, the Cornelius vision, and similar — where the risen Christ speaks directly.
 
 ---
 
@@ -1045,9 +1023,9 @@ The seven sayings from the cross: Father forgive them; today in paradise; woman 
 **Routing notes for topically self-contained post-resurrection teachings:**
 - Thomas encounter (John 20:27–29) → Cat 7 (Faith and Trust)
 - "Feed my sheep" / "Follow me" (John 21:15–19) → Cat 22.1 / Cat 26
-- The Great Commission (Matt 28:18–20 and parallels) → Cat 26.5
-- Acts 1:4–8 (Spirit and witness commission) → Cat 26.6
-- Damascus road and post-ascension appearances in Acts → Cat 26.6
+- The Great Commission (Matt 28:18–20 and parallels) → Cat 26.1
+- Acts 1:4–8 (Spirit and witness commission) → Cat 26.3
+- Damascus road and post-ascension appearances in Acts → Cat 26.3
 
 ### Subcategories
 
@@ -1056,9 +1034,6 @@ Appearance-narrative words — to the women at the tomb, on the road to Emmaus, 
 
 #### 28.2 Thomas — Doubt Confronted by Evidence
 John 20:26–29. The specific Thomas encounter. Note: this teaching's topical home is Cat 7 (Faith and Trust); it is cross-listed here as an appearance narrative.
-
-#### 28.3 The Restoration of Peter
-John 21:15–23. The appearance-narrative fishing scene and Peter's restoration. Note: the "Feed my sheep" / "Follow me" commissions (John 21:15–19) classify topically to Cat 22.1 / Cat 26.
 
 ---
 
@@ -1191,22 +1166,21 @@ Rev 3:14–22. Rebuked for lukewarmness; the famous invitation: "I stand at the 
 | Healing narrative, climax = call to follow | Cat 22.1 |
 | Praying in Jesus's name (John 14–16) | Cat 10.4, not Cat 11 |
 | "Love your enemies" — within the Antitheses block | Cat 14.3 |
-| "Love your enemies" — standalone | Cat 13.3 |
+| "Love your enemies" — standalone | Cat 13.2 |
 | Oath/truthfulness — within the Antitheses block | Cat 14.3 |
-| Oath/truthfulness — standalone | Cat 16.2 |
+| Oath/truthfulness — standalone | Cat 16.1 |
 | Any teaching in John 17 | Cat 12 (G-1) |
 | Farewell Discourse teaching (John 13:31–16:33) | Topical category — not Cat 27 |
 | Any teaching in Matt 26–27 / Mark 14–15 / Luke 22–23 | Cat 27 (G-2, Passion) |
 | Post-resurrection utterance — appearance-narrative bound | Cat 28 |
 | Post-resurrection utterance — topically self-contained | Topical category (not Cat 28) |
-| The Great Commission | Cat 26.5 only |
+| The Great Commission | Cat 26.1 only |
 | Any teaching in Rev 1–3 | Cat 31 (G-4) |
 | Sheep and Goats (Matt 25) | Cat 21.2 (mercy-criterion primary), not Cat 29 or Cat 30 |
 | Rich Man and Lazarus | Cat 20.4, not Cat 21 or Cat 30 |
 | "Take up your cross" — persecution context | Cat 23.4 |
 | "Take up your cross" — discipleship cost context | Cat 22.2 |
-| "Where two or three are gathered" — prayer emphasis | Cat 10.5 |
-| "Where two or three are gathered" — presence emphasis | Cat 25.3 |
+| "Where two or three are gathered" — prayer and presence emphasis | Cat 25.2 (Corporate Prayer and Presence) |
 | Forgiveness from the cross | Cat 27.4 (G-2) |
 | "Father, forgive them" | Cat 27.4 (G-2) |
 | Family division saying ("sword not peace") — witness division | Cat 23.2 |

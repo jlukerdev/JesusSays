@@ -257,6 +257,35 @@ Input: ref="Matt 13:31-32" text="mustard seed parable kingdom"
 
 ---
 
+## sort-teachings.js
+
+**Purpose:** Sorts teachings within each subcategory by their primary scripture reference: NT book order → chapter → first verse. Writes the sorted result back to `public/teachings.json`. **Always run `renumber.js` and `validate-catalog.js` after this script.**
+
+### Options
+
+No flags. Run as-is:
+
+```
+node catalog_builds/engine/scripts/sort-teachings.js
+```
+
+### Sort order
+
+1. NT book order: Matt → Mark → Luke → John → Acts → 1Cor → 2Cor → Rev (unrecognized books sort last)
+2. Chapter (ascending)
+3. First verse of the primary reference's first range (ascending)
+
+### Sample output
+
+```
+Reordered: [cat 4] "The Kingdom of God" → "Nature and Character of the Kingdom"
+
+Done. Checked 126 subcategories; reordered 3.
+Next: run renumber.js then validate-catalog.js
+```
+
+---
+
 ## Agent Workflow Reference
 
 When an AI agent uses this engine, the standard workflow for **any write operation** is:
@@ -266,8 +295,9 @@ When an AI agent uses this engine, the standard workflow for **any write operati
 2. [consult CLASSIFICATION_RULES.md]     → determine target location
 3. node classify.js --ref "..." --json   → confirm placement, detect duplicates
 4. [edit public/teachings.json directly] → insert/modify teaching object
-5. node renumber.js                      → fix all IDs, validate, write
-6. if exit code 1 → report errors, do not complete
+5. node sort-teachings.js               → resort teachings by primary ref (optional but recommended)
+6. node renumber.js                      → fix all IDs, validate, write
+7. if exit code 1 → report errors, do not complete
 ```
 
 For **read-only** workflows (validate, audit, classify):

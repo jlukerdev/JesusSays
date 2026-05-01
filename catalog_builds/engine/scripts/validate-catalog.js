@@ -31,6 +31,10 @@ export function validateCatalog(catalog) {
 
   // ── Meta ──────────────────────────────────────────────────────────────────
   if (!catalog.meta) err('error', 'meta', 'Missing top-level "meta" object');
+  else {
+    if (!catalog.meta.version) err('error', 'meta.version', 'Missing "version" field — must be a semver-like string (e.g. "1.2")');
+    else if (typeof catalog.meta.version !== 'string') err('error', 'meta.version', `"version" must be a string, got ${typeof catalog.meta.version}`);
+  }
   if (!Array.isArray(catalog.categories)) {
     err('error', 'categories', 'Missing or non-array "categories" field');
     return { errors, warnings };
@@ -49,6 +53,9 @@ export function validateCatalog(catalog) {
     else if (cat.slug !== `cat-${expectedCatId}`) err('error', catPath, `slug should be "cat-${expectedCatId}", got "${cat.slug}"`);
 
     if (!cat.title) err('error', catPath, 'Missing "title"');
+
+    if (!cat.uid) err('warning', catPath, 'Missing "uid" — run apply-schema-uid.cjs to stamp stable identifiers');
+    else if (typeof cat.uid !== 'string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(cat.uid)) err('warning', catPath, `"uid" is not a valid UUID v4: "${cat.uid}"`);
     if (!Array.isArray(cat.subcategories)) {
       err('error', catPath, 'Missing or non-array "subcategories"');
       return;
@@ -67,6 +74,9 @@ export function validateCatalog(catalog) {
       else if (sub.slug !== expectedSubSlug) err('error', subPath, `slug should be "${expectedSubSlug}", got "${sub.slug}"`);
 
       if (!sub.title) err('error', subPath, 'Missing "title"');
+
+      if (!sub.uid) err('warning', subPath, 'Missing "uid" — run apply-schema-uid.cjs to stamp stable identifiers');
+      else if (typeof sub.uid !== 'string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(sub.uid)) err('warning', subPath, `"uid" is not a valid UUID v4: "${sub.uid}"`);
       if (!Array.isArray(sub.teachings)) {
         err('error', subPath, 'Missing or non-array "teachings"');
         return;
@@ -79,6 +89,9 @@ export function validateCatalog(catalog) {
 
         if (!teaching.id) err('error', tPath, 'Missing "id"');
         else if (teaching.id !== expectedTId) err('error', tPath, `id should be "${expectedTId}", got "${teaching.id}"`);
+
+        if (!teaching.uid) err('warning', tPath, 'Missing "uid" — run apply-schema-uid.cjs to stamp stable identifiers');
+        else if (typeof teaching.uid !== 'string' || !/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(teaching.uid)) err('warning', tPath, `"uid" is not a valid UUID v4: "${teaching.uid}"`);
 
         if (!teaching.text || teaching.text.trim() === '') err('error', tPath, 'Missing or empty "text"');
         else if (teaching.text.trim().length < 20) err('warning', tPath, `text is very short (${teaching.text.length} chars): "${teaching.text}"`);

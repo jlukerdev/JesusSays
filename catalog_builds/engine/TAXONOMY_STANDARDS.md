@@ -30,6 +30,14 @@ Subcategories within a category follow this priority sequence:
 2. **Specific before general** — a subcategory about a specific event or pericope precedes a broad thematic grouping
 3. **Doctrinal logic** — if the subcategory content builds on a prior one (e.g., promise → fulfillment), honor that progression
 
+### Ordering Teachings Within a Subcategory
+
+Teachings within a subcategory are sorted using only the **primary reference** (`isPrimary: true`) of each teaching, in this priority sequence:
+
+1. **NT book order** — Matthew → Mark → Luke → John → Acts → 1Cor → 2Cor → Rev
+2. **Chapter** — ascending
+3. **First verse of the first range** — ascending (i.e., the first element of `ranges[0]`)
+
 ### Required Fields for a New Subcategory
 
 | Field | Format | Example |
@@ -37,6 +45,7 @@ Subcategories within a category follow this priority sequence:
 | `id` | `"{catId}.{index}"` — assigned by `renumber.js` | `"10.6"` |
 | `slug` | `"cat-{catId}-{index}"` — assigned by `renumber.js` | `"cat-10-6"` |
 | `title` | Title-case noun phrase | `"Intercession for Others"` |
+| `uid` | UUID v4 string — generated once, never modified | `"f47ac10b-58cc-4372-a567-0e02b2c3d479"` |
 | `teachings` | Array (may be empty before first teaching is added) | `[]` |
 
 Do **not** manually assign `id` or `slug` — always run `renumber.js` after inserting.
@@ -100,6 +109,7 @@ A new category must be inserted at the logically appropriate point in this arc. 
 | `id` | Integer — assigned by `renumber.js` | `32` |
 | `slug` | `"cat-{id}"` — assigned by `renumber.js` | `"cat-32"` |
 | `title` | Title-case noun phrase | `"Signs and Wonders"` |
+| `uid` | UUID v4 string — generated once, never modified | `"f47ac10b-58cc-4372-a567-0e02b2c3d479"` |
 | `sources` | Array of `bookAbbr` strings for the primary books | `["Matt", "Luke", "John"]` |
 | `description` | `null`, or a prose introduction if the category needs context | `null` |
 | `subcategories` | Array of subcategory objects | `[...]` |
@@ -184,6 +194,7 @@ Before adding a new teaching to `teachings.json`, verify all fields are present 
 | Field | Required | Format | Notes |
 |---|---|---|---|
 | `id` | Yes — via `renumber.js` | `"{cat}.{sub}.{teaching}"` | Do not assign manually |
+| `uid` | Yes — via `apply-schema-uid.cjs` | UUID v4 string | Generate with `crypto.randomUUID()`; never modify after creation |
 | `text` | Yes | String, ≥20 chars | Third-person present tense; 1 sentence editorial summary; no quotation marks |
 | `quote` | Yes | String or `null` | Raw KJV text of Jesus's words. Use `null` only if words are paraphrased/indirect |
 | `tags` | Yes | Array | `["parable"]` if applicable; otherwise `[]`. See `TAG_RULES.md` |

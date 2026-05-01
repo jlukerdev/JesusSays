@@ -2,10 +2,6 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Project Status
-
-**Phase 1, Stages 1–7 complete.** Full Category Mode and Bible Book Mode are live. Stage 8 (QA sign-off) and live deployment to GitHub Pages are pending. Phase 2 (Parables toggle, permalink anchors, font size control) is next.
-
 ## Project Overview
 
 **Jesus Says** is a reference web application cataloging all recorded words of Jesus Christ from the New Testament — organized across 31 thematic categories with full scripture cross-references and 100% coverage of red-letter (Words of Christ) NT verses. The dataset is the primary artifact; the UI exists to browse, filter, and permalink to teachings. For current catalog counts, see [`catalog_builds/engine/catalog_stats.md`](catalog_builds/engine/catalog_stats.md).
@@ -30,33 +26,6 @@ npm run preview   # Preview production build
 ## Data Architecture
 
 **Served from:** `public/teachings.json` (fetched at `/JesusSays/teachings.json`)
-
-```
-{
-  meta: { title, subtitle, totalCategories, sources[], scope[] },
-  categories: [{
-    id, slug, title, sources[], description,
-    subcategories: [{
-      id, slug, title,
-      teachings: [{
-        id,          // hierarchical: "1.2.5" = cat 1, subcat 2, teaching 5
-        text,        // editorial summary (1 sentence)
-        quote,       // raw KJV text of Jesus's words (v2)
-        tags[],      // e.g. ["parable"]
-        references: [{
-          label, book, bookAbbr, chapter,
-          ranges: [[startVerse, endVerse]],
-          isPrimary
-        }]
-      }]
-    }]
-  }]
-}
-```
-
-- 31 categories ordered theologically (God the Father → Seven Churches of Revelation), with The Passion Narrative inserted at cat-27 before the Resurrection block
-- 42 parables tagged `"parable"` — they span all categories
-- 8 NT books: Matt, Mark, Luke, John, Acts, 1Cor, 2Cor, Rev (`bookAbbr` normalized — no spaces)
 
 ## Implemented Source Files
 
@@ -102,23 +71,6 @@ src/
 | A-04 | Blue Letter Bible links for scripture refs — use `BLB_BOOK_SLUG` from `bookOrder.js` |
 | A-05 | `localStorage` for user prefs (translation, font size, theme); `sessionStorage` for filters/scroll |
 
-## Feature Priorities
-
-**Phase 1 — complete (Stage 8 QA pending):**
-- All browsing modes implemented: Category Mode and Bible Book Mode
-- NT Book filter bar (FilterBar) wired to sidebar TOC
-- Scroll-spy active state in both sidebar views
-- Prev/Next category nav
-- Mobile drawer layout
-
-**Phase 2 — next:**
-- F-02: Parable-only toggle (in filter bar per R-06)
-- F-05: Teaching permalink anchors (copy-to-clipboard, IDs already in DOM)
-- R-05/F-08: Font size control (4-step: XS/S/M/L)
-- R-06: Consolidate filter bar (books + parables on one bar)
-
-**Phase 3 (deferred):** Print stylesheet, PWA install verification, additional themes, translation selector (blocked on R-03)
-
 ## Styling Conventions
 
 All values from CSS custom properties — never hardcode colors, sizes, or spacing. All vars are in `src/styles/themes/theme-classic.css`. Key ones:
@@ -142,7 +94,6 @@ All interaction with `public/teachings.json` — classification, validation, aud
 | `catalog_builds/engine/CLASSIFICATION_RULES.md` | Thematic rules for all categories and subcategories |
 | `catalog_builds/engine/TAXONOMY_STANDARDS.md` | Standards for creating new cats/subcats; required fields; validation gate |
 | `catalog_builds/engine/TAG_RULES.md` | Parable tag definition + canonical 42-parable reference list |
-| `catalog_builds/engine/BASELINE.md` | Initial catalog state; known issues (41 Cat-31 ID errors, accepted findings) |
 | `catalog_builds/engine/scripts/README.md` | Script usage, options, and sample output |
 
 **CLI scripts** (run from project root):
@@ -152,6 +103,7 @@ node catalog_builds/engine/scripts/validate-catalog.js           # lint
 node catalog_builds/engine/scripts/audit-catalog.js              # quality audit
 node catalog_builds/engine/scripts/classify.js --ref "Matt 13:31" # placement check
 node catalog_builds/engine/scripts/renumber.js                   # fix IDs and write
+node catalog_builds/engine/scripts/sort-teachings.js             # resorts teachings in each subcategory based on primary-ref Book > Chapter > Verse
 ```
 
 For current catalog stats, see [`catalog_builds/engine/catalog_stats.md`](catalog_builds/engine/catalog_stats.md).
