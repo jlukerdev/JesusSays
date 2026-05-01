@@ -74,3 +74,31 @@ Verify all CSS imports are in `main.jsx`, all component imports are correctly pa
 - CSS custom properties only — no hardcoded colors or sizes.
 - BibleViewer content areas are placeholders; Bible API integration is out of scope for Phase 2.
 - See `modern_nav_plan.md` Decision Points section before implementing Stages 2, 3, 4, and 12.
+
+
+
+## Updates
+
+- Navigation
+    - the "Topical Subject" menu - move to left side and make more prominent. Only show when not at homepage. Display it to the right of the current "breadcrumb". it should display "Back to Topical Subjects"
+    - the "gear" menu - make icon fit the app style with just an icon, no background coloring or boxing
+    - the app-header navs on the left and right-side - "back, forward and up-category" - they are confusing. remove them and their logic
+    - the bottom Prev and Next navs - Remove the "Prev" and "Next" text. Just show the object text
+    - In the Subcategory view - above the Book chips - add a "Back to Topics" nav
+    - In the Teaching Details view - at the top of the view add a "Back to [subcategory]" nav
+    - revising the existing navs probably means adjusting what nav-history is stored and managed so revise that logic as needed
+
+- Appearance
+    - the header for Subcategory view  - it looks to similar to the main app header. Make it blend in more
+    - Subcategory - teachings listings - on wider screens, allow the tag chips and scripture chips to be in-line with the summary. In mobile,they can wrap to 3 lines
+    - Details View - remove the header styling and similar to the "scripture references" card - add a card for the Category > Subcategory and a card for the Summary Text
+
+- Function
+    - in desktop mode - the subcategory tabs aren't scrollable if they exceed the horz space
+    - in mobile mode - the subcategory dropdown needs a "down arrow" to indicate it drops
+    - the book filter chips in subcategory header need to be in NT book order
+    - Teaching Details view: hide the search bar when viewing teaching details
+    - Teaching Details view: under each scripture ref, add shell for showing that verse snippet from future bible data
+
+
+- 

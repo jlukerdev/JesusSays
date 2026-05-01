@@ -1,11 +1,8 @@
-import { useState } from 'react'
-import { Menu, Settings } from 'lucide-react'
-import { useNavigate } from 'react-router-dom'
+import { Menu } from 'lucide-react'
 import ModeSwitcher from '../ModeSwitcher/ModeSwitcher.jsx'
+import SettingsMenu from '../SettingsMenu/SettingsMenu.jsx'
 
 export default function AppHeader({ onOpenDrawer }) {
-  const navigate = useNavigate()
-
   return (
     <header className="app-header">
       <button
@@ -23,14 +20,7 @@ export default function AppHeader({ onOpenDrawer }) {
 
       <div className="app-header__actions">
         <ModeSwitcher />
-        <button
-          className="btn-optimizer"
-          onClick={() => navigate('/catalog-optimizer')}
-          aria-label="Open Catalog Optimizer"
-          title="Catalog Optimizer"
-        >
-          <Settings size={16} />
-        </button>
+        <SettingsMenu />
       </div>
     </header>
   )
