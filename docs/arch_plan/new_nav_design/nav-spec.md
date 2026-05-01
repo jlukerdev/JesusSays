@@ -32,68 +32,16 @@ The application consumes a single JSON structure. All navigation and filtering l
 
 ### 1.1 Schema
 
-```json
-{
-  "categories": [
-    {
-      "id": 1,
-      "slug": "cat-1",
-      "title": "God the Father",
-      "subcategories": [
-        {
-          "id": "1.1",
-          "slug": "cat-1-1",
-          "title": "The Nature of God",
-          "teachings": [
-            {
-              "id": "1.1.1",
-              "text": "If earthly fathers give good gifts, how much more will the heavenly Father give good things to those who ask",
-              "quote": "If ye then, being evil, know how to give good gifts unto your children, how much more shall your Father which is in heaven give good things to them that ask him?",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 7:11",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 7,
-                  "ranges": [[11, 11]],
-                  "isPrimary": true
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
+see existing project documentation
 
 ### 1.2 Field Reference
 
-| Level | Field | Type | Notes |
-|---|---|---|---|
-| Category | `id` | integer | Primary key used throughout all navigation logic |
-| Category | `slug` | string | URL-safe identifier — reserved for future routing |
-| Category | `title` | string | Display name shown on cards and in headers |
-| Subcategory | `id` | string | Dot-notation: `"{catId}.{subIndex}"` |
-| Subcategory | `title` | string | Shown in tab labels and the mobile dropdown |
-| Teaching | `id` | string | Dot-notation: `"{catId}.{subIdx}.{tIdx}"` |
-| Teaching | `text` | string | Summary sentence shown on cards and detail screens |
-| Teaching | `quote` | string \| null | KJV source text; rendered as blockquote if present |
-| Teaching | `tags` | string[] | Values: `"parable"`, `"promise"`, `"woe"` |
-| Reference | `label` | string | Display string for chips (e.g. `"Matt 7:11"`) |
-| Reference | `book` | string | Full book name |
-| Reference | `bookAbbr` | string | Abbreviation used as the book filter key |
-| Reference | `chapter` | integer | |
-| Reference | `ranges` | `[[start, end]]` | Array of verse range pairs |
-| Reference | `isPrimary` | boolean | Primary reference shown more prominently |
+see existing project documentation
 
 ### 1.3 Derived Data (Computed at Runtime)
 
 The following are not stored in the schema and must be computed when the data loads:
 
-- **Available books per category:** The union of all unique `bookAbbr` values across every reference in every teaching in every subcategory of that category. Used to render the book filter chips in the category hero.
 - **Teaching density per category:** Total teaching count across all subcategories. Used to calculate the proportional width of the density bar on category cards, expressed as a ratio relative to the maximum teaching count across all categories.
 
 ---
