@@ -695,7 +695,6 @@
               "text": "Contrasts the true shepherd who enters by the door and is known by his sheep with the thief who climbs in another way",
               "quote": "Verily, verily, I say unto you, He that entereth not by the door into the sheepfold, but climbeth up some other way, the same is a thief and a robber. But he that entereth in by the door is the shepherd of the sheep. To him the porter openeth; and the sheep hear his voice: and he calleth his own sheep by name, and leadeth them out. And when he putteth forth his own sheep, he goeth before them, and the sheep follow him: for they know his voice. And a stranger will they not follow, but will flee from him: for they know not the voice of strangers.",
               "tags": [
-                "parable",
                 "i-am"
               ],
               "references": [
@@ -742,7 +741,6 @@
               "text": "The hireling, who is not the shepherd, sees the wolf coming and flees because he does not own the sheep, leaving them to be caught and scattered",
               "quote": "But he that is an hireling, and not the shepherd, whose own the sheep are not, seeth the wolf coming, and leaveth the sheep, and fleeth: and the wolf catcheth them, and scattereth the sheep. The hireling fleeth, because he is an hireling, and careth not for the sheep.",
               "tags": [
-                "parable",
                 "i-am"
               ],
               "references": [
@@ -12563,9 +12561,7 @@
             {
               "id": "20.4.1",
               "text": "The rich man feasts while Lazarus lies at his gate — in the afterlife their positions are reversed; a great chasm is fixed",
-              "tags": [
-                "parable"
-              ],
+              "tags": [],
               "references": [
                 {
                   "label": "Luke 16:19–31",
@@ -12693,9 +12689,7 @@
             {
               "id": "21.2.1",
               "text": "The Son of Man separates all nations as a shepherd separates sheep from goats — those who served the hungry, thirsty, stranger, naked, sick, and imprisoned served him",
-              "tags": [
-                "parable"
-              ],
+              "tags": [],
               "references": [
                 {
                   "label": "Matt 25:31–46",

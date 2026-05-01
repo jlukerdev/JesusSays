@@ -46,12 +46,10 @@ For genuinely ambiguous cases not in the reference list, default to **not taggin
 
 ## Canonical Parable Reference List
 
-These are the 42 teachings currently tagged `"parable"`. This list is the authoritative standard. Do not remove the tag from any of these, and do not add the tag to a teaching not resembling these in form and function.
+These are the 38 teachings currently tagged `"parable"`. This list is the authoritative standard. Do not remove the tag from any of these, and do not add the tag to a teaching not resembling these in form and function.
 
 | ID | Parable Title | Category | Notes |
 |---|---|---|---|
-| 2.1.14 | True Shepherd vs. Thief (entering by the door) | Identity of Jesus Christ | Narrative contrast; part of Good Shepherd discourse |
-| 2.1.16 | The Hireling (hired hand flees from the wolf) | Identity of Jesus Christ | Narrative contrast; part of Good Shepherd discourse |
 | 4.1.1 | Mustard Seed | Kingdom of God | Classic kingdom parable |
 | 4.1.2 | Leaven in Flour | Kingdom of God | Classic kingdom parable |
 | 4.1.3 | Hidden Treasure / Pearl of Great Price | Kingdom of God | Double parable |
@@ -66,25 +64,23 @@ These are the 42 teachings currently tagged `"parable"`. This list is the author
 | 4.5.1 | The Two Sons | Kingdom of God | Narrative with contrast |
 | 4.5.2 | Workers in the Vineyard | Kingdom of God | Extended narrative |
 | 4.5.3 | The Wicked Tenants | Kingdom of God | Narrative parable of judgment |
-| 5.1.5 | The Barren Fig Tree | Repentance and Conversion | Narrative: owner, gardener, one-year extension |
+| 5.1.4 | The Barren Fig Tree | Repentance and Conversion | Narrative: owner, gardener, one-year extension |
 | 5.2.1 | The Lost Sheep | Repentance and Conversion | Narrative: shepherd seeks, finds, rejoices |
 | 5.2.2 | The Lost Coin | Repentance and Conversion | Narrative: woman seeks, finds, rejoices |
 | 5.2.3 | The Lost Son (Prodigal Son) | Repentance and Conversion | Extended narrative parable |
 | 9.3.1 | New Wine in Old Wineskins | The New Covenant | Brief narrative action with consequence; tagged as parable |
 | 10.3.2 | The Persistent Friend at Midnight | Prayer and Communion | Narrative: man, door, bread |
 | 10.3.3 | The Persistent Widow and Unjust Judge | Prayer and Communion | Extended narrative |
-| 13.2.2 | The Good Samaritan | Love | Extended narrative parable |
+| 13.1.2 | The Good Samaritan | Love | Extended narrative parable |
 | 14.6.2 | The Wise and Foolish Builders | Righteousness and Ethics | Two-part narrative parable |
 | 15.3.1 | The Seat of Honor / Great Banquet | Humility and Servanthood | Two-part instructional parable |
 | 15.3.2 | The Pharisee and the Tax Collector | Humility and Servanthood | Narrative contrast parable |
 | 15.3.3 | The Unworthy Servants | Humility and Servanthood | Brief instructional narrative |
-| 18.1.4 | Two Debtors | Forgiveness and Reconciliation | Brief narrative comparison |
+| 18.1.3 | Two Debtors | Forgiveness and Reconciliation | Brief narrative comparison |
 | 18.2.3 | The Unforgiving Servant | Forgiveness and Reconciliation | Extended narrative parable |
 | 20.2.1 | The Rich Fool | Wealth and Generosity | Brief narrative: man, barns, soul required |
 | 20.3.3 | The Talents / Minas | Wealth and Generosity | Extended narrative with judgment |
 | 20.3.4 | The Dishonest Manager | Wealth and Generosity | Extended narrative parable |
-| 20.4.1 | The Rich Man and Lazarus | Wealth and Generosity | Extended narrative with afterlife scene |
-| 21.2.1 | The Sheep and the Goats | Justice and Mercy | Extended narrative judgment scene |
 | 21.3.2 | The Good Samaritan | Justice and Mercy | Cross-listed from Cat 13; same teaching |
 | 22.2.4 | The Tower Builder / King Going to War | Discipleship | Double parable of counting the cost |
 | 24.2.3 | The Pharisee and the Tax Collector | Religious Hypocrisy | Cross-listed from Cat 15; same teaching |
@@ -93,7 +89,20 @@ These are the 42 teachings currently tagged `"parable"`. This list is the author
 | 29.3.6 | The Servants with Lamps Lit | Eschatology | Brief narrative of readiness |
 | 29.4.1 | The Fig Tree (lesson from the fig tree) | Eschatology | Extended comparison; tagged parable |
 
-**Note on cross-listed parables:** The Good Samaritan appears at both 13.2.2 and 21.3.2; the Pharisee and Tax Collector at both 15.3.2 and 24.2.3; the Ten Virgins at both 4.1.6 and 29.3.3. These are intentional cross-classifications where the same teaching serves two distinct thematic purposes in the catalog.
+**Note on cross-listed parables:** The Good Samaritan appears at both 13.1.2 and 21.3.2; the Pharisee and Tax Collector at both 15.3.2 and 24.2.3; the Ten Virgins at both 4.1.6 and 29.3.3. These are intentional cross-classifications where the same teaching serves two distinct thematic purposes in the catalog.
+
+---
+
+### Removed from Canonical List (False Positives)
+
+The following teachings were removed from the canonical parable list after B5 Pass 2 review (04/30/2026). The `"parable"` tag has been removed from each. They fail the three-part definition because their primary form is either eschatological narrative/prophecy or extended metaphor within an I AM declaration — not a parable in the strict sense.
+
+| ID | Title | Reason for Removal |
+|---|---|---|
+| 2.1.11 | True Shepherd vs. Thief (entering by the door) | Extended metaphor embedded in an I AM declaration (John 10:1–5); primary identity claim, not a standalone parable |
+| 2.1.13 | The Hireling (hired hand flees from the wolf) | Same discourse as 2.1.11; figurative contrast within the I AM / Good Shepherd declaration, not a self-contained parable |
+| 20.4.1 | The Rich Man and Lazarus | Eschatological narrative — functions as prophetic/didactic teaching about afterlife reality, not a figurative story about something else |
+| 21.2.1 | The Sheep and the Goats | Final judgment scene presented as literal eschatological event, not a figurative comparison; fails "figurative intent" criterion |
 
 ---
 
