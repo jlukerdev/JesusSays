@@ -1,0 +1,1073 @@
+﻿{
+  "summary": {
+    "ERROR": 0,
+    "WARNING": 1,
+    "REVIEW": 22,
+    "INFO": 56
+  },
+  "findings": [
+    {
+      "id": "F-B6001",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 1 \"God the Father\" > \"True Worship of God\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6002",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 3 \"The Holy Spirit\" > \"The Spirit in Witness and Trial\"",
+      "refs": [],
+      "description": "Subcategory has only 1 teaching (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6003",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 3 \"The Holy Spirit\" > \"Blasphemy Against the Spirit\"",
+      "refs": [],
+      "description": "Subcategory has only 1 teaching (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6004",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 5 \"Repentance and Conversion\" > \"The Invitation to Come\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6005",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 8 \"The Old Covenant\" > \"The Law's Fulfillment in Love\"",
+      "refs": [],
+      "description": "Subcategory has only 1 teaching (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6006",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 8 \"The Old Covenant\" > \"Moses and the Scriptures Pointing to Jesus\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6007",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 9 \"The New Covenant\" > \"New and Old ΓÇö The Covenant Transition\"",
+      "refs": [],
+      "description": "Subcategory has only 1 teaching (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6008",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 10 \"Prayer and Communion\" > \"Corporate Prayer and Watchfulness\"",
+      "refs": [],
+      "description": "Subcategory has only 1 teaching (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6009",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 13 \"Love\" > \"Love for God and Neighbor\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6010",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 13 \"Love\" > \"Love for Enemies\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6011",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 14 \"Righteousness and Ethics\" > \"Salt and Light\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6012",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 14 \"Righteousness and Ethics\" > \"The Law and Righteousness\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6013",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 14 \"Righteousness and Ethics\" > \"Authentic Piety ΓÇö Giving, Prayer, Fasting\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6014",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 14 \"Righteousness and Ethics\" > \"The Golden Rule and Two Ways\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6015",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 15 \"Humility and Servanthood\" > \"Childlikeness as a Kingdom Virtue\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6016",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 16 \"Truth and Integrity\" > \"The Power and Accountability of Words\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6017",
+      "severity": "WARNING",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 16 \"Truth and Integrity\" > \"Truthfulness and Oaths\"",
+      "refs": [],
+      "description": "Subcategory has 0 teachings.",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: ΓëÑ3 teachings required for a subcategory to stand alone.",
+      "proposed": "Delete subcategory or populate it.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6018",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 17 \"Wisdom and Discernment\" > \"Hidden Things Revealed\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6019",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 19 \"Marriage and Family\" > \"Sexual Purity\"",
+      "refs": [],
+      "description": "Subcategory has only 1 teaching (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6020",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 19 \"Marriage and Family\" > \"Care for Children\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6021",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 20 \"Wealth and Generosity\" > \"The Rich Man and Lazarus\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6022",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 21 \"Justice and Mercy\" > \"The Blessing on the Poor and Woe to the Rich\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6023",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 21 \"Justice and Mercy\" > \"The Judgment of the Nations ΓÇö Sheep and Goats\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6024",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 22 \"Discipleship\" > \"Remaining Faithful to the End\"",
+      "refs": [],
+      "description": "Subcategory has only 1 teaching (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6025",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 23 \"Suffering and Persecution\" > \"Taking Up the Cross\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6026",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 25 \"The Church\" > \"The Foundation of the Church\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6027",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 25 \"The Church\" > \"Church Discipline\"",
+      "refs": [],
+      "description": "Subcategory has only 1 teaching (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6028",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 25 \"The Church\" > \"Corporate Prayer and Presence\"",
+      "refs": [],
+      "description": "Subcategory has only 1 teaching (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6029",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 25 \"The Church\" > \"Unity Among Believers\"",
+      "refs": [],
+      "description": "Subcategory has only 1 teaching (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6030",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 26 \"Mission and Witness\" > \"The Great Commission\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6031",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 26 \"Mission and Witness\" > \"Fear and Courage in Witness\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6032",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 28 \"Post-Resurrection Appearances\" > \"Thomas ΓÇö Doubt Confronted by Evidence\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6033",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 28 \"Post-Resurrection Appearances\" > \"The Final Commission and Ascension\"",
+      "refs": [],
+      "description": "Subcategory has only 1 teaching (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6034",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 29 \"Eschatology and the End Times\" > \"The Fig Tree and the Unknown Hour\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6035",
+      "severity": "INFO",
+      "check": "B6-CheckA-SubcatVolume",
+      "teachingId": null,
+      "location": "Cat 30 \"Judgment and Hell\" > \"The Resurrection and Final Destiny\"",
+      "refs": [],
+      "description": "Subcategory has only 2 teachings (below the 3-teaching threshold).",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 1: volume threshold = 3.",
+      "proposed": "Consider merging into an adjacent subcategory if themes overlap.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6036",
+      "severity": "INFO",
+      "check": "B6-CheckB-TextField",
+      "teachingId": "27.1.10",
+      "location": "Cat 27 \"The Passion Narrative\" > \"The Last Supper\" > teaching 27.1.10",
+      "refs": [],
+      "description": "text field is unusually long (254 chars) ΓÇö may contain direct scripture quote rather than editorial summary.",
+      "ruleNote": "TAXONOMY_STANDARDS.md: text should be a concise summary (ΓëÑ20 chars, typically 1 sentence).",
+      "proposed": "Review and shorten to a true summary sentence.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6037",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "2.3.4",
+      "location": "Cat 2 \"The Identity of Jesus Christ\" > \"His Divine Authority and Mission\" > teaching 2.3.4",
+      "refs": [
+        "Luke 12:49",
+        "Matt 10:34"
+      ],
+      "description": "Primary reference is Luke 12:49 (Luke), but Matt is also present (Matt 10:34). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6038",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "2.5.5",
+      "location": "Cat 2 \"The Identity of Jesus Christ\" > \"Predictions of His Suffering, Death, and Resurrection\" > teaching 2.5.5",
+      "refs": [
+        "Luke 18:31ΓÇô33",
+        "Luke 24:46",
+        "Matt 20:18ΓÇô19",
+        "Mark 10:33ΓÇô34"
+      ],
+      "description": "Primary reference is Luke 18:31ΓÇô33 (Luke), but Matt is also present (Matt 20:18ΓÇô19). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6039",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "2.6.14",
+      "location": "Cat 2 \"The Identity of Jesus Christ\" > \"His Messianic Identity\" > teaching 2.6.14",
+      "refs": [
+        "Mark 9:12ΓÇô13",
+        "Matt 17:11ΓÇô12"
+      ],
+      "description": "Primary reference is Mark 9:12ΓÇô13 (Mark), but Matt is also present (Matt 17:11ΓÇô12). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6040",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "2.7.4",
+      "location": "Cat 2 \"The Identity of Jesus Christ\" > \"His Miraculous Works\" > teaching 2.7.4",
+      "refs": [
+        "Mark 5:39ΓÇô41",
+        "Matt 9:24ΓÇô25",
+        "Luke 8:52ΓÇô54"
+      ],
+      "description": "Primary reference is Mark 5:39ΓÇô41 (Mark), but Matt is also present (Matt 9:24ΓÇô25). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6041",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "2.7.13",
+      "location": "Cat 2 \"The Identity of Jesus Christ\" > \"His Miraculous Works\" > teaching 2.7.13",
+      "refs": [
+        "Mark 6:37ΓÇô38",
+        "Luke 9:13ΓÇô14",
+        "Matt 14:16"
+      ],
+      "description": "Primary reference is Mark 6:37ΓÇô38 (Mark), but Matt is also present (Matt 14:16). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6042",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "2.7.15",
+      "location": "Cat 2 \"The Identity of Jesus Christ\" > \"His Miraculous Works\" > teaching 2.7.15",
+      "refs": [
+        "Mark 8:2ΓÇô3",
+        "Matt 15:32"
+      ],
+      "description": "Primary reference is Mark 8:2ΓÇô3 (Mark), but Matt is also present (Matt 15:32). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6043",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "4.1.8",
+      "location": "Cat 4 \"The Kingdom of God\" > \"Nature and Character of the Kingdom\" > teaching 4.1.8",
+      "refs": [
+        "Mark 1:15",
+        "Matt 4:17"
+      ],
+      "description": "Primary reference is Mark 1:15 (Mark), but Matt is also present (Matt 4:17). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6044",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "5.2.1",
+      "location": "Cat 5 \"Repentance and Conversion\" > \"Parables of the Lost\" > teaching 5.2.1",
+      "refs": [
+        "Luke 15:4ΓÇô7",
+        "Matt 18:12ΓÇô14"
+      ],
+      "description": "Primary reference is Luke 15:4ΓÇô7 (Luke), but Matt is also present (Matt 18:12ΓÇô14). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6045",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "7.2.1",
+      "location": "Cat 7 \"Faith and Trust\" > \"Overcoming Fear and Doubt\" > teaching 7.2.1",
+      "refs": [
+        "Mark 4:40",
+        "Matt 8:26",
+        "Matt 14:31",
+        "Mark 5:36",
+        "Luke 8:25, 50"
+      ],
+      "description": "Primary reference is Mark 4:40 (Mark), but Matt is also present (Matt 8:26, Matt 14:31). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6046",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "8.1.2",
+      "location": "Cat 8 \"The Old Covenant\" > \"Jesus and the Law\" > teaching 8.1.2",
+      "refs": [
+        "Luke 16:16",
+        "Matt 11:12ΓÇô13"
+      ],
+      "description": "Primary reference is Luke 16:16 (Luke), but Matt is also present (Matt 11:12ΓÇô13). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6047",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "17.1.3",
+      "location": "Cat 17 \"Wisdom and Discernment\" > \"Hearing and Perceiving Spiritually\" > teaching 17.1.3",
+      "refs": [
+        "Mark 4:24ΓÇô25",
+        "Luke 8:18",
+        "Matt 13:12",
+        "Matt 25:29"
+      ],
+      "description": "Primary reference is Mark 4:24ΓÇô25 (Mark), but Matt is also present (Matt 13:12, Matt 25:29). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6048",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "17.3.3",
+      "location": "Cat 17 \"Wisdom and Discernment\" > \"Recognizing True from False\" > teaching 17.3.3",
+      "refs": [
+        "Luke 12:1",
+        "Matt 16:6, 11ΓÇô12"
+      ],
+      "description": "Primary reference is Luke 12:1 (Luke), but Matt is also present (Matt 16:6, 11ΓÇô12). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6049",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "18.2.1",
+      "location": "Cat 18 \"Forgiveness and Reconciliation\" > \"Forgiving Others\" > teaching 18.2.1",
+      "refs": [
+        "Luke 6:37",
+        "Matt 6:14ΓÇô15"
+      ],
+      "description": "Primary reference is Luke 6:37 (Luke), but Matt is also present (Matt 6:14ΓÇô15). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6050",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "21.1.1",
+      "location": "Cat 21 \"Justice and Mercy\" > \"The Blessing on the Poor and Woe to the Rich\" > teaching 21.1.1",
+      "refs": [
+        "Luke 6:20ΓÇô21, 26",
+        "Matt 5:3"
+      ],
+      "description": "Primary reference is Luke 6:20ΓÇô21, 26 (Luke), but Matt is also present (Matt 5:3). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6051",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "21.3.3",
+      "location": "Cat 21 \"Justice and Mercy\" > \"Mercy and Compassion\" > teaching 21.3.3",
+      "refs": [
+        "Luke 11:42",
+        "Matt 23:23"
+      ],
+      "description": "Primary reference is Luke 11:42 (Luke), but Matt is also present (Matt 23:23). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6052",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "24.3.1",
+      "location": "Cat 24 \"Religious Hypocrisy\" > \"Traditions of Men Versus God's Commands\" > teaching 24.3.1",
+      "refs": [
+        "Mark 7:9ΓÇô13",
+        "Matt 15:3ΓÇô6"
+      ],
+      "description": "Primary reference is Mark 7:9ΓÇô13 (Mark), but Matt is also present (Matt 15:3ΓÇô6). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6053",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "24.4.1",
+      "location": "Cat 24 \"Religious Hypocrisy\" > \"The Sabbath in Right Perspective\" > teaching 24.4.1",
+      "refs": [
+        "Mark 2:27ΓÇô28",
+        "Matt 12:8",
+        "Luke 6:5"
+      ],
+      "description": "Primary reference is Mark 2:27ΓÇô28 (Mark), but Matt is also present (Matt 12:8). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6054",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "27.1.9",
+      "location": "Cat 27 \"The Passion Narrative\" > \"The Last Supper\" > teaching 27.1.9",
+      "refs": [
+        "Mark 14:22ΓÇô25",
+        "Matt 26:26ΓÇô29",
+        "Luke 22:17ΓÇô20"
+      ],
+      "description": "Primary reference is Mark 14:22ΓÇô25 (Mark), but Matt is also present (Matt 26:26ΓÇô29). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6055",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "27.1.10",
+      "location": "Cat 27 \"The Passion Narrative\" > \"The Last Supper\" > teaching 27.1.10",
+      "refs": [
+        "Luke 22:17ΓÇô20",
+        "Matt 26:26ΓÇô29",
+        "Mark 14:22ΓÇô25"
+      ],
+      "description": "Primary reference is Luke 22:17ΓÇô20 (Luke), but Matt is also present (Matt 26:26ΓÇô29). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6056",
+      "severity": "REVIEW",
+      "check": "B6-CheckC-isPrimary",
+      "teachingId": "27.4.7",
+      "location": "Cat 27 \"The Passion Narrative\" > \"Words from the Cross\" > teaching 27.4.7",
+      "refs": [
+        "Luke 23:46",
+        "Matt 27:50",
+        "Mark 15:37"
+      ],
+      "description": "Primary reference is Luke 23:46 (Luke), but Matt is also present (Matt 27:50). Matt should be isPrimary unless the fullest account is clearly in another gospel.",
+      "ruleNote": "CLASSIFICATION_RULES.md: Matthew is the default primary synoptic.",
+      "proposed": "Review whether the fuller account is truly in the non-Matt synoptic. If not, swap isPrimary.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6057",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "2.7.21",
+      "location": "Cat 2 \"The Identity of Jesus Christ\" > \"His Miraculous Works\" > teaching 2.7.21",
+      "refs": [
+        "John 5:6-8"
+      ],
+      "description": "Reference label \"John 5:6-8\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6058",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "5.1.4",
+      "location": "Cat 5 \"Repentance and Conversion\" > \"The Call to Repentance\" > teaching 5.1.4",
+      "refs": [
+        "Luke 13:6-9"
+      ],
+      "description": "Reference label \"Luke 13:6-9\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6059",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "5.1.11",
+      "location": "Cat 5 \"Repentance and Conversion\" > \"The Call to Repentance\" > teaching 5.1.11",
+      "refs": [
+        "Matt 12:43-45"
+      ],
+      "description": "Reference label \"Matt 12:43-45\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6060",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "5.1.11",
+      "location": "Cat 5 \"Repentance and Conversion\" > \"The Call to Repentance\" > teaching 5.1.11",
+      "refs": [
+        "Luke 11:24-26"
+      ],
+      "description": "Reference label \"Luke 11:24-26\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6061",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "19.1.4",
+      "location": "Cat 19 \"Marriage and Family\" > \"Marriage and Divorce\" > teaching 19.1.4",
+      "refs": [
+        "Matt 19:10-12"
+      ],
+      "description": "Reference label \"Matt 19:10-12\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6062",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "20.3.6",
+      "location": "Cat 20 \"Wealth and Generosity\" > \"Generosity and Stewardship\" > teaching 20.3.6",
+      "refs": [
+        "Matt 22:15-22"
+      ],
+      "description": "Reference label \"Matt 22:15-22\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6063",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "20.3.6",
+      "location": "Cat 20 \"Wealth and Generosity\" > \"Generosity and Stewardship\" > teaching 20.3.6",
+      "refs": [
+        "Mark 12:13-17"
+      ],
+      "description": "Reference label \"Mark 12:13-17\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6064",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "20.3.6",
+      "location": "Cat 20 \"Wealth and Generosity\" > \"Generosity and Stewardship\" > teaching 20.3.6",
+      "refs": [
+        "Luke 20:20-26"
+      ],
+      "description": "Reference label \"Luke 20:20-26\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6065",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "22.1.4",
+      "location": "Cat 22 \"Discipleship\" > \"The Call to Follow\" > teaching 22.1.4",
+      "refs": [
+        "Luke 10:38-42"
+      ],
+      "description": "Reference label \"Luke 10:38-42\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6066",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "26.3.1",
+      "location": "Cat 26 \"Mission and Witness\" > \"Visions and Commissions to the Apostles\" > teaching 26.3.1",
+      "refs": [
+        "Acts 9:10-16"
+      ],
+      "description": "Reference label \"Acts 9:10-16\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6067",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "26.3.2",
+      "location": "Cat 26 \"Mission and Witness\" > \"Visions and Commissions to the Apostles\" > teaching 26.3.2",
+      "refs": [
+        "Acts 18:9-10"
+      ],
+      "description": "Reference label \"Acts 18:9-10\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6068",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "26.3.3",
+      "location": "Cat 26 \"Mission and Witness\" > \"Visions and Commissions to the Apostles\" > teaching 26.3.3",
+      "refs": [
+        "Acts 22:18-21"
+      ],
+      "description": "Reference label \"Acts 22:18-21\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6069",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "26.3.5",
+      "location": "Cat 26 \"Mission and Witness\" > \"Visions and Commissions to the Apostles\" > teaching 26.3.5",
+      "refs": [
+        "Acts 10:13-15"
+      ],
+      "description": "Reference label \"Acts 10:13-15\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6070",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "26.3.5",
+      "location": "Cat 26 \"Mission and Witness\" > \"Visions and Commissions to the Apostles\" > teaching 26.3.5",
+      "refs": [
+        "Acts 11:7-9"
+      ],
+      "description": "Reference label \"Acts 11:7-9\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6071",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "26.3.6",
+      "location": "Cat 26 \"Mission and Witness\" > \"Visions and Commissions to the Apostles\" > teaching 26.3.6",
+      "refs": [
+        "Acts 9:4-6"
+      ],
+      "description": "Reference label \"Acts 9:4-6\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6072",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "26.3.6",
+      "location": "Cat 26 \"Mission and Witness\" > \"Visions and Commissions to the Apostles\" > teaching 26.3.6",
+      "refs": [
+        "Acts 22:7-10"
+      ],
+      "description": "Reference label \"Acts 22:7-10\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6073",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "26.3.6",
+      "location": "Cat 26 \"Mission and Witness\" > \"Visions and Commissions to the Apostles\" > teaching 26.3.6",
+      "refs": [
+        "Acts 26:14-18"
+      ],
+      "description": "Reference label \"Acts 26:14-18\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6074",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "27.2.6",
+      "location": "Cat 27 \"The Passion Narrative\" > \"Gethsemane and Arrest\" > teaching 27.2.6",
+      "refs": [
+        "John 18:5-8"
+      ],
+      "description": "Reference label \"John 18:5-8\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6075",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "27.4.3",
+      "location": "Cat 27 \"The Passion Narrative\" > \"Words from the Cross\" > teaching 27.4.3",
+      "refs": [
+        "John 19:26-27"
+      ],
+      "description": "Reference label \"John 19:26-27\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6076",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "29.2.4",
+      "location": "Cat 29 \"Eschatology and the End Times\" > \"The Return of the Son of Man\" > teaching 29.2.4",
+      "refs": [
+        "Rev 21:5-8"
+      ],
+      "description": "Reference label \"Rev 21:5-8\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6077",
+      "severity": "INFO",
+      "check": "B6-CheckD-LabelFormat",
+      "teachingId": "31.1.3",
+      "location": "Cat 31 \"The Seven Churches\" > \"Introduction to the Seven Churches ΓÇö The Vision of Christ\" > teaching 31.1.3",
+      "refs": [
+        "Rev 1:19-20"
+      ],
+      "description": "Reference label \"Rev 1:19-20\" uses a plain hyphen (-) in a verse range. Should use en-dash (ΓÇô).",
+      "ruleNote": "PLAN.md B6 Check D: label format convention is \"Book ch:vΓÇôv\" with en-dash.",
+      "proposed": "Replace hyphen with en-dash (ΓÇô) in the label string.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6078",
+      "severity": "REVIEW",
+      "check": "B6-CheckG-DuplicateText",
+      "teachingId": "6.2.2, 2.1.6",
+      "location": "6.2.2 (Salvation and Eternal Life > Faith as the Condition of Salvation)",
+      "refs": [],
+      "description": "Duplicate text detected: teachings 6.2.2 and 2.1.6 share the same text. Snippet: \"I am the way, the truth, and the life ╬ô├ç├╢ no one comes to the \"",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 3: duplicate resolution ΓÇö classify as true duplicate (delete) or legitimate cross-listing (accept).",
+      "proposed": "Determine if this is intentional cross-listing or a true duplicate. If true duplicate, delete the non-primary one after renumber.",
+      "status": "OPEN"
+    },
+    {
+      "id": "F-B6079",
+      "severity": "REVIEW",
+      "check": "B6-CheckG-DuplicateText",
+      "teachingId": "31.1.2, 2.1.9",
+      "location": "31.1.2 (The Seven Churches > Introduction to the Seven Churches ╬ô├ç├╢ The Vision of Christ)",
+      "refs": [],
+      "description": "Duplicate text detected: teachings 31.1.2 and 2.1.9 share the same text. Snippet: \"I AM the First and the Last, the Living One ╬ô├ç├╢ dead, and beho\"",
+      "ruleNote": "TAXONOMY_STANDARDS.md Part 3: duplicate resolution ΓÇö classify as true duplicate (delete) or legitimate cross-listing (accept).",
+      "proposed": "Determine if this is intentional cross-listing or a true duplicate. If true duplicate, delete the non-primary one after renumber.",
+      "status": "OPEN"
+    }
+  ]
+}
