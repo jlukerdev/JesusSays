@@ -14,9 +14,11 @@ export default function ModernNavBar({
   const isHome = currentScreen === 'home'
 
   let navContent = null
-  if (currentScreen === 'category') {
+  if (isHome) {
+    navContent = <span className="modern-nav__title">Topics</span>
+  } else if (currentScreen === 'category') {
     navContent = <span className="modern-nav__title">{currentCat?.title}</span>
-  } else if (!isHome) {
+  } else {
     navContent = (
       <span className="modern-nav__breadcrumb" title={`${currentCat?.title} › ${currentSubcat?.title}`}>
         {currentCat?.title} › {currentSubcat?.title}
@@ -30,7 +32,8 @@ export default function ModernNavBar({
         <span className={`modern-nav__logo${!isHome ? ' modern-nav__logo--offhome' : ''}`} onClick={!isHome ? onGoHome : undefined}>
           Jesus <span>Says</span>
         </span>
-        {navContent && (
+        {isHome && navContent}
+        {!isHome && navContent && (
           <div className="modern-nav__left-row">
             {navContent}
             <button className="modern-nav__back-to-topics" onClick={onGoHome}>

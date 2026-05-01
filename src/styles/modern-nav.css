@@ -106,21 +106,17 @@
 
 /* ── HomeScreen ── */
 .modern-home { }
-.modern-home__header {
-  padding: var(--space-5) var(--space-4) var(--space-3);
-  background: var(--color-surface); border-bottom: 1px solid var(--color-border);
-  display: flex; align-items: center; justify-content: space-between;
-}
-.modern-home__heading { font-family: var(--font-display); font-size: var(--text-2xl); color: var(--color-authority); }
 .modern-home__count {
   font-size: var(--text-xs); color: var(--color-muted); background: var(--color-surface-raised);
   padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill); font-weight: 700;
 }
 .modern-home__grid {
-  padding: var(--space-4) var(--space-5);
+  padding: var(--space-4) var(--space-6);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: 1fr;
   gap: var(--space-4);
+  max-width: 1400px;
+  margin: 0 auto;
 }
 .modern-cat-card {
   background: var(--color-surface); border-radius: var(--radius-lg);
@@ -128,6 +124,7 @@
   border: 2px solid var(--color-border); box-shadow: var(--shadow-pane);
   text-align: left; transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
   position: relative; overflow: hidden;
+  width: 100%; box-sizing: border-box;
 }
 .modern-cat-card::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
@@ -144,16 +141,21 @@
 .modern-cat-card__bar-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--color-accent), var(--color-accent-mid)); }
 .modern-cat-card__meta { font-size: var(--text-xs); color: var(--color-muted); font-weight: 500; letter-spacing: 0.02em; }
 
-@media (max-width: 640px) {
-  .modern-home__grid {
-    padding: var(--space-3) var(--space-4);
-    grid-template-columns: 1fr;
-    gap: var(--space-3);
-  }
-  .modern-cat-card { padding: var(--space-4); width: 100%; }
+@media (max-width: 519px) {
+  .modern-home__grid { padding: var(--space-3) var(--space-4); gap: var(--space-3); }
+  .modern-cat-card { padding: var(--space-4); margin-bottom: 0; }
   .modern-cat-card__name { font-size: var(--text-base); margin-bottom: var(--space-2); }
   .modern-cat-card__bar-wrap { margin-bottom: var(--space-2); }
   .modern-nav__logo--offhome { display: none; }
+}
+@media (min-width: 520px) {
+  .modern-home__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .modern-home__grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1280px) {
+  .modern-home__grid { grid-template-columns: repeat(4, 1fr); }
 }
 
 .modern-search-results { padding: var(--space-3) var(--space-4); display: flex; flex-direction: column; gap: var(--space-2); }

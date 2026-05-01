@@ -108,10 +108,6 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
 
   return (
     <div className="modern-home">
-      <div className="modern-home__header">
-        <h2 className="modern-home__heading">Topical Subjects</h2>
-        <span className="modern-home__count">{categories.length} categories</span>
-      </div>
       <div className="modern-home__grid">
         {categories.map(cat => (
           <button key={cat.id} className="modern-cat-card" onClick={() => onNavigateToCategory(cat.id)}>
