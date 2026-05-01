@@ -9,9 +9,9 @@
 | Metric | Value |
 |---|---|
 | Categories | 31 |
-| Subcategories | 124 |
-| Teachings | 666 |
-| Tagged parables | 42 |
+| Subcategories | 117 |
+| Teachings | 655 |
+| Tagged parables | 38 |
 | NT books covered | Matt, Mark, Luke, John, Acts, 1Cor, 2Cor, Rev |
 
 ---
@@ -32,6 +32,7 @@ node catalog_builds/engine/scripts/parse-catalog.js --stats
 
 | Version | Date | Categories | Subcategories | Teachings | Parables |
 |---|---|---|---|---|---|
+| v1.2 | April 30, 2026 | 31 | 117 | 655 | 38 |
 | v1.1 | April 30, 2026 | 31 | 124 | 666 | 42 |
 | v1.0 | April 29, 2026 | 31 | 126 | 683 | 42 |
 

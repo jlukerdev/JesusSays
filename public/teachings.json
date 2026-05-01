@@ -1,5 +1,6 @@
 {
   "meta": {
+    "version": "1.2",
     "title": "The Teachings of Jesus Christ",
     "subtitle": "A Comprehensive Categorization of His Words as Recorded in the New Testament",
     "totalCategories": 31,
@@ -533,12 +534,12 @@
             },
             {
               "id": "2.1.5",
-              "text": "Contrasts the true shepherd who enters by the door and is known by his sheep with the thief who climbs in another way",
-              "quote": "Verily, verily, I say unto you, He that entereth not by the door into the sheepfold, but climbeth up some other way, the same is a thief and a robber. But he that entereth in by the door is the shepherd of the sheep. To him the porter openeth; and the sheep hear his voice: and he calleth his own sheep by name, and leadeth them out. And when he putteth forth his own sheep, he goeth before them, and the sheep follow him: for they know his voice. And a stranger will they not follow, but will flee from him: for they know not the voice of strangers.",
+              "text": "I AM the Good Shepherd - declaring himself the door of the sheepfold and the good shepherd who knows his sheep, lays down his life for them, and will gather all sheep into one flock under one shepherd",
+              "quote": "Verily, verily, I say unto you, He that entereth not by the door into the sheepfold, but climbeth up some other way, the same is a thief and a robber. But he that entereth in by the door is the shepherd of the sheep. To him the porter openeth; and the sheep hear his voice: and he calleth his own sheep by name, and leadeth them out. And when he putteth forth his own sheep, he goeth before them, and the sheep follow him: for they know his voice. And a stranger will they not follow, but will flee from him: for they know not the voice of strangers. Verily, verily, I say unto you, I am the door of the sheep. All that ever came before me are thieves and robbers: but the sheep did not hear them. I am the door: by me if any man enter in, he shall be saved, and shall go in and out, and find pasture. I am the good shepherd: the good shepherd giveth his life for the sheep. But he that is an hireling, and not the shepherd, whose own the sheep are not, seeth the wolf coming, and leaveth the sheep, and fleeth: and the wolf catcheth them, and scattereth the sheep. The hireling fleeth, because he is an hireling, and careth not for the sheep. I am the good shepherd, and know my sheep, and am known of mine. As the Father knoweth me, even so know I the Father: and I lay down my life for the sheep. And other sheep I have, which are not of this fold: them also I must bring, and they shall hear my voice; and there shall be one fold, and one shepherd.",
               "tags": [],
               "references": [
                 {
-                  "label": "John 10:1–5",
+                  "label": "John 10:1–5, 7–9, 11–16",
                   "book": "John",
                   "bookAbbr": "John",
                   "chapter": 10,
@@ -546,118 +547,13 @@
                     [
                       1,
                       5
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.1.6",
-              "text": "I AM the door / gate — whoever enters through me will be saved",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 10:7, 9",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 10,
-                  "ranges": [
+                    ],
                     [
                       7,
-                      7
-                    ],
-                    [
-                      9,
                       9
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "Verily, verily, I say unto you, I am the door of the sheep. I am the door: by me if any man enter in, he shall be saved, and shall go in and out, and find pasture."
-            },
-            {
-              "id": "2.1.7",
-              "text": "All who came before him are thieves and robbers, but the sheep did not hear them",
-              "quote": "All that ever came before me are thieves and robbers: but the sheep did not hear them.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 10:8",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 10,
-                  "ranges": [
-                    [
-                      8,
-                      8
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.1.8",
-              "text": "I AM the good shepherd — I know my sheep and lay down my life for them",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 10:11, 14",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 10,
-                  "ranges": [
+                    ],
                     [
                       11,
-                      11
-                    ],
-                    [
-                      14,
-                      14
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ],
-              "quote": "I am the good shepherd: the good shepherd giveth his life for the sheep. I am the good shepherd, and know my sheep, and am known of mine."
-            },
-            {
-              "id": "2.1.9",
-              "text": "The hireling, who is not the shepherd, sees the wolf coming and flees because he does not own the sheep, leaving them to be caught and scattered",
-              "quote": "But he that is an hireling, and not the shepherd, whose own the sheep are not, seeth the wolf coming, and leaveth the sheep, and fleeth: and the wolf catcheth them, and scattereth the sheep. The hireling fleeth, because he is an hireling, and careth not for the sheep.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 10:12–13",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 10,
-                  "ranges": [
-                    [
-                      12,
-                      13
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.1.10",
-              "text": "Promises to lay down his life for the sheep and to gather other sheep not of this fold into one flock under one shepherd",
-              "quote": "As the Father knoweth me, even so know I the Father: and I lay down my life for the sheep. And other sheep I have, which are not of this fold: them also I must bring, and they shall hear my voice; and there shall be one fold, and one shepherd.",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 10:15–16",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 10,
-                  "ranges": [
-                    [
-                      15,
                       16
                     ]
                   ],
@@ -666,7 +562,7 @@
               ]
             },
             {
-              "id": "2.1.11",
+              "id": "2.1.6",
               "text": "I AM the resurrection and the life — whoever believes in me, though he die, yet shall he live",
               "tags": [],
               "references": [
@@ -687,7 +583,7 @@
               "quote": "I am the resurrection, and the life: he that believeth in me, though he were dead, yet shall he live:"
             },
             {
-              "id": "2.1.12",
+              "id": "2.1.7",
               "text": "I AM the way, the truth, and the life — no one comes to the Father except through me",
               "tags": [],
               "references": [
@@ -721,7 +617,7 @@
               "quote": "I am the way, the truth, and the life: no man cometh unto the Father, but by me."
             },
             {
-              "id": "2.1.13",
+              "id": "2.1.8",
               "text": "I AM the true vine, and my Father is the vinedresser",
               "tags": [],
               "references": [
@@ -746,7 +642,7 @@
               "quote": "I am the true vine, and my Father is the husbandman. I am the vine, ye are the branches: He that abideth in me, and I in him, the same bringeth forth much fruit: for without me ye can do nothing."
             },
             {
-              "id": "2.1.14",
+              "id": "2.1.9",
               "text": "I AM the Alpha and the Omega, the root and offspring of David, the bright morning star",
               "tags": [],
               "references": [
