@@ -11,6 +11,8 @@ import CatalogOptimizer from './components/CatalogOptimizer/CatalogOptimizer.jsx
 import { loadTeachings } from './data/loader.js'
 import { buildReverseIndex } from './data/reverseIndex.js'
 import useStore from './store.js'
+import { useLocalPreference } from './hooks/useLocalPreference.js'
+import ModernApp from './components/ModernApp/ModernApp.jsx'
 
 function AppRoutes() {
   const layoutRef = useRef(null)
@@ -20,6 +22,18 @@ function AppRoutes() {
   const activeMode = useStore((s) => s.activeMode)
   const location = useLocation()
   const isOptimizer = location.pathname === '/catalog-optimizer'
+
+  const navStyle = useStore((s) => s.navStyle)
+  const setNavStyle = useStore((s) => s.setNavStyle)
+  const [persistedNavStyle, setPersistedNavStyle] = useLocalPreference('navStyle', 'modern')
+
+  useEffect(() => {
+    setNavStyle(persistedNavStyle)
+  }, [])
+
+  useEffect(() => {
+    setPersistedNavStyle(navStyle)
+  }, [navStyle])
 
   useEffect(() => {
     loadTeachings()
@@ -47,20 +61,26 @@ function AppRoutes() {
 
   return (
     <>
-      <AppHeader onOpenDrawer={handleOpenDrawer} />
-      {!isOptimizer && <FilterBar />}
-      <Layout ref={layoutRef} sidebar={sidebarContent}>
-        <Routes>
-          <Route path="/catalog-optimizer" element={<CatalogOptimizer />} />
-          <Route path="/category/:slug" element={
-            !dataLoaded ? <div className="data-loading">Loading teachings…</div> : <CategoryViewer />
-          } />
-          <Route path="/book/:bookAbbr" element={
-            !dataLoaded ? <div className="data-loading">Loading teachings…</div> : <BookViewer />
-          } />
-          <Route path="/" element={<Navigate to="/category/cat-1" replace />} />
-        </Routes>
-      </Layout>
+      {navStyle === 'modern' && !isOptimizer ? (
+        <ModernApp />
+      ) : (
+        <>
+          <AppHeader onOpenDrawer={handleOpenDrawer} />
+          {!isOptimizer && <FilterBar />}
+          <Layout ref={layoutRef} sidebar={sidebarContent}>
+            <Routes>
+              <Route path="/catalog-optimizer" element={<CatalogOptimizer />} />
+              <Route path="/category/:slug" element={
+                !dataLoaded ? <div className="data-loading">Loading teachings…</div> : <CategoryViewer />
+              } />
+              <Route path="/book/:bookAbbr" element={
+                !dataLoaded ? <div className="data-loading">Loading teachings…</div> : <BookViewer />
+              } />
+              <Route path="/" element={<Navigate to="/category/cat-1" replace />} />
+            </Routes>
+          </Layout>
+        </>
+      )}
     </>
   )
 }

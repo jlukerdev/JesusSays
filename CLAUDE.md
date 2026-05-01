@@ -6,11 +6,22 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Jesus Says** is a reference web application cataloging all recorded words of Jesus Christ from the New Testament — organized across 31 thematic categories with full scripture cross-references and 100% coverage of red-letter (Words of Christ) NT verses. The dataset is the primary artifact; the UI exists to browse, filter, and permalink to teachings. For current catalog counts, see [`catalog_builds/engine/catalog_stats.md`](catalog_builds/engine/catalog_stats.md).
 
+## Navigation Styles
+
+The app ships two complete navigation experiences, switchable by the user and persisted to `localStorage` under the key `navStyle` (default: `modern`):
+
+| Style | Entry point | Description |
+|---|---|---|
+| **Classic** | `Layout.jsx` + classic components | Sticky header, sidebar TOC drawer/panel, FilterBar, category/book routes |
+| **Modern** | `ModernApp/ModernApp.jsx` | Mobile-first single-page flow: home screen → category browser → teaching detail; bottom nav bar, search bar, inline Bible viewer panel |
+
+`navStyle` is stored in Zustand (`store.js`) and synced to `localStorage`. `App.jsx` reads this value and renders either `<ModernApp />` or the classic `<Layout>` tree. The Catalog Optimizer always uses the classic shell regardless of `navStyle`.
+
 ## Tech Stack
 
 - **Framework:** React 18 + Vite (`@vitejs/plugin-react`)
-- **Routing:** React Router v6 — `HashRouter`; routes `/category/:slug` and `/book/:bookAbbr`
-- **State:** Zustand (`src/store.js`) — activeMode, activeCategorySlug, filters, fontSize, theme, data
+- **Routing:** React Router v6 — `HashRouter`; classic routes `/category/:slug` and `/book/:bookAbbr`; Modern nav is fully internal state (no route changes)
+- **State:** Zustand (`src/store.js`) — activeMode, activeCategorySlug, navStyle, filters, fontSize, theme, data
 - **PWA:** vite-plugin-pwa + Workbox; `teachings.json` is cache-first, Google Fonts are cache-first
 - **Styling:** Plain CSS with custom properties; no CSS Modules or styled-components
 - **Fonts:** Playfair Display (headings), Source Sans 3 (body) — Google Fonts
@@ -32,9 +43,10 @@ npm run preview   # Preview production build
 ```
 src/
   main.jsx                              # Entry; imports theme-classic.css then base.css
-  App.jsx                               # HashRouter, data load on mount, Layout + route wiring
-  store.js                              # Zustand store
+  App.jsx                               # HashRouter, data load, navStyle gate → ModernApp or classic Layout
+  store.js                              # Zustand store (includes navStyle + setNavStyle)
   components/
+    # ── Classic navigation ───────────────────────────────────────────────────
     AppHeader/AppHeader.jsx             # Sticky header; hamburger (mobile) + ModeSwitcher
     BookNav/BookNav.jsx                 # Book Mode sidebar TOC; book/chapter accordion
     BookViewer/BookViewer.jsx           # Book→chapter→verse teaching view; category chip labels
@@ -45,6 +57,19 @@ src/
     ModeSwitcher/ModeSwitcher.jsx       # Categories / Books tab switcher
     Sidebar/Sidebar.jsx                 # Category Mode accordion TOC; book-filter aware
     TeachingsTable/TeachingsTable.jsx   # Subcategory teachings table (Teaching 58% | Scriptures 42%)
+    # ── Modern navigation ────────────────────────────────────────────────────
+    ModernApp/ModernApp.jsx             # Root of Modern nav; owns all screen state
+    ModernApp/ModernNavBar.jsx          # Sticky top bar with back/home navigation
+    ModernApp/ModernSearchBar.jsx       # Search input shown on home and category screens
+    ModernApp/HomeScreen.jsx            # Landing: category grid + search results
+    ModernApp/CategoryBrowser.jsx       # Subcategory tab view with teachings list
+    ModernApp/TeachingDetail.jsx        # Full teaching detail view
+    ModernApp/PrevNextBar.jsx           # Prev/Next teaching nav bar (category + teaching screens)
+    ModernApp/BibleViewer/BibleViewer.jsx  # Inline Bible reference panel (drawer + pinned modes)
+    ModernApp/BibleViewer/BiblePanel.jsx   # Panel content for BibleViewer
+    ModernApp/BibleViewer/BibleDrawer.jsx  # Drawer wrapper for BibleViewer
+    # ── Shared ───────────────────────────────────────────────────────────────
+    SettingsMenu/SettingsMenu.jsx       # User settings (navStyle toggle, font size, theme)
   data/
     loader.js                           # Singleton fetch; exposes loadTeachings(), getTeachingById()
     reverseIndex.js                     # Builds book→chapter→verse index; getReverseIndex()
