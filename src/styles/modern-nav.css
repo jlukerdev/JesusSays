@@ -219,7 +219,8 @@
   font-weight: 700;
 }
 @media (max-width: 767px) {
-  .modern-cat-toc__item { text-align: center; font-size: var(--text-base); }
+  .modern-cat-toc__item { text-align: center; font-size: var(--text-lg); }
+  .modern-cat-toc__item:hover { background: none; border-left-color: transparent; }
 }
 
 /* ── HomeScreen (card grid — retained for search fallback render path) ── */
@@ -324,6 +325,9 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
   transition: color 0.15s ease; background: none; border: none;
 }
 .modern-view-topics-btn:hover { color: var(--color-authority); }
+@media (max-width: 767px) {
+  .modern-view-topics-btn { font-size: var(--text-sm); gap: 6px; }
+}
 
 .modern-book-filter-row { display: flex; flex-wrap: wrap; gap: var(--space-2); padding: var(--space-2) 0 var(--space-4); }
 .modern-book-chip {
@@ -489,6 +493,9 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
   }
   .modern-teaching-card__text { margin-bottom: 0; flex: 1; }
   .modern-teaching-card__chips { flex-shrink: 0; flex-wrap: nowrap; }
+}
+@media (max-width: 767px) {
+  .modern-teaching-card__text { font-size: var(--text-base); }
 }
 
 .modern-scripture-chip {

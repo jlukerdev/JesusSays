@@ -139,7 +139,7 @@ export default function CategoryBrowser({
     <div className="modern-category-browser">
       <div className="modern-cat-hero">
         <button className="modern-view-topics-btn" onClick={isMobile ? onGoHome : onShowToc}>
-          <Menu size={14} /> View Topics
+          <Menu size={16} /> View Topics
         </button>
         <h2 className="modern-cat-hero__title">{cat?.title}</h2>
 
