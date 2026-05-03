@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Settings } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import useStore from '../../store.js'
+import { ENABLE_CLASSIC_NAV, ENABLE_CATALOG_OPTIMIZER } from '../../featureFlags.js'
 import './SettingsMenu.css'
 
 export default function SettingsMenu() {
@@ -31,21 +32,27 @@ export default function SettingsMenu() {
         <>
           <div className="settings-menu__backdrop" onClick={() => setOpen(false)} aria-hidden="true" />
           <div className="settings-menu__panel" role="menu">
-            <div className="settings-menu__section">
-              <div className="settings-menu__section-label">Nav Style</div>
-              <div className="settings-menu__option-row">
-                <button className={`settings-menu__option${navStyle === 'classic' ? ' settings-menu__option--active' : ''}`} onClick={() => { setNavStyle('classic'); setOpen(false) }}>Classic</button>
-                <button className={`settings-menu__option${navStyle === 'modern' ? ' settings-menu__option--active' : ''}`} onClick={() => { setNavStyle('modern'); setOpen(false) }}>Modern</button>
+            {ENABLE_CLASSIC_NAV && (
+              <div className="settings-menu__section">
+                <div className="settings-menu__section-label">Nav Style</div>
+                <div className="settings-menu__option-row">
+                  <button className={`settings-menu__option${navStyle === 'classic' ? ' settings-menu__option--active' : ''}`} onClick={() => { setNavStyle('classic'); setOpen(false) }}>Classic</button>
+                  <button className={`settings-menu__option${navStyle === 'modern' ? ' settings-menu__option--active' : ''}`} onClick={() => { setNavStyle('modern'); setOpen(false) }}>Modern</button>
+                </div>
               </div>
-            </div>
+            )}
             <div className="settings-menu__section">
               <div className="settings-menu__section-label">App Theme</div>
               <div className="settings-menu__option-row">
                 <button className={`settings-menu__option${theme === 'classic' ? ' settings-menu__option--active' : ''}`} onClick={() => { setTheme('classic'); setOpen(false) }}>Classic</button>
               </div>
             </div>
-            <div className="settings-menu__divider" />
-            <button className="settings-menu__action" onClick={() => { navigate('/catalog-optimizer'); setOpen(false) }}>Catalog Optimizer</button>
+            {ENABLE_CATALOG_OPTIMIZER && (
+              <>
+                <div className="settings-menu__divider" />
+                <button className="settings-menu__action" onClick={() => { navigate('/catalog-optimizer'); setOpen(false) }}>Catalog Optimizer</button>
+              </>
+            )}
           </div>
         </>
       )}

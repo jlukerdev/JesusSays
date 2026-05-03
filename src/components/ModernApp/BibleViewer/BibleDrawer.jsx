@@ -1,9 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 
-export default function BibleDrawer({ bibleRef, open, onClose, onReopen }) {
+export default function BibleDrawer({ bibleRef, open, onClose }) {
   const [drawerH, setDrawerH] = useState(0)
   const [isPeeking, setIsPeeking] = useState(false)
-  const [showPeekPill, setShowPeekPill] = useState(false)
   const [lastRef, setLastRef] = useState(null)
   const dragStartY = useRef(null)
   const dragStartH = useRef(null)
@@ -11,12 +10,10 @@ export default function BibleDrawer({ bibleRef, open, onClose, onReopen }) {
   const PEEK_HEIGHT = 48
   const DEFAULT_HEIGHT = Math.round(window.innerHeight * 0.55)
   const MAX_HEIGHT = Math.round(window.innerHeight * 0.90)
-  const DISMISS_THRESHOLD = 24
 
   useEffect(() => {
     if (open && !isPeeking) {
       setDrawerH(DEFAULT_HEIGHT)
-      setShowPeekPill(false)
       if (bibleRef) setLastRef(bibleRef)
     }
   }, [open, bibleRef])
@@ -40,27 +37,22 @@ export default function BibleDrawer({ bibleRef, open, onClose, onReopen }) {
   }
 
   function onDragEnd() {
-    if (drawerH <= DISMISS_THRESHOLD) {
-      setDrawerH(0); setIsPeeking(false); onClose(); setShowPeekPill(true)
-    } else if (drawerH <= PEEK_HEIGHT + 20) {
+    if (drawerH <= PEEK_HEIGHT + 20) {
       setDrawerH(PEEK_HEIGHT); setIsPeeking(true)
+    } else if (isPeeking) {
+      setIsPeeking(false)
     }
   }
 
   function handleClose() {
-    setDrawerH(0); setIsPeeking(false); onClose(); setShowPeekPill(!!lastRef)
-  }
-
-  function handlePeekPillTap() {
-    setDrawerH(DEFAULT_HEIGHT); setIsPeeking(false); setShowPeekPill(false); onReopen()
+    setDrawerH(0); setIsPeeking(false); onClose()
   }
 
   return (
-    <>
-      <div
-        className={`modern-bible-drawer${open || isPeeking ? ' modern-bible-drawer--open' : ''}`}
-        style={{ height: `${drawerH}px` }}
-      >
+    <div
+      className={`modern-bible-drawer${open || isPeeking ? ' modern-bible-drawer--open' : ''}`}
+      style={{ height: `${drawerH}px` }}
+    >
         <div className="modern-drawer-handle-zone"
           onTouchStart={(e) => onDragStart(e.touches[0].clientY)}
           onTouchMove={(e) => onDragMove(e.touches[0].clientY)}
@@ -97,17 +89,6 @@ export default function BibleDrawer({ bibleRef, open, onClose, onReopen }) {
             </div>
           </div>
         )}
-      </div>
-
-      {showPeekPill && (
-        <button className="modern-bible-peek-pill" onClick={handlePeekPillTap}>
-          <div className="modern-bible-peek-pill__dot" />
-          <span>{lastRef?.label ?? 'Open Scripture'}</span>
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-            <path d="M2 8L6 4l4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </button>
-      )}
-    </>
+    </div>
   )
 }

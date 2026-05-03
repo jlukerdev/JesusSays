@@ -13,6 +13,7 @@ import { buildReverseIndex } from './data/reverseIndex.js'
 import useStore from './store.js'
 import { useLocalPreference } from './hooks/useLocalPreference.js'
 import ModernApp from './components/ModernApp/ModernApp.jsx'
+import { ENABLE_CLASSIC_NAV, ENABLE_CATALOG_OPTIMIZER } from './featureFlags.js'
 
 function AppRoutes() {
   const layoutRef = useRef(null)
@@ -21,7 +22,7 @@ function AppRoutes() {
   const dataLoaded = useStore((s) => s.dataLoaded)
   const activeMode = useStore((s) => s.activeMode)
   const location = useLocation()
-  const isOptimizer = location.pathname === '/catalog-optimizer'
+  const isOptimizer = ENABLE_CATALOG_OPTIMIZER && location.pathname === '/catalog-optimizer'
 
   const navStyle = useStore((s) => s.navStyle)
   const setNavStyle = useStore((s) => s.setNavStyle)
@@ -61,7 +62,7 @@ function AppRoutes() {
 
   return (
     <>
-      {navStyle === 'modern' && !isOptimizer ? (
+      {(!ENABLE_CLASSIC_NAV || navStyle === 'modern') && !isOptimizer ? (
         <ModernApp />
       ) : (
         <>
@@ -69,7 +70,7 @@ function AppRoutes() {
           {!isOptimizer && <FilterBar />}
           <Layout ref={layoutRef} sidebar={sidebarContent}>
             <Routes>
-              <Route path="/catalog-optimizer" element={<CatalogOptimizer />} />
+              {ENABLE_CATALOG_OPTIMIZER && <Route path="/catalog-optimizer" element={<CatalogOptimizer />} />}
               <Route path="/category/:slug" element={
                 !dataLoaded ? <div className="data-loading">Loading teachings…</div> : <CategoryViewer />
               } />

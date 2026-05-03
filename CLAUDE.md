@@ -17,6 +17,10 @@ The app ships two complete navigation experiences, switchable by the user and pe
 
 `navStyle` is stored in Zustand (`store.js`) and synced to `localStorage`. `App.jsx` reads this value and renders either `<ModernApp />` or the classic `<Layout>` tree. The Catalog Optimizer always uses the classic shell regardless of `navStyle`.
 
+> **Feature flags:** Both the Classic browser and the Catalog Optimizer are behind feature flags and are not active in the default experience.
+>
+> **IMPORTANT — Classic browser is defunct:** Do not make any code changes to Classic navigation components (`Layout`, `AppHeader`, `BookNav`, `BookViewer`, `CategoryViewer`, `CategoryNav`, `FilterBar`, `ModeSwitcher`, `Sidebar`, `TeachingsTable`) unless explicitly instructed to target the Classic browser. Treat all Classic components as frozen/read-only by default.
+
 ## Tech Stack
 
 - **Framework:** React 18 + Vite (`@vitejs/plugin-react`)

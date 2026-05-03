@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { ChevronLeft } from 'lucide-react'
+import { Menu } from 'lucide-react'
 import { useIsMobile } from '../../hooks/useBreakpoint.js'
 import { NT_BOOK_ABBR_ORDER } from '../../utils/bookOrder.js'
 
@@ -108,6 +108,7 @@ export default function CategoryBrowser({
   onOpenBible,
   onClearSearch,
   onGoHome,
+  onShowToc,
 }) {
   const isMobile = useIsMobile()
   const cat = categories.find(c => c.id === catId)
@@ -137,8 +138,8 @@ export default function CategoryBrowser({
   return (
     <div className="modern-category-browser">
       <div className="modern-cat-hero">
-        <button className="modern-cat-back-nav" onClick={onGoHome}>
-          <ChevronLeft size={14} /> Back to Topics
+        <button className="modern-view-topics-btn" onClick={isMobile ? onGoHome : onShowToc}>
+          <Menu size={14} /> View Topics
         </button>
         <h2 className="modern-cat-hero__title">{cat?.title}</h2>
 

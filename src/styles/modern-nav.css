@@ -2,7 +2,7 @@
 .modern-app {
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
+  height: 100dvh;
   background: var(--color-bg);
 }
 
@@ -15,34 +15,118 @@
   min-height: 0;
 }
 
-.modern-screen {
-  display: none;
-  animation: modern-fade-in 0.22s ease;
-}
-.modern-screen--active {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  min-height: 0;
-}
-.modern-screen--home.modern-screen--active {
-  overflow-y: auto;
-}
-@keyframes modern-fade-in {
-  from { opacity: 0; transform: translateY(4px); }
-  to   { opacity: 1; transform: translateY(0); }
+:root {
+  --modern-panel-width: 380px;
+  --modern-nav-height: 56px;
 }
 
-.modern-screen-area.modern-panel-pinned {
+/* ── Two-pane layout ── */
+.modern-two-pane {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.modern-toc-pane {
+  width: 300px;
+  flex-shrink: 0;
+  overflow-y: auto;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+}
+
+/* Overlay mode: floats over content after a category has been selected */
+.modern-toc-pane--overlay {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  z-index: 50;
+  box-shadow: var(--shadow-pane);
+  transform: translateX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.modern-toc-pane--hidden {
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+
+.modern-content-pane {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.modern-content-pane.modern-panel-pinned {
   margin-right: var(--modern-panel-width);
   transition: margin-right 0.3s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
-:root {
-  --modern-panel-width: 380px;
-  --modern-nav-height: 56px;
-  --modern-search-height: 52px;
-  --font-modern-display: 'Raleway', 'Segoe UI', system-ui, sans-serif;
+.modern-home-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-16) var(--space-8);
+  margin-top: var(--space-10);
+  gap: var(--space-4);
+}
+.modern-home-placeholder__icon {
+  width: 52px;
+  height: 52px;
+  color: var(--color-accent);
+  opacity: 0.7;
+  margin-bottom: var(--space-2);
+}
+.modern-home-placeholder__heading {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--color-authority);
+  margin: 0;
+}
+.modern-home-placeholder__body {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  max-width: 340px;
+  line-height: 1.65;
+  margin: 0;
+}
+.modern-home-placeholder__inline-icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  color: var(--color-muted);
+}
+
+/* Mobile overrides */
+@media (max-width: 767px) {
+  .modern-two-pane { flex-direction: column; }
+  .modern-toc-pane,
+  .modern-toc-pane.modern-toc-pane--overlay {
+    position: static;
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    box-shadow: none;
+    transform: none;
+    transition: none;
+  }
+  .modern-two-pane--toc-only .modern-content-pane {
+    flex: 0;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .modern-toc-pane--hidden { display: none; }
+  .modern-content-pane { width: 100%; }
 }
 
 /* ── ModernNavBar ── */
@@ -57,38 +141,18 @@
 .modern-nav__left {
   flex: 1; min-width: 0; display: flex; align-items: center; gap: var(--space-4);
 }
-.modern-nav__left-row {
-  display: flex; align-items: center; gap: var(--space-3); min-width: 0;
-}
 .modern-nav__logo { font-family: var(--font-modern-display); font-size: var(--text-xl); font-weight: 600; color: var(--color-authority-fg); flex-shrink: 0; line-height: 1; letter-spacing: 0.01em; }
 .modern-nav__logo span { color: var(--color-accent-mid); }
 .modern-nav__logo--offhome { cursor: pointer; opacity: 0.9; transition: opacity 0.15s ease; }
 .modern-nav__logo--offhome:hover { opacity: 1; }
 .modern-nav__title { font-size: var(--text-base); font-weight: 700; color: var(--color-authority-fg); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1; }
 .modern-nav__breadcrumb { font-size: var(--text-sm); color: var(--color-authority-fg); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1; }
-.modern-nav__back-to-topics {
-  display: inline-flex; align-items: center; gap: 4px; flex-shrink: 0;
-  font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.04em;
-  color: var(--color-accent-mid);
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.18);
-  border-radius: var(--radius-pill);
-  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-2);
-  cursor: pointer; white-space: nowrap;
-  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-}
-.modern-nav__back-to-topics:hover {
-  background: rgba(255,255,255,0.15);
-  color: white;
-  border-color: rgba(255,255,255,0.35);
-}
 .modern-nav__actions { display: flex; gap: var(--space-1); align-items: center; flex-shrink: 0; }
 
 /* ── ModernSearchBar ── */
 .modern-search-bar {
   background: var(--color-surface); border-bottom: 1px solid var(--color-border);
   padding: var(--space-2) var(--space-4); flex-shrink: 0;
-  position: sticky; top: var(--modern-nav-height); z-index: 90;
 }
 .modern-search-bar__wrap { position: relative; display: flex; align-items: center; }
 .modern-search-bar__icon { position: absolute; left: var(--space-3); color: var(--color-muted); pointer-events: none; }
@@ -104,13 +168,62 @@
   font-size: var(--text-lg); background: none; cursor: pointer; line-height: 1;
   border: none;
 }
+.modern-search-bar--disabled .modern-search-bar__wrap { opacity: 0.5; pointer-events: none; }
 
-/* ── HomeScreen ── */
-.modern-home { }
-.modern-home__count {
-  font-size: var(--text-xs); color: var(--color-muted); background: var(--color-surface-raised);
-  padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill); font-weight: 700;
+/* ── CategoryTOC ── */
+.modern-cat-toc {
+  padding: var(--space-2) 0;
 }
+.modern-cat-toc__label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  padding: var(--space-3) var(--space-4) var(--space-2);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.15s ease;
+}
+.modern-cat-toc__label:hover { color: var(--color-authority); }
+.modern-cat-toc__item {
+  display: block;
+  width: 100%;
+  padding: var(--space-2) var(--space-4);
+  text-align: left;
+  cursor: pointer;
+  background: none;
+  border: none;
+  border-left: 3px solid transparent;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-authority);
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.modern-cat-toc__item:hover {
+  background: var(--color-accent-light);
+  border-left-color: var(--color-accent-mid);
+  color: var(--color-authority);
+}
+.modern-cat-toc__item--active {
+  border-left-color: var(--color-accent);
+  background: var(--color-accent-light);
+  color: var(--color-authority);
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .modern-cat-toc__item { text-align: center; font-size: var(--text-base); }
+}
+
+/* ── HomeScreen (card grid — retained for search fallback render path) ── */
+.modern-home { }
 .modern-home__grid {
   padding: var(--space-4) var(--space-6);
   display: grid;
@@ -147,7 +260,6 @@
   .modern-cat-card { padding: var(--space-4); margin-bottom: 0; }
   .modern-cat-card__name { font-size: var(--text-base); margin-bottom: var(--space-2); }
   .modern-cat-card__bar-wrap { margin-bottom: var(--space-2); }
-  .modern-nav__logo--offhome { display: none; }
 }
 @media (min-width: 520px) {
   .modern-home__grid { grid-template-columns: repeat(2, 1fr); }
@@ -159,7 +271,8 @@
   .modern-home__grid { grid-template-columns: repeat(4, 1fr); }
 }
 
-.modern-search-results { padding: var(--space-3) var(--space-4); display: flex; flex-direction: column; gap: var(--space-2); }
+/* ── Search results (shared) ── */
+.modern-search-results { padding: var(--space-3) var(--space-4); display: flex; flex-direction: column; gap: var(--space-2); flex: 1; overflow-y: auto; min-height: 0; }
 .modern-search-results__label {
   font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--color-muted); padding: var(--space-2) 0 var(--space-1);
@@ -173,7 +286,7 @@
 .modern-search-result-row:hover { border-color: var(--color-accent); box-shadow: var(--shadow-pane); }
 .modern-search-result-row__type { font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; display: block; margin-bottom: var(--space-1); }
 .modern-search-result-row__type--cat     { color: var(--color-accent); }
-.modern-search-result-row__type--sub     { color: var(--color-tag-prayer); }
+.modern-search-result-row__type--sub     { color: var(--color-accent); }
 .modern-search-result-row__type--teaching { color: var(--color-tag-parable); }
 .modern-search-result-row__title { font-size: var(--text-sm); color: var(--color-ink); line-height: 1.45; }
 .modern-search-result-row__crumb { font-size: var(--text-xs); color: var(--color-muted); margin-top: var(--space-1); display: block; }
@@ -202,14 +315,15 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
   color: var(--color-authority);
   margin-bottom: var(--space-1);
 }
-.modern-cat-back-nav {
+
+.modern-view-topics-btn {
   display: inline-flex; align-items: center; gap: 4px;
   font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.04em;
   color: var(--color-accent); cursor: pointer;
   padding: var(--space-1) 0; margin-bottom: var(--space-2);
   transition: color 0.15s ease; background: none; border: none;
 }
-.modern-cat-back-nav:hover { color: var(--color-authority); }
+.modern-view-topics-btn:hover { color: var(--color-authority); }
 
 .modern-book-filter-row { display: flex; flex-wrap: wrap; gap: var(--space-2); padding: var(--space-2) 0 var(--space-4); }
 .modern-book-chip {
@@ -225,9 +339,10 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
 /* Desktop two-column layout */
 .modern-browser-body {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   flex: 1;
   min-height: 0;
+  overflow: hidden;
 }
 
 /* Left TOC sidebar — desktop only */
@@ -285,9 +400,10 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
 
 /* Hide TOC on mobile */
 @media (max-width: 767px) {
+  .modern-cat-toc__label { display: none; }
   .modern-subcat-toc { display: none; }
-  .modern-browser-body { display: block; flex: none; }
-  .modern-teachings-list { overflow-y: visible; }
+  .modern-browser-body { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+  .modern-teachings-list { overflow-y: auto; flex: 1; min-height: 0; }
 }
 
 
@@ -384,12 +500,10 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
 .modern-scripture-chip:hover { background: var(--color-accent); color: white; }
 
 .modern-tag { font-size: var(--text-xs); font-weight: 700; padding: var(--space-1) var(--space-2); border-radius: var(--radius-pill); }
-.modern-tag--parable { color: var(--color-tag-prayer);   background: var(--color-tag-prayer-bg); }
-.modern-tag--promise  { color: var(--color-tag-parable); background: var(--color-tag-parable-bg); }
-.modern-tag--woe      { color: #7B3F00; background: #FFF0E0; }
+.modern-tag--parable { color: var(--color-tag-parable); background: var(--color-tag-parable-bg); }
 
 /* ── TeachingDetail ── */
-.modern-teaching-detail { background: var(--color-bg); min-height: calc(100dvh - 108px); }
+.modern-teaching-detail { background: var(--color-bg); flex: 1; overflow-y: auto; min-height: 0; }
 
 .modern-detail-topbar {
   padding: var(--space-3) var(--space-4) var(--space-2);
@@ -464,24 +578,6 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
 }
 .modern-ref-row:hover .modern-ref-open { background: var(--color-accent); color: white; }
 
-/* ── PrevNextBar ── */
-.modern-pn-bar {
-  background: var(--color-surface); border-top: 1px solid var(--color-border);
-  display: flex; position: sticky; bottom: 0; z-index: 80; flex-shrink: 0;
-}
-.modern-pn-btn {
-  flex: 1; display: flex; align-items: center; gap: var(--space-2);
-  padding: var(--space-3) var(--space-4); font-size: var(--text-sm); font-weight: 700;
-  color: var(--color-muted); cursor: pointer; transition: background 0.15s ease, color 0.15s ease;
-  background: none; border: none;
-}
-.modern-pn-btn:first-child { border-right: 1px solid var(--color-border); }
-.modern-pn-btn:hover:not(.modern-pn-btn--disabled) { background: var(--color-surface-raised); color: var(--color-ink); }
-.modern-pn-btn--right { justify-content: flex-end; }
-.modern-pn-btn--disabled { opacity: 0.4; pointer-events: none; }
-.modern-pn-arrow { font-size: var(--text-xl); color: var(--color-accent); }
-.modern-pn-name { font-size: var(--text-xs); display: block; }
-
 /* ── BibleViewer — Panel (desktop) ── */
 .modern-bible-panel {
   position: fixed; top: 0; right: 0; bottom: 0;
@@ -519,8 +615,10 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
 /* ── BibleViewer — Drawer (mobile) ── */
 .modern-bible-drawer {
   position: fixed; left: 0; right: 0; bottom: 0;
-  background: var(--color-surface);
+  background: var(--color-surface-raised);
+  border-top: 2px solid var(--color-accent);
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.18);
   z-index: 149; display: flex; flex-direction: column;
   transform: translateY(100%);
   transition: transform 0.3s cubic-bezier(0.32,0.72,0,1);
@@ -532,7 +630,7 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
   padding: var(--space-2) 0 var(--space-1);
   display: flex; flex-direction: column; align-items: center; gap: var(--space-2);
   cursor: ns-resize; flex-shrink: 0;
-  background: var(--color-surface);
+  background: var(--color-surface-raised);
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 .modern-drawer-handle { width: 36px; height: 4px; border-radius: 2px; background: var(--color-border); }
@@ -554,26 +652,17 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
 }
 .modern-drawer-body { overflow-y: auto; padding: var(--space-4); flex: 1; }
 
-/* ── Peek pill ── */
-.modern-bible-peek-pill {
-  position: fixed; bottom: var(--space-4); left: 50%; transform: translateX(-50%);
-  background: var(--color-authority); color: var(--color-accent-mid);
-  font-size: var(--text-xs); font-weight: 700;
-  padding: var(--space-2) var(--space-4) var(--space-2) var(--space-3);
-  border-radius: 24px; display: flex; align-items: center; gap: var(--space-2);
-  box-shadow: var(--shadow-tooltip); cursor: pointer; z-index: 147;
-  transition: transform 0.2s ease; white-space: nowrap;
-  border: none;
-}
-.modern-bible-peek-pill:hover { transform: translateX(-50%) translateY(-2px); }
-.modern-bible-peek-pill__dot { width: 7px; height: 7px; border-radius: 50%; background: var(--color-accent); flex-shrink: 0; }
-
 /* ── Responsive ── */
 @media (max-width: 767px) {
   .modern-bible-panel { display: none !important; }
-  .modern-screen-area.modern-panel-pinned { margin-right: 0 !important; }
+  .modern-content-pane.modern-panel-pinned { margin-right: 0 !important; }
 }
 @media (min-width: 768px) {
   .modern-bible-drawer { display: none !important; }
-  .modern-bible-peek-pill { display: none !important; }
+}
+
+/* Prevent iOS/Android browsers from zooming in on input focus (requires font-size >= 16px) */
+@media (hover: none) and (pointer: coarse) {
+  .modern-search-bar__input,
+  .modern-subcat-select { font-size: 1rem; }
 }
