@@ -4,7 +4,7 @@ export default function ModernSearchBar({ disabled, currentCatId, categories, se
   const currentCat = categories.find(c => c.id === currentCatId) ?? null
   const placeholder = currentCatId
     ? `Search in ${currentCat?.title ?? ''}…`
-    : 'Search categories, topics, teachings…'
+    : 'Search topics and teachings…'
 
   return (
     <div className={`modern-search-bar${disabled ? ' modern-search-bar--disabled' : ''}`}>
