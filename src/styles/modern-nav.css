@@ -223,7 +223,18 @@
     text-align: center;
     font-size: var(--text-lg);
     border-left: none;
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: none;
+    position: relative;
+  }
+  .modern-cat-toc__item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 1px;
+    background: var(--color-border);
   }
   .modern-cat-toc__item:hover { background: none; }
   .modern-cat-toc__item--active { border-left: none; }
