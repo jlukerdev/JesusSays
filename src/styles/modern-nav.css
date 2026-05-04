@@ -408,6 +408,12 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
   .modern-subcat-toc { display: none; }
   .modern-browser-body { display: flex; flex-direction: column; flex: 1; min-height: 0; }
   .modern-teachings-list { overflow-y: auto; flex: 1; min-height: 0; }
+
+  /* Mobile: scroll the whole browser (hero + list) as one unit */
+  .modern-content-pane--cat-scroll { overflow-y: auto; }
+  .modern-content-pane--cat-scroll .modern-category-browser { flex: none; min-height: unset; }
+  .modern-content-pane--cat-scroll .modern-browser-body { flex: none; min-height: unset; }
+  .modern-content-pane--cat-scroll .modern-teachings-list { overflow-y: visible; flex: none; min-height: unset; }
 }
 
 

@@ -92,7 +92,7 @@ export default function ModernApp() {
             />
           </div>
 
-          <div className={`modern-content-pane${biblePinned && bibleOpen ? ' modern-panel-pinned' : ''}`}>
+          <div className={`modern-content-pane${biblePinned && bibleOpen ? ' modern-panel-pinned' : ''}${isMobile && currentScreen === 'category' ? ' modern-content-pane--cat-scroll' : ''}`}>
             {currentScreen === 'home' && (
               searchQuery ? (
                 <HomeScreen
