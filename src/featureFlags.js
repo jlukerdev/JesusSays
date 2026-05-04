@@ -9,3 +9,7 @@ export const ENABLE_CLASSIC_NAV = false
 // and the "Catalog Optimizer" button in the Settings menu.
 // When false, the route is removed and the menu option is hidden.
 export const ENABLE_CATALOG_OPTIMIZER = false
+
+// ENABLE_ABOUT_PAGE: About panel with app info, creator bio, and version details.
+// Active in development only; tree-shaken out of production builds.
+export const ENABLE_ABOUT_PAGE = import.meta.env.DEV

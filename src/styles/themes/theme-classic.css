@@ -60,4 +60,9 @@
   --sidebar-width: 270px;
   --header-height: 56px;
   --filter-bar-height: 52px;
+
+  /* About panel */
+  --about-panel-width: 440px;
+  --about-anim-duration: 0.3s;
+  --about-anim-duration-mobile: 0.25s;
 }

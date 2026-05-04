@@ -13,7 +13,7 @@ import { buildReverseIndex } from './data/reverseIndex.js'
 import useStore from './store.js'
 import { useLocalPreference } from './hooks/useLocalPreference.js'
 import ModernApp from './components/ModernApp/ModernApp.jsx'
-import { ENABLE_CLASSIC_NAV, ENABLE_CATALOG_OPTIMIZER } from './featureFlags.js'
+import { ENABLE_CLASSIC_NAV, ENABLE_CATALOG_OPTIMIZER, ENABLE_ABOUT_PAGE } from './featureFlags.js'
 
 function AppRoutes() {
   const layoutRef = useRef(null)
@@ -28,6 +28,9 @@ function AppRoutes() {
   const setNavStyle = useStore((s) => s.setNavStyle)
   const [persistedNavStyle, setPersistedNavStyle] = useLocalPreference('navStyle', 'modern')
 
+  const setShowAbout = useStore((s) => s.setShowAbout)
+  const [viewedVersion] = useLocalPreference('aboutViewedVersion', null)
+
   useEffect(() => {
     setNavStyle(persistedNavStyle)
   }, [])
@@ -35,6 +38,12 @@ function AppRoutes() {
   useEffect(() => {
     setPersistedNavStyle(navStyle)
   }, [navStyle])
+
+  useEffect(() => {
+    if (ENABLE_ABOUT_PAGE && viewedVersion !== __APP_VERSION__) {
+      setShowAbout(true)
+    }
+  }, [])
 
   useEffect(() => {
     loadTeachings()

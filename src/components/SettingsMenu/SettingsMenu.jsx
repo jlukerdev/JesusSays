@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Settings } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import useStore from '../../store.js'
-import { ENABLE_CLASSIC_NAV, ENABLE_CATALOG_OPTIMIZER } from '../../featureFlags.js'
+import { ENABLE_CLASSIC_NAV, ENABLE_CATALOG_OPTIMIZER, ENABLE_ABOUT_PAGE } from '../../featureFlags.js'
 import './SettingsMenu.css'
 
 export default function SettingsMenu() {
@@ -13,6 +13,7 @@ export default function SettingsMenu() {
   const setNavStyle = useStore((s) => s.setNavStyle)
   const theme = useStore((s) => s.theme)
   const setTheme = useStore((s) => s.setTheme)
+  const setShowAbout = useStore((s) => s.setShowAbout)
 
   useEffect(() => {
     if (!open) return
@@ -51,6 +52,12 @@ export default function SettingsMenu() {
               <>
                 <div className="settings-menu__divider" />
                 <button className="settings-menu__action" onClick={() => { navigate('/catalog-optimizer'); setOpen(false) }}>Catalog Optimizer</button>
+              </>
+            )}
+            {ENABLE_ABOUT_PAGE && (
+              <>
+                <div className="settings-menu__divider" />
+                <button className="settings-menu__action" onClick={() => { setShowAbout(true); setOpen(false) }}>About</button>
               </>
             )}
           </div>
