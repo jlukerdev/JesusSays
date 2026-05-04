@@ -666,6 +666,7 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
   display: flex; align-items: center; justify-content: center;
   cursor: pointer; font-size: var(--text-sm); color: var(--color-muted);
   flex-shrink: 0; border: 1px solid var(--color-border);
+  position: relative; z-index: 2;
 }
 .modern-drawer-body { overflow-y: auto; padding: var(--space-4); flex: 1; }
 
