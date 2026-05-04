@@ -219,8 +219,26 @@
   font-weight: 700;
 }
 @media (max-width: 767px) {
-  .modern-cat-toc__item { text-align: center; font-size: var(--text-lg); }
-  .modern-cat-toc__item:hover { background: none; border-left-color: transparent; }
+  .modern-cat-toc__item {
+    text-align: center;
+    font-size: var(--text-lg);
+    border-left: none;
+    border-bottom: none;
+    position: relative;
+  }
+  .modern-cat-toc__item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 1px;
+    background: var(--color-border);
+  }
+  .modern-cat-toc__item:last-child::after { display: none; }
+  .modern-cat-toc__item:hover { background: none; }
+  .modern-cat-toc__item--active { border-left: none; }
 }
 
 /* ── HomeScreen (card grid — retained for search fallback render path) ── */
