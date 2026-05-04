@@ -236,6 +236,7 @@
     height: 1px;
     background: var(--color-border);
   }
+  .modern-cat-toc__item:last-child::after { display: none; }
   .modern-cat-toc__item:hover { background: none; }
   .modern-cat-toc__item--active { border-left: none; }
 }
