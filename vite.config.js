@@ -47,7 +47,7 @@ export default defineConfig({
               cacheName: 'teachings-data',
               expiration: {
                 maxEntries: 1,
-                maxAgeSeconds: 60 * 60 * 24 * 365
+                maxAgeSeconds: 60 * 60 * 24 * 30
               }
             }
           },
@@ -65,7 +65,7 @@ export default defineConfig({
               cacheName: 'google-fonts-webfonts',
               expiration: {
                 maxEntries: 30,
-                maxAgeSeconds: 60 * 60 * 24 * 365
+                maxAgeSeconds: 60 * 60 * 24 * 30
               }
             }
           }

@@ -42,7 +42,7 @@ export default function VersionView({ onBack }) {
             </div>
             <div className="about-version-row">
               <span className="about-version-row__key">Platform</span>
-              <span className="about-version-row__val">React 18 · Vite · PWA</span>
+              <span className="about-version-row__val">React · Vite · PWA</span>
             </div>
           </div>
         </section>
@@ -63,10 +63,6 @@ export default function VersionView({ onBack }) {
               <span className="about-version-row__key">Total teachings</span>
               <span className="about-version-row__val">{totalTeachings > 0 ? totalTeachings.toLocaleString() : '—'}</span>
             </div>
-            <div className="about-version-row">
-              <span className="about-version-row__key">NT sources</span>
-              <span className="about-version-row__val">Matt · Mark · Luke · John · Acts · 1–2 Cor · Rev</span>
-            </div>
           </div>
         </section>
 
@@ -74,13 +70,9 @@ export default function VersionView({ onBack }) {
         <section>
           <div className="about-version-block__label">Revision Notes</div>
           <div className="about-revision-notes">
-            <p><strong>App v0.1.0</strong> — Initial release. Modern mobile-first navigation,
-            31 thematic categories, complete NT red-letter coverage. PWA-enabled with
-            offline support.</p>
+            <p><strong>App v0.1.0</strong> — Initial beta release.</p>
             <br />
-            <p><strong>Catalog v1.3</strong> — Full audit and reclassification pass.
-            Parable tagging complete (42 canonical parables). All subcategory IDs
-            stabilized; permalink anchors finalized.</p>
+            <p><strong>Catalog v1.3</strong> — Initial release.</p>
           </div>
         </section>
 
