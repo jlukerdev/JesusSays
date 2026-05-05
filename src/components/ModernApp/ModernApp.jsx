@@ -8,6 +8,7 @@ import CategoryBrowser from './CategoryBrowser.jsx'
 import TeachingDetail from './TeachingDetail.jsx'
 import BibleViewer from './BibleViewer/BibleViewer.jsx'
 import HomeScreen from './HomeScreen.jsx'
+import AboutPanel from '../AboutPanel/AboutPanel.jsx'
 import { useIsMobile } from '../../hooks/useBreakpoint.js'
 
 function findTeachingById(teachingId, categories) {
@@ -160,6 +161,8 @@ export default function ModernApp() {
         onTogglePin={() => setBiblePinned(p => !p)}
         onReopen={() => setBibleOpen(true)}
       />
+
+      <AboutPanel />
     </div>
   )
 }

@@ -11,6 +11,7 @@ const useStore = create((set) => ({
   fontSize: 's',
   theme: 'classic',
   navStyle: 'classic',
+  showAbout: false,
 
   setActiveMode: (mode) => set({ activeMode: mode }),
   setActiveCategorySlug: (slug) => set({ activeCategorySlug: slug }),
@@ -19,6 +20,7 @@ const useStore = create((set) => ({
   setFontSize: (fontSize) => set({ fontSize }),
   setTheme: (theme) => set({ theme }),
   setNavStyle: (navStyle) => set({ navStyle }),
+  setShowAbout: (v) => set({ showAbout: v }),
 
   // Data loaded from teachings.json
   categories: [],
