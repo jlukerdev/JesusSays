@@ -1,76 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <defs>
-    <!-- Ray: bright gold at origin, fades to transparent at tip -->
-    <linearGradient id="rayGrad" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0%"   stop-color="#f5c842" stop-opacity="1"/>
-      <stop offset="65%"  stop-color="#d4a84b" stop-opacity="0.65"/>
-      <stop offset="100%" stop-color="#d4a84b" stop-opacity="0"/>
-    </linearGradient>
 
-    <!-- Soft glow halo at the ray/spine origin -->
-    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%"   stop-color="#d4a84b" stop-opacity="0.42"/>
-      <stop offset="100%" stop-color="#d4a84b" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- Left page: darker at outer edge, parchment near spine -->
-    <linearGradient id="leftPage" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#c4bfb0"/>
-      <stop offset="45%"  stop-color="#eeebe3"/>
-      <stop offset="100%" stop-color="#faf9f6"/>
-    </linearGradient>
-
-    <!-- Right page: parchment near spine, darker at outer edge -->
-    <linearGradient id="rightPage" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#faf9f6"/>
-      <stop offset="55%"  stop-color="#eeebe3"/>
-      <stop offset="100%" stop-color="#c4bfb0"/>
-    </linearGradient>
-  </defs>
-
-  <!-- ── Background: deep navy, iOS-style rounded square ── -->
+  <!-- Background: deep navy, iOS-style rounded square -->
   <rect width="512" height="512" rx="88" fill="#1b2a40"/>
 
-  <!-- ── Glow halo at spine / ray origin ── -->
-  <ellipse cx="256" cy="270" rx="88" ry="52" fill="url(#glowGrad)"/>
+  <!-- Book: left page (trapezoid outline, no fill) -->
+  <polygon points="82,277 76,387 256,400 256,272"
+           fill="none" stroke="#d4a84b" stroke-width="11" stroke-linejoin="round"/>
 
-  <!-- ── Side rays: faint diagonal lines from spine origin ── -->
-  <line x1="256" y1="270" x2="120" y2="112" stroke="#d4a84b" stroke-width="2.5" opacity="0.28"/>
-  <line x1="256" y1="270" x2="392" y2="112" stroke="#d4a84b" stroke-width="2.5" opacity="0.28"/>
-  <line x1="256" y1="270" x2="168" y2="74"  stroke="#d4a84b" stroke-width="1.5" opacity="0.18"/>
-  <line x1="256" y1="270" x2="344" y2="74"  stroke="#d4a84b" stroke-width="1.5" opacity="0.18"/>
+  <!-- Book: right page (mirror) -->
+  <polygon points="256,272 256,400 436,387 430,277"
+           fill="none" stroke="#d4a84b" stroke-width="11" stroke-linejoin="round"/>
 
-  <!-- ── Main ray: tapered triangle pointing up ── -->
-  <polygon points="243,275 269,275 256,60" fill="url(#rayGrad)"/>
+  <!-- Spine: vertical line from ray tip through book base -->
+  <line x1="256" y1="64" x2="256" y2="402"
+        stroke="#d4a84b" stroke-width="13" stroke-linecap="round"/>
 
-  <!-- ── Book pages ── -->
-  <!-- Left page  (trapezoid, fanning to the left) -->
-  <polygon points="256,268 256,398 72,385 80,273" fill="url(#leftPage)"/>
-  <!-- Right page (mirror) -->
-  <polygon points="256,268 256,398 440,385 432,273" fill="url(#rightPage)"/>
+  <!-- Ray: left diagonal -->
+  <line x1="256" y1="272" x2="112" y2="100"
+        stroke="#d4a84b" stroke-width="8" stroke-linecap="round"/>
 
-  <!-- ── Text lines — left page ── -->
-  <line x1="100" y1="305" x2="247" y2="298" stroke="#8a7d60" stroke-width="2.2" opacity="0.52"/>
-  <line x1="100" y1="324" x2="247" y2="317" stroke="#8a7d60" stroke-width="2.2" opacity="0.52"/>
-  <line x1="100" y1="343" x2="247" y2="337" stroke="#8a7d60" stroke-width="2.2" opacity="0.47"/>
-  <line x1="100" y1="362" x2="247" y2="357" stroke="#8a7d60" stroke-width="2.2" opacity="0.42"/>
-  <line x1="100" y1="378" x2="247" y2="374" stroke="#8a7d60" stroke-width="2.2" opacity="0.36"/>
+  <!-- Ray: right diagonal (mirror) -->
+  <line x1="256" y1="272" x2="400" y2="100"
+        stroke="#d4a84b" stroke-width="8" stroke-linecap="round"/>
 
-  <!-- ── Text lines — right page ── -->
-  <line x1="265" y1="298" x2="412" y2="305" stroke="#8a7d60" stroke-width="2.2" opacity="0.52"/>
-  <line x1="265" y1="317" x2="412" y2="324" stroke="#8a7d60" stroke-width="2.2" opacity="0.52"/>
-  <line x1="265" y1="337" x2="412" y2="343" stroke="#8a7d60" stroke-width="2.2" opacity="0.47"/>
-  <line x1="265" y1="357" x2="412" y2="362" stroke="#8a7d60" stroke-width="2.2" opacity="0.42"/>
-  <line x1="265" y1="374" x2="412" y2="378" stroke="#8a7d60" stroke-width="2.2" opacity="0.36"/>
-
-  <!-- ── Book outlines in gold ── -->
-  <polygon points="256,268 256,398 72,385 80,273"
-           fill="none" stroke="#d4a84b" stroke-width="3" stroke-linejoin="round"/>
-  <polygon points="256,268 256,398 440,385 432,273"
-           fill="none" stroke="#d4a84b" stroke-width="3" stroke-linejoin="round"/>
-
-  <!-- ── Spine: solid gold bar ── -->
-  <rect x="249" y="264" width="14" height="136" rx="5" fill="#d4a84b"/>
-  <!-- Spine highlight (inner shine) -->
-  <rect x="251" y="267" width="5"  height="130" rx="3" fill="#f5c842" opacity="0.42"/>
 </svg>
