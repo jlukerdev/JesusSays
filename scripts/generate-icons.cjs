@@ -20,31 +20,62 @@ const path  = require('path');
 const PUBLIC = path.resolve(__dirname, '..', 'public');
 
 // ── Master SVG (512 × 512 canvas) ──────────────────────────────────────────
-// Strict 2-color wireframe: navy fill + gold strokes, zero gradients/fills.
+// 2-color wireframe: navy bg + gold strokes only (no fills / gradients).
+// Closely matches the reference: open book with curved pages, page-thickness
+// strips, rounded cover arc, 4 text lines per page, 7 radiating rays.
 const SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 
-  <!-- Background: deep navy, iOS-style rounded square -->
+  <!-- Background: app navy -->
   <rect width="512" height="512" rx="88" fill="#1b2a40"/>
 
-  <!-- Book: left page (trapezoid outline, no fill) -->
-  <polygon points="82,277 76,387 256,400 256,272"
-           fill="none" stroke="#d4a84b" stroke-width="11" stroke-linejoin="round"/>
+  <!-- ══ RAYS ══
+       7 lines fanning from spine top at (256, 286):
+       center vertical + 3 pairs at ±15°, ±30°, ±45°               -->
+  <g stroke="#d4a84b" stroke-linecap="round" stroke-width="9">
+    <line x1="256" y1="286" x2="256" y2="108"/>
+    <line x1="256" y1="286" x2="212" y2="124"/>
+    <line x1="256" y1="286" x2="300" y2="124"/>
+    <line x1="256" y1="286" x2="178" y2="154"/>
+    <line x1="256" y1="286" x2="334" y2="154"/>
+    <line x1="256" y1="286" x2="160" y2="196"/>
+    <line x1="256" y1="286" x2="352" y2="196"/>
+  </g>
 
-  <!-- Book: right page (mirror) -->
-  <polygon points="256,272 256,400 436,387 430,277"
-           fill="none" stroke="#d4a84b" stroke-width="11" stroke-linejoin="round"/>
+  <!-- ══ BOOK ══ -->
+  <g fill="none" stroke="#d4a84b" stroke-linejoin="round" stroke-linecap="round">
 
-  <!-- Spine: vertical line from ray tip through book base -->
-  <line x1="256" y1="64" x2="256" y2="402"
-        stroke="#d4a84b" stroke-width="13" stroke-linecap="round"/>
+    <!-- Page-thickness strips: thin parallelograms on outer edges -->
+    <path d="M 82,274 L 68,280 L 52,420 L 66,417 Z" stroke-width="9"/>
+    <path d="M 430,274 L 444,280 L 460,420 L 446,417 Z" stroke-width="9"/>
 
-  <!-- Ray: left diagonal -->
-  <line x1="256" y1="272" x2="112" y2="100"
-        stroke="#d4a84b" stroke-width="8" stroke-linecap="round"/>
+    <!-- Left page outline
+         Top edge:    quadratic arc from spine (256,286) → outer corner (82,274)
+         Outer edge:  straight line down to outer bottom (66,417)
+         Bottom edge: quadratic arc → spine fold (256,450)
+         Spine edge:  implicit straight line via Z back to (256,286)         -->
+    <path d="M 256,286 Q 169,271 82,274 L 66,417 Q 161,447 256,450 Z"
+          stroke-width="10"/>
 
-  <!-- Ray: right diagonal (mirror) -->
-  <line x1="256" y1="272" x2="400" y2="100"
-        stroke="#d4a84b" stroke-width="8" stroke-linecap="round"/>
+    <!-- Right page outline (mirror) -->
+    <path d="M 256,286 Q 343,271 430,274 L 446,417 Q 351,447 256,450 Z"
+          stroke-width="10"/>
+
+    <!-- Book cover: smooth cubic arc below the pages showing physical depth -->
+    <path d="M 66,417 C 80,472 432,472 446,417" stroke-width="10"/>
+
+    <!-- Text lines — left page (4 lines, angled with page perspective) -->
+    <line x1="102" y1="316" x2="234" y2="308" stroke-width="8"/>
+    <line x1="102" y1="346" x2="234" y2="339" stroke-width="8"/>
+    <line x1="102" y1="376" x2="234" y2="370" stroke-width="8"/>
+    <line x1="102" y1="406" x2="234" y2="401" stroke-width="8"/>
+
+    <!-- Text lines — right page (mirror) -->
+    <line x1="278" y1="308" x2="410" y2="316" stroke-width="8"/>
+    <line x1="278" y1="339" x2="410" y2="346" stroke-width="8"/>
+    <line x1="278" y1="370" x2="410" y2="376" stroke-width="8"/>
+    <line x1="278" y1="401" x2="410" y2="406" stroke-width="8"/>
+
+  </g>
 
 </svg>`;
 
