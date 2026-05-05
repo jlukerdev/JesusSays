@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+
+  <defs>
+    <linearGradient id="bgRL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7f1e3"></stop>
+      <stop offset="100%" stop-color="#ede4cc"></stop>
+    </linearGradient>
+    <linearGradient id="bubbleRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c92b32"></stop>
+      <stop offset="100%" stop-color="#a01e25"></stop>
+    </linearGradient>
+  </defs>
+
+
+  <rect width="256" height="256" rx="56" fill="url(#bgRL)"></rect>
+  <rect x="18" y="18" width="220" height="220" rx="42" fill="none" stroke="#9a7b34" stroke-width="1" opacity="0.35"></rect>
+  <g transform="translate(128 134)">
+    <path d="M -78 -56 Q -78 -68 -66 -68 L 66 -68 Q 78 -68 78 -56 L 78 30 Q 78 42 66 42 L 12 42 L -6 64 L -6 42 L -66 42 Q -78 42 -78 30 Z" fill="url(#bubbleRed)" stroke="#8f1a20" stroke-width="2" stroke-linejoin="round"></path>
+    <g stroke="#f7f1e3" stroke-width="7" stroke-linecap="round">
+      <line x1="-54" y1="-40" x2="54" y2="-40"></line>
+      <line x1="-54" y1="-14" x2="38" y2="-14"></line>
+      <line x1="-54" y1="12" x2="48" y2="12"></line>
+    </g>
+  </g>
+
+</svg>
