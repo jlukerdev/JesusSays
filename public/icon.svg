@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+
+  <!-- Background: app navy -->
+  <rect width="512" height="512" rx="88" fill="#1b2a40"/>
+
+  <!-- ══ RAYS ══
+       7 lines fanning from spine top at (256, 286):
+       center vertical + 3 pairs at ±15°, ±30°, ±45°               -->
+  <g stroke="#d4a84b" stroke-linecap="round" stroke-width="9">
+    <line x1="256" y1="286" x2="256" y2="108"/>
+    <line x1="256" y1="286" x2="212" y2="124"/>
+    <line x1="256" y1="286" x2="300" y2="124"/>
+    <line x1="256" y1="286" x2="178" y2="154"/>
+    <line x1="256" y1="286" x2="334" y2="154"/>
+    <line x1="256" y1="286" x2="160" y2="196"/>
+    <line x1="256" y1="286" x2="352" y2="196"/>
+  </g>
+
+  <!-- ══ BOOK ══ -->
+  <g fill="none" stroke="#d4a84b" stroke-linejoin="round" stroke-linecap="round">
+
+    <!-- Page-thickness strips: thin parallelograms on outer edges -->
+    <path d="M 82,274 L 68,280 L 52,420 L 66,417 Z" stroke-width="9"/>
+    <path d="M 430,274 L 444,280 L 460,420 L 446,417 Z" stroke-width="9"/>
+
+    <!-- Left page outline
+         Top edge:    quadratic arc from spine (256,286) → outer corner (82,274)
+         Outer edge:  straight line down to outer bottom (66,417)
+         Bottom edge: quadratic arc → spine fold (256,450)
+         Spine edge:  implicit straight line via Z back to (256,286)         -->
+    <path d="M 256,286 Q 169,271 82,274 L 66,417 Q 161,447 256,450 Z"
+          stroke-width="10"/>
+
+    <!-- Right page outline (mirror) -->
+    <path d="M 256,286 Q 343,271 430,274 L 446,417 Q 351,447 256,450 Z"
+          stroke-width="10"/>
+
+    <!-- Book cover: smooth cubic arc below the pages showing physical depth -->
+    <path d="M 66,417 C 80,472 432,472 446,417" stroke-width="10"/>
+
+    <!-- Text lines — left page (4 lines, angled with page perspective) -->
+    <line x1="102" y1="316" x2="234" y2="308" stroke-width="8"/>
+    <line x1="102" y1="346" x2="234" y2="339" stroke-width="8"/>
+    <line x1="102" y1="376" x2="234" y2="370" stroke-width="8"/>
+    <line x1="102" y1="406" x2="234" y2="401" stroke-width="8"/>
+
+    <!-- Text lines — right page (mirror) -->
+    <line x1="278" y1="308" x2="410" y2="316" stroke-width="8"/>
+    <line x1="278" y1="339" x2="410" y2="346" stroke-width="8"/>
+    <line x1="278" y1="370" x2="410" y2="376" stroke-width="8"/>
+    <line x1="278" y1="401" x2="410" y2="406" stroke-width="8"/>
+
+  </g>
+
+</svg>
