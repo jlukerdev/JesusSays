@@ -12,4 +12,4 @@ export const ENABLE_CATALOG_OPTIMIZER = false
 
 // ENABLE_ABOUT_PAGE: About panel with app info, creator bio, and version details.
 // Active in development only; tree-shaken out of production builds.
-export const ENABLE_ABOUT_PAGE = import.meta.env.DEV
+export const ENABLE_ABOUT_PAGE = true // import.meta.env.DEV
