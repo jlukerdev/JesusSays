@@ -40,7 +40,7 @@ function AppRoutes() {
   }, [navStyle])
 
   useEffect(() => {
-    if (ENABLE_ABOUT_PAGE && viewedVersion !== __APP_VERSION__) {
+    if (ENABLE_ABOUT_PAGE && viewedVersion === null) {
       setShowAbout(true)
     }
   }, [])
