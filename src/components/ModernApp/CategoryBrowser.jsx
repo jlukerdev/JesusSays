@@ -29,11 +29,13 @@ function TeachingCard({ teaching, onNavigate, onOpenBible }) {
 function InCategorySearchResults({ cat, searchQuery, onNavigate }) {
   const { results, isSearching } = useSearch(searchQuery, { categoryId: cat?.id })
 
-  const subcatResults = []
-  const teachingResults = []
-  const subcatSet = new Set()
+  const { subcatResults, teachingResults } = useMemo(() => {
+    const subcatResults = []
+    const teachingResults = []
+    const subcatSet = new Set()
 
-  if (isSearching) {
+    if (!isSearching) return { subcatResults, teachingResults }
+
     for (const result of results) {
       const { sub, teaching, tabIndex: subIdx } = resolveResult(result, [cat])
       if (!sub || !teaching) continue
@@ -46,7 +48,8 @@ function InCategorySearchResults({ cat, searchQuery, onNavigate }) {
         teachingResults.push({ sub, subIdx, teaching, result })
       }
     }
-  }
+    return { subcatResults, teachingResults }
+  }, [results, cat, isSearching])
 
   const hasResults = subcatResults.length > 0 || teachingResults.length > 0
 
@@ -65,10 +68,9 @@ function InCategorySearchResults({ cat, searchQuery, onNavigate }) {
               onClick={() => onNavigate(subIdx, null)}
             >
               <span className="modern-search-result-row__type modern-search-result-row__type--sub">Section</span>
-              <div
-                className="modern-search-result-row__title"
-                dangerouslySetInnerHTML={{ __html: highlightTerms(sub.title, result.terms) }}
-              />
+              <div className="modern-search-result-row__title">
+                {highlightTerms(sub.title, result.terms)}
+              </div>
             </button>
           ))}
         </>
@@ -83,10 +85,9 @@ function InCategorySearchResults({ cat, searchQuery, onNavigate }) {
               onClick={() => onNavigate(subIdx, teaching.id)}
             >
               <span className="modern-search-result-row__type modern-search-result-row__type--teaching">Teaching</span>
-              <div
-                className="modern-search-result-row__title"
-                dangerouslySetInnerHTML={{ __html: highlightTerms(teaching.text.slice(0, 120) + (teaching.text.length > 120 ? '…' : ''), result.terms) }}
-              />
+              <div className="modern-search-result-row__title">
+                {highlightTerms(teaching.text.slice(0, 120) + (teaching.text.length > 120 ? '…' : ''), result.terms)}
+              </div>
               <span className="modern-search-result-row__crumb">{sub.title}</span>
             </button>
           ))}
@@ -164,7 +165,7 @@ export default function CategoryBrowser({
         )}
       </div>
 
-      {!searchQuery ? (
+      {!searchQuery.trim() ? (
         <div className="modern-browser-body">
           {!isMobile && (
             <nav className="modern-subcat-toc">

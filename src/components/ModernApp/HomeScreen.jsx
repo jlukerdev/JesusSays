@@ -48,7 +48,7 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
     [results, categories, isSearching]
   )
 
-  if (searchQuery) {
+  if (searchQuery.trim()) {
     const hasResults = catResults.length > 0 || subcatResults.length > 0 || teachingResults.length > 0
     return (
       <div className="modern-search-results">
@@ -65,10 +65,9 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
                 onClick={() => { onNavigateToCategory(cat.id); onClearSearch() }}
               >
                 <span className="modern-search-result-row__type modern-search-result-row__type--cat">Category</span>
-                <div
-                  className="modern-search-result-row__title"
-                  dangerouslySetInnerHTML={{ __html: highlightTerms(cat.title, result.terms) }}
-                />
+                <div className="modern-search-result-row__title">
+                  {highlightTerms(cat.title, result.terms)}
+                </div>
               </button>
             ))}
           </>
@@ -83,10 +82,9 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
                 onClick={() => { onNavigateToCategory(cat.id, tabIndex); onClearSearch() }}
               >
                 <span className="modern-search-result-row__type modern-search-result-row__type--sub">Section</span>
-                <div
-                  className="modern-search-result-row__title"
-                  dangerouslySetInnerHTML={{ __html: highlightTerms(sub.title, result.terms) }}
-                />
+                <div className="modern-search-result-row__title">
+                  {highlightTerms(sub.title, result.terms)}
+                </div>
                 <span className="modern-search-result-row__crumb">{cat.title}</span>
               </button>
             ))}
@@ -102,10 +100,9 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
                 onClick={() => { onNavigateToTeaching(teaching.id, cat.id, tabIndex); onClearSearch() }}
               >
                 <span className="modern-search-result-row__type modern-search-result-row__type--teaching">Teaching</span>
-                <div
-                  className="modern-search-result-row__title"
-                  dangerouslySetInnerHTML={{ __html: highlightTerms(teaching.text.slice(0, 120) + (teaching.text.length > 120 ? '…' : ''), result.terms) }}
-                />
+                <div className="modern-search-result-row__title">
+                  {highlightTerms(teaching.text.slice(0, 120) + (teaching.text.length > 120 ? '…' : ''), result.terms)}
+                </div>
                 <span className="modern-search-result-row__crumb">{cat.title} › {sub.title}</span>
               </button>
             ))}

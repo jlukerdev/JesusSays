@@ -1,3 +1,4 @@
+import { createElement } from 'react'
 import MiniSearch from 'minisearch'
 
 const FIELDS = ['text', 'quote', 'categoryTitle', 'subcategoryTitle', 'tagsStr', 'referenceLabels']
@@ -26,15 +27,17 @@ const DEFAULT_SEARCH_OPTIONS = {
     text: 1,
     quote: 1,
   },
-  fuzzy: 0.2,
+  // Fuzzy disabled on short terms: 0.2 * 4 chars rounds to 1 edit, 
+  // Require 5+ chars before allowing typos.
+  fuzzy: (term) => (term.length >= 5 ? 0.2 : false),
   prefix: true,
   combineWith: 'AND',
 }
 
 let _miniSearch = null
 
-export function buildSearchIndex(categories) {
-  if (_miniSearch) return _miniSearch
+export function buildSearchIndex(categories, { force = false } = {}) {
+  if (_miniSearch && !force) return _miniSearch
 
   const documents = []
   for (const cat of categories) {
@@ -42,15 +45,12 @@ export function buildSearchIndex(categories) {
       for (const teaching of sub.teachings) {
         documents.push({
           docId: teaching.id,
-          uid: teaching.uid,
           categoryId: cat.id,
           subcategoryId: sub.id,
           text: teaching.text ?? '',
           quote: teaching.quote ?? '',
           tagsStr: teaching.tags.join(' '),
-          referenceLabels: teaching.references
-            .map(r => r.label.replace(/[,:]/g, ' '))
-            .join(' '),
+          referenceLabels: teaching.references.map(r => r.label).join(' '),
           categoryTitle: cat.title,
           subcategoryTitle: sub.title,
         })
@@ -92,7 +92,6 @@ export function search(rawQuery, options = {}) {
   let results = _miniSearch.search(queryText, {
     ...DEFAULT_SEARCH_OPTIONS,
     filter,
-    combineWith: 'AND',
     fuzzy: isPhraseSearch ? false : DEFAULT_SEARCH_OPTIONS.fuzzy,
     prefix: isPhraseSearch ? false : DEFAULT_SEARCH_OPTIONS.prefix,
   })
@@ -131,12 +130,16 @@ export function resolveResult(result, categories) {
 }
 
 /**
- * Highlights all matched terms in text. Use result.terms from MiniSearch.
+ * Highlights all matched terms in text, returning an array of React nodes
+ * (string segments interleaved with <mark> elements). Use result.terms from MiniSearch.
  */
 export function highlightTerms(text, terms) {
   if (!terms || terms.length === 0) return text
   const pattern = terms
     .map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
     .join('|')
-  return text.replace(new RegExp(`(${pattern})`, 'gi'), '<mark>$1</mark>')
+  const regex = new RegExp(`(${pattern})`, 'gi')
+  return text.split(regex).map((part, i) =>
+    i % 2 === 1 ? createElement('mark', { key: i }, part) : part
+  )
 }
