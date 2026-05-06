@@ -1,9 +1,32 @@
 import { useMemo } from 'react'
+import { useSearch } from '../../hooks/useSearch.js'
+import { resolveResult, highlightTerms } from '../../utils/search.js'
 
-function highlight(text, query) {
-  if (!query) return text
-  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-  return text.replace(new RegExp(`(${escaped})`, 'gi'), '<mark>$1</mark>')
+function groupResults(results, categories) {
+  const catSet = new Set()
+  const subcatSet = new Set()
+  const catResults = []
+  const subcatResults = []
+  const teachingResults = []
+
+  for (const result of results) {
+    const { cat, sub, teaching, tabIndex } = resolveResult(result, categories)
+    if (!cat || !sub || !teaching) continue
+
+    const matchedFields = Object.values(result.match).flat()
+
+    if (matchedFields.includes('categoryTitle') && !catSet.has(cat.id)) {
+      catSet.add(cat.id)
+      catResults.push({ cat, result })
+    } else if (matchedFields.includes('subcategoryTitle') && !subcatSet.has(sub.id)) {
+      subcatSet.add(sub.id)
+      subcatResults.push({ cat, sub, tabIndex, result })
+    } else {
+      teachingResults.push({ cat, sub, tabIndex, teaching, result })
+    }
+  }
+
+  return { catResults, subcatResults, teachingResults }
 }
 
 export default function HomeScreen({ categories, searchQuery, onNavigateToCategory, onNavigateToTeaching, onClearSearch }) {
@@ -18,26 +41,12 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
     return count / maxTeachingCount
   }
 
-  const query = searchQuery.trim().toLowerCase()
-  const catResults = query ? categories.filter(c => c.title.toLowerCase().includes(query)) : []
-  const subcatResults = []
-  const teachingResults = []
+  const { results, isSearching } = useSearch(searchQuery)
 
-  if (query) {
-    categories.forEach((cat) => {
-      const catMatched = catResults.includes(cat)
-      cat.subcategories.forEach((sub, subIdx) => {
-        if (!catMatched && sub.title.toLowerCase().includes(query)) {
-          subcatResults.push({ cat, sub, tabIndex: subIdx })
-        }
-        sub.teachings.forEach(t => {
-          if (t.text.toLowerCase().includes(query)) {
-            teachingResults.push({ cat, sub, tabIndex: subIdx, teaching: t })
-          }
-        })
-      })
-    })
-  }
+  const { catResults, subcatResults, teachingResults } = useMemo(
+    () => isSearching ? groupResults(results, categories) : { catResults: [], subcatResults: [], teachingResults: [] },
+    [results, categories, isSearching]
+  )
 
   if (searchQuery) {
     const hasResults = catResults.length > 0 || subcatResults.length > 0 || teachingResults.length > 0
@@ -49,7 +58,7 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
         {catResults.length > 0 && (
           <>
             <div className="modern-search-results__label">Categories</div>
-            {catResults.map(cat => (
+            {catResults.map(({ cat, result }) => (
               <button
                 key={cat.id}
                 className="modern-search-result-row"
@@ -58,7 +67,7 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
                 <span className="modern-search-result-row__type modern-search-result-row__type--cat">Category</span>
                 <div
                   className="modern-search-result-row__title"
-                  dangerouslySetInnerHTML={{ __html: highlight(cat.title, query) }}
+                  dangerouslySetInnerHTML={{ __html: highlightTerms(cat.title, result.terms) }}
                 />
               </button>
             ))}
@@ -67,7 +76,7 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
         {subcatResults.length > 0 && (
           <>
             <div className="modern-search-results__label">Subcategories</div>
-            {subcatResults.map(({ cat, sub, tabIndex }) => (
+            {subcatResults.map(({ cat, sub, tabIndex, result }) => (
               <button
                 key={`${cat.id}-${sub.id}`}
                 className="modern-search-result-row"
@@ -76,7 +85,7 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
                 <span className="modern-search-result-row__type modern-search-result-row__type--sub">Section</span>
                 <div
                   className="modern-search-result-row__title"
-                  dangerouslySetInnerHTML={{ __html: highlight(sub.title, query) }}
+                  dangerouslySetInnerHTML={{ __html: highlightTerms(sub.title, result.terms) }}
                 />
                 <span className="modern-search-result-row__crumb">{cat.title}</span>
               </button>
@@ -86,7 +95,7 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
         {teachingResults.length > 0 && (
           <>
             <div className="modern-search-results__label">Teachings</div>
-            {teachingResults.map(({ cat, sub, tabIndex, teaching }) => (
+            {teachingResults.map(({ cat, sub, tabIndex, teaching, result }) => (
               <button
                 key={teaching.id}
                 className="modern-search-result-row"
@@ -95,7 +104,7 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
                 <span className="modern-search-result-row__type modern-search-result-row__type--teaching">Teaching</span>
                 <div
                   className="modern-search-result-row__title"
-                  dangerouslySetInnerHTML={{ __html: highlight(teaching.text.slice(0, 120) + (teaching.text.length > 120 ? '…' : ''), query) }}
+                  dangerouslySetInnerHTML={{ __html: highlightTerms(teaching.text.slice(0, 120) + (teaching.text.length > 120 ? '…' : ''), result.terms) }}
                 />
                 <span className="modern-search-result-row__crumb">{cat.title} › {sub.title}</span>
               </button>

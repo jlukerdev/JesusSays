@@ -2,12 +2,8 @@ import { useMemo } from 'react'
 import { Menu } from 'lucide-react'
 import { useIsMobile } from '../../hooks/useBreakpoint.js'
 import { NT_BOOK_ABBR_ORDER } from '../../utils/bookOrder.js'
-
-function highlight(text, query) {
-  if (!query) return text
-  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-  return text.replace(new RegExp(`(${escaped})`, 'gi'), '<mark>$1</mark>')
-}
+import { useSearch } from '../../hooks/useSearch.js'
+import { resolveResult, highlightTerms } from '../../utils/search.js'
 
 function TeachingCard({ teaching, onNavigate, onOpenBible }) {
   return (
@@ -30,22 +26,26 @@ function TeachingCard({ teaching, onNavigate, onOpenBible }) {
   )
 }
 
-function InCategorySearchResults({ cat, tabIndex, searchQuery, onNavigate }) {
-  const query = searchQuery.trim().toLowerCase()
+function InCategorySearchResults({ cat, searchQuery, onNavigate }) {
+  const { results, isSearching } = useSearch(searchQuery, { categoryId: cat?.id })
+
   const subcatResults = []
   const teachingResults = []
+  const subcatSet = new Set()
 
-  if (cat && query) {
-    cat.subcategories.forEach((sub, subIdx) => {
-      if (sub.title.toLowerCase().includes(query)) {
-        subcatResults.push({ sub, subIdx })
+  if (isSearching) {
+    for (const result of results) {
+      const { sub, teaching, tabIndex: subIdx } = resolveResult(result, [cat])
+      if (!sub || !teaching) continue
+
+      const matchedFields = Object.values(result.match).flat()
+      if (matchedFields.includes('subcategoryTitle') && !subcatSet.has(sub.id)) {
+        subcatSet.add(sub.id)
+        subcatResults.push({ sub, subIdx, result })
+      } else {
+        teachingResults.push({ sub, subIdx, teaching, result })
       }
-      sub.teachings.forEach(t => {
-        if (t.text.toLowerCase().includes(query)) {
-          teachingResults.push({ sub, subIdx, teaching: t })
-        }
-      })
-    })
+    }
   }
 
   const hasResults = subcatResults.length > 0 || teachingResults.length > 0
@@ -58,7 +58,7 @@ function InCategorySearchResults({ cat, tabIndex, searchQuery, onNavigate }) {
       {subcatResults.length > 0 && (
         <>
           <div className="modern-search-results__label">Sections</div>
-          {subcatResults.map(({ sub, subIdx }) => (
+          {subcatResults.map(({ sub, subIdx, result }) => (
             <button
               key={sub.id}
               className="modern-search-result-row"
@@ -67,7 +67,7 @@ function InCategorySearchResults({ cat, tabIndex, searchQuery, onNavigate }) {
               <span className="modern-search-result-row__type modern-search-result-row__type--sub">Section</span>
               <div
                 className="modern-search-result-row__title"
-                dangerouslySetInnerHTML={{ __html: highlight(sub.title, query) }}
+                dangerouslySetInnerHTML={{ __html: highlightTerms(sub.title, result.terms) }}
               />
             </button>
           ))}
@@ -76,7 +76,7 @@ function InCategorySearchResults({ cat, tabIndex, searchQuery, onNavigate }) {
       {teachingResults.length > 0 && (
         <>
           <div className="modern-search-results__label">Teachings</div>
-          {teachingResults.map(({ sub, subIdx, teaching }) => (
+          {teachingResults.map(({ sub, subIdx, teaching, result }) => (
             <button
               key={teaching.id}
               className="modern-search-result-row"
@@ -85,7 +85,7 @@ function InCategorySearchResults({ cat, tabIndex, searchQuery, onNavigate }) {
               <span className="modern-search-result-row__type modern-search-result-row__type--teaching">Teaching</span>
               <div
                 className="modern-search-result-row__title"
-                dangerouslySetInnerHTML={{ __html: highlight(teaching.text.slice(0, 120) + (teaching.text.length > 120 ? '…' : ''), query) }}
+                dangerouslySetInnerHTML={{ __html: highlightTerms(teaching.text.slice(0, 120) + (teaching.text.length > 120 ? '…' : ''), result.terms) }}
               />
               <span className="modern-search-result-row__crumb">{sub.title}</span>
             </button>
@@ -203,7 +203,6 @@ export default function CategoryBrowser({
       ) : (
         <InCategorySearchResults
           cat={cat}
-          tabIndex={tabIndex}
           searchQuery={searchQuery}
           onNavigate={(subcatIdx, teachingId) => {
             onTabChange(subcatIdx)
