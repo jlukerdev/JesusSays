@@ -169,6 +169,17 @@
   border: none;
 }
 .modern-search-bar--disabled .modern-search-bar__wrap { opacity: 0.5; pointer-events: none; }
+.modern-search-bar__back-to-results {
+  display: inline-flex; align-items: center; gap: var(--space-1);
+  margin-bottom: var(--space-2); padding: var(--space-1) var(--space-2);
+  border: 1px solid var(--color-accent-mid); border-radius: var(--radius-sm);
+  background: var(--color-accent-light); color: var(--color-authority);
+  font-family: var(--font-body); font-size: var(--text-xs); font-weight: 600;
+  cursor: pointer; line-height: 1.2; max-width: 100%;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.modern-search-bar__back-to-results:hover { background: var(--color-accent); color: #fff; border-color: var(--color-accent); }
+.modern-search-bar__back-to-results > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
 
 /* ── CategoryTOC ── */
 .modern-cat-toc {
