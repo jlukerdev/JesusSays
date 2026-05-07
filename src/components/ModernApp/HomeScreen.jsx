@@ -81,7 +81,7 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
                 className="modern-search-result-row"
                 onClick={() => { onNavigateToCategory(cat.id, tabIndex); onClearSearch() }}
               >
-                <span className="modern-search-result-row__type modern-search-result-row__type--sub">Section</span>
+                <span className="modern-search-result-row__type modern-search-result-row__type--sub">Topic</span>
                 <div className="modern-search-result-row__title">
                   {highlightTerms(sub.title, result.terms)}
                 </div>
