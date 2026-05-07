@@ -49,7 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: gh-dev
-      url: ${{ steps.deployment.outputs.page_url }}/dev
+      url: https://jlukerdev.github.io/JesusSays_dev
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
