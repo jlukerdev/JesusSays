@@ -169,7 +169,7 @@ export default function CategoryBrowser({
         <div className="modern-browser-body">
           {!isMobile && (
             <nav className="modern-subcat-toc">
-              <div className="modern-subcat-toc__header">Discourses</div>
+              <div className="modern-subcat-toc__header">Topics</div>
               <div className="modern-subcat-toc__inner">
                 {cat?.subcategories.map((sub, idx) => (
                   <button

@@ -57,14 +57,14 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
         )}
         {catResults.length > 0 && (
           <>
-            <div className="modern-search-results__label">Categories</div>
+            <div className="modern-search-results__label">Themes</div>
             {catResults.map(({ cat, result }) => (
               <button
                 key={cat.id}
                 className="modern-search-result-row"
                 onClick={() => { onNavigateToCategory(cat.id); onClearSearch() }}
               >
-                <span className="modern-search-result-row__type modern-search-result-row__type--cat">Category</span>
+                <span className="modern-search-result-row__type modern-search-result-row__type--cat">Theme</span>
                 <div className="modern-search-result-row__title">
                   {highlightTerms(cat.title, result.terms)}
                 </div>
@@ -74,7 +74,7 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
         )}
         {subcatResults.length > 0 && (
           <>
-            <div className="modern-search-results__label">Subcategories</div>
+            <div className="modern-search-results__label">Topics</div>
             {subcatResults.map(({ cat, sub, tabIndex, result }) => (
               <button
                 key={`${cat.id}-${sub.id}`}
