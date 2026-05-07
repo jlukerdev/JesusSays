@@ -15,7 +15,6 @@ export default function AboutContent({ onShowVersion }) {
 
       {/* ── Hero ── */}
       <div className="about-hero">
-        <span className="about-hero__cross" aria-hidden="true">✝</span>
         <h1 className="about-hero__title">Jesus Says</h1>
       </div>
 

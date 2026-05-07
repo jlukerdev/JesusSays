@@ -838,7 +838,7 @@ a:hover {
 
 /* ── Hero section ── */
 .about-hero {
-  background: var(--color-authority);
+  background: var(--color-authority-about);
   color: var(--color-authority-fg);
   padding: var(--space-10) var(--space-6) var(--space-8);
   text-align: center;
@@ -1006,7 +1006,7 @@ a:hover {
 }
 
 .about-version-view__header {
-  background: var(--color-authority);
+  background: var(--color-authority-about);
   color: var(--color-authority-fg);
   padding: var(--space-10) var(--space-5) var(--space-5);
   display: flex;

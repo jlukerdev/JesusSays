@@ -60,14 +60,14 @@ function InCategorySearchResults({ cat, searchQuery, onNavigate }) {
       )}
       {subcatResults.length > 0 && (
         <>
-          <div className="modern-search-results__label">Sections</div>
+          <div className="modern-search-results__label">Topics</div>
           {subcatResults.map(({ sub, subIdx, result }) => (
             <button
               key={sub.id}
               className="modern-search-result-row"
               onClick={() => onNavigate(subIdx, null)}
             >
-              <span className="modern-search-result-row__type modern-search-result-row__type--sub">Section</span>
+              <span className="modern-search-result-row__type modern-search-result-row__type--sub">Topic</span>
               <div className="modern-search-result-row__title">
                 {highlightTerms(sub.title, result.terms)}
               </div>
@@ -140,7 +140,7 @@ export default function CategoryBrowser({
     <div className="modern-category-browser">
       <div className="modern-cat-hero">
         <button className="modern-view-topics-btn" onClick={isMobile ? onGoHome : onShowToc}>
-          <Menu size={16} /> View Topics
+          <Menu size={16} /> View Themes
         </button>
         <h2 className="modern-cat-hero__title">{cat?.title}</h2>
 
@@ -169,7 +169,7 @@ export default function CategoryBrowser({
         <div className="modern-browser-body">
           {!isMobile && (
             <nav className="modern-subcat-toc">
-              <div className="modern-subcat-toc__header">Discourses</div>
+              <div className="modern-subcat-toc__header">Topics</div>
               <div className="modern-subcat-toc__inner">
                 {cat?.subcategories.map((sub, idx) => (
                   <button
@@ -187,7 +187,7 @@ export default function CategoryBrowser({
           <div className="modern-teachings-list">
             {visibleTeachings.length === 0 ? (
               <div className="modern-empty-state">
-                No teachings from {activeBookFilter} in this section.
+                No teachings from {activeBookFilter} in this topic.
               </div>
             ) : (
               visibleTeachings.map(teaching => (

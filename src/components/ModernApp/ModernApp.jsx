@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BookOpen, Search } from 'lucide-react'
+import { Search } from 'lucide-react'
 import useStore from '../../store.js'
 import ModernNavBar from './ModernNavBar.jsx'
 import ModernSearchBar from './ModernSearchBar.jsx'
@@ -126,11 +126,11 @@ export default function ModernApp() {
               ) : (
                 !isMobile && (
                   <div className="modern-home-placeholder">
-                    <BookOpen className="modern-home-placeholder__icon" aria-hidden="true" />
-                    <h2 className="modern-home-placeholder__heading">Explore the Words of Jesus</h2>
+                    <img src="/JesusSays/icons/chat_bub_512.svg" className="modern-home-placeholder__icon" alt="" aria-hidden="true" />
+                    <h2 className="modern-home-placeholder__heading">Explore the Teachings of Jesus Christ</h2>
                     <p className="modern-home-placeholder__body">
-                      Choose a <strong>Topic</strong> to dive into a theme,
-                      or use the <Search size={14} className="modern-home-placeholder__inline-icon" aria-hidden="true" /> <strong>search bar</strong> above.
+                      Choose a <strong>Theme</strong> to dive into the <strong>Topics</strong>,
+                      <br />or use the <Search size={14} className="modern-home-placeholder__inline-icon" aria-hidden="true" /> <strong>Search</strong> above.
                     </p>
                   </div>
                 )
