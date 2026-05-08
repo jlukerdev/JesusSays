@@ -28,6 +28,7 @@ Additional rules:
 3. **Voice:** Jesus named as the speaker with a varied verb (says, teaches, declares, tells of, warns, blesses, proclaims, cries out, likens, prays, calls, charges, names, draws a parable, etc.).
 4. **No quotation marks** in the new text.
 5. **No doctrinal interpretation** — no "this teaches us that…" / "this means…". Stick to what is spoken or described.
+6. **Modern English (NKJV-style).** Render the summary in contemporary speaking voice modeled on the NKJV — not the KJV. Replace archaic pronouns and verb forms (`shall`→`will`, `thou`/`thee`/`ye`→`you`, `thy`/`thine`→`your`/`yours`, `saith`→`says`, `doth`→`does`, `verily`→`truly`, `behold`→omit or `look`). Keep iconic phrasings that have entered everyday English unchanged (e.g. *fatted calf*, *the least of these*, *salt of the earth*, *lay down his life*, *the kingdom of God*); modernize the rest.
 
 ### Approved tightening examples
 
@@ -35,15 +36,15 @@ The three reference examples that calibrate the caps. The full rewrite pass prod
 
 **1–2 verse cap example** — `30.1.3` Matt 12:41–42 (24 words):
 
-> Jesus declares that Nineveh and the queen of the south shall condemn this generation, for a greater than Jonas and Solomon is here.
+> Jesus declares that Nineveh and the queen of the South will condemn this generation, for one greater than Jonah and Solomon is here.
 
-**3–10 verse cap example** — `6.4.4` Luke 13:32–35 (45 words):
+**3–10 verse cap example** — `6.4.4` Luke 13:32–35 (44 words):
 
-> Jesus calls Herod that fox and says he will continue his work until perfected on the third day. He laments over Jerusalem that kills her prophets, saying how often he would have gathered her children as a hen gathers her brood, but she would not.
+> Jesus calls Herod that fox and says he will continue his work until perfected on the third day. He laments over Jerusalem that kills its prophets, saying how often he longed to gather her children as a hen gathers her brood, but they refused.
 
 **>10 verse cap example** — `5.2.3` Luke 15:11–32, prodigal son (69 words):
 
-> Jesus tells of a younger son who takes his portion to a far country, wastes it in riotous living, and in famine resolves to return confessing he has sinned. His father runs to meet him with compassion and restores him with the best robe and the fatted calf, rebuking the elder son's anger and declaring that this son was dead and is alive again, was lost and is found.
+> Jesus tells of a younger son who takes his inheritance to a distant country, squanders it in reckless living, and in famine resolves to return confessing he has sinned. His father runs to meet him with compassion and restores him with the best robe and the fatted calf, rebuking the older son's anger and declaring that this son was dead and is alive again, was lost and is found.
 
 ## Files
 
@@ -156,12 +157,12 @@ node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --force
 
 1. **Pilot (complete).** 20 representative teachings spanning categories, parables, and long passages. Voice approved.
 2. **Full pass (complete).** All 655 teachings have authored `new` summaries in `output/summary-rewrite.json`. Voice matches the pilot.
-3. **Tighten pass (queued — not yet executed).** Audit revealed 360 of 655 entries (≈55%) exceed the word caps in **Length & Style Rules**. Many are run-on, restating the entire passage rather than summarizing it. The tighten pass will:
+3. **Tighten + modernize pass (queued — not yet executed).** Audit revealed 360 of 655 entries (≈55%) exceed the word caps in **Length & Style Rules**, and the full pass authored summaries in KJV-flavored English (`shall`, `thou`, `ye`, `saith`, etc.) rather than the modern voice now required by Rule #6. The tighten pass will:
    - Read each entry's existing `new`, current `verseSpan`, and applicable cap.
-   - For entries already under cap: leave `new` unchanged.
-   - For entries over cap: compress to ≤ cap, preserving the same Jesus-verb and the same load-bearing point. Apply the clause limit (one em-dash *or* two commas per sentence; otherwise split).
-   - Recompute `needsReview` and `reviewReasons` after compression — the `structural-change` flag is recomputed against the *original* `old`, so most run-on rewrites that were flagged purely for length-driven Jaccard drift may un-flag once they are tighter and reuse more original wording.
-   - Strategy: parallel agents per category, mirroring the full-pass dispatch. Input file = current mapping entries; output = updated entries with shortened `new`.
+   - **Modernize every entry** — apply Rule #6 to replace KJV-flavored language with NKJV-style modern English, regardless of whether the entry is over or under cap.
+   - **Compress over-cap entries** to ≤ cap, preserving the same Jesus-verb and the same load-bearing point. Apply the clause limit (one em-dash *or* two commas per sentence; otherwise split). Entries already under cap keep their length; only the language is modernized.
+   - Recompute `needsReview` and `reviewReasons` after the pass — the `structural-change` flag is recomputed against the *original* `old`, so length-driven Jaccard drift may either resolve (when shorter) or worsen (when modernization further reshapes wording).
+   - Strategy: parallel agents per category, mirroring the full-pass dispatch. Input file = current mapping entries; output = updated entries with modernized and (where needed) shortened `new`.
 4. **Apply.** Run `apply-summaries.mjs` (no flag) to apply unflagged entries; review the consolidated `summary-rewrite-review.md` for flagged entries; run `apply-summaries.mjs --include-review` once approved.
 5. **Standards update.** After the full rewrite is applied, update `catalog_builds/engine/TAXONOMY_STANDARDS.md` Part 4 to soften the strict "1 sentence" rule for the `text` field and document the new length caps. This is wording-only and per Workflow 6 does not require a `REVISION.md` version bump.
 
