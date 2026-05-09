@@ -120,6 +120,17 @@ Only remove the `"parable"` tag from a teaching if it clearly fails all three cr
 
 ---
 
+## Known False Positive Audit Flags
+
+The `audit-catalog.js` script flags teachings as `parable-candidate` when their `text` contains figurative language that resembles parable phrasing. The following teachings are **not parables** and should not be tagged. Future audit runs will continue to flag these; document them here by `uid` (stable across renumbering) to avoid re-tagging.
+
+| UID | ID (at time of flagging) | Teaching | Reason for Non-Parable Status |
+|---|---|---|---|
+| 7ed028dc-3ba7-4258-8488-b26345ff4a67 | 27.1.3 | Jesus sends his disciples into the city to a certain man with the message that the Passover is at his house. | Direct instructional directive within the Passion narrative; not a figurative story standing for something else. |
+| a46d1fb7-3dc0-4a2a-8957-b5f035645bb6 | 29.2.3 | Jesus declares the Son of Man's coming will be like lightning from east to west, visible to all from east to west. | Eschatological prophecy/metaphor (not figurative narrative). The comparison is descriptive, not a self-contained story with narrative structure. See TAG_RULES.md § Exclude: Direct Predictions. |
+
+---
+
 ## Other Tags (Informational, Not Governed)
 
 These tags exist in the catalog but are outside the governed ruleset. They may be added or removed without this process:
