@@ -1,9 +1,9 @@
 # Summary Rewrite — Review Queue
 
-- **Phase:** full
-- **Generated:** 2026-05-08T01:34:27.013Z
+- **Phase:** tighten-modernize
+- **Generated:** 2026-05-09T03:15:36.491Z
 - **Total entries in mapping:** 655
-- **Flagged for review:** 288
+- **Flagged for review:** 195
 
 Review each entry below; check **Approved as written** or note required edits.
 To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --include-review` once approved.
@@ -23,7 +23,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens the kingdom of heaven to a grain of mustard seed which, though the least of all seeds, grows to become the greatest of herbs and a tree where the birds of the air come and lodge in its branches.
+> Jesus likens the kingdom of heaven to a mustard seed which, though least of all seeds, grows into a tree where the birds of the air come and lodge in its branches.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -43,7 +43,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens the kingdom of heaven to leaven which a woman takes and hides in three measures of meal until the whole is leavened.
+> Jesus likens the kingdom of heaven to leaven which a woman hides in three measures of meal until the whole is leavened.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -63,7 +63,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens the kingdom of heaven to treasure hid in a field which a man, having found, hides and for joy sells all that he has to buy that field, and again to a merchant seeking goodly pearls who, finding one of great price, sells all that he has and buys it.
+> Jesus likens the kingdom of heaven to treasure hidden in a field which a man finds and for joy sells all to buy that field, and to a merchant who finds one pearl of great price and sells all to buy it.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -75,7 +75,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 - **uid:** `a3dbe24e-91bc-466c-8165-565c07aa5d1c`
 - **Category:** The Kingdom of God
 - **Primary reference:** Matt 13:47–50 (4 verses) · tags: parable
-- **Review reasons:** parable, structural-change
+- **Review reasons:** parable
 
 **Old:**
 
@@ -83,7 +83,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens the kingdom of heaven to a net cast into the sea that gathers of every kind, which when full is drawn to shore so that the good are gathered into vessels and the bad cast away, and declares that so shall it be at the end of the world when the angels sever the wicked from among the just and cast them into the furnace of fire where there shall be wailing and gnashing of teeth.
+> Jesus likens the kingdom of heaven to a net cast into the sea that gathers every kind; the good are kept and the bad cast away. At the end of the age angels will sever the wicked from the just.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -103,7 +103,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens every scribe instructed unto the kingdom of heaven to a householder who brings forth out of his treasure things both new and old.
+> Jesus likens every scribe instructed for the kingdom of heaven to a householder who brings out of his treasure things new and old.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -123,7 +123,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens the kingdom of heaven to a king who makes a marriage for his son and sends his servants to call those who were bidden, but they refuse and even kill the servants, so the king destroys them, burns their city, and sends his servants into the highways to gather all they find, both bad and good; when one is found at the feast without a wedding garment he is bound and cast into outer darkness, for many are called but few are chosen.
+> Jesus likens the kingdom of heaven to a king who makes a wedding for his son and sends servants to call the invited, but they refuse and kill the servants. The king destroys them, burns their city, and sends servants into the highways to gather all they find. One found without a wedding garment is cast into outer darkness, for many are called but few chosen.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -143,7 +143,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens the kingdom of heaven to ten virgins who take their lamps and go forth to meet the bridegroom — five wise who take oil in their vessels and five foolish who take none — and while the bridegroom tarries they all sleep, but at midnight a cry is made and the wise enter in with him to the marriage while the foolish, gone to buy oil, return to a shut door and hear, I know you not, so he charges his hearers to watch, for they know neither the day nor the hour.
+> Jesus likens the kingdom of heaven to ten virgins going to meet the bridegroom — five wise with oil and five foolish without. While he tarries all sleep; at midnight a cry sounds, the wise enter the marriage while the foolish find a shut door and hear, I do not know you. He charges them to watch, for they know neither the day nor the hour.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -163,7 +163,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a sower whose seed falls by the wayside and is devoured by fowls, on stony ground where it springs up but withers without root, among thorns that choke it, and on good ground where it brings forth fruit a hundredfold, sixtyfold, and thirtyfold; he then explains that the seed is the word of the kingdom and the soils are the hearers — the wayside from whom the wicked one snatches it, the stony who receive it with joy but fall away under tribulation, the thorny who are choked by the cares of this world and the deceitfulness of riches, and the good ground who hear, understand, and bear fruit.
+> Jesus tells of a sower whose seed falls by the wayside and is devoured, on stony ground where it withers, among thorns that choke it, and on good ground where it bears a hundredfold. He explains the seed as the word of the kingdom and the soils as hearers — wayside, stony, thorny, and good who hear and bear fruit.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -183,7 +183,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens the kingdom of heaven to a man who sows good seed in his field while his enemy sows tares among the wheat, and tells the servants to let both grow together until the harvest, when the reapers will gather and burn the tares and gather the wheat into the barn; he then explains that the sower is the Son of man, the field the world, the good seed the children of the kingdom, the tares the children of the wicked one, the enemy the devil, the harvest the end of the world, and the reapers the angels, who at that time shall gather all things that offend out of his kingdom and cast them into a furnace of fire where there shall be wailing and gnashing of teeth, while the righteous shall shine forth as the sun in the kingdom of their Father.
+> Jesus likens the kingdom to a man who sows good seed while his enemy sows tares among the wheat. He tells the servants to let both grow until the harvest, when reapers will burn the tares and gather the wheat. He explains the harvest as the end of the age, when angels gather out all that offends and the righteous shine as the sun.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -203,7 +203,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus asks the disciples whether they know this parable, saying that if they do not, how then will they know all parables.
+> Jesus asks the disciples whether they understand this parable, saying that if not, how then will they know all parables.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -223,7 +223,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens the kingdom of God to a man who casts seed into the ground, then sleeps and rises night and day while the seed springs and grows up he knows not how, for the earth brings forth fruit of herself — first the blade, then the ear, then the full corn — and when the fruit is ripe he puts in the sickle, because the harvest is come.
+> Jesus likens the kingdom of God to a man who scatters seed and sleeps while it springs up he knows not how. The earth bears fruit of itself — first blade, then ear, then full grain. When it is ripe he puts in the sickle.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -243,7 +243,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens the kingdom of heaven to a householder who hires labourers for his vineyard at a penny a day, going out at the third, sixth, ninth, and eleventh hours to hire still more, and at evening orders his steward to pay every man a penny beginning with the last; when those hired first murmur, he answers that he does them no wrong, for he gives to the last what he agreed with them, declaring that the last shall be first and the first last, for many are called but few chosen.
+> Jesus likens the kingdom of heaven to a householder who hires laborers throughout the day for a denarius. At evening he pays each one a denarius beginning with the last; when those hired first murmur, he answers that he does no wrong. He declares that the last will be first and the first last, for many are called but few chosen.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -255,7 +255,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 - **uid:** `32d1d115-a46a-4b11-a0e7-fd1d35f8030a`
 - **Category:** The Kingdom of God
 - **Primary reference:** Matt 21:28–31 (4 verses) · tags: parable
-- **Review reasons:** parable
+- **Review reasons:** parable, structural-change
 
 **Old:**
 
@@ -263,7 +263,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a man with two sons, the first of whom refuses to go work in the vineyard but afterward repents and goes, while the second agrees but does not go, and declares that the publicans and the harlots go into the kingdom of God before those who only profess obedience.
+> Jesus tells of a man with two sons: the first refuses to work in the vineyard but later repents and goes, while the second agrees but does not go. Tax collectors and harlots enter the kingdom of God before those who only profess obedience.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -283,7 +283,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a householder who plants a vineyard, lets it out to husbandmen, and goes into a far country; when he sends servants to receive the fruits, the husbandmen beat, kill, and stone them, and at last kill his son to seize the inheritance, so the lord of the vineyard will destroy those husbandmen and let it out to others; he then declares that the stone which the builders rejected has become the head of the corner, that the kingdom of God shall be taken from them and given to a nation bringing forth its fruits, and that whoever falls on this stone shall be broken, but on whomsoever it falls, it will grind him to powder.
+> Jesus tells of a householder who plants a vineyard, leases it to tenants, and goes away. The tenants beat and kill the servants he sends, and finally kill his son to seize the inheritance — so the lord will destroy them and give the vineyard to others. He declares that the kingdom of God will be taken from them and given to a nation bearing its fruits.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -303,7 +303,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a man who had a fig tree planted in his vineyard and came three years seeking fruit on it and found none, and bid the dresser of the vineyard cut it down, but the dresser asked that it be let alone one more year while he digs about it and dungs it, and if it then bear fruit, well, and if not, after that it shall be cut down.
+> Jesus tells of a man whose fig tree bore no fruit for three years and is to be cut down, but the vinedresser asks one more year to dig and fertilize it before judgment.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -323,7 +323,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a man with a hundred sheep who, losing one, leaves the ninety and nine in the wilderness and goes after the lost one until he finds it, then lays it on his shoulders rejoicing and calls his friends and neighbours to rejoice with him, saying that likewise there shall be more joy in heaven over one sinner that repenteth than over ninety and nine just persons who need no repentance.
+> Jesus tells of a shepherd with a hundred sheep who leaves the ninety-nine to seek the one that is lost, then lays it on his shoulders rejoicing and calls his friends to celebrate, for there is more joy in heaven over one sinner who repents.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -343,7 +343,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a woman who, having ten pieces of silver and losing one, lights a candle, sweeps the house, and seeks diligently until she finds it, then calls her friends and neighbours to rejoice with her, and says that likewise there is joy in the presence of the angels of God over one sinner that repenteth.
+> Jesus tells of a woman with ten silver coins who, losing one, lights a lamp and sweeps the house until she finds it, then calls her neighbors to rejoice with her, saying there is joy among the angels over one sinner who repents.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -363,7 +363,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a man with two sons, the younger of whom takes his portion of goods into a far country and wastes his substance with riotous living until, in famine and feeding swine, he comes to himself and resolves to return to his father confessing he has sinned against heaven and is no more worthy to be called a son; the father, seeing him while yet a great way off, has compassion and runs and falls on his neck and kisses him, and calls for the best robe, a ring, shoes, and the fatted calf, declaring that this his son was dead and is alive again, was lost and is found; the elder son, returning from the field and hearing the music and dancing, is angry and refuses to go in, complaining that he has served many years without such a feast, but the father entreats him, saying, Son, thou art ever with me and all that I have is thine, and that it was meet to make merry, for thy brother was dead and is alive again, and was lost and is found.
+> Jesus tells of a younger son who takes his inheritance to a far country, squanders it in reckless living, and in famine resolves to return confessing he has sinned. His father runs to meet him with compassion and restores him with the best robe and the fatted calf, rebuking the older son's anger and declaring this son was dead and is alive again, was lost and is found.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -383,7 +383,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus asks whether the children of the bridechamber can mourn while the bridegroom is with them, then teaches that no man puts a piece of new cloth on an old garment lest the rent be made worse, and that men do not put new wine into old bottles lest the bottles break and the wine be spilled, but pour new wine into new bottles so both are preserved.
+> Jesus asks whether the wedding guests can mourn while the bridegroom is with them, then teaches that no one sews new cloth on an old garment or the tear is made worse, and no one puts new wine into old wineskins or the skins burst and the wine is spilled — new wine goes into new wineskins so both are preserved.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -403,7 +403,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a man who goes to a friend at midnight to ask for three loaves to set before a traveler, and though the friend at first refuses because the door is shut and his children are in bed, yet because of the man's importunity he rises and gives him as many as he needs.
+> Jesus tells of a man who goes to a friend at midnight for three loaves. Though the friend refuses because his door is shut and his children are in bed, yet because of the man's persistence he rises and gives him what he needs.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -423,7 +423,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a widow who keeps coming to an unjust judge that fears not God nor regards man, until at last he avenges her so that she will not weary him with her continual coming, and declares that God shall much more speedily avenge his elect who cry to him day and night, asking whether the Son of man shall find faith on the earth when he comes.
+> Jesus tells of a widow who keeps pressing an unjust judge until he avenges her, and declares God will much more speedily avenge his elect who cry day and night, asking whether the Son of Man will find faith on earth when he comes.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -435,7 +435,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 - **uid:** `8d047a5e-8aeb-4ad9-a785-05073e3c7dc1`
 - **Category:** Love
 - **Primary reference:** Luke 10:30–37 (8 verses) · tags: parable
-- **Review reasons:** parable
+- **Review reasons:** parable, structural-change
 
 **Old:**
 
@@ -443,7 +443,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a man going down from Jerusalem to Jericho who falls among thieves and is left half dead, whom a priest and a Levite pass by on the other side, but a Samaritan has compassion, binds up his wounds with oil and wine, brings him to an inn, and pays the host to care for him, and asks which of the three was neighbour to the wounded man, charging his hearer to go and do likewise.
+> Jesus tells of a man left half dead by thieves, passed by a priest and Levite but tended by a Samaritan who binds his wounds and pays for his care at an inn, and charges his hearer to go and do likewise.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -463,7 +463,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens whoever hears his sayings and does them to a wise man who built his house upon a rock, which stood when the rain descended and the floods came and the winds blew, and likens whoever hears them but does them not to a foolish man who built his house upon the sand, which fell, and great was its fall.
+> Jesus likens whoever hears his sayings and does them to a wise man who built on rock, which stood when the storms came. Whoever hears but does them not is like a foolish man who built on sand, and great was its fall.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -483,7 +483,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells those bidden to a wedding not to sit down in the highest room lest a more honourable man come and they be put to shame, but to take the lowest room so the host may say, Friend, go up higher; for whoever exalts himself shall be abased and he that humbles himself shall be exalted, and he charges them when they make a feast to call not their friends or rich neighbors but the poor, the maimed, the lame, and the blind, who cannot recompense them, so that they shall be recompensed at the resurrection of the just.
+> Jesus tells the invited to take the lowest seat lest they be moved down in shame, for whoever exalts himself will be humbled. When they host a feast, they should invite the poor and lame who cannot repay them, and be repaid at the resurrection.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -503,7 +503,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a servant who comes from plowing or feeding cattle and is told first to make ready his master's meal and serve him before eating himself, and asks whether the master thanks the servant for doing what was commanded; so likewise, when the disciples have done all they were commanded, they are to say, We are unprofitable servants, we have done that which was our duty to do.
+> Jesus tells of a servant who must serve his master's meal before eating, and asks if the master thanks him for what was commanded. So when disciples have done all, they should say they are unworthy servants who only did their duty.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -515,7 +515,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 - **uid:** `0ff5fb6d-dcd3-4eea-8819-aeb7f45c6aef`
 - **Category:** Humility and Servanthood
 - **Primary reference:** Luke 18:9–14 (6 verses) · tags: parable
-- **Review reasons:** parable
+- **Review reasons:** parable, structural-change
 
 **Old:**
 
@@ -523,7 +523,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of two men who go up to the temple to pray — a Pharisee who thanks God he is not as other men and recounts his fasts and tithes, and a publican who will not lift up his eyes but smites his breast and asks God to be merciful to him a sinner — and declares that the publican goes down to his house justified rather than the other, for everyone who exalts himself shall be abased and he who humbles himself shall be exalted.
+> Jesus tells of a Pharisee who boasts to God of his fasts and tithes and a publican who beats his breast pleading mercy. He declares the publican goes home justified — whoever exalts himself will be humbled, and whoever humbles himself will be exalted.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -543,7 +543,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells Simon the Pharisee of a creditor who frankly forgave two debtors, one owing five hundred pence and the other fifty, and asks which will love him most; when Simon answers the one forgiven more, Jesus contrasts the woman who has washed his feet with tears, kissed them, and anointed them with ointment against Simon, who gave him no water, no kiss, and no oil.
+> Jesus tells Simon of a creditor who forgave two debtors, one owing five hundred pence and the other fifty, and asks who will love him most. He contrasts the woman who washed his feet with tears against Simon, who gave no water, kiss, or oil.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -563,7 +563,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens the kingdom of heaven to a king who, moved with compassion, forgives a servant his debt of ten thousand talents, but when that servant goes out and seizes a fellowservant who owes him a hundred pence, casting him into prison until the debt is paid, the lord delivers the wicked servant to the tormentors and warns that so likewise his heavenly Father shall do to them if they do not from their hearts forgive every brother his trespasses.
+> Jesus likens the kingdom of heaven to a king who, moved with compassion, forgives a servant ten thousand talents. When that servant seizes a fellowservant owing a hundred pence and casts him into prison, the lord delivers him to the tormentors, warning his heavenly Father will do likewise unless they forgive a brother from the heart.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -583,7 +583,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus warns against covetousness, saying a man's life consists not in the abundance of the things he possesses, and tells of a rich man whose ground brought forth plentifully and who resolved to pull down his barns and build greater to store his goods and tell his soul to take its ease, eat, drink, and be merry — but God said unto him, Thou fool, this night thy soul shall be required of thee, and so is he that lays up treasure for himself and is not rich toward God.
+> Jesus warns against covetousness and tells of a rich man who planned bigger barns and ease for his soul. God said, You fool, this night your soul will be required of you. So is he who lays up treasure but is not rich toward God.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -603,7 +603,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a man traveling into a far country who delivers his goods to his servants — five talents to one, two to another, one to another, each according to his ability — and on his return commends the servants who traded and doubled what they were given as good and faithful, but condemns the servant who hid his lord's talent in the earth as wicked and slothful, taking that talent from him and casting the unprofitable servant into outer darkness, declaring that to everyone who has shall be given but from him who has not shall be taken away even that which he has.
+> Jesus tells of a man who delivers talents to his servants — five, two, and one, each according to ability. On his return he commends those who doubled what they were given, but condemns the one who hid his talent as wicked and slothful, casting him into outer darkness. To everyone who has more will be given; from him who has not even what he has will be taken.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -623,7 +623,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a steward accused of wasting his lord's goods who, about to be put out of his stewardship, calls in his lord's debtors and reduces their bills to make friends for himself, and the lord commends the unjust steward for acting wisely; he charges his hearers to make friends for themselves by the mammon of unrighteousness, declares that he who is faithful in the least is faithful also in much and he who is unjust in the least is unjust also in much, and says no servant can serve two masters — they cannot serve God and mammon.
+> Jesus tells of a steward accused of wasting his lord's goods who, about to be put out, calls in the debtors and reduces their bills to make friends for himself; the lord commends the unjust steward for acting wisely. He charges his hearers to make friends by the mammon of unrighteousness, says one faithful in little is faithful in much, and that no one can serve God and mammon.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -635,7 +635,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 - **uid:** `5a626e47-88ea-4655-8c60-4a37ae982c82`
 - **Category:** Justice and Mercy
 - **Primary reference:** Luke 10:30–37 (8 verses) · tags: parable
-- **Review reasons:** parable
+- **Review reasons:** parable, structural-change
 
 **Old:**
 
@@ -643,7 +643,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a certain man going down from Jerusalem to Jericho who falls among thieves and is left half dead, passed by first a priest and then a Levite, until a certain Samaritan comes where he is, has compassion, binds his wounds with oil and wine, sets him on his own beast, brings him to an inn and pays the host to take care of him, and then asks which of the three was neighbor to the man who fell among the thieves, charging his hearer to go and do likewise.
+> Jesus tells of a man going from Jerusalem to Jericho who falls among thieves. A priest and Levite pass by; a Samaritan has compassion and pays an innkeeper to care for him. He asks which was neighbor, charging him to go and do likewise.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -663,7 +663,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens the would-be disciple to a man intending to build a tower who first sits down and counts the cost lest he be unable to finish and be mocked, and to a king going to war who first considers whether with ten thousand he can meet one coming with twenty thousand or else sends an embassy desiring conditions of peace, and declares that whoever forsakes not all that he has cannot be his disciple.
+> Jesus likens the would-be disciple to a man building a tower who first counts the cost, and to a king going to war who first weighs whether he can win or must sue for peace. Whoever does not forsake all cannot be his disciple.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -683,7 +683,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of two men who go up to the temple to pray — a Pharisee who stands and thanks God that he is not as other men, extortioners, unjust, adulterers, or even as the publican, recounting his fasts and tithes, and a publican who stands afar off, will not lift up his eyes to heaven, but smites his breast saying, God be merciful to me a sinner — and declares that this man went down to his house justified rather than the other, for everyone who exalts himself shall be abased and he who humbles himself shall be exalted.
+> Jesus tells of a Pharisee who boasts to God of his fasts and tithes and a publican who beats his breast pleading mercy. He declares the publican goes home justified — whoever exalts himself will be humbled, and whoever humbles himself will be exalted.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -703,7 +703,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a faithful and wise servant whom his lord makes ruler over his household to give them meat in due season and whom his lord, when he comes, shall find so doing and bless by setting him over all his goods; but if that evil servant shall say in his heart that his lord delays his coming and shall begin to smite his fellowservants and eat and drink with the drunken, his lord shall come in a day he looks not for and an hour he is not aware of, and shall cut him asunder and appoint him his portion with the hypocrites where there shall be weeping and gnashing of teeth.
+> Jesus tells of a faithful and wise servant whom his lord makes ruler over his household; when his lord finds him so doing he will set him over all his goods, but if that evil servant says his lord delays his coming and beats his fellows, his lord will come at an unexpected hour and appoint him with the hypocrites where there will be weeping and gnashing of teeth.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -723,7 +723,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens the kingdom of heaven to ten virgins who took their lamps and went forth to meet the bridegroom — five wise who took oil in their vessels and five foolish who took none — and while the bridegroom tarried they all slumbered and slept; at midnight a cry was made, and the foolish, finding their lamps gone out, went to buy oil, but while they went the bridegroom came and they that were ready went in with him to the marriage and the door was shut, and afterward he answered the others saying he knew them not — therefore watch, for they know neither the day nor the hour wherein the Son of man comes.
+> Jesus likens the kingdom to ten virgins who took lamps to meet the bridegroom — five wise with oil and five foolish without; while he tarried they slept, and at midnight a cry came; the foolish went to buy oil, but the bridegroom arrived and the wise entered, and the door was shut — watch, for you know neither the day nor the hour.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -743,7 +743,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus charges his disciples to let their loins be girded about and their lights burning, and to be like men that wait for their lord's return from the wedding to open to him immediately when he knocks; blessed are those servants whom the lord, when he comes, shall find watching, for he shall gird himself and make them sit down to meat and serve them, and they are to be ready also, for the Son of man comes at an hour when they think not.
+> Jesus charges his disciples to keep their lamps burning like men waiting for their lord's return; blessed are those he finds watching, for he will gird himself and serve them — and the Son of Man comes at an unexpected hour.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -763,7 +763,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus draws a parable from the fig tree: as its branch becoming tender and putting forth leaves shows that summer is nigh, so when his hearers see all these things they may know that it is near, even at the doors.
+> Jesus draws a parable from the fig tree: as its branch becoming tender and putting forth leaves shows that summer is near, so when his hearers see all these things they may know that it is near, even at the doors.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -785,7 +785,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that the true shepherd enters the sheepfold by the door and his sheep know his voice, then identifies himself as the door by which any may enter and be saved and as the good shepherd who lays down his life for the sheep, who knows his own as the Father knows him, and who has other sheep not of this fold whom he must also bring, so that there shall be one fold and one shepherd.
+> Jesus declares that the true shepherd enters by the door and his sheep know his voice. He calls himself the door by which any may enter and be saved, and the good shepherd who lays down his life for the sheep, knows his own as the Father knows him, and has other sheep he must bring, so there will be one flock and one shepherd.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -805,7 +805,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus says that every kingdom divided against itself is brought to desolation and every city or house so divided shall not stand, asks how Satan's kingdom can stand if Satan casts out Satan, declares that if he by the Spirit of God casts out devils then the kingdom of God is come unto them, likens his work to one binding the strong man before spoiling his house, and warns that he that is not with him is against him and he that gathers not with him scatters abroad.
+> Jesus says every kingdom divided against itself cannot stand. He asks how Satan's kingdom can stand if Satan casts out Satan, declares that if he casts out devils by the Spirit of God the kingdom of God has come, and likens his work to binding the strong man before plundering his house. Whoever is not with him is against him.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -825,7 +825,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus asks the Pharisees what they think of Christ and whose son he is, then citing David who in spirit calls him Lord — saying the LORD said unto my Lord, sit thou on my right hand till I make thine enemies thy footstool — he asks how, if David then calls him Lord, he is his son.
+> Jesus asks the Pharisees what they think of the Christ and whose son he is, then citing David who in the Spirit calls him Lord — saying the LORD said to my Lord, sit at my right hand until I make your enemies your footstool — he asks how, if David then calls him Lord, he is his son.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -845,7 +845,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> At Lazarus's tomb Jesus commands the stone be taken away, reminds Martha that if she would believe she should see the glory of God, lifts his eyes to thank the Father for hearing him so that the people standing by may believe the Father has sent him, then cries with a loud voice for Lazarus to come forth and bids them loose him and let him go.
+> At Lazarus's tomb Jesus commands the stone be taken away, reminds Martha that if she would believe she should see the glory of God, lifts his eyes to thank the Father for hearing him so that the people standing by may believe the Father has sent him, then cries with a loud voice for Lazarus to come out and bids them loose him and let him go.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -857,7 +857,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 - **uid:** `ac52f0ba-ee48-441a-9d92-043461693fd4`
 - **Category:** Faith and Trust
 - **Primary reference:** Matt 6:25–32 (17 verses)
-- **Review reasons:** long-passage, structural-change
+- **Review reasons:** long-passage
 
 **Old:**
 
@@ -865,7 +865,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus charges his hearers to take no thought for their life, what they shall eat or drink, nor for their body, what they shall put on, declaring that the life is more than meat and the body than raiment, and that the heavenly Father knows they have need of all these things.
+> Jesus charges his hearers to take no thought for life, food, drink, or clothing, declaring that life is more than food and the body more than clothing, and that the heavenly Father knows they need all these things.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -885,7 +885,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus says that whoever puts away his wife, except for the cause of fornication, causes her to commit adultery, and whoever marries her that is divorced commits adultery.
+> Jesus says that whoever puts away his wife, except for the cause of fornication, causes her to commit adultery, and whoever marries her who is divorced commits adultery.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -905,7 +905,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the mother of Zebedee's sons and the disciples that they know not what they ask, that to drink his cup and be baptized with his baptism is theirs but to sit at his right or left is the Father's to give, and charges them that unlike the princes of the Gentiles who exercise dominion, whoever would be great among them must be their minister and whoever would be chief must be their servant.
+> Jesus tells the mother of Zebedee's sons and the disciples that they do not know what they ask, that drinking his cup is theirs but sitting at his right or left is the Father's to give. He charges that unlike Gentile rulers who lord it over others, whoever would be great among them must be their servant and whoever would be first must be slave of all.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -917,7 +917,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 - **uid:** `867a010e-5f78-4c72-9fb6-0c46e5ef5d18`
 - **Category:** Forgiveness and Reconciliation
 - **Primary reference:** Matt 9:2, 4–6 (14 verses)
-- **Review reasons:** long-passage, structural-change
+- **Review reasons:** long-passage
 
 **Old:**
 
@@ -925,7 +925,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares to the man sick of the palsy that his sins are forgiven, and when the scribes reason in their hearts that this is blasphemy, he asks whether it is easier to say thy sins be forgiven thee or to say arise and walk, then heals the man so they may know that the Son of man has power on earth to forgive sins.
+> Jesus declares to a paralytic that his sins are forgiven, and when scribes call it blasphemy he asks whether it is easier to say your sins are forgiven or to say arise and walk, then heals the man so they may know the Son of Man has power on earth to forgive sins.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -945,7 +945,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the Sadducees that they err, not knowing the scriptures nor the power of God, that in the resurrection people neither marry nor are given in marriage but are as the angels of God in heaven, and that God is not the God of the dead but of the living, being the God of Abraham, Isaac, and Jacob.
+> Jesus tells the Sadducees they err, not knowing the scriptures nor the power of God, that in the resurrection people neither marry nor are given in marriage but are as the angels of God in heaven, and that God is not the God of the dead but of the living, the God of Abraham, Isaac, and Jacob.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -965,7 +965,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus says that a rich man shall hardly enter the kingdom of heaven — that it is easier for a camel to go through the eye of a needle than for a rich man to enter the kingdom of God — and that what is impossible with men is possible with God.
+> Jesus says a rich man will hardly enter the kingdom of heaven, for it is easier for a camel to go through the eye of a needle than for a rich man to enter the kingdom of God. What is impossible with men is possible with God.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -985,7 +985,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus, asked whether it is lawful to give tribute to Caesar, calls his questioners hypocrites, asks for the tribute money, and seeing Caesar's image and superscription tells them to render unto Caesar the things which are Caesar's and unto God the things that are God's.
+> Asked whether it is lawful to give tribute to Caesar, Jesus calls his questioners hypocrites and asks for the tribute coin. Seeing Caesar's image and inscription, he tells them to render to Caesar what is Caesar's and to God what is God's.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1005,7 +1005,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells of a rich man clothed in purple and fine linen who fared sumptuously every day and a beggar named Lazarus laid at his gate full of sores; when both died, Lazarus was carried by the angels into Abraham's bosom while the rich man in hell lifted up his eyes in torments, and Abraham told him that in his lifetime he received his good things and Lazarus evil things but now he is comforted and the rich man tormented, and that between them a great gulf is fixed which none can pass.
+> Jesus tells of a rich man clothed in purple who fared sumptuously, and a beggar named Lazarus laid at his gate full of sores. When both died, Lazarus was carried into Abraham's bosom while the rich man in hell lifted his eyes in torment. Abraham tells him he received good things in life and Lazarus evil; now Lazarus is comforted, he tormented, and a great gulf is fixed between them.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1017,7 +1017,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 - **uid:** `81d9f263-683a-49df-aa2e-3891749fc044`
 - **Category:** Justice and Mercy
 - **Primary reference:** Matt 25:31–46 (16 verses)
-- **Review reasons:** long-passage
+- **Review reasons:** long-passage, structural-change
 
 **Old:**
 
@@ -1025,7 +1025,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus describes the Son of man coming in his glory with all the holy angels and sitting upon the throne of his glory, before whom all nations are gathered and separated as a shepherd divides his sheep from the goats; the King bids those on his right to inherit the kingdom prepared from the foundation of the world because they fed him when hungry, gave him drink when thirsty, took him in as a stranger, clothed him, and visited him when sick and in prison, declaring that what was done unto one of the least of his brethren was done unto him, while those on his left are sent into everlasting fire prepared for the devil and his angels for failing to do these things, going away into everlasting punishment but the righteous into life eternal.
+> Jesus describes the Son of Man coming in glory and gathering all nations, separating them as a shepherd divides sheep from goats. The King welcomes those on his right to inherit the kingdom for feeding, clothing, and visiting him in the least of these, and sends those on the left into everlasting fire for failing to do so, the righteous going into life eternal.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1037,7 +1037,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 - **uid:** `64ee136c-0b93-48c1-a15b-0ea9eb926d20`
 - **Category:** Suffering and Persecution
 - **Primary reference:** Matt 16:24–25, 28 (12 verses)
-- **Review reasons:** long-passage, structural-change
+- **Review reasons:** long-passage
 
 **Old:**
 
@@ -1045,7 +1045,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus says that if any man will come after him, let him deny himself and take up his cross and follow him, for whosoever will save his life shall lose it and whosoever will lose his life for his sake shall find it, and declares that there be some standing there which shall not taste of death till they see the Son of man coming in his kingdom.
+> Jesus says that if anyone will come after him, let him deny himself, take up his cross, and follow him, for whoever will save his life will lose it and whoever will lose his life for his sake will find it. He declares some standing there will not taste death till they see the Son of Man coming in his kingdom.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1057,7 +1057,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 - **uid:** `413a83a2-3623-4dc9-8eeb-f2bf2c3118f9`
 - **Category:** Religious Hypocrisy
 - **Primary reference:** John 8:37–47 (11 verses)
-- **Review reasons:** long-passage, structural-change
+- **Review reasons:** long-passage
 
 **Old:**
 
@@ -1065,7 +1065,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the religious leaders that though he knows they are Abraham's seed, they seek to kill him because his word has no place in them, and that if they were Abraham's children they would do the works of Abraham — but they do the deeds of their father, who is the devil, a murderer from the beginning who abode not in the truth and is a liar and the father of it, and because he tells them the truth they believe him not, for he that is of God hears God's words, and they hear them not because they are not of God.
+> Jesus tells the religious leaders that though they are Abraham's seed, they seek to kill him because his word has no place in them, and that they do the deeds of their father the devil — a murderer from the beginning, the father of lies; because Jesus tells them the truth they do not believe him, for he that is of God hears God's words.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1085,7 +1085,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus charges the twelve to go not among the Gentiles or Samaritans but to the lost sheep of the house of Israel, to provide neither gold nor silver nor extra clothing for the workman is worthy of his meat, to lodge with whoever is worthy in each town and to shake the dust from their feet where they are not received, to beware of men who will deliver them to councils and synagogues, and to know that whoever loses his life for his sake shall find it and whoever receives them receives him and the one who sent him.
+> Jesus charges the twelve to go to the lost sheep of Israel, taking neither gold nor extra clothing for the worker is worthy of his wages, lodging where they are received and shaking off the dust where they are not, warning them of councils and synagogues; whoever loses his life for his sake will find it, and whoever receives them receives him.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1125,7 +1125,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus takes the bread and the cup at the supper, telling the disciples to take and eat for this is his body and to drink of it for this is his blood of the new testament shed for many for the remission of sins, and declares he will not drink henceforth of the fruit of the vine until that day when he drinks it new with them in his Father's kingdom.
+> Jesus takes the bread and cup at the supper, telling the disciples to take and eat for this is his body, and to drink for this is his blood of the new testament shed for many for the remission of sins, and declares he will not drink of the vine again until that day in his Father's kingdom.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1165,7 +1165,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus bids the disciples to sit while he goes and prays, telling them his soul is exceeding sorrowful even unto death and asking them to watch with him; he prays to the Father that if it be possible the cup might pass from him, yet not as he wills but as the Father wills, and again that if the cup may not pass except he drink it the Father's will be done; he rebukes them for not watching one hour, charging them to watch and pray that they enter not into temptation, for the spirit indeed is willing but the flesh is weak; and at last tells them to sleep on, for the hour is at hand and the Son of man is betrayed into the hands of sinners — rise, let us be going, for he is at hand that betrays him.
+> Jesus bids the disciples to watch with him, telling them his soul is exceeding sorrowful unto death, and prays that if possible the cup might pass yet not as he wills but the Father's; he rebukes them for not watching one hour, charging them to pray that they enter not into temptation, and at last tells them the hour is at hand.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1177,7 +1177,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 - **uid:** `bc909d1c-3cd6-4cc1-83f2-706c18b03f5a`
 - **Category:** Eschatology and the End Times
 - **Primary reference:** Matt 24:15–22 (20 verses)
-- **Review reasons:** long-passage, structural-change
+- **Review reasons:** long-passage
 
 **Old:**
 
@@ -1185,7 +1185,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus warns that when his hearers see the abomination of desolation spoken of by Daniel standing in the holy place, those in Judaea must flee to the mountains without turning back for their goods, and grieves for those with child and giving suck in those days; for then shall be great tribulation such as has not been since the beginning of the world, and except those days were shortened no flesh should be saved, but for the elect's sake they shall be shortened.
+> Jesus warns that when his hearers see the abomination of desolation standing in the holy place, those in Judea must flee to the mountains without turning back, for then will be great tribulation such as has not been since the beginning of the world; for the elect's sake those days will be shortened.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1197,7 +1197,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 - **uid:** `a46d1fb7-3dc0-4a2a-8957-b5f035645bb6`
 - **Category:** Eschatology and the End Times
 - **Primary reference:** Matt 24:27–39 (25 verses)
-- **Review reasons:** long-passage, structural-change
+- **Review reasons:** long-passage
 
 **Old:**
 
@@ -1205,7 +1205,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that as the lightning comes out of the east and shines even unto the west, so shall the coming of the Son of man be, and that as in the days of Noah they were eating, drinking, marrying, and giving in marriage until the flood came and took them all away, so shall his coming be; he charges them to learn a parable of the fig tree — when its branch is tender and puts forth leaves they know summer is nigh, so when they see all these things they shall know it is near, even at the doors — and declares that heaven and earth shall pass away but his words shall not pass away, and that of that day and hour knows no man, no, not the angels of heaven, but the Father only.
+> Jesus declares the Son of Man's coming will be like lightning from east to west, and as in Noah's days they ate and married till the flood came, so will his coming be; he says heaven and earth will pass away but his words will not, and that of that day no one knows — not the angels, but the Father only.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1225,74 +1225,14 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that heaven and earth shall pass away but his words shall not pass away, says that of that day and hour knows no man — not the angels of heaven, but the Father only — and likens his coming to a thief whose hour the householder does not know, charging his hearers therefore to be ready.
+> Jesus declares that heaven and earth will pass away but his words will not pass away, says that of that day and hour knows no man — not the angels of heaven, but the Father only — and likens his coming to a thief whose hour the householder does not know, charging his hearers therefore to be ready.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
 
 ---
 
-## Large Structural Change (>70%) (227)
-
-### 1.2.1 — True Worship of God
-
-- **uid:** `f131b1df-df5c-44a9-9e9e-df98ba21d75a`
-- **Category:** God the Father
-- **Primary reference:** John 4:21–22 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Tells the Samaritan woman true worship will not be tied to any place — salvation comes from the Jews
-
-**New:**
-
-> Jesus tells the Samaritan woman that the hour comes when neither in this mountain nor at Jerusalem shall they worship the Father, and declares that salvation is of the Jews.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 1.3.1 — God's Sovereignty and Love
-
-- **uid:** `98f15797-f483-4307-8cd5-fa85235ecbab`
-- **Category:** God the Father
-- **Primary reference:** Matt 11:25–26 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Thanks the Father for hiding these things from the wise and revealing them to little children
-
-**New:**
-
-> Jesus thanks the Father, Lord of heaven and earth, that he has hid these things from the wise and prudent and revealed them unto babes, for so it seemed good in his sight.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 1.3.4 — God's Sovereignty and Love
-
-- **uid:** `941f40e8-7225-4742-82b4-d4142167841d`
-- **Category:** God the Father
-- **Primary reference:** John 6:37, 44 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> No one can come to the Son unless the Father draws him — all the Father gives will come; none can be snatched from his hand
-
-**New:**
-
-> Jesus says that all the Father gives him shall come to him and he will in no wise cast out him that comes, and that no man can come to him except the Father who sent him draw him, and he will raise him up at the last day.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
+## Large Structural Change (>70%) (134)
 
 ### 1.3.5 — God's Sovereignty and Love
 
@@ -1327,27 +1267,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that he is the bread of life and the living bread which came down from heaven, that he who comes to him shall never hunger and he who believes on him shall never thirst, and that the bread he will give for the life of the world is his flesh.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 2.1.3 — The “I AM” Declarations
-
-- **uid:** `8eb58219-658a-4906-8356-e64745183bd4`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** John 8:24–26 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Warns that those who do not believe he is who he claims will die in their sins
-
-**New:**
-
-> Jesus warns that unless his hearers believe that he is he, they shall die in their sins, and declares that he speaks to the world the things he has heard from the Father who sent him, who is true.
+> Jesus declares that he is the bread of life and the living bread come down from heaven, that whoever comes to him will never hunger and whoever believes will never thirst, and the bread he gives for the world's life is his flesh.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1367,67 +1287,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that he is the true vine and his Father is the husbandman, and that he is the vine and his disciples are the branches — he that abides in him and he in him brings forth much fruit, for without him they can do nothing.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 2.2.4 — His Relationship with the Father
-
-- **uid:** `a2333a65-7927-4036-af35-c0eb32151583`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** John 5:19–20 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Teaches that the Son acts only in concert with the Father, who loves the Son and shows him all his works
-
-**New:**
-
-> Jesus teaches that the Son can do nothing of himself but what he sees the Father do, and that whatsoever the Father does, these also does the Son likewise, for the Father loves the Son and shows him all things that he himself does, and will show him greater works that they may marvel.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 2.2.5 — His Relationship with the Father
-
-- **uid:** `76fec5bc-1044-401f-a4a6-e3eecf21592b`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** John 5:30–38 (9 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Names his witnesses — John the Baptist, his own works, and the Father — to confirm his judgment is just
-
-**New:**
-
-> Jesus declares that he can do nothing of himself and that his judgment is just because he seeks not his own will but the will of the Father who sent him, and names as witnesses to him John the Baptist who was a burning and shining light, the works the Father has given him to finish, and the Father himself who has borne witness of him though they have neither heard his voice nor have his word abiding in them.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 2.2.6 — His Relationship with the Father
-
-- **uid:** `9ee506b8-511c-40d8-b4f6-f6ecba5b0c14`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** John 7:16–19 (4 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> His teaching is not his own but the Father's — anyone willing to do God's will can recognize it as divine
-
-**New:**
-
-> Jesus declares that his doctrine is not his own but his that sent him, and that if any man will do God's will he shall know whether the doctrine is of God or whether Jesus speaks of himself, for he that speaks of himself seeks his own glory but he that seeks the glory of him that sent him is true.
+> Jesus declares that he is the true vine, his Father the vinedresser, and his disciples the branches who apart from him can do nothing.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1447,7 +1307,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that he and his Father are one, and bids his hearers, though they believe not him, to believe the works that they may know and believe that the Father is in him and he in the Father.
+> Jesus declares that he and the Father are one, and bids his hearers, though they do not believe him, to believe the works that they may know the Father is in him and he in the Father.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1467,7 +1327,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus cites their law that says, ye are gods, and asks why they call it blasphemy when he whom the Father has sanctified and sent into the world says he is the Son of God, since the scripture cannot be broken.
+> Jesus cites their law that says, you are gods, and asks why they call it blasphemy when he whom the Father has sanctified and sent into the world says he is the Son of God, since the scripture cannot be broken.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1487,7 +1347,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that he has not spoken of himself but the Father who sent him gave him a commandment what he should say and speak, and that he knows the Father's commandment is life everlasting, so whatsoever he speaks he speaks even as the Father said unto him.
+> Jesus declares he has not spoken of himself; the Father who sent him gave him commandment what to say, and his commandment is everlasting life.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1507,7 +1367,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus answers Philip, asking how he has been so long with them and yet not known him, and declares that he who has seen him has seen the Father, so why then does Philip say, show us the Father.
+> Jesus answers Philip, asking how he has been so long with them and yet not known him, and declares that whoever has seen him has seen the Father, so why does Philip ask, show us the Father.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1527,7 +1387,27 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells his disciples that he goes away and comes again unto them, and that if they loved him they would rejoice that he goes to the Father, for his Father is greater than he.
+> Jesus tells his disciples he goes away and comes again; if they loved him they would rejoice he goes to the Father, greater than he.
+
+- [ ] Approved as written
+- [ ] Needs edit (note below):
+
+---
+
+### 2.3.4 — His Divine Authority and Mission
+
+- **uid:** `67f52848-ef99-47ee-834d-ddff6fa41f70`
+- **Category:** The Identity of Jesus Christ
+- **Primary reference:** Matt 21:24–25 (2 verses)
+- **Review reasons:** structural-change
+
+**Old:**
+
+> Counters the chief priests' challenge with a question — the baptism of John, whence was it, from heaven or of men?
+
+**New:**
+
+> Jesus answers the chief priests by saying he will tell them his authority if they first say whether John's baptism was from heaven or men.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1554,26 +1434,6 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 ---
 
-### 2.3.7 — His Divine Authority and Mission
-
-- **uid:** `584b5b16-aea9-498e-86ba-05c52b117b92`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** Mark 2:25–26 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Reminds the Pharisees that hungry David ate the showbread reserved for priests
-
-**New:**
-
-> Jesus asks the Pharisees whether they have never read what David did when he was hungered, how he went into the house of God in the days of Abiathar the high priest and ate the shewbread which was not lawful for any but the priests, and gave also to those with him.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
 ### 2.3.9 — His Divine Authority and Mission
 
 - **uid:** `dac276f4-ca00-4516-a4e7-c33ee6194f61`
@@ -1587,27 +1447,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus says that he is come to send fire on the earth, and asks what he will if it be already kindled.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 2.3.12 — His Divine Authority and Mission
-
-- **uid:** `569ca108-de8e-4038-8323-b82eca6a0250`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** John 9:3–4 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Tells the disciples the man's blindness is not from sin but exists so God's works can be revealed in him
-
-**New:**
-
-> Jesus tells the disciples that neither this man nor his parents have sinned, but that the works of God should be made manifest in him, and says that he must work the works of him that sent him while it is day, for the night comes when no man can work.
+> Jesus says he has come to send fire on the earth and asks what he wills if it is already kindled.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1627,27 +1467,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus says that this sickness is not unto death but for the glory of God, that the Son of God might be glorified thereby.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 2.3.14 — His Divine Authority and Mission
-
-- **uid:** `f14a02b7-38b5-4124-b2cd-634cd373b9da`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** John 11:9–11 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Tells the disciples Lazarus has fallen asleep and he is going to wake him — those who walk by day do not stumble
-
-**New:**
-
-> Jesus asks whether there are not twelve hours in the day, says that he who walks in the day stumbles not because he sees the light of this world while he who walks in the night stumbles for there is no light in him, and tells the disciples that their friend Lazarus sleeps and he goes to awake him out of sleep.
+> Jesus says this sickness is not unto death but for the glory of God, that the Son of God might be glorified by it.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1667,7 +1487,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that no man has ascended up to heaven but he that came down from heaven, even the Son of man which is in heaven.
+> Jesus declares that no one has ascended to heaven but he who came down from heaven, the Son of Man who is in heaven.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1687,67 +1507,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus says that yet a little while is he with them, and then he goes unto him that sent him, and that they shall seek him and not find him, for where he is they cannot come.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 2.5.5 — Predictions of His Suffering, Death, and Resurrection
-
-- **uid:** `d7518afd-d94c-4215-b216-e856abdcc66d`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** Matt 17:11–12 (4 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Affirms Elijah has already come and was mistreated — and the Son of Man will suffer the same way
-
-**New:**
-
-> Jesus affirms that Elijah truly comes first and restores all things, but says that Elijah has already come and they knew him not and have done to him whatever they wished, and that likewise the Son of man shall suffer of them.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 2.5.6 — Predictions of His Suffering, Death, and Resurrection
-
-- **uid:** `3c8ca50c-acf6-49ab-b194-c23dbfb2e7cb`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** Mark 8:33 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Rebukes Peter for opposing his foretold suffering — 'Get behind me, Satan'
-
-**New:**
-
-> Jesus rebukes Peter, saying get thee behind me Satan, for he savours not the things that be of God but the things that be of men.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 2.5.7 — Predictions of His Suffering, Death, and Resurrection
-
-- **uid:** `9aa6b9ea-70aa-411c-8051-444b472481f1`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** Luke 12:50 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Speaks of the baptism of suffering ahead and how distressed he is until it is accomplished
-
-**New:**
-
-> Jesus says that he has a baptism to be baptized with, and how straitened he is till it be accomplished.
+> Jesus says he is with them a little while longer, then goes to him who sent him. They will seek but not find him.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1767,7 +1527,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the twelve that they go up to Jerusalem and all things written by the prophets concerning the Son of man shall be accomplished, for he shall be delivered to the Gentiles and mocked and spitefully entreated and spat upon, and they shall scourge him and put him to death, and the third day he shall rise again.
+> Jesus tells the twelve they go up to Jerusalem where all things written by the prophets concerning the Son of Man will be accomplished — he will be delivered to the Gentiles, mocked, scourged, and killed, and the third day rise again.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1787,47 +1547,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that the Father loves him because he lays down his life that he might take it again, that no man takes it from him but he lays it down of himself, and that he has power to lay it down and power to take it again, this commandment having been received from his Father.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 2.5.15 — Predictions of His Suffering, Death, and Resurrection
-
-- **uid:** `534ab626-f1aa-4257-8cca-88d784994f20`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** John 14:29–31 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Warns them in advance so they will believe — the prince of this world comes but has no claim on him
-
-**New:**
-
-> Jesus tells the disciples beforehand so that when it comes to pass they may believe, and says that the prince of this world is coming and has nothing in him, but that the world may know he loves the Father he does as the Father has commanded — arise, let us go hence.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 2.6.1 — His Messianic Identity
-
-- **uid:** `31b7be04-77ae-4990-8df7-f98aa0693eb3`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** Matt 3:15 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Submits to John's baptism — it is fitting to fulfill all righteousness
-
-**New:**
-
-> Jesus tells John to suffer it to be so now, for thus it becomes them to fulfill all righteousness.
+> Jesus declares that the Father loves him because he lays down his life to take it again. No one takes it from him; he lays it down of himself, with power to lay it down and to take it again, as commanded by the Father.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1847,7 +1567,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells John's disciples to report what they hear and see — the blind receive their sight, the lame walk, the lepers are cleansed, the deaf hear, the dead are raised, and the poor have the gospel preached to them — and blessed is whosoever shall not be offended in him.
+> Jesus tells John’s disciples to report what they hear and see: the blind see, the lame walk, lepers are cleansed, the deaf hear, the dead are raised, the poor receive the gospel; blessed is whoever is not offended in him.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1874,26 +1594,6 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 ---
 
-### 2.6.10 — His Messianic Identity
-
-- **uid:** `dd640743-15cc-4540-82c5-1b83a5aa4e0b`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** Matt 17:25–27 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Teaches Peter that the sons are free from the temple tax, but provides it from a coin in a fish's mouth to avoid offense
-
-**New:**
-
-> Jesus teaches Peter that the kings of the earth take tribute from strangers and not from their own children, so the children are free, but lest they offend, he sends Peter to cast a hook into the sea, take the first fish that comes up, and find in its mouth a piece of money to give for the two of them.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
 ### 2.6.12 — His Messianic Identity
 
 - **uid:** `51e55b11-0552-47e3-9eea-d4652074668a`
@@ -1907,47 +1607,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus sends two disciples into the village to find an ass tied with a colt, to loose them and bring them, and if any man says ought to them they shall say the Lord has need of them, and straightway he will send them.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 2.6.14 — His Messianic Identity
-
-- **uid:** `fe0b55a7-d190-411f-838f-fbc17eef9571`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** Mark 9:12–13 (4 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Affirms that Elijah comes first to restore all things — and has already come and been mistreated
-
-**New:**
-
-> Jesus affirms that Elijah verily comes first and restores all things, and that as it is written of the Son of man he must suffer many things and be set at nought, but says that Elijah is indeed already come and they have done to him whatever they wished, as it is written of him.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 2.6.16 — His Messianic Identity
-
-- **uid:** `9a5711ed-bc2c-4667-b7a3-861e50d39417`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** Luke 19:40 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Defends the disciples' praise at the triumphal entry — if they were silent, even the stones would cry out
-
-**New:**
-
-> Jesus tells the Pharisees that if his disciples should hold their peace, the stones would immediately cry out.
+> Jesus sends two disciples into the village to find a donkey tied with a colt, loose them and bring them, and if anyone questions them, to say the Lord has need of them and he will send them at once.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -1967,7 +1627,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus calls the man with the withered hand to stretch it forth, and it is restored whole as the other on the Sabbath.
+> Jesus calls the man with the withered hand to stretch it out, and it is restored whole as the other on the Sabbath.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -2027,27 +1687,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares his compassion on the multitude that has been with him three days with nothing to eat, and will not send them away fasting lest they faint by the way, for some have come from far.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 2.7.16 — His Miraculous Works
-
-- **uid:** `7eaf150c-162e-43a8-b469-c781e6ce3afe`
-- **Category:** The Identity of Jesus Christ
-- **Primary reference:** Mark 9:25 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Casts out a deaf and mute spirit from a boy and forbids it to return
-
-**New:**
-
-> Jesus charges the dumb and deaf spirit to come out of the boy and to enter no more into him.
+> Jesus declares his compassion on the crowd that has been with him three days with nothing to eat, and will not send them away hungry lest they faint on the way, for some have come from far.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -2074,66 +1714,6 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 ---
 
-### 3.1.2 — The Promise and Coming of the Spirit
-
-- **uid:** `6bc81b9d-6095-4ef1-b6a6-53a0cc848954`
-- **Category:** The Holy Spirit
-- **Primary reference:** John 14:16–17 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Promises the Father will send another Helper, the Spirit of truth, to dwell with them forever
-
-**New:**
-
-> Jesus says he will pray the Father, who shall give them another Comforter, even the Spirit of truth, whom the world cannot receive because it neither sees nor knows him, but who dwells with them and shall be in them forever.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 3.1.5 — The Promise and Coming of the Spirit
-
-- **uid:** `3837c034-b2bc-401f-b793-4dac21eb309d`
-- **Category:** The Holy Spirit
-- **Primary reference:** John 16:7, 13–14 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Tells them his departure is for their good — only then will the Helper come and guide them into all truth
-
-**New:**
-
-> Jesus tells his disciples it is expedient for them that he go away, for if he does not depart the Comforter will not come, but when the Spirit of truth is come he will guide them into all truth, speaking what he hears and showing them things to come, and shall glorify Jesus by receiving what is his and showing it to them.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 3.2.1 — The Spirit's Work in the World
-
-- **uid:** `23416367-9959-4a37-b332-c306bc88fc8b`
-- **Category:** The Holy Spirit
-- **Primary reference:** Luke 11:13 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Assures the disciples the Father gives the Holy Spirit to those who ask
-
-**New:**
-
-> Jesus says that if those who are evil know how to give good gifts to their children, how much more shall the heavenly Father give the Holy Spirit to them that ask him.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
 ### 3.2.2 — The Spirit's Work in the World
 
 - **uid:** `665b083a-73fb-48c0-b4cc-29cf97b6c7a4`
@@ -2147,67 +1727,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that it is the Spirit that quickens and the flesh profits nothing, and that the words he speaks are spirit and are life.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 4.1.1 — Nature and Character of the Kingdom
-
-- **uid:** `a6921ecc-59ab-4a3c-ba78-583f97e33908`
-- **Category:** The Kingdom of God
-- **Primary reference:** Matt 8:11 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Many from east and west will come and recline at table in the kingdom
-
-**New:**
-
-> Jesus declares that many shall come from the east and west and sit down with Abraham, Isaac, and Jacob in the kingdom of heaven, while the children of the kingdom shall be cast into outer darkness where there is weeping and gnashing of teeth.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 4.1.2 — Nature and Character of the Kingdom
-
-- **uid:** `6276ce23-1ec2-4181-832b-8534974cedbb`
-- **Category:** The Kingdom of God
-- **Primary reference:** Matt 11:12 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> The kingdom has been forcefully advancing since the days of John; it has been given to those who will produce its fruit
-
-**New:**
-
-> Jesus says that from the days of John the Baptist until now the kingdom of heaven suffers violence and the violent take it by force, and warns that the kingdom of God shall be taken from those who do not bring forth its fruit and given to a nation that will.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 4.1.11 — Nature and Character of the Kingdom
-
-- **uid:** `b68def44-3f82-4964-8542-5e9d00180386`
-- **Category:** The Kingdom of God
-- **Primary reference:** Luke 17:20–21 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> The kingdom does not come with outward observation — it is in your midst / among you
-
-**New:**
-
-> Jesus says that the kingdom of God comes not with observation, neither shall they say, Lo here, or, lo there, for behold, the kingdom of God is within you.
+> Jesus declares that it is the Spirit that gives life and the flesh profits nothing, and that the words he speaks are spirit and are life.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -2227,47 +1747,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells his disciples that it is given unto them to know the mysteries of the kingdom of heaven but to others it is not given, that whoever has shall have more abundance and whoever has not shall lose even what he has, and that he therefore speaks to the multitude in parables because seeing they see not and hearing they hear not, neither do they understand.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 4.3.1 — Entering the Kingdom
-
-- **uid:** `60f6cae4-2a87-4dfa-8acb-f4705fefdb78`
-- **Category:** The Kingdom of God
-- **Primary reference:** Matt 5:20 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Unless righteousness exceeds that of the scribes and Pharisees, entry is impossible
-
-**New:**
-
-> Jesus says that except his hearers' righteousness exceed the righteousness of the scribes and Pharisees, they shall in no case enter into the kingdom of heaven.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 4.3.4 — Entering the Kingdom
-
-- **uid:** `963d81aa-9ce3-4b50-aba1-46ac02345ede`
-- **Category:** The Kingdom of God
-- **Primary reference:** Matt 7:21–23 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Not everyone who says “Lord, Lord” will enter — only he who does the will of the Father
-
-**New:**
-
-> Jesus declares that not everyone who says unto him, Lord, Lord, shall enter into the kingdom of heaven, but he who does the will of his Father in heaven, and that to many who in that day plead their prophesying, casting out of devils, and wonderful works in his name, he will profess, I never knew you, depart from me, ye that work iniquity.
+> Jesus tells his disciples it is given to them to know the mysteries of the kingdom, but not to others, and that he speaks to the multitude in parables because seeing they do not see and hearing they do not understand.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -2287,127 +1767,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that except his hearers be converted and become as little children, they shall not enter into the kingdom of heaven.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 4.3.8 — Entering the Kingdom
-
-- **uid:** `c5277f04-c23f-4583-8bd4-6383a11c93e1`
-- **Category:** The Kingdom of God
-- **Primary reference:** Matt 21:31–32 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> The tax collectors and prostitutes enter the kingdom before the religious leaders who refused to believe
-
-**New:**
-
-> Jesus declares to the chief priests and elders that the publicans and the harlots go into the kingdom of God before them, for John came in the way of righteousness and they believed him not, but the publicans and harlots believed him, and even seeing it they did not afterward repent and believe.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 4.3.9 — Entering the Kingdom
-
-- **uid:** `62068556-d804-499c-b9b7-b5ede5f5af0b`
-- **Category:** The Kingdom of God
-- **Primary reference:** John 3:3–8 (6 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Entry requires being born again — of water and Spirit; what is born of flesh is flesh; the Spirit moves like the wind
-
-**New:**
-
-> Jesus tells Nicodemus that except a man be born again he cannot see the kingdom of God, and except he be born of water and of the Spirit he cannot enter into the kingdom of God, for that which is born of the flesh is flesh and that which is born of the Spirit is spirit, and likens everyone born of the Spirit to the wind, which blows where it lists and whose sound is heard though none can tell whence it comes or whither it goes.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 5.1.2 — The Call to Repentance
-
-- **uid:** `a1c42762-9292-4004-9250-2205e623756c`
-- **Category:** Repentance and Conversion
-- **Primary reference:** Matt 9:12–13 (6 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> He has come to call sinners to repentance, not the righteous; unless you repent you will all likewise perish
-
-**New:**
-
-> Jesus says that they that be whole need not a physician but they that are sick, and that he is not come to call the righteous but sinners to repentance, charging his hearers to learn what is meant by the words I will have mercy and not sacrifice.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 5.1.4 — The Call to Repentance
-
-- **uid:** `7f20fbaa-17bd-44cf-8a46-13536c2473b1`
-- **Category:** Repentance and Conversion
-- **Primary reference:** Matt 12:43–45 (6 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Warns that an unclean spirit returning with seven worse spirits leaves the person's final state worse than the first
-
-**New:**
-
-> Jesus warns that when an unclean spirit goes out of a man and walks through dry places seeking rest, it returns to find the house empty, swept, and garnished, then takes seven other spirits more wicked than itself to dwell there, so that the last state of that man is worse than the first — and so shall it be unto that wicked generation.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 5.1.5 — The Call to Repentance
-
-- **uid:** `0ca992c1-f5a0-4711-a056-3311c1acac58`
-- **Category:** Repentance and Conversion
-- **Primary reference:** Luke 13:2 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Asks whether the Galileans Pilate killed were greater sinners — calls all to repent or likewise perish
-
-**New:**
-
-> Jesus asks whether the Galileans whose blood Pilate had mingled with their sacrifices were sinners above all the Galileans because they suffered such things.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 5.3.1 — The Invitation to Come
-
-- **uid:** `f6eacfe3-bc9e-4109-88c4-a011dddb47b7`
-- **Category:** Repentance and Conversion
-- **Primary reference:** Matt 11:28–30 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Come to me, all who are weary and burdened — take my yoke and learn from me; I am gentle and lowly; my yoke is easy and burden light
-
-**New:**
-
-> Jesus calls all that labour and are heavy laden to come unto him and he will give them rest, bidding them take his yoke upon them and learn of him, for he is meek and lowly in heart, and they shall find rest unto their souls, for his yoke is easy and his burden is light.
+> Jesus declares that unless his hearers are converted and become as little children, they will not enter the kingdom of heaven.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -2427,167 +1787,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells Nicodemus to marvel not that he must be born again, for the wind blows where it wills and one hears its sound but cannot tell from where it comes or where it goes, and so is every one that is born of the Spirit.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 6.1.3 — The New Birth
-
-- **uid:** `4ccfc922-8f84-4583-bfc7-631202f7e1d1`
-- **Category:** Salvation and Eternal Life
-- **Primary reference:** John 3:10–12 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Rebukes Nicodemus, a teacher of Israel, for not understanding — if earthly things baffle, how can heavenly things be received?
-
-**New:**
-
-> Jesus rebukes Nicodemus as a master of Israel who knows not these things, declaring that he and his speak what they know and testify of what they have seen but their witness is not received, and asks how they shall believe heavenly things if they believe not when he tells them earthly things.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 6.1.4 — The New Birth
-
-- **uid:** `b759d848-106c-4be8-8732-88d787c89719`
-- **Category:** Salvation and Eternal Life
-- **Primary reference:** John 6:64–65 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Identifies the unbelief in their midst — no one can come to him unless granted by the Father
-
-**New:**
-
-> Jesus says that there are some among his hearers who do not believe, and therefore he has told them that no man can come to him except it were given to him of the Father.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 6.2.1 — Faith as the Condition of Salvation
-
-- **uid:** `4e02469e-330c-4b67-9781-8a0eaa47d7b1`
-- **Category:** Salvation and Eternal Life
-- **Primary reference:** John 3:16–18, 36 (5 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Whoever believes in the Son shall not perish but have eternal life and will not be judged; whoever rejects him will not see life
-
-**New:**
-
-> Jesus declares that God so loved the world that he gave his only begotten Son, that whosoever believes in him should not perish but have everlasting life, that God sent not his Son to condemn the world but that the world through him might be saved, and that he who believes on him is not condemned but he who believes not is condemned already because he has not believed in the name of the only begotten Son of God.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 6.3.1 — Eternal Life — Its Nature and Assurance
-
-- **uid:** `34bfdef9-20ec-4bae-aec6-d0b6aa296e63`
-- **Category:** Salvation and Eternal Life
-- **Primary reference:** John 4:14 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Promises that the water he gives will become a spring of water welling up to eternal life — those who drink it will never thirst again
-
-**New:**
-
-> Jesus tells the Samaritan woman that whosoever drinks of the water he shall give him shall never thirst, and that the water he gives shall be in him a well of water springing up into everlasting life.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 6.3.2 — Eternal Life — Its Nature and Assurance
-
-- **uid:** `7770ec82-9376-425f-af30-15e811181928`
-- **Category:** Salvation and Eternal Life
-- **Primary reference:** John 6:26–27 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Rebukes the crowd for chasing him after the loaves — work not for perishable food but for food that lasts to eternal life
-
-**New:**
-
-> Jesus rebukes the crowd that they seek him not because they saw the miracles but because they ate of the loaves and were filled, charging them to labor not for the meat which perishes but for the meat that endures to everlasting life, which the Son of man shall give them, for him has God the Father sealed.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 6.3.3 — Eternal Life — Its Nature and Assurance
-
-- **uid:** `a4f2c905-5f60-4cda-95d1-1bc69910db55`
-- **Category:** Salvation and Eternal Life
-- **Primary reference:** John 6:45–47 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> All taught by the Father come to him — only the one from God has seen the Father, and whoever believes has eternal life
-
-**New:**
-
-> Jesus says it is written in the prophets that they shall be all taught of God, and every man therefore who has heard and learned of the Father comes to him, that no man has seen the Father save he who is of God, and that he who believes on him has everlasting life.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 6.3.7 — Eternal Life — Its Nature and Assurance
-
-- **uid:** `2e7ea499-a557-4cb2-aee7-7af6f3e41408`
-- **Category:** Salvation and Eternal Life
-- **Primary reference:** John 10:27–28 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> My sheep hear my voice — I know them, they follow me, I give them eternal life; no one can snatch them from my hand
-
-**New:**
-
-> Jesus declares that his sheep hear his voice and he knows them and they follow him, and that he gives them eternal life and they shall never perish, neither shall any man pluck them out of his hand.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 6.4.2 — The Narrow Way
-
-- **uid:** `55266766-9b5c-494f-8986-b0960f7d49f0`
-- **Category:** Salvation and Eternal Life
-- **Primary reference:** Matt 7:21–23 (4 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Not everyone who says “Lord, Lord” will enter — only he who does the will of the Father; many are called, few chosen
-
-**New:**
-
-> Jesus declares that not every one who says to him Lord, Lord shall enter into the kingdom of heaven, but he who does the will of his Father in heaven, and that many will say to him in that day Lord, Lord, have we not prophesied in your name and cast out devils and done many wonderful works, and he will profess to them, I never knew you, depart from me ye that work iniquity.
+> Jesus tells Nicodemus not to marvel that he must be born again, for the wind blows where it wills—so is everyone born of the Spirit.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -2607,27 +1807,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus warns that when once the master of the house has risen up and shut the door, those who stand without and knock saying Lord, Lord, open to us, will hear him answer that he knows them not from where they are, and though they protest that they ate and drank in his presence and he taught in their streets, he will say, I tell you, I know you not from where you are; depart from me, all you workers of iniquity.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 6.4.4 — The Narrow Way
-
-- **uid:** `a82d2e51-d1d9-4296-9881-e014d717743b`
-- **Category:** Salvation and Eternal Life
-- **Primary reference:** Luke 13:32–35 (4 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Calls Herod a fox and laments over Jerusalem — how often he longed to gather her children, but they refused
-
-**New:**
-
-> Jesus charges his hearers to tell that fox Herod that he casts out devils and does cures today and tomorrow and the third day shall be perfected, that he must walk today and tomorrow and the day following for a prophet cannot perish out of Jerusalem, and laments over Jerusalem who kills the prophets and stones those sent to her, saying how often he would have gathered her children together as a hen gathers her brood under her wings, but they would not, and that her house is left to her desolate, and she shall not see him until the time when she says, Blessed is he that comes in the name of the Lord.
+> Jesus warns that once the master shuts the door, those who knock saying Lord, Lord will hear him answer that he does not know them; though they protest they ate with him and he taught in their streets, he will tell them to depart.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -2647,7 +1827,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus asks the two blind men whether they believe that he is able to do this.
+> Jesus asks the two blind men whether they believe he is able to do this.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -2667,7 +1847,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares to those he heals that according to their faith be it unto them, and tells the woman with the issue of blood and others that their faith has made them whole and saved them, sending them away in peace.
+> Jesus declares that according to their faith it will be done, telling the bleeding woman and others their faith has made them whole and to go in peace.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -2694,20 +1874,20 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 ---
 
-### 7.1.8 — The Nature and Power of Faith
+### 7.1.13 — The Nature and Power of Faith
 
-- **uid:** `f2965d05-241f-4af3-8864-36e4420dbb1a`
+- **uid:** `bb6d79b4-bdaa-41b7-9ca8-0264878ce26d`
 - **Category:** Faith and Trust
-- **Primary reference:** Matt 17:20–21 (8 verses)
+- **Primary reference:** Luke 9:41 (1 verse)
 - **Review reasons:** structural-change
 
 **Old:**
 
-> Faith like a mustard seed can move mountains — nothing will be impossible; whatever is asked with belief will be received
+> Calls a faithless and perverse generation to bring the demon-tormented son to him
 
 **New:**
 
-> Jesus tells his disciples that if they have faith as a grain of mustard seed they shall say to a mountain remove hence and it shall remove, and nothing shall be impossible unto them, and that whatsoever they ask in prayer believing, they shall receive.
+> Jesus cries out against a faithless and perverse generation, asking how long he will bear with them, and bids the father bring his son.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -2727,27 +1907,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus cries out against a faithless and perverse generation, asking how long he shall be with them and suffer them, and bids the boy be brought to him.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 7.2.4 — Overcoming Fear and Doubt
-
-- **uid:** `83878e58-2e87-4ca1-9287-18d37b81023a`
-- **Category:** Faith and Trust
-- **Primary reference:** Mark 4:35 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Directs the disciples to cross the Sea of Galilee — setting up the storm-stilling miracle
-
-**New:**
-
-> Jesus tells the disciples, let us pass over unto the other side of the sea.
+> Jesus cries out against a faithless and perverse generation, asking how long he will bear with them, and bids the boy be brought to him.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -2767,87 +1927,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus asks his disciples why they are so fearful and how it is that they have no faith, charges Peter as of little faith asking why he doubted, and tells the ruler of the synagogue not to be afraid but only believe.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 7.3.2 — Trust Over Anxiety
-
-- **uid:** `594aeba7-2a87-4e0c-a5f5-61f8a4d08bf4`
-- **Category:** Faith and Trust
-- **Primary reference:** Matt 6:26–30 (10 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Consider the birds the Father feeds and the lilies clothed better than Solomon — how much more will he clothe you
-
-**New:**
-
-> Jesus bids his hearers behold the fowls of the air whom the heavenly Father feeds though they neither sow nor reap, and consider the lilies of the field arrayed beyond Solomon in all his glory, asking if God so clothes the grass shall he not much more clothe them, O ye of little faith.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 7.3.3 — Trust Over Anxiety
-
-- **uid:** `ff2eaefd-673c-4ad5-ba3d-41b7cf396f31`
-- **Category:** Faith and Trust
-- **Primary reference:** Matt 6:33–34 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Seek first the kingdom and his righteousness — all else will be added; do not worry about tomorrow
-
-**New:**
-
-> Jesus charges his hearers to seek first the kingdom of God and his righteousness, and all these things shall be added unto them, and to take no thought for the morrow, for sufficient unto the day is the evil thereof.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 7.3.4 — Trust Over Anxiety
-
-- **uid:** `b25ac4cb-f802-4b07-a9de-afab3ba76d60`
-- **Category:** Faith and Trust
-- **Primary reference:** Matt 10:19–20 (5 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Do not be anxious about what to say when brought before rulers — the Spirit of the Father will speak through you in that hour
-
-**New:**
-
-> Jesus tells his disciples that when they are delivered up they should take no thought how or what they shall speak, for it shall be given them in that hour, and it is not they that speak but the Spirit of their Father which speaks in them.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 7.3.5 — Trust Over Anxiety
-
-- **uid:** `e176a3c1-7acf-4c9d-b1b6-7042fbceca43`
-- **Category:** Faith and Trust
-- **Primary reference:** John 14:1, 27 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Do not let your hearts be troubled — peace I leave with you; in this world you will have tribulation, but I have overcome the world
-
-**New:**
-
-> Jesus tells his disciples to let not their heart be troubled but to believe in God and in him, leaves them his peace not as the world gives, and declares that in the world they shall have tribulation but to be of good cheer for he has overcome the world.
+> Jesus asks his disciples why they are so fearful and have no faith, calls Peter of little faith asking why he doubted, and tells the synagogue ruler not to be afraid but only believe.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -2934,20 +2014,40 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 ---
 
-### 9.2.8 — The Bread of Life — A Connected Teaching
+### 9.1.1 — Institution of the Lord's Supper
 
-- **uid:** `eabfa6fa-0706-48de-ab3a-957239b60272`
+- **uid:** `e8087771-3f65-4488-8fce-eaf9837c0a00`
 - **Category:** The New Covenant
-- **Primary reference:** John 6:57–58 (2 verses)
+- **Primary reference:** Matt 26:26–27 (6 verses)
 - **Review reasons:** structural-change
 
 **Old:**
 
-> Promises that whoever feeds on him will live by him forever — unlike the manna eaten by ancestors who died
+> Take and eat — this is my body given for you; do this in remembrance of me
 
 **New:**
 
-> Jesus promises that as the living Father has sent him and he lives by the Father, so whoever eats him shall live by him, and unlike the fathers who ate manna and are dead, he who eats this bread shall live for ever.
+> At the Last Supper Jesus gives the disciples bread and the cup as his body and his blood of the new covenant poured out for many for the remission of sins, charging them to do this in remembrance of him.
+
+- [ ] Approved as written
+- [ ] Needs edit (note below):
+
+---
+
+### 10.1.1 — The Lord's Prayer — Pattern for Prayer
+
+- **uid:** `708d0e3d-d135-4c0a-a373-608ed8fa170f`
+- **Category:** Prayer and Communion
+- **Primary reference:** Matt 6:9 (2 verses)
+- **Review reasons:** structural-change
+
+**Old:**
+
+> Our Father in heaven, hallowed be your name
+
+**New:**
+
+> Jesus teaches his disciples to pray this way, addressing God as their Father in heaven and hallowing his name.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -2967,7 +2067,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus warns against the vain repetitions of the heathen who think they shall be heard for their much speaking, for the Father knows what his children need before they ask him.
+> Jesus warns against vain repetitions, for the Father knows what his children need before they ask him.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -2987,7 +2087,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells his disciples that when they stand praying they must forgive anything they hold against any, that the Father in heaven may also forgive their trespasses.
+> Jesus tells his disciples that when they stand praying they must forgive any grievance, that the Father in heaven may forgive their trespasses.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3014,26 +2114,6 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 ---
 
-### 12.3.1 — Prayer for All Believers
-
-- **uid:** `96b64f6b-4502-45db-a695-9377c60e60db`
-- **Category:** The High Priestly Prayer
-- **Primary reference:** John 17:20–23 (4 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Prays for all future believers — that their unity may mirror the Father and Son and testify the Father sent him
-
-**New:**
-
-> Jesus prays not only for the disciples but also for all who shall believe on him through their word, that they all may be one as the Father is in him and he in the Father, that they also may be one in them so the world may believe that the Father has sent him, and that being made perfect in one the world may know the Father loved them as he loved him.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
 ### 14.2.2 — The Law and Righteousness
 
 - **uid:** `70e713f9-09ac-4e3e-89d4-d85cbf90ffbd`
@@ -3047,7 +2127,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus says that unless his hearers' righteousness exceeds the righteousness of the scribes and Pharisees, they shall in no case enter into the kingdom of heaven.
+> Jesus says that unless his hearers' righteousness exceeds that of the scribes and Pharisees, they will in no way enter the kingdom of heaven.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3067,7 +2147,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus teaches that while it was said of old that whoever kills shall be in danger of judgment, whoever is angry with his brother without cause shall also be in danger of judgment, whoever says Raca shall be in danger of the council, and whoever says Thou fool shall be in danger of hell fire.
+> Jesus teaches that whoever is angry with his brother without cause is in danger of judgment, and contempt brings one into hell fire.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3087,47 +2167,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus teaches that whoever looks on a woman to lust after her has already committed adultery with her in his heart, and that if the right eye or right hand offends, it is better to pluck it out or cut it off and cast it away than to have the whole body cast into hell.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 14.3.4 — The Antitheses — “You Have Heard… But I Say to You”
-
-- **uid:** `896abb2b-0835-4628-b42a-f79d01da97e0`
-- **Category:** Righteousness and Ethics
-- **Primary reference:** Matt 5:33–37 (5 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Oaths: do not swear at all — let your yes be yes and your no be no; anything more is from evil
-
-**New:**
-
-> Jesus charges his hearers to swear not at all — neither by heaven, for it is God's throne, nor by the earth, his footstool, nor by Jerusalem, nor by their own head — but to let their communication be Yea, yea and Nay, nay, for whatever is more than these comes of evil.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 14.3.5 — The Antitheses — “You Have Heard… But I Say to You”
-
-- **uid:** `8ca2fd33-1a27-41ed-9b95-dbc6d92d3e69`
-- **Category:** Righteousness and Ethics
-- **Primary reference:** Matt 5:38–42 (7 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Retaliation: do not resist the evil one — turn the other cheek, give your cloak, go the extra mile
-
-**New:**
-
-> Jesus teaches his hearers not to resist evil but to turn the other cheek when smitten, to let the one who sues for their coat have their cloak also, to go two miles with whoever compels them to go one, and to give to him that asks and not turn away from him that would borrow.
+> Jesus teaches that whoever looks at a woman to lust has already committed adultery with her in his heart, and if the right eye or hand causes sin, it is better to lose it than have the whole body cast into hell.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3147,7 +2187,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus warns his hearers not to do their alms before men to be seen of them, nor to sound a trumpet as the hypocrites do who already have their reward, but to give so that the left hand knows not what the right hand does, and the Father who sees in secret shall reward them openly.
+> Jesus warns his hearers not to do their alms before men like the hypocrites who sound a trumpet and already have their reward. Give so secretly the left hand knows not what the right does, and the Father who sees in secret will reward you.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3167,7 +2207,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus charges his hearers, when they fast, not to be of a sad countenance like the hypocrites who disfigure their faces to appear unto men to fast, but to anoint the head and wash the face so that the fast is seen not by men but by the Father in secret, who shall reward them openly.
+> Jesus charges his hearers, when they fast, not to look sad like the hypocrites who disfigure their faces to be seen by men. Let them anoint the head and wash the face so the fast is seen only by the Father, who will reward them.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3187,7 +2227,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus says, Judge not, that ye be not judged, for with the same judgment and measure they use it shall be measured to them again, and asks why they behold the mote in their brother's eye but consider not the beam in their own, charging the hypocrite first to cast the beam from his own eye, that he may then see clearly to remove the mote from his brother's.
+> Jesus says, Judge not, that you be not judged, for the measure you use will be measured back. He asks why they see the speck in their brother's eye but not the beam in their own, charging them first to cast out their own beam.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3207,7 +2247,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus charges his hearers not to give that which is holy unto the dogs nor to cast their pearls before swine, lest they be trampled under foot and the swine turn again and rend them.
+> Jesus charges his hearers not to give what is holy to dogs nor cast pearls before swine, lest they be trampled and turned upon.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3227,7 +2267,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the disciples that since he, their Lord and Master, has washed their feet, they also ought to wash one another's feet, for he has given them an example, and declares that the servant is not greater than his lord nor he that is sent greater than he that sent him, and that they are happy if they do these things.
+> Jesus tells the disciples that since he their Lord has washed their feet, they ought to wash one another's feet by his example. The servant is not greater than his lord, and they are blessed if they do these things.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3247,7 +2287,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that except his hearers be converted and become as little children they shall not enter the kingdom of heaven, and that whoever humbles himself as a little child is the greatest in the kingdom of heaven.
+> Jesus declares that unless his hearers are converted and become as little children they will not enter the kingdom of heaven, and whoever humbles himself as a little child is the greatest in the kingdom of heaven.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3267,27 +2307,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus answers the chief priests and scribes by asking whether they have never read that out of the mouth of babes and sucklings God has perfected praise.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 16.1.2 — The Power and Accountability of Words
-
-- **uid:** `8f41f55a-a8e6-40d3-9b75-809ed9388f38`
-- **Category:** Truth and Integrity
-- **Primary reference:** Matt 15:18 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> What comes out of the mouth proceeds from the heart — this is what defiles a person
-
-**New:**
-
-> Jesus teaches that the things which proceed out of the mouth come forth from the heart, and these defile the man.
+> Jesus asks the chief priests and scribes if they have never read that out of the mouth of babes and infants God has perfected praise.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3307,7 +2327,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the disciples that it is given them to know the mysteries of the kingdom of heaven but not to others, that he speaks to the multitude in parables because seeing they see not and hearing they hear not, and blesses his disciples' eyes and ears, declaring that many prophets and righteous men desired to see and hear what they now see and hear.
+> Jesus tells the disciples it is given them to know the mysteries of the kingdom, and he speaks to the multitudes in parables because seeing they do not see and hearing they do not hear. He blesses their eyes and ears for what they see.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3327,7 +2347,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus asks his disciples whether they are also yet without understanding, that whatever enters in at the mouth goes into the belly and is cast out into the draught.
+> Jesus asks his disciples whether they are also without understanding, that whatever enters the mouth goes into the stomach and is expelled.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3347,7 +2367,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus says to let the Pharisees alone, for they are blind leaders of the blind, and if the blind lead the blind both shall fall into the ditch.
+> Jesus says to let the Pharisees alone, for they are blind leaders of the blind, and if the blind lead the blind both will fall into the ditch.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3374,26 +2394,6 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 ---
 
-### 17.2.5 — Spiritual Blindness Rebuked
-
-- **uid:** `8c2cf14c-baac-4357-9e98-eb813f4c0b0b`
-- **Category:** Wisdom and Discernment
-- **Primary reference:** Mark 8:17–21 (5 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Rebukes the disciples for missing the bread analogy — they have eyes and ears yet still do not understand
-
-**New:**
-
-> Jesus rebukes the disciples for reasoning that they have no bread, asking whether they yet perceive nor understand, whether their hearts are hardened, and whether having eyes they see not and having ears they hear not, then reminds them of the baskets gathered after the five loaves among five thousand and the seven among four thousand, and asks how it is they do not understand.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
 ### 17.2.6 — Spiritual Blindness Rebuked
 
 - **uid:** `67e46667-741a-4487-af2d-a76f23e48ed9`
@@ -3407,7 +2407,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the people that when they see a cloud rise out of the west they say a shower is coming, and when the south wind blows they say there will be heat, and so it comes to pass.
+> Jesus says when a cloud rises in the west they predict a shower, and when the south wind blows they predict heat.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3427,7 +2427,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that for judgment he is come into this world, that they which see not might see and they which see might be made blind.
+> Jesus declares he came for judgment, that those who do not see may see and those who see may be made blind.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3447,87 +2447,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the Pharisees that if they were blind they should have no sin, but because they say they see, their sin remains.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 17.3.1 — Recognizing True from False
-
-- **uid:** `4724346e-56dc-448f-8a72-5a2c95e7dcf3`
-- **Category:** Wisdom and Discernment
-- **Primary reference:** Matt 7:15–20 (6 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Beware of false prophets in sheep's clothing — you will know them by their fruits; a good tree cannot bear bad fruit
-
-**New:**
-
-> Jesus warns his hearers to beware of false prophets who come in sheep's clothing but inwardly are ravening wolves, declaring that they shall be known by their fruits, for men do not gather grapes of thorns or figs of thistles, a good tree cannot bring forth evil fruit nor a corrupt tree good fruit, and every tree that brings not forth good fruit is hewn down and cast into the fire.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 17.3.4 — Recognizing True from False
-
-- **uid:** `7595ed93-fcb7-4405-868d-64b0fa3bd07e`
-- **Category:** Wisdom and Discernment
-- **Primary reference:** Matt 24:23–26 (7 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Beware of false christs and false prophets who perform great signs to deceive, if possible, even the elect
-
-**New:**
-
-> Jesus warns that if any shall say to them, behold, here is Christ or there, they are not to believe it, for false christs and false prophets shall arise and shew great signs and wonders to deceive, if possible, even the elect, and charges them not to go forth whether they are told he is in the desert or in the secret chambers.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 17.3.5 — Recognizing True from False
-
-- **uid:** `d822b18a-d459-43ab-967a-e48fad849066`
-- **Category:** Wisdom and Discernment
-- **Primary reference:** John 3:19–21 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Names the verdict — light came into the world but people loved darkness because their deeds were evil
-
-**New:**
-
-> Jesus declares that this is the condemnation, that light is come into the world and men loved darkness rather than light because their deeds were evil, for everyone that does evil hates the light lest his deeds be reproved, but he that does truth comes to the light that his deeds may be made manifest as wrought in God.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 17.4.1 — Hidden Things Revealed
-
-- **uid:** `97896d9b-818d-4983-bc22-9ad9095410be`
-- **Category:** Wisdom and Discernment
-- **Primary reference:** Matt 10:26–27 (4 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Nothing is covered that will not be uncovered — what is whispered in private will be proclaimed on the housetops
-
-**New:**
-
-> Jesus tells his disciples not to fear, for there is nothing covered that shall not be revealed nor hid that shall not be known, and what he tells them in darkness they are to speak in light, and what they hear in the ear they are to preach upon the housetops.
+> Jesus tells the Pharisees that if they were blind they would have no sin, but because they say they see, their sin remains.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3547,27 +2467,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus asks whether a candle is brought to be put under a bushel or under a bed and not to be set on a candlestick, declaring that there is nothing hid which shall not be manifested, neither anything kept secret but that it should come abroad.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 18.1.3 — God's Forgiveness of Sin
-
-- **uid:** `2ae368c0-0dbc-4d61-b888-f462f877d720`
-- **Category:** Forgiveness and Reconciliation
-- **Primary reference:** Luke 7:47 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> The one forgiven much loves much — the one forgiven little loves little
-
-**New:**
-
-> Jesus declares that the woman's many sins are forgiven because she loved much, and that the one to whom little is forgiven loves little.
+> Jesus asks whether a candle is brought to be put under a bushel or a bed rather than on a candlestick, declaring that nothing is hidden that will not be made manifest, nor kept secret but that it should come abroad.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3587,7 +2487,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus warns that if his hearers do not forgive, neither will their Father in heaven forgive their trespasses.
+> Jesus warns that if you do not forgive, neither will your Father in heaven forgive your trespasses.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3607,7 +2507,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus counsels his hearers to agree with their adversary quickly while still in the way with him, lest the adversary deliver them to the judge and the judge to the officer and they be cast into prison, from which they shall by no means come out till they have paid the uttermost farthing.
+> Jesus counsels his hearers to agree with their adversary quickly while on the way. Otherwise the adversary will deliver them to the judge and the judge to the officer, and they will be cast into prison until they have paid the last farthing.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3627,7 +2527,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus instructs that if a brother trespasses, one is to go and tell him his fault between the two of them alone, and if he hears, the brother is gained; if he will not hear, to take one or two more so that every word is established by witnesses; if he still will not hear, to tell it to the church; and if he refuses to hear the church, to let him be as a heathen man and a publican.
+> Jesus instructs that if a brother trespasses, go and tell him his fault privately. If he refuses, take one or two witnesses. If he still refuses, tell the church; if he refuses the church, let him be as a heathen and a publican.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3647,7 +2547,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus says that not all men can receive this saying but only those to whom it is given, naming eunuchs born so from the womb, eunuchs made by men, and those who have made themselves eunuchs for the kingdom of heaven's sake, and bids him that is able to receive it to receive it.
+> Jesus says not all can receive this saying, only those to whom it is given. He names eunuchs born so, eunuchs made by men, and those who made themselves eunuchs for the kingdom of heaven, and bids him who can receive it to receive it.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3687,7 +2587,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus says he came not to send peace on earth but a sword, to set a man at variance against his father, the daughter against her mother, and the daughter-in-law against her mother-in-law, and that a man's foes shall be those of his own household.
+> Jesus says he came not to send peace on earth but a sword, to set a man against his father, daughter against mother, and daughter-in-law against mother-in-law, and a man's foes will be those of his own household.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3707,67 +2607,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus asks who is his mother and his brethren, then looking around on those who sit about him names them as his mother and his brethren.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 19.4.1 — Care for Children
-
-- **uid:** `7f4ede2d-7680-46de-94a5-2e1f23ea369f`
-- **Category:** Marriage and Family
-- **Primary reference:** Matt 18:6–7, 10 (6 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Whoever causes one of these little ones to stumble — better a millstone around his neck; do not despise them
-
-**New:**
-
-> Jesus warns that whoever offends one of these little ones who believe in him would be better off with a millstone hanged about his neck and drowned in the depth of the sea, pronounces woe on the world because of offenses and on the man by whom the offense comes, and charges his hearers not to despise one of these little ones, for in heaven their angels always behold the face of his Father.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 20.1.1 — Treasure and the Heart
-
-- **uid:** `4c8c2170-c0d3-4212-ba9f-19afd037d7c4`
-- **Category:** Wealth and Generosity
-- **Primary reference:** Matt 6:19–21 (5 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Do not store up earthly treasure — store up in heaven; where your treasure is, your heart will be also
-
-**New:**
-
-> Jesus teaches his hearers not to lay up for themselves treasures upon earth where moth and rust corrupt and thieves break through and steal, but to lay up treasures in heaven where neither moth nor rust corrupts nor thieves break through, for where their treasure is there will their heart be also.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 20.1.3 — Treasure and the Heart
-
-- **uid:** `ee95fd92-ae8c-4194-b073-a9670a849800`
-- **Category:** Wealth and Generosity
-- **Primary reference:** Matt 6:24 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> No one can serve two masters — you cannot serve both God and money
-
-**New:**
-
-> Jesus declares that no man can serve two masters, for he will either hate the one and love the other or hold to the one and despise the other, and that his hearers cannot serve God and mammon.
+> Jesus asks who is his mother and his brothers, then looks at those sitting around him and names them as his mother and his brothers.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3807,27 +2647,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus charges his hearers to give to him that asks and not to turn away from him who would borrow.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 20.3.5 — Generosity and Stewardship
-
-- **uid:** `e0e8a75a-7ed9-4085-96e8-3a6b6b2d5fba`
-- **Category:** Wealth and Generosity
-- **Primary reference:** Mark 12:43–44 (5 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> The widow's offering — she gave all she had out of poverty; it is more blessed to give than to receive
-
-**New:**
-
-> Jesus says that the poor widow has cast more into the treasury than all the others, for they cast in of their abundance but she of her want cast in all that she had, even all her living.
+> Jesus charges his hearers to give to the one who asks and not to turn away from the one who would borrow.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3847,7 +2667,27 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus blesses the poor, declaring that theirs is the kingdom of God, and blesses those who hunger now, for they shall be filled, and those who weep now, for they shall laugh, but pronounces woe when all men speak well of his hearers, for so did their fathers to the false prophets.
+> Jesus blesses the poor for theirs is the kingdom of God, those who hunger for they will be filled, and those who weep for they will laugh. He pronounces woe when all speak well of you, for so did their fathers to the false prophets.
+
+- [ ] Approved as written
+- [ ] Needs edit (note below):
+
+---
+
+### 21.3.1 — Mercy and Compassion
+
+- **uid:** `e7e55f05-1f79-4579-9336-0f95f205119c`
+- **Category:** Justice and Mercy
+- **Primary reference:** Matt 5:7 (4 verses)
+- **Review reasons:** structural-change
+
+**Old:**
+
+> Blessed are the merciful — they shall receive mercy; I desire mercy, not sacrifice
+
+**New:**
+
+> Jesus blesses the merciful, declaring that they will obtain mercy, and elsewhere says he desires mercy and not sacrifice.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -3874,66 +2714,6 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 ---
 
-### 22.1.4 — The Call to Follow
-
-- **uid:** `758d121f-93ac-42d9-b5cd-8ce83f199ccc`
-- **Category:** Discipleship
-- **Primary reference:** Matt 12:48–49 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Redefines family — who is my mother and brethren? Behold my mother and my brethren — those who do God's will
-
-**New:**
-
-> Jesus asks who is his mother and his brethren, and pointing to his disciples declares that those who do the will of his Father are his mother and brothers.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 22.1.5 — The Call to Follow
-
-- **uid:** `8a56b47c-4347-4e2f-b44d-51a756c332ce`
-- **Category:** Discipleship
-- **Primary reference:** Mark 2:14 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Follow me — Jesus calls Levi the tax collector to leave his post and become a disciple
-
-**New:**
-
-> Jesus calls Levi from the receipt of custom with the words, follow me.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 22.1.8 — The Call to Follow
-
-- **uid:** `ca6dbb07-8e6c-41ed-8e1e-902ac1a932c2`
-- **Category:** Discipleship
-- **Primary reference:** Luke 5:10 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Calls Peter from his nets — from now on he will catch people
-
-**New:**
-
-> Jesus tells Peter to fear not, for from henceforth he shall catch men.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
 ### 22.1.13 — The Call to Follow
 
 - **uid:** `a82b214b-3eca-43ed-91f3-585efffff0a6`
@@ -3947,47 +2727,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus names Simon the son of Jona and declares that he shall be called Cephas.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 22.1.17 — The Call to Follow
-
-- **uid:** `10a44535-cdd9-4cc8-92a7-1165f4499978`
-- **Category:** Discipleship
-- **Primary reference:** John 21:15–19, 22 (6 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Three times asks Peter "Do you love me?" — feed my lambs, tend my sheep, feed my sheep; predicts his martyrdom and calls him to follow
-
-**New:**
-
-> Jesus three times asks Simon son of Jonas if he loves him, charging him to feed his lambs and feed his sheep, foretells that when he is old another shall gird him and carry him where he would not, and calls him to follow.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 22.2.1 — Counting the Cost
-
-- **uid:** `99a15ba6-291c-466c-a566-b47f8aa70f1b`
-- **Category:** Discipleship
-- **Primary reference:** Matt 16:24 (5 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Anyone who would follow must deny himself, take up his cross daily, and follow — the cost is total self-surrender
-
-**New:**
-
-> Jesus declares that if any man will come after him, let him deny himself and take up his cross and follow him.
+> Jesus names Simon son of Jonah and declares that he will be called Cephas.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4007,7 +2747,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that everyone who has forsaken houses or brethren or sisters or father or mother or wife or children or lands for his name's sake shall receive an hundredfold and shall inherit everlasting life.
+> Jesus declares that everyone who has forsaken houses or brothers or sisters or father or mother or wife or children or lands for his name's sake will receive a hundredfold and will inherit everlasting life.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4027,27 +2767,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus asks why his hearers call him Lord, Lord, and do not the things which he says.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 22.2.6 — Counting the Cost
-
-- **uid:** `cb0945ce-2c9f-4391-959d-5d0036a5d8aa`
-- **Category:** Discipleship
-- **Primary reference:** Luke 14:26, 33 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Anyone who does not renounce family, possessions, and even his own life cannot be a disciple
-
-**New:**
-
-> Jesus declares that if any man come to him and hate not his father and mother and wife and children and brethren and sisters, and his own life also, he cannot be his disciple, and that whoever forsakes not all that he has cannot be his disciple.
+> Jesus asks why his hearers call him Lord, Lord, and do not do the things he says.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4067,7 +2787,27 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that if his hearers continue in his word, then are they his disciples indeed.
+> Jesus declares that if his hearers continue in his word, then they are his disciples indeed.
+
+- [ ] Approved as written
+- [ ] Needs edit (note below):
+
+---
+
+### 22.3.1 — Fruit-Bearing
+
+- **uid:** `7665608c-6593-46b3-a845-48876f9e6d9f`
+- **Category:** Discipleship
+- **Primary reference:** Matt 7:17–20 (8 verses)
+- **Review reasons:** structural-change
+
+**Old:**
+
+> A good tree bears good fruit; a bad tree cannot — by their fruits you shall know them; every fruitless tree is cut down
+
+**New:**
+
+> Jesus teaches that a good tree brings forth good fruit and a corrupt tree evil fruit. Every tree that does not bring forth good fruit is hewn down and cast into the fire, and by their fruits they will be known.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4087,7 +2827,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus answers the tempter by declaring that it is written, man shall not live by bread alone, but by every word that proceedeth out of the mouth of God.
+> Jesus answers the tempter that man will not live by bread alone, but by every word that proceeds from the mouth of God.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4107,27 +2847,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus answers the tempter that it is written again, thou shalt not tempt the Lord thy God.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 23.1.4 — The Temptation of Jesus
-
-- **uid:** `0048a6d5-bbe3-4ec9-9f34-8d5ab8ce95f8`
-- **Category:** Suffering and Persecution
-- **Primary reference:** Luke 4:4 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Answers the bread temptation in Luke's account by citing Deuteronomy
-
-**New:**
-
-> Jesus answers the tempter in Luke's account that it is written, man shall not live by bread alone, but by every word of God.
+> Jesus answers the tempter, declaring it is written: you will not tempt the Lord your God.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4147,7 +2867,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus answers that it is said, thou shalt not tempt the Lord thy God.
+> Jesus answers that it is said: you will not tempt the Lord your God.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4167,7 +2887,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus says that a prophet is not without honour, save in his own country and in his own house.
+> Jesus says a prophet is not without honor, except in his own country and in his own house.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4187,87 +2907,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus says that a prophet is not without honour, but in his own country, and among his own kin, and in his own house.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 23.2.5 — The Promise of Persecution
-
-- **uid:** `1466bede-bf10-4cce-be0f-f5d841aafa17`
-- **Category:** Suffering and Persecution
-- **Primary reference:** John 15:20 (5 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> If they persecuted him, they will persecute his followers — a servant is not greater than his master; you will be hated by all for his name
-
-**New:**
-
-> Jesus charges the disciples to remember the word he said unto them, that the servant is not greater than his lord, and that if they have persecuted him they will also persecute them, and if they have kept his saying they will keep theirs also.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 23.2.6 — The Promise of Persecution
-
-- **uid:** `a8284d46-824e-4a98-98e5-76db9fc4338d`
-- **Category:** Suffering and Persecution
-- **Primary reference:** John 15:21–25 (5 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Tells the disciples the world will persecute them because it has rejected him and the Father — fulfilling the scripture 'they hated me without cause'
-
-**New:**
-
-> Jesus tells the disciples that the world will do all these things unto them for his name's sake because they know not him that sent him, and that had he not come and spoken and done among them the works which none other man did, they had not had sin, but now they have no cloke for their sin and have both seen and hated him and the Father, that the word might be fulfilled which is written in their law, they hated me without a cause.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 23.3.1 — Courage in Suffering
-
-- **uid:** `d33724ee-f577-48f6-9077-f59c93e2cf65`
-- **Category:** Suffering and Persecution
-- **Primary reference:** Matt 10:28 (4 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Do not fear those who kill the body but not the soul — fear him who can destroy both; not a hair of your head will perish
-
-**New:**
-
-> Jesus charges his disciples to fear not them which kill the body but are not able to kill the soul, but rather to fear him which is able to destroy both soul and body in hell.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 23.3.2 — Courage in Suffering
-
-- **uid:** `265f57df-3a53-4c1a-83fe-e1aa56ed98e7`
-- **Category:** Suffering and Persecution
-- **Primary reference:** John 16:1 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Has warned the disciples in advance so they will not stumble when persecution comes
-
-**New:**
-
-> Jesus tells the disciples that these things he has spoken unto them, that they should not be offended.
+> Jesus says a prophet is not without honor, except in his own country, among his own kin, and in his own house.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4287,7 +2927,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the disciples that the world will do these things unto them because they have not known the Father nor him, and that he has told them so that when the time shall come they may remember he told them, saying that he did not say these things at the beginning because he was with them, but now he goes his way to him that sent him, and because he has said these things sorrow hath filled their heart.
+> Jesus tells the disciples the world acts so because it does not know the Father, and warns them now so they will remember. He kept silent before since he was with them; now he goes to him who sent him, and sorrow fills their heart.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4307,47 +2947,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the disciples that a little while and they shall not see him, and again a little while and they shall see him, and that they shall weep and lament while the world rejoices, but their sorrow shall be turned into joy as a woman in travail forgets her anguish for joy that a man is born into the world, promising that he will see them again and their heart shall rejoice and their joy no man taketh from them.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 23.3.6 — Courage in Suffering
-
-- **uid:** `b02981e1-27b0-4059-8934-4809b297b10d`
-- **Category:** Suffering and Persecution
-- **Primary reference:** John 16:33 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> In the world they will have tribulation — but take heart; he has overcome the world; by endurance they will gain their lives
-
-**New:**
-
-> Jesus tells the disciples that these things he has spoken unto them that in him they might have peace, and that in the world they shall have tribulation, but charges them to be of good cheer, for he has overcome the world.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 24.1.1 — The Seven Woes to Scribes and Pharisees (Matthew 23)
-
-- **uid:** `bdfa3efd-ae56-40b0-9e29-3d797dedadb9`
-- **Category:** Religious Hypocrisy
-- **Primary reference:** Matt 23:13 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Woe: they shut the kingdom of heaven in people's faces — they neither enter nor let others in
-
-**New:**
-
-> Jesus pronounces woe upon the scribes and Pharisees, hypocrites, for shutting up the kingdom of heaven against men, neither going in themselves nor suffering those who are entering to go in.
+> Jesus tells the disciples they will weep while the world rejoices, but their sorrow will turn to joy as a woman forgets her travail for joy a child is born. He will see them again, and their joy no one will take from them.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4367,27 +2967,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus pronounces woe upon the scribes and Pharisees, hypocrites, for devouring widows' houses and for a pretence making long prayer, declaring that they shall receive the greater damnation.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 24.1.3 — The Seven Woes to Scribes and Pharisees (Matthew 23)
-
-- **uid:** `2655dd0c-8bd8-40e6-82d5-a9c41d7833c2`
-- **Category:** Religious Hypocrisy
-- **Primary reference:** Matt 23:15 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Woe: they travel far to make one convert, then make him twice the child of hell
-
-**New:**
-
-> Jesus pronounces woe upon the scribes and Pharisees, hypocrites, who compass sea and land to make one proselyte, and when he is made, make him twofold more the child of hell than themselves.
+> Jesus pronounces woe upon the scribes and Pharisees, hypocrites, for devouring widows' houses and for a pretence making long prayer, declaring that they will receive the greater damnation.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4407,27 +2987,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus pronounces woe upon the blind guides who say swearing by the temple is nothing but swearing by the gold of the temple binds, and swearing by the altar is nothing but swearing by the gift binds, asking which is greater — the gold or the temple that sanctifies it, the gift or the altar that sanctifies it — and condemns them as hypocrites who tithe mint and anise and cummin yet have omitted the weightier matters of the law: judgment, mercy, and faith, straining at a gnat and swallowing a camel.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 24.1.5 — The Seven Woes to Scribes and Pharisees (Matthew 23)
-
-- **uid:** `4e536efa-f9c5-447c-b076-e79b36f2dfa9`
-- **Category:** Religious Hypocrisy
-- **Primary reference:** Matt 23:23 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Woe: they tithe mint and dill but neglect justice, mercy, and faithfulness
-
-**New:**
-
-> Jesus pronounces woe upon the scribes and Pharisees, hypocrites, who pay tithe of mint and anise and cummin yet have omitted the weightier matters of the law — judgment, mercy, and faith — saying these ought they to have done and not to leave the other undone.
+> Jesus pronounces woe upon blind guides who swear by the temple's gold but not the temple. They tithe mint and dill yet neglect judgment, mercy, and faith. They strain at a gnat and swallow a camel.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4447,7 +3007,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus pronounces woe upon the scribes and Pharisees, hypocrites, who make clean the outside of the cup and platter while within they are full of extortion and excess, charging the blind Pharisee to cleanse first that which is within so that the outside may be clean also.
+> Jesus pronounces woe upon the scribes and Pharisees who clean the outside of the cup but inside are full of greed, charging them to cleanse the inside first so the outside also may be clean.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4474,46 +3034,6 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 ---
 
-### 24.1.8 — The Seven Woes to Scribes and Pharisees (Matthew 23)
-
-- **uid:** `2448a179-e644-4382-8966-c8cc8fe6ee1b`
-- **Category:** Religious Hypocrisy
-- **Primary reference:** Matt 23:29–33 (7 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Woe: they build tombs for prophets while being sons of those who killed them; brood of vipers — how will they escape hell?
-
-**New:**
-
-> Jesus pronounces woe upon the scribes and Pharisees, hypocrites, who build the tombs of the prophets and garnish the sepulchres of the righteous while saying that had they lived in the days of their fathers they would not have shared in the prophets' blood, calling them witnesses against themselves as children of those who killed the prophets, and demanding of them, ye serpents, ye generation of vipers, how can ye escape the damnation of hell.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 24.1.10 — The Seven Woes to Scribes and Pharisees (Matthew 23)
-
-- **uid:** `fafafc8d-5002-4770-adc3-e83cddf29267`
-- **Category:** Religious Hypocrisy
-- **Primary reference:** Luke 11:46 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Pronounces woe on the lawyers who pile heavy burdens on others but won't lift a finger to carry them
-
-**New:**
-
-> Jesus pronounces woe upon the lawyers, for they lade men with burdens grievous to be borne yet themselves touch not the burdens with one of their fingers.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
 ### 24.1.11 — The Seven Woes to Scribes and Pharisees (Matthew 23)
 
 - **uid:** `1c20f167-9459-4ff9-babb-03902488cedc`
@@ -4527,7 +3047,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that the wisdom of God says, I will send them prophets and apostles, some of whom they shall slay and persecute, so that the blood of all the prophets shed from the foundation of the world — from Abel to Zacharias who perished between the altar and the temple — shall be required of this generation, and he pronounces woe upon the lawyers who have taken away the key of knowledge, neither entering in themselves nor suffering those who were entering to go in.
+> Jesus declares that this generation will be held to account for the blood of all the prophets from Abel to Zacharias, and pronounces woe upon the lawyers who have taken away the key of knowledge.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4547,27 +3067,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens this generation to children sitting in the markets calling to their fellows, We have piped unto you and ye have not danced, we have mourned unto you and ye have not lamented, for John came neither eating nor drinking and they say he has a devil, and the Son of man comes eating and drinking and they call him a gluttonous man and a winebibber, a friend of publicans and sinners — but wisdom is justified of her children.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 24.2.2 — Outward Versus Inward Religion
-
-- **uid:** `189e5fe2-a89e-4140-85ec-ff3a24b38601`
-- **Category:** Religious Hypocrisy
-- **Primary reference:** Matt 12:39 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Refuses the sign-seekers — only the sign of Jonah will be given to this evil generation
-
-**New:**
-
-> Jesus declares that an evil and adulterous generation seeks after a sign, and that no sign shall be given to it but the sign of the prophet Jonas.
+> Jesus likens this generation to children in the markets who would neither dance nor mourn, for John came neither eating nor drinking and they called him possessed, and the Son of Man comes eating and drinking and they call him a glutton.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4587,27 +3087,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus teaches that not that which goes into the mouth defiles a man but that which comes out of the mouth, for the things that proceed out of the mouth come forth from the heart and defile the man — for out of the heart proceed evil thoughts, murders, adulteries, fornications, thefts, false witness, and blasphemies.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 24.2.5 — Outward Versus Inward Religion
-
-- **uid:** `2b241873-59ca-4a3c-ac81-c3aeef96e1de`
-- **Category:** Religious Hypocrisy
-- **Primary reference:** Matt 16:4 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Repeats the rebuke — only the sign of Jonah will be given to this wicked generation
-
-**New:**
-
-> Jesus declares that a wicked and adulterous generation seeks after a sign, and that no sign shall be given unto it but the sign of the prophet Jonas.
+> Jesus teaches that what enters the mouth does not defile a man, but what comes from the heart defiles him: evil thoughts, murders, adulteries, thefts, false witness, and blasphemies.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4647,7 +3127,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus charges the Pharisees with laying aside the commandment of God to hold the tradition of men, such as the washing of pots and cups and many other such like things.
+> Jesus charges the Pharisees with setting aside the commandment of God to keep the tradition of men, such as the washing of pots and cups.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4667,7 +3147,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the Pharisees that they full well reject the commandment of God to keep their own tradition, citing how Moses commanded to honor father and mother and that whoso curses father or mother let him die the death, but they say that if a man tells his father or mother that any benefit they would have received is Corban — a gift — he is freed from helping them, thereby making the word of God of none effect through their tradition.
+> Jesus tells the Pharisees they reject God's commandment to keep their own tradition: Moses commanded honoring father and mother, but they say a son who declares his support Corban is freed from helping them, making the word of God void.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4687,27 +3167,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus calls the multitude to hearken unto him every one and to understand.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 24.3.5 — Traditions of Men Versus God's Commands
-
-- **uid:** `9a3c3960-ecdb-4209-8a90-93acd15e8e5c`
-- **Category:** Religious Hypocrisy
-- **Primary reference:** Mark 7:18–20 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Explains to the disciples that what enters from outside cannot defile — defilement comes from within
-
-**New:**
-
-> Jesus explains to the disciples that whatever thing from without enters into the man cannot defile him because it enters not into his heart but into the belly and goes out into the draught, purging all meats, but that which comes out of the man — that defiles the man.
+> Jesus calls the multitude to hearken to him every one and to understand.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4727,7 +3187,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus asks what man among them, having one sheep that falls into a pit on the sabbath day, will not lay hold of it and lift it out, and reasons that since a man is much better than a sheep, it is lawful to do well on the sabbath days.
+> Jesus asks what man among them would not lift his sheep from a pit on the sabbath, and reasons that since a man is much better than a sheep, it is lawful to do good on the sabbath.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4747,47 +3207,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus asks the Pharisees whether they have not read what David did when he was hungry, how he went into the house of God and took and ate the shewbread and gave also to those with him, which it was not lawful to eat but for the priests alone.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 24.4.8 — The Sabbath in Right Perspective
-
-- **uid:** `c4c9b7f3-cfb7-4a26-9fab-8ee55bc34955`
-- **Category:** Religious Hypocrisy
-- **Primary reference:** John 7:21–23 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> He defends his Sabbath healing by appealing to the lawful practice of circumcision on the Sabbath, asking why they are angry that he made a man whole
-
-**New:**
-
-> Jesus says that he has done one work and they all marvel, and reasons that since Moses gave them circumcision and they circumcise a man on the sabbath day so that the law of Moses should not be broken, they should not be angry at him because he has made a man every whit whole on the sabbath day.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 24.5.4 — Hypocrisy in Leadership
-
-- **uid:** `9ebcfccd-e2e4-4cfa-a7c2-85b47437f0cf`
-- **Category:** Religious Hypocrisy
-- **Primary reference:** Matt 23:2–4 (4 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> The scribes and Pharisees sit on Moses's seat — do what they say but not what they do; they burden others but will not lift a finger
-
-**New:**
-
-> Jesus says that the scribes and the Pharisees sit in Moses' seat, charging his hearers to observe and do whatsoever they bid but not to do after their works, for they say and do not, binding heavy and grievous burdens upon men's shoulders while they themselves will not move them with one of their fingers.
+> Jesus asks the Pharisees whether they have not read what David did when he was hungry, eating the showbread which was lawful only for priests.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4807,27 +3227,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus says that the scribes and Pharisees do all their works to be seen of men, making broad their phylacteries and enlarging the borders of their garments, loving the uppermost rooms at feasts, the chief seats in the synagogues, and greetings in the markets, and to be called of men Rabbi, Rabbi — and charges his hearers not to be called Rabbi nor master, for one is their Master, even Christ, and all are brethren.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 24.5.6 — Hypocrisy in Leadership
-
-- **uid:** `c821129e-edb5-476f-a80a-e10047fe8a70`
-- **Category:** Religious Hypocrisy
-- **Primary reference:** Matt 23:34–39 (6 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Declares he sends prophets and wise men whom they will kill — pronounces the Jerusalem lament: how often would he have gathered her children, but they were not willing
-
-**New:**
-
-> Jesus declares that he sends them prophets and wise men and scribes, of whom some they shall kill and crucify and others scourge in their synagogues and persecute from city to city, so that upon them shall come all the righteous blood shed upon the earth from Abel to Zacharias slain between the temple and the altar, and laments, O Jerusalem, Jerusalem, that kills the prophets and stones those sent unto her, how often would he have gathered her children as a hen gathers her chickens under her wings, and they would not.
+> Jesus says the scribes and Pharisees do their works to be seen, loving the chief seats in synagogues, greetings in markets, and the title Rabbi, and charges his disciples not to be called Rabbi, for one is their Master.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4847,7 +3247,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus speaks to the unfruitful fig tree, charging that no man eat fruit of it hereafter for ever.
+> Jesus speaks to the unfruitful fig tree, charging that no man eat fruit of it from now on for ever.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4867,47 +3267,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus asks in the temple, Is it not written, My house shall be called of all nations the house of prayer — but ye have made it a den of thieves.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 24.5.9 — Hypocrisy in Leadership
-
-- **uid:** `e9237b1b-656a-4ead-945e-1f748555d6bb`
-- **Category:** Religious Hypocrisy
-- **Primary reference:** Mark 11:29–30 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Counters the authority challenge with his own question — was John's baptism from heaven or from men?
-
-**New:**
-
-> Jesus tells the chief priests that he will ask them one question, and if they answer he will tell them by what authority he does these things, asking whether the baptism of John was from heaven or of men.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 24.5.11 — Hypocrisy in Leadership
-
-- **uid:** `a3367c51-6fb4-429f-9e44-c7d227cc9f96`
-- **Category:** Religious Hypocrisy
-- **Primary reference:** Luke 16:15 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Exposes the Pharisees who justify themselves before men — what they prize, God despises
-
-**New:**
-
-> Jesus tells the Pharisees that they justify themselves before men but God knows their hearts, for that which is highly esteemed among men is abomination in the sight of God.
+> Jesus asks in the temple, is my house not the house of prayer for all nations? You have made it a den of thieves.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4947,7 +3307,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the religious leaders that he receives not honor from men but knows that they have not the love of God in them, that he is come in his Father's name and they receive him not while if another comes in his own name him they will receive, asking how they can believe who receive honor one of another and seek not the honor that comes from God only — and declares that he need not accuse them to the Father, for there is one that accuses them, even Moses, in whom they trust.
+> Jesus tells the leaders he receives no honor from men but knows they have not the love of God in them, for they receive him not though he comes in his Father's name; he declares that Moses, in whom they trust, accuses them.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4967,7 +3327,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that all power in heaven and earth has been given to him and charges the eleven to go and teach all nations, baptizing them in the name of the Father, the Son, and the Holy Ghost, and teaching them to observe all that he has commanded, with the promise that he is with them always, even unto the end of the world.
+> Jesus declares all power in heaven and earth has been given him, charges the eleven to make disciples of all nations, baptizing in the name of the Father, Son, and Holy Spirit, and promises he is with them to the end of the world.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -4987,7 +3347,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the disciples that they must go into the next towns so that he may preach there also, for that is why he came forth.
+> Jesus tells the disciples they must go to the next towns so he may preach there also, for that is why he came forth.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5007,27 +3367,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the returning seventy that he beheld Satan fall as lightning from heaven and that he gives them power to tread on serpents and scorpions and over all the power of the enemy, charging them not to rejoice that the spirits are subject to them but rather that their names are written in heaven, and he thanks the Father for hiding these things from the wise and revealing them unto babes.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 26.3.4 — Visions and Commissions to the Apostles
-
-- **uid:** `09ff640a-c7fe-4a10-90a5-d26d947a428f`
-- **Category:** Mission and Witness
-- **Primary reference:** Acts 18:9–10 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Appears to Paul in Corinth — speak, do not fear, for many in this city belong to him and no one will harm him
-
-**New:**
-
-> Jesus tells Paul in a night vision at Corinth not to be afraid but to speak and hold not his peace, for he is with him and no man shall set on him to hurt him, because he has much people in that city.
+> Jesus tells the returning seventy he beheld Satan fall as lightning from heaven, and gives them power to tread on serpents and over the enemy, charging them not to rejoice that the spirits are subject but that their names are written in heaven.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5047,27 +3387,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus likens the men of his generation to children sitting in the marketplace who complain that their fellows neither danced when they piped nor wept when they mourned, for John the Baptist came neither eating nor drinking and they said he had a devil, and the Son of man comes eating and drinking and they call him a gluttonous man and a winebibber, yet wisdom is justified of all her children.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 26.4.6 — The Harvest and the Workers
-
-- **uid:** `3aa4feed-5d2d-4a07-8bcd-96af0fe84414`
-- **Category:** Mission and Witness
-- **Primary reference:** John 4:34–38 (5 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Tells the disciples his food is to do the Father's will — the fields are ripe for harvest, sower and reaper rejoicing together
-
-**New:**
-
-> Jesus tells the disciples that his meat is to do the will of him that sent him and to finish his work, bidding them lift up their eyes and look on the fields already white for harvest, where the reaper receives wages and gathers fruit unto life eternal so that sower and reaper may rejoice together, and reminds them that he sent them to reap that whereon they bestowed no labour, for other men have laboured and they have entered into their labours.
+> Jesus likens this generation to children who neither danced nor wept: John came neither eating nor drinking and they said he had a devil, and the Son of Man comes eating and drinking and they call him a glutton.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5087,7 +3407,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus warns the disciples that they shall be brought before governors and kings for his sake as a testimony against them and the Gentiles.
+> Jesus warns the disciples that they will be brought before governors and kings for his sake as a testimony against them and the Gentiles.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5107,7 +3427,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the disciples that not a hair of their head shall perish, and that in their patience they shall possess their souls.
+> Jesus tells the disciples that not a hair of their head will perish, and that in their patience they will possess their souls.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5147,27 +3467,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells his disciples that all of them shall be offended because of him this night, citing the scripture that the shepherd shall be smitten and the sheep of the flock scattered abroad, but pledges that after he is risen again he will go before them into Galilee.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 27.1.11 — The Last Supper
-
-- **uid:** `1bea93f7-0d02-446a-b5ba-85d07ea97bb8`
-- **Category:** The Passion Narrative
-- **Primary reference:** Luke 22:25–26 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> At the Last Supper dispute over greatness, tells the disciples that gentile rulers lord over their subjects but among them the greatest must be as the youngest and the leader as one who serves
-
-**New:**
-
-> Jesus says the kings of the Gentiles exercise lordship over them and those in authority are called benefactors, but charges his disciples that it shall not be so among them — he that is greatest must be as the younger, and he that is chief as he that serves.
+> Jesus tells his disciples that all of them will be offended because of him this night — the shepherd will be smitten and the sheep scattered — but pledges that after he is risen he will go before them into Galilee.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5187,7 +3487,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus charges Peter to put up his sword, for all who take the sword shall perish with the sword; he says he could pray to his Father and be given more than twelve legions of angels, but asks how then the scriptures should be fulfilled that thus it must be; and to the arresting party he asks if they have come out as against a thief with swords and staves, though he sat daily teaching in the temple and they laid no hold on him — yet all this was done that the scriptures of the prophets might be fulfilled.
+> Jesus charges Peter to put up his sword, for all who take the sword will perish; he could pray for twelve legions of angels but asks how then the scriptures should be fulfilled, and asks the arresting party why they come as against a thief.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5227,47 +3527,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus answers the high priest, Thou hast said, and declares that hereafter they shall see the Son of man sitting on the right hand of power and coming in the clouds of heaven.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 27.3.3 — The Trial and Crucifixion
-
-- **uid:** `13e332a8-6ea5-4cb5-b734-f3f9d53e628f`
-- **Category:** The Passion Narrative
-- **Primary reference:** Luke 23:28–31 (4 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Tells the weeping women on the way to the cross to weep for themselves and their children, not for him
-
-**New:**
-
-> Jesus tells the daughters of Jerusalem not to weep for him but for themselves and their children, for the days are coming when they shall say blessed are the barren and the wombs that never bare, and they shall begin to call to the mountains to fall on them and the hills to cover them; for if these things are done in a green tree, what shall be done in the dry?
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 27.4.3 — Words from the Cross
-
-- **uid:** `323187b5-c72a-4a44-9f28-6eca7108ed85`
-- **Category:** The Passion Narrative
-- **Primary reference:** Luke 23:43 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Jesus assures the repentant criminal crucified beside him that on that very day he will be with him in paradise, offering immediate salvation to one who turns to him in his final moments.
-
-**New:**
-
-> Jesus tells the repentant criminal crucified beside him, Verily I say unto thee, today shalt thou be with me in paradise.
+> Jesus answers the high priest, you have said, and declares that from now on they will see the Son of man sitting on the right hand of power and coming in the clouds of heaven.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5287,7 +3547,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> With a loud voice Jesus cries, Father, into thy hands I commend my spirit.
+> With a loud voice Jesus cries, Father, into your hands I commend my spirit.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5334,46 +3594,6 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 ---
 
-### 28.1.3 — Resurrection Appearances — Words Spoken
-
-- **uid:** `5badb54a-8e31-4c7e-a90b-c1fd14c330c2`
-- **Category:** Post-Resurrection Appearances
-- **Primary reference:** Luke 24:25–26 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Rebukes the Emmaus disciples for being slow to believe the prophets — the Christ had to suffer to enter glory
-
-**New:**
-
-> Jesus calls the two disciples fools and slow of heart to believe all that the prophets have spoken, asking whether the Christ ought not to have suffered these things and so entered into his glory.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 28.1.5 — Resurrection Appearances — Words Spoken
-
-- **uid:** `646d990f-950d-4b0f-920e-79ef31c97245`
-- **Category:** Post-Resurrection Appearances
-- **Primary reference:** Luke 24:38–39, 44 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Calms the disciples by showing his hands and feet — a spirit has no flesh, and Moses, Prophets, and Psalms speak of him
-
-**New:**
-
-> Jesus asks the disciples why they are troubled and why thoughts arise in their hearts, bids them behold his hands and feet and handle him, for a spirit has not flesh and bones as he has, and reminds them that all things must be fulfilled which were written in the law of Moses, the prophets, and the psalms concerning him.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
 ### 28.1.6 — Resurrection Appearances — Words Spoken
 
 - **uid:** `0fb208e8-0e0d-4d7a-815d-a5efe2673759`
@@ -5387,27 +3607,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus asks the disciples whether they have any meat there.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 28.1.7 — Resurrection Appearances — Words Spoken
-
-- **uid:** `8a661ce0-8897-42c8-b419-6995562f1bb1`
-- **Category:** Post-Resurrection Appearances
-- **Primary reference:** Luke 24:46–48 (3 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Commissions the disciples — repentance and forgiveness will be preached to all nations starting in Jerusalem
-
-**New:**
-
-> Jesus tells the disciples that thus it is written and thus it behoved Christ to suffer and to rise from the dead the third day, and that repentance and remission of sins should be preached in his name among all nations beginning at Jerusalem, declaring them to be witnesses of these things.
+> Jesus asks the disciples whether they have any food there.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5427,7 +3627,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus asks Mary why she weeps and whom she seeks, calls her by name, and tells her not to touch him for he is not yet ascended but to go tell his brethren that he ascends to his Father and their Father, to his God and their God; then appearing to the disciples he says peace be unto you, sends them as the Father has sent him, bids them receive the Holy Ghost, and grants that whose sins they remit are remitted and whose they retain are retained.
+> Jesus asks Mary why she weeps and calls her by name, sending her to tell his brethren he ascends to his Father. He gives the disciples peace, sends them as he was sent with the Holy Spirit, and grants authority to remit or retain sins.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5447,7 +3647,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus warns his disciples to take heed that no man deceive them, for many shall come in his name saying I am Christ and shall deceive many; iniquity shall abound, the love of many shall wax cold, and many shall be offended and betray and hate one another.
+> Jesus warns his disciples to take heed that no one deceive them, for many will come in his name claiming to be Christ; iniquity will abound and the love of many will grow cold.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5467,7 +3667,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells his disciples they shall hear of wars and rumours of wars but not be troubled, for nation shall rise against nation and kingdom against kingdom, and there shall be famines, pestilences, and earthquakes in divers places — all these are the beginning of sorrows.
+> Jesus tells his disciples they will hear of wars and rumors of wars but not be troubled, for nation will rise against nation and there will be famines and earthquakes — these are the beginning of sorrows.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5487,27 +3687,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus weeps over Jerusalem, lamenting that if she had known in this her day the things which belong to her peace, but now they are hid from her eyes, for the days shall come when her enemies shall cast a trench about her, compass her round, lay her even with the ground, and not leave one stone upon another, because she knew not the time of her visitation.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 29.1.10 — Signs of the End
-
-- **uid:** `7034530f-5bdd-493f-9029-3717dfc02eb9`
-- **Category:** Eschatology and the End Times
-- **Primary reference:** Luke 21:6 (1 verse)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Foretells the temple's destruction in Luke — the days are coming when not one stone will remain
-
-**New:**
-
-> Jesus foretells that the days will come when, of the things they behold, there shall not be left one stone upon another that shall not be thrown down.
+> Jesus weeps over Jerusalem, lamenting that she did not know the things that belong to her peace; the days will come when her enemies will lay her with the ground and not leave one stone upon another, because she knew not her visitation.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5527,27 +3707,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that his disciples shall be hated of all men for his name's sake, but he that endures to the end shall be saved.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 29.2.5 — The Return of the Son of Man
-
-- **uid:** `a4888ca4-d184-462c-8d9a-88233792cbd4`
-- **Category:** Eschatology and the End Times
-- **Primary reference:** Matt 24:40–41 (5 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> One will be taken and one left
-
-**New:**
-
-> Jesus says that two shall be in the field, the one taken and the other left, and two women shall be grinding at the mill, the one taken and the other left.
+> Jesus declares that his disciples will be hated of all men for his name's sake, but he that endures to the end will be saved.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5567,7 +3727,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus charges his hearers to watch, for they know not what hour their Lord doth come.
+> Jesus charges his hearers to watch, for they know not what hour their Lord does come.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5587,27 +3747,27 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares behold, I come quickly — blessed is he that keeps the sayings of the prophecy of this book — and that his reward is with him to give every man according as his work shall be, affirming surely I come quickly.
+> Jesus declares I come quickly — blessed is he that keeps the sayings of the prophecy of this book — and that his reward is with him to give every man according as his work will be, affirming surely I come quickly.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
 
 ---
 
-### 30.2.2 — Hell and Its Reality
+### 30.2.1 — Hell and Its Reality
 
-- **uid:** `ee1e026c-6ad0-403f-9cb2-55a98d342c3e`
+- **uid:** `38bcbd69-3779-4906-9b39-69f4889d6996`
 - **Category:** Judgment and Hell
-- **Primary reference:** Matt 5:29–30 (2 verses)
+- **Primary reference:** Matt 5:22 (1 verse)
 - **Review reasons:** structural-change
 
 **Old:**
 
-> If your right eye causes you to sin, tear it out — better to lose a member than have your whole body cast into Gehenna
+> Whoever calls his brother a fool is in danger of the fire of Gehenna — anger begins the progression toward judgment
 
 **New:**
 
-> Jesus charges that if the right eye offend a man let him pluck it out and cast it from him, and if the right hand offend let him cut it off and cast it from him, for it is profitable that one of his members should perish rather than his whole body be cast into hell.
+> Jesus warns that anger with a brother brings danger of judgment, calling him Raca brings the council, and saying You fool brings hell fire.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5627,7 +3787,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells how the king commands his servants to bind the man hand and foot and cast him into outer darkness, where there shall be weeping and gnashing of teeth.
+> Jesus tells how the king binds the man hand and foot and casts him into outer darkness, with weeping and gnashing of teeth.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5647,27 +3807,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus declares that many shall come from the east and west and shall sit down with Abraham and Isaac and Jacob in the kingdom of heaven.
-
-- [ ] Approved as written
-- [ ] Needs edit (note below):
-
----
-
-### 31.3.2 — Smyrna — The Suffering Church
-
-- **uid:** `28c23a66-8942-4ebc-8213-812a7c37c73b`
-- **Category:** The Seven Churches
-- **Primary reference:** Rev 2:9–10 (2 verses)
-- **Review reasons:** structural-change
-
-**Old:**
-
-> Tells suffering Smyrna they are spiritually rich — do not fear, be faithful even to death
-
-**New:**
-
-> Jesus tells Smyrna that he knows their tribulation and poverty, though they are rich, and the blasphemy of those who say they are Jews and are not but are the synagogue of Satan, charging them not to fear what they shall suffer but to be faithful unto death, and he will give them a crown of life.
+> Jesus declares that many will come from the east and west and will sit down with Abraham and Isaac and Jacob in the kingdom of heaven.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5687,7 +3827,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus commends Pergamos for holding fast his name and not denying his faith even where Satan dwells and where Antipas his faithful martyr was slain, but holds against them that some there hold the doctrine of Balaam and of the Nicolaitans, charging them to repent or he will come quickly and fight against them with the sword of his mouth.
+> Jesus commends Pergamos for holding fast his name even where Satan dwells, but holds against them that some hold the doctrines of Balaam and the Nicolaitans, charging them to repent or he will fight against them with the sword of his mouth.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5707,7 +3847,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus commends Thyatira's works, charity, service, faith, and patience, but holds against them that they suffer the woman Jezebel, who calls herself a prophetess and seduces his servants to fornication and to eat things sacrificed to idols, and declares that he will cast her into a bed and her children he will kill with death, that all the churches may know he is he who searches the reins and hearts and gives to every one according to their works.
+> Jesus commends Thyatira's works but holds against them that they suffer Jezebel, who seduces his servants to fornication and idolatry, and declares he will cast her into a bed and her children into death, that all may know he searches hearts.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5727,7 +3867,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus tells the rest in Thyatira who have not held this doctrine nor known the depths of Satan that he will put on them no other burden.
+> Jesus tells the rest in Thyatira who have not held this doctrine that he will put on them no other burden.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5747,7 +3887,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus, who has the seven Spirits of God and the seven stars, tells Sardis that they have a name that they live but are dead, charging them to be watchful and strengthen the things which remain, to remember how they have received and heard, to hold fast and repent, or else he will come on them as a thief at an hour they do not know.
+> Jesus tells Sardis that they have a name that they live but are dead, charging them to be watchful, strengthen what remains, and repent, or he will come on them as a thief at an hour they do not know.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
@@ -5767,7 +3907,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 **New:**
 
-> Jesus rebukes Laodicea for being neither cold nor hot but lukewarm, declaring that he will spue them out of his mouth, and tells them that though they say they are rich and have need of nothing, they know not that they are wretched, miserable, poor, blind, and naked, counseling them to buy of him gold tried in the fire, white raiment, and eyesalve, and declaring that as many as he loves he rebukes and chastens, charging them therefore to be zealous and repent.
+> Jesus rebukes Laodicea for being lukewarm and declares he will spit them out, telling them that though they say they are rich they are wretched and naked, counseling them to buy gold, white raiment, and eyesalve, and charging them to be zealous and repent.
 
 - [ ] Approved as written
 - [ ] Needs edit (note below):
