@@ -80,7 +80,7 @@
   height: 80px;
 }
 .modern-home-placeholder__heading {
-  font-family: var(--font-display);
+  font-family: var(--font-modern-display);
   font-size: var(--text-xl);
   font-weight: 600;
   color: var(--color-authority);
@@ -316,6 +316,15 @@
 .modern-search-result-row__type--teaching { color: var(--color-tag-parable); }
 .modern-search-result-row__title { font-size: var(--text-sm); color: var(--color-ink); line-height: 1.45; }
 .modern-search-result-row__crumb { font-size: var(--text-xs); color: var(--color-muted); margin-top: var(--space-1); display: block; }
+.modern-search-result-row__snippet {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  line-height: 1.4;
+  margin-top: 0.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 mark { background: var(--color-accent-light); color: var(--color-accent); border-radius: 2px; padding: 0 1px; font-weight: 700; }
 
 /* ── CategoryBrowser ── */
@@ -498,6 +507,13 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
 .modern-teaching-card__chips { display: flex; flex-wrap: wrap; gap: var(--space-1); align-items: center; }
 .modern-teaching-card__arrow { font-size: var(--text-lg); color: var(--color-accent); opacity: 0.5; flex-shrink: 0; transition: opacity 0.15s ease, transform 0.15s ease; align-self: center; }
 .modern-teaching-card:hover .modern-teaching-card__arrow { opacity: 1; transform: translateX(2px); }
+.modern-teaching-card__title {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-authority);
+  margin-bottom: 0.35rem;
+  line-height: 1.35;
+}
 
 /* Desktop: table-row layout for teachings list */
 @media (min-width: 768px) {
@@ -518,12 +534,10 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
   .modern-teaching-card:only-child  { border-radius: var(--radius-md); border-bottom-width: 1.5px; }
   .modern-teaching-card:hover { box-shadow: none; z-index: 1; position: relative; background: var(--color-surface-raised); border-color: var(--color-border); }
 
-  /* Chips inline beside text */
   .modern-teaching-card__main {
-    display: flex; align-items: baseline; gap: var(--space-3);
+    display: flex; flex-direction: column; gap: var(--space-1);
   }
-  .modern-teaching-card__text { margin-bottom: 0; flex: 1; }
-  .modern-teaching-card__chips { flex-shrink: 0; flex-wrap: nowrap; }
+  .modern-teaching-card__chips { flex-shrink: 0; flex-wrap: wrap; }
 }
 @media (max-width: 767px) {
   .modern-teaching-card__text { font-size: var(--text-base); }
@@ -569,6 +583,13 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
 .modern-detail-location__cat { color: var(--color-authority); font-weight: 700; }
 .modern-detail-location__sep { color: var(--color-accent); margin: 0 2px; }
 .modern-detail-location__sub { color: var(--color-authority); font-weight: 500; }
+.modern-detail-title {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-authority);
+  line-height: 1.3;
+  font-family: var(--font-modern-display);
+}
 .modern-detail-section { background: var(--color-surface); border-radius: var(--radius-md); border: 1.5px solid var(--color-border); overflow: hidden; }
 .modern-detail-section__head {
   padding: var(--space-2) var(--space-4); border-bottom: 1px solid var(--color-border);

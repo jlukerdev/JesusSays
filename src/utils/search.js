@@ -1,7 +1,7 @@
 import { createElement } from 'react'
 import MiniSearch from 'minisearch'
 
-const FIELDS = ['text', 'quote', 'categoryTitle', 'subcategoryTitle', 'tagsStr', 'referenceLabels']
+const FIELDS = ['title', 'text', 'quote', 'categoryTitle', 'subcategoryTitle', 'tagsStr', 'referenceLabels']
 
 const MINISEARCH_CONFIG = {
   idField: 'docId',
@@ -20,6 +20,7 @@ const MINISEARCH_CONFIG = {
 
 const DEFAULT_SEARCH_OPTIONS = {
   boost: {
+    title: 4,
     categoryTitle: 3,
     subcategoryTitle: 2,
     tagsStr: 1.5,
@@ -47,6 +48,7 @@ export function buildSearchIndex(categories, { force = false } = {}) {
           docId: teaching.id,
           categoryId: cat.id,
           subcategoryId: sub.id,
+          title: teaching.title ?? '',
           text: teaching.text ?? '',
           quote: teaching.quote ?? '',
           tagsStr: teaching.tags.join(' '),

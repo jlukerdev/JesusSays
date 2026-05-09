@@ -101,8 +101,15 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
               >
                 <span className="modern-search-result-row__type modern-search-result-row__type--teaching">Teaching</span>
                 <div className="modern-search-result-row__title">
-                  {highlightTerms(teaching.text.slice(0, 120) + (teaching.text.length > 120 ? '…' : ''), result.terms)}
+                  {teaching.title
+                    ? highlightTerms(teaching.title, result.terms)
+                    : highlightTerms(teaching.text.slice(0, 120) + (teaching.text.length > 120 ? '…' : ''), result.terms)}
                 </div>
+                {teaching.title && (
+                  <div className="modern-search-result-row__snippet">
+                    {teaching.text.slice(0, 90)}{teaching.text.length > 90 ? '…' : ''}
+                  </div>
+                )}
                 <span className="modern-search-result-row__crumb">{cat.title} › {sub.title}</span>
               </button>
             ))}

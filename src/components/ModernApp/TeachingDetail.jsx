@@ -25,22 +25,18 @@ export default function TeachingDetail({ teaching, catId, tabIndex, categories, 
           <span className="modern-detail-location__sub">{subcat?.title}</span>
         </div>
 
-        {/* Card: Summary text */}
-        <div className="modern-detail-section">
-          <div className="modern-detail-section__head modern-detail-section__head--with-chips">
-            <span>Teaching</span>
-            {teaching.tags.length > 0 && (
-              <div className="modern-detail-head-chips">
-                {teaching.tags.map(tag => (
-                  <span key={tag} className={`modern-tag modern-tag--${tag}`}>{tag}</span>
-                ))}
-              </div>
-            )}
+        {/* Teaching title + text */}
+        {teaching.title && (
+          <h1 className="modern-detail-title">{teaching.title}</h1>
+        )}
+        <p className="modern-detail-summary-text">{teaching.text}</p>
+        {teaching.tags.length > 0 && (
+          <div className="modern-detail-head-chips">
+            {teaching.tags.map(tag => (
+              <span key={tag} className={`modern-tag modern-tag--${tag}`}>{tag}</span>
+            ))}
           </div>
-          <div className="modern-detail-section__body modern-detail-section__body--padded">
-            <p className="modern-detail-summary-text">{teaching.text}</p>
-          </div>
-        </div>
+        )}
 
         {/* Scripture References */}
         <div className="modern-detail-section">

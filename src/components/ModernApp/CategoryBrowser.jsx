@@ -9,6 +9,9 @@ function TeachingCard({ teaching, onNavigate, onOpenBible }) {
   return (
     <div className="modern-teaching-card" onClick={onNavigate}>
       <div className="modern-teaching-card__main">
+        {teaching.title && (
+          <div className="modern-teaching-card__title">{teaching.title}</div>
+        )}
         <p className="modern-teaching-card__text">{teaching.text}</p>
         <div className="modern-teaching-card__chips">
           {teaching.tags.map(tag => (
@@ -86,8 +89,15 @@ function InCategorySearchResults({ cat, searchQuery, onNavigate }) {
             >
               <span className="modern-search-result-row__type modern-search-result-row__type--teaching">Teaching</span>
               <div className="modern-search-result-row__title">
-                {highlightTerms(teaching.text.slice(0, 120) + (teaching.text.length > 120 ? '…' : ''), result.terms)}
+                {teaching.title
+                  ? highlightTerms(teaching.title, result.terms)
+                  : highlightTerms(teaching.text.slice(0, 120) + (teaching.text.length > 120 ? '…' : ''), result.terms)}
               </div>
+              {teaching.title && (
+                <div className="modern-search-result-row__snippet">
+                  {teaching.text.slice(0, 90)}{teaching.text.length > 90 ? '…' : ''}
+                </div>
+              )}
               <span className="modern-search-result-row__crumb">{sub.title}</span>
             </button>
           ))}
