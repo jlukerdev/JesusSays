@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BookOpen, Search } from 'lucide-react'
+import { Search } from 'lucide-react'
 import useStore from '../../store.js'
 import ModernNavBar from './ModernNavBar.jsx'
 import ModernSearchBar from './ModernSearchBar.jsx'
@@ -30,12 +30,18 @@ export default function ModernApp() {
   const [currentTeaching, setCurrentTeaching] = useState(null)
   const [activeBookFilter, setActiveBookFilter] = useState(null)
   const [searchQuery, setSearchQuery] = useState('')
+  const [lastSearchQuery, setLastSearchQuery] = useState('')
   const [bibleRef, setBibleRef] = useState(null)
   const [bibleOpen, setBibleOpen] = useState(false)
   const [biblePinned, setBiblePinned] = useState(false)
   const [tocVisible, setTocVisible] = useState(true)
 
   function showScreen(entry) {
+    if (entry.screen === 'home') {
+      setLastSearchQuery('')
+    } else if (searchQuery.trim()) {
+      setLastSearchQuery(searchQuery)
+    }
     setSearchQuery('')
     if (entry.screen === 'category') {
       if (entry.catId !== currentCatId) setActiveBookFilter(null)
@@ -56,6 +62,16 @@ export default function ModernApp() {
     }
   }
 
+  function backToResults() {
+    if (!lastSearchQuery) return
+    setCurrentCatId(null)
+    setCurrentTabIndex(0)
+    setCurrentTeaching(null)
+    setTocVisible(true)
+    setSearchQuery(lastSearchQuery)
+    setLastSearchQuery('')
+  }
+
   const currentScreen = currentTeaching !== null ? 'teaching' : currentCatId !== null ? 'category' : 'home'
 
   return (
@@ -74,8 +90,11 @@ export default function ModernApp() {
           currentCatId={currentCatId}
           categories={categories}
           searchQuery={searchQuery}
+          lastSearchQuery={lastSearchQuery}
+          onBackToResults={backToResults}
           onSearchChange={(q) => {
             setSearchQuery(q)
+            if (q.trim()) setLastSearchQuery('')
             if (isMobile && currentScreen === 'home') setTocVisible(!q)
           }}
         />
@@ -107,11 +126,11 @@ export default function ModernApp() {
               ) : (
                 !isMobile && (
                   <div className="modern-home-placeholder">
-                    <BookOpen className="modern-home-placeholder__icon" aria-hidden="true" />
-                    <h2 className="modern-home-placeholder__heading">Explore the Words of Jesus</h2>
+                    <img src="/JesusSays/icons/chat_bub_512.svg" className="modern-home-placeholder__icon" alt="" aria-hidden="true" />
+                    <h2 className="modern-home-placeholder__heading">Explore the Teachings of Jesus Christ</h2>
                     <p className="modern-home-placeholder__body">
-                      Choose a <strong>Topic</strong> to dive into a theme,
-                      or use the <Search size={14} className="modern-home-placeholder__inline-icon" aria-hidden="true" /> <strong>search bar</strong> above to find teachings by keyword.
+                      Choose a <strong>Theme</strong> to dive into the <strong>Topics</strong>,
+                      <br />or use the <Search size={14} className="modern-home-placeholder__inline-icon" aria-hidden="true" /> <strong>Search</strong> above.
                     </p>
                   </div>
                 )

@@ -10,6 +10,7 @@ import FilterBar from './components/FilterBar/FilterBar.jsx'
 import CatalogOptimizer from './components/CatalogOptimizer/CatalogOptimizer.jsx'
 import { loadTeachings } from './data/loader.js'
 import { buildReverseIndex } from './data/reverseIndex.js'
+import { buildSearchIndex } from './utils/search.js'
 import useStore from './store.js'
 import { useLocalPreference } from './hooks/useLocalPreference.js'
 import ModernApp from './components/ModernApp/ModernApp.jsx'
@@ -49,6 +50,7 @@ function AppRoutes() {
     loadTeachings()
       .then(({ categories, meta }) => {
         buildReverseIndex(categories)
+        buildSearchIndex(categories)
         setData({ categories, meta })
       })
       .catch((err) => setDataError(err.message))

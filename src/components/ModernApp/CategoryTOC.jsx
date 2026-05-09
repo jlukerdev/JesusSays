@@ -4,7 +4,7 @@ export default function CategoryTOC({ categories, currentCatId, onNavigateToCate
   return (
     <div className="modern-cat-toc">
       <button className="modern-cat-toc__label" onClick={onGoHome}>
-        <Home size={13} /> Topics
+        <Home size={13} /> Themes
       </button>
       {categories.map(cat => (
         <button
