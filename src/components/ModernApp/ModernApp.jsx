@@ -112,6 +112,15 @@ export default function ModernApp() {
             />
           </div>
 
+          <BibleViewer
+            bibleRef={bibleRef}
+            open={bibleOpen}
+            pinned={biblePinned}
+            onClose={() => setBibleOpen(false)}
+            onTogglePin={() => setBiblePinned(p => !p)}
+            onReopen={() => setBibleOpen(true)}
+          />
+
           <div className={`modern-content-pane${biblePinned && bibleOpen ? ' modern-panel-pinned' : ''}${isMobile && currentScreen === 'category' ? ' modern-content-pane--cat-scroll' : ''}`}>
             {currentScreen === 'home' && (
               searchQuery ? (
@@ -171,15 +180,6 @@ export default function ModernApp() {
           </div>
         </div>
       </div>
-
-      <BibleViewer
-        bibleRef={bibleRef}
-        open={bibleOpen}
-        pinned={biblePinned}
-        onClose={() => setBibleOpen(false)}
-        onTogglePin={() => setBiblePinned(p => !p)}
-        onReopen={() => setBibleOpen(true)}
-      />
 
       <AboutPanel />
     </div>

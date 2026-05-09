@@ -30,7 +30,7 @@ export default function ModernSearchBar({
         <Search className="modern-search-bar__icon" size={15} aria-hidden="true" />
         <input
           className="modern-search-bar__input"
-          type="search"
+          type="text"
           value={searchQuery}
           placeholder={placeholder}
           onChange={(e) => onSearchChange(e.target.value)}

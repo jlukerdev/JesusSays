@@ -639,7 +639,7 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
 
 /* ── BibleViewer — Panel (desktop) ── */
 .modern-bible-panel {
-  position: fixed; top: 0; right: 0; bottom: 0;
+  position: absolute; top: 0; right: 0; bottom: 0;
   width: var(--modern-panel-width);
   background: var(--color-surface); border-left: 1px solid var(--color-border);
   display: flex; flex-direction: column; z-index: 150;
