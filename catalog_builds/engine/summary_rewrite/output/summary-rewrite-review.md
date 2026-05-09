@@ -25,7 +25,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens the kingdom of heaven to a mustard seed which, though least of all seeds, grows into a tree where the birds of the air come and lodge in its branches.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -45,7 +45,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens the kingdom of heaven to leaven which a woman hides in three measures of meal until the whole is leavened.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -65,7 +65,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens the kingdom of heaven to treasure hidden in a field which a man finds and for joy sells all to buy that field, and to a merchant who finds one pearl of great price and sells all to buy it.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -85,7 +85,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens the kingdom of heaven to a net cast into the sea that gathers every kind; the good are kept and the bad cast away. At the end of the age angels will sever the wicked from the just.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -105,7 +105,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens every scribe instructed for the kingdom of heaven to a householder who brings out of his treasure things new and old.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -125,7 +125,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens the kingdom of heaven to a king who makes a wedding for his son and sends servants to call the invited, but they refuse and kill the servants. The king destroys them, burns their city, and sends servants into the highways to gather all they find. One found without a wedding garment is cast into outer darkness, for many are called but few chosen.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -145,7 +145,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens the kingdom of heaven to ten virgins going to meet the bridegroom — five wise with oil and five foolish without. While he tarries all sleep; at midnight a cry sounds, the wise enter the marriage while the foolish find a shut door and hear, I do not know you. He charges them to watch, for they know neither the day nor the hour.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -165,7 +165,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a sower whose seed falls by the wayside and is devoured, on stony ground where it withers, among thorns that choke it, and on good ground where it bears a hundredfold. He explains the seed as the word of the kingdom and the soils as hearers — wayside, stony, thorny, and good who hear and bear fruit.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -185,7 +185,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens the kingdom to a man who sows good seed while his enemy sows tares among the wheat. He tells the servants to let both grow until the harvest, when reapers will burn the tares and gather the wheat. He explains the harvest as the end of the age, when angels gather out all that offends and the righteous shine as the sun.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -205,7 +205,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus asks the disciples whether they understand this parable, saying that if not, how then will they know all parables.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -225,7 +225,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens the kingdom of God to a man who scatters seed and sleeps while it springs up he knows not how. The earth bears fruit of itself — first blade, then ear, then full grain. When it is ripe he puts in the sickle.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -245,7 +245,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens the kingdom of heaven to a householder who hires laborers throughout the day for a denarius. At evening he pays each one a denarius beginning with the last; when those hired first murmur, he answers that he does no wrong. He declares that the last will be first and the first last, for many are called but few chosen.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -265,7 +265,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a man with two sons: the first refuses to work in the vineyard but later repents and goes, while the second agrees but does not go. Tax collectors and harlots enter the kingdom of God before those who only profess obedience.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -285,7 +285,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a householder who plants a vineyard, leases it to tenants, and goes away. The tenants beat and kill the servants he sends, and finally kill his son to seize the inheritance — so the lord will destroy them and give the vineyard to others. He declares that the kingdom of God will be taken from them and given to a nation bearing its fruits.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -305,7 +305,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a man whose fig tree bore no fruit for three years and is to be cut down, but the vinedresser asks one more year to dig and fertilize it before judgment.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -325,7 +325,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a shepherd with a hundred sheep who leaves the ninety-nine to seek the one that is lost, then lays it on his shoulders rejoicing and calls his friends to celebrate, for there is more joy in heaven over one sinner who repents.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -345,7 +345,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a woman with ten silver coins who, losing one, lights a lamp and sweeps the house until she finds it, then calls her neighbors to rejoice with her, saying there is joy among the angels over one sinner who repents.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -365,7 +365,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a younger son who takes his inheritance to a far country, squanders it in reckless living, and in famine resolves to return confessing he has sinned. His father runs to meet him with compassion and restores him with the best robe and the fatted calf, rebuking the older son's anger and declaring this son was dead and is alive again, was lost and is found.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -385,7 +385,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus asks whether the wedding guests can mourn while the bridegroom is with them, then teaches that no one sews new cloth on an old garment or the tear is made worse, and no one puts new wine into old wineskins or the skins burst and the wine is spilled — new wine goes into new wineskins so both are preserved.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -405,7 +405,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a man who goes to a friend at midnight for three loaves. Though the friend refuses because his door is shut and his children are in bed, yet because of the man's persistence he rises and gives him what he needs.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -425,7 +425,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a widow who keeps pressing an unjust judge until he avenges her, and declares God will much more speedily avenge his elect who cry day and night, asking whether the Son of Man will find faith on earth when he comes.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -445,7 +445,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a man left half dead by thieves, passed by a priest and Levite but tended by a Samaritan who binds his wounds and pays for his care at an inn, and charges his hearer to go and do likewise.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -465,7 +465,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens whoever hears his sayings and does them to a wise man who built on rock, which stood when the storms came. Whoever hears but does them not is like a foolish man who built on sand, and great was its fall.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -485,7 +485,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the invited to take the lowest seat lest they be moved down in shame, for whoever exalts himself will be humbled. When they host a feast, they should invite the poor and lame who cannot repay them, and be repaid at the resurrection.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -505,7 +505,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a servant who must serve his master's meal before eating, and asks if the master thanks him for what was commanded. So when disciples have done all, they should say they are unworthy servants who only did their duty.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -525,7 +525,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a Pharisee who boasts to God of his fasts and tithes and a publican who beats his breast pleading mercy. He declares the publican goes home justified — whoever exalts himself will be humbled, and whoever humbles himself will be exalted.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -545,7 +545,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells Simon of a creditor who forgave two debtors, one owing five hundred pence and the other fifty, and asks who will love him most. He contrasts the woman who washed his feet with tears against Simon, who gave no water, kiss, or oil.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -565,7 +565,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens the kingdom of heaven to a king who, moved with compassion, forgives a servant ten thousand talents. When that servant seizes a fellowservant owing a hundred pence and casts him into prison, the lord delivers him to the tormentors, warning his heavenly Father will do likewise unless they forgive a brother from the heart.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -585,7 +585,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus warns against covetousness and tells of a rich man who planned bigger barns and ease for his soul. God said, You fool, this night your soul will be required of you. So is he who lays up treasure but is not rich toward God.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -605,7 +605,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a man who delivers talents to his servants — five, two, and one, each according to ability. On his return he commends those who doubled what they were given, but condemns the one who hid his talent as wicked and slothful, casting him into outer darkness. To everyone who has more will be given; from him who has not even what he has will be taken.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -625,7 +625,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a steward accused of wasting his lord's goods who, about to be put out, calls in the debtors and reduces their bills to make friends for himself; the lord commends the unjust steward for acting wisely. He charges his hearers to make friends by the mammon of unrighteousness, says one faithful in little is faithful in much, and that no one can serve God and mammon.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -645,7 +645,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a man going from Jerusalem to Jericho who falls among thieves. A priest and Levite pass by; a Samaritan has compassion and pays an innkeeper to care for him. He asks which was neighbor, charging him to go and do likewise.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -665,7 +665,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens the would-be disciple to a man building a tower who first counts the cost, and to a king going to war who first weighs whether he can win or must sue for peace. Whoever does not forsake all cannot be his disciple.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -685,7 +685,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a Pharisee who boasts to God of his fasts and tithes and a publican who beats his breast pleading mercy. He declares the publican goes home justified — whoever exalts himself will be humbled, and whoever humbles himself will be exalted.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -705,7 +705,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a faithful and wise servant whom his lord makes ruler over his household; when his lord finds him so doing he will set him over all his goods, but if that evil servant says his lord delays his coming and beats his fellows, his lord will come at an unexpected hour and appoint him with the hypocrites where there will be weeping and gnashing of teeth.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -725,7 +725,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens the kingdom to ten virgins who took lamps to meet the bridegroom — five wise with oil and five foolish without; while he tarried they slept, and at midnight a cry came; the foolish went to buy oil, but the bridegroom arrived and the wise entered, and the door was shut — watch, for you know neither the day nor the hour.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -745,7 +745,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus charges his disciples to keep their lamps burning like men waiting for their lord's return; blessed are those he finds watching, for he will gird himself and serve them — and the Son of Man comes at an unexpected hour.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -765,7 +765,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus draws a parable from the fig tree: as its branch becoming tender and putting forth leaves shows that summer is near, so when his hearers see all these things they may know that it is near, even at the doors.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -787,7 +787,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that the true shepherd enters by the door and his sheep know his voice. He calls himself the door by which any may enter and be saved, and the good shepherd who lays down his life for the sheep, knows his own as the Father knows him, and has other sheep he must bring, so there will be one flock and one shepherd.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -807,7 +807,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says every kingdom divided against itself cannot stand. He asks how Satan's kingdom can stand if Satan casts out Satan, declares that if he casts out devils by the Spirit of God the kingdom of God has come, and likens his work to binding the strong man before plundering his house. Whoever is not with him is against him.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -827,7 +827,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus asks the Pharisees what they think of the Christ and whose son he is, then citing David who in the Spirit calls him Lord — saying the LORD said to my Lord, sit at my right hand until I make your enemies your footstool — he asks how, if David then calls him Lord, he is his son.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -847,7 +847,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > At Lazarus's tomb Jesus commands the stone be taken away, reminds Martha that if she would believe she should see the glory of God, lifts his eyes to thank the Father for hearing him so that the people standing by may believe the Father has sent him, then cries with a loud voice for Lazarus to come out and bids them loose him and let him go.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -867,7 +867,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus charges his hearers to take no thought for life, food, drink, or clothing, declaring that life is more than food and the body more than clothing, and that the heavenly Father knows they need all these things.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -887,7 +887,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says that whoever puts away his wife, except for the cause of fornication, causes her to commit adultery, and whoever marries her who is divorced commits adultery.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -907,7 +907,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the mother of Zebedee's sons and the disciples that they do not know what they ask, that drinking his cup is theirs but sitting at his right or left is the Father's to give. He charges that unlike Gentile rulers who lord it over others, whoever would be great among them must be their servant and whoever would be first must be slave of all.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -927,7 +927,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares to a paralytic that his sins are forgiven, and when scribes call it blasphemy he asks whether it is easier to say your sins are forgiven or to say arise and walk, then heals the man so they may know the Son of Man has power on earth to forgive sins.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -947,7 +947,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the Sadducees they err, not knowing the scriptures nor the power of God, that in the resurrection people neither marry nor are given in marriage but are as the angels of God in heaven, and that God is not the God of the dead but of the living, the God of Abraham, Isaac, and Jacob.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -967,7 +967,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says a rich man will hardly enter the kingdom of heaven, for it is easier for a camel to go through the eye of a needle than for a rich man to enter the kingdom of God. What is impossible with men is possible with God.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -987,7 +987,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Asked whether it is lawful to give tribute to Caesar, Jesus calls his questioners hypocrites and asks for the tribute coin. Seeing Caesar's image and inscription, he tells them to render to Caesar what is Caesar's and to God what is God's.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1007,7 +1007,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells of a rich man clothed in purple who fared sumptuously, and a beggar named Lazarus laid at his gate full of sores. When both died, Lazarus was carried into Abraham's bosom while the rich man in hell lifted his eyes in torment. Abraham tells him he received good things in life and Lazarus evil; now Lazarus is comforted, he tormented, and a great gulf is fixed between them.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1027,7 +1027,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus describes the Son of Man coming in glory and gathering all nations, separating them as a shepherd divides sheep from goats. The King welcomes those on his right to inherit the kingdom for feeding, clothing, and visiting him in the least of these, and sends those on the left into everlasting fire for failing to do so, the righteous going into life eternal.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1047,7 +1047,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says that if anyone will come after him, let him deny himself, take up his cross, and follow him, for whoever will save his life will lose it and whoever will lose his life for his sake will find it. He declares some standing there will not taste death till they see the Son of Man coming in his kingdom.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1067,7 +1067,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the religious leaders that though they are Abraham's seed, they seek to kill him because his word has no place in them, and that they do the deeds of their father the devil — a murderer from the beginning, the father of lies; because Jesus tells them the truth they do not believe him, for he that is of God hears God's words.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1087,7 +1087,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus charges the twelve to go to the lost sheep of Israel, taking neither gold nor extra clothing for the worker is worthy of his wages, lodging where they are received and shaking off the dust where they are not, warning them of councils and synagogues; whoever loses his life for his sake will find it, and whoever receives them receives him.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1107,7 +1107,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus calls out to Saul on the Damascus road, asking why he persecutes him and declaring himself to be Jesus whom Saul persecutes, and tells him it is hard to kick against the pricks and to arise and go into the city where he will be told what he must do.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1127,7 +1127,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus takes the bread and cup at the supper, telling the disciples to take and eat for this is his body, and to drink for this is his blood of the new testament shed for many for the remission of sins, and declares he will not drink of the vine again until that day in his Father's kingdom.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1147,7 +1147,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus institutes the Lord's Supper, bidding the disciples to take and eat his body and to drink of the cup which is his blood of the new testament shed for many for the remission of sins, and pledges he will not drink of the fruit of the vine again until that day when he drinks it new with them in his Father's kingdom.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1167,7 +1167,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus bids the disciples to watch with him, telling them his soul is exceeding sorrowful unto death, and prays that if possible the cup might pass yet not as he wills but the Father's; he rebukes them for not watching one hour, charging them to pray that they enter not into temptation, and at last tells them the hour is at hand.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1187,7 +1187,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus warns that when his hearers see the abomination of desolation standing in the holy place, those in Judea must flee to the mountains without turning back, for then will be great tribulation such as has not been since the beginning of the world; for the elect's sake those days will be shortened.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1207,7 +1207,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares the Son of Man's coming will be like lightning from east to west, and as in Noah's days they ate and married till the flood came, so will his coming be; he says heaven and earth will pass away but his words will not, and that of that day no one knows — not the angels, but the Father only.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1227,7 +1227,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that heaven and earth will pass away but his words will not pass away, says that of that day and hour knows no man — not the angels of heaven, but the Father only — and likens his coming to a thief whose hour the householder does not know, charging his hearers therefore to be ready.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1249,7 +1249,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells his disciples that the Father himself loves them because they have loved him and believed that he came out from God, and that the Father has committed all judgment to the Son.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1269,7 +1269,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that he is the bread of life and the living bread come down from heaven, that whoever comes to him will never hunger and whoever believes will never thirst, and the bread he gives for the world's life is his flesh.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1289,7 +1289,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that he is the true vine, his Father the vinedresser, and his disciples the branches who apart from him can do nothing.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1309,7 +1309,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that he and the Father are one, and bids his hearers, though they do not believe him, to believe the works that they may know the Father is in him and he in the Father.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1329,7 +1329,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus cites their law that says, you are gods, and asks why they call it blasphemy when he whom the Father has sanctified and sent into the world says he is the Son of God, since the scripture cannot be broken.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1349,7 +1349,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares he has not spoken of himself; the Father who sent him gave him commandment what to say, and his commandment is everlasting life.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1369,7 +1369,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus answers Philip, asking how he has been so long with them and yet not known him, and declares that whoever has seen him has seen the Father, so why does Philip ask, show us the Father.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1389,7 +1389,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells his disciples he goes away and comes again; if they loved him they would rejoice he goes to the Father, greater than he.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1409,7 +1409,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus answers the chief priests by saying he will tell them his authority if they first say whether John's baptism was from heaven or men.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1429,7 +1429,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the chief priests that neither will he tell them by what authority he does these things.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1449,7 +1449,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says he has come to send fire on the earth and asks what he wills if it is already kindled.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1469,7 +1469,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says this sickness is not unto death but for the glory of God, that the Son of God might be glorified by it.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1489,7 +1489,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that no one has ascended to heaven but he who came down from heaven, the Son of Man who is in heaven.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1509,7 +1509,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says he is with them a little while longer, then goes to him who sent him. They will seek but not find him.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1529,7 +1529,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the twelve they go up to Jerusalem where all things written by the prophets concerning the Son of Man will be accomplished — he will be delivered to the Gentiles, mocked, scourged, and killed, and the third day rise again.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1549,7 +1549,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that the Father loves him because he lays down his life to take it again. No one takes it from him; he lays it down of himself, with power to lay it down and to take it again, as commanded by the Father.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1569,7 +1569,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells John’s disciples to report what they hear and see: the blind see, the lame walk, lepers are cleansed, the deaf hear, the dead are raised, the poor receive the gospel; blessed is whoever is not offended in him.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1589,7 +1589,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says that if his hearers will receive it, John is the Elijah who was to come.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1609,7 +1609,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus sends two disciples into the village to find a donkey tied with a colt, loose them and bring them, and if anyone questions them, to say the Lord has need of them and he will send them at once.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1629,7 +1629,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus calls the man with the withered hand to stretch it out, and it is restored whole as the other on the Sabbath.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1649,7 +1649,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus charges the unclean spirit to come out of the Gerasene man and demands its name, which answers Legion, for they are many.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1669,7 +1669,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus looks up to heaven, sighs, and says Ephphatha, that is, Be opened, and the deaf man's ears and tongue are loosed.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1689,7 +1689,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares his compassion on the crowd that has been with him three days with nothing to eat, and will not send them away hungry lest they faint on the way, for some have come from far.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1709,7 +1709,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the weeping widow of Nain not to weep, then touches the bier and calls her dead son to arise.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1729,7 +1729,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that it is the Spirit that gives life and the flesh profits nothing, and that the words he speaks are spirit and are life.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1749,7 +1749,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells his disciples it is given to them to know the mysteries of the kingdom, but not to others, and that he speaks to the multitude in parables because seeing they do not see and hearing they do not understand.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1769,7 +1769,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that unless his hearers are converted and become as little children, they will not enter the kingdom of heaven.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1789,7 +1789,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells Nicodemus not to marvel that he must be born again, for the wind blows where it wills—so is everyone born of the Spirit.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1809,7 +1809,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus warns that once the master shuts the door, those who knock saying Lord, Lord will hear him answer that he does not know them; though they protest they ate with him and he taught in their streets, he will tell them to depart.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1829,7 +1829,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus asks the two blind men whether they believe he is able to do this.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1849,7 +1849,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that according to their faith it will be done, telling the bleeding woman and others their faith has made them whole and to go in peace.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1869,7 +1869,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus calls Peter out of the boat onto the water with a single word: come.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1889,7 +1889,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus cries out against a faithless and perverse generation, asking how long he will bear with them, and bids the father bring his son.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1909,7 +1909,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus cries out against a faithless and perverse generation, asking how long he will bear with them, and bids the boy be brought to him.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1929,7 +1929,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus asks his disciples why they are so fearful and have no faith, calls Peter of little faith asking why he doubted, and tells the synagogue ruler not to be afraid but only believe.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1949,7 +1949,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus answers the lawyer's question with a question, asking what is written in the law and how he reads it.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1969,7 +1969,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that the law and the prophets were until John, and that since then the kingdom of God is preached and every man presses into it.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -1989,7 +1989,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says that if his hearers had believed Moses they would have believed him, for Moses wrote of him, and asks how they will believe his words if they do not believe his writings.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2009,7 +2009,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that their father Abraham rejoiced to see his day, and that he saw it and was glad.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2029,7 +2029,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > At the Last Supper Jesus gives the disciples bread and the cup as his body and his blood of the new covenant poured out for many for the remission of sins, charging them to do this in remembrance of him.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2049,7 +2049,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus teaches his disciples to pray this way, addressing God as their Father in heaven and hallowing his name.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2069,7 +2069,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus warns against vain repetitions, for the Father knows what his children need before they ask him.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2089,7 +2089,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells his disciples that when they stand praying they must forgive any grievance, that the Father in heaven may forgive their trespasses.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2109,7 +2109,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells his disciples that if they love him they will keep his commandments.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2129,7 +2129,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says that unless his hearers' righteousness exceeds that of the scribes and Pharisees, they will in no way enter the kingdom of heaven.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2149,7 +2149,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus teaches that whoever is angry with his brother without cause is in danger of judgment, and contempt brings one into hell fire.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2169,7 +2169,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus teaches that whoever looks at a woman to lust has already committed adultery with her in his heart, and if the right eye or hand causes sin, it is better to lose it than have the whole body cast into hell.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2189,7 +2189,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus warns his hearers not to do their alms before men like the hypocrites who sound a trumpet and already have their reward. Give so secretly the left hand knows not what the right does, and the Father who sees in secret will reward you.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2209,7 +2209,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus charges his hearers, when they fast, not to look sad like the hypocrites who disfigure their faces to be seen by men. Let them anoint the head and wash the face so the fast is seen only by the Father, who will reward them.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2229,7 +2229,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says, Judge not, that you be not judged, for the measure you use will be measured back. He asks why they see the speck in their brother's eye but not the beam in their own, charging them first to cast out their own beam.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2249,7 +2249,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus charges his hearers not to give what is holy to dogs nor cast pearls before swine, lest they be trampled and turned upon.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2269,7 +2269,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the disciples that since he their Lord has washed their feet, they ought to wash one another's feet by his example. The servant is not greater than his lord, and they are blessed if they do these things.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2289,7 +2289,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that unless his hearers are converted and become as little children they will not enter the kingdom of heaven, and whoever humbles himself as a little child is the greatest in the kingdom of heaven.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2309,7 +2309,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus asks the chief priests and scribes if they have never read that out of the mouth of babes and infants God has perfected praise.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2329,7 +2329,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the disciples it is given them to know the mysteries of the kingdom, and he speaks to the multitudes in parables because seeing they do not see and hearing they do not hear. He blesses their eyes and ears for what they see.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2349,7 +2349,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus asks his disciples whether they are also without understanding, that whatever enters the mouth goes into the stomach and is expelled.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2369,7 +2369,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says to let the Pharisees alone, for they are blind leaders of the blind, and if the blind lead the blind both will fall into the ditch.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2389,7 +2389,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the Pharisees and Sadducees that when it is evening they say it will be fair weather, for the sky is red.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2409,7 +2409,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says when a cloud rises in the west they predict a shower, and when the south wind blows they predict heat.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2429,7 +2429,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares he came for judgment, that those who do not see may see and those who see may be made blind.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2449,7 +2449,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the Pharisees that if they were blind they would have no sin, but because they say they see, their sin remains.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2469,7 +2469,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus asks whether a candle is brought to be put under a bushel or a bed rather than on a candlestick, declaring that nothing is hidden that will not be made manifest, nor kept secret but that it should come abroad.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2489,7 +2489,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus warns that if you do not forgive, neither will your Father in heaven forgive your trespasses.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2509,7 +2509,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus counsels his hearers to agree with their adversary quickly while on the way. Otherwise the adversary will deliver them to the judge and the judge to the officer, and they will be cast into prison until they have paid the last farthing.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2529,7 +2529,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus instructs that if a brother trespasses, go and tell him his fault privately. If he refuses, take one or two witnesses. If he still refuses, tell the church; if he refuses the church, let him be as a heathen and a publican.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2549,7 +2549,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says not all can receive this saying, only those to whom it is given. He names eunuchs born so, eunuchs made by men, and those who made themselves eunuchs for the kingdom of heaven, and bids him who can receive it to receive it.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2569,7 +2569,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus teaches that out of the heart proceed evil thoughts, murders, adulteries, fornications, thefts, false witness, and blasphemies.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2589,7 +2589,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says he came not to send peace on earth but a sword, to set a man against his father, daughter against mother, and daughter-in-law against mother-in-law, and a man's foes will be those of his own household.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2609,7 +2609,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus asks who is his mother and his brothers, then looks at those sitting around him and names them as his mother and his brothers.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2629,7 +2629,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus refuses to arbitrate an inheritance dispute between two brothers, asking who made him a judge or a divider over them.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2649,7 +2649,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus charges his hearers to give to the one who asks and not to turn away from the one who would borrow.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2669,7 +2669,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus blesses the poor for theirs is the kingdom of God, those who hunger for they will be filled, and those who weep for they will laugh. He pronounces woe when all speak well of you, for so did their fathers to the false prophets.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2689,7 +2689,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus blesses the merciful, declaring that they will obtain mercy, and elsewhere says he desires mercy and not sacrifice.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2709,7 +2709,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus calls his first disciples to follow him, promising to make them fishers of men.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2729,7 +2729,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus names Simon son of Jonah and declares that he will be called Cephas.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2749,7 +2749,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that everyone who has forsaken houses or brothers or sisters or father or mother or wife or children or lands for his name's sake will receive a hundredfold and will inherit everlasting life.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2769,7 +2769,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus asks why his hearers call him Lord, Lord, and do not do the things he says.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2789,7 +2789,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that if his hearers continue in his word, then they are his disciples indeed.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2809,7 +2809,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus teaches that a good tree brings forth good fruit and a corrupt tree evil fruit. Every tree that does not bring forth good fruit is hewn down and cast into the fire, and by their fruits they will be known.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2829,7 +2829,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus answers the tempter that man will not live by bread alone, but by every word that proceeds from the mouth of God.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2849,7 +2849,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus answers the tempter, declaring it is written: you will not tempt the Lord your God.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2869,7 +2869,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus answers that it is said: you will not tempt the Lord your God.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2889,7 +2889,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says a prophet is not without honor, except in his own country and in his own house.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2909,7 +2909,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says a prophet is not without honor, except in his own country, among his own kin, and in his own house.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2929,7 +2929,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the disciples the world acts so because it does not know the Father, and warns them now so they will remember. He kept silent before since he was with them; now he goes to him who sent him, and sorrow fills their heart.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2949,7 +2949,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the disciples they will weep while the world rejoices, but their sorrow will turn to joy as a woman forgets her travail for joy a child is born. He will see them again, and their joy no one will take from them.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2969,7 +2969,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus pronounces woe upon the scribes and Pharisees, hypocrites, for devouring widows' houses and for a pretence making long prayer, declaring that they will receive the greater damnation.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -2989,7 +2989,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus pronounces woe upon blind guides who swear by the temple's gold but not the temple. They tithe mint and dill yet neglect judgment, mercy, and faith. They strain at a gnat and swallow a camel.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3009,7 +3009,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus pronounces woe upon the scribes and Pharisees who clean the outside of the cup but inside are full of greed, charging them to cleanse the inside first so the outside also may be clean.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3029,7 +3029,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus pronounces woe upon the scribes and Pharisees, hypocrites, likening them to whited sepulchres which appear beautiful outward but within are full of dead men's bones and all uncleanness, so that they outwardly appear righteous unto men while within being full of hypocrisy and iniquity.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3049,7 +3049,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that this generation will be held to account for the blood of all the prophets from Abel to Zacharias, and pronounces woe upon the lawyers who have taken away the key of knowledge.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3069,7 +3069,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens this generation to children in the markets who would neither dance nor mourn, for John came neither eating nor drinking and they called him possessed, and the Son of Man comes eating and drinking and they call him a glutton.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3089,7 +3089,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus teaches that what enters the mouth does not defile a man, but what comes from the heart defiles him: evil thoughts, murders, adulteries, thefts, false witness, and blasphemies.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3109,7 +3109,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus speaks to the fruitless fig tree, charging that no fruit grow on it henceforward for ever.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3129,7 +3129,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus charges the Pharisees with setting aside the commandment of God to keep the tradition of men, such as the washing of pots and cups.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3149,7 +3149,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the Pharisees they reject God's commandment to keep their own tradition: Moses commanded honoring father and mother, but they say a son who declares his support Corban is freed from helping them, making the word of God void.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3169,7 +3169,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus calls the multitude to hearken to him every one and to understand.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3189,7 +3189,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus asks what man among them would not lift his sheep from a pit on the sabbath, and reasons that since a man is much better than a sheep, it is lawful to do good on the sabbath.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3209,7 +3209,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus asks the Pharisees whether they have not read what David did when he was hungry, eating the showbread which was lawful only for priests.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3229,7 +3229,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says the scribes and Pharisees do their works to be seen, loving the chief seats in synagogues, greetings in markets, and the title Rabbi, and charges his disciples not to be called Rabbi, for one is their Master.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3249,7 +3249,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus speaks to the unfruitful fig tree, charging that no man eat fruit of it from now on for ever.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3269,7 +3269,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus asks in the temple, is my house not the house of prayer for all nations? You have made it a den of thieves.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3289,7 +3289,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares in the temple that it is written, My house is the house of prayer, but they have made it a den of thieves.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3309,7 +3309,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the leaders he receives no honor from men but knows they have not the love of God in them, for they receive him not though he comes in his Father's name; he declares that Moses, in whom they trust, accuses them.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3329,7 +3329,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares all power in heaven and earth has been given him, charges the eleven to make disciples of all nations, baptizing in the name of the Father, Son, and Holy Spirit, and promises he is with them to the end of the world.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3349,7 +3349,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the disciples they must go to the next towns so he may preach there also, for that is why he came forth.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3369,7 +3369,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the returning seventy he beheld Satan fall as lightning from heaven, and gives them power to tread on serpents and over the enemy, charging them not to rejoice that the spirits are subject but that their names are written in heaven.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3389,7 +3389,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus likens this generation to children who neither danced nor wept: John came neither eating nor drinking and they said he had a devil, and the Son of Man comes eating and drinking and they call him a glutton.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3409,7 +3409,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus warns the disciples that they will be brought before governors and kings for his sake as a testimony against them and the Gentiles.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3429,7 +3429,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the disciples that not a hair of their head will perish, and that in their patience they will possess their souls.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3449,7 +3449,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus sends his disciples into the city to a certain man with the message that the Master's time is at hand and he will keep the passover at his house with his disciples.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3469,7 +3469,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells his disciples that all of them will be offended because of him this night — the shepherd will be smitten and the sheep scattered — but pledges that after he is risen he will go before them into Galilee.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3489,7 +3489,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus charges Peter to put up his sword, for all who take the sword will perish; he could pray for twelve legions of angels but asks how then the scriptures should be fulfilled, and asks the arresting party why they come as against a thief.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3509,7 +3509,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares I am he to those who came to arrest him, asks again whom they seek, and tells them that since he has said he is the one, they should let his disciples go their way.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3529,7 +3529,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus answers the high priest, you have said, and declares that from now on they will see the Son of man sitting on the right hand of power and coming in the clouds of heaven.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3549,7 +3549,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > With a loud voice Jesus cries, Father, into your hands I commend my spirit.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3569,7 +3569,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus says from the cross, I thirst.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3589,7 +3589,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus cries out from the cross, It is finished.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3609,7 +3609,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus asks the disciples whether they have any food there.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3629,7 +3629,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus asks Mary why she weeps and calls her by name, sending her to tell his brethren he ascends to his Father. He gives the disciples peace, sends them as he was sent with the Holy Spirit, and grants authority to remit or retain sins.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3649,7 +3649,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus warns his disciples to take heed that no one deceive them, for many will come in his name claiming to be Christ; iniquity will abound and the love of many will grow cold.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3669,7 +3669,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells his disciples they will hear of wars and rumors of wars but not be troubled, for nation will rise against nation and there will be famines and earthquakes — these are the beginning of sorrows.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3689,7 +3689,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus weeps over Jerusalem, lamenting that she did not know the things that belong to her peace; the days will come when her enemies will lay her with the ground and not leave one stone upon another, because she knew not her visitation.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3709,7 +3709,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that his disciples will be hated of all men for his name's sake, but he that endures to the end will be saved.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3729,7 +3729,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus charges his hearers to watch, for they know not what hour their Lord does come.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3749,7 +3749,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares I come quickly — blessed is he that keeps the sayings of the prophecy of this book — and that his reward is with him to give every man according as his work will be, affirming surely I come quickly.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3769,7 +3769,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus warns that anger with a brother brings danger of judgment, calling him Raca brings the council, and saying You fool brings hell fire.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3789,7 +3789,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells how the king binds the man hand and foot and casts him into outer darkness, with weeping and gnashing of teeth.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3809,7 +3809,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus declares that many will come from the east and west and will sit down with Abraham and Isaac and Jacob in the kingdom of heaven.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3829,7 +3829,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus commends Pergamos for holding fast his name even where Satan dwells, but holds against them that some hold the doctrines of Balaam and the Nicolaitans, charging them to repent or he will fight against them with the sword of his mouth.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3849,7 +3849,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus commends Thyatira's works but holds against them that they suffer Jezebel, who seduces his servants to fornication and idolatry, and declares he will cast her into a bed and her children into death, that all may know he searches hearts.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3869,7 +3869,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells the rest in Thyatira who have not held this doctrine that he will put on them no other burden.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3889,7 +3889,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus tells Sardis that they have a name that they live but are dead, charging them to be watchful, strengthen what remains, and repent, or he will come on them as a thief at an hour they do not know.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
@@ -3909,7 +3909,7 @@ To apply, run `node catalog_builds/engine/summary_rewrite/apply-summaries.mjs --
 
 > Jesus rebukes Laodicea for being lukewarm and declares he will spit them out, telling them that though they say they are rich they are wretched and naked, counseling them to buy gold, white raiment, and eyesalve, and charging them to be zealous and repent.
 
-- [ ] Approved as written
+- [x] Approved as written
 - [ ] Needs edit (note below):
 
 ---
