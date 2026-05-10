@@ -67,7 +67,7 @@ export default function ModernApp() {
     setCurrentCatId(null)
     setCurrentTabIndex(0)
     setCurrentTeaching(null)
-    setTocVisible(true)
+    setTocVisible(!isMobile)
     setSearchQuery(lastSearchQuery)
     setLastSearchQuery('')
   }
