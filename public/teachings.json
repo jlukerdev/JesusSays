@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "1.4",
+    "version": "1.6",
     "title": "Jesus Says Data Catalog",
     "subtitle": "A Comprehensive Categorization of His Words as Recorded in the New Testament",
     "totalCategories": 31,
@@ -2205,29 +2205,6 @@
             },
             {
               "id": "2.5.10",
-              "uid": "f6bccc69-e13a-4fc7-9a13-2c8bd1905278",
-              "text": "Jesus drives out the dove sellers, charging them to take these things away and not make his Father’s house a house of merchandise.",
-              "quote": "Take these things hence; make not my Father’s house an house of merchandise.",
-              "title": "Do Not Make the Father's House a Marketplace",
-              "tags": [],
-              "references": [
-                {
-                  "label": "John 2:16",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 2,
-                  "ranges": [
-                    [
-                      16,
-                      16
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "2.5.11",
               "uid": "813832be-45a3-4aa6-8173-83ea1c2561b2",
               "text": "Jesus declares that as Moses lifted up the serpent in the wilderness, so must the Son of Man be lifted up, that whoever believes in him should not perish but have eternal life.",
               "quote": "¶ And as Moses lifted up the serpent in the wilderness, even so must the Son of man be lifted up: That whosoever believeth in him should not perish, but have eternal life.",
@@ -2263,7 +2240,7 @@
               ]
             },
             {
-              "id": "2.5.12",
+              "id": "2.5.11",
               "uid": "1aaee794-af5b-40f8-bcb8-70f4137ff51c",
               "text": "Jesus declares that the Father loves him because he lays down his life to take it again. No one takes it from him; he lays it down of himself, with power to lay it down and to take it again, as commanded by the Father.",
               "quote": "Therefore doth my Father love me, because I lay down my life, that I might take it again. No man taketh it from me, but I lay it down of myself. I have power to lay it down, and I have power to take it again. This commandment have I received of my Father.",
@@ -2299,7 +2276,7 @@
               ]
             },
             {
-              "id": "2.5.13",
+              "id": "2.5.12",
               "uid": "ac4ea53a-4cb4-48fe-a4e9-14f3e2a7857c",
               "text": "Jesus defends Mary — let her alone, she has kept this for his burial; the poor are always with them, but he will not be.",
               "quote": "Let her alone: against the day of my burying hath she kept this. For the poor always ye have with you; but me ye have not always.",
@@ -2322,7 +2299,7 @@
               ]
             },
             {
-              "id": "2.5.14",
+              "id": "2.5.13",
               "uid": "7f66a8ed-d3a1-41f5-9aac-7181960ce256",
               "text": "Jesus announces that the hour has come for the Son of Man to be glorified.",
               "quote": "The hour is come, that the Son of man should be glorified.",
@@ -2345,7 +2322,7 @@
               ]
             },
             {
-              "id": "2.5.15",
+              "id": "2.5.14",
               "uid": "534ab626-f1aa-4257-8cca-88d784994f20",
               "text": "Jesus tells the disciples beforehand so that when it comes to pass they may believe. The prince of this world is coming and has nothing in him, but so the world may know he loves the Father, he does as the Father commanded.",
               "quote": "And now I have told you before it come to pass, that, when it is come to pass, ye might believe. Hereafter I will not talk much with you: for the prince of this world cometh, and hath nothing in me. But that the world may know that I love the Father; and as the Father gave me commandment, even so I do. Arise, let us go hence.",
@@ -13062,60 +13039,6 @@
             }
           ],
           "uid": "283b62d0-3154-4e16-a51e-db5da18b335a"
-        },
-        {
-          "id": "20.4",
-          "slug": "cat-20-4",
-          "title": "The Rich Man and Lazarus",
-          "teachings": [
-            {
-              "id": "20.4.1",
-              "uid": "7d089632-e67d-4b00-a8d0-50f63ff9c015",
-              "text": "Jesus tells of a rich man clothed in purple who fared sumptuously, and a beggar named Lazarus laid at his gate full of sores. When both died, Lazarus was carried into Abraham's bosom while the rich man in hell lifted his eyes in torment. Abraham tells him he received good things in life and Lazarus evil; now Lazarus is comforted, he tormented, and a great gulf is fixed between them.",
-              "quote": "¶ There was a certain rich man, which was clothed in purple and fine linen, and fared sumptuously every day: And there was a certain beggar named Lazarus, which was laid at his gate, full of sores, And desiring to be fed with the crumbs which fell from the rich man’s table: moreover the dogs came and licked his sores. And it came to pass, that the beggar died, and was carried by the angels into Abraham’s bosom: the rich man also died, and was buried; And in hell he lift up his eyes, being in torments, and seeth Abraham afar off, and Lazarus in his bosom. And he cried and said, Father Abraham, have mercy on me, and send Lazarus, that he may dip the tip of his finger in water, and cool my tongue; for I am tormented in this flame. But Abraham said, Son, remember that thou in thy lifetime receivedst thy good things, and likewise Lazarus evil things: but now he is comforted, and thou art tormented. And beside all this, between us and you there is a great gulf fixed: so that they which would pass from hence to you cannot; neither can they pass to us, that would come from thence. Then he said, I pray thee therefore, father, that thou wouldest send him to my father’s house: For I have five brethren; that he may testify unto them, lest they also come into this place of torment. Abraham saith unto him, They have Moses and the prophets; let them hear them. And he said, Nay, father Abraham: but if one went unto them from the dead, they will repent. And he said unto him, If they hear not Moses and the prophets, neither will they be persuaded, though one rose from the dead.",
-              "title": "The Rich Man and Lazarus — A Great Gulf Fixed",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 16:19–31",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 16,
-                  "ranges": [
-                    [
-                      19,
-                      31
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "20.4.2",
-              "uid": "b0b9f11d-fb66-47f8-bbd3-3017106e79e8",
-              "text": "Jesus, in Abraham's words, declares if they do not hear Moses and the prophets, they will not be persuaded though one rose from the dead.",
-              "quote": "And he said unto him, If they hear not Moses and the prophets, neither will they be persuaded, though one rose from the dead.",
-              "title": "If They Reject Moses They Will Not Believe",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 16:31",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 16,
-                  "ranges": [
-                    [
-                      31,
-                      31
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            }
-          ],
-          "uid": "f0cc8750-014c-4331-89b3-ffa8df153d1b"
         }
       ],
       "uid": "28afe0d5-5d3a-4702-a856-0f0d1fb2bdd8"
@@ -16173,9 +16096,9 @@
             {
               "id": "24.5.3",
               "uid": "ee9ca0e5-9283-4eff-9e2d-72fd6ca18442",
-              "text": "Jesus declares in the temple, my house will be called the house of prayer, but they have made it a den of thieves.",
+              "text": "Jesus cleanses the temple by driving out merchants and money changers, declaring that his Father’s house is not to be a house of merchandise or a den of thieves, but shall be a house of prayer.",
               "quote": "It is written, My house shall be called the house of prayer; but ye have made it a den of thieves.",
-              "title": "My House a House of Prayer, Not a Den",
+              "title": "Cleansing the Temple — My House Shall Be a House of Prayer",
               "tags": [],
               "references": [
                 {
@@ -16190,6 +16113,45 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Mark 11:17",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 11,
+                  "ranges": [
+                    [
+                      17,
+                      17
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 19:46",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 19,
+                  "ranges": [
+                    [
+                      46,
+                      46
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "John 2:16",
+                  "book": "John",
+                  "bookAbbr": "John",
+                  "chapter": 2,
+                  "ranges": [
+                    [
+                      16,
+                      16
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
@@ -16330,29 +16292,6 @@
             },
             {
               "id": "24.5.8",
-              "uid": "767e8bc0-e2b0-40da-a92b-1f4739fb6d75",
-              "text": "Jesus asks in the temple, is my house not the house of prayer for all nations? You have made it a den of thieves.",
-              "quote": "Is it not written, My house shall be called of all nations the house of prayer? but ye have made it a den of thieves.",
-              "title": "The Temple Turned Into a Den of Thieves",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 11:17",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 11,
-                  "ranges": [
-                    [
-                      17,
-                      17
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "24.5.9",
               "uid": "e9237b1b-656a-4ead-945e-1f748555d6bb",
               "text": "Jesus answers the chief priests with a question of his own: was John's baptism from heaven or from men?",
               "quote": "I will also ask of you one question, and answer me, and I will tell you by what authority I do these things. The baptism of John, was it from heaven, or of men? answer me.",
@@ -16375,7 +16314,7 @@
               ]
             },
             {
-              "id": "24.5.10",
+              "id": "24.5.9",
               "uid": "85cbef27-bc69-43f7-9fc9-8747d902ebb5",
               "text": "Jesus tells the chief priests, neither do I tell you by what authority I do these things.",
               "quote": "Neither do I tell you by what authority I do these things.",
@@ -16398,7 +16337,7 @@
               ]
             },
             {
-              "id": "24.5.11",
+              "id": "24.5.10",
               "uid": "a3367c51-6fb4-429f-9e44-c7d227cc9f96",
               "text": "Jesus tells the Pharisees they justify themselves before men, but God knows their hearts, for what men esteem highly is abomination before God.",
               "quote": "Ye are they which justify yourselves before men; but God knoweth your hearts: for that which is highly esteemed among men is abomination in the sight of God.",
@@ -16421,30 +16360,7 @@
               ]
             },
             {
-              "id": "24.5.12",
-              "uid": "3144a6d0-47c8-44b1-9080-700176ea4cbe",
-              "text": "Jesus declares in the temple that it is written, My house is the house of prayer, but they have made it a den of thieves.",
-              "quote": "It is written, My house is the house of prayer: but ye have made it a den of thieves.",
-              "title": "My House Shall Be a House of Prayer",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 19:46",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 19,
-                  "ranges": [
-                    [
-                      46,
-                      46
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "24.5.13",
+              "id": "24.5.11",
               "uid": "eb533ced-3ab7-4f85-becb-778882ff23d3",
               "text": "Jesus tells the leaders he receives no honor from men but knows they have not the love of God in them, for they receive him not though he comes in his Father's name; he declares that Moses, in whom they trust, accuses them.",
               "quote": "I receive not honour from men. But I know you, that ye have not the love of God in you. I am come in my Father’s name, and ye receive me not: if another shall come in his own name, him ye will receive. How can ye believe, which receive honour one of another, and seek not the honour that cometh from God only? Do not think that I will accuse you to the Father: there is one that accuseth you, even Moses, in whom ye trust.",
@@ -16467,7 +16383,7 @@
               ]
             },
             {
-              "id": "24.5.14",
+              "id": "24.5.12",
               "uid": "413a83a2-3623-4dc9-8eeb-f2bf2c3118f9",
               "text": "Jesus tells the religious leaders that though they are Abraham's seed, they seek to kill him because his word has no place in them, and that they do the deeds of their father the devil — a murderer from the beginning, the father of lies; because Jesus tells them the truth they do not believe him, for he that is of God hears God's words.",
               "quote": "I know that ye are Abraham’s seed; but ye seek to kill me, because my word hath no place in you. I speak that which I have seen with my Father: and ye do that which ye have seen with your father. If ye were Abraham’s children, ye would do the works of Abraham. But now ye seek to kill me, a man that hath told you the truth, which I have heard of God: this did not Abraham. Ye do the deeds of your father. If God were your Father, ye would love me: for I proceeded forth and came from God; neither came I of myself, but he sent me. Why do ye not understand my speech? even because ye cannot hear my word. Ye are of your father the devil, and the lusts of your father ye will do. He was a murderer from the beginning, and abode not in the truth, because there is no truth in him. When he speaketh a lie, he speaketh of his own: for he is a liar, and the father of it. And because I tell you the truth, ye believe me not. Which of you convinceth me of sin? And if I say the truth, why do ye not believe me? He that is of God heareth God’s words: ye therefore hear them not, because ye are not of God.",
@@ -19181,6 +19097,32 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Mark 13:2",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 13,
+                  "ranges": [
+                    [
+                      2,
+                      2
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 21:6",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 21,
+                  "ranges": [
+                    [
+                      6,
+                      6
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             },
@@ -19453,29 +19395,6 @@
             },
             {
               "id": "29.1.8",
-              "uid": "edd6d137-84c1-4331-859b-299a09094d64",
-              "text": "Jesus foretells the destruction of the temple, declaring that not one stone will be left upon another that will not be thrown down.",
-              "quote": "Seest thou these great buildings? there shall not be left one stone upon another, that shall not be thrown down.",
-              "title": "The Temple Will Be Utterly Destroyed",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Mark 13:2",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 13,
-                  "ranges": [
-                    [
-                      2,
-                      2
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "29.1.9",
               "uid": "4feeb85f-ccc0-4d88-a040-492c4eba2549",
               "text": "Jesus weeps over Jerusalem, lamenting that she did not know the things that belong to her peace; the days will come when her enemies will lay her with the ground and not leave one stone upon another, because she knew not her visitation.",
               "quote": "If thou hadst known, even thou, at least in this thy day, the things which belong unto thy peace! but now they are hid from thine eyes. For the days shall come upon thee, that thine enemies shall cast a trench about thee, and compass thee round, and keep thee in on every side, And shall lay thee even with the ground, and thy children within thee; and they shall not leave in thee one stone upon another; because thou knewest not the time of thy visitation.",
@@ -19491,29 +19410,6 @@
                     [
                       42,
                       44
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
-            },
-            {
-              "id": "29.1.10",
-              "uid": "7034530f-5bdd-493f-9029-3717dfc02eb9",
-              "text": "Jesus foretells that the days will come when not one stone of the temple will be left upon another.",
-              "quote": "As for these things which ye behold, the days will come, in the which there shall not be left one stone upon another, that shall not be thrown down.",
-              "title": "The Temple's Stones Will All Be Thrown Down",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 21:6",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 21,
-                  "ranges": [
-                    [
-                      6,
-                      6
                     ]
                   ],
                   "isPrimary": true
@@ -20674,6 +20570,60 @@
             }
           ],
           "uid": "1153884e-b7a5-4725-9f5c-fa490a4204e2"
+        },
+        {
+          "id": "30.4",
+          "slug": "cat-30-4",
+          "title": "The Rich Man and Lazarus",
+          "teachings": [
+            {
+              "id": "30.4.1",
+              "uid": "7d089632-e67d-4b00-a8d0-50f63ff9c015",
+              "text": "Jesus tells of a rich man clothed in purple who fared sumptuously, and a beggar named Lazarus laid at his gate full of sores. When both died, Lazarus was carried into Abraham's bosom while the rich man in hell lifted his eyes in torment. Abraham tells him he received good things in life and Lazarus evil; now Lazarus is comforted, he tormented, and a great gulf is fixed between them.",
+              "quote": "¶ There was a certain rich man, which was clothed in purple and fine linen, and fared sumptuously every day: And there was a certain beggar named Lazarus, which was laid at his gate, full of sores, And desiring to be fed with the crumbs which fell from the rich man’s table: moreover the dogs came and licked his sores. And it came to pass, that the beggar died, and was carried by the angels into Abraham’s bosom: the rich man also died, and was buried; And in hell he lift up his eyes, being in torments, and seeth Abraham afar off, and Lazarus in his bosom. And he cried and said, Father Abraham, have mercy on me, and send Lazarus, that he may dip the tip of his finger in water, and cool my tongue; for I am tormented in this flame. But Abraham said, Son, remember that thou in thy lifetime receivedst thy good things, and likewise Lazarus evil things: but now he is comforted, and thou art tormented. And beside all this, between us and you there is a great gulf fixed: so that they which would pass from hence to you cannot; neither can they pass to us, that would come from thence. Then he said, I pray thee therefore, father, that thou wouldest send him to my father’s house: For I have five brethren; that he may testify unto them, lest they also come into this place of torment. Abraham saith unto him, They have Moses and the prophets; let them hear them. And he said, Nay, father Abraham: but if one went unto them from the dead, they will repent. And he said unto him, If they hear not Moses and the prophets, neither will they be persuaded, though one rose from the dead.",
+              "title": "The Rich Man and Lazarus — A Great Gulf Fixed",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Luke 16:19–31",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 16,
+                  "ranges": [
+                    [
+                      19,
+                      31
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "30.4.2",
+              "uid": "b0b9f11d-fb66-47f8-bbd3-3017106e79e8",
+              "text": "Jesus, in Abraham's words, declares if they do not hear Moses and the prophets, they will not be persuaded though one rose from the dead.",
+              "quote": "And he said unto him, If they hear not Moses and the prophets, neither will they be persuaded, though one rose from the dead.",
+              "title": "If They Reject Moses They Will Not Believe",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Luke 16:31",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 16,
+                  "ranges": [
+                    [
+                      31,
+                      31
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            }
+          ],
+          "uid": "f0cc8750-014c-4331-89b3-ffa8df153d1b"
         }
       ],
       "uid": "a567bc8b-e524-41b8-af4d-4d427e71f7e2"

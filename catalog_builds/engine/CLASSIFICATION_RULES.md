@@ -724,7 +724,6 @@ Teachings about protecting, welcoming, and not causing children to stumble.
 - The rich young ruler
 - Zacchaeus
 - The parable of the rich fool
-- The rich man and Lazarus
 - Treasure in heaven versus earth
 - Giving to the poor, to Caesar, to God
 - The widow's offering
@@ -748,9 +747,6 @@ Teachings warning of wealth's spiritual peril — the rich young ruler, camel th
 #### 20.3 Generosity and Stewardship
 Teachings calling for active generosity and faithful use of resources — giving to Caesar and God, the widow's mite.
 
-#### 20.4 The Rich Man and Lazarus
-The parable of Lazarus and the rich man (Luke 16:19–31). Stands alone in this subcategory due to its eschatological and social justice dimensions.
-
 ---
 
 ## 21. Justice and Mercy
@@ -768,7 +764,7 @@ The parable of Lazarus and the rich man (Luke 16:19–31). Stands alone in this 
 - Woe to those who exploit widows
 
 **Explicit exclusions:**
-- The rich man and Lazarus → Cat 20.4, because the primary structural context is wealth/poverty rather than judgment of mercy
+- The rich man and Lazarus → Cat 30.4, because its primary theological weight is the reality of hell and the finality of judgment after death
 - Forgiveness of personal wrongs → Cat 18
 - Beatitudes blessings on the poor → Cat 4.4 (Beatitudes)
 
@@ -1089,10 +1085,10 @@ The Fig Tree as season-sign; the unknowability of the exact hour; the Parousia a
 - The resurrection of the just and unjust
 - "Depart from me, I never knew you"
 - Judgment on Capernaum, Chorazin, Bethsaida
+- The Rich Man and Lazarus — the fixed gulf between the condemned and the blessed after death
 
 **Explicit exclusions:**
 - The Sheep and Goats → Cat 21.2 (mercy-criterion is primary)
-- The Rich Man and Lazarus → Cat 20.4 (wealth framing is primary)
 - Olivet Discourse signs → Cat 29
 - Judgment of the nations as a sign of the end → Cat 29
 
@@ -1108,6 +1104,9 @@ Teachings describing Gehenna, eternal fire, outer darkness — the nature of fin
 
 #### 30.3 The Resurrection and Final Destiny
 Teachings on bodily resurrection (denial of the Sadducees; "in my Father's house are many rooms"; the resurrection of life and of condemnation in John 5).
+
+#### 30.4 The Rich Man and Lazarus
+The parable of Lazarus and the rich man (Luke 16:19–31). Assigned here for its primary theological thrust: the fixed, irreversible divide between the condemned and the blessed after death, and the inability of the living to receive a warning sufficient to avert judgment. Distinguishable from Cat 20 by the eschatological and judicial frame being primary, not the wealth-vs.-poverty contrast.
 
 ---
 
@@ -1177,7 +1176,7 @@ Rev 3:14–22. Rebuked for lukewarmness; the famous invitation: "I stand at the 
 | The Great Commission | Cat 26.1 only |
 | Any teaching in Rev 1–3 | Cat 31 (G-4) |
 | Sheep and Goats (Matt 25) | Cat 21.2 (mercy-criterion primary), not Cat 29 or Cat 30 |
-| Rich Man and Lazarus | Cat 20.4, not Cat 21 or Cat 30 |
+| Rich Man and Lazarus | Cat 30.4, not Cat 20 or Cat 21 |
 | "Take up your cross" — persecution context | Cat 23.4 |
 | "Take up your cross" — discipleship cost context | Cat 22.2 |
 | "Where two or three are gathered" — prayer and presence emphasis | Cat 25.2 (Corporate Prayer and Presence) |
