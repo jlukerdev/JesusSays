@@ -42,5 +42,16 @@ export function useBreakpoint() {
 
 export function useIsMobile() {
   const bp = useBreakpoint()
-  return bp === 'xs' || bp === 'sm'
+  const [isPortrait, setIsPortrait] = useState(() =>
+    typeof window !== 'undefined' ? window.matchMedia('(orientation: portrait)').matches : false
+  )
+
+  useEffect(() => {
+    const mq = window.matchMedia('(orientation: portrait)')
+    const handler = (e) => setIsPortrait(e.matches)
+    mq.addEventListener('change', handler)
+    return () => mq.removeEventListener('change', handler)
+  }, [])
+
+  return bp === 'xs' || bp === 'sm' || (bp === 'md' && isPortrait)
 }
