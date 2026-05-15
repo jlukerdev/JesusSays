@@ -81,6 +81,7 @@ export default function BibleBrowser({ bibleRef }) {
   const bibleBrowseBook     = useStore(s => s.bibleBrowseBook)
   const bibleBrowseChapter  = useStore(s => s.bibleBrowseChapter)
   const setBibleBrowseBook  = useStore(s => s.setBibleBrowseBook)
+  const bibleBrowseTarget   = useStore(s => s.bibleBrowseTarget)
 
   const [segments, setSegments]       = useState([])
   const [loadingPrev, setLoadingPrev] = useState(false)
@@ -88,6 +89,7 @@ export default function BibleBrowser({ bibleRef }) {
   const prevTranslation               = useRef(bibleTranslation)
   const initialLoadDone               = useRef(false)
   const prevBibleRef                  = useRef(bibleRef) // initialize with current ref so first-render bibleRef effect skips
+  const prevBrowseTarget              = useRef(bibleBrowseTarget) // initialize with current value so first-render target effect skips
 
   const initialBook    = bibleRef?.bookAbbr ?? bibleBrowseBook ?? 'John'
   const initialChapter = bibleRef?.chapter ?? (bibleBrowseBook ? bibleBrowseChapter : 1)
@@ -170,6 +172,16 @@ export default function BibleBrowser({ bibleRef }) {
       }, 0)
     }
   }, [bibleRef])
+
+  // Navigate when picker selects a book/chapter
+  useEffect(() => {
+    if (!bibleBrowseTarget) return
+    if (prevBrowseTarget.current?.bookAbbr === bibleBrowseTarget.bookAbbr &&
+        prevBrowseTarget.current?.chapter === bibleBrowseTarget.chapter) return
+    prevBrowseTarget.current = bibleBrowseTarget
+    setSegments([])
+    loadAndAppend(bibleBrowseTarget.bookAbbr, bibleBrowseTarget.chapter)
+  }, [bibleBrowseTarget])
 
   // Reload when translation changes
   useEffect(() => {

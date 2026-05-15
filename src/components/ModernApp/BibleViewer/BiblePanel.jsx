@@ -1,15 +1,37 @@
 import { useRef, useEffect, useState } from 'react'
 import useStore from '../../../store.js'
 import TranslationPicker from './TranslationPicker.jsx'
+import BookPicker from './BookPicker.jsx'
+import ChapterPicker from './ChapterPicker.jsx'
 import BibleBrowser from './BibleBrowser.jsx'
 import '../../../styles/bible-viewer.css'
 
 export default function BiblePanel({ bibleRef, open, pinned, onClose, onTogglePin }) {
   const closeTimerRef = useRef(null)
-  const bibleTranslation = useStore(s => s.bibleTranslation)
+  const bibleBrowseBook = useStore(s => s.bibleBrowseBook)
+  const setBibleBrowseTarget = useStore(s => s.setBibleBrowseTarget)
+
+  const [pickerBook, setPickerBook] = useState(
+    bibleRef?.bookAbbr ?? bibleBrowseBook ?? 'John'
+  )
+
   // Mount BibleBrowser lazily so it doesn't fire API calls / scrollIntoView while panel is hidden
   const [everOpened, setEverOpened] = useState(false)
   useEffect(() => { if (open) setEverOpened(true) }, [open])
+
+  // Sync picker book when teaching navigation changes the active book
+  useEffect(() => {
+    if (bibleRef?.bookAbbr) setPickerBook(bibleRef.bookAbbr)
+  }, [bibleRef?.bookAbbr])
+
+  function handleBookPick(abbr) {
+    setPickerBook(abbr)
+    setBibleBrowseTarget({ bookAbbr: abbr, chapter: 1 })
+  }
+
+  function handleChapterPick(chapter) {
+    setBibleBrowseTarget({ bookAbbr: pickerBook, chapter })
+  }
 
   function onPanelMouseLeave() {
     if (pinned) return
@@ -46,7 +68,11 @@ export default function BiblePanel({ bibleRef, open, pinned, onClose, onTogglePi
               </button>
             </div>
           </div>
-          <TranslationPicker />
+          <div className="bible-picker-row">
+            <TranslationPicker />
+            <BookPicker activeBook={pickerBook} onPick={handleBookPick} />
+            <ChapterPicker book={pickerBook} onPick={handleChapterPick} />
+          </div>
         </div>
       </div>
       <div className="modern-panel-body">

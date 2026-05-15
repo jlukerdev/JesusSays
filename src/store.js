@@ -32,6 +32,9 @@ const useStore = create((set) => ({
   setBibleBrowseBook: (bookAbbr) => set({ bibleBrowseBook: bookAbbr }),
   setBibleBrowseChapter: (chapter) => set({ bibleBrowseChapter: chapter }),
 
+  bibleBrowseTarget: null,
+  setBibleBrowseTarget: (target) => set({ bibleBrowseTarget: target }),
+
   // Data loaded from teachings.json
   categories: [],
   meta: null,

@@ -100,6 +100,20 @@
   color: var(--color-authority-fg);
 }
 
+/* Scrollable menus for book (27 items) and chapter (up to 28 items) pickers */
+.translation-flyout__menu--book,
+.translation-flyout__menu--chapter {
+  overflow-y: auto;
+  max-height: 220px;
+}
+
+/* Picker row: translation + book + chapter inline */
+.bible-picker-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 /* Browse mode */
 .bible-browser {
   display: flex;
