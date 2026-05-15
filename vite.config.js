@@ -52,6 +52,17 @@ export default defineConfig({
             }
           },
           {
+            urlPattern: /^https:\/\/rest\.api\.bible\//,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'bible-api-cache',
+              expiration: {
+                maxEntries: 300,
+                maxAgeSeconds: 1209600
+              }
+            }
+          },
+          {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
             handler: 'StaleWhileRevalidate',
             options: {

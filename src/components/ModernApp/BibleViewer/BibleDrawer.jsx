@@ -1,4 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
+import useStore from '../../../store.js'
+import TranslationPicker from './TranslationPicker.jsx'
+import BibleBrowser from './BibleBrowser.jsx'
+import '../../../styles/bible-viewer.css'
 
 export default function BibleDrawer({ bibleRef, open, onClose }) {
   const [drawerH, setDrawerH] = useState(0)
@@ -7,9 +11,14 @@ export default function BibleDrawer({ bibleRef, open, onClose }) {
   const dragStartY = useRef(null)
   const dragStartH = useRef(null)
 
-  const PEEK_HEIGHT = 48
+  const bibleTranslation = useStore(s => s.bibleTranslation)
+  // Mount BibleBrowser lazily so it doesn't fire API calls / scrollIntoView while drawer is closed
+  const [everOpened, setEverOpened] = useState(false)
+  useEffect(() => { if (open) setEverOpened(true) }, [open])
+
+  const PEEK_HEIGHT    = 48
   const DEFAULT_HEIGHT = Math.round(window.innerHeight * 0.55)
-  const MAX_HEIGHT = Math.round(window.innerHeight * 0.90)
+  const MAX_HEIGHT     = Math.round(window.innerHeight * 0.90)
 
   useEffect(() => {
     if (open && !isPeeking) {
@@ -25,6 +34,9 @@ export default function BibleDrawer({ bibleRef, open, onClose }) {
     }
     if (bibleRef) setLastRef(bibleRef)
   }, [bibleRef])
+
+  // Use lastRef as fallback so content stays visible when drawer is peeking
+  const activeRef = bibleRef ?? lastRef
 
   function onDragStart(clientY) {
     dragStartY.current = clientY
@@ -53,42 +65,42 @@ export default function BibleDrawer({ bibleRef, open, onClose }) {
       className={`modern-bible-drawer${open || isPeeking ? ' modern-bible-drawer--open' : ''}`}
       style={{ height: `${drawerH}px` }}
     >
-        <div className="modern-drawer-handle-zone"
-          onTouchStart={(e) => onDragStart(e.touches[0].clientY)}
-          onTouchMove={(e) => onDragMove(e.touches[0].clientY)}
-          onTouchEnd={onDragEnd}
-          onMouseDown={(e) => {
-            onDragStart(e.clientY)
-            const onMove = (ev) => onDragMove(ev.clientY)
-            const onUp = () => {
-              onDragEnd()
-              window.removeEventListener('mousemove', onMove)
-              window.removeEventListener('mouseup', onUp)
-            }
-            window.addEventListener('mousemove', onMove)
-            window.addEventListener('mouseup', onUp)
-          }}
-        >
-          <div className="modern-drawer-handle" />
-          {isPeeking && <div className="modern-drawer-handle-label">{lastRef?.label ?? 'Scripture'}</div>}
-        </div>
+      <div className="modern-drawer-handle-zone"
+        onTouchStart={(e) => onDragStart(e.touches[0].clientY)}
+        onTouchMove={(e) => onDragMove(e.touches[0].clientY)}
+        onTouchEnd={onDragEnd}
+        onMouseDown={(e) => {
+          onDragStart(e.clientY)
+          const onMove = (ev) => onDragMove(ev.clientY)
+          const onUp = () => {
+            onDragEnd()
+            window.removeEventListener('mousemove', onMove)
+            window.removeEventListener('mouseup', onUp)
+          }
+          window.addEventListener('mousemove', onMove)
+          window.addEventListener('mouseup', onUp)
+        }}
+      >
+        <div className="modern-drawer-handle" />
+        {isPeeking && <div className="modern-drawer-handle-label">{activeRef?.label ?? 'Scripture'}</div>}
+      </div>
 
-        {!isPeeking && (
-          <div className="modern-drawer-contents">
-            <div className="modern-drawer-header">
-              <div className="modern-drawer-ref-block">
-                <div className="modern-drawer-ref">{bibleRef?.label ?? '—'}</div>
-                <div className="modern-drawer-context">{bibleRef?.book}</div>
+      {!isPeeking && (
+        <div className="modern-drawer-contents">
+          <div className="modern-drawer-header">
+            <div className="modern-drawer-ref-block">
+              <div className="modern-drawer-ref-row">
+                <div className="modern-drawer-ref">{activeRef?.label ?? '—'}</div>
               </div>
-              <button className="modern-drawer-close" onClick={handleClose} aria-label="Close">✕</button>
+              <TranslationPicker />
             </div>
-            <div className="modern-drawer-body">
-              <div className="modern-panel-placeholder">
-                Bible text will appear here when the scripture API is connected.
-              </div>
-            </div>
+            <button className="modern-drawer-close" onClick={handleClose} aria-label="Close">✕</button>
           </div>
-        )}
+          <div className="modern-drawer-body">
+            {everOpened && <BibleBrowser bibleRef={activeRef} />}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

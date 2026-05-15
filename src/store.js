@@ -10,7 +10,7 @@ const useStore = create((set) => ({
   },
   fontSize: 's',
   theme: 'classic',
-  navStyle: 'classic',
+  navStyle: localStorage.getItem('navStyle') ?? 'modern',
   showAbout: false,
 
   setActiveMode: (mode) => set({ activeMode: mode }),
@@ -21,6 +21,16 @@ const useStore = create((set) => ({
   setTheme: (theme) => set({ theme }),
   setNavStyle: (navStyle) => set({ navStyle }),
   setShowAbout: (v) => set({ showAbout: v }),
+
+  bibleTranslation: localStorage.getItem('bibleTranslation') ?? 'KJV',
+  bibleBrowseBook: null,
+  bibleBrowseChapter: 1,
+  setBibleTranslation: (translation) => {
+    localStorage.setItem('bibleTranslation', translation)
+    set({ bibleTranslation: translation })
+  },
+  setBibleBrowseBook: (bookAbbr) => set({ bibleBrowseBook: bookAbbr }),
+  setBibleBrowseChapter: (chapter) => set({ bibleBrowseChapter: chapter }),
 
   // Data loaded from teachings.json
   categories: [],

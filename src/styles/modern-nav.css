@@ -652,12 +652,11 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
 .modern-panel-header {
   padding: var(--space-3) var(--space-4);
   border-bottom: 1px solid var(--color-border);
-  display: flex; align-items: flex-start; gap: var(--space-2);
   flex-shrink: 0; background: var(--color-surface);
 }
-.modern-panel-ref-block { flex: 1; min-width: 0; }
-.modern-panel-ref { font-family: var(--font-modern-display); font-size: var(--text-lg); font-weight: 500; color: var(--color-ink); margin-bottom: 2px; }
-.modern-panel-context { font-size: var(--text-xs); color: var(--color-muted); }
+.modern-panel-ref-block { display: flex; flex-direction: column; gap: var(--space-1); min-width: 0; }
+.modern-panel-ref-row { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.modern-panel-ref { font-family: var(--font-modern-display); font-size: var(--text-lg); font-weight: 500; color: var(--color-ink); flex: 1; min-width: 0; }
 .modern-panel-actions { display: flex; gap: var(--space-1); flex-shrink: 0; align-items: center; }
 .modern-panel-pin-btn {
   width: 28px; height: 28px; border-radius: var(--radius-sm);
@@ -668,7 +667,7 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
 }
 .modern-panel-pin-btn:hover { background: var(--color-surface-raised); color: var(--color-ink); border-color: var(--color-border); }
 .modern-panel-pin-btn--pinned { color: var(--color-accent); background: var(--color-accent-light); border-color: rgba(154,123,52,0.3); }
-.modern-panel-body { overflow-y: auto; padding: var(--space-4); flex: 1; }
+.modern-panel-body { overflow-y: auto; flex: 1; }
 .modern-panel-placeholder { text-align: center; padding: var(--space-8) var(--space-4); font-size: var(--text-sm); color: var(--color-muted); }
 
 /* ── BibleViewer — Drawer (mobile) ── */
@@ -704,8 +703,8 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
   display: flex; align-items: flex-start; gap: var(--space-2); flex-shrink: 0;
 }
 .modern-drawer-ref-block { flex: 1; }
+.modern-drawer-ref-row { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; }
 .modern-drawer-ref { font-family: var(--font-modern-display); font-size: var(--text-lg); font-weight: 500; color: var(--color-ink); margin-bottom: 2px; }
-.modern-drawer-context { font-size: var(--text-xs); color: var(--color-muted); }
 .modern-drawer-close {
   width: 30px; height: 30px; border-radius: 50%;
   background: var(--color-surface-raised);

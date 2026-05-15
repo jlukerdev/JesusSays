@@ -30,6 +30,8 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          VITE_BIBLE_API_KEY: ${{ secrets.VITE_BIBLE_API_KEY }}
         run: npm run build
 
       - name: Configure Pages
@@ -64,6 +66,8 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          VITE_BIBLE_API_KEY: ${{ secrets.VITE_BIBLE_API_KEY }}
         run: npm run build
 
       - name: Configure Pages

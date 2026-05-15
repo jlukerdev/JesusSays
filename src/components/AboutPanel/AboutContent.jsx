@@ -3,7 +3,7 @@ import { Mail, ChevronRight } from 'lucide-react'
 const CONTACT_EMAIL = 'hello@jesussays.app'
 
 const HOW_TO_USE = [
-  'Choose a Topic to explore teachings grouped by theme.',
+  'Choose a Theme to explore teachings grouped by Topic.',
   'Search by keyword to find specific teachings across all topics.',
   'Click on a teaching to view the full detail.',
   'Tap scripture references to view the verse in context.',
