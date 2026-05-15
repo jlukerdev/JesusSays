@@ -3,7 +3,7 @@ import { Mail, ChevronRight } from 'lucide-react'
 const CONTACT_EMAIL = 'hello@jesussays.app'
 
 const HOW_TO_USE = [
-  'Choose a Topic to explore teachings grouped by theme.',
+  'Choose a Theme to explore teachings grouped by Topic.',
   'Search by keyword to find specific teachings across all topics.',
   'Click on a teaching to view the full detail.',
   'Tap scripture references to view the verse in context.',
@@ -15,7 +15,6 @@ export default function AboutContent({ onShowVersion }) {
 
       {/* ── Hero ── */}
       <div className="about-hero">
-        <span className="about-hero__cross" aria-hidden="true">✝</span>
         <h1 className="about-hero__title">Jesus Says</h1>
       </div>
 
@@ -77,6 +76,12 @@ export default function AboutContent({ onShowVersion }) {
           </div>
           <ChevronRight size={16} className="about-version-btn__arrow" aria-hidden="true" />
         </button>
+
+        <p className="about-bible-licensing">
+          The Holy Bible, New International Version® NIV® Copyright © 1973, 1978, 1984, 2011 by Biblica, Inc.® Used by Permission of Biblica, Inc.® All rights reserved worldwide. To learn more, visit http://biblica.com and http://facebook.com/Biblica.
+          <br /><br />
+          New King James Version®, Copyright © 1982, Thomas Nelson. All rights reserved. http://harpercollins.com
+        </p>
 
       </div>
     </div>

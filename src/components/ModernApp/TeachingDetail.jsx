@@ -1,13 +1,58 @@
-import { ChevronLeft } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { ChevronLeft, BookOpen } from 'lucide-react'
+import useStore from '../../store.js'
+import { bibleApi } from '../../data/bibleApi.js'
+import BibleContent from './BibleViewer/BibleContent.jsx'
+
+function buildVerseSet(ranges) {
+  const set = new Set()
+  for (const [s, e] of ranges) {
+    for (let v = s; v <= e; v++) set.add(v)
+  }
+  return set
+}
+
+function VerseSnippet({ scriptureRef }) {
+  const bibleTranslation = useStore(s => s.bibleTranslation)
+  const [verses, setVerses] = useState(null)
+  const [error, setError]   = useState(false)
+
+  const rangesKey = scriptureRef.ranges.map(r => r.join('-')).join(',')
+  useEffect(() => {
+    setVerses(null)
+    setError(false)
+    bibleApi.getChapter(bibleTranslation, scriptureRef.bookAbbr, scriptureRef.chapter)
+      .then(allVerses => {
+        const keep = buildVerseSet(scriptureRef.ranges)
+        setVerses(allVerses.filter(v => keep.has(v.verse)))
+      })
+      .catch(() => setError(true))
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [bibleTranslation, scriptureRef.bookAbbr, scriptureRef.chapter, rangesKey])
+
+  if (error) return (
+    <div className="modern-verse-snippet">
+      <span className="modern-verse-snippet__placeholder">Could not load verse.</span>
+    </div>
+  )
+
+  if (!verses) return (
+    <div className="modern-verse-snippet">
+      <span className="modern-verse-snippet__placeholder">Loading…</span>
+    </div>
+  )
+
+  return (
+    <div className="modern-verse-snippet">
+      <BibleContent verses={verses} highlightVerses={[]} hideSectionHeads />
+    </div>
+  )
+}
 
 export default function TeachingDetail({ teaching, catId, tabIndex, categories, onOpenBible, onGoToSubcat }) {
+  const bibleTranslation = useStore(s => s.bibleTranslation)
   const cat = categories.find(c => c.id === catId)
   const subcat = cat?.subcategories?.[tabIndex] ?? null
-
-  function formatRanges(ranges) {
-    if (!ranges || ranges.length === 0) return ''
-    return ranges.map(r => r[0] === r[1] ? `v.${r[0]}` : `vv.${r[0]}–${r[1]}`).join(', ')
-  }
 
   return (
     <div className="modern-teaching-detail">
@@ -25,26 +70,22 @@ export default function TeachingDetail({ teaching, catId, tabIndex, categories, 
           <span className="modern-detail-location__sub">{subcat?.title}</span>
         </div>
 
-        {/* Card: Summary text */}
-        <div className="modern-detail-section">
-          <div className="modern-detail-section__head modern-detail-section__head--with-chips">
-            <span>Teaching</span>
-            {teaching.tags.length > 0 && (
-              <div className="modern-detail-head-chips">
-                {teaching.tags.map(tag => (
-                  <span key={tag} className={`modern-tag modern-tag--${tag}`}>{tag}</span>
-                ))}
-              </div>
-            )}
+        {/* Teaching title + text */}
+        {teaching.title && (
+          <h1 className="modern-detail-title">{teaching.title}</h1>
+        )}
+        <p className="modern-detail-summary-text">{teaching.text}</p>
+        {teaching.tags.length > 0 && (
+          <div className="modern-detail-head-chips">
+            {teaching.tags.map(tag => (
+              <span key={tag} className={`modern-tag modern-tag--${tag}`}>{tag}</span>
+            ))}
           </div>
-          <div className="modern-detail-section__body modern-detail-section__body--padded">
-            <p className="modern-detail-summary-text">{teaching.text}</p>
-          </div>
-        </div>
+        )}
 
         {/* Scripture References */}
         <div className="modern-detail-section">
-          <div className="modern-detail-section__head">Scripture References</div>
+          <div className="modern-detail-section__head">Scripture References · {bibleTranslation}</div>
           <div className="modern-detail-section__body">
             {teaching.references.map(ref => (
               <div key={ref.label} className="modern-ref-block">
@@ -56,14 +97,10 @@ export default function TeachingDetail({ teaching, catId, tabIndex, categories, 
                   <div className={`modern-ref-dot${ref.isPrimary ? ' modern-ref-dot--primary' : ''}`} />
                   <div className="modern-ref-info">
                     <div className="modern-ref-label">{ref.label}</div>
-                    <div className="modern-ref-subline">{ref.book} · {formatRanges(ref.ranges)}</div>
                   </div>
-                  <span className="modern-ref-open">Open ›</span>
+                  <span className="modern-ref-open"><BookOpen size={14} /></span>
                 </div>
-                {/* VERSE SNIPPET SHELL — replace content when Bible API is connected */}
-                <div className="modern-verse-snippet">
-                  <span className="modern-verse-snippet__placeholder">Verse text coming soon…</span>
-                </div>
+                <VerseSnippet scriptureRef={ref} />
               </div>
             ))}
           </div>

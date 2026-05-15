@@ -7,9 +7,9 @@
   transition: opacity 0.15s ease, color 0.15s ease;
 }
 .settings-menu__trigger:hover { background: rgba(255,255,255,0.1); color: white; }
-.settings-menu__backdrop { position: fixed; inset: 0; z-index: 199; }
+.settings-menu__backdrop { position: fixed; inset: 0; z-index: 299; }
 .settings-menu__panel {
-  position: absolute; top: calc(100% + var(--space-2)); right: 0; z-index: 200;
+  position: fixed; z-index: 300;
   background: var(--color-surface); border: 1px solid var(--color-border);
   border-radius: var(--radius-md); box-shadow: var(--shadow-tooltip);
   min-width: 200px; padding: var(--space-3) 0;
@@ -36,3 +36,21 @@
   border: none;
 }
 .settings-menu__action:hover { background: var(--color-surface-raised); }
+
+.settings-menu__size-row {
+  display: flex; align-items: center; gap: var(--space-2);
+}
+.settings-menu__size-btn {
+  flex-shrink: 0; width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; line-height: 1; font-weight: 600;
+  border: 1px solid var(--color-border); border-radius: var(--radius-sm);
+  background: var(--color-bg); color: var(--color-ink); cursor: pointer;
+  transition: background 0.12s, opacity 0.12s;
+}
+.settings-menu__size-btn:hover:not(:disabled) { background: var(--color-surface-raised); }
+.settings-menu__size-btn:disabled { opacity: 0.35; cursor: default; }
+.settings-menu__size-label {
+  font-size: var(--text-sm); color: var(--color-muted);
+  margin-left: var(--space-1); white-space: nowrap;
+}

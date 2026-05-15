@@ -1,26 +1,27 @@
 import { create } from 'zustand'
 
 const useStore = create((set) => ({
-  activeMode: 'category',
-  activeCategorySlug: 'cat-1',
-  activeBookAbbr: 'Matt',
-  filters: {
-    books: [],
-    parablesOnly: false
-  },
-  fontSize: 's',
-  theme: 'classic',
-  navStyle: 'classic',
   showAbout: false,
-
-  setActiveMode: (mode) => set({ activeMode: mode }),
-  setActiveCategorySlug: (slug) => set({ activeCategorySlug: slug }),
-  setActiveBookAbbr: (abbr) => set({ activeBookAbbr: abbr }),
-  setFilters: (filters) => set({ filters }),
-  setFontSize: (fontSize) => set({ fontSize }),
-  setTheme: (theme) => set({ theme }),
-  setNavStyle: (navStyle) => set({ navStyle }),
   setShowAbout: (v) => set({ showAbout: v }),
+
+  bibleFontSize: parseInt(localStorage.getItem('bibleFontSize') ?? '14', 10),
+  setBibleFontSize: (size) => {
+    localStorage.setItem('bibleFontSize', size)
+    set({ bibleFontSize: size })
+  },
+
+  bibleTranslation: localStorage.getItem('bibleTranslation') ?? 'KJV',
+  bibleBrowseBook: null,
+  bibleBrowseChapter: 1,
+  setBibleTranslation: (translation) => {
+    localStorage.setItem('bibleTranslation', translation)
+    set({ bibleTranslation: translation })
+  },
+  setBibleBrowseBook: (bookAbbr) => set({ bibleBrowseBook: bookAbbr }),
+  setBibleBrowseChapter: (chapter) => set({ bibleBrowseChapter: chapter }),
+
+  bibleBrowseTarget: null,
+  setBibleBrowseTarget: (target) => set({ bibleBrowseTarget: target }),
 
   // Data loaded from teachings.json
   categories: [],

@@ -31,8 +31,18 @@ const PARABLE_SIGNALS = [
   /there was a (man|woman|king|father|farmer|merchant|shepherd|sower|rich)/i,
 ];
 
+// ─── Known false positive parable candidates ────────────────────────────────
+// These teachings are flagged as parable candidates by PARABLE_SIGNALS but are
+// not actually parables. Referenced by uid (stable across renumbering).
+// See TAG_RULES.md § Known False Positive Audit Flags for justification.
+const PARABLE_CANDIDATE_EXCLUSIONS = [
+  '7ed028dc-3ba7-4258-8488-b26345ff4a67', // 27.1.3 — direct instructional directive
+  'a46d1fb7-3dc0-4a2a-8957-b5f035645bb6', // 29.2.3 — eschatological prophecy/metaphor
+];
+
 function looksLikeParable(teaching) {
   if (teaching.tags.includes('parable')) return false; // already tagged
+  if (PARABLE_CANDIDATE_EXCLUSIONS.includes(teaching.uid)) return false; // known false positive
   const combined = [teaching.text, teaching.quote].filter(Boolean).join(' ');
   return PARABLE_SIGNALS.some(re => re.test(combined));
 }

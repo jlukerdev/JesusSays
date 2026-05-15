@@ -1,8 +1,10 @@
+import { BookOpen } from 'lucide-react'
 import SettingsMenu from '../SettingsMenu/SettingsMenu.jsx'
 
 export default function ModernNavBar({
   currentScreen,
   onGoHome,
+  onOpenBibleViewer,
 }) {
   const isHome = currentScreen === 'home'
 
@@ -14,6 +16,13 @@ export default function ModernNavBar({
         </span>
       </div>
       <div className="modern-nav__actions">
+        <button
+          className="modern-nav__bible-btn"
+          aria-label="Open Bible viewer"
+          onClick={onOpenBibleViewer}
+        >
+          <BookOpen size={20} />
+        </button>
         <SettingsMenu />
       </div>
     </nav>

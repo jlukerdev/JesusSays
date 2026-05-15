@@ -6,6 +6,8 @@ export default function VersionView({ onBack }) {
   const meta = useStore((s) => s.meta)
   const categories = useStore((s) => s.categories ?? [])
 
+  const totalSubcategories = categories.reduce((sum, cat) => sum + cat.subcategories.length, 0)
+
   const totalTeachings = categories.reduce(
     (sum, cat) => sum + cat.subcategories.reduce((s2, sub) => s2 + sub.teachings.length, 0),
     0
@@ -56,8 +58,12 @@ export default function VersionView({ onBack }) {
               <span className="about-version-row__val">{meta?.version ?? '—'}</span>
             </div>
             <div className="about-version-row">
-              <span className="about-version-row__key">Categories</span>
+              <span className="about-version-row__key">Themes</span>
               <span className="about-version-row__val">{meta?.totalCategories ?? '—'}</span>
+            </div>
+            <div className="about-version-row">
+              <span className="about-version-row__key">Topics</span>
+              <span className="about-version-row__val">{totalSubcategories > 0 ? totalSubcategories : '—'}</span>
             </div>
             <div className="about-version-row">
               <span className="about-version-row__key">Total teachings</span>
@@ -70,9 +76,7 @@ export default function VersionView({ onBack }) {
         <section>
           <div className="about-version-block__label">Revision Notes</div>
           <div className="about-revision-notes">
-            <p><strong>App v0.1.0</strong> — Initial beta release.</p>
-            <br />
-            <p><strong>Catalog v1.3</strong> — Initial release.</p>
+            <p><strong>App v1.0</strong> — Initial release.</p>
           </div>
         </section>
 

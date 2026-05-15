@@ -8,11 +8,11 @@
 
 | Metric | Value |
 |---|---|
-| Version | 1.3 |
+| Version | 1.6 |
 | Categories | 31 |
 | Subcategories | 117 |
-| Teachings | 655 |
-| Tagged parables | 38 |
+| Teachings | 647 |
+| Tagged parables | 35 |
 | NT books covered | Matt, Mark, Luke, John, Acts, 1Cor, 2Cor, Rev |
 
 ---
@@ -27,6 +27,8 @@ node catalog_builds/engine/scripts/parse-catalog.js --stats
 
 **After any structural catalog change** (add, delete, move, rename, split, or merge of a category or subcategory), update this file to reflect the new counts from that command. **Do not update counts in any other file** — all other files reference this document.
 
+Also bump `meta.version` in `public/teachings.json` to match the new REVISION.md version number (e.g., `"1.5"` → `"1.6"`). The version string must stay in sync across `meta.version`, REVISION.md, and the Current Live Stats table above.
+
 ---
 
 ## `public/teachings.json` Schema
@@ -34,7 +36,7 @@ node catalog_builds/engine/scripts/parse-catalog.js --stats
 ```jsonc
 {
   "meta": {
-    "version": "1.3",              // string — semver-like; kept in sync with REVISION.md
+    "version": "1.4",              // string — semver-like; kept in sync with REVISION.md
     "title": "...",                // catalog display title
     "subtitle": "...",             // catalog display subtitle
     "totalCategories": 31,         // integer
@@ -58,6 +60,7 @@ node catalog_builds/engine/scripts/parse-catalog.js --stats
             {
               "id": "1.1.1",       // "{catId}.{subId}.{teachingIndex}"
               "uid": "<uuid-v4>", // string — stable UUID v4; never modified after creation
+              "title": "...",      // short display title (agent-authored, ≤10 words)
               "text": "...",       // thematic summary (agent-authored)
               "quote": "...",      // canonical scripture quotation, or null
               "tags": [],          // string array; "parable" for parable entries
@@ -91,6 +94,9 @@ node catalog_builds/engine/scripts/parse-catalog.js --stats
 
 | Version | Date | Categories | Subcategories | Teachings | Parables |
 |---|---|---|---|---|---|
+| v1.6 | May 10, 2026 | 31 | 117 | 647 | 35 |
+| v1.5 | May 9, 2026 | 31 | 117 | 652 | 35 |
+| v1.4 | May 8, 2026 | 31 | 117 | 654 | 37 |
 | v1.3 | May 1, 2026 | 31 | 117 | 655 | 38 |
 | v1.2 | April 30, 2026 | 31 | 117 | 655 | 38 |
 | v1.1 | April 30, 2026 | 31 | 124 | 666 | 42 |

@@ -1,6 +1,8 @@
-import { useState } from 'react'
-import { BookOpen, Search } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+import { Search } from 'lucide-react'
 import useStore from '../../store.js'
+import CatalogOptimizer from '../CatalogOptimizer/CatalogOptimizer.jsx'
 import ModernNavBar from './ModernNavBar.jsx'
 import ModernSearchBar from './ModernSearchBar.jsx'
 import CategoryTOC from './CategoryTOC.jsx'
@@ -10,6 +12,14 @@ import BibleViewer from './BibleViewer/BibleViewer.jsx'
 import HomeScreen from './HomeScreen.jsx'
 import AboutPanel from '../AboutPanel/AboutPanel.jsx'
 import { useIsMobile } from '../../hooks/useBreakpoint.js'
+
+const BIBLE_PINNED_KEY    = 'biblePinned'
+const BIBLE_LAST_BOOK_KEY = 'bibleLastBook'
+const BIBLE_LAST_CH_KEY   = 'bibleLastChapter'
+
+function isDesktopViewport() {
+  return typeof window !== 'undefined' && window.innerWidth >= 768
+}
 
 function findTeachingById(teachingId, categories) {
   for (const cat of categories) {
@@ -22,6 +32,12 @@ function findTeachingById(teachingId, categories) {
 }
 
 export default function ModernApp() {
+  const location = useLocation()
+
+  if (import.meta.env.DEV && location.pathname === '/catalog-optimizer') {
+    return <CatalogOptimizer />
+  }
+
   const categories = useStore((s) => s.categories ?? [])
   const isMobile = useIsMobile()
 
@@ -30,12 +46,57 @@ export default function ModernApp() {
   const [currentTeaching, setCurrentTeaching] = useState(null)
   const [activeBookFilter, setActiveBookFilter] = useState(null)
   const [searchQuery, setSearchQuery] = useState('')
-  const [bibleRef, setBibleRef] = useState(null)
-  const [bibleOpen, setBibleOpen] = useState(false)
-  const [biblePinned, setBiblePinned] = useState(false)
+  const [lastSearchQuery, setLastSearchQuery] = useState('')
+  const [bibleRef, setBibleRef] = useState(() => {
+    if (!isDesktopViewport()) return null
+    const wasPinned = localStorage.getItem(BIBLE_PINNED_KEY) === 'true'
+    if (!wasPinned) return null
+    const book = localStorage.getItem(BIBLE_LAST_BOOK_KEY) ?? 'John'
+    const chapter = parseInt(localStorage.getItem(BIBLE_LAST_CH_KEY) ?? '1', 10)
+    return { bookAbbr: book, chapter: isNaN(chapter) ? 1 : chapter, ranges: [] }
+  })
+  const [bibleOpen, setBibleOpen] = useState(() => {
+    if (!isDesktopViewport()) return false
+    return localStorage.getItem(BIBLE_PINNED_KEY) === 'true'
+  })
+  const [biblePinned, setBiblePinned] = useState(() => {
+    if (!isDesktopViewport()) return false
+    return localStorage.getItem(BIBLE_PINNED_KEY) === 'true'
+  })
   const [tocVisible, setTocVisible] = useState(true)
+  const [panelWidth, setPanelWidth] = useState(() => {
+    const saved = parseInt(localStorage.getItem('biblePanelWidth'), 10)
+    return isNaN(saved) ? 380 : Math.max(380, saved)
+  })
+  const [panelDragging, setPanelDragging] = useState(false)
+
+  const bibleBrowseBook    = useStore(s => s.bibleBrowseBook)
+  const bibleBrowseChapter = useStore(s => s.bibleBrowseChapter)
+
+  // Persist pinned state
+  useEffect(() => {
+    localStorage.setItem(BIBLE_PINNED_KEY, String(biblePinned && bibleOpen))
+  }, [biblePinned, bibleOpen])
+
+  // Persist last browsed book/chapter whenever they change
+  useEffect(() => {
+    if (bibleBrowseBook) {
+      localStorage.setItem(BIBLE_LAST_BOOK_KEY, bibleBrowseBook)
+    }
+  }, [bibleBrowseBook])
+
+  useEffect(() => {
+    if (bibleBrowseChapter) {
+      localStorage.setItem(BIBLE_LAST_CH_KEY, String(bibleBrowseChapter))
+    }
+  }, [bibleBrowseChapter])
 
   function showScreen(entry) {
+    if (entry.screen === 'home') {
+      setLastSearchQuery('')
+    } else if (searchQuery.trim()) {
+      setLastSearchQuery(searchQuery)
+    }
     setSearchQuery('')
     if (entry.screen === 'category') {
       if (entry.catId !== currentCatId) setActiveBookFilter(null)
@@ -56,6 +117,16 @@ export default function ModernApp() {
     }
   }
 
+  function backToResults() {
+    if (!lastSearchQuery) return
+    setCurrentCatId(null)
+    setCurrentTabIndex(0)
+    setCurrentTeaching(null)
+    setTocVisible(!isMobile)
+    setSearchQuery(lastSearchQuery)
+    setLastSearchQuery('')
+  }
+
   const currentScreen = currentTeaching !== null ? 'teaching' : currentCatId !== null ? 'category' : 'home'
 
   return (
@@ -66,6 +137,11 @@ export default function ModernApp() {
         currentTabIndex={currentTabIndex}
         categories={categories}
         onGoHome={() => showScreen({ screen: 'home' })}
+        onOpenBibleViewer={() => {
+          if (!bibleRef) setBibleRef({ bookAbbr: 'John', chapter: 3, ranges: [[16, 16]] })
+          setBibleOpen(true)
+          if (!isMobile) setBiblePinned(true)
+        }}
       />
 
       <div className="modern-screen-area">
@@ -74,8 +150,11 @@ export default function ModernApp() {
           currentCatId={currentCatId}
           categories={categories}
           searchQuery={searchQuery}
+          lastSearchQuery={lastSearchQuery}
+          onBackToResults={backToResults}
           onSearchChange={(q) => {
             setSearchQuery(q)
+            if (q.trim()) setLastSearchQuery('')
             if (isMobile && currentScreen === 'home') setTocVisible(!q)
           }}
         />
@@ -93,7 +172,20 @@ export default function ModernApp() {
             />
           </div>
 
-          <div className={`modern-content-pane${biblePinned && bibleOpen ? ' modern-panel-pinned' : ''}${isMobile && currentScreen === 'category' ? ' modern-content-pane--cat-scroll' : ''}`}>
+          <BibleViewer
+            bibleRef={bibleRef}
+            open={bibleOpen}
+            pinned={biblePinned}
+            onClose={() => setBibleOpen(false)}
+            onTogglePin={() => setBiblePinned(p => !p)}
+            onReopen={() => setBibleOpen(true)}
+            onWidthChange={(w, dragging) => { setPanelWidth(w); setPanelDragging(dragging) }}
+          />
+
+          <div
+            className={`modern-content-pane${biblePinned && bibleOpen ? ' modern-panel-pinned' : ''}${isMobile && currentScreen === 'category' ? ' modern-content-pane--cat-scroll' : ''}`}
+            style={biblePinned && bibleOpen ? { marginRight: `${panelWidth}px`, transition: panelDragging ? 'none' : undefined } : undefined}
+          >
             {currentScreen === 'home' && (
               searchQuery ? (
                 <HomeScreen
@@ -107,11 +199,11 @@ export default function ModernApp() {
               ) : (
                 !isMobile && (
                   <div className="modern-home-placeholder">
-                    <BookOpen className="modern-home-placeholder__icon" aria-hidden="true" />
-                    <h2 className="modern-home-placeholder__heading">Explore the Words of Jesus</h2>
+                    <img src="/JesusSays/icons/chat_bub_512.svg" className="modern-home-placeholder__icon" alt="" aria-hidden="true" />
+                    <h2 className="modern-home-placeholder__heading">Explore the Teachings of Jesus Christ</h2>
                     <p className="modern-home-placeholder__body">
-                      Choose a <strong>Topic</strong> to dive into a theme,
-                      or use the <Search size={14} className="modern-home-placeholder__inline-icon" aria-hidden="true" /> <strong>search bar</strong> above to find teachings by keyword.
+                      Choose a <strong>Theme</strong> to dive into the <strong>Topics</strong>,
+                      <br />or use the <Search size={14} className="modern-home-placeholder__inline-icon" aria-hidden="true" /> <strong>Search</strong> above.
                     </p>
                   </div>
                 )
@@ -152,15 +244,6 @@ export default function ModernApp() {
           </div>
         </div>
       </div>
-
-      <BibleViewer
-        bibleRef={bibleRef}
-        open={bibleOpen}
-        pinned={biblePinned}
-        onClose={() => setBibleOpen(false)}
-        onTogglePin={() => setBiblePinned(p => !p)}
-        onReopen={() => setBibleOpen(true)}
-      />
 
       <AboutPanel />
     </div>

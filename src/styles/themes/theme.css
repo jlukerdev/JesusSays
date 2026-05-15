@@ -14,7 +14,12 @@
 
   /* Authority — navy */
   --color-authority: #1b2a40;
+  --color-authority-about: #283d5d;
   --color-authority-fg: #ffffff;
+
+  /* Bible viewer */
+  --color-highlight: #fef9c3;
+  --color-error: #cc0000;
 
   /* Tag colors */
   --color-tag-parable: #2a5c3f;
