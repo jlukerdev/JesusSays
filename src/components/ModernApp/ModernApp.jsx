@@ -18,7 +18,11 @@ const BIBLE_LAST_BOOK_KEY = 'bibleLastBook'
 const BIBLE_LAST_CH_KEY   = 'bibleLastChapter'
 
 function isDesktopViewport() {
-  return typeof window !== 'undefined' && window.innerWidth >= 768
+  if (typeof window === 'undefined') return true
+  const width = window.innerWidth
+  if (width < 768) return false
+  if (width < 1280 && window.matchMedia('(orientation: portrait)').matches) return false
+  return true
 }
 
 function findTeachingById(teachingId, categories) {

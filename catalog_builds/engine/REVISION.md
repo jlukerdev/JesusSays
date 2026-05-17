@@ -1,5 +1,6 @@
 ## Table of Contents
 
+- [v1.7 — May 17, 2026](#v17--may-17-2026)
 - [v1.6 — May 10, 2026](#v16--may-10-2026)
 - [v1.5 — May 9, 2026](#v15--may-9-2026)
 - [v1.4 — May 8, 2026](#v14--may-8-2026)
@@ -14,6 +15,72 @@ Tracks all structural changes to `public/teachings.json` by version and date.
 **Format:** Each version entry records the date, catalog stats at the time of writing, and all structural changes made since the previous version. Minor wording edits to `text` or `quote` fields do not require a version bump; structural changes (adds, deletes, moves, renames, splits, merges) do.
 
 <!-- Add new versions above this line -->
+
+## v1.7 — May 17, 2026
+
+| Stat | Count |
+|---|---|
+| Categories | 30 |
+| Subcategories | 117 |
+| Teachings | 644 |
+| Parables | 35 |
+
+### Delete: Remove duplicate 27.1.6
+
+Removed teaching **27.1.6** from **27.1 The Last Supper** as an exact duplicate of 27.1.7.
+
+**Reason:** Both teachings covered the identical verse range (Matt 26:26–29, Mark 14:22–25, Luke 22:17–20) with identical quotes. 27.1.6 was redundant.
+
+**Deleted:** `27.1.6` — "Jesus takes the bread and cup at the supper, telling the disciples to take and eat for this is his body..."
+
+**Net delta:** Cat 27.1: 8 → 7 teachings; Teachings: 647 → 646
+
+---
+
+### Merge: 9.1.1 and 9.1.3 into 27.1.7
+
+Merged the content of **9.1.1** and **9.1.3** (Cat 9.1, The New Covenant) into **27.1.7** (Cat 27.1, The Last Supper).
+
+**Reason:** 27.1.7 already covered the full verse ranges of both teachings (Matt 26:26–29, Mark 14:22–25, Luke 22:17–20). The 9.1.x entries duplicated that coverage in narrower verse slices. The 1Cor 11:24 cross-reference from 9.1.1 was added to 27.1.7 as it was not previously present there.
+
+**Deleted from 9.1:**
+- `9.1.1` — "At the Last Supper Jesus gives the disciples bread and the cup as his body and his blood of the new covenant..." (Matt 26:26–27, Mark 14:22, Luke 22:17,19, 1Cor 11:24)
+- `9.1.3` — "Jesus pledges he will not drink of the fruit of the vine again until the day he drinks it new with his disciples..." (Matt 26:29, Mark 14:25, Luke 22:18)
+
+**Updated:** `27.1.7` — added 1Cor 11:24 as cross-reference
+
+**Net delta:** Cat 9.1: 3 → 1 teachings; Teachings: 646 → 644
+
+---
+
+### Rename: Subcategory 9.1
+
+Renamed subcategory **9.1** from "Institution of the Lord's Supper" to **"The Blood of the New Covenant"**.
+
+**Reason:** After the merge above, the one remaining teaching in 9.1 (9.1.1, now renumbered) specifically covers the blood-of-the-covenant declaration (Matt 26:28) rather than the full institution narrative. The new title reflects the subcategory's focused scope.
+
+**Net delta:** No count change; title only.
+
+---
+
+### Merge: Categories 8 and 9 → "The Old and New Covenants"
+
+Merged **Cat 9 (The New Covenant)** into **Cat 8 (The Old Covenant)**, renaming the combined category to **"The Old and New Covenants"**.
+
+**Reason:** Both categories share a unified covenantal subject — the Mosaic order and its supersession by Christ. As standalone categories, each was thin (2 and 3 subcategories respectively). Together they form a coherent arc from law/prophecy through covenant institution to covenant transition. Merging reduces the top-level category count from 31 to 30 without losing any subcategory or teaching.
+
+**Subcategories retained (all intact):**
+- 8.1 Jesus and the Law (formerly 8.1)
+- 8.2 Moses and the Scriptures Pointing to Jesus (formerly 8.2)
+- 8.3 The Blood of the New Covenant (formerly 9.1)
+- 8.4 The Bread of Life — A Connected Teaching (formerly 9.2)
+- 8.5 New and Old — The Covenant Transition (formerly 9.3)
+
+**Categories renumbered:** Former Cat 10–31 shifted to Cat 9–30 throughout `teachings.json` and `CLASSIFICATION_RULES.md`.
+
+**Net delta:** Categories: 31 → 30; Subcategories and Teachings: unchanged.
+
+---
 
 ## v1.6 — May 10, 2026
 

@@ -101,8 +101,9 @@
   color: var(--color-muted);
 }
 
-/* Mobile overrides */
-@media (max-width: 767px) {
+/* Mobile overrides — matches useIsMobile(): <768px OR (768–1023px portrait) */
+@media (max-width: 767px),
+       (orientation: portrait) and (max-width: 1279px) {
   .modern-two-pane { flex-direction: column; }
   .modern-toc-pane,
   .modern-toc-pane.modern-toc-pane--overlay {
@@ -233,7 +234,8 @@
   color: var(--color-authority);
   font-weight: 700;
 }
-@media (max-width: 767px) {
+@media (max-width: 767px),
+       (orientation: portrait) and (max-width: 1279px) {
   .modern-cat-toc__item {
     text-align: center;
     font-size: var(--text-lg);
@@ -367,7 +369,8 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
   transition: color 0.15s ease; background: none; border: none;
 }
 .modern-view-topics-btn:hover { color: var(--color-authority); }
-@media (max-width: 767px) {
+@media (max-width: 767px),
+       (orientation: portrait) and (max-width: 1279px) {
   .modern-view-topics-btn { font-size: var(--text-sm); gap: 6px; }
 }
 
@@ -444,8 +447,9 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
   text-align: left;
 }
 
-/* Hide TOC on mobile */
-@media (max-width: 767px) {
+/* Hide TOC on mobile — matches useIsMobile(): <768px OR (768–1023px portrait) */
+@media (max-width: 767px),
+       (orientation: portrait) and (max-width: 1279px) {
   .modern-cat-toc__label { display: none; }
   .modern-subcat-toc { display: none; }
   .modern-browser-body { display: flex; flex-direction: column; flex: 1; min-height: 0; }
@@ -524,7 +528,8 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
 }
 
 /* Desktop: table-row layout for teachings list */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (orientation: landscape),
+       (min-width: 1280px) {
   .modern-teachings-list {
     gap: 0;
     padding: var(--space-4) var(--space-5);
@@ -547,7 +552,8 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
   }
   .modern-teaching-card__chips { flex-shrink: 0; flex-wrap: wrap; }
 }
-@media (max-width: 767px) {
+@media (max-width: 767px),
+       (orientation: portrait) and (max-width: 1279px) {
   .modern-teaching-card__text { font-size: var(--text-base); }
 }
 
@@ -736,12 +742,14 @@ mark { background: var(--color-accent-light); color: var(--color-accent); border
 }
 .modern-drawer-body { overflow-y: auto; padding: var(--space-4); flex: 1; }
 
-/* ── Responsive ── */
-@media (max-width: 767px) {
+/* ── Responsive — matches useIsMobile(): <768px OR (768–1023px portrait) ── */
+@media (max-width: 767px),
+       (orientation: portrait) and (max-width: 1279px) {
   .modern-bible-panel { display: none !important; }
   .modern-content-pane.modern-panel-pinned { margin-right: 0 !important; }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (orientation: landscape),
+       (min-width: 1280px) {
   .modern-bible-drawer { display: none !important; }
 }
 

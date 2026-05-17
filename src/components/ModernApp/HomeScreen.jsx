@@ -2,6 +2,21 @@ import { useMemo } from 'react'
 import { useSearch } from '../../hooks/useSearch.js'
 import { resolveResult, highlightTerms } from '../../utils/search.js'
 
+const TEACHING_FIELDS = new Set(['title', 'text', 'quote', 'tagsStr', 'referenceLabels'])
+
+function getMatchSnippet(text, terms, contextBefore = 50, maxLength = 160) {
+  if (!text) return ''
+  const lower = text.toLowerCase()
+  let matchPos = -1
+  for (const term of (terms ?? [])) {
+    const pos = lower.indexOf(term.toLowerCase())
+    if (pos !== -1 && (matchPos === -1 || pos < matchPos)) matchPos = pos
+  }
+  const start = matchPos === -1 ? 0 : Math.max(0, matchPos - contextBefore)
+  const end = Math.min(text.length, start + maxLength)
+  return (start > 0 ? '…' : '') + text.slice(start, end) + (end < text.length ? '…' : '')
+}
+
 function groupResults(results, categories) {
   const catSet = new Set()
   const subcatSet = new Set()
@@ -18,10 +33,12 @@ function groupResults(results, categories) {
     if (matchedFields.includes('categoryTitle') && !catSet.has(cat.id)) {
       catSet.add(cat.id)
       catResults.push({ cat, result })
-    } else if (matchedFields.includes('subcategoryTitle') && !subcatSet.has(sub.id)) {
+    }
+    if (matchedFields.includes('subcategoryTitle') && !subcatSet.has(sub.id)) {
       subcatSet.add(sub.id)
       subcatResults.push({ cat, sub, tabIndex, result })
-    } else {
+    }
+    if (matchedFields.some(f => TEACHING_FIELDS.has(f))) {
       teachingResults.push({ cat, sub, tabIndex, teaching, result })
     }
   }
@@ -103,11 +120,11 @@ export default function HomeScreen({ categories, searchQuery, onNavigateToCatego
                 <div className="modern-search-result-row__title">
                   {teaching.title
                     ? highlightTerms(teaching.title, result.terms)
-                    : highlightTerms(teaching.text.slice(0, 120) + (teaching.text.length > 120 ? '…' : ''), result.terms)}
+                    : highlightTerms(getMatchSnippet(teaching.text, result.terms), result.terms)}
                 </div>
                 {teaching.title && (
                   <div className="modern-search-result-row__snippet">
-                    {teaching.text.slice(0, 90)}{teaching.text.length > 90 ? '…' : ''}
+                    {highlightTerms(getMatchSnippet(teaching.text, result.terms), result.terms)}
                   </div>
                 )}
                 <span className="modern-search-result-row__crumb">{cat.title} › {sub.title}</span>
