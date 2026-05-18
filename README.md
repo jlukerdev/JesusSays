@@ -4,7 +4,7 @@ A comprehensive reference web application cataloging all recorded words of Jesus
 
 ## Project Status
 
-**In active development with current MVP deployed at https://jlukerdev.github.io/JesusSays**
+**Production release — live at https://jlukerdev.github.io/JesusSays**
 
 ## About Jesus Says
 
@@ -19,6 +19,10 @@ For current catalog counts, see [`catalog_builds/engine/catalog_stats.md`](catal
 The catalog data source is [`public/teachings.json`](./public/teachings.json)
 
 The data is organized hierarchically: categories → subcategories → individual teachings
+
+### Bible Text
+
+Scripture passages are fetched on-demand from [api.bible](https://api.bible) (American Bible Society). Three translations are supported: KJV, NKJV, and NIV. A `VITE_BIBLE_API_KEY` environment variable is required to use the inline Bible viewer.
 
 ## Catalog Engine
 
