@@ -83,6 +83,12 @@ export class ApiBibleClient extends BibleService {
     return this._fetchRaw(translationKey, bookAbbr, chapterNum)
   }
 
+  clearCache(translationKey) {
+    for (const key of [...this.cache.keys()]) {
+      if (key.startsWith(`${translationKey}-`)) this.cache.delete(key)
+    }
+  }
+
   async getPassage(translationKey, reference) {
     const bibleId = BIBLE_IDS[translationKey]
     if (!bibleId) throw new Error(`Unknown translationKey: ${translationKey}`)

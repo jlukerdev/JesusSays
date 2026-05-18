@@ -17,7 +17,7 @@ export default function BibleViewer({ bibleRef, open, pinned, onClose, onToggleP
   useEffect(() => {
     if (!ENABLE_OFFLINE_BIBLE || !open || !categories.length) return
     const { state } = bibleDownloadStatus[bibleTranslation]
-    if (state === 'downloading' || state === 'complete' || state === 'checking') return
+    if (state === 'downloading' || state === 'complete' || state === 'checking' || state === 'error') return
     triggerCatalogDownload(bibleTranslation)
   }, [open, bibleTranslation, categories.length])  // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -56,10 +56,12 @@ export default function BibleViewer({ bibleRef, open, pinned, onClose, onToggleP
         }
       )
 
+      const bytes = await bibleOfflineStore.getStorageBytes(translation)
       setBibleDownloadStatus(translation, {
         state: 'complete',
         downloadedBooks: [...downloadedBooks, ...needed],
         progress: 1,
+        bytes,
       })
     } catch (err) {
       setBibleDownloadStatus(translation, { state: 'error', error: err.message })

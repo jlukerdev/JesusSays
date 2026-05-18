@@ -34,7 +34,6 @@ class BibleOfflineStore {
       }
       req.onsuccess = (e) => resolve(e.target.result)
       req.onerror = () => {
-        this._dbPromise = null
         reject(req.error)
       }
     })

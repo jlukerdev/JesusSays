@@ -194,12 +194,8 @@ export default function BibleBrowser({ bibleRef }) {
       })
     } else {
       // Reset and load the new chapter
-      initialLoadDone.current = false
       setSegments([])
-      setTimeout(() => {
-        initialLoadDone.current = true
-        loadAndAppend(bibleRef.bookAbbr, bibleRef.chapter)
-      }, 0)
+      loadAndAppend(bibleRef.bookAbbr, bibleRef.chapter)
     }
   }, [bibleRef])
 

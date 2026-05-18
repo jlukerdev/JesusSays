@@ -85,6 +85,7 @@ export default function DownloadManager() {
   async function handleDelete(translation) {
     try {
       await bibleOfflineStore.deleteTranslation(translation)
+      bibleApi.clearCache(translation)
     } catch {
       // Continue even if IDB delete fails
     }
@@ -124,4 +125,3 @@ export default function DownloadManager() {
   )
 }
 
-DownloadManager.enabled = ENABLE_OFFLINE_BIBLE
