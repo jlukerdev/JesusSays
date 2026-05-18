@@ -6,26 +6,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Jesus Says** is a reference web application cataloging all recorded words of Jesus Christ from the New Testament — organized across 31 thematic categories with full scripture cross-references and 100% coverage of red-letter (Words of Christ) NT verses. The dataset is the primary artifact; the UI exists to browse, filter, and permalink to teachings. For current catalog counts, see [`catalog_builds/engine/catalog_stats.md`](catalog_builds/engine/catalog_stats.md).
 
-## Navigation Styles
-
-The app ships two complete navigation experiences, switchable by the user and persisted to `localStorage` under the key `navStyle` (default: `modern`):
-
-| Style | Entry point | Description |
-|---|---|---|
-| **Classic** | `Layout.jsx` + classic components | Sticky header, sidebar TOC drawer/panel, FilterBar, category/book routes |
-| **Modern** | `ModernApp/ModernApp.jsx` | Mobile-first single-page flow: home screen → category browser → teaching detail; bottom nav bar, search bar, inline Bible viewer panel |
-
-`navStyle` is stored in Zustand (`store.js`) and synced to `localStorage`. `App.jsx` reads this value and renders either `<ModernApp />` or the classic `<Layout>` tree. The Catalog Optimizer always uses the classic shell regardless of `navStyle`.
-
-> **Feature flags:** Both the Classic browser and the Catalog Optimizer are behind feature flags and are not active in the default experience.
->
-> **IMPORTANT — Classic browser is defunct:** Do not make any code changes to Classic navigation components (`Layout`, `AppHeader`, `BookNav`, `BookViewer`, `CategoryViewer`, `CategoryNav`, `FilterBar`, `ModeSwitcher`, `Sidebar`, `TeachingsTable`) unless explicitly instructed to target the Classic browser. Treat all Classic components as frozen/read-only by default.
-
 ## Tech Stack
 
 - **Framework:** React 18 + Vite (`@vitejs/plugin-react`)
-- **Routing:** React Router v6 — `HashRouter`; classic routes `/category/:slug` and `/book/:bookAbbr`; Modern nav is fully internal state (no route changes)
-- **State:** Zustand (`src/store.js`) — activeMode, activeCategorySlug, navStyle, filters, fontSize, theme, data
+- **Routing:** React Router v6 — `HashRouter`; navigation is fully internal state (no route changes)
+- **State:** Zustand (`src/store.js`) — showAbout, bibleFontSize, bibleTranslation, bibleBrowseBook/Chapter, dataLoaded, dataError, categories, meta
 - **PWA:** vite-plugin-pwa + Workbox; `teachings.json` is cache-first, Google Fonts are cache-first
 - **Styling:** Plain CSS with custom properties; no CSS Modules or styled-components
 - **Fonts:** Playfair Display (headings), Source Sans 3 (body) — Google Fonts
@@ -48,24 +33,13 @@ npm run preview   # Preview production build
 
 ```
 src/
-  main.jsx                              # Entry; imports theme-classic.css then base.css
-  App.jsx                               # HashRouter, data load, navStyle gate → ModernApp or classic Layout
-  store.js                              # Zustand store (includes navStyle + setNavStyle)
+  main.jsx                              # Entry; imports themes/theme.css, base.css, modern-nav.css
+  App.jsx                               # HashRouter, data load, renders ModernApp
+  store.js                              # Zustand store — Bible state, catalog data, about panel visibility
   featureFlags.js                       # Feature flag constants (e.g. ENABLE_ABOUT_PAGE)
   components/
-    # ── Classic navigation (frozen — see CLAUDE.md note above) ───────────────
-    AppHeader/AppHeader.jsx             # Sticky header; hamburger (mobile) + ModeSwitcher
-    BookNav/BookNav.jsx                 # Book Mode sidebar TOC; book/chapter accordion
-    BookViewer/BookViewer.jsx           # Book→chapter→verse teaching view; category chip labels
-    CategoryViewer/CategoryViewer.jsx   # Category teaching view; category header, subcategory blocks
-    CategoryViewer/CategoryNav.jsx      # Prev/Next category navigation; fixed bottom bar on mobile
-    FilterBar/FilterBar.jsx             # NT Book filter pills bar (Matt · Mark · Luke · John · Acts · 1Cor · Rev)
-    Layout/Layout.jsx                   # forwardRef; sidebar drawer (mobile) / fixed panel (desktop)
-    ModeSwitcher/ModeSwitcher.jsx       # Categories / Books tab switcher
-    Sidebar/Sidebar.jsx                 # Category Mode accordion TOC; book-filter aware
-    TeachingsTable/TeachingsTable.jsx   # Subcategory teachings table (Teaching 58% | Scriptures 42%)
-    # ── Modern navigation ────────────────────────────────────────────────────
-    ModernApp/ModernApp.jsx             # Root of Modern nav; owns all screen state
+    # ── Navigation ───────────────────────────────────────────────────────────
+    ModernApp/ModernApp.jsx             # Root; owns all screen state
     ModernApp/ModernNavBar.jsx          # Sticky top bar with back/home navigation
     ModernApp/ModernSearchBar.jsx       # Search input shown on home and category screens
     ModernApp/HomeScreen.jsx            # Landing: category grid + search results
@@ -84,7 +58,7 @@ src/
     AboutPanel/AboutPanel.jsx           # About panel shell (feature-flagged)
     AboutPanel/AboutContent.jsx         # App info, creator bio content
     AboutPanel/VersionView.jsx          # Displays app version details
-    SettingsMenu/SettingsMenu.jsx       # User settings (navStyle toggle, font size, theme)
+    SettingsMenu/SettingsMenu.jsx       # User settings (font size, Bible translation, theme)
     # ── Catalog Optimizer (feature-flagged admin tool) ────────────────────────
     CatalogOptimizer/CatalogOptimizer.jsx    # Root optimizer shell
     CatalogOptimizer/LoadPanel.jsx           # Loads teachings.json for editing
@@ -107,7 +81,9 @@ src/
     useSearch.js                        # MiniSearch-powered teaching search hook
   styles/
     base.css                            # Full app CSS — layout, components, responsive
-    themes/theme-classic.css            # All CSS custom properties (colors, typography, spacing, layout)
+    modern-nav.css                      # Navigation, screen layout, and transition styles
+    bible-viewer.css                    # Bible viewer panel and drawer styles
+    themes/theme.css                    # All CSS custom properties (colors, typography, spacing, layout)
   utils/
     bookOrder.js                        # NT_BOOK_ABBR_ORDER, ABBR_TO_FULL, BLB_BOOK_SLUG, sortByBookOrder()
     clipboardCopy.js                    # copyPermalink(teachingId) — writes hash URL to clipboard
@@ -122,18 +98,18 @@ src/
 |---|---|
 | A-01 | React 18 + Vite |
 | A-02 | Full PWA; service worker cache-first for `teachings.json` |
-| A-03 | Mobile-first; sidebar = drawer on mobile, fixed panel on desktop |
+| A-03 | Mobile-first single-page flow: home → category browser → teaching detail |
 | A-04 | Blue Letter Bible links for scripture refs — use `BLB_BOOK_SLUG` from `bookOrder.js` |
 | A-05 | `localStorage` for user prefs (translation, font size, theme); `sessionStorage` for filters/scroll |
 
 ## Styling Conventions
 
-All values from CSS custom properties — never hardcode colors, sizes, or spacing. All vars are in `src/styles/themes/theme-classic.css`. Key ones:
+All values from CSS custom properties — never hardcode colors, sizes, or spacing. All vars are in `src/styles/themes/theme.css`. Key ones:
 - `--color-accent/accent-mid/accent-light` — gold (#9a7b34 / #d4a84b / #f5eed8)
 - `--color-authority` — navy #1b2a40
 - `--color-bg` — parchment #faf9f6
 - `--font-display` / `--font-body`
-- `--sidebar-width: 270px` / `--header-height: 56px`
+- `--header-height: 56px`
 
 DOM IDs follow JSON slugs: `cat-1`, `cat-1-1`. Teaching anchors: `t-1-2-5` (dots → dashes, prefixed `t-`).
 
