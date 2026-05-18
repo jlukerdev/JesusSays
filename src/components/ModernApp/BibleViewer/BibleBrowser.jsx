@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import useStore from '../../../store.js'
 import { bibleApi } from '../../../data/bibleApi.js'
+import { OfflineOnlyError } from '../../../data/BibleOfflineStore.js'
 import { NT_BOOKS } from '../../../utils/bookOrder.js'
 import BibleContent from './BibleContent.jsx'
 
@@ -76,7 +77,10 @@ function ChapterSegment({ seg, prevSeg, highlightVerses }) {
       >
         Chapter {seg.chapterNum}
       </div>
-      <BibleContent verses={seg.verses} highlightVerses={highlightVerses} />
+      {seg.loadError
+        ? <div className="bible-offline-warning">{seg.loadError}</div>
+        : <BibleContent verses={seg.verses} highlightVerses={highlightVerses} />
+      }
     </div>
   )
 }
@@ -102,6 +106,19 @@ export default function BibleBrowser({ bibleRef }) {
   const initialChapter = bibleRef?.chapter ?? (bibleBrowseBook ? bibleBrowseChapter : 1)
   const highlightVerses = bibleRef?.ranges ?? []
 
+  function buildErrorSeg(bookAbbr, chapterNum, err) {
+    const book = NT_BOOKS_MAP[bookAbbr]
+    const isOffline = err instanceof OfflineOnlyError
+    return {
+      id: `${bookAbbr}-${chapterNum}`,
+      bookAbbr,
+      bookName: book?.fullName ?? bookAbbr,
+      chapterNum,
+      verses: null,
+      loadError: isOffline ? err.message : 'Failed to load chapter.',
+    }
+  }
+
   async function loadAndPrepend(bookAbbr, chapterNum) {
     setLoadingPrev(true)
     try {
@@ -112,6 +129,9 @@ export default function BibleBrowser({ bibleRef }) {
       requestAnimationFrame(() => {
         document.getElementById(`bible-ch-${seg.id}`)?.scrollIntoView({ behavior: 'instant', block: 'start' })
       })
+    } catch (err) {
+      const seg = buildErrorSeg(bookAbbr, chapterNum, err)
+      setSegments(prev => prev.some(s => s.id === seg.id) ? prev : [seg, ...prev])
     } finally {
       setLoadingPrev(false)
     }
@@ -129,6 +149,9 @@ export default function BibleBrowser({ bibleRef }) {
           document.getElementById(`bible-ch-${seg.id}`)?.scrollIntoView({ behavior: 'instant', block: 'start' })
         })
       }
+    } catch (err) {
+      const seg = buildErrorSeg(bookAbbr, chapterNum, err)
+      setSegments(prev => prev.some(s => s.id === seg.id) ? prev : [...prev, seg])
     } finally {
       setLoadingNext(false)
     }

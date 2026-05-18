@@ -4,6 +4,7 @@ import TranslationPicker from './TranslationPicker.jsx'
 import BookPicker from './BookPicker.jsx'
 import ChapterPicker from './ChapterPicker.jsx'
 import BibleBrowser from './BibleBrowser.jsx'
+import BibleDownloadBanner from './BibleDownloadBanner.jsx'
 import '../../../styles/bible-viewer.css'
 
 const PANEL_MIN_WIDTH = 380
@@ -131,6 +132,7 @@ export default function BiblePanel({ bibleRef, open, pinned, onClose, onTogglePi
         </div>
       </div>
       <div className="modern-panel-body">
+        <BibleDownloadBanner />
         {everOpened && <BibleBrowser bibleRef={bibleRef} />}
       </div>
     </div>

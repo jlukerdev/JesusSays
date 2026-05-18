@@ -4,6 +4,7 @@ import TranslationPicker from './TranslationPicker.jsx'
 import BookPicker from './BookPicker.jsx'
 import ChapterPicker from './ChapterPicker.jsx'
 import BibleBrowser from './BibleBrowser.jsx'
+import BibleDownloadBanner from './BibleDownloadBanner.jsx'
 import '../../../styles/bible-viewer.css'
 
 export default function BibleDrawer({ bibleRef, open, onClose }) {
@@ -126,6 +127,7 @@ export default function BibleDrawer({ bibleRef, open, onClose }) {
             <button className="modern-drawer-close" onClick={handleClose} aria-label="Close">✕</button>
           </div>
           <div className="modern-drawer-body">
+            <BibleDownloadBanner />
             {everOpened && <BibleBrowser bibleRef={activeRef} />}
           </div>
         </div>

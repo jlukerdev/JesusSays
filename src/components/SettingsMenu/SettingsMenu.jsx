@@ -3,7 +3,8 @@ import { createPortal } from 'react-dom'
 import { Settings } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import useStore from '../../store.js'
-import { ENABLE_ABOUT_PAGE } from '../../featureFlags.js'
+import { ENABLE_ABOUT_PAGE, ENABLE_OFFLINE_BIBLE } from '../../featureFlags.js'
+import DownloadManager from './DownloadManager.jsx'
 import './SettingsMenu.css'
 
 export default function SettingsMenu() {
@@ -70,6 +71,12 @@ export default function SettingsMenu() {
                 <span className="settings-menu__size-label">{bibleFontSize}px</span>
               </div>
             </div>
+            {ENABLE_OFFLINE_BIBLE && (
+              <>
+                <div className="settings-menu__divider" />
+                <DownloadManager />
+              </>
+            )}
             {import.meta.env.DEV && (
               <>
                 <div className="settings-menu__divider" />
