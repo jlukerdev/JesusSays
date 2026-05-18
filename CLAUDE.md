@@ -40,7 +40,9 @@ npm run preview   # Preview production build
 
 ## Data Architecture
 
-**Served from:** `public/teachings.json` (fetched at `/JesusSays/teachings.json`)
+**Catalog:** `public/teachings.json` (fetched at `/JesusSays/teachings.json`)
+
+**Bible text:** Fetched on-demand from [api.bible](https://api.bible) (American Bible Society). Three translations supported: KJV, NKJV, NIV. Requires `VITE_BIBLE_API_KEY` env var. See `src/data/ApiBibleClient.js`, `BibleService.js`, `bibleApi.js`.
 
 ## Implemented Source Files
 
@@ -49,8 +51,9 @@ src/
   main.jsx                              # Entry; imports theme-classic.css then base.css
   App.jsx                               # HashRouter, data load, navStyle gate → ModernApp or classic Layout
   store.js                              # Zustand store (includes navStyle + setNavStyle)
+  featureFlags.js                       # Feature flag constants (e.g. ENABLE_ABOUT_PAGE)
   components/
-    # ── Classic navigation ───────────────────────────────────────────────────
+    # ── Classic navigation (frozen — see CLAUDE.md note above) ───────────────
     AppHeader/AppHeader.jsx             # Sticky header; hamburger (mobile) + ModeSwitcher
     BookNav/BookNav.jsx                 # Book Mode sidebar TOC; book/chapter accordion
     BookViewer/BookViewer.jsx           # Book→chapter→verse teaching view; category chip labels
@@ -67,26 +70,49 @@ src/
     ModernApp/ModernSearchBar.jsx       # Search input shown on home and category screens
     ModernApp/HomeScreen.jsx            # Landing: category grid + search results
     ModernApp/CategoryBrowser.jsx       # Subcategory tab view with teachings list
+    ModernApp/CategoryTOC.jsx           # Jump-to-subcategory table of contents panel
     ModernApp/TeachingDetail.jsx        # Full teaching detail view
-    ModernApp/PrevNextBar.jsx           # Prev/Next teaching nav bar (category + teaching screens)
-    ModernApp/BibleViewer/BibleViewer.jsx  # Inline Bible reference panel (drawer + pinned modes)
-    ModernApp/BibleViewer/BiblePanel.jsx   # Panel content for BibleViewer
-    ModernApp/BibleViewer/BibleDrawer.jsx  # Drawer wrapper for BibleViewer
+    ModernApp/BibleViewer/BibleViewer.jsx    # Inline Bible reference panel (drawer + pinned modes)
+    ModernApp/BibleViewer/BiblePanel.jsx     # Panel content for BibleViewer
+    ModernApp/BibleViewer/BibleDrawer.jsx    # Drawer wrapper for BibleViewer
+    ModernApp/BibleViewer/BibleBrowser.jsx   # Book/chapter navigation within the panel
+    ModernApp/BibleViewer/BibleContent.jsx   # Renders parsed api.bible verse HTML
+    ModernApp/BibleViewer/TranslationPicker.jsx  # KJV / NKJV / NIV picker
+    ModernApp/BibleViewer/BookPicker.jsx     # NT book selector
+    ModernApp/BibleViewer/ChapterPicker.jsx  # Chapter selector for chosen book
     # ── Shared ───────────────────────────────────────────────────────────────
+    AboutPanel/AboutPanel.jsx           # About panel shell (feature-flagged)
+    AboutPanel/AboutContent.jsx         # App info, creator bio content
+    AboutPanel/VersionView.jsx          # Displays app version details
     SettingsMenu/SettingsMenu.jsx       # User settings (navStyle toggle, font size, theme)
+    # ── Catalog Optimizer (feature-flagged admin tool) ────────────────────────
+    CatalogOptimizer/CatalogOptimizer.jsx    # Root optimizer shell
+    CatalogOptimizer/LoadPanel.jsx           # Loads teachings.json for editing
+    CatalogOptimizer/OptimizerToolbar.jsx    # Toolbar actions
+    CatalogOptimizer/OutlinePanel.jsx        # Category/subcategory outline tree
+    CatalogOptimizer/CategoryEditor.jsx      # Edit category metadata
+    CatalogOptimizer/SubcategoryEditor.jsx   # Edit subcategory metadata
+    CatalogOptimizer/TeachingEditor.jsx      # Edit individual teaching fields
+    CatalogOptimizer/ReferenceEditor.jsx     # Edit scripture references
+    CatalogOptimizer/TagEditor.jsx           # Edit teaching tags
   data/
     loader.js                           # Singleton fetch; exposes loadTeachings(), getTeachingById()
     reverseIndex.js                     # Builds book→chapter→verse index; getReverseIndex()
+    ApiBibleClient.js                   # api.bible REST client; fetches chapters and passages by translation
+    BibleService.js                     # Abstract base class defining the Bible API adapter contract
+    bibleApi.js                         # Concrete adapter; wires ApiBibleClient to BibleService interface
   hooks/
     useBreakpoint.js                    # useBreakpoint() (xs/sm/md/lg/xl), useIsMobile() (<768px)
     useLocalPreference.js               # localStorage wrapper hook
-    useScrollSpy.js                     # IntersectionObserver scroll-spy; useScrollSpy(), useBookScrollSpy()
+    useSearch.js                        # MiniSearch-powered teaching search hook
   styles/
     base.css                            # Full app CSS — layout, components, responsive
     themes/theme-classic.css            # All CSS custom properties (colors, typography, spacing, layout)
   utils/
     bookOrder.js                        # NT_BOOK_ABBR_ORDER, ABBR_TO_FULL, BLB_BOOK_SLUG, sortByBookOrder()
     clipboardCopy.js                    # copyPermalink(teachingId) — writes hash URL to clipboard
+    renumber.js                         # Client-side ID renumbering utility (used by Catalog Optimizer)
+    search.js                           # MiniSearch index builder and query function
     slugify.js                          # catId(), subcatId(), teachingAnchorId(), parseTeachingId()
 ```
 
