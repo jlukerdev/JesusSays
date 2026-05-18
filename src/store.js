@@ -18,7 +18,7 @@ const useStore = create((set) => ({
     set({ bibleFontSize: size })
   },
 
-  bibleTranslation: localStorage.getItem('bibleTranslation') ?? 'KJV',
+  bibleTranslation: localStorage.getItem('bibleTranslation') ?? 'NKJV',
   bibleBrowseBook: null,
   bibleBrowseChapter: 1,
   setBibleTranslation: (translation) => {
