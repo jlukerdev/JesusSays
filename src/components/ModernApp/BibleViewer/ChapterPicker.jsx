@@ -1,12 +1,19 @@
 import { useState, useEffect, useRef } from 'react'
-import { NT_BOOKS } from '../../../utils/bookOrder.js'
+import { NT_BOOKS, CATALOG_CHAPTERS } from '../../../utils/bookOrder.js'
+import { RESTRICT_TO_CATALOG } from '../../../featureFlags.js'
 
 const NT_BOOKS_MAP = Object.fromEntries(NT_BOOKS.map(b => [b.abbr, b]))
+
+function getAvailableChapters(book) {
+  if (RESTRICT_TO_CATALOG && CATALOG_CHAPTERS[book]) return CATALOG_CHAPTERS[book]
+  const count = NT_BOOKS_MAP[book]?.chapters ?? 1
+  return Array.from({ length: count }, (_, i) => i + 1)
+}
 
 export default function ChapterPicker({ book, onPick, activeChapter }) {
   const [open, setOpen] = useState(false)
   const ref = useRef(null)
-  const chapterCount = NT_BOOKS_MAP[book]?.chapters ?? 1
+  const availableChapters = getAvailableChapters(book)
 
   useEffect(() => {
     if (!open) return
@@ -29,7 +36,7 @@ export default function ChapterPicker({ book, onPick, activeChapter }) {
       </button>
       {open && (
         <div className="translation-flyout__menu translation-flyout__menu--chapter" role="listbox">
-          {Array.from({ length: chapterCount }, (_, i) => i + 1).map(ch => (
+          {availableChapters.map(ch => (
             <button
               key={ch}
               role="option"

@@ -1,4 +1,6 @@
 import { BibleService } from './BibleService.js'
+import { ENABLE_OFFLINE_BIBLE, ENABLE_API_FALLBACK } from '../featureFlags.js'
+import { bibleOfflineStore, OfflineOnlyError } from './BibleOfflineStore.js'
 
 const BASE_URL = 'https://rest.api.bible/v1'
 
@@ -29,26 +31,62 @@ export class ApiBibleClient extends BibleService {
     const cacheKey = `${translationKey}-${bookAbbr}-${chapterNum}`
     if (this.cache.has(cacheKey)) return this.cache.get(cacheKey)
 
-    const bibleId = BIBLE_IDS[translationKey]
-    const osisId  = OSIS_IDS[bookAbbr]
-    if (!bibleId) return Promise.reject(new Error(`Unknown translationKey: ${translationKey}`))
-    if (!osisId)  return Promise.reject(new Error(`Unknown bookAbbr: ${bookAbbr}`))
-    const chapterId = `${osisId}.${chapterNum}`
-    const url       = `${BASE_URL}/bibles/${bibleId}/chapters/${chapterId}` +
-                      `?content-type=html&include-notes=false&include-titles=true` +
-                      `&include-chapter-numbers=false&include-verse-numbers=true&include-verse-spans=true`
-
     // Cache the promise immediately so concurrent calls share one in-flight request.
     // On failure, evict so the next call can retry.
-    const promise = fetch(url, { headers: { 'api-key': this.apiKey } })
-      .then(res => {
-        if (!res.ok) throw new Error(`api.bible error: ${res.status} for ${chapterId} (${translationKey})`)
-        return res.json()
-      })
-      .then(json => this._parseHtml(json.data.content, translationKey))
+    const promise = this._resolveChapter(translationKey, bookAbbr, chapterNum)
       .catch(err => { this.cache.delete(cacheKey); throw err })
     this.cache.set(cacheKey, promise)
     return promise
+  }
+
+  async _resolveChapter(translationKey, bookAbbr, chapterNum) {
+    if (!ENABLE_OFFLINE_BIBLE) {
+      const html = await this._fetchRaw(translationKey, bookAbbr, chapterNum)
+      return this._parseHtml(html, translationKey)
+    }
+
+    const available = await bibleOfflineStore.isAvailable()
+    if (!available) {
+      if (!ENABLE_API_FALLBACK) throw new OfflineOnlyError()
+      const html = await this._fetchRaw(translationKey, bookAbbr, chapterNum)
+      return this._parseHtml(html, translationKey)
+    }
+
+    const cachedHtml = await bibleOfflineStore.getChapter(translationKey, bookAbbr, chapterNum)
+    if (cachedHtml !== null) {
+      return this._parseHtml(cachedHtml, translationKey)
+    }
+
+    // Not in IDB — fetch from API and cache for future use
+    const html = await this._fetchRaw(translationKey, bookAbbr, chapterNum)
+    await bibleOfflineStore.saveChapter(translationKey, bookAbbr, chapterNum, html)
+    return this._parseHtml(html, translationKey)
+  }
+
+  async _fetchRaw(translationKey, bookAbbr, chapterNum) {
+    const bibleId = BIBLE_IDS[translationKey]
+    const osisId  = OSIS_IDS[bookAbbr]
+    if (!bibleId) throw new Error(`Unknown translationKey: ${translationKey}`)
+    if (!osisId)  throw new Error(`Unknown bookAbbr: ${bookAbbr}`)
+    const chapterId = `${osisId}.${chapterNum}`
+    const url = `${BASE_URL}/bibles/${bibleId}/chapters/${chapterId}` +
+                `?content-type=html&include-notes=false&include-titles=true` +
+                `&include-chapter-numbers=false&include-verse-numbers=true&include-verse-spans=true`
+    const res = await fetch(url, { headers: { 'api-key': this.apiKey } })
+    if (!res.ok) throw new Error(`api.bible error: ${res.status} for ${chapterId} (${translationKey})`)
+    const json = await res.json()
+    return json.data.content
+  }
+
+  // Used by BibleOfflineStore bulk-download to fetch raw HTML without the offline layer.
+  fetchRawChapter(translationKey, bookAbbr, chapterNum) {
+    return this._fetchRaw(translationKey, bookAbbr, chapterNum)
+  }
+
+  clearCache(translationKey) {
+    for (const key of [...this.cache.keys()]) {
+      if (key.startsWith(`${translationKey}-`)) this.cache.delete(key)
+    }
   }
 
   async getPassage(translationKey, reference) {
@@ -135,9 +173,21 @@ export class ApiBibleClient extends BibleService {
 
         // Wrap in <i> or <span class="wj"> when this span lives inside .it or .wj ancestors.
         // In NKJV, .wj and .it are parents of verse-spans (not children), so we check upward.
-        const isItalic = span.parentElement?.classList.contains('it')
+        const isItalic = span.parentElement?.classList.contains('it') ||
+                         span.parentElement?.classList.contains('add')
         const isWj = !!span.closest('.wj')
-        const inner = extractVerseHtml(clone)
+        let inner = extractVerseHtml(clone)
+
+        // NKJV puts spaces as inter-element text nodes (not inside verse-span text), so
+        // the span-by-span traversal misses them. Inject a space at word boundaries when
+        // neither the accumulated text nor the new inner content supplies one.
+        if (entry._html != null && inner.length > 0 && inner[0] !== ' ') {
+          const prevText = entry._html.replace(/<[^>]+>/g, '')
+          if (prevText.length > 0 && prevText[prevText.length - 1] !== ' ') {
+            inner = ' ' + inner
+          }
+        }
+
         let chunk = isItalic ? `<i>${inner}</i>` : inner
         if (isWj) chunk = `<span class="wj">${chunk}</span>`
         // Content is from a controlled API parse; dangerouslySetInnerHTML is safe.

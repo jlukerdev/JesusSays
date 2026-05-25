@@ -54,3 +54,38 @@
   font-size: var(--text-sm); color: var(--color-muted);
   margin-left: var(--space-1); white-space: nowrap;
 }
+
+/* ── Download Manager ── */
+.download-manager__row {
+  display: flex; align-items: center; gap: var(--space-2);
+  padding: var(--space-1) 0;
+}
+.download-manager__name {
+  font-size: var(--text-sm); font-weight: 600; color: var(--color-ink);
+  min-width: 44px;
+}
+.download-manager__info {
+  flex: 1; font-size: var(--text-xs); color: var(--color-muted);
+}
+.download-manager__error { color: var(--color-error); }
+.download-manager__btn {
+  flex-shrink: 0; padding: 3px 10px;
+  font-size: var(--text-xs); font-weight: 600;
+  border: 1px solid var(--color-accent-mid); border-radius: var(--radius-sm);
+  background: var(--color-accent-light); color: var(--color-accent);
+  cursor: pointer; transition: background 0.12s;
+}
+.download-manager__btn:hover { background: #ede3c8; }
+.download-manager__btn--delete {
+  border-color: var(--color-border); background: transparent; color: var(--color-muted);
+}
+.download-manager__btn--delete:hover { background: var(--color-surface-raised); color: var(--color-ink); }
+.download-manager__spinner {
+  flex-shrink: 0; display: inline-block;
+  width: 12px; height: 12px;
+  border: 2px solid var(--color-border);
+  border-top-color: var(--color-accent-mid);
+  border-radius: 50%;
+  animation: dm-spin 0.7s linear infinite;
+}
+@keyframes dm-spin { to { transform: rotate(360deg); } }

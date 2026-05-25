@@ -408,6 +408,55 @@
                   "isPrimary": false
                 }
               ]
+            },
+            {
+              "id": "1.3.6",
+              "uid": "9db78b46-9ffe-44be-aa9d-631bc91aafbd",
+              "text": "Jesus declares that only God is good, redirecting a rich young ruler’s praise of him toward God alone.",
+              "quote": "Why callest thou me good? there is none good but one, that is, God.",
+              "title": "Only God Is Good",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Mark 10:18",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 10,
+                  "ranges": [
+                    [
+                      18,
+                      18
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Luke 18:19",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 18,
+                  "ranges": [
+                    [
+                      19,
+                      19
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Matt 19:17",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 19,
+                  "ranges": [
+                    [
+                      17,
+                      17
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ]
             }
           ],
           "uid": "c52377a1-d650-48a7-9109-3cd4b2f0b81b"
@@ -7852,7 +7901,7 @@
         {
           "id": "8.4",
           "slug": "cat-8-4",
-          "title": "The Bread of Life — A Connected Teaching",
+          "title": "The Bread of Life",
           "teachings": [
             {
               "id": "8.4.1",
@@ -8071,7 +8120,7 @@
         {
           "id": "8.5",
           "slug": "cat-8-5",
-          "title": "New and Old — The Covenant Transition",
+          "title": "The Covenant Transition",
           "teachings": [
             {
               "id": "8.5.1",
@@ -8841,7 +8890,7 @@
         {
           "id": "11.1",
           "slug": "cat-11-1",
-          "title": "Prayer for Himself — The Hour Has Come",
+          "title": "Prayer for Himself",
           "teachings": [
             {
               "id": "11.1.1",
@@ -12069,7 +12118,7 @@
         {
           "id": "18.3",
           "slug": "cat-18-3",
-          "title": "Family Relationships and Kingdom Priority",
+          "title": "Kingdom Priority",
           "teachings": [
             {
               "id": "18.3.1",
@@ -12104,32 +12153,6 @@
                     ]
                   ],
                   "isPrimary": false
-                },
-                {
-                  "label": "Matt 12:50",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 12,
-                  "ranges": [
-                    [
-                      50,
-                      50
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Mark 3:35",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 3,
-                  "ranges": [
-                    [
-                      35,
-                      35
-                    ]
-                  ],
-                  "isPrimary": false
                 }
               ]
             },
@@ -12153,71 +12176,6 @@
                     ]
                   ],
                   "isPrimary": true
-                },
-                {
-                  "label": "Matt 15:4",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 15,
-                  "ranges": [
-                    [
-                      4,
-                      4
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Mark 7:10",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 7,
-                  "ranges": [
-                    [
-                      10,
-                      10
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Mark 10:19",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 10,
-                  "ranges": [
-                    [
-                      19,
-                      19
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 18:20",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 18,
-                  "ranges": [
-                    [
-                      20,
-                      20
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Matt 19:17–19",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 19,
-                  "ranges": [
-                    [
-                      17,
-                      19
-                    ]
-                  ],
-                  "isPrimary": false
                 }
               ]
             },
@@ -12264,6 +12222,32 @@
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Matt 12:50",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 12,
+                  "ranges": [
+                    [
+                      50,
+                      50
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Mark 3:35",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 3,
+                  "ranges": [
+                    [
+                      35,
+                      35
+                    ]
+                  ],
+                  "isPrimary": false
                 }
               ]
             }
@@ -12581,6 +12565,45 @@
                     [
                       24,
                       27
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Matt 19:18–19",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 19,
+                  "ranges": [
+                    [
+                      18,
+                      19
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Mark 10:19",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 10,
+                  "ranges": [
+                    [
+                      19,
+                      19
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 18:20",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 18,
+                  "ranges": [
+                    [
+                      20,
+                      20
                     ]
                   ],
                   "isPrimary": false
@@ -12997,7 +13020,7 @@
         {
           "id": "20.2",
           "slug": "cat-20-2",
-          "title": "The Judgment of the Nations — Sheep and Goats",
+          "title": "The Judgment of the Nations",
           "teachings": [
             {
               "id": "20.2.1",
@@ -13327,32 +13350,6 @@
                     [
                       43,
                       43
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Mark 10:18",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 10,
-                  "ranges": [
-                    [
-                      18,
-                      18
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 18:19",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 18,
-                  "ranges": [
-                    [
-                      19,
-                      19
                     ]
                   ],
                   "isPrimary": false
@@ -14931,7 +14928,7 @@
         {
           "id": "23.1",
           "slug": "cat-23-1",
-          "title": "The Seven Woes to Scribes and Pharisees (Matthew 23)",
+          "title": "The Seven Woes to Scribes and Pharisees",
           "teachings": [
             {
               "id": "23.1.1",
@@ -16544,7 +16541,7 @@
         {
           "id": "25.2",
           "slug": "cat-25-2",
-          "title": "Instructions for the Twelve and the Seventy",
+          "title": "Instructions for the Twelve",
           "teachings": [
             {
               "id": "25.2.1",
@@ -20473,7 +20470,7 @@
         {
           "id": "30.1",
           "slug": "cat-30-1",
-          "title": "Introduction to the Seven Churches — The Vision of Christ",
+          "title": "Introduction to the Seven Churches",
           "teachings": [
             {
               "id": "30.1.1",

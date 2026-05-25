@@ -1,9 +1,12 @@
-import { useRef, useEffect, useState } from 'react'
+import { useRef, useEffect, useLayoutEffect, useState } from 'react'
 import useStore from '../../../store.js'
+import { CATALOG_CHAPTERS } from '../../../utils/bookOrder.js'
+import { RESTRICT_TO_CATALOG } from '../../../featureFlags.js'
 import TranslationPicker from './TranslationPicker.jsx'
 import BookPicker from './BookPicker.jsx'
 import ChapterPicker from './ChapterPicker.jsx'
 import BibleBrowser from './BibleBrowser.jsx'
+import BibleDownloadBanner from './BibleDownloadBanner.jsx'
 import '../../../styles/bible-viewer.css'
 
 const PANEL_MIN_WIDTH = 380
@@ -27,9 +30,26 @@ export default function BiblePanel({ bibleRef, open, pinned, onClose, onTogglePi
     bibleRef?.bookAbbr ?? bibleBrowseBook ?? 'John'
   )
 
-  // Mount BibleBrowser lazily so it doesn't fire API calls / scrollIntoView while panel is hidden
-  const [everOpened, setEverOpened] = useState(false)
-  useEffect(() => { if (open) setEverOpened(true) }, [open])
+  // Mount BibleBrowser lazily and only after the open transition settles (300ms).
+  // This prevents mid-transition DOM mutations inside the panel from causing layout jank.
+  const [everOpened, setEverOpened] = useState(open) // true immediately if panel starts pinned-open
+  const panelOpenedAt = useRef(null)   // timestamp of the most recent closed→open transition
+  const wasOpenRef    = useRef(open)   // tracks previous open value without causing re-renders
+
+  useLayoutEffect(() => {
+    // Record the moment the panel transitions from closed → open (not on initial mount).
+    // useLayoutEffect runs before child useEffects, so BibleBrowser can read this in its effects.
+    if (open && !wasOpenRef.current) {
+      panelOpenedAt.current = Date.now()
+    }
+    wasOpenRef.current = open
+  }, [open])
+
+  useEffect(() => {
+    if (!open) return
+    const id = setTimeout(() => setEverOpened(true), 320)
+    return () => clearTimeout(id)
+  }, [open])
 
   // Sync picker book when scroll position changes the active book
   useEffect(() => {
@@ -38,7 +58,8 @@ export default function BiblePanel({ bibleRef, open, pinned, onClose, onTogglePi
 
   function handleBookPick(abbr) {
     setPickerBook(abbr)
-    setBibleBrowseTarget({ bookAbbr: abbr, chapter: 1 })
+    const firstChapter = RESTRICT_TO_CATALOG ? (CATALOG_CHAPTERS[abbr]?.[0] ?? 1) : 1
+    setBibleBrowseTarget({ bookAbbr: abbr, chapter: firstChapter })
   }
 
   function handleChapterPick(chapter) {
@@ -131,7 +152,8 @@ export default function BiblePanel({ bibleRef, open, pinned, onClose, onTogglePi
         </div>
       </div>
       <div className="modern-panel-body">
-        {everOpened && <BibleBrowser bibleRef={bibleRef} />}
+        <BibleDownloadBanner />
+        {everOpened && <BibleBrowser bibleRef={bibleRef} panelOpenedAt={panelOpenedAt} />}
       </div>
     </div>
   )

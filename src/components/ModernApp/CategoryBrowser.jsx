@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { Menu } from 'lucide-react'
+import { Menu, Eye } from 'lucide-react'
 import { useIsMobile } from '../../hooks/useBreakpoint.js'
 import { NT_BOOK_ABBR_ORDER } from '../../utils/bookOrder.js'
 import { useSearch } from '../../hooks/useSearch.js'
@@ -24,7 +24,10 @@ function TeachingCard({ teaching, onNavigate, onOpenBible }) {
           ))}
         </div>
       </div>
-      <span className="modern-teaching-card__arrow" aria-hidden="true">›</span>
+      <button className="modern-teaching-card__view-btn" tabIndex={-1} aria-hidden="true">
+        <Eye size={14} />
+        <span>View</span>
+      </button>
     </div>
   )
 }

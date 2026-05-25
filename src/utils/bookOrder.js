@@ -32,6 +32,19 @@ export const NT_BOOK_ABBR_ORDER = NT_BOOKS.map(b => b.abbr)
 
 export const ABBR_TO_FULL = Object.fromEntries(NT_BOOKS.map(b => [b.abbr, b.fullName]))
 
+// Chapters available for Bible browsing. Gospels include all chapters; other books
+// include only chapters referenced in the catalog.
+export const CATALOG_CHAPTERS = {
+  Matt: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28],
+  Mark: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+  Luke: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],
+  John: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],
+  Acts: [1,9,10,11,18,20,22,23,26],
+  '1Cor': [11],
+  '2Cor': [12],
+  Rev: [1,2,3,16,21,22],
+}
+
 export const BLB_BOOK_SLUG = {
   Matt: 'mat',
   Mark: 'mar',

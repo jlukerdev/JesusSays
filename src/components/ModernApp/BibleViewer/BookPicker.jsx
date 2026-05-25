@@ -1,5 +1,10 @@
 import { useState, useEffect, useRef } from 'react'
-import { NT_BOOKS } from '../../../utils/bookOrder.js'
+import { NT_BOOKS, CATALOG_CHAPTERS } from '../../../utils/bookOrder.js'
+import { RESTRICT_TO_CATALOG } from '../../../featureFlags.js'
+
+const AVAILABLE_BOOKS = RESTRICT_TO_CATALOG
+  ? NT_BOOKS.filter(b => b.abbr in CATALOG_CHAPTERS)
+  : NT_BOOKS
 
 export default function BookPicker({ activeBook, onPick }) {
   const [open, setOpen] = useState(false)
@@ -26,7 +31,7 @@ export default function BookPicker({ activeBook, onPick }) {
       </button>
       {open && (
         <div className="translation-flyout__menu translation-flyout__menu--book" role="listbox">
-          {NT_BOOKS.map(b => (
+          {AVAILABLE_BOOKS.map(b => (
             <button
               key={b.abbr}
               role="option"

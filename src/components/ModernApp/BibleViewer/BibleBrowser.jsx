@@ -1,29 +1,30 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import useStore from '../../../store.js'
 import { bibleApi } from '../../../data/bibleApi.js'
-import { NT_BOOKS } from '../../../utils/bookOrder.js'
+import { OfflineOnlyError } from '../../../data/BibleOfflineStore.js'
+import { NT_BOOKS, NT_BOOK_ABBR_ORDER, CATALOG_CHAPTERS } from '../../../utils/bookOrder.js'
+import { RESTRICT_TO_CATALOG } from '../../../featureFlags.js'
 import BibleContent from './BibleContent.jsx'
 
 const NT_BOOKS_MAP = Object.fromEntries(NT_BOOKS.map(b => [b.abbr, b]))
 
+// Flat ordered sequence of {bookAbbr, chapterNum} pairs available for browsing.
+// When RESTRICT_TO_CATALOG is true, only catalog entries are included.
+const BROWSE_SEQUENCE = RESTRICT_TO_CATALOG
+  ? NT_BOOK_ABBR_ORDER.flatMap(abbr => {
+      const chs = CATALOG_CHAPTERS[abbr]
+      return chs ? chs.map(ch => ({ bookAbbr: abbr, chapterNum: ch })) : []
+    })
+  : NT_BOOKS.flatMap(b => Array.from({ length: b.chapters }, (_, i) => ({ bookAbbr: b.abbr, chapterNum: i + 1 })))
+
 function getPrevTarget(bookAbbr, chapterNum) {
-  const book = NT_BOOKS_MAP[bookAbbr]
-  if (!book) return null
-  if (chapterNum > 1) return { bookAbbr, chapterNum: chapterNum - 1 }
-  const idx = NT_BOOKS.findIndex(b => b.abbr === bookAbbr)
-  if (idx <= 0) return null
-  const prevBook = NT_BOOKS[idx - 1]
-  return { bookAbbr: prevBook.abbr, chapterNum: prevBook.chapters }
+  const idx = BROWSE_SEQUENCE.findIndex(s => s.bookAbbr === bookAbbr && s.chapterNum === chapterNum)
+  return idx > 0 ? BROWSE_SEQUENCE[idx - 1] : null
 }
 
 function getNextTarget(bookAbbr, chapterNum) {
-  const book = NT_BOOKS_MAP[bookAbbr]
-  if (!book) return null
-  if (chapterNum < book.chapters) return { bookAbbr, chapterNum: chapterNum + 1 }
-  const idx = NT_BOOKS.findIndex(b => b.abbr === bookAbbr)
-  if (idx >= NT_BOOKS.length - 1) return null
-  const nextBook = NT_BOOKS[idx + 1]
-  return { bookAbbr: nextBook.abbr, chapterNum: 1 }
+  const idx = BROWSE_SEQUENCE.findIndex(s => s.bookAbbr === bookAbbr && s.chapterNum === chapterNum)
+  return idx >= 0 && idx < BROWSE_SEQUENCE.length - 1 ? BROWSE_SEQUENCE[idx + 1] : null
 }
 
 function LoadingDots() {
@@ -37,9 +38,10 @@ function LoadingDots() {
 function BibleNavBar({ direction, target, onNavigate }) {
   if (!target) return null
   const targetBook = NT_BOOKS_MAP[target.bookAbbr]
+  const bookEntries = BROWSE_SEQUENCE.filter(s => s.bookAbbr === target.bookAbbr)
   const isBookJump = direction === 'prev'
-    ? target.chapterNum === targetBook?.chapters
-    : target.chapterNum === 1
+    ? bookEntries[bookEntries.length - 1]?.chapterNum === target.chapterNum
+    : bookEntries[0]?.chapterNum === target.chapterNum
 
   const label = direction === 'prev'
     ? isBookJump
@@ -76,12 +78,15 @@ function ChapterSegment({ seg, prevSeg, highlightVerses }) {
       >
         Chapter {seg.chapterNum}
       </div>
-      <BibleContent verses={seg.verses} highlightVerses={highlightVerses} />
+      {seg.loadError
+        ? <div className="bible-offline-warning">{seg.loadError}</div>
+        : <BibleContent verses={seg.verses} highlightVerses={highlightVerses} />
+      }
     </div>
   )
 }
 
-export default function BibleBrowser({ bibleRef }) {
+export default function BibleBrowser({ bibleRef, panelOpenedAt }) {
   const bibleTranslation      = useStore(s => s.bibleTranslation)
   const bibleBrowseBook       = useStore(s => s.bibleBrowseBook)
   const bibleBrowseChapter    = useStore(s => s.bibleBrowseChapter)
@@ -102,6 +107,19 @@ export default function BibleBrowser({ bibleRef }) {
   const initialChapter = bibleRef?.chapter ?? (bibleBrowseBook ? bibleBrowseChapter : 1)
   const highlightVerses = bibleRef?.ranges ?? []
 
+  function buildErrorSeg(bookAbbr, chapterNum, err) {
+    const book = NT_BOOKS_MAP[bookAbbr]
+    const isOffline = err instanceof OfflineOnlyError
+    return {
+      id: `${bookAbbr}-${chapterNum}`,
+      bookAbbr,
+      bookName: book?.fullName ?? bookAbbr,
+      chapterNum,
+      verses: null,
+      loadError: isOffline ? err.message : 'Failed to load chapter.',
+    }
+  }
+
   async function loadAndPrepend(bookAbbr, chapterNum) {
     setLoadingPrev(true)
     try {
@@ -112,6 +130,9 @@ export default function BibleBrowser({ bibleRef }) {
       requestAnimationFrame(() => {
         document.getElementById(`bible-ch-${seg.id}`)?.scrollIntoView({ behavior: 'instant', block: 'start' })
       })
+    } catch (err) {
+      const seg = buildErrorSeg(bookAbbr, chapterNum, err)
+      setSegments(prev => prev.some(s => s.id === seg.id) ? prev : [seg, ...prev])
     } finally {
       setLoadingPrev(false)
     }
@@ -129,6 +150,9 @@ export default function BibleBrowser({ bibleRef }) {
           document.getElementById(`bible-ch-${seg.id}`)?.scrollIntoView({ behavior: 'instant', block: 'start' })
         })
       }
+    } catch (err) {
+      const seg = buildErrorSeg(bookAbbr, chapterNum, err)
+      setSegments(prev => prev.some(s => s.id === seg.id) ? prev : [...prev, seg])
     } finally {
       setLoadingNext(false)
     }
@@ -169,15 +193,18 @@ export default function BibleBrowser({ bibleRef }) {
       requestAnimationFrame(() => {
         document.getElementById(`bible-ch-${segId}`)?.scrollIntoView({ behavior: 'instant', block: 'start' })
       })
-    } else {
-      // Reset and load the new chapter
-      initialLoadDone.current = false
-      setSegments([])
-      setTimeout(() => {
-        initialLoadDone.current = true
-        loadAndAppend(bibleRef.bookAbbr, bibleRef.chapter)
-      }, 0)
+      return
     }
+
+    // If the panel just opened, defer the segment clear+load until after its slide-in transition
+    // (300ms). Clearing segments mid-transition causes a repaint that interrupts the animation.
+    const elapsed = panelOpenedAt?.current != null ? Date.now() - panelOpenedAt.current : 9999
+    const delay = Math.max(0, 320 - elapsed)
+    const id = setTimeout(() => {
+      setSegments([])
+      loadAndAppend(bibleRef.bookAbbr, bibleRef.chapter)
+    }, delay)
+    return () => clearTimeout(id)
   }, [bibleRef])
 
   // Navigate when picker selects a book/chapter
