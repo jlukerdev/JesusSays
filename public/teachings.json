@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "1.7",
+    "version": "1.8",
     "title": "Jesus Says Data Catalog",
     "subtitle": "A Comprehensive Categorization of His Words as Recorded in the New Testament",
     "totalCategories": 30,
@@ -9696,68 +9696,6 @@
             },
             {
               "id": "13.3.3",
-              "uid": "5396f7c3-d7e8-4c0f-91ab-4e998ec58995",
-              "text": "Jesus says that whoever puts away his wife, except for the cause of fornication, causes her to commit adultery, and whoever marries her who is divorced commits adultery.",
-              "quote": "It hath been said, Whosoever shall put away his wife, let him give her a writing of divorcement: But I say unto you, That whosoever shall put away his wife, saving for the cause of fornication, causeth her to commit adultery: and whosoever shall marry her that is divorced committeth adultery.",
-              "title": "Divorce Except for Fornication Causes Adultery",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 5:31–32",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 5,
-                  "ranges": [
-                    [
-                      31,
-                      32
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Matt 19:3–9",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 19,
-                  "ranges": [
-                    [
-                      3,
-                      9
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Mark 10:2–12",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 10,
-                  "ranges": [
-                    [
-                      2,
-                      12
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 16:18",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 16,
-                  "ranges": [
-                    [
-                      18,
-                      18
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ]
-            },
-            {
-              "id": "13.3.4",
               "uid": "896abb2b-0835-4628-b42a-f79d01da97e0",
               "text": "Jesus charges his hearers not to swear at all, neither by heaven nor earth nor Jerusalem nor their head. Let their yes be yes and their no be no, for whatever is more comes of evil.",
               "quote": "¶ Again, ye have heard that it hath been said by them of old time, Thou shalt not forswear thyself, but shalt perform unto the Lord thine oaths: But I say unto you, Swear not at all; neither by heaven; for it is God’s throne: Nor by the earth; for it is his footstool: neither by Jerusalem; for it is the city of the great King. Neither shalt thou swear by thy head, because thou canst not make one hair white or black. But let your communication be, Yea, yea; Nay, nay: for whatsoever is more than these cometh of evil.",
@@ -9780,7 +9718,7 @@
               ]
             },
             {
-              "id": "13.3.5",
+              "id": "13.3.4",
               "uid": "8ca2fd33-1a27-41ed-9b95-dbc6d92d3e69",
               "text": "Jesus teaches his hearers not to resist evil but to turn the other cheek and give their cloak to whoever sues for their coat. He charges them to go two miles with whoever compels them one, and to give to whoever asks.",
               "quote": "¶ Ye have heard that it hath been said, An eye for an eye, and a tooth for a tooth: But I say unto you, That ye resist not evil: but whosoever shall smite thee on thy right cheek, turn to him the other also. And if any man will sue thee at the law, and take away thy coat, let him have thy cloke also. And whosoever shall compel thee to go a mile, go with him twain. Give to him that asketh thee, and from him that would borrow of thee turn not thou away.",
@@ -11907,13 +11845,13 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 5:32",
+                  "label": "Matt 5:31–32",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 5,
                   "ranges": [
                     [
-                      32,
+                      31,
                       32
                     ]
                   ],
@@ -11969,26 +11907,26 @@
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 19:4–8",
+                  "label": "Matt 19:3–8",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 19,
                   "ranges": [
                     [
-                      4,
+                      3,
                       8
                     ]
                   ],
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 10:6–9",
+                  "label": "Mark 10:2–9",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 10,
                   "ranges": [
                     [
-                      6,
+                      2,
                       9
                     ]
                   ],
