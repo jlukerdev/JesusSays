@@ -1,5 +1,6 @@
 ## Table of Contents
 
+- [v1.8 — May 25, 2026](#v18--may-25-2026)
 - [v1.7 — May 17, 2026](#v17--may-17-2026)
 - [v1.6 — May 10, 2026](#v16--may-10-2026)
 - [v1.5 — May 9, 2026](#v15--may-9-2026)
@@ -15,6 +16,29 @@ Tracks all structural changes to `public/teachings.json` by version and date.
 **Format:** Each version entry records the date, catalog stats at the time of writing, and all structural changes made since the previous version. Minor wording edits to `text` or `quote` fields do not require a version bump; structural changes (adds, deletes, moves, renames, splits, merges) do.
 
 <!-- Add new versions above this line -->
+
+## v1.8 — May 25, 2026
+
+| Stat | Count |
+|---|---|
+| Categories | 30 |
+| Subcategories | 117 |
+| Teachings | 644 |
+| Parables | 35 |
+
+### Delete: Remove duplicate divorce/fornication teaching from Cat 13.3
+
+Removed teaching **13.3.3** from **13.3 The Antitheses — "You Have Heard… But I Say to You"** as a duplicate of **18.1.1** in **18.1 Marriage and Divorce**.
+
+**Reason:** Both teachings covered the same declaration (Matt 5:31–32, Matt 19:3–9, Mark 10:2–12, Luke 16:18) about divorce causing adultery. The Antitheses subcategory entry (13.3.3) was a contextual placement of a Family teaching; 18.1.1 in Marriage and Family is the authoritative home for this content. The Family category entry's broader verse ranges (Matt 5:31–32, Matt 19:3–9, Mark 10:2–12) were merged into 18.1.1, which previously held narrower slices (Matt 5:32, Matt 19:9, Mark 10:11–12).
+
+**Deleted:** `13.3.3` — "Jesus says that whoever puts away his wife, except for the cause of fornication, causes her to commit adultery..." (Matt 5:31–32, Matt 19:3–9, Mark 10:2–12, Luke 16:18)
+
+**Updated:** `18.1.1` — expanded references: Matt 5:32 → Matt 5:31–32; Matt 19:9 → Matt 19:3–9; Mark 10:11–12 → Mark 10:2–12
+
+**Net delta:** Cat 13.3: 5 → 4 teachings; Teachings: 645 → 644
+
+---
 
 ## v1.7 — May 17, 2026
 
