@@ -9,9 +9,15 @@ function TeachingCard({ teaching, onNavigate, onOpenBible }) {
   return (
     <div className="modern-teaching-card" onClick={onNavigate}>
       <div className="modern-teaching-card__main">
-        {teaching.title && (
-          <div className="modern-teaching-card__title">{teaching.title}</div>
-        )}
+        <div className="modern-teaching-card__header">
+          {teaching.title && (
+            <div className="modern-teaching-card__title">{teaching.title}</div>
+          )}
+          <button className="modern-teaching-card__view-btn" tabIndex={-1} aria-hidden="true">
+            <Eye size={14} />
+            <span className="modern-teaching-card__view-label">View</span>
+          </button>
+        </div>
         <p className="modern-teaching-card__text">{teaching.text}</p>
         <div className="modern-teaching-card__chips">
           {teaching.tags.map(tag => (
@@ -24,10 +30,6 @@ function TeachingCard({ teaching, onNavigate, onOpenBible }) {
           ))}
         </div>
       </div>
-      <button className="modern-teaching-card__view-btn" tabIndex={-1} aria-hidden="true">
-        <Eye size={14} />
-        <span>View</span>
-      </button>
     </div>
   )
 }
