@@ -3,7 +3,7 @@ let _data = null
 export async function loadTeachings() {
   if (_data) return _data
 
-  const res = await fetch('/JesusSays/teachings.json')
+  const res = await fetch(`${import.meta.env.BASE_URL}teachings.json`)
   if (!res.ok) throw new Error(`Failed to load teachings.json: ${res.status}`)
   const json = await res.json()
 

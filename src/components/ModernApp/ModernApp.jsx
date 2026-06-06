@@ -203,7 +203,7 @@ export default function ModernApp() {
               ) : (
                 !isMobile && (
                   <div className="modern-home-placeholder">
-                    <img src="/JesusSays/icons/chat_bub_512.svg" className="modern-home-placeholder__icon" alt="" aria-hidden="true" />
+                    <img src={`${import.meta.env.BASE_URL}icons/chat_bub_512.svg`} className="modern-home-placeholder__icon" alt="" aria-hidden="true" />
                     <h2 className="modern-home-placeholder__heading">Explore the Teachings of Jesus Christ</h2>
                     <p className="modern-home-placeholder__body">
                       Choose a <strong>Theme</strong> to dive into the <strong>Topics</strong>,

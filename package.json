@@ -1,11 +1,13 @@
 {
   "name": "jesus-says",
   "private": true,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:cf": "cross-env CF_PAGES=1 vite build",
+    "deploy:cf": "npm run build:cf && wrangler pages deploy dist --project-name=jesus-says",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -22,8 +24,10 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.7.0",
+    "cross-env": "^10.1.0",
     "gh-pages": "^6.1.1",
     "vite": "^7.3.2",
-    "vite-plugin-pwa": "^1.2.0"
+    "vite-plugin-pwa": "^1.2.0",
+    "wrangler": "^4.98.0"
   }
 }

@@ -19,7 +19,7 @@ export default function LoadPanel({ onLoad, isLoading, loadError }) {
     setLocalError(null)
     setLocalLoading(true)
     try {
-      const res = await fetch('/JesusSays/teachings.json')
+      const res = await fetch(`${import.meta.env.BASE_URL}teachings.json`)
       if (!res.ok) throw new Error(`Server responded with ${res.status}`)
       const data = await res.json()
       validateAndLoad(data, 'server', null)
@@ -84,7 +84,7 @@ export default function LoadPanel({ onLoad, isLoading, loadError }) {
           <span style={{ fontSize: '2rem' }}>🌐</span>
           <strong>Load from server</strong>
           <span style={{ fontSize: 'var(--text-xs)', color: 'var(--color-muted)' }}>
-            Fetch the live /JesusSays/teachings.json
+            Fetch the live teachings.json
           </span>
           {localLoading && <span style={{ fontSize: 'var(--text-xs)' }}>Loading…</span>}
         </div>
