@@ -6,7 +6,7 @@
   // `dist/jesussays/...`. The SPA uses HashRouter, so the server only ever
   // serves `/jesussays/` (the directory index) plus static assets.
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "jesus-says",
+  "name": "app-jesussays",
   "compatibility_date": "2024-11-01",
 
   "assets": {
