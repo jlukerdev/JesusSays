@@ -1,0 +1,30 @@
+{
+  // Cloudflare Workers (Static Assets) deployment config.
+  // The app is built with `npm run build:cf`, which sets base `/jesussays/`
+  // and emits files into `dist/jesussays/`. Serving `./dist` as the assets
+  // root means a request to `apps.<domain>.com/jesussays/...` resolves to
+  // `dist/jesussays/...`. The SPA uses HashRouter, so the server only ever
+  // serves `/jesussays/` (the directory index) plus static assets.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jesus-says",
+  "compatibility_date": "2024-11-01",
+
+  "assets": {
+    "directory": "./dist",
+    // Auto-redirect `/jesussays` -> `/jesussays/` and serve index.html for
+    // directory requests. No single-page-application fallback is needed
+    // because routing happens client-side via the URL hash.
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+
+  // Route the Worker at the /jesussays subpath of your apps subdomain.
+  // Replace `example.com` with your real domain. The zone must be on
+  // Cloudflare and `apps.<domain>.com` must have a proxied DNS record.
+  "routes": [
+    {
+      "pattern": "apps.kingdombytes.com/jesussays*",
+      "zone_name": "kingdombytes.com"
+    }
+  ]
+}

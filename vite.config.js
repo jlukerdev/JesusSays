@@ -6,10 +6,13 @@ import { readFileSync } from 'fs'
 const pkg = JSON.parse(readFileSync('./package.json', 'utf-8'))
 
 const isCFPages = !!process.env.CF_PAGES
-const base = isCFPages ? '/' : '/JesusSays/'
+const base = isCFPages ? '/jesussays/' : '/JesusSays/'
 
 export default defineConfig({
   base,
+  build: {
+    outDir: isCFPages ? 'dist/jesussays' : 'dist'
+  },
   define: {
     __APP_VERSION__: JSON.stringify(pkg.version),
     __BUILD_DATE__: JSON.stringify(new Date().toISOString().split('T')[0])
@@ -26,7 +29,8 @@ export default defineConfig({
         theme_color: '#1b2a40',
         background_color: '#faf9f6',
         display: 'standalone',
-        start_url: isCFPages ? '/' : '/JesusSays/',
+        start_url: isCFPages ? '/jesussays/' : '/JesusSays/',
+        scope: isCFPages ? '/jesussays/' : '/JesusSays/',
         icons: [
           {
             src: 'icons/icon-192.png',

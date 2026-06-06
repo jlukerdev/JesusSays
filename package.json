@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "build:cf": "cross-env CF_PAGES=1 vite build",
-    "deploy:cf": "npm run build:cf && wrangler pages deploy dist --project-name=jesus-says",
+    "deploy:cf": "npm run build:cf && wrangler deploy",
+    "preview:cf": "npm run build:cf && wrangler dev",
     "preview": "vite preview"
   },
   "dependencies": {
