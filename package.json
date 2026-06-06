@@ -8,7 +8,8 @@
     "build": "vite build",
     "build:cf": "cross-env CF_PAGES=1 vite build",
     "deploy:cf": "npm run build:cf && wrangler pages deploy dist --project-name=jesus-says",
-    "preview": "vite preview"
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "lucide-react": "^0.441.0",
@@ -23,6 +24,7 @@
     "serialize-javascript": "^7.0.5"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.40.0",
     "@vitejs/plugin-react": "^4.7.0",
     "cross-env": "^10.1.0",
     "gh-pages": "^6.1.1",
