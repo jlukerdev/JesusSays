@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "1.8",
+    "version": "1.9",
     "title": "Jesus Says Data Catalog",
     "subtitle": "A Comprehensive Categorization of His Words as Recorded in the New Testament",
     "totalCategories": 30,
@@ -9249,14 +9249,14 @@
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 12:29–30",
+                  "label": "Mark 12:29–31",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 12,
                   "ranges": [
                     [
                       29,
-                      30
+                      31
                     ]
                   ],
                   "isPrimary": false
@@ -17640,14 +17640,14 @@
                   "isPrimary": false
                 },
                 {
-                  "label": "Luke 22:34–38",
+                  "label": "Luke 22:34",
                   "book": "Luke",
                   "bookAbbr": "Luke",
                   "chapter": 22,
                   "ranges": [
                     [
                       34,
-                      38
+                      34
                     ]
                   ],
                   "isPrimary": false
@@ -17656,6 +17656,29 @@
             },
             {
               "id": "26.1.9",
+              "uid": "cb624319-b7b5-456f-87f8-a74e57ae2b9d",
+              "text": "Jesus tells the disciples the time has changed, so the one who has a purse and bag should take them and even sell a garment to buy a sword, for he must be numbered with the transgressors.",
+              "quote": "When I sent you without purse, and scrip, and shoes, lacked ye any thing? ... But now, he that hath a purse, let him take it, and likewise his scrip: and he that hath no sword, let him sell his garment, and buy one. For I say unto you, that this that is written must yet be accomplished in me, And he was reckoned among the transgressors: for the things concerning me have an end. ... It is enough.",
+              "title": "Buy a Sword — Numbered With the Transgressors",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Luke 22:35–38",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 22,
+                  "ranges": [
+                    [
+                      35,
+                      38
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "26.1.10",
               "uid": "542a09bc-c637-475e-b5a4-9d794339cdbb",
               "text": "Jesus tells the disciples he has longed to eat this Passover before he suffers, and will not eat it again until God's kingdom comes.",
               "quote": "With desire I have desired to eat this passover with you before I suffer: For I say unto you, I will not any more eat thereof, until it be fulfilled in the kingdom of God.",
@@ -17678,7 +17701,7 @@
               ]
             },
             {
-              "id": "26.1.10",
+              "id": "26.1.11",
               "uid": "1bea93f7-0d02-446a-b5ba-85d07ea97bb8",
               "text": "Jesus charges his disciples that the greatest among them must be as the youngest and the leader as one who serves.",
               "quote": "And he said unto them, The kings of the Gentiles exercise lordship over them; and they that exercise authority upon them are called benefactors. But ye shall not be so: but he that is greatest among you, let him be as the younger; and he that is chief, as he that doth serve.",
@@ -17701,7 +17724,7 @@
               ]
             },
             {
-              "id": "26.1.11",
+              "id": "26.1.12",
               "uid": "4a8c0625-c7fb-4e7b-9086-a614d2d3bc37",
               "text": "Jesus asks which is greater, he who sits at table or he who serves, and declares he is among them as one who serves.",
               "quote": "For whether is greater, he that sitteth at meat, or he that serveth? is not he that sitteth at meat? but I am among you as he that serveth.",
@@ -17724,7 +17747,7 @@
               ]
             },
             {
-              "id": "26.1.12",
+              "id": "26.1.13",
               "uid": "5d9c2cfc-e889-4e83-b0d6-0f06fa06a60e",
               "text": "Jesus commends his disciples for continuing with him in his trials and appoints them a kingdom to eat at his table and sit on thrones judging the twelve tribes; he warns Peter Satan has desired to sift him, but has prayed for him.",
               "quote": "Ye are they which have continued with me in my temptations. And I appoint unto you a kingdom, as my Father hath appointed unto me; That ye may eat and drink at my table in my kingdom, and sit on thrones judging the twelve tribes of Israel. And the Lord said, Simon, Simon, behold, Satan hath desired to have you, that he may sift you as wheat: But I have prayed for thee, that thy faith fail not: and when thou art converted, strengthen thy brethren.",

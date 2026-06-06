@@ -36,7 +36,7 @@ This skill governs all interaction with the Jesus Says data catalog. Load this s
 | `catalog_builds/engine/CLASSIFICATION_RULES.md` | Thematic rules for all categories and subcategories |
 | `catalog_builds/engine/TAXONOMY_STANDARDS.md` | Standards for creating new categories/subcategories; required fields; validation gate |
 | `catalog_builds/engine/TAG_RULES.md` | Parable tag definition + canonical reference list of all 42 parables |
-| `catalog_builds/engine/REVISION.md` | Version history of all structural catalog changes, newest version first |
+| `catalog_builds/engine/REVISION.md` | Version history of all catalog changes, newest version first |
 | `catalog_builds/engine/scripts/README.md` | Script usage, options, and sample output for all 5 scripts |
 
 ---
@@ -147,7 +147,10 @@ This skill governs all interaction with the Jesus Says data catalog. Load this s
 6. node catalog_builds/engine/scripts/validate-catalog.js
    → If exit code 1: report errors, DO NOT PROCEED
 
-7. Report success: new teaching ID (post-renumber), location, and quote snippet
+7. Run Workflow 6 — adding a teaching is a composition change: bump the MINOR version in
+   REVISION.md and update catalog_stats.md with live counts.
+
+8. Report success: new teaching ID (post-renumber), location, and quote snippet
 ```
 
 **Output to user:** Confirmation of the new teaching's final ID and location, or a clear error report if validation failed.
@@ -204,9 +207,9 @@ This skill governs all interaction with the Jesus Says data catalog. Load this s
 
 ---
 
-## WORKFLOW 6: Maintain Documentation After Structural Changes
+## WORKFLOW 6: Maintain Documentation After Any Catalog Change
 
-**Trigger:** Automatically after any Workflow 5 operation (move, rename, split, merge) completes. **This workflow is mandatory — a restructuring operation is not complete until all documentation is updated.**
+**Trigger:** Automatically after ANY write to `public/teachings.json` — Workflow 4 (add a teaching), Workflow 5 (restructure), Workflow 7 (schema change), or any direct edit to a teaching's `text`, `quote`, `title`, `tags`, or `references`. **This workflow is mandatory — no catalog edit is complete until a version bump (REVISION.md) and a `catalog_stats.md` update have been made.**
 
 **Steps:**
 
@@ -217,7 +220,8 @@ This skill governs all interaction with the Jesus Says data catalog. Load this s
    - Subcategory moved → parent section(s) to update + all cross-references
    - Subcategory renamed → title to update in CLASSIFICATION_RULES.md + any references
 
-2. Update catalog_builds/engine/CLASSIFICATION_RULES.md:
+2. Update catalog_builds/engine/CLASSIFICATION_RULES.md (SKIP if no subcategory was added,
+   removed, moved, or renamed — content-only and teaching-level edits do not touch this file):
    a. Add / remove / rename the affected subcategory block under the correct category heading
       New subcat template:
         "#### [new ID] [Title]
@@ -237,13 +241,15 @@ This skill governs all interaction with the Jesus Says data catalog. Load this s
 4. Verify: run `node catalog_builds/engine/scripts/parse-catalog.js --stats` and confirm
    the live counts match the values recorded in `catalog_stats.md`
 
-5. Update catalog_builds/engine/REVISION.md:
-   a. Determine if a version bump is warranted:
-      - ANY add, delete, move, rename, split, or merge of a category or subcategory = YES
-      - Text/quote wording edits on individual teachings = NO
-   b. If yes: prepend a new version block above the "Add new versions above this line" comment.
-      Version number: increment the minor version (e.g., v1.0 → v1.1). Bump major version
-      only for complete catalog re-architectures (31+ category-level changes at once).
+5. Update catalog_builds/engine/REVISION.md (ALWAYS — every catalog edit warrants a version entry):
+   a. Determine the increment tier:
+      - MAJOR (X.0): a complete catalog re-architecture (31+ category-level changes at once)
+      - MINOR (X.Y): any composition change — add, delete, move, rename, split, or merge of a
+        category, subcategory, or teaching
+      - PATCH (X.Y.Z): any other edit that does not change composition — text, quote, title,
+        tag, or reference edits on an existing teaching
+   b. Prepend a new version block above the "Add new versions above this line" comment,
+      incrementing the version per the tier above.
       Required block fields:
         - Version header: `## v[X.Y] — [Date]`
         - Catalog state table (categories, subcategories, teachings, parables)
@@ -429,7 +435,7 @@ Do NOT proceed until all six questions are answered.
 5. **Never manually assign IDs or slugs.** These are managed exclusively by `renumber.js`.
 6. **One `isPrimary: true` per teaching.** Validate this before inserting a new teaching.
 7. **`bookAbbr` must use canonical values.** See TAXONOMY_STANDARDS.md Part 4.
-8. **After any structural change, run Workflow 6.** Update `catalog_builds/engine/catalog_stats.md` with live counts, and update `CLASSIFICATION_RULES.md` and `REVISION.md` to reflect the new structure before reporting completion.
+8. **After ANY catalog edit, run Workflow 6.** Every write to `public/teachings.json` — including a single teaching add or a `text`/`quote` fix — requires a version bump in `REVISION.md` and a `catalog_stats.md` update before reporting completion. Also update `CLASSIFICATION_RULES.md` when subcategory structure changed.
 
 ---
 

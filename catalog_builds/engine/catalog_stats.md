@@ -8,10 +8,10 @@
 
 | Metric | Value |
 |---|---|
-| Version | 1.7 |
+| Version | 1.9 |
 | Categories | 30 |
 | Subcategories | 117 |
-| Teachings | 644 |
+| Teachings | 645 |
 | Tagged parables | 35 |
 | NT books covered | Matt, Mark, Luke, John, Acts, 1Cor, 2Cor, Rev |
 
@@ -25,7 +25,7 @@ Run this command from the project root to get the authoritative live count:
 node catalog_builds/engine/scripts/parse-catalog.js --stats
 ```
 
-**After any structural catalog change** (add, delete, move, rename, split, or merge of a category or subcategory), update this file to reflect the new counts from that command. **Do not update counts in any other file** — all other files reference this document.
+**After ANY catalog edit** (any write to `public/teachings.json`, down to a single teaching add or a `text`/`quote` fix), update this file to reflect the live counts from that command and bump the Version. **Do not update counts in any other file** — all other files reference this document.
 
 Also bump `meta.version` in `public/teachings.json` to match the new REVISION.md version number (e.g., `"1.5"` → `"1.6"`). The version string must stay in sync across `meta.version`, REVISION.md, and the Current Live Stats table above.
 
@@ -94,6 +94,7 @@ Also bump `meta.version` in `public/teachings.json` to match the new REVISION.md
 
 | Version | Date | Categories | Subcategories | Teachings | Parables |
 |---|---|---|---|---|---|
+| v1.9 | June 6, 2026 | 30 | 117 | 645 | 35 |
 | v1.8 | May 25, 2026 | 30 | 117 | 644 | 35 |
 | v1.7 | May 24, 2026 | 30 | 117 | 645 | 35 |
 | v1.6 | May 10, 2026 | 31 | 117 | 647 | 35 |

@@ -1,5 +1,6 @@
 ## Table of Contents
 
+- [v1.9 — June 6, 2026](#v19--june-6-2026)
 - [v1.8 — May 25, 2026](#v18--may-25-2026)
 - [v1.7 — May 17, 2026](#v17--may-17-2026)
 - [v1.6 — May 10, 2026](#v16--may-10-2026)
@@ -11,11 +12,37 @@
 
 # Catalog Revision History
 
-Tracks all structural changes to `public/teachings.json` by version and date.
+Tracks all changes to `public/teachings.json` by version and date.
 
-**Format:** Each version entry records the date, catalog stats at the time of writing, and all structural changes made since the previous version. Minor wording edits to `text` or `quote` fields do not require a version bump; structural changes (adds, deletes, moves, renames, splits, merges) do.
+**Format:** Each version entry records the date, catalog stats at the time of writing, and all changes made since the previous version. **Every edit to `public/teachings.json` requires a version bump and a `catalog_stats.md` update — no change is exempt.** Increment tiers:
+- **MAJOR** (`X.0`) — a complete catalog re-architecture (31+ category-level changes at once).
+- **MINOR** (`X.Y`) — any composition change: add, delete, move, rename, split, or merge of a category, subcategory, or teaching.
+- **PATCH** (`X.Y.Z`) — any other edit that does not change composition: `text`, `quote`, `title`, `tags`, or `references` edits on an existing teaching.
 
 <!-- Add new versions above this line -->
+
+## v1.9 — June 6, 2026
+
+| Stat | Count |
+|---|---|
+| Categories | 30 |
+| Subcategories | 117 |
+| Teachings | 645 |
+| Parables | 35 |
+
+### Add: Split Luke 22:35–38 out of the denial-prediction teaching in Cat 26.1
+
+Separated the "buy a sword" discourse from the Peter-denial teaching in **26.1 The Last Supper**, which previously absorbed it through an over-broad reference range.
+
+**Reason:** Teaching **26.1.8** ("Jesus tells Peter that this very night, before the cock crows, he will deny him three times") carried a Luke cross-reference of `Luke 22:34–38`. Verse 34 is the denial prediction and belongs there, but verses 35–38 are a distinct table discourse (the purse/sword instruction and the "numbered with the transgressors" prophecy, Isa 53:12). Per G-2, Last Supper speech belongs in Cat 26, so the new teaching stays in 26.1.
+
+**Updated:** `26.1.8` — Luke cross-reference narrowed from `Luke 22:34–38` → `Luke 22:34`.
+
+**Added:** `26.1.9` — "Jesus tells the disciples the time has changed, so the one who has a purse and bag should take them and even sell a garment to buy a sword, for he must be numbered with the transgressors." (primary: Luke 22:35–38). Subsequent 26.1 teachings shifted down one ID.
+
+**Net delta:** Cat 26.1: 8 → 9 teachings; Teachings: 644 → 645
+
+---
 
 ## v1.8 — May 25, 2026
 

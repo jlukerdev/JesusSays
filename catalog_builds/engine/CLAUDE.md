@@ -13,7 +13,7 @@ This directory is the **governance and operations layer** for `public/teachings.
 | `CLASSIFICATION_RULES.md` | Authoritative rules for placing every teaching in the 31-category, 117-subcategory taxonomy |
 | `TAXONOMY_STANDARDS.md` | Structural governance: thresholds and required fields for creating or modifying categories/subcategories |
 | `TAG_RULES.md` | Governed definition and canonical list for the `"parable"` tag |
-| `REVISION.md` | Version history of all structural changes |
+| `REVISION.md` | Version history of all catalog changes |
 | `catalog_stats.md` | Live catalog metrics — single source of truth for counts |
 | `scripts/` | Five Node.js CLI scripts (ESM, no external dependencies) |
 | `skills/catalog-engine/SKILL.md` | The operational playbook; defines 6 workflows for all catalog tasks |
@@ -67,7 +67,7 @@ renumber.js             ← Normalize all IDs and slugs
 validate-catalog.js     ← Must exit code 0 before task is complete
 ```
 
-After any **structural change** (new category, new subcategory, rename, merge, split, relocate), also run Workflow 6 from the SKILL.md to update `CLASSIFICATION_RULES.md`, `catalog_stats.md`, and `REVISION.md`.
+After **any catalog edit** — including adding a single teaching or fixing a `text`/`quote` field — run Workflow 6 from the SKILL.md to bump the version in `REVISION.md` and update `catalog_stats.md`. Also update `CLASSIFICATION_RULES.md` when subcategory structure changed.
 
 ---
 
@@ -79,7 +79,7 @@ After any **structural change** (new category, new subcategory, rename, merge, s
 4. **Always run `renumber.js` after any JSON edit**, even a single teaching addition.
 5. **Always run `validate-catalog.js` after `renumber.js`.** Task is not complete until exit code is 0.
 6. **Exactly one `isPrimary: true`** per teaching's references array.
-7. **After any structural change,** update documentation (Workflow 6) — this is mandatory, not optional.
+7. **After any catalog edit,** update documentation (Workflow 6) — a version bump (`REVISION.md`) and a `catalog_stats.md` update are mandatory for every write to `public/teachings.json`, not optional.
 8. **Never update `catalog_stats.md` by hand.** Run `parse-catalog.js --stats` and copy the output.
 
 ---
