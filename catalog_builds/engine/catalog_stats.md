@@ -8,7 +8,7 @@
 
 | Metric | Value |
 |---|---|
-| Version | 1.9 |
+| Version | 1.9.1 |
 | Categories | 30 |
 | Subcategories | 117 |
 | Teachings | 645 |
@@ -94,6 +94,7 @@ Also bump `meta.version` in `public/teachings.json` to match the new REVISION.md
 
 | Version | Date | Categories | Subcategories | Teachings | Parables |
 |---|---|---|---|---|---|
+| v1.9.1 | June 17, 2026 | 30 | 117 | 645 | 35 |
 | v1.9 | June 6, 2026 | 30 | 117 | 645 | 35 |
 | v1.8 | May 25, 2026 | 30 | 117 | 644 | 35 |
 | v1.7 | May 24, 2026 | 30 | 117 | 645 | 35 |

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "1.9",
+    "version": "1.9.1",
     "title": "Jesus Says Data Catalog",
     "subtitle": "A Comprehensive Categorization of His Words as Recorded in the New Testament",
     "totalCategories": 30,
@@ -9875,19 +9875,6 @@
                     ]
                   ],
                   "isPrimary": true
-                },
-                {
-                  "label": "John 7:24",
-                  "book": "John",
-                  "bookAbbr": "John",
-                  "chapter": 7,
-                  "ranges": [
-                    [
-                      24,
-                      24
-                    ]
-                  ],
-                  "isPrimary": false
                 }
               ]
             },
@@ -15823,20 +15810,20 @@
             {
               "id": "23.4.8",
               "uid": "c4c9b7f3-cfb7-4a26-9fab-8ee55bc34955",
-              "text": "Jesus reasons that since Moses gave them circumcision and they circumcise on the sabbath so the law not be broken, they should not be angry that he has made a man whole on the sabbath.",
-              "quote": "I have done one work, and ye all marvel. Moses therefore gave unto you circumcision; (not because it is of Moses, but of the fathers;) and ye on the sabbath day circumcise a man. If a man on the sabbath day receive circumcision, that the law of Moses should not be broken; are ye angry at me, because I have made a man every whit whole on the sabbath day?",
+              "text": "Jesus reasons that since Moses gave them circumcision and they circumcise on the sabbath so the law not be broken, they should not be angry that he has made a man whole on the sabbath, and instructs them not to judge by appearance but with righteous judgment.",
+              "quote": "I have done one work, and ye all marvel. Moses therefore gave unto you circumcision; (not because it is of Moses, but of the fathers;) and ye on the sabbath day circumcise a man. If a man on the sabbath day receive circumcision, that the law of Moses should not be broken; are ye angry at me, because I have made a man every whit whole on the sabbath day? Judge not according to the appearance, but judge righteous judgment.",
               "title": "Circumcision on the Sabbath — Why Not Healing?",
               "tags": [],
               "references": [
                 {
-                  "label": "John 7:21–23",
+                  "label": "John 7:21–24",
                   "book": "John",
                   "bookAbbr": "John",
                   "chapter": 7,
                   "ranges": [
                     [
                       21,
-                      23
+                      24
                     ]
                   ],
                   "isPrimary": true
