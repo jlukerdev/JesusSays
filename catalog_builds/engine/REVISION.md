@@ -1,5 +1,7 @@
 ## Table of Contents
 
+- [v1.10 — June 17, 2026](#v110--june-17-2026)
+- [v1.9.1 — June 17, 2026](#v191--june-17-2026)
 - [v1.9 — June 6, 2026](#v19--june-6-2026)
 - [v1.8 — May 25, 2026](#v18--may-25-2026)
 - [v1.7 — May 17, 2026](#v17--may-17-2026)
@@ -20,6 +22,64 @@ Tracks all changes to `public/teachings.json` by version and date.
 - **PATCH** (`X.Y.Z`) — any other edit that does not change composition: `text`, `quote`, `title`, `tags`, or `references` edits on an existing teaching.
 
 <!-- Add new versions above this line -->
+
+## v1.10 — June 17, 2026
+
+| Stat | Count |
+|---|---|
+| Categories | 30 |
+| Subcategories | 117 |
+| Teachings | 645 |
+| Parables | 35 |
+
+### Rename: Subcategory 13.6 "The Golden Rule and Two Ways" → "The Golden Rule"
+
+**Reason:** v1.9.1 relocated "The Wise and Foolish Builders" out of 13.6 into 6.4 (see below), leaving 13.6 with a single teaching — "Do Unto Others as You Would Have Them Do" (the Golden Rule, Matt 7:12). The "Two Ways" half of the title no longer described any content in the subcategory, so the title was narrowed to match its actual scope.
+
+**Updated:** `13.6` — `title` changed from "The Golden Rule and Two Ways" to "The Golden Rule." IDs and slugs unaffected.
+
+**Net delta:** No composition change — Teachings: 645 → 645
+
+---
+
+## v1.9.1 — June 17, 2026
+
+| Stat | Count |
+|---|---|
+| Categories | 30 |
+| Subcategories | 117 |
+| Teachings | 645 |
+| Parables | 35 |
+
+### Fix: Reattach John 7:24 from a mismatched cross-reference to its own discourse
+
+**Reason:** Teaching **13.5.2** ("Do Not Cast Pearls Before Swine," primary ref Matt 7:6) carried `John 7:24` as a secondary reference. The two passages share no thematic or narrative link — John 7:24 ("Judge not according to the appearance, but judge righteous judgment") is the closing line of Jesus's defense of his Sabbath healing at the Feast of Tabernacles, not a parallel to the Sermon on the Mount's pearls-before-swine saying. Per `CLASSIFICATION_RULES.md` Cat 13's explicit exclusion ("Sabbath teaching → *The Sabbath in Right Perspective* (23.4) when the Pharisaical conflict is the setting"), this verse belongs with the Sabbath-controversy discourse, not Cat 13's *Judging and Discernment* (13.5).
+
+John 7:21–23 — the unbroken lead-in to v.24 within the same uninterrupted statement by Jesus — was already cataloged as **23.4.8** ("Circumcision on the Sabbath — Why Not Healing?"). Rather than splitting one continuous quotation into two teaching entries, v.24 was folded into 23.4.8 as the conclusion of that same discourse.
+
+**Updated:** `13.5.2` — removed the mismatched `John 7:24` secondary reference; now carries only its primary reference, Matt 7:6.
+
+**Updated:** `23.4.8` — primary reference extended `John 7:21–23` → `John 7:21–24`; `quote` and `text` extended to include the righteous-judgment conclusion.
+
+**Net delta:** No composition change — Teachings: 645 → 645
+
+### Fix: Relocate The Wise and Foolish Builders out of Righteousness and Ethics
+
+**Reason:** Teaching "The Wise and Foolish Builders" (Matt 7:24–27; Luke 6:47–49) was filed in Cat 13's *The Golden Rule and Two Ways* (13.6), but its point isn't an ethical instruction toward others — it's about the consequence of hearing-versus-doing Jesus's words. That is exactly the theme of *The Narrow Way* (6.4) in Cat 6 (Salvation and Eternal Life), which already holds "Obedience Enters the Kingdom, Not Words Alone" (Matt 7:21–23) — the verses immediately preceding this parable in the same Sermon on the Mount conclusion, opened by "Therefore." Per `CLASSIFICATION_RULES.md` Cat 4/6's "many overlap and should be cross-listed" tie-breaker for entry-into-life sayings, this parable belongs alongside its discourse neighbor in 6.4, not in Cat 13's ethics-toward-others scope.
+
+**Moved:** `13.6.2` → `6.4.3` ("The Wise and Foolish Builders," Matt 7:24–27). Inserted immediately after 6.4.2 (Matt 7:21–23); subsequent 6.4 teachings shifted down one ID. Cat 13.6 now holds a single teaching (13.6.1, "Do Unto Others as You Would Have Them Do").
+
+**Net delta:** No composition change — Cat 13.6: 2 → 1 teaching; Cat 6.4: 4 → 5 teachings; Teachings: 645 → 645
+
+### Fix: Relocate Jesus Laments over Jerusalem's Refusal out of The Narrow Way
+
+**Reason:** Teaching "Jesus Laments over Jerusalem's Refusal" (Luke 13:32–35) was filed in Cat 6's *The Narrow Way* (6.4), but its content — Jesus's rebuke of Jerusalem for killing its prophets and refusing his repeated gathering — is not about the entry-into-life metaphor that defines 6.4; it's a lament over religious leadership's rejection of God's messengers. The near-verbatim parallel discourse (Matt 23:34–39, "Prophets Sent and Killed — Jerusalem's Lament") is already cataloged at **23.5.6** in Cat 23's *Hypocrisy in Leadership* (23.5). Per `TAXONOMY_STANDARDS.md`'s duplicate-resolution rule, the two are not duplicates (different book and chapter), but they describe the same theological point and should be classified consistently — this teaching belongs alongside its thematic sibling in 23.5, not in 6.4.
+
+**Moved:** `6.4.5` → `23.5.10` ("Jesus Laments over Jerusalem's Refusal," Luke 13:32–35). Inserted between 23.5.9 (Mark 11:33) and the former 23.5.10 (Luke 16:15, now 23.5.11) per book/chapter ordering. Cat 6.4 now holds four teachings.
+
+**Net delta:** No composition change — Cat 6.4: 5 → 4 teachings; Cat 23.5: 12 → 13 teachings; Teachings: 645 → 645
+
+---
 
 ## v1.9 — June 6, 2026
 
