@@ -6498,6 +6498,44 @@
             },
             {
               "id": "6.4.3",
+              "uid": "f590d6ef-cf59-40de-8927-e75b4a02bd9d",
+              "text": "Jesus likens whoever hears his sayings and does them to a wise man who built on rock, which stood when the storms came. Whoever hears but does them not is like a foolish man who built on sand, and great was its fall.",
+              "quote": "¶ Therefore whosoever heareth these sayings of mine, and doeth them, I will liken him unto a wise man, which built his house upon a rock: And the rain descended, and the floods came, and the winds blew, and beat upon that house; and it fell not: for it was founded upon a rock. And every one that heareth these sayings of mine, and doeth them not, shall be likened unto a foolish man, which built his house upon the sand: And the rain descended, and the floods came, and the winds blew, and beat upon that house; and it fell: and great was the fall of it.",
+              "title": "The Wise and Foolish Builders",
+              "tags": [
+                "parable"
+              ],
+              "references": [
+                {
+                  "label": "Matt 7:24–27",
+                  "book": "Matthew",
+                  "bookAbbr": "Matt",
+                  "chapter": 7,
+                  "ranges": [
+                    [
+                      24,
+                      27
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Luke 6:47–49",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 6,
+                  "ranges": [
+                    [
+                      47,
+                      49
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ]
+            },
+            {
+              "id": "6.4.4",
               "uid": "7ca1bd29-8428-4817-938f-6b500d398ff4",
               "text": "Jesus warns that once the master shuts the door, those who knock saying Lord, Lord will hear him answer that he does not know them; though they protest they ate with him and he taught in their streets, he will tell them to depart.",
               "quote": "When once the master of the house is risen up, and hath shut to the door, and ye begin to stand without, and to knock at the door, saying, Lord, Lord, open unto us; and he shall answer and say unto you, I know you not whence ye are: Then shall ye begin to say, We have eaten and drunk in thy presence, and thou hast taught in our streets. But he shall say, I tell you, I know you not whence ye are; depart from me, all ye workers of iniquity.",
@@ -6520,7 +6558,7 @@
               ]
             },
             {
-              "id": "6.4.4",
+              "id": "6.4.5",
               "uid": "a82d2e51-d1d9-4296-9881-e014d717743b",
               "text": "Jesus calls Herod that fox and says he will continue his work until perfected on the third day. He laments over Jerusalem that kills its prophets, saying how often he longed to gather her children as a hen gathers her brood, but they refused.",
               "quote": "Go ye, and tell that fox, Behold, I cast out devils, and I do cures to day and to morrow, and the third day I shall be perfected. Nevertheless I must walk to day, and to morrow, and the day following: for it cannot be that a prophet perish out of Jerusalem. O Jerusalem, Jerusalem, which killest the prophets, and stonest them that are sent unto thee; how often would I have gathered thy children together, as a hen doth gather her brood under her wings, and ye would not! Behold, your house is left unto you desolate: and verily I say unto you, Ye shall not see me, until the time come when ye shall say, Blessed is he that cometh in the name of the Lord.",
@@ -9939,44 +9977,6 @@
                     [
                       31,
                       31
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ]
-            },
-            {
-              "id": "13.6.2",
-              "uid": "f590d6ef-cf59-40de-8927-e75b4a02bd9d",
-              "text": "Jesus likens whoever hears his sayings and does them to a wise man who built on rock, which stood when the storms came. Whoever hears but does them not is like a foolish man who built on sand, and great was its fall.",
-              "quote": "¶ Therefore whosoever heareth these sayings of mine, and doeth them, I will liken him unto a wise man, which built his house upon a rock: And the rain descended, and the floods came, and the winds blew, and beat upon that house; and it fell not: for it was founded upon a rock. And every one that heareth these sayings of mine, and doeth them not, shall be likened unto a foolish man, which built his house upon the sand: And the rain descended, and the floods came, and the winds blew, and beat upon that house; and it fell: and great was the fall of it.",
-              "title": "The Wise and Foolish Builders",
-              "tags": [
-                "parable"
-              ],
-              "references": [
-                {
-                  "label": "Matt 7:24–27",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 7,
-                  "ranges": [
-                    [
-                      24,
-                      27
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Luke 6:47–49",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 6,
-                  "ranges": [
-                    [
-                      47,
-                      49
                     ]
                   ],
                   "isPrimary": false

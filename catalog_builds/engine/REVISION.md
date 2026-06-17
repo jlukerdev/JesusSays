@@ -43,6 +43,14 @@ John 7:21–23 — the unbroken lead-in to v.24 within the same uninterrupted st
 
 **Net delta:** No composition change — Teachings: 645 → 645
 
+### Fix: Relocate The Wise and Foolish Builders out of Righteousness and Ethics
+
+**Reason:** Teaching "The Wise and Foolish Builders" (Matt 7:24–27; Luke 6:47–49) was filed in Cat 13's *The Golden Rule and Two Ways* (13.6), but its point isn't an ethical instruction toward others — it's about the consequence of hearing-versus-doing Jesus's words. That is exactly the theme of *The Narrow Way* (6.4) in Cat 6 (Salvation and Eternal Life), which already holds "Obedience Enters the Kingdom, Not Words Alone" (Matt 7:21–23) — the verses immediately preceding this parable in the same Sermon on the Mount conclusion, opened by "Therefore." Per `CLASSIFICATION_RULES.md` Cat 4/6's "many overlap and should be cross-listed" tie-breaker for entry-into-life sayings, this parable belongs alongside its discourse neighbor in 6.4, not in Cat 13's ethics-toward-others scope.
+
+**Moved:** `13.6.2` → `6.4.3` ("The Wise and Foolish Builders," Matt 7:24–27). Inserted immediately after 6.4.2 (Matt 7:21–23); subsequent 6.4 teachings shifted down one ID. Cat 13.6 now holds a single teaching (13.6.1, "Do Unto Others as You Would Have Them Do").
+
+**Net delta:** No composition change — Cat 13.6: 2 → 1 teaching; Cat 6.4: 4 → 5 teachings; Teachings: 645 → 645
+
 ---
 
 ## v1.9 — June 6, 2026
