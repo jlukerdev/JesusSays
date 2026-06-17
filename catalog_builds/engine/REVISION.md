@@ -1,5 +1,6 @@
 ## Table of Contents
 
+- [v1.10 — June 17, 2026](#v110--june-17-2026)
 - [v1.9.1 — June 17, 2026](#v191--june-17-2026)
 - [v1.9 — June 6, 2026](#v19--june-6-2026)
 - [v1.8 — May 25, 2026](#v18--may-25-2026)
@@ -21,6 +22,25 @@ Tracks all changes to `public/teachings.json` by version and date.
 - **PATCH** (`X.Y.Z`) — any other edit that does not change composition: `text`, `quote`, `title`, `tags`, or `references` edits on an existing teaching.
 
 <!-- Add new versions above this line -->
+
+## v1.10 — June 17, 2026
+
+| Stat | Count |
+|---|---|
+| Categories | 30 |
+| Subcategories | 117 |
+| Teachings | 645 |
+| Parables | 35 |
+
+### Rename: Subcategory 13.6 "The Golden Rule and Two Ways" → "The Golden Rule"
+
+**Reason:** v1.9.1 relocated "The Wise and Foolish Builders" out of 13.6 into 6.4 (see below), leaving 13.6 with a single teaching — "Do Unto Others as You Would Have Them Do" (the Golden Rule, Matt 7:12). The "Two Ways" half of the title no longer described any content in the subcategory, so the title was narrowed to match its actual scope.
+
+**Updated:** `13.6` — `title` changed from "The Golden Rule and Two Ways" to "The Golden Rule." IDs and slugs unaffected.
+
+**Net delta:** No composition change — Teachings: 645 → 645
+
+---
 
 ## v1.9.1 — June 17, 2026
 

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "1.9.1",
+    "version": "1.10",
     "title": "Jesus Says Data Catalog",
     "subtitle": "A Comprehensive Categorization of His Words as Recorded in the New Testament",
     "totalCategories": 30,
@@ -9922,7 +9922,7 @@
         {
           "id": "13.6",
           "slug": "cat-13-6",
-          "title": "The Golden Rule and Two Ways",
+          "title": "The Golden Rule",
           "teachings": [
             {
               "id": "13.6.1",
