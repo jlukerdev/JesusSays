@@ -6556,29 +6556,6 @@
                   "isPrimary": true
                 }
               ]
-            },
-            {
-              "id": "6.4.5",
-              "uid": "a82d2e51-d1d9-4296-9881-e014d717743b",
-              "text": "Jesus calls Herod that fox and says he will continue his work until perfected on the third day. He laments over Jerusalem that kills its prophets, saying how often he longed to gather her children as a hen gathers her brood, but they refused.",
-              "quote": "Go ye, and tell that fox, Behold, I cast out devils, and I do cures to day and to morrow, and the third day I shall be perfected. Nevertheless I must walk to day, and to morrow, and the day following: for it cannot be that a prophet perish out of Jerusalem. O Jerusalem, Jerusalem, which killest the prophets, and stonest them that are sent unto thee; how often would I have gathered thy children together, as a hen doth gather her brood under her wings, and ye would not! Behold, your house is left unto you desolate: and verily I say unto you, Ye shall not see me, until the time come when ye shall say, Blessed is he that cometh in the name of the Lord.",
-              "title": "Jesus Laments over Jerusalem's Refusal",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Luke 13:32–35",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 13,
-                  "ranges": [
-                    [
-                      32,
-                      35
-                    ]
-                  ],
-                  "isPrimary": true
-                }
-              ]
             }
           ],
           "uid": "5c58ad8f-b499-459c-a99b-cfe5a5b49ad7"
@@ -16129,6 +16106,29 @@
             },
             {
               "id": "23.5.10",
+              "uid": "a82d2e51-d1d9-4296-9881-e014d717743b",
+              "text": "Jesus calls Herod that fox and says he will continue his work until perfected on the third day. He laments over Jerusalem that kills its prophets, saying how often he longed to gather her children as a hen gathers her brood, but they refused.",
+              "quote": "Go ye, and tell that fox, Behold, I cast out devils, and I do cures to day and to morrow, and the third day I shall be perfected. Nevertheless I must walk to day, and to morrow, and the day following: for it cannot be that a prophet perish out of Jerusalem. O Jerusalem, Jerusalem, which killest the prophets, and stonest them that are sent unto thee; how often would I have gathered thy children together, as a hen doth gather her brood under her wings, and ye would not! Behold, your house is left unto you desolate: and verily I say unto you, Ye shall not see me, until the time come when ye shall say, Blessed is he that cometh in the name of the Lord.",
+              "title": "Jesus Laments over Jerusalem's Refusal",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Luke 13:32–35",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 13,
+                  "ranges": [
+                    [
+                      32,
+                      35
+                    ]
+                  ],
+                  "isPrimary": true
+                }
+              ]
+            },
+            {
+              "id": "23.5.11",
               "uid": "a3367c51-6fb4-429f-9e44-c7d227cc9f96",
               "text": "Jesus tells the Pharisees they justify themselves before men, but God knows their hearts, for what men esteem highly is abomination before God.",
               "quote": "Ye are they which justify yourselves before men; but God knoweth your hearts: for that which is highly esteemed among men is abomination in the sight of God.",
@@ -16151,7 +16151,7 @@
               ]
             },
             {
-              "id": "23.5.11",
+              "id": "23.5.12",
               "uid": "eb533ced-3ab7-4f85-becb-778882ff23d3",
               "text": "Jesus tells the leaders he receives no honor from men but knows they have not the love of God in them, for they receive him not though he comes in his Father's name; he declares that Moses, in whom they trust, accuses them.",
               "quote": "I receive not honour from men. But I know you, that ye have not the love of God in you. I am come in my Father’s name, and ye receive me not: if another shall come in his own name, him ye will receive. How can ye believe, which receive honour one of another, and seek not the honour that cometh from God only? Do not think that I will accuse you to the Father: there is one that accuseth you, even Moses, in whom ye trust.",
@@ -16174,7 +16174,7 @@
               ]
             },
             {
-              "id": "23.5.12",
+              "id": "23.5.13",
               "uid": "413a83a2-3623-4dc9-8eeb-f2bf2c3118f9",
               "text": "Jesus tells the religious leaders that though they are Abraham's seed, they seek to kill him because his word has no place in them, and that they do the deeds of their father the devil — a murderer from the beginning, the father of lies; because Jesus tells them the truth they do not believe him, for he that is of God hears God's words.",
               "quote": "I know that ye are Abraham’s seed; but ye seek to kill me, because my word hath no place in you. I speak that which I have seen with my Father: and ye do that which ye have seen with your father. If ye were Abraham’s children, ye would do the works of Abraham. But now ye seek to kill me, a man that hath told you the truth, which I have heard of God: this did not Abraham. Ye do the deeds of your father. If God were your Father, ye would love me: for I proceeded forth and came from God; neither came I of myself, but he sent me. Why do ye not understand my speech? even because ye cannot hear my word. Ye are of your father the devil, and the lusts of your father ye will do. He was a murderer from the beginning, and abode not in the truth, because there is no truth in him. When he speaketh a lie, he speaketh of his own: for he is a liar, and the father of it. And because I tell you the truth, ye believe me not. Which of you convinceth me of sin? And if I say the truth, why do ye not believe me? He that is of God heareth God’s words: ye therefore hear them not, because ye are not of God.",

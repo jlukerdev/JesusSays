@@ -51,6 +51,14 @@ John 7:21–23 — the unbroken lead-in to v.24 within the same uninterrupted st
 
 **Net delta:** No composition change — Cat 13.6: 2 → 1 teaching; Cat 6.4: 4 → 5 teachings; Teachings: 645 → 645
 
+### Fix: Relocate Jesus Laments over Jerusalem's Refusal out of The Narrow Way
+
+**Reason:** Teaching "Jesus Laments over Jerusalem's Refusal" (Luke 13:32–35) was filed in Cat 6's *The Narrow Way* (6.4), but its content — Jesus's rebuke of Jerusalem for killing its prophets and refusing his repeated gathering — is not about the entry-into-life metaphor that defines 6.4; it's a lament over religious leadership's rejection of God's messengers. The near-verbatim parallel discourse (Matt 23:34–39, "Prophets Sent and Killed — Jerusalem's Lament") is already cataloged at **23.5.6** in Cat 23's *Hypocrisy in Leadership* (23.5). Per `TAXONOMY_STANDARDS.md`'s duplicate-resolution rule, the two are not duplicates (different book and chapter), but they describe the same theological point and should be classified consistently — this teaching belongs alongside its thematic sibling in 23.5, not in 6.4.
+
+**Moved:** `6.4.5` → `23.5.10` ("Jesus Laments over Jerusalem's Refusal," Luke 13:32–35). Inserted between 23.5.9 (Mark 11:33) and the former 23.5.10 (Luke 16:15, now 23.5.11) per book/chapter ordering. Cat 6.4 now holds four teachings.
+
+**Net delta:** No composition change — Cat 6.4: 5 → 4 teachings; Cat 23.5: 12 → 13 teachings; Teachings: 645 → 645
+
 ---
 
 ## v1.9 — June 6, 2026
