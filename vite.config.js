@@ -45,16 +45,18 @@ export default defineConfig({
         ]
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,ico,png,svg,json}'],
+        cleanupOutdatedCaches: true,
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
         runtimeCaching: [
           {
             urlPattern: /\/teachings\.json$/,
-            handler: 'CacheFirst',
+            handler: 'NetworkFirst',
             options: {
               cacheName: 'teachings-data',
+              networkTimeoutSeconds: 4,
               expiration: {
                 maxEntries: 1,
-                maxAgeSeconds: 60 * 60 * 24 * 30
+                maxAgeSeconds: 60 * 60 * 24
               }
             }
           },
