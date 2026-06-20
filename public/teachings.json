@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "1.10",
+    "version": "1.11",
     "title": "Jesus Says Data Catalog",
     "subtitle": "A Comprehensive Categorization of His Words as Recorded in the New Testament",
     "totalCategories": 30,
@@ -13656,7 +13656,7 @@
               "uid": "99a15ba6-291c-466c-a566-b47f8aa70f1b",
               "text": "Jesus declares that if anyone will come after him, let him deny himself and take up his cross and follow him.",
               "quote": "If any man will come after me, let him deny himself, and take up his cross, and follow me.",
-              "title": "Deny Yourself, Take Up Your Cross",
+              "title": "Deny Yourself, Take Up Your Cross, and Follow Me",
               "tags": [],
               "references": [
                 {
@@ -13748,14 +13748,14 @@
                   "isPrimary": true
                 },
                 {
-                  "label": "Mark 8:35–36",
+                  "label": "Mark 8:35–37",
                   "book": "Mark",
                   "bookAbbr": "Mark",
                   "chapter": 8,
                   "ranges": [
                     [
                       35,
-                      36
+                      37
                     ]
                   ],
                   "isPrimary": false
@@ -14681,137 +14681,6 @@
             }
           ],
           "uid": "490fe754-bd67-4917-988a-ea01c5c5f347"
-        },
-        {
-          "id": "22.4",
-          "slug": "cat-22-4",
-          "title": "Taking Up the Cross",
-          "teachings": [
-            {
-              "id": "22.4.1",
-              "uid": "64ee136c-0b93-48c1-a15b-0ea9eb926d20",
-              "text": "Jesus says that if anyone will come after him, let him deny himself, take up his cross, and follow him, for whoever will save his life will lose it and whoever will lose his life for his sake will find it. He declares some standing there will not taste death till they see the Son of Man coming in his kingdom.",
-              "quote": "If any man will come after me, let him deny himself, and take up his cross, and follow me. For whosoever will save his life shall lose it: and whosoever will lose his life for my sake shall find it. Verily I say unto you, There be some standing here, which shall not taste of death, till they see the Son of man coming in his kingdom.",
-              "title": "Take Up the Cross and Follow",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 16:24–25, 28",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 16,
-                  "ranges": [
-                    [
-                      24,
-                      25
-                    ],
-                    [
-                      28,
-                      28
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Mark 8:34–35, 37–38",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      34,
-                      35
-                    ],
-                    [
-                      37,
-                      38
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 9:23–24, 26–27",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      23,
-                      24
-                    ],
-                    [
-                      26,
-                      27
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Mark 9:1",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      1,
-                      1
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ]
-            },
-            {
-              "id": "22.4.2",
-              "uid": "f6763454-51f3-4f82-a8b9-258a57f5dfc9",
-              "text": "Jesus asks what a man is profited if he gains the whole world and loses his own soul, or what a man will give in exchange for his soul.",
-              "quote": "For what is a man profited, if he shall gain the whole world, and lose his own soul? or what shall a man give in exchange for his soul?",
-              "title": "What Profits a Man Who Gains the World?",
-              "tags": [],
-              "references": [
-                {
-                  "label": "Matt 16:26",
-                  "book": "Matthew",
-                  "bookAbbr": "Matt",
-                  "chapter": 16,
-                  "ranges": [
-                    [
-                      26,
-                      26
-                    ]
-                  ],
-                  "isPrimary": true
-                },
-                {
-                  "label": "Mark 8:36",
-                  "book": "Mark",
-                  "bookAbbr": "Mark",
-                  "chapter": 8,
-                  "ranges": [
-                    [
-                      36,
-                      36
-                    ]
-                  ],
-                  "isPrimary": false
-                },
-                {
-                  "label": "Luke 9:25",
-                  "book": "Luke",
-                  "bookAbbr": "Luke",
-                  "chapter": 9,
-                  "ranges": [
-                    [
-                      25,
-                      25
-                    ]
-                  ],
-                  "isPrimary": false
-                }
-              ]
-            }
-          ],
-          "uid": "08117dde-fac9-4643-8cdf-b5b3f2b28149"
         }
       ],
       "uid": "d8c622b6-c5db-418f-9c14-b963b9cf6abe"
@@ -17126,6 +16995,42 @@
                     [
                       8,
                       9
+                    ]
+                  ],
+                  "isPrimary": false
+                }
+              ]
+            },
+            {
+              "id": "25.5.3",
+              "uid": "ca81202b-8c25-4053-b5b9-798747704b21",
+              "text": "Jesus warns that whoever is ashamed of him and his words in this adulterous and sinful generation, of him the Son of Man will be ashamed when he comes in the glory of his Father with the holy angels.",
+              "quote": "Whosoever therefore shall be ashamed of me and of my words in this adulterous and sinful generation; of him also shall the Son of man be ashamed, when he cometh in the glory of his Father with the holy angels.",
+              "title": "Whoever Is Ashamed of Me",
+              "tags": [],
+              "references": [
+                {
+                  "label": "Mark 8:38",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 8,
+                  "ranges": [
+                    [
+                      38,
+                      38
+                    ]
+                  ],
+                  "isPrimary": true
+                },
+                {
+                  "label": "Luke 9:26",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      26,
+                      26
                     ]
                   ],
                   "isPrimary": false
@@ -19895,23 +19800,49 @@
             {
               "id": "29.1.4",
               "uid": "17ead166-2da7-4626-858b-532c0a2d3730",
-              "text": "Jesus says the Son of Man will come in the glory of his Father with his angels and reward every man according to his works, for the Father has committed all judgment to the Son.",
-              "quote": "For the Son of man shall come in the glory of his Father with his angels; and then he shall reward every man according to his works.",
+              "text": "Jesus says the Son of Man will come in the glory of his Father with his angels and reward every man according to his works, for the Father has committed all judgment to the Son; and he declares that some standing there will not taste death till they see the Son of Man coming in his kingdom.",
+              "quote": "For the Son of man shall come in the glory of his Father with his angels; and then he shall reward every man according to his works. Verily I say unto you, There be some standing here, which shall not taste of death, till they see the Son of man coming in his kingdom.",
               "title": "The Father Has Given All Judgment to the Son",
               "tags": [],
               "references": [
                 {
-                  "label": "Matt 16:27",
+                  "label": "Matt 16:27–28",
                   "book": "Matthew",
                   "bookAbbr": "Matt",
                   "chapter": 16,
                   "ranges": [
                     [
                       27,
-                      27
+                      28
                     ]
                   ],
                   "isPrimary": true
+                },
+                {
+                  "label": "Mark 9:1",
+                  "book": "Mark",
+                  "bookAbbr": "Mark",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      1,
+                      1
+                    ]
+                  ],
+                  "isPrimary": false
+                },
+                {
+                  "label": "Luke 9:27",
+                  "book": "Luke",
+                  "bookAbbr": "Luke",
+                  "chapter": 9,
+                  "ranges": [
+                    [
+                      27,
+                      27
+                    ]
+                  ],
+                  "isPrimary": false
                 },
                 {
                   "label": "John 5:22–23",

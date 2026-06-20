@@ -1,5 +1,6 @@
 ## Table of Contents
 
+- [v1.11 — June 20, 2026](#v111--june-20-2026)
 - [v1.10 — June 17, 2026](#v110--june-17-2026)
 - [v1.9.1 — June 17, 2026](#v191--june-17-2026)
 - [v1.9 — June 6, 2026](#v19--june-6-2026)
@@ -22,6 +23,53 @@ Tracks all changes to `public/teachings.json` by version and date.
 - **PATCH** (`X.Y.Z`) — any other edit that does not change composition: `text`, `quote`, `title`, `tags`, or `references` edits on an existing teaching.
 
 <!-- Add new versions above this line -->
+
+## v1.11 — June 20, 2026
+
+| Stat | Count |
+|---|---|
+| Categories | 30 |
+| Subcategories | 116 |
+| Teachings | 644 |
+| Parables | 35 |
+
+### Merge: "Take Up the Cross and Follow" (22.4.1) into "Deny Yourself, Take Up Your Cross" (21.2.1)
+
+**Reason:** Teaching **22.4.1** ("Take Up the Cross and Follow," Suffering and Persecution → *Taking Up the Cross*) was a composite entry that bundled five distinct sayings under one wide set of synoptic ranges (Matt 16:24–25, 28; Mark 8:34–35, 37–38; Luke 9:23–24, 26–27; Mark 9:1). Its core "deny self, take up the cross, and follow me" content (Matt 16:24 / Mark 8:34 / Luke 9:23) was already cataloged at **21.2.1** (Discipleship → *Counting the Cost*), and the save/lose-life content (Matt 16:25 / Mark 8:35 / Luke 9:24) was already cataloged at **21.2.2**. The composite was therefore redundant for the "follow" narrative, while the remaining verses belonged to unrelated themes. 22.4.1 was removed and its non-redundant verses relocated to the teachings that match their content (below).
+
+**Updated:** `21.2.1` — `title` refined "Deny Yourself, Take Up Your Cross" → "Deny Yourself, Take Up Your Cross, and Follow Me" to make it the unambiguous home of the deny/cross/follow saying. References unchanged (the follow verses were already present).
+
+**Removed:** former `22.4.1` ("Take Up the Cross and Follow"). Cat 22.4 (*Taking Up the Cross*) now holds a single teaching, "What Profits a Man Who Gains the World?" (renumbered 22.4.2 → 22.4.1).
+
+### Relocate: "exchange for his soul" (Mark 8:37) into "Lose Your Life to Find It" (21.2.2)
+
+**Reason:** Mark 8:37 ("what shall a man give in exchange for his soul?") existed only inside the deleted composite. Its content is the exchange clause already quoted in **21.2.2**, whose `quote` includes "or what shall a man give in exchange for his soul?" — the Mark range simply did not yet reach v.37.
+
+**Updated:** `21.2.2` — Mark reference extended `Mark 8:35–36` → `Mark 8:35–37`.
+
+### Merge: "will not taste death till they see the kingdom" trio into 29.1.4
+
+**Reason:** Matt 16:28, Luke 9:27, and Mark 9:1 ("there be some standing here which shall not taste of death, till they see the Son of Man coming in his kingdom") are a Parousia prophecy, not part of the cross/follow call. The adjacent verse Matt 16:27 ("the Son of Man shall come in the glory of his Father… and reward every man") was already the primary of **29.1.4** (Judgment and Hell → *The Certainty and Scope of Judgment*), making it the natural home for the continuation.
+
+**Updated:** `29.1.4` — Matt reference extended `Matt 16:27` → `Matt 16:27–28`; `quote` and `text` extended to include the taste-death prophecy; secondary references `Mark 9:1` and `Luke 9:27` added alongside the existing John 5:22–23.
+
+### Add: "Whoever Is Ashamed of Me" (25.5.3)
+
+**Reason:** Mark 8:38 and Luke 9:26 ("whoever shall be ashamed of me and of my words… of him shall the Son of Man be ashamed") existed only inside the deleted composite and had no other home in the catalog. The saying is the negative counterpart to confessing Christ before men, so it joins **25.5.2** ("Confess Me Before Men and I Will Confess You") in Cat 25's *Fear and Courage in Witness*.
+
+**Added:** `25.5.3` — "Whoever Is Ashamed of Me" (primary Mark 8:38; secondary Luke 9:26), inserted after 25.5.2.
+
+**Net delta (merge step):** No net teaching change — Cat 22.4: 2 → 1 teaching; Cat 25.5: 2 → 3 teachings; Teachings: 645 → 645.
+
+### Remove: Subcategory 22.4 "Taking Up the Cross"
+
+**Reason:** After the merge above, Cat 22.4 held a single teaching — "What Profits a Man Who Gains the World?" (Matt 16:26 / Mark 8:36 / Luke 9:25) — whose every verse was already covered by **21.2.2** "Lose Your Life to Find It" (Matt 16:25–26 / Mark 8:35–37 / Luke 9:24–25). The subcategory was fully redundant and its title no longer described its content, so the whole subcategory was removed. Cross-bearing teaching is now consolidated under Cat 21 *Counting the Cost*; `CLASSIFICATION_RULES.md` was updated accordingly (22.4 block removed, Cat 22 inclusion themes and tie-breakers re-pointed to 21.2).
+
+**Removed:** subcategory `22.4` ("Taking Up the Cross") and its sole teaching "What Profits a Man Who Gains the World?" 22.4 was the last subcategory in Cat 22, so no sibling subcategories shifted.
+
+**Net delta (removal step):** Cat 22: 4 → 3 subcategories; Subcategories: 117 → 116; Teachings: 645 → 644.
+
+---
 
 ## v1.10 — June 17, 2026
 

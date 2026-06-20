@@ -810,8 +810,6 @@ Teachings on the expectation and evidence of fruit in the disciple's life. The f
 - "You will be hated by all nations on account of my name"
 - Fear of those who can kill the body, not the soul
 - The Spirit speaking when persecuted
-- Cross-bearing as the cost of following
-- "He who loses his life will save it"
 - Being dragged before governors and kings
 
 **Explicit exclusions:**
@@ -819,7 +817,7 @@ Teachings on the expectation and evidence of fruit in the disciple's life. The f
 - Persecution listed among end-times signs → Cat 28 when the eschatological context is primary
 - The Beatitude on the persecuted → Cat 4.4 (Beatitudes)
 
-**Tie-breaker rule:** "Take up your cross" sayings → *Taking Up the Cross* (22.4) if the context is literal suffering and cost of witness; *Counting the Cost* (21.2) if the context is the general cost of discipleship without persecution framing.
+**Tie-breaker rule:** "Take up your cross" / "deny yourself" / "lose your life to save it" sayings → *Counting the Cost* (21.2) in Cat 21, which is now the consolidated home for all cross-bearing teachings. Cat 22 covers the experience of suffering and persecution itself — being hated, dragged before authorities, and called to courage — not the cross-bearing call.
 
 ### Subcategories
 
@@ -831,9 +829,6 @@ Teachings stating that persecution will come and why. Prophetic and preparatory 
 
 #### 22.3 Courage in Suffering
 Teachings calling for courage, fearlessness, and bold witness under threat.
-
-#### 22.4 Taking Up the Cross
-Cross-bearing teachings — denying self, taking up the cross, losing one's life for Christ.
 
 ---
 
@@ -1159,8 +1154,7 @@ Rev 3:14–22. Rebuked for lukewarmness; the famous invitation: "I stand at the 
 | Any teaching in Rev 1–3 | Cat 30 (G-4) |
 | Sheep and Goats (Matt 25) | *The Judgment of the Nations — Sheep and Goats* (20.2), not Cat 28 or Cat 29 |
 | Rich Man and Lazarus | *The Rich Man and Lazarus* (29.4), not Cat 19 or Cat 20 |
-| "Take up your cross" — persecution context | *Taking Up the Cross* (22.4) |
-| "Take up your cross" — discipleship cost context | *Counting the Cost* (21.2) |
+| "Take up your cross" / "deny yourself" / "lose your life to save it" | *Counting the Cost* (21.2) |
 | "Where two or three are gathered" — prayer and presence emphasis | Cat 24.2 (Corporate Prayer and Presence) |
 | Forgiveness from the cross | *Words from the Cross* (26.4) — G-2 |
 | "Father, forgive them" | *Words from the Cross* (26.4) — G-2 |

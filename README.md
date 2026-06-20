@@ -2,10 +2,6 @@
 
 A comprehensive reference web application cataloging all recorded words of Jesus Christ from the New Testament, organized thematically with scripture cross-references.
 
-## Project Status
-
-**Production release — live at https://jlukerdev.github.io/JesusSays**
-
 ## About Jesus Says
 
 Jesus Says is a research and reference tool designed to help readers study Jesus's teachings in context. Every recorded utterance of Jesus in the New Testament—from parables to prayers to his post-resurrection appearances—is cataloged, categorized, and cross-referenced with the scripture locations where each teaching appears.
