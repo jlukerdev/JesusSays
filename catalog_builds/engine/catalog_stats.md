@@ -8,10 +8,10 @@
 
 | Metric | Value |
 |---|---|
-| Version | 1.10 |
+| Version | 1.11 |
 | Categories | 30 |
-| Subcategories | 117 |
-| Teachings | 645 |
+| Subcategories | 116 |
+| Teachings | 644 |
 | Tagged parables | 35 |
 | NT books covered | Matt, Mark, Luke, John, Acts, 1Cor, 2Cor, Rev |
 
@@ -94,6 +94,7 @@ Also bump `meta.version` in `public/teachings.json` to match the new REVISION.md
 
 | Version | Date | Categories | Subcategories | Teachings | Parables |
 |---|---|---|---|---|---|
+| v1.11 | June 20, 2026 | 30 | 116 | 644 | 35 |
 | v1.10 | June 17, 2026 | 30 | 117 | 645 | 35 |
 | v1.9.1 | June 17, 2026 | 30 | 117 | 645 | 35 |
 | v1.9 | June 6, 2026 | 30 | 117 | 645 | 35 |
